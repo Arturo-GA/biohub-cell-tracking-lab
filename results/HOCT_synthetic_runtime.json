@@ -1,0 +1,10 @@
+{
+  "batches": 4,
+  "max_edges": 1611,
+  "min_edge_observations": 1,
+  "seconds": 2.844000000040978,
+  "nodes": 1600,
+  "candidates": 5030,
+  "device": "local CPU 2 threads",
+  "scope": "synthetic software/runtime benchmark, NOT tracking accuracy"
+}

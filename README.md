@@ -24,6 +24,8 @@ El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-officia
 
 La nueva línea reemplaza todas las asociaciones por HOCT y usa morfología medida en máscaras watershed 3D. No modifica únicamente parámetros del código público. [Implementación y diferencias respecto al paper](docs/HOCT_IMPLEMENTATION.es.md). [Ejecución en Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-hoct-morphology-diagnostic).
 
+**E003 terminó con resultado negativo:** HOCT **0.9195083**, control **0.9666951**, delta **−0.0471868**. Las divisiones falsas evaluadas aumentaron de 1 a 12. No se promueve esta versión a submission ni se interpreta el score como validación independiente. Se procesaron los cuatro videos en 12,06 minutos, excluyendo instalación/cola. [Registro completo](results/E003_completed.json). El notebook `hoct_test` se conserva como implementación reproducible, **no como candidato recomendado**.
+
 Los notebooks contienen el código necesario y adjuntan tres datasets públicos de Pilkwang: soporte, segundo seed y DeepCenter. La ejecución requiere GPU de Kaggle; internet desactivado. Los hashes de los pesos y del código de soporte se verifican al arrancar. Los datos, los pesos y las credenciales no se guardan en Git.
 
 ## Desarrollo

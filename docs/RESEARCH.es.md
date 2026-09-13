@@ -48,4 +48,4 @@ Antes de ensemble, medir coincidencia de errores en nodos y aristas emparejados.
 
 ## Alcance de esta investigación
 
-Se revisaron fuentes primarias, repositorios y discusiones hasta la fecha indicada. No se verificó exhaustivamente cada notebook público ni se reprodujeron los scores publicados por terceros. El acceso al texto de algunos papers falló; se identifica arriba cuando afectó el análisis. Los métodos FOCUS-3D, HOCT y los demás papers aún no se han entrenado/evaluado en nuestra cuenta.
+Se revisaron fuentes primarias, repositorios y discusiones hasta la fecha indicada. No se verificó exhaustivamente cada notebook público ni se reprodujeron los scores publicados por terceros. El acceso al texto de algunos papers falló; se identifica arriba cuando afectó el análisis. HOCT ya se evaluó con máscaras aproximadas y nodos fijos: 0.9195083 frente a 0.9666951 del control, un resultado negativo. FOCUS-3D y los demás detectores no se han entrenado/evaluado en nuestra cuenta.

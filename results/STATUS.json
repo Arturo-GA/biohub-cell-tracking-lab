@@ -14,12 +14,14 @@
   "E003": {
     "kernel": "jarturo/biohub-lab-hoct-morphology-diagnostic",
     "version": 1,
-    "last_observed_status": "RUNNING",
+    "last_observed_status": "COMPLETE",
     "payload_sha256": "a28459492e2cdd3407bd7bbe4b81d2bc0b63c4bb132743b0ece4346efa0f02ef",
-    "score": null,
-    "quality_status": "unverified",
+    "score": 0.9195082761729049,
+    "quality_status": "rejected_direct_transfer",
     "test_notebook": "kaggle/hoct_test",
-    "test_run_started": false
+    "test_run_started": false,
+    "decision": "do_not_submit",
+    "total_video_seconds": 723.5988115210001
   },
   "local_tests_passed": 23,
   "control_test_run": {
@@ -41,6 +43,19 @@
   "leaderboard_submitted": false,
   "quality_status": "unverified",
   "training_split_membership_verified": true,
-  "implemented": ["fixed_harmonic_control", "division_aware_reverse_fusion", "final_csv_validation", "pinned_official_evaluation", "diagnostic_ab_notebook", "image_watershed_morphology", "HOCT_pretrained_linker", "exact_capacity_two_lineage_solver", "offline_HOCT_notebooks"],
-  "research_only": ["FOCUS-3D_distillation", "dense_embedding_linker"]
+  "implemented": [
+    "fixed_harmonic_control",
+    "division_aware_reverse_fusion",
+    "final_csv_validation",
+    "pinned_official_evaluation",
+    "diagnostic_ab_notebook",
+    "image_watershed_morphology",
+    "HOCT_pretrained_linker",
+    "exact_capacity_two_lineage_solver",
+    "offline_HOCT_notebooks"
+  ],
+  "research_only": [
+    "FOCUS-3D_distillation",
+    "dense_embedding_linker"
+  ]
 }

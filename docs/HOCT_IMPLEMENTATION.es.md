@@ -2,6 +2,10 @@
 
 La hipótesis es que forma, intensidad y relaciones entre enlaces aporten información sobre divisiones y cruces que el transformer público de puntos no está aprovechando. No se afirma una mejora antes de medirla.
 
+**Resultado medido (versión 1): negativo.** Score oficial del diagnóstico in-sample 0.9195083, contra 0.9666951 del control. Adjusted edge Jaccard cayó de 0.9416951 a 0.9142451; divisiones TP/FP/FN pasaron de 2/1/5 a 1/12/6. No se enviará esta transferencia directa al leaderboard. Esto evalúa nuestra combinación de máscaras aproximadas, red congelada y solver; no es una refutación de HOCT ni una reproducción de sus resultados publicados.
+
+Los cuatro videos tardaron 294,75 / 164,58 / 165,75 / 98,52 segundos: 12,06 minutos, sin instalación/cola. Tras el coste inicial de compilación, el procesamiento de imágenes domina el tiempo. Entre 3,6 % y 13,4 % de las máscaras tuvieron menos de ocho vóxeles. Estas observaciones justifican investigar calidad de segmentación y adaptación de dominio; no demuestran por sí solas la causa del deterioro. Datos completos en `results/E003_completed.json`.
+
 ## Implementación ejecutable
 
 1. Mantener los centros del detector del control. Para el diagnóstico se reutiliza su CSV ya generado en Kaggle, sin volver a ejecutar el detector. No se usan aristas ni etiquetas como entradas del nuevo enlazador.

@@ -32,6 +32,8 @@ Comparaciones: mismo linker con detector actual vs detector destilado; después 
 
 Implementación completa y notebook Kaggle en `kaggle/hoct_diagnostic`; variante de test en `kaggle/hoct_test`. Consulta `docs/HOCT_IMPLEMENTATION.es.md` para conocer las diferencias con HOCT oficial. Sustituye todas las asociaciones, extrae morfología de imágenes y resuelve linajes con matching capacitado. Conserva detecciones para atribuir las diferencias al enlazador.
 
+**Resultado:** 0.9195083 frente a 0.9666951 del control; delta −0.0471868. Divisiones TP/FP/FN 1/12/6 frente a 2/1/5. Se rechaza esta transferencia directa para submission. La implementación se ejecutó correctamente, pero no mejoró el tracking. No se iniciará un barrido de pequeños ajustes como continuación automática.
+
 Usar un checkpoint público local y máscaras 3D derivadas de imágenes. Medir su linker con detecciones fijas antes de mezclar detectores. Probar CPU y GPU, memoria y tiempo por video. Reconstruir enlaces consecutivos válidos: HOCT admite gaps que no se deben exportar directamente como enlaces que salten frames.
 
 Una vez verificadas las representaciones y las etiquetas utilizables, estudiar una cabeza ligera sobre features congeladas. No iniciar entrenamiento completo sin confirmar la disponibilidad del código y del protocolo. El código de entrenamiento aún no estaba publicado en el anuncio consultado.

@@ -49,6 +49,11 @@ subprocess.run([sys.executable,'-u',str(package/'scripts/hoct_runner.py'),
     ast.parse(code)
     intro = f'''# {title}
 
+**Measured result, version 1: negative.** On four in-sample training videos,
+this implementation scored 0.9195083 versus 0.9666951 for its fixed-node control.
+Evaluated false divisions rose from 1 to 12. Preserved for reproducibility;
+**this direct-transfer configuration is not recommended for submission**.
+
 New architecture: image-derived 3D watershed masks → intensity/inertia features →
 pretrained [HOCT](https://github.com/royerlab/hoct) general_v1 → exact capacitated matching.
 Retains the fixed control detections; replaces its association and division logic.
