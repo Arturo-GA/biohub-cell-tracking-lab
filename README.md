@@ -17,20 +17,25 @@ La meta es mejorar el tracking real con experimentos reproducibles. **Todavía n
 | `kaggle/control` | Inferencia fija de Harmonic Fusion; sin su antiguo sweep de métrica proxy | `submission.csv` |
 | `kaggle/division_guard` | Misma base + menor peso inverso ante posibles divisiones | `submission.csv` |
 | `kaggle/diagnostic` | Control y candidato sobre una muestra fija de train | CSVs de ambos, métrica oficial y `run_receipt.json` |
+| `kaggle/hoct_diagnostic` | Máscaras 3D + HOCT + matching exacto, reutilizando detecciones | Métrica oficial, morfología y probabilidades por video |
+| `kaggle/hoct_test` | Mismo reemplazo completo del enlazador sobre todo el test | `submission.csv` |
 
-El diagnóstico está en [Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab). El diagnóstico no se presenta como holdout: la pertenencia de esos videos al entrenamiento de los checkpoints públicos no está verificada. No selecciona hiperparámetros ni envía resultados al leaderboard.
+El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
+
+La nueva línea reemplaza todas las asociaciones por HOCT y usa morfología medida en máscaras watershed 3D. No modifica únicamente parámetros del código público. [Implementación y diferencias respecto al paper](docs/HOCT_IMPLEMENTATION.es.md). [Ejecución en Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-hoct-morphology-diagnostic).
 
 Los notebooks contienen el código necesario y adjuntan tres datasets públicos de Pilkwang: soporte, segundo seed y DeepCenter. La ejecución requiere GPU de Kaggle; internet desactivado. Los hashes de los pesos y del código de soporte se verifican al arrancar. Los datos, los pesos y las credenciales no se guardan en Git.
 
 ## Desarrollo
 
-Pruebas ligeras: Python 3.12, PyTorch, NumPy y nbformat. En PowerShell, desde la raíz:
+Pruebas: Python 3.12, PyTorch, NumPy, SciPy, scikit-image y nbformat. En PowerShell, desde la raíz:
 
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) 'src')
 python -m unittest discover -s tests -v
 python scripts/build_notebooks.py
-python -m kaggle kernels push -p kaggle/diagnostic
+python scripts/build_hoct_notebooks.py
+python -m kaggle kernels push -p kaggle/hoct_diagnostic
 ```
 
 La inferencia completa instala las dependencias desde los wheels adjuntos en Kaggle. Para evaluar un CSV contra los GEFF de entrenamiento en un entorno con esas dependencias:

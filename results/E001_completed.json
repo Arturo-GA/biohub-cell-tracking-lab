@@ -1,0 +1,184 @@
+{
+  "mode": "diagnostic",
+  "datasets": [
+    "44b6_53f95252",
+    "44b6_341df25f",
+    "6bba_afb141ff",
+    "6bba_337b1b3a"
+  ],
+  "arms": {
+    "control": {
+      "seconds": 1295.3694743849999,
+      "sha256": "b281534606521727d7582ee22a8df791312fdd2dc61ef285b4e5fbb91a7e3f51",
+      "csv": "/kaggle/working/biohub_control/submission.csv",
+      "metrics": {
+        "summary": {
+          "n": 4,
+          "edge_jaccard": 0.9382433668801464,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 1,
+          "division_fn": 5,
+          "node_recall": 0.9919512402310567,
+          "adj_edge_jaccard": 0.941695109466634,
+          "n_adj": 4,
+          "score": 0.9666951094666341
+        },
+        "samples": [
+          {
+            "edge_tp": 207,
+            "edge_fp": 0,
+            "edge_fn": 2,
+            "division_tp": 1,
+            "division_fp": 0,
+            "division_fn": 0,
+            "num_pred_nodes": 8413,
+            "node_recall": 0.9907407407407407,
+            "total_node_ratio": 0.13138784292630445,
+            "edge_jaccard": 0.9904306220095693,
+            "adj_edge_jaccard": 0.9774175677101697,
+            "dataset": "44b6_341df25f"
+          },
+          {
+            "edge_tp": 67,
+            "edge_fp": 2,
+            "edge_fn": 1,
+            "division_tp": 0,
+            "division_fp": 0,
+            "division_fn": 0,
+            "num_pred_nodes": 31608,
+            "node_recall": 1.0,
+            "total_node_ratio": -0.18357225881441303,
+            "edge_jaccard": 0.9571428571428572,
+            "adj_edge_jaccard": 0.9747133447722367,
+            "dataset": "44b6_53f95252"
+          },
+          {
+            "edge_tp": 1182,
+            "edge_fp": 46,
+            "edge_fn": 31,
+            "division_tp": 1,
+            "division_fp": 1,
+            "division_fn": 1,
+            "num_pred_nodes": 29397,
+            "node_recall": 1.0,
+            "total_node_ratio": -0.03553149606299213,
+            "edge_jaccard": 0.9388403494837172,
+            "adj_edge_jaccard": 0.9421761897018631,
+            "dataset": "6bba_337b1b3a"
+          },
+          {
+            "edge_tp": 595,
+            "edge_fp": 22,
+            "edge_fn": 31,
+            "division_tp": 0,
+            "division_fp": 0,
+            "division_fn": 4,
+            "num_pred_nodes": 5562,
+            "node_recall": 0.9770642201834863,
+            "total_node_ratio": -0.08126858275520317,
+            "edge_jaccard": 0.9182098765432098,
+            "adj_edge_jaccard": 0.9256720380770594,
+            "dataset": "6bba_afb141ff"
+          }
+        ],
+        "scope": "training diagnostic; pretrained checkpoint training membership unverified",
+        "official_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2"
+      }
+    },
+    "division_guard": {
+      "seconds": 1031.1363897079998,
+      "sha256": "5db1710a28ff085741f83fa2fde572f400b398e0a9840deb1859ae3191ef2f38",
+      "csv": "/kaggle/working/biohub_division_guard/submission.csv",
+      "metrics": {
+        "summary": {
+          "n": 4,
+          "edge_jaccard": 0.9382433668801464,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 1,
+          "division_fn": 5,
+          "node_recall": 0.9919512402310567,
+          "adj_edge_jaccard": 0.941704927431419,
+          "n_adj": 4,
+          "score": 0.966704927431419
+        },
+        "samples": [
+          {
+            "edge_tp": 207,
+            "edge_fp": 0,
+            "edge_fn": 2,
+            "division_tp": 1,
+            "division_fp": 0,
+            "division_fn": 0,
+            "num_pred_nodes": 8413,
+            "node_recall": 0.9907407407407407,
+            "total_node_ratio": 0.13138784292630445,
+            "edge_jaccard": 0.9904306220095693,
+            "adj_edge_jaccard": 0.9774175677101697,
+            "dataset": "44b6_341df25f"
+          },
+          {
+            "edge_tp": 67,
+            "edge_fp": 2,
+            "edge_fn": 1,
+            "division_tp": 0,
+            "division_fp": 0,
+            "division_fn": 0,
+            "num_pred_nodes": 31608,
+            "node_recall": 1.0,
+            "total_node_ratio": -0.18357225881441303,
+            "edge_jaccard": 0.9571428571428572,
+            "adj_edge_jaccard": 0.9747133447722367,
+            "dataset": "44b6_53f95252"
+          },
+          {
+            "edge_tp": 1182,
+            "edge_fp": 46,
+            "edge_fn": 31,
+            "division_tp": 1,
+            "division_fp": 1,
+            "division_fn": 1,
+            "num_pred_nodes": 29394,
+            "node_recall": 1.0,
+            "total_node_ratio": -0.03562992125984252,
+            "edge_jaccard": 0.9388403494837172,
+            "adj_edge_jaccard": 0.942185430256484,
+            "dataset": "6bba_337b1b3a"
+          },
+          {
+            "edge_tp": 595,
+            "edge_fp": 22,
+            "edge_fn": 31,
+            "division_tp": 0,
+            "division_fp": 0,
+            "division_fn": 4,
+            "num_pred_nodes": 5561,
+            "node_recall": 0.9770642201834863,
+            "total_node_ratio": -0.08143376280145359,
+            "edge_jaccard": 0.9182098765432098,
+            "adj_edge_jaccard": 0.9256872050720469,
+            "dataset": "6bba_afb141ff"
+          }
+        ],
+        "scope": "training diagnostic; pretrained checkpoint training membership unverified",
+        "official_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2"
+      }
+    }
+  },
+  "scope": "IN-SAMPLE: every diagnostic video belongs to secondary checkpoint training set",
+  "quality_status": "unverified",
+  "leaderboard_submitted": false,
+  "candidate_minus_control": {
+    "score": 9.81796478494168e-06,
+    "adj_edge_jaccard": 9.81796478494168e-06,
+    "division_jaccard": 0.0
+  },
+  "checkpoint_train_overlap": [
+    "44b6_341df25f",
+    "44b6_53f95252",
+    "6bba_337b1b3a",
+    "6bba_afb141ff"
+  ],
+  "interpretation": "No additional annotated correct edges/divisions; E001 closed without demonstrated gain."
+}

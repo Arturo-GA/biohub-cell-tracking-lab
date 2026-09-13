@@ -6,7 +6,7 @@ Base: primeras siete celdas de Harmonic Fusion congeladas. Se retira el sweep po
 
 Medir: tiempo, nodos, enlaces, divisiones, hash del CSV, adjusted edge Jaccard y división oficial. Validar que todos los datasets estén presentes y el grafo use coordenadas reales. No confundir ejecución sobre cuatro muestras visibles con evaluación del test oculto.
 
-## E001 — Division Guard (implementado)
+## E001 — Division Guard (cerrado: sin mejora demostrada)
 
 **Hipótesis:** una fusión simétrica de asociaciones hacia delante y hacia atrás puede debilitar asociaciones correctas alrededor de una división, donde las entradas invertidas difieren del patrón de entrenamiento. El predictor inverso no tiene por qué aportar la misma evidencia en ese caso.
 
@@ -20,7 +20,7 @@ El módulo no crea nodos, enlaces ni divisiones. El ILP existente sigue decidien
 
 **Posible fallo:** proteger una falsa división causada por células cercanas o por exceso de confianza. Aunque no cambie directamente la topología, al cambiar puntuaciones puede alterar muchos enlaces del solver. Vigilar el término de aristas, no solo la división. No se afirma que esta regla sea una novedad científica ni una implementación del paper HOCT.
 
-**Prueba actual:** `kaggle/diagnostic` ejecuta control y candidato con los mismos pesos y muestra determinista de train. La métrica se aplica al CSV final redondeado. La pertenencia de esos videos al train de los pesos públicos está sin verificar; sirve para detectar daños y comprobar el mecanismo, no para certificar generalización.
+**Resultado:** control 0.9666951095, candidato 0.9667049274; delta +0.000009818. Los conteos de aciertos/errores de aristas y divisiones son idénticos. Solo cambian cuatro nodos predichos y el ajuste de conteo. Los cuatro videos se encontraron en el entrenamiento del segundo detector. Se cierra sin mejora de tracking demostrada. Registro: `results/E001_completed.json`.
 
 ## E002 — FOCUS-3D como maestro de un detector rápido (diseñado)
 
@@ -28,7 +28,9 @@ Primero segmentar un subconjunto permitido de train; medir cobertura de los cent
 
 Comparaciones: mismo linker con detector actual vs detector destilado; después combinación selectiva solo en huecos confirmados. Registrar estabilidad temporal de detecciones y precisión de localización. La inferencia completa de FOCUS-3D puede exceder el límite, según un participante; distilar es una propuesta para reducir ese coste, no una aceleración ya medida.
 
-## E003 — HOCT sobre máscaras reales (diseñado)
+## E003 — HOCT sobre máscaras derivadas de intensidad (implementado)
+
+Implementación completa y notebook Kaggle en `kaggle/hoct_diagnostic`; variante de test en `kaggle/hoct_test`. Consulta `docs/HOCT_IMPLEMENTATION.es.md` para conocer las diferencias con HOCT oficial. Sustituye todas las asociaciones, extrae morfología de imágenes y resuelve linajes con matching capacitado. Conserva detecciones para atribuir las diferencias al enlazador.
 
 Usar un checkpoint público local y máscaras 3D derivadas de imágenes. Medir su linker con detecciones fijas antes de mezclar detectores. Probar CPU y GPU, memoria y tiempo por video. Reconstruir enlaces consecutivos válidos: HOCT admite gaps que no se deben exportar directamente como enlaces que salten frames.
 
@@ -45,4 +47,4 @@ No se transporta el umbral 0.01 de RSNA a esta métrica. No se promueve automát
 
 ## Estado
 
-Ver `results/STATUS.json`. Las rutas E002/E003 son propuestas pendientes; no hay entrenamiento FOCUS-3D/HOCT en este repositorio. E001 y el empaquetado tienen pruebas funcionales locales, además de la ejecución remota iniciada.
+Ver `results/STATUS.json`. E002 sigue pendiente. E003 usa inferencia HOCT real con pesos públicos; no se ha realizado entrenamiento HOCT o FOCUS-3D. E001 terminó sin ganancia demostrada y no se seguirá ajustando como línea principal.
