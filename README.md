@@ -4,6 +4,8 @@ Repositorio privado de Arturo para [Biohub — Cell Tracking During Development]
 
 La meta es mejorar el tracking real con experimentos reproducibles. **Todavía no hay un score propio confirmado ni evidencia de alcanzar el podio.** El notebook aportado contiene un hack antiguo; el control actual procede de una referencia pública más reciente.
 
+La referencia completa terminó en 26,14 minutos y se envió a Kaggle: **submission 56214656**, [Harmonic Control versión 1](https://www.kaggle.com/code/jarturo/biohub-lab-harmonic-control), script version `349618616`. Score pendiente al último chequeo. El CSV final se validó y su hash se verificó tras descargarlo. Es la referencia pública congelada, no una mejora atribuida a HOCT. [Recibo](results/E000_test_completed.json).
+
 - [Investigación, papers y prioridades](docs/RESEARCH.es.md).
 - [Auditoría del notebook y de la métrica](docs/AUDIT.es.md).
 - [Experimentos y criterios de decisión](docs/EXPERIMENTS.es.md).
