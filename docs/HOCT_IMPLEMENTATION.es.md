@@ -31,3 +31,9 @@ El diagnóstico escribe `hoct_receipt.json`, métricas oficiales, tamaños de m�
 Riesgos que la ejecución debe medir: máscaras pequeñas o erróneas, representación fuera del dominio de entrenamiento de HOCT, pérdida de contexto al dividir ventanas y divisiones falsas. La detección se conserva para atribuir las diferencias al nuevo enlazador; aún no es un detector independiente.
 
 FOCUS-3D sigue siendo una ruta distinta para mejorar detección/segmentación. El repositorio público está disponible, pero el modelo de Hugging Face pide aceptar acceso y compartir contacto. No se ha aceptado ese trámite ni se han sustituido sus pesos por archivos de procedencia desconocida.
+
+## Reproducción
+
+`python scripts/prepare_hoct_assets.py` descarga únicamente pesos públicos del release oficial y comprueba su SHA256; genera `artifacts/hoct_public_weights` con pesos, licencia y procedencia. Crear el dataset de Kaggle desde esa carpeta (`kaggle datasets create -p . -t`) evita un error del cliente Windows con rutas relativas que contienen `/`. El dataset es privado por defecto.
+
+`python scripts/build_hoct_notebooks.py` empaqueta el código y genera los dos notebooks. El diagnóstico adjunta las salidas ya existentes de `jarturo/biohub-lab-official-metric-ab`; no vuelve a subir sus predicciones. `hoct_test` ejecuta el detector sobre los inputs de esa ejecución, de modo que no depende de IDs o predicciones fijas del test visible y sirve para una eventual reevaluación con test oculto.

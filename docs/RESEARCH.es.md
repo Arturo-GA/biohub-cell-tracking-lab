@@ -1,6 +1,6 @@
 # Investigación para Biohub — 13 de septiembre de 2026
 
-La oportunidad más interesante que encontré es **combinar un detector 3D nuevo y destilado con un linker que modele mejor las divisiones**. FOCUS-3D y HOCT son las dos líneas principales. La prueba Division Guard es un experimento pequeño para empezar a medir; por sí sola no constituye una estrategia demostrada de podio.
+La oportunidad más interesante que encontré es **combinar un detector 3D nuevo y destilado con un linker que modele mejor las divisiones**. FOCUS-3D y HOCT son las dos líneas principales. Division Guard ya terminó sin recuperar ninguna arista anotada ni división adicional y se cerró. HOCT ya tiene implementación de inferencia propia y ejecución en Kaggle; ver `HOCT_IMPLEMENTATION.es.md`.
 
 ## Situación verificada
 
@@ -31,6 +31,8 @@ En el [anuncio de HOCT](https://www.kaggle.com/competitions/biohub-cell-tracking
 El [reporte del hack](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/714101) explica la discrepancia entre CSV y evaluación local del notebook entregado. La auditoría del repositorio oficial confirma que hay reglas nuevas; los rankings históricos de esos notebooks no son una base estable para decidir.
 
 ## Repositorios de otros participantes
+
+La revisión técnica adicional de [NucVerse3D](https://github.com/Segovia-lab/NucVerse3D) confirmó pesos públicos en [Zenodo](https://doi.org/10.5281/zenodo.18517324), con modelos específicos y generalistas. Su implementación usa TensorFlow 2.16.2; el README describe pesos de unos 486 MB por modelo y predicción de máscara más campo de gradientes. Es una alternativa de segmentación sin el trámite de acceso de FOCUS-3D, pero integrar un segundo entorno CUDA y medir coste/dominio requiere trabajo adicional. No se ha ejecutado en este proyecto.
 
 El [proyecto de matt-ceran](https://github.com/matt-ceran/biohub-cell-tracking) aporta una comparación distinta: propuestas DoG, filtrado CNN, min-cost-flow de toda la película y validación bloqueada. Lo útil es contrastar cuánto aportan detector y linker por separado. Sus resultados locales no equivalen a podio ni se reutilizaron como evidencia propia.
 
