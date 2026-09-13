@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-09-13",
+  "harmonic_url": "https://www.kaggle.com/code/flexonafft/biohub-harmonic-fusion",
+  "harmonic_notebook_sha256": "e378e723ff30c3bebbe21b68553b3c666c4592141288f32529c1322b790fb44a",
+  "inference_sha256": "a00278bbff3b4c9a3961be509b054513cc34ac398340f5a49e50e5c51d22143c",
+  "included_cells": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "excluded_cells_reason": "Old proxy metric and unverified holdout selection/sweep",
+  "user_notebook_url": "https://www.kaggle.com/code/amanatar/improved-metric-hack-last-call",
+  "official_repository": "https://github.com/royerlab/kaggle-cell-tracking-competition",
+  "official_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "official_license": "BSD-3-Clause",
+  "metric_sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+  "division_metric_sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9"
+}

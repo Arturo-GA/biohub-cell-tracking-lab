@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-13",
+  "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
+  "github_private": true,
+  "kaggle_diagnostic": "jarturo/biohub-lab-official-metric-ab",
+  "kaggle_version": 1,
+  "last_observed_status": "RUNNING",
+  "local_tests_passed": 15,
+  "notebooks_schema_validated": 3,
+  "own_leaderboard_score": null,
+  "leaderboard_submitted": false,
+  "quality_status": "unverified",
+  "training_split_membership_verified": false,
+  "implemented": ["fixed_harmonic_control", "division_aware_reverse_fusion", "final_csv_validation", "pinned_official_evaluation", "diagnostic_ab_notebook"],
+  "research_only": ["FOCUS-3D_distillation", "HOCT_linker", "dense_embedding_linker"]
+}
