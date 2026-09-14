@@ -40,14 +40,16 @@ def template_bank(store,names,held_group,limit=256,seed=20260914):
     return np.stack([bank[i] for i in selected]),[sources[i] for i in selected]
 
 
-def render_scene(seed,bank=None,shape=(17,33,33),cells=10,division_probability=.22,force_crossing=False):
-    """Five frames; every rendered cell has a node and all parent edges are known.
+def render_scene(seed,bank=None,shape=(17,33,33),cells=10,division_probability=.22,force_crossing=False,frames=5):
+    """Every rendered cell has a node and all parent edges are known.
 
     Daughters inherit their mother's texture and conserve approximate integrated
     fluorescence. Independent nearby cells continue moving through mitosis frames.
     Coordinates are exported in Biohub's original anisotropic voxel convention.
     """
-    rng=np.random.default_rng(seed); shape=np.asarray(shape); T=5
+    rng=np.random.default_rng(seed); shape=np.asarray(shape); T=frames
+    if T!=5 and T<7: raise ValueError('Use five frames or at least seven for full event context')
+    division_range=(1,4) if T==5 else (3,T-2)
     if np.any(shape<13): raise ValueError('Scene too small for trajectories')
     volume=np.zeros((T,*shape),np.float32); coords=[]; edges=[]; prev={}; events=[]
     margin=np.array([4.,7.,7.]); center=(shape-1)/2
@@ -60,7 +62,7 @@ def render_scene(seed,bank=None,shape=(17,33,33),cells=10,division_probability=.
         radius=rng.uniform(1.05,2.25,3)
         direction=rng.normal(size=3); direction/=np.linalg.norm(direction)
         states.append(dict(identity=identity,pos=pos,velocity=velocity,radius=radius,
-            texture=texture,amplitude=rng.uniform(45,150),division=(int(rng.integers(1,4)) if rng.random()<division_probability else -1),
+            texture=texture,amplitude=rng.uniform(45,150),division=(int(rng.integers(*division_range)) if rng.random()<division_probability else -1),
             direction=direction,parent=None))
     if force_crossing:
         if cells<2: raise ValueError('A crossing needs two independent cells')
@@ -138,7 +140,7 @@ def dense_examples(coords,edges,config=TemporalConfig()):
     return ex
 
 
-def build_cache(store,split,root,scenes=2048,seed=7302026):
+def build_cache(store,split,root,scenes=2048,seed=7302026,frames=5):
     root=Path(root);root.mkdir(parents=True,exist_ok=True); start=time.monotonic()
     bank,sources=template_bank(store,split['train'],split['held_group'])
     config=TemporalConfig(); rows=[]; all_events=0
@@ -146,7 +148,7 @@ def build_cache(store,split,root,scenes=2048,seed=7302026):
     scene_seeds=rng.integers(0,2**31-1,size=scenes)
     for i,s in enumerate(scene_seeds):
         crossing=bool(rng.random()<.25)
-        volume,coords,edges,events=render_scene(int(s),bank,cells=int(rng.integers(7,14)),force_crossing=crossing)
+        volume,coords,edges,events=render_scene(int(s),bank,cells=int(rng.integers(7,14)),force_crossing=crossing,frames=frames)
         ex=dense_examples(coords,edges,config); name=f'synthetic_{i:05d}'; folder=root/name;folder.mkdir(exist_ok=True)
         np.save(folder/'patches.npy',extract_patches(volume,coords,config))
         np.savez(folder/'graph.npz',coords=coords,edges=edges,**ex)
@@ -158,6 +160,6 @@ def build_cache(store,split,root,scenes=2048,seed=7302026):
     receipt=dict(complete=True,videos=rows,config=asdict(config),template_sources=sources,
         template_sha256=hashlib.sha256(bank.tobytes()).hexdigest(),held_group=split['held_group'],
         training_videos=split['train'],dev_videos=split['dev'],seed=seed,seconds=time.monotonic()-start,
-        generated_divisions=all_events,scope='Fully labelled procedural five-frame movies; train-embryo textures only; no claim of photorealistic validation.')
+        generated_divisions=all_events,frames=frames,scope='Fully labelled procedural movies; train-embryo textures only; no claim of photorealistic validation.')
     (root/'cache_manifest.json').write_text(json.dumps(receipt,indent=2))
     return receipt

@@ -1,0 +1,14 @@
+{
+  "experiment": "E007",
+  "checked_at_utc": "2026-09-14T16:13:52.105691+00:00",
+  "local_tests_passed": 44,
+  "test_seconds": 5.87,
+  "notebook_schema_validated": true,
+  "packaged_python_ast_validated": true,
+  "payload_sha256": "4c5a8d1256e18cafaf5f63322669f84eb7026e182e1b2545f809e27c5d43edf2",
+  "remote_status": {
+    "status": "RUNNING"
+  },
+  "remote_status_string": "KernelWorkerStatus.RUNNING",
+  "scope": "Engineering verification and launch; no quality result available."
+}

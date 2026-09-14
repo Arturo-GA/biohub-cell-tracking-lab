@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 39,
+  "local_tests_passed": 44,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -51,10 +51,10 @@
     "submitted_by_this_task": false,
     "public_score": 0.885
   },
-  "notebooks_schema_validated": 10,
+  "notebooks_schema_validated": 11,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "dense_pretraining_improved_division_ranking_but_complete_linker_still_below_control",
+  "quality_status": "mitosis_specialist_pending_quality_evaluation",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -72,7 +72,10 @@
     "lineage_hypothesis_integer_program",
     "embryo_holdout_training",
     "dense_procedural_lineage_renderer",
-    "embryo_safe_synthetic_pretraining"
+    "embryo_safe_synthetic_pretraining",
+    "six_timepoint_mitosis_specialist",
+    "development_only_division_threshold",
+    "additive_orphan_assignment_preserving_baseline"
   ],
   "research_only": [
     "FOCUS-3D_distillation",
@@ -171,7 +174,7 @@
     "launch_receipt": "results/E006_launch.json",
     "renderer_smoke_receipt": "results/E006_renderer_smoke.json",
     "checked_at_utc": "2026-09-14T15:51:44.677879+00:00",
-    "next_action": "Retain E006 weights as a research component; do not submit this complete linker replacement. Keep Harmonic as the public control. Next implementation should test division-specific evidence while measuring preservation of correct baseline links.",
+    "next_action": "E006 weights are frozen inputs to E007; E006 itself remains rejected as a complete linker replacement.",
     "results_available": true,
     "receipt": "results/E006_completed.json",
     "decision": "do_not_submit_current_complete_linker_replacement",
@@ -210,5 +213,30 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": false
+  "next_experiment_started": true,
+  "active_experiment": "E007",
+  "E007": {
+    "kernel": "jarturo/biohub-lab-mitosis-specialist",
+    "version": 1,
+    "payload_sha256": "4c5a8d1256e18cafaf5f63322669f84eb7026e182e1b2545f809e27c5d43edf2",
+    "last_observed_status": "RUNNING",
+    "checked_at_utc": "2026-09-14T16:13:52.105691+00:00",
+    "run_started": true,
+    "local_wait_active": false,
+    "leaderboard_submitted": false,
+    "results_available": false,
+    "folds": 2,
+    "scenes_per_fold": 2048,
+    "synthetic_frames": 9,
+    "pretrain_steps_per_fold": 4000,
+    "real_finetune_steps_per_fold": 3000,
+    "parameters_per_model": 365891,
+    "trainable_parameters_per_model": 168385,
+    "launch_receipt": "results/E007_launch.json",
+    "candidate_inventory": "results/E007_candidate_inventory.json",
+    "documentation": "docs/MITOSIS_SPECIALIST.es.md",
+    "experiment": "New six-timepoint three-view mitosis classifier with frozen E006 features; maximum-weight orphan assignment preserving every Harmonic node and edge.",
+    "selection": "Checkpoint by development AP; score threshold by development F0.5. Diagnostic embryo excluded from both.",
+    "next_action": "User will notify completion. Retrieve mitosis_experiment_receipt.json, verify source/checkpoints/final CSV and compare official metrics before test inference."
+  }
 }

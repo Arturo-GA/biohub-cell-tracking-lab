@@ -1,0 +1,26 @@
+{
+  "language": "python",
+  "kernel_type": "notebook",
+  "dataset_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "id": "jarturo/biohub-lab-mitosis-specialist",
+  "title": "Biohub Lab Mitosis Specialist",
+  "code_file": "notebook.ipynb",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "kernel_sources": [
+    "jarturo/biohub-lab-temporal-prepare",
+    "jarturo/biohub-lab-official-metric-ab",
+    "jarturo/biohub-lab-dense-lineage-pretraining"
+  ],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

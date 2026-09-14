@@ -1,0 +1,43 @@
+{
+  "scope": "Candidate enumeration on fixed control graphs only; no labels or quality measurement",
+  "statistics": {
+    "44b6_341df25f": {
+      "nodes": 8413,
+      "baseline_edges": 8179,
+      "candidates": 860,
+      "mothers": 818,
+      "orphan_daughters": 148,
+      "patch_cache_bytes": 21757365,
+      "seconds": 0.10899999999674037
+    },
+    "44b6_53f95252": {
+      "nodes": 31608,
+      "baseline_edges": 30634,
+      "candidates": 8061,
+      "mothers": 6628,
+      "orphan_daughters": 689,
+      "patch_cache_bytes": 151911405,
+      "seconds": 0.5
+    },
+    "6bba_337b1b3a": {
+      "nodes": 29397,
+      "baseline_edges": 28397,
+      "candidates": 8198,
+      "mothers": 5295,
+      "orphan_daughters": 859,
+      "patch_cache_bytes": 114470010,
+      "seconds": 0.5160000000032596
+    },
+    "6bba_afb141ff": {
+      "nodes": 5562,
+      "baseline_edges": 5285,
+      "candidates": 829,
+      "mothers": 699,
+      "orphan_daughters": 222,
+      "patch_cache_bytes": 19923660,
+      "seconds": 0.0470000000204891
+    }
+  },
+  "parameters": 365891,
+  "trainable_parameters": 168385
+}

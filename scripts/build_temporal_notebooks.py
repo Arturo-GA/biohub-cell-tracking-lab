@@ -13,7 +13,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def build(mode):
     paths=list((ROOT/'src').rglob('*.py'))+[ROOT/'src/biohub_official/LICENSE',
         ROOT/'baseline/harmonic_inference.py',ROOT/'scripts/audit_temporal_data.py']
-    for name in ('temporal_runner.py','notebook_runner.py','dense_runner.py'):
+    for name in ('temporal_runner.py','notebook_runner.py','dense_runner.py','specialist_runner.py'):
         if (ROOT/'scripts'/name).exists(): paths.append(ROOT/'scripts'/name)
     buf=io.BytesIO()
     with zipfile.ZipFile(buf,'w',zipfile.ZIP_DEFLATED) as archive:
@@ -39,11 +39,11 @@ assert source.count(marker)==1
 bootstrap=package/'bootstrap.py'
 bootstrap.write_text(source.split(marker)[0])
 subprocess.run([sys.executable,'-u',str(bootstrap)],env=env,check=True)
-script={('audit_temporal_data.py' if mode=='audit' else 'dense_runner.py' if mode=='dense' else 'temporal_runner.py')!r}
+script={('audit_temporal_data.py' if mode=='audit' else 'dense_runner.py' if mode=='dense' else 'specialist_runner.py' if mode=='specialist' else 'temporal_runner.py')!r}
 subprocess.run([sys.executable,'-u',str(package/'scripts'/script),{mode!r},str(package)],env=env,check=True)
 '''
     ast.parse(code)
-    title=('Biohub Lab Dense Lineage Pretraining' if mode=='dense' else 'Biohub Lab Temporal '+('Submission' if mode=='test' else mode.title()))
+    title=('Biohub Lab Mitosis Specialist' if mode=='specialist' else 'Biohub Lab Dense Lineage Pretraining' if mode=='dense' else 'Biohub Lab Temporal '+('Submission' if mode=='test' else mode.title()))
     nb=dict(nbformat=4,nbformat_minor=5,metadata={'kernelspec':{'name':'python3','display_name':'Python 3','language':'python'}},
         cells=[dict(id='description',cell_type='markdown',metadata={},source=[f'# {title}\n',
             'Own temporal association experiment. Split provenance and evaluation scope are recorded explicitly.\n']),
@@ -55,6 +55,8 @@ subprocess.run([sys.executable,'-u',str(package/'scripts'/script),{mode!r},str(p
     if mode=='test': meta['kernel_sources']=['jarturo/biohub-lab-temporal-train']
     if mode=='dense': meta['kernel_sources']=['jarturo/biohub-lab-temporal-prepare',
         'jarturo/biohub-lab-official-metric-ab','jarturo/biohub-lab-temporal-train']
+    if mode=='specialist': meta['kernel_sources']=['jarturo/biohub-lab-temporal-prepare',
+        'jarturo/biohub-lab-official-metric-ab','jarturo/biohub-lab-dense-lineage-pretraining']
     folder=ROOT/'kaggle'/('temporal_'+mode)
     folder.mkdir(exist_ok=True)
     (folder/'notebook.ipynb').write_text(json.dumps(nb,indent=1),encoding='utf8')

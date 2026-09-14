@@ -27,6 +27,7 @@ La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envi�
 | `kaggle/temporal_train` | Dos modelos propios, cada uno excluyendo un embrión; después comparación con Harmonic | Pesos, splits y evaluaciones; sin submission |
 | `kaggle/temporal_test` | Ensemble de los dos modelos temporales sobre todo el test | `submission.csv` y recibo de inferencia |
 | `kaggle/temporal_dense` | E006: linajes densos sintéticos, preentrenamiento y adaptación por embrión | Pesos, manifiestos y comparación automática con E004 y Harmonic |
+| `kaggle/temporal_specialist` | E007: nueva red temporal de mitosis con E006 congelado y reparación aditiva de Harmonic | Pesos, umbrales de desarrollo, CSV diagnóstico y métrica oficial |
 
 El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
 
@@ -42,7 +43,9 @@ Los notebooks contienen el código necesario y adjuntan tres datasets públicos 
 
 ## Desarrollo
 
-**E006 completado, sin promoción a submission:** el preentrenamiento con 2.048 películas sintéticas por separación mejoró la AP de divisiones en ambos embriones reservados. Sin embargo, el score oficial condicional fue **0.9436645 frente a 0.9666951** de Harmonic, con divisiones TP/FP/FN **1/9/6 frente a 2/1/5**. Se verificaron el código descargado, los pesos, la procedencia de las texturas y el CSV. No se inició otro notebook ni queda una espera local activa. [Diseño, resultados y límites](docs/DENSE_PRETRAINING.es.md), [recibo completo](results/E006_completed.json).
+**E006 completado, sin promoción a submission:** el preentrenamiento con 2.048 películas sintéticas por separación mejoró la AP de divisiones en ambos embriones reservados. Sin embargo, el score oficial condicional fue **0.9436645 frente a 0.9666951** de Harmonic, con divisiones TP/FP/FN **1/9/6 frente a 2/1/5**. Se verificaron el código descargado, los pesos, la procedencia de las texturas y el CSV. Al cerrar E006 no quedó una espera local activa. [Diseño, resultados y límites](docs/DENSE_PRETRAINING.es.md), [recibo completo](results/E006_completed.json).
+
+**E007 implementado:** especialista que analiza madre e hijas sobre seis tiempos, con una GRU y las representaciones congeladas de E006. Aprende con películas sintéticas de nueve frames y adaptación real con replay sintético; el umbral se elige exclusivamente en desarrollo. Añade relaciones hacia hijas sin padre y conserva todos los nodos y enlaces del control. No garantiza conservar el score si agrega falsas divisiones. [Diseño y protocolo](docs/MITOSIS_SPECIALIST.es.md). Consultar `results/STATUS.json` para distinguir implementación, ejecución y resultados.
 
 Pruebas: Python 3.12, PyTorch, NumPy, SciPy, scikit-image y nbformat. En PowerShell, desde la raíz:
 
