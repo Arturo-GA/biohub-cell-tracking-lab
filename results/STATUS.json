@@ -2,6 +2,13 @@
   "date": "2026-09-13",
   "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
   "github_private": true,
+  "external_leaderboard_reference": {
+    "kernel": "flexonafft/biohub-harmonic-fusion",
+    "score": 0.947,
+    "evidence": "user_reported_for_attached_notebook",
+    "receipt": "results/harmonic_user_reference.json",
+    "same_final_configuration_as_our_control": false
+  },
   "E001": {
     "kernel": "jarturo/biohub-lab-official-metric-ab",
     "version": 1,

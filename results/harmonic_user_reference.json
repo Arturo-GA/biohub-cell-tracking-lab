@@ -1,0 +1,31 @@
+{
+  "recorded_date": "2026-09-13",
+  "notebook": "biohub-harmonic-fusion.ipynb",
+  "upstream_kernel": "flexonafft/biohub-harmonic-fusion",
+  "attachment_sha256": "c1c220e5819740d10e8b33befb33c2984aa98825877578d11363d49177b3b749",
+  "leaderboard_score": 0.947,
+  "score_evidence": "reported_by_user_for_this_attachment; not independently verified through a submission receipt",
+  "submission_ref": null,
+  "comparison": {
+    "reference": "baseline/provenance.json",
+    "code_cells_compared": 12,
+    "all_cell_sources_identical_to_frozen_upstream": true,
+    "whole_notebook_bytes_identical": false,
+    "our_control_included_cells": [0, 1, 2, 3, 4, 5, 6]
+  },
+  "attached_saved_output": {
+    "evidence_scope": "saved notebook outputs, not a new execution",
+    "selected_postprocess": "tight55",
+    "selected_motion_relink_tight_um": 5.5,
+    "pre_sweep_submission_rows": 241189,
+    "final_submission_rows": 241306
+  },
+  "our_pending_control": {
+    "submission_ref": 56214656,
+    "motion_relink_tight_um": 6.0,
+    "submission_rows": 241189,
+    "equivalent_to_attached_final_submission": false,
+    "leaderboard_score": null
+  },
+  "decision": "Use the user-reported 0.947 as the external comparison target; do not attribute it to our control or infer a gain from the training diagnostic. Retain substantive new implementations as the main research direction."
+}

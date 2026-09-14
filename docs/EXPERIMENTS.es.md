@@ -6,6 +6,14 @@ Base: primeras siete celdas de Harmonic Fusion congeladas. Se retira el sweep po
 
 Medir: tiempo, nodos, enlaces, divisiones, hash del CSV, adjusted edge Jaccard y división oficial. Validar que todos los datasets estén presentes y el grafo use coordenadas reales. No confundir ejecución sobre cuatro muestras visibles con evaluación del test oculto.
 
+### Referencia de leaderboard aportada por Arturo — 2026-09-13
+
+Arturo reporta **0.947 en el leaderboard** para el archivo `biohub-harmonic-fusion.ipynb` adjunto. Se conserva como referencia externa aportada por el usuario; no se dispone del identificador de esa submission para verificarla de forma independiente. Registro: `results/harmonic_user_reference.json`.
+
+La comparación confirmó que las fuentes de las 12 celdas coinciden exactamente con el notebook público congelado; el archivo adjunto incluye salidas de ejecución. Esas salidas muestran que el sweep final seleccionó `tight55` (`MOTION_RELINK_TIGHT_UM=5.5`) y reescribió el CSV de 241,189 a 241,306 filas. Nuestro E000 ejecuta las primeras siete celdas y conserva `MOTION_RELINK_TIGHT_UM=6.0`, con 241,189 filas. Por tanto, **nuestro control no reproduce la configuración final del archivo asociado al 0.947**; la coincidencia de filas con la fase anterior tampoco prueba identidad del CSV.
+
+El objetivo de comparación es superar ese 0.947 reportado con evidencia de leaderboard. El 0.966695 local sobre train no demuestra que ya se haya superado. Se mantiene la prioridad del usuario por nuevas implementaciones sustanciales; este dato no inicia otro barrido de pequeños ajustes.
+
 ## E001 — Division Guard (cerrado: sin mejora demostrada)
 
 **Hipótesis:** una fusión simétrica de asociaciones hacia delante y hacia atrás puede debilitar asociaciones correctas alrededor de una división, donde las entradas invertidas difieren del patrón de entrenamiento. El predictor inverso no tiene por qué aportar la misma evidencia en ese caso.
