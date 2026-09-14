@@ -17,6 +17,8 @@ En los cuatro videos con detecciones Harmonic fijas, el score oficial pasó de *
 
 Los tiempos registrados por trabajador fueron 147,14 s y 113,77 s, con ejecución concurrente; su suma no es el tiempo de pared del notebook. Se conservan los modelos y la implementación para estudiar errores. No se ajustarán umbrales del leaderboard para presentar este resultado como una mejora.
 
+Una auditoría posterior de las probabilidades guardadas encontró 25 hipótesis de división por encima de 0,5 entre los cuatro videos; el optimizador seleccionó 14 bifurcaciones. Esos conteos no son TP ni FP: la métrica evalúa eventos en anotaciones escasas. En `6bba_afb141ff`, donde quedaron cuatro divisiones anotadas sin recuperar, ninguna de las 124 hipótesis superó 0,102. Allí la ausencia de bifurcaciones ya está determinada antes del optimizador. Esto localiza un fallo, pero no distingue por sí solo entre candidatos incorrectos, apariencia, geometría o calibración. No se modificaron umbrales. [Auditoría de probabilidades](../results/E004_probability_audit.json).
+
 ## Datos y separación
 
 La auditoría recorrió los **199 videos**, con **133.318 nodos, 128.883 enlaces y 151 divisiones anotadas**. El embrión `44b6` aporta 71 videos y 26 divisiones; `6bba`, 128 videos y 125 divisiones. Los organizadores confirmaron que hay dos embriones de entrenamiento y que los de test son distintos: [respuesta del host](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/716793). Recibo: `results/E004_data_audit.json`.

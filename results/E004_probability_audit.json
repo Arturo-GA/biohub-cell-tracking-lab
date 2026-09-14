@@ -1,0 +1,89 @@
+{
+  "scope": "Previously completed conditional diagnostic; distribution audit only, no labels matched or thresholds changed",
+  "videos": [
+    {
+      "video": "44b6_341df25f",
+      "nodes": 8413,
+      "edges": 8170,
+      "candidate_triples": 283,
+      "division_probability_quantiles": {
+        "min": 9.987911830933172e-09,
+        "p50": 0.00030119900475256145,
+        "p90": 0.03000550046563153,
+        "p99": 0.38767744064331067,
+        "max": 0.9549837708473206
+      },
+      "accepted_triples": 2,
+      "selected_forks": 2,
+      "high_probability_edges": 8231,
+      "orphan_probability_quantiles": [
+        0.0005602941382676363,
+        0.004322869796305899,
+        1.0
+      ]
+    },
+    {
+      "video": "44b6_53f95252",
+      "nodes": 31608,
+      "edges": 30631,
+      "candidate_triples": 1859,
+      "division_probability_quantiles": {
+        "min": 6.9184240558684e-09,
+        "p50": 0.00025713781360536814,
+        "p90": 0.010615356080234051,
+        "p99": 0.22473247349262238,
+        "max": 0.8807953596115112
+      },
+      "accepted_triples": 5,
+      "selected_forks": 1,
+      "high_probability_edges": 30870,
+      "orphan_probability_quantiles": [
+        0.001011786749586463,
+        0.009150976128876208,
+        0.9911512619256975
+      ]
+    },
+    {
+      "video": "6bba_337b1b3a",
+      "nodes": 29397,
+      "edges": 28367,
+      "candidate_triples": 3514,
+      "division_probability_quantiles": {
+        "min": 6.850220390930417e-10,
+        "p50": 0.00011855129923787899,
+        "p90": 0.008577837981283669,
+        "p99": 0.2534482453763469,
+        "max": 0.9594589471817017
+      },
+      "accepted_triples": 18,
+      "selected_forks": 11,
+      "high_probability_edges": 28730,
+      "orphan_probability_quantiles": [
+        0.00041204545414075255,
+        0.003990920819342138,
+        0.939323947429657
+      ]
+    },
+    {
+      "video": "6bba_afb141ff",
+      "nodes": 5562,
+      "edges": 5276,
+      "candidate_triples": 124,
+      "division_probability_quantiles": {
+        "min": 3.769427436850492e-08,
+        "p50": 6.0291327827144414e-05,
+        "p90": 0.005114257661625744,
+        "p99": 0.03689950291067353,
+        "max": 0.10123278945684433
+      },
+      "accepted_triples": 0,
+      "selected_forks": 0,
+      "high_probability_edges": 5309,
+      "orphan_probability_quantiles": [
+        1.930139296746347e-05,
+        0.003701797383837427,
+        0.9999962282180787
+      ]
+    }
+  ]
+}

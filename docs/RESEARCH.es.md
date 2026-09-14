@@ -48,6 +48,18 @@ La combinación candidata es: **FOCUS-3D como profesor → detector UNet3D desti
 
 Antes de ensemble, medir coincidencia de errores en nodos y aristas emparejados. Promediar modelos con fallos casi idénticos suele ofrecer menos que corregir el mecanismo que los produce. La comparación requiere videos independientes, procedencia de los pesos, escalas físicas correctas y tiempo medido en Kaggle. El plan ejecutable por etapas está en `EXPERIMENTS.es.md`.
 
+## Ampliación del 14 de septiembre durante E005
+
+La prueba E005 ya se lanzó con los pesos temporales existentes; estas fuentes no cambian esa submission. Tras localizar fallos de divisiones en E004, se añadieron tres referencias primarias:
+
+| Trabajo | Señal nueva que aporta | Aplicación y límite para Biohub |
+|---|---|---|
+| **CELLECT**, Nature Methods, 20 oct 2025 | UNet3D de dos frames con mapa de centros, embeddings densos de 64 canales y probabilidad de división; aprendizaje contrastivo. | Candidato a profesor de apariencia/división y fuente de centros complementarios. El paper muestra transferencia entre modalidades y especies, no una mejora medida en Biohub. [Paper](https://www.nature.com/articles/s41592-025-02886-x), [código de autores y pesos referenciados](https://github.com/zzz333za/CELLECT). |
+| **OrganoidTracker 2.0**, Nature Methods, 8 oct 2025 | Redes que predicen enlaces y divisiones más estimación de incertidumbre mediante alternativas de tracking. | Inspiración para comparar soluciones completas alrededor de una división. Los autores ofrecen modelos de C. elegans y organoides; su documentación actual indica migración de TensorFlow a PyTorch y conversión de pesos. El código mezcla MIT para redes y GPL para otros módulos; revisar archivos concretos antes de integrar. [Paper](https://www.nature.com/articles/s41592-025-02845-6), [repositorio](https://github.com/jvzonlab/OrganoidTracker), [documentación actual](https://jvzonlab.github.io/OrganoidTracker/INSTALLATION.html). |
+| **Tui**, 24 abr 2026 | Optimización con correcciones de linaje que considera divisiones y fusiones. | Referencia para restricciones que miren varias generaciones. Las fusiones no se trasladan a nuestro CSV, que admite un padre por hija. Sus benchmarks publicados no son Biohub ni demuestran transferencia a nuestros volúmenes. [Artículo](https://pmc.ncbi.nlm.nih.gov/articles/PMC13106940/), [código de autores](https://github.com/hftsai/tui). |
+
+Mi inferencia: la siguiente inversión sustancial debería aportar supervisión y apariencia de división adicionales, antes de ampliar el mismo clasificador entrenado con pocas divisiones. CELLECT y linajes sintéticos generados exclusivamente desde el embrión de entrenamiento son dos caminos a contrastar. Ninguno se ejecutó en esta ampliación; E005 es exclusivamente la medición de los pesos ya disponibles.
+
 ## Alcance de esta investigación
 
 Se revisaron fuentes primarias, repositorios y discusiones hasta la fecha indicada. No se verificó exhaustivamente cada notebook público ni se reprodujeron los scores publicados por terceros. El acceso al texto de algunos papers falló; se identifica arriba cuando afectó el análisis. HOCT ya se evaluó con máscaras aproximadas y nodos fijos: 0.9195083 frente a 0.9666951 del control, un resultado negativo. FOCUS-3D y los demás detectores no se han entrenado/evaluado en nuestra cuenta.

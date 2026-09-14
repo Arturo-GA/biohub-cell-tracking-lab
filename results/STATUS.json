@@ -128,12 +128,15 @@
     "version": 1,
     "payload_sha256": "cbe246e6bcb1c1d646897d16786eed5cfaf49acb9bbe66b1cd014002abdf5337",
     "test_run_started": true,
-    "last_observed_status": "ACCEPTED",
+    "last_observed_status": "RUNNING",
     "leaderboard_submitted": false,
     "decision": "submit_existing_two_model_ensemble_for_external_measurement_as_authorized_by_user",
     "training_reused": "jarturo/biohub-lab-temporal-train version 2",
     "local_validation_note": "E004 single-fold comparison was negative; E005 ensemble has no independent local score",
     "launch_receipt": "results/E005_test_launch.json",
-    "checked_at_utc": "2026-09-14T05:19:55.162478+00:00"
+    "checked_at_utc": "2026-09-14T05:19:55.162478+00:00",
+    "local_wait_active": false,
+    "next_action": "User will notify when Kaggle export completes; then download, validate final CSV and submit version 1.",
+    "waiting_stopped_at_user_request_utc": "2026-09-14T05:39:38.809805+00:00"
   }
 }
