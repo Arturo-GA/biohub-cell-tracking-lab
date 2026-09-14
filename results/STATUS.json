@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 10,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "temporal_ensemble_failed_to_improve_public_baseline",
+  "quality_status": "dense_pretraining_improved_division_ranking_but_complete_linker_still_below_control",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -70,7 +70,9 @@
     "learned_parent_candidate_attention",
     "symmetric_division_triples",
     "lineage_hypothesis_integer_program",
-    "embryo_holdout_training"
+    "embryo_holdout_training",
+    "dense_procedural_lineage_renderer",
+    "embryo_safe_synthetic_pretraining"
   ],
   "research_only": [
     "FOCUS-3D_distillation",
@@ -157,7 +159,7 @@
     "kernel": "jarturo/biohub-lab-dense-lineage-pretraining",
     "version": 1,
     "payload_sha256": "fe82ed0a7ab5057572148654c4d7e3a63791be44cdba663ae85f608cd64e8674",
-    "last_observed_status": "RUNNING",
+    "last_observed_status": "COMPLETE",
     "run_started": true,
     "local_wait_active": false,
     "leaderboard_submitted": false,
@@ -168,8 +170,45 @@
     "experiment": "Dense procedural lineage pretraining with training-embryo textures; same E004 architecture and fine-tuning protocol",
     "launch_receipt": "results/E006_launch.json",
     "renderer_smoke_receipt": "results/E006_renderer_smoke.json",
-    "checked_at_utc": "2026-09-14T15:22:59.098075+00:00",
-    "next_action": "User will notify when notebook completes. Review dense_experiment_receipt.json, per-fold holdout metrics and conditional official metrics before test inference.",
-    "results_available": false
-  }
+    "checked_at_utc": "2026-09-14T15:51:44.677879+00:00",
+    "next_action": "Retain E006 weights as a research component; do not submit this complete linker replacement. Keep Harmonic as the public control. Next implementation should test division-specific evidence while measuring preservation of correct baseline links.",
+    "results_available": true,
+    "receipt": "results/E006_completed.json",
+    "decision": "do_not_submit_current_complete_linker_replacement",
+    "result": {
+      "conditional_score": 0.9436644814334979,
+      "conditional_control_score": 0.9666951094666341,
+      "delta_vs_E004": {
+        "score": 0.002420818085668519,
+        "adj_edge_jaccard": -0.0038291819143314587,
+        "division_jaccard": 0.0625
+      },
+      "delta_vs_harmonic": {
+        "score": -0.023030628033136158,
+        "adj_edge_jaccard": -0.0042806280331361135,
+        "division_jaccard": -0.1875
+      },
+      "division_tp_fp_fn": [
+        1,
+        9,
+        6
+      ],
+      "control_division_tp_fp_fn": [
+        2,
+        1,
+        5
+      ],
+      "predicted_forks": 340,
+      "control_predicted_forks": 73,
+      "division_ap": {
+        "44b6": 0.38193837894812765,
+        "6bba": 0.08200274845368315
+      },
+      "seconds": 416.91416945599997
+    },
+    "downloaded_source_verified": true,
+    "downloaded_csv_verified": true,
+    "checkpoint_contents_verified": true
+  },
+  "next_experiment_started": false
 }

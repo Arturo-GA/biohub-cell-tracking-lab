@@ -42,7 +42,7 @@ Los notebooks contienen el código necesario y adjuntan tres datasets públicos 
 
 ## Desarrollo
 
-**E006 implementado:** 2.048 películas sintéticas por separación, 4.000 pasos de preentrenamiento y 3.000 de adaptación real. Las texturas se extraen exclusivamente del embrión de entrenamiento. Se conserva la arquitectura de E004 para estudiar la aportación de supervisión densa. [Diseño, ejecución y límites](docs/DENSE_PRETRAINING.es.md). El estado remoto y los recibos se registran en `results/STATUS.json`.
+**E006 completado, sin promoción a submission:** el preentrenamiento con 2.048 películas sintéticas por separación mejoró la AP de divisiones en ambos embriones reservados. Sin embargo, el score oficial condicional fue **0.9436645 frente a 0.9666951** de Harmonic, con divisiones TP/FP/FN **1/9/6 frente a 2/1/5**. Se verificaron el código descargado, los pesos, la procedencia de las texturas y el CSV. No se inició otro notebook ni queda una espera local activa. [Diseño, resultados y límites](docs/DENSE_PRETRAINING.es.md), [recibo completo](results/E006_completed.json).
 
 Pruebas: Python 3.12, PyTorch, NumPy, SciPy, scikit-image y nbformat. En PowerShell, desde la raíz:
 

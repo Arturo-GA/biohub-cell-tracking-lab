@@ -62,19 +62,21 @@ Arturo autorizó medir los pesos de E004 en Kaggle pese al resultado local negat
 
 En el test visible el detector es idéntico a E000, incluidos su hash y sus 122.745 nodos. El ensemble agrega 226 enlaces, retira 272 y no produce bifurcaciones, frente a 98 bifurcaciones predichas por el control. Esto identifica una limitación del candidato, sin confundir esos conteos con eventos verdaderos anotados ni explicar por sí solo la descomposición del score oculto. Se cierra esta versión. [Resultado y límites](TEMPORAL_SUBMISSION.es.md), `results/E005_test_completed.json`.
 
-## E006 — Supervisión densa antes de la adaptación real (implementado)
+## E006 — Supervisión densa antes de la adaptación real (completado)
 
 Renderer procedural de películas 3D completamente etiquetadas, con divisiones y cruces negativos. Cada separación genera 2.048 escenas utilizando texturas exclusivamente de sus videos de entrenamiento. El modelo mantiene la arquitectura y adaptación de E004; cambia su inicialización mediante 4.000 pasos de preentrenamiento. El notebook encadena la adaptación de 3.000 pasos y ambas evaluaciones, con comparación automática frente a E004 y Harmonic. [Diseño y límites](DENSE_PRETRAINING.es.md).
+
+**Resultado:** score oficial condicional **0.9436645**, una mejora de **0.0024208** sobre E004 pero una pérdida de **0.0230306** frente a Harmonic. Divisiones TP/FP/FN **1/9/6**, frente a **2/1/5** del control. La AP de división mejora de 0.1872 a 0.3819 en 44b6 y de 0.0527 a 0.0820 en 6bba; la exactitud al elegir padres sigue por debajo del vecino más cercano en ambos embriones. Se completaron ambos entrenamientos y la verificación de pesos, manifiestos y CSV. Se cierra este reemplazo completo del enlazador sin submission, conservando sus pesos para investigación. Registro: `results/E006_completed.json`.
 
 ## Orden y decisión actual
 
 1. Conservar E000 y su 0.946 público como control. E001, E003 y E004 no demostraron mejora local; E005 confirmó un resultado público inferior con los pesos temporales. Se cierra el ensemble actual.
 2. Mantener la separación por embrión de E004 para nuevos modelos; declarar por separado cualquier dependencia de un detector entrenado con el embrión reservado.
-3. E006 implementa la supervisión de divisiones con linajes densos. Se generan las texturas con el embrión de entrenamiento para conservar la separación. Revisar sus resultados completos antes de preparar otra submission.
+3. E006 demostró una mejora medida del ranking de divisiones, pero no del tracking completo frente a Harmonic. No promoverlo ni repetir automáticamente el mismo reemplazo con otro umbral. La siguiente implementación debe estudiar evidencia especializada de mitosis junto con las asociaciones del control y medir también los enlaces correctos que conserva o destruye. Es una dirección pendiente, no una mejora demostrada ni un notebook iniciado.
 4. E002 queda como ruta alternativa si una evaluación independiente identifica pérdidas de detección. Una mejora de clasificación o de un diagnóstico condicional no equivale por sí sola a una mejora de leaderboard.
 
 No se transporta el umbral 0.01 de RSNA a esta métrica. No se promueve automáticamente una diferencia pequeña de un diagnóstico sobre train. Para análisis de incertidumbre, re-muestrear videos o adquisiciones, nunca miles de enlaces como si fueran independientes. Con pocos embriones, el intervalo también tiene limitaciones.
 
 ## Estado
 
-Ver `results/STATUS.json`. E002 sigue pendiente. E003 usó inferencia HOCT real con pesos públicos; no se ha realizado entrenamiento HOCT o FOCUS-3D. E004 entrenó dos modelos propios desde cero; E005 reutilizó sus pesos y ya tiene resultado de leaderboard. Al cierre de E005 no queda ningún seguimiento local activo ni otro entrenamiento iniciado por esta tarea.
+Ver `results/STATUS.json`. E002 sigue pendiente. E003 usó inferencia HOCT real con pesos públicos; no se ha realizado entrenamiento HOCT o FOCUS-3D. E004 entrenó dos modelos propios desde cero; E005 reutilizó sus pesos y ya tiene resultado de leaderboard. E006 completó preentrenamiento sintético y adaptación real sin superar el control. Al cierre de E006 no queda ningún seguimiento local activo ni otro entrenamiento iniciado por esta tarea.
