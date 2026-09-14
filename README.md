@@ -2,9 +2,9 @@
 
 Repositorio privado de Arturo para [Biohub — Cell Tracking During Development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development). Investigación y preparación inicial: **13 de septiembre de 2026**.
 
-La meta es mejorar el tracking real con experimentos reproducibles. **Todavía no hay un score propio confirmado ni evidencia de alcanzar el podio.** El notebook aportado contiene un hack antiguo; el control actual procede de una referencia pública más reciente.
+La meta es mejorar el tracking real con experimentos reproducibles. **Nuestro control obtuvo 0.946 en el leaderboard público**, frente al **0.947 reportado por Arturo para Harmonic Fusion completo**. Todavía no se ha superado esa referencia ni hay evidencia de alcanzar el podio. El notebook inicial de metric hack obtuvo 0.885; el control actual procede de Harmonic Fusion.
 
-La referencia completa terminó en 26,14 minutos y se envió a Kaggle: **submission 56214656**, [Harmonic Control versión 1](https://www.kaggle.com/code/jarturo/biohub-lab-harmonic-control), script version `349618616`. Score pendiente al último chequeo. El CSV final se validó y su hash se verificó tras descargarlo. Es la referencia pública congelada, no una mejora atribuida a HOCT. [Recibo](results/E000_test_completed.json).
+La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envió a Kaggle: **submission 56214656**, [Harmonic Control versión 1](https://www.kaggle.com/code/jarturo/biohub-lab-harmonic-control), script version `349618616`. Kaggle confirmó estado **COMPLETE** y score público **0.946**, verificados mediante su API autenticada. El CSV visible final se validó y su hash se verificó tras descargarlo. Es la referencia pública congelada, no una mejora atribuida a HOCT. [Recibo](results/E000_test_completed.json). La configuración final del notebook aportado por Arturo difiere del control; la comparación se documenta en [Experimentos](docs/EXPERIMENTS.es.md).
 
 - [Investigación, papers y prioridades](docs/RESEARCH.es.md).
 - [Auditoría del notebook y de la métrica](docs/AUDIT.es.md).

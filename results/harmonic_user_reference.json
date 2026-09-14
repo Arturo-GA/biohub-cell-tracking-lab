@@ -11,7 +11,15 @@
     "code_cells_compared": 12,
     "all_cell_sources_identical_to_frozen_upstream": true,
     "whole_notebook_bytes_identical": false,
-    "our_control_included_cells": [0, 1, 2, 3, 4, 5, 6]
+    "our_control_included_cells": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
   },
   "attached_saved_output": {
     "evidence_scope": "saved notebook outputs, not a new execution",
@@ -20,12 +28,14 @@
     "pre_sweep_submission_rows": 241189,
     "final_submission_rows": 241306
   },
-  "our_pending_control": {
+  "decision": "Use the user-reported 0.947 as the external comparison target; do not attribute it to our control or infer a gain from the training diagnostic. Retain substantive new implementations as the main research direction.",
+  "our_control": {
     "submission_ref": 56214656,
     "motion_relink_tight_um": 6.0,
     "submission_rows": 241189,
     "equivalent_to_attached_final_submission": false,
-    "leaderboard_score": null
-  },
-  "decision": "Use the user-reported 0.947 as the external comparison target; do not attribute it to our control or infer a gain from the training diagnostic. Retain substantive new implementations as the main research direction."
+    "leaderboard_score": 0.946,
+    "submission_status": "COMPLETE",
+    "checked_at_utc": "2026-09-14T04:12:12.545497+00:00"
+  }
 }

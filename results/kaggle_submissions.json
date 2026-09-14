@@ -4,15 +4,17 @@
     "date": "2026-09-13 20:41:29.880000",
     "description": "E000 fixed Harmonic control; validated final CSV; no metric hack or proxy sweep",
     "url": "/code/jarturo/biohub-lab-harmonic-control?scriptVersionId=349618616",
-    "status": "SubmissionStatus.PENDING",
-    "public_score": ""
+    "status": "SubmissionStatus.COMPLETE",
+    "public_score": "0.946",
+    "checked_at_utc": "2026-09-14T04:12:12.545497+00:00"
   },
   {
     "ref": 56213231,
     "date": "2026-09-13 18:40:33.137000",
     "description": "",
     "url": "/code/jarturo/improved-metric-hack-last-call?scriptVersionId=349599769",
-    "status": "SubmissionStatus.PENDING",
-    "public_score": ""
+    "status": "SubmissionStatus.COMPLETE",
+    "public_score": "0.885",
+    "checked_at_utc": "2026-09-14T04:12:12.545497+00:00"
   }
 ]

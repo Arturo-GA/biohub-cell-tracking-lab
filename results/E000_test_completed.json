@@ -14,10 +14,15 @@
     }
   },
   "scope": "test inference",
-  "quality_status": "unverified",
+  "quality_status": "baseline_scored_below_user_reported_reference",
   "leaderboard_submitted": true,
   "submission_ref": 56214656,
   "kernel_version": 1,
   "script_version_id": 349618616,
-  "csv_hash_verified_locally": true
+  "csv_hash_verified_locally": true,
+  "submission_status": "COMPLETE",
+  "public_score": 0.946,
+  "public_score_raw": "0.946",
+  "score_evidence": "Kaggle authenticated competition_submissions API",
+  "checked_at_utc": "2026-09-14T04:12:12.545497+00:00"
 }

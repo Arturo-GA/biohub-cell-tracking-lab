@@ -6,6 +6,8 @@ Base: primeras siete celdas de Harmonic Fusion congeladas. Se retira el sweep po
 
 Medir: tiempo, nodos, enlaces, divisiones, hash del CSV, adjusted edge Jaccard y división oficial. Validar que todos los datasets estén presentes y el grafo use coordenadas reales. No confundir ejecución sobre cuatro muestras visibles con evaluación del test oculto.
 
+**Resultado de leaderboard confirmado:** submission `56214656`, estado `COMPLETE`, score público **0.946** mediante la API autenticada de Kaggle. Queda **0.001 por debajo** del 0.947 de referencia aportado por Arturo, a la precisión de los valores disponibles. Es un resultado del control Harmonic congelado; HOCT no intervino en esta submission. La diferencia de configuración con el notebook completo está identificada, pero no se ha demostrado que explique por sí sola toda la diferencia de score. El notebook anterior `improved-metric-hack-last-call`, submission `56213231`, también terminó: **0.885**. Ambos recibos están en `results/kaggle_submissions.json`.
+
 ### Referencia de leaderboard aportada por Arturo — 2026-09-13
 
 Arturo reporta **0.947 en el leaderboard** para el archivo `biohub-harmonic-fusion.ipynb` adjunto. Se conserva como referencia externa aportada por el usuario; no se dispone del identificador de esa submission para verificarla de forma independiente. Registro: `results/harmonic_user_reference.json`.
