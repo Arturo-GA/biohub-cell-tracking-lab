@@ -2,6 +2,8 @@
 
 **Actualización al cierre de E004, 14 de septiembre:** el control tiene un score público confirmado de **0.946**. HOCT y el nuevo modelo temporal entrenado desde cero no superaron sus controles. E004 sí estableció una evaluación del modelo temporal dejando un embrión completo fuera del entrenamiento; su comparación con el detector público se declara condicional. Resultados en `TEMPORAL_IMPLEMENTATION.es.md`. El siguiente cambio de datos propuesto es supervisión densa de divisiones, preservando esa separación; no se ha ejecutado aún.
 
+**Resultado posterior de E005:** el ensemble de esos dos modelos ya obtuvo **0.913 en el leaderboard público**, por debajo de E000. La submission está completa y se cierra esta versión. El CSV visible conserva las detecciones de E000 pero no predice bifurcaciones. [Recibo y alcance](TEMPORAL_SUBMISSION.es.md). Esto refuerza la prioridad de investigar supervisión y transferencia de divisiones; no demuestra todavía que un paper concreto vaya a mejorar Biohub.
+
 La oportunidad más interesante que encontré es **combinar un detector 3D nuevo y destilado con un linker que modele mejor las divisiones**. FOCUS-3D y HOCT son las dos líneas principales. Division Guard ya terminó sin recuperar ninguna arista anotada ni división adicional y se cerró. HOCT ya tiene implementación de inferencia propia y ejecución en Kaggle; ver `HOCT_IMPLEMENTATION.es.md`.
 
 ## Situación al inicio de la investigación, antes de las ejecuciones

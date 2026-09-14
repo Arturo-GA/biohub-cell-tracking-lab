@@ -1,5 +1,15 @@
 [
   {
+    "ref": 56223367,
+    "date": "2026-09-14T06:15:21.437Z",
+    "description": "",
+    "url": "/code/jarturo/biohub-lab-temporal-submission?scriptVersionId=349689941",
+    "status": "SubmissionStatus.COMPLETE",
+    "public_score": "0.913",
+    "checked_at_utc": "2026-09-14T15:03:38.971695+00:00",
+    "submitted_by_this_task": false
+  },
+  {
     "ref": 56214656,
     "date": "2026-09-13 20:41:29.880000",
     "description": "E000 fixed Harmonic control; validated final CSV; no metric hack or proxy sweep",

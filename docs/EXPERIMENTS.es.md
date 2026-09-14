@@ -56,9 +56,15 @@ Se entrenaron dos modelos desde cero, cada uno reservando un embrión completo, 
 
 El encoder y el modelo temporal sí se evaluaron fuera del embrión de entrenamiento; la comparación completa con Harmonic sigue condicionada por su detector entrenado con todos los videos. [Diseño, resultados y límites](TEMPORAL_IMPLEMENTATION.es.md). Registro: `results/E004_completed.json`.
 
+## E005 — Ensemble temporal en leaderboard (completado)
+
+Arturo autorizó medir los pesos de E004 en Kaggle pese al resultado local negativo. Se combinaron por igual las probabilidades de los dos modelos antes de reconstruir el linaje, conservando las detecciones y los umbrales. La submission **56223367** terminó con **0.913 público**, frente a **0.946** de E000: delta **−0.033**. El código y el CSV visible se descargaron y verificaron después del aviso del usuario; el envío ya existía y no se duplicó.
+
+En el test visible el detector es idéntico a E000, incluidos su hash y sus 122.745 nodos. El ensemble agrega 226 enlaces, retira 272 y no produce bifurcaciones, frente a 98 bifurcaciones predichas por el control. Esto identifica una limitación del candidato, sin confundir esos conteos con eventos verdaderos anotados ni explicar por sí solo la descomposición del score oculto. Se cierra esta versión. [Resultado y límites](TEMPORAL_SUBMISSION.es.md), `results/E005_test_completed.json`.
+
 ## Orden y decisión actual
 
-1. Conservar E000 y su 0.946 público como control. E001, E003 y E004 están cerrados sin una mejora de tracking que justifique una submission.
+1. Conservar E000 y su 0.946 público como control. E001, E003 y E004 no demostraron mejora local; E005 confirmó un resultado público inferior con los pesos temporales. Se cierra el ensemble actual.
 2. Mantener la separación por embrión de E004 para nuevos modelos; declarar por separado cualquier dependencia de un detector entrenado con el embrión reservado.
 3. La siguiente hipótesis temporal es ampliar la supervisión de divisiones con linajes densos. Los recursos sintéticos que usan templates reales deben regenerarse con el embrión de entrenamiento para conservar la separación.
 4. E002 queda como ruta alternativa si una evaluación independiente identifica pérdidas de detección. Una mejora de clasificación o de un diagnóstico condicional no equivale por sí sola a una mejora de leaderboard.
@@ -67,4 +73,4 @@ No se transporta el umbral 0.01 de RSNA a esta métrica. No se promueve automát
 
 ## Estado
 
-Ver `results/STATUS.json`. E002 sigue pendiente. E003 usó inferencia HOCT real con pesos públicos; no se ha realizado entrenamiento HOCT o FOCUS-3D. E004 sí entrenó dos modelos propios desde cero y completó sus evaluaciones. No hay otro entrenamiento ni nueva submission iniciados al cierre de E004.
+Ver `results/STATUS.json`. E002 sigue pendiente. E003 usó inferencia HOCT real con pesos públicos; no se ha realizado entrenamiento HOCT o FOCUS-3D. E004 entrenó dos modelos propios desde cero; E005 reutilizó sus pesos y ya tiene resultado de leaderboard. Al cierre de E005 no queda ningún seguimiento local activo ni otro entrenamiento iniciado por esta tarea.
