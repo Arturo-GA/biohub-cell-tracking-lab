@@ -1,0 +1,383 @@
+{
+  "experiment": "E007",
+  "checked_at_utc": "2026-09-14T16:35:19.386257+00:00",
+  "events": [
+    {
+      "dataset": "44b6_341df25f",
+      "gt_triple_row": 2,
+      "gt_mother_frame": 4,
+      "gt_coords": [
+        [
+          4.0,
+          33.0,
+          221.0,
+          147.0
+        ],
+        [
+          5.0,
+          34.0,
+          211.0,
+          144.0
+        ],
+        [
+          5.0,
+          32.0,
+          238.0,
+          149.0
+        ]
+      ],
+      "nearest_predicted_nodes": [
+        394,
+        490,
+        488
+      ],
+      "nearest_distances_um": [
+        1.8168052434921265,
+        2.333728551864624,
+        2.333728551864624
+      ],
+      "nearest_mother_baseline_children": [
+        490,
+        488
+      ],
+      "nearest_daughter_baseline_parents": [
+        394,
+        394
+      ],
+      "classification": "nearest_event_already_present_in_baseline",
+      "exact_nearest_candidate_refs": [],
+      "geometric_exact_frame_candidates": 0,
+      "geometric_candidates_above_threshold": 0,
+      "geometric_candidates_selected": 0,
+      "maximum_geometric_candidate_score": null,
+      "fixed_development_threshold": 6.4140625,
+      "score_on_GT_center_patches": 6.9296875,
+      "GT_center_score_above_threshold": true
+    },
+    {
+      "dataset": "6bba_337b1b3a",
+      "gt_triple_row": 39,
+      "gt_mother_frame": 38,
+      "gt_coords": [
+        [
+          38.0,
+          18.0,
+          26.0,
+          129.0
+        ],
+        [
+          39.0,
+          18.0,
+          17.0,
+          130.0
+        ],
+        [
+          39.0,
+          18.0,
+          45.0,
+          135.0
+        ]
+      ],
+      "nearest_predicted_nodes": [
+        11074,
+        11367,
+        11365
+      ],
+      "nearest_distances_um": [
+        2.4711222648620605,
+        1.1490485668182373,
+        0.5745242834091187
+      ],
+      "nearest_mother_baseline_children": [
+        11367
+      ],
+      "nearest_daughter_baseline_parents": [
+        11074,
+        null
+      ],
+      "classification": "nearest_event_below_fixed_dev_threshold",
+      "exact_nearest_candidate_refs": [
+        4815
+      ],
+      "geometric_exact_frame_candidates": 1,
+      "geometric_candidates_above_threshold": 0,
+      "geometric_candidates_selected": 0,
+      "maximum_geometric_candidate_score": -8.8671875,
+      "fixed_development_threshold": 6.93359375,
+      "score_on_GT_center_patches": -5.2578125,
+      "GT_center_score_above_threshold": false
+    },
+    {
+      "dataset": "6bba_337b1b3a",
+      "gt_triple_row": 302,
+      "gt_mother_frame": 58,
+      "gt_coords": [
+        [
+          58.0,
+          41.0,
+          146.0,
+          184.0
+        ],
+        [
+          59.0,
+          43.0,
+          132.0,
+          176.0
+        ],
+        [
+          59.0,
+          40.0,
+          156.0,
+          186.0
+        ]
+      ],
+      "nearest_predicted_nodes": [
+        16905,
+        17192,
+        17183
+      ],
+      "nearest_distances_um": [
+        1.2846752405166626,
+        0.9084026217460632,
+        2.071476697921753
+      ],
+      "nearest_mother_baseline_children": [
+        17183,
+        17192
+      ],
+      "nearest_daughter_baseline_parents": [
+        16905,
+        16905
+      ],
+      "classification": "nearest_event_already_present_in_baseline",
+      "exact_nearest_candidate_refs": [],
+      "geometric_exact_frame_candidates": 0,
+      "geometric_candidates_above_threshold": 0,
+      "geometric_candidates_selected": 0,
+      "maximum_geometric_candidate_score": null,
+      "fixed_development_threshold": 6.93359375,
+      "score_on_GT_center_patches": 3.92578125,
+      "GT_center_score_above_threshold": false
+    },
+    {
+      "dataset": "6bba_afb141ff",
+      "gt_triple_row": 80,
+      "gt_mother_frame": 47,
+      "gt_coords": [
+        [
+          47.0,
+          11.0,
+          165.0,
+          140.0
+        ],
+        [
+          48.0,
+          13.0,
+          166.0,
+          157.0
+        ],
+        [
+          48.0,
+          10.0,
+          161.0,
+          131.0
+        ]
+      ],
+      "nearest_predicted_nodes": [
+        2802,
+        null,
+        2856
+      ],
+      "nearest_distances_um": [
+        3.5648293495178223,
+        12.228057861328125,
+        1.6750116348266602
+      ],
+      "nearest_mother_baseline_children": [
+        2856
+      ],
+      "nearest_daughter_baseline_parents": [
+        null,
+        2802
+      ],
+      "classification": "one_or_more_nearest_detections_outside_7um",
+      "exact_nearest_candidate_refs": [],
+      "geometric_exact_frame_candidates": 0,
+      "geometric_candidates_above_threshold": 0,
+      "geometric_candidates_selected": 0,
+      "maximum_geometric_candidate_score": null,
+      "fixed_development_threshold": 6.93359375,
+      "score_on_GT_center_patches": 6.48046875,
+      "GT_center_score_above_threshold": false
+    },
+    {
+      "dataset": "6bba_afb141ff",
+      "gt_triple_row": 139,
+      "gt_mother_frame": 32,
+      "gt_coords": [
+        [
+          32.0,
+          51.0,
+          140.0,
+          135.0
+        ],
+        [
+          33.0,
+          52.0,
+          140.0,
+          134.0
+        ],
+        [
+          33.0,
+          50.0,
+          138.0,
+          120.0
+        ]
+      ],
+      "nearest_predicted_nodes": [
+        2003,
+        2063,
+        2063
+      ],
+      "nearest_distances_um": [
+        0.40625,
+        1.6750116348266602,
+        6.358818531036377
+      ],
+      "nearest_mother_baseline_children": [
+        2063
+      ],
+      "nearest_daughter_baseline_parents": [
+        2003,
+        2003
+      ],
+      "classification": "both_daughters_share_nearest_detection",
+      "exact_nearest_candidate_refs": [],
+      "geometric_exact_frame_candidates": 0,
+      "geometric_candidates_above_threshold": 0,
+      "geometric_candidates_selected": 0,
+      "maximum_geometric_candidate_score": null,
+      "fixed_development_threshold": 6.93359375,
+      "score_on_GT_center_patches": -3.8984375,
+      "GT_center_score_above_threshold": false
+    },
+    {
+      "dataset": "6bba_afb141ff",
+      "gt_triple_row": 142,
+      "gt_mother_frame": 48,
+      "gt_coords": [
+        [
+          48.0,
+          17.0,
+          159.0,
+          115.0
+        ],
+        [
+          49.0,
+          17.0,
+          153.0,
+          111.0
+        ],
+        [
+          49.0,
+          13.0,
+          162.0,
+          117.0
+        ]
+      ],
+      "nearest_predicted_nodes": [
+        2861,
+        2912,
+        2912
+      ],
+      "nearest_distances_um": [
+        1.8168052434921265,
+        4.082761764526367,
+        4.021669864654541
+      ],
+      "nearest_mother_baseline_children": [
+        2912
+      ],
+      "nearest_daughter_baseline_parents": [
+        2861,
+        2861
+      ],
+      "classification": "both_daughters_share_nearest_detection",
+      "exact_nearest_candidate_refs": [],
+      "geometric_exact_frame_candidates": 0,
+      "geometric_candidates_above_threshold": 0,
+      "geometric_candidates_selected": 0,
+      "maximum_geometric_candidate_score": null,
+      "fixed_development_threshold": 6.93359375,
+      "score_on_GT_center_patches": -6.44140625,
+      "GT_center_score_above_threshold": false
+    },
+    {
+      "dataset": "6bba_afb141ff",
+      "gt_triple_row": 145,
+      "gt_mother_frame": 28,
+      "gt_coords": [
+        [
+          28.0,
+          13.0,
+          182.0,
+          226.0
+        ],
+        [
+          29.0,
+          9.0,
+          178.0,
+          210.0
+        ],
+        [
+          29.0,
+          13.0,
+          182.0,
+          230.0
+        ]
+      ],
+      "nearest_predicted_nodes": [
+        1771,
+        null,
+        1813
+      ],
+      "nearest_distances_um": [
+        1.2846752405166626,
+        10.123698234558105,
+        0.9084026217460632
+      ],
+      "nearest_mother_baseline_children": [
+        1813
+      ],
+      "nearest_daughter_baseline_parents": [
+        null,
+        1771
+      ],
+      "classification": "one_or_more_nearest_detections_outside_7um",
+      "exact_nearest_candidate_refs": [],
+      "geometric_exact_frame_candidates": 0,
+      "geometric_candidates_above_threshold": 0,
+      "geometric_candidates_selected": 0,
+      "maximum_geometric_candidate_score": null,
+      "fixed_development_threshold": 6.93359375,
+      "score_on_GT_center_patches": -7.76171875,
+      "GT_center_score_above_threshold": false
+    }
+  ],
+  "classifications": {
+    "nearest_event_already_present_in_baseline": 2,
+    "nearest_event_below_fixed_dev_threshold": 1,
+    "one_or_more_nearest_detections_outside_7um": 2,
+    "both_daughters_share_nearest_detection": 2
+  },
+  "gt_graph_sha256": {
+    "44b6_341df25f": "2d7b538d5bc5b01c0523dbe28ce4e055a8aa620c7095218891a913b606ae283d",
+    "44b6_53f95252": "aae007f8bc19dce40bcea6bbd13786e8e3cf949a20b7a578cb2590516c7e9e11",
+    "6bba_337b1b3a": "590c597cb92f79ce2492580f631568c33cacf15092d2dd08059ab44c9c126c2c",
+    "6bba_afb141ff": "9a19b7f7c7ce35b52b722dbd07d412ca6ac5394cfebb97e6cd793296c78100dc"
+  },
+  "prepared_GT_config_checksums_verified": true,
+  "geometric_exact_frame_eligible_events": 1,
+  "GT_center_events_above_fixed_threshold": 1,
+  "scope": "Post-result structural diagnostic only. Nearest detections and exact-frame 7um proximity are NOT official graph matching, which uses lineage context and temporal tolerance. Geometric eligibility is necessary only for this exact-frame interpretation and is not sufficient for an official true positive. No thresholds or predictions changed."
+}

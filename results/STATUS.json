@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 11,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "mitosis_specialist_pending_quality_evaluation",
+  "quality_status": "mitosis_specialist_below_control_geometry_audit_suggests_detection_limitations",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -213,18 +213,18 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": true,
-  "active_experiment": "E007",
+  "next_experiment_started": false,
+  "active_experiment": null,
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
     "payload_sha256": "4c5a8d1256e18cafaf5f63322669f84eb7026e182e1b2545f809e27c5d43edf2",
-    "last_observed_status": "RUNNING",
-    "checked_at_utc": "2026-09-14T16:13:52.105691+00:00",
+    "last_observed_status": "COMPLETE",
+    "checked_at_utc": "2026-09-14T16:31:20.320063+00:00",
     "run_started": true,
     "local_wait_active": false,
     "leaderboard_submitted": false,
-    "results_available": false,
+    "results_available": true,
     "folds": 2,
     "scenes_per_fold": 2048,
     "synthetic_frames": 9,
@@ -237,6 +237,66 @@
     "documentation": "docs/MITOSIS_SPECIALIST.es.md",
     "experiment": "New six-timepoint three-view mitosis classifier with frozen E006 features; maximum-weight orphan assignment preserving every Harmonic node and edge.",
     "selection": "Checkpoint by development AP; score threshold by development F0.5. Diagnostic embryo excluded from both.",
-    "next_action": "User will notify completion. Retrieve mitosis_experiment_receipt.json, verify source/checkpoints/final CSV and compare official metrics before test inference."
-  }
+    "next_action": "E007 closed without submission. Prioritize detecting and separating daughter centers around mitosis; the exact-frame geometric audit found missing/ambiguous detections. No new notebook or monitor started.",
+    "receipt": "results/E007_completed.json",
+    "opportunity_audit": "results/E007_opportunity_audit.json",
+    "decision": "do_not_submit_no_additional_division_recall_and_more_false_positives",
+    "downloaded_source_verified": true,
+    "checkpoint_contents_verified": true,
+    "development_threshold_recomputed": true,
+    "final_graph_reconstructed_from_scores": true,
+    "result": {
+      "conditional_score": 0.9558179772310393,
+      "conditional_control_score": 0.9666951094666341,
+      "delta_vs_harmonic": {
+        "score": -0.010877132235594722,
+        "adj_edge_jaccard": -0.0012617476202101408,
+        "division_jaccard": -0.09615384615384615
+      },
+      "division_tp_fp_fn": [
+        2,
+        6,
+        5
+      ],
+      "control_division_tp_fp_fn": [
+        2,
+        1,
+        5
+      ],
+      "added_edges": 61,
+      "removed_edges": 0,
+      "predicted_forks": 134,
+      "control_predicted_forks": 73,
+      "seconds": 516.586845857,
+      "holdout": {
+        "44b6": {
+          "positive": 26,
+          "negative": 8673,
+          "average_precision": 0.35219198945882413,
+          "balanced_bce": 0.553288631893595,
+          "at_dev_threshold": {
+            "tp": 7,
+            "fp": 4,
+            "fn": 19,
+            "precision": 0.6363636363636364,
+            "recall": 0.2692307692307692
+          }
+        },
+        "6bba": {
+          "positive": 125,
+          "negative": 41051,
+          "average_precision": 0.17735511362680045,
+          "balanced_bce": 1.6387834345058017,
+          "at_dev_threshold": {
+            "tp": 12,
+            "fp": 27,
+            "fn": 113,
+            "precision": 0.3076923076923077,
+            "recall": 0.096
+          }
+        }
+      }
+    }
+  },
+  "next_research_direction": "Mitosis-aware detection and separation of daughter centers; architecture and external weights not yet selected."
 }

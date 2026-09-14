@@ -2,6 +2,47 @@
 
 E006 mejoró el ranking de divisiones, pero sustituir todas las asociaciones redujo el score condicional de 0.9666951 a 0.9436645. **E007 implementa una red nueva para verificar eventos y una reparación aditiva del grafo de Harmonic.** No es una nueva selección de umbral de E006 ni una reproducción de CELLECT u OrganoidTracker.
 
+## Resultado completado — 14 de septiembre de 2026
+
+La versión 1 terminó correctamente. **No se envía a submission:** el score oficial condicional fue **0.9558180**, frente a **0.9666951** de Harmonic, una pérdida de **0.0108771**. Se conservaron todos los nodos y enlaces del control, pero las adiciones no aumentaron los aciertos de división. [Recibo y verificación](../results/E007_completed.json).
+
+| Métrica sobre los mismos cuatro videos | Harmonic | E007 |
+|---|---:|---:|
+| Score oficial condicional | 0.9666951 | 0.9558180 |
+| Aristas ajustadas | 0.9416951 | 0.9404334 |
+| División Jaccard | 0.2500000 | 0.1538462 |
+| Divisiones TP / FP / FN | 2 / 1 / 5 | 2 / 6 / 5 |
+| Aristas evaluadas TP / FP / FN | 2051 / 70 / 65 | 2052 / 74 / 64 |
+
+Se añadieron **61 enlaces**, se retiraron **cero** y las bifurcaciones predichas pasaron de **73 a 134**. De las nuevas aristas, la evaluación aumentó en una los aciertos y en cuatro los falsos positivos; las demás no deben clasificarse automáticamente como correctas o falsas con anotación escasa. El CSV contiene **74.980 nodos y 72.556 enlaces**. Se reconstruyó exactamente su grafo a partir de las puntuaciones guardadas y el umbral original, sin volver a seleccionar umbrales. La pérdida en la contribución de divisiones fue 0.0096154 y la de aristas ajustadas, 0.0012617.
+
+| Embrión reservado | Paso seleccionado | Divisiones de desarrollo | AP desarrollo | AP embrión reservado | TP / FP / FN al umbral de desarrollo |
+|---|---:|---:|---:|---:|---:|
+| 44b6 | 500 | 31 | 0.3626 | 0.3522 | 7 / 4 / 19 |
+| 6bba | 2500 | 3 | 1.0000 | 0.1774 | 12 / 27 / 113 |
+
+El segundo caso evidencia mala transferencia: un resultado perfecto con tres positivos de desarrollo no predijo buen rendimiento en el otro embrión. Estas métricas de triples etiquetados son distintas de las divisiones evaluadas en el CSV. Ambos modelos completaron 4.000 pasos sintéticos y 3.000 de adaptación. Cada separación generó 2.048 películas de nueve frames con 4.185 eventos; sus geometrías usan las mismas semillas, por lo que no son 8.370 eventos independientes. El pipeline tardó **516,59 segundos** (8,61 minutos), excluyendo bootstrap y exportación. La inferencia del especialista en los cuatro videos tomó 29,42 segundos.
+
+Se verificaron el código descargado, hashes y contenido de los checkpoints, separación por embrión, procedencia de las texturas y conservación exacta de los pesos E006. Se recalcularon la AP, el umbral de desarrollo y los conteos de holdout desde los scores descargados. Las métricas oficiales proceden de la ejecución Kaggle con el código fijado; no se volvió a ejecutar localmente la evaluación de imágenes/GEFF. Esta comparación sigue siendo **condicional, no leaderboard**, porque Harmonic se entrenó con esos videos.
+
+### Auditoría de oportunidades y cambio de prioridad
+
+Se recuperaron los cuatro grafos de GT de la preparación temporal y se verificaron sus hashes de configuración. Para cada una de las siete divisiones se estudiaron las detecciones más cercanas y las propuestas disponibles **en el frame exacto**, con distancia física de 7 µm:
+
+- Dos eventos ya tienen la bifurcación correspondiente en el control bajo esta correspondencia de vecinos.
+- En dos eventos de `6bba_afb141ff` falta una hija dentro de 7 µm: las detecciones más cercanas están a 10,12 y 12,23 µm.
+- En otros dos eventos de ese video, ambas hijas tienen la misma detección más cercana.
+- Solo un evento presenta una propuesta geométricamente compatible de E007 en el frame exacto: `6bba_337b1b3a`, madre en frame 38. Su score fue −8,8672, frente al umbral de desarrollo 6,9336; fue rechazada.
+
+Esta auditoría **no es la correspondencia oficial ni un máximo alcanzable formal**: la evaluación oficial considera contexto de linaje y tolerancia temporal, y la proximidad geométrica por sí sola no demuestra una división correcta. Aun así, cambia la prioridad de trabajo: estudiar detecciones de hijas ausentes o insuficientemente separadas durante mitosis antes de otra reparación exclusiva de enlaces. Se cierra E007, sin nueva submission ni otro entrenamiento iniciado en esta revisión. [Auditoría por evento](../results/E007_opportunity_audit.json).
+
+Para reproducir ambas verificaciones con los outputs descargados:
+
+```text
+python scripts/verify_mitosis_result.py
+python scripts/audit_mitosis_opportunity.py
+```
+
 ## Representación del evento
 
 La entrada son tres recortes: madre en `t`, primera hija en `t+1` y posible segunda hija en `t+1`. Cada recorte contiene cinco frames, con el preprocesamiento ya disponible. Juntos abarcan `t−2 ... t+3`. La nueva rama procesa cada frame con un CNN 3D compartido y alinea las tres vistas sobre esos seis tiempos. Dos indicadores marcan la ausencia de la vista de madre al final y de hijas al principio. En los límites del video se conserva el padding temporal del preprocesamiento original.
