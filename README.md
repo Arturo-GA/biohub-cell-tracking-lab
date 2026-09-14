@@ -28,6 +28,8 @@ La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envi�
 | `kaggle/temporal_test` | Ensemble de los dos modelos temporales sobre todo el test | `submission.csv` y recibo de inferencia |
 | `kaggle/temporal_dense` | E006: linajes densos sintéticos, preentrenamiento y adaptación por embrión | Pesos, manifiestos y comparación automática con E004 y Harmonic |
 | `kaggle/temporal_specialist` | E007: nueva red temporal de mitosis con E006 congelado y reparación aditiva de Harmonic | Pesos, umbrales de desarrollo, CSV diagnóstico y métrica oficial |
+| `kaggle/detector_cellect` | E008: detector temporal CELLECT a resolución nativa + Harmonic completo | Propuestas, auditoría de inyección, CSV y métrica oficial |
+| `kaggle/detector_gaussian` | E009: separación de núcleos mediante ajuste de dos gaussianas + Harmonic completo | Propuestas, auditoría de inyección, CSV y métrica oficial |
 
 El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
 
@@ -46,6 +48,8 @@ Los notebooks contienen el código necesario y adjuntan tres datasets públicos 
 **E006 completado, sin promoción a submission:** el preentrenamiento con 2.048 películas sintéticas por separación mejoró la AP de divisiones en ambos embriones reservados. Sin embargo, el score oficial condicional fue **0.9436645 frente a 0.9666951** de Harmonic, con divisiones TP/FP/FN **1/9/6 frente a 2/1/5**. Se verificaron el código descargado, los pesos, la procedencia de las texturas y el CSV. Al cerrar E006 no quedó una espera local activa. [Diseño, resultados y límites](docs/DENSE_PRETRAINING.es.md), [recibo completo](results/E006_completed.json).
 
 **E007 completado, sin promoción a submission:** el especialista temporal conservó todos los enlaces y añadió 61, pero obtuvo **0.9558180 frente a 0.9666951** de Harmonic, con divisiones TP/FP/FN **2/6/5 frente a 2/1/5**. Se verificaron pesos, umbrales y reconstrucción del CSV. La auditoría geométrica de mitosis apunta a hijas ausentes o insuficientemente separadas entre las detecciones; la siguiente prioridad será el detector alrededor de las divisiones. No se inició otro notebook durante esta revisión. [Resultados, auditoría y límites](docs/MITOSIS_SPECIALIST.es.md), [recibo completo](results/E007_completed.json).
+
+**E008/E009 implementados:** dos experimentos de detección que ejecutan después el tracking completo, con evaluación oficial y comparación contra el control congelado. El primero incorpora el detector temporal público CELLECT; el segundo resuelve núcleos superpuestos mediante ajuste de intensidades. [Diseño y límites](docs/DETECTOR_EXPERIMENTS.es.md). Los estados observados y recibos de lanzamiento se registran en `results/STATUS.json`.
 
 Pruebas: Python 3.12, PyTorch, NumPy, SciPy, scikit-image y nbformat. En PowerShell, desde la raíz:
 

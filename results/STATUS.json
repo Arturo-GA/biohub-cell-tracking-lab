@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 44,
+  "local_tests_passed": 52,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -51,10 +51,10 @@
     "submitted_by_this_task": false,
     "public_score": 0.885
   },
-  "notebooks_schema_validated": 11,
+  "notebooks_schema_validated": 13,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "mitosis_specialist_below_control_geometry_audit_suggests_detection_limitations",
+  "quality_status": "two_new_detector_experiments_launched_results_pending",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -75,7 +75,9 @@
     "embryo_safe_synthetic_pretraining",
     "six_timepoint_mitosis_specialist",
     "development_only_division_threshold",
-    "additive_orphan_assignment_preserving_baseline"
+    "additive_orphan_assignment_preserving_baseline",
+    "cellect_complementary_detector",
+    "gaussian_complementary_detector"
   ],
   "research_only": [
     "FOCUS-3D_distillation",
@@ -213,8 +215,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": false,
-  "active_experiment": null,
+  "next_experiment_started": true,
+  "active_experiment": "E008_E009_detector_proposals",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -298,5 +300,39 @@
       }
     }
   },
-  "next_research_direction": "Mitosis-aware detection and separation of daughter centers; architecture and external weights not yet selected."
+  "next_research_direction": "Compare CELLECT native two-frame detection and anisotropic Gaussian deblending through full Harmonic tracking; inspect final official metrics and additions before any promotion.",
+  "E008": {
+    "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
+    "kernel": "jarturo/biohub-lab-cellect-detector",
+    "version": 1,
+    "last_observed_status": "QUEUED",
+    "launched_at_utc": "2026-09-14T17:22:16.531308+00:00",
+    "status_checked_at_utc": "2026-09-14T17:22:17.144092+00:00",
+    "payload_sha256": "571f3a0893af6041b52941c6adf8e76f53178461b0565c63f988b2c49d12d5aa",
+    "scope": "conditional training diagnostic on four videos",
+    "leaderboard_submitted": false,
+    "result_pending": true
+  },
+  "E009": {
+    "implementation": "gaussian_raw_image_proposals_before_full_harmonic_tracking",
+    "kernel": "jarturo/biohub-lab-gaussian-deblending",
+    "version": 1,
+    "last_observed_status": "QUEUED",
+    "launched_at_utc": "2026-09-14T17:22:19.939492+00:00",
+    "status_checked_at_utc": "2026-09-14T17:22:20.541366+00:00",
+    "payload_sha256": "571f3a0893af6041b52941c6adf8e76f53178461b0565c63f988b2c49d12d5aa",
+    "scope": "conditional training diagnostic on four videos",
+    "leaderboard_submitted": false,
+    "result_pending": true
+  },
+  "active_experiments": [
+    "E008",
+    "E009"
+  ],
+  "detector_test_evidence": {
+    "full_suite_passed": 51,
+    "detector_suite_after_line_ending_integrity_fix": 8,
+    "unique_tests_passed": 52
+  },
+  "monitoring_active": false
 }

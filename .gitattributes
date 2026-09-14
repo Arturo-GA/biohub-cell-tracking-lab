@@ -1,1 +1,3 @@
 * text=auto eol=lf
+# Preserve upstream CELLECT formatting; its canonical source hash is verified.
+src/biohub_cellect/model.py -whitespace

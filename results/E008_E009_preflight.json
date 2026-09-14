@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-09-14T17:21:35.742801+00:00",
+  "packages": {
+    "cellect": {
+      "payload_sha256": "571f3a0893af6041b52941c6adf8e76f53178461b0565c63f988b2c49d12d5aa",
+      "files": 31,
+      "schema_valid": true,
+      "source_compiles": true,
+      "cellect_source_verified": true,
+      "no_weights_or_prediction_data": true
+    },
+    "gaussian": {
+      "payload_sha256": "571f3a0893af6041b52941c6adf8e76f53178461b0565c63f988b2c49d12d5aa",
+      "files": 31,
+      "schema_valid": true,
+      "source_compiles": true,
+      "cellect_source_verified": true,
+      "no_weights_or_prediction_data": true
+    }
+  }
+}
