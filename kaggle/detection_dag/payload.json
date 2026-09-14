@@ -1,0 +1,22 @@
+{
+  "experiment": "E011",
+  "sha256": "568e60d1d98929279cb7d3707c802367df988b785466d824044f2b7f5f5b8960",
+  "files": [
+    "baseline/detection_dag_dev.json",
+    "baseline/harmonic_inference.py",
+    "licenses/CELLECT.txt",
+    "NOTICE.md",
+    "scripts/detection_dag_runner.py",
+    "scripts/notebook_runner.py",
+    "src/biohub_cellect/__init__.py",
+    "src/biohub_cellect/model.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/cellect_detector.py",
+    "src/biohub_lab/dag_coverage.py",
+    "src/biohub_lab/detection_dag.py",
+    "src/biohub_lab/detector_proposals.py",
+    "src/biohub_lab/gaussian_detector.py",
+    "src/biohub_lab/patch.py",
+    "src/biohub_lab/temporal_data.py"
+  ]
+}

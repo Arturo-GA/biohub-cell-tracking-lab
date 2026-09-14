@@ -1,0 +1,17 @@
+{
+  "experiment": "E011",
+  "payload_sha256": "568e60d1d98929279cb7d3707c802367df988b785466d824044f2b7f5f5b8960",
+  "local_tests_passed": 72,
+  "new_tests_passed": 9,
+  "notebooks_schema_validated": 15,
+  "all_packaged_files_verified": true,
+  "cellect_source_and_license_verified": true,
+  "development_videos": 48,
+  "development_per_group": 24,
+  "reserved_other_videos": 143,
+  "prior_diagnostic_overlap": 0,
+  "no_cached_notebook_inputs": true,
+  "coverage_results_available": false,
+  "technical_smoke": "results/E011_technical_smoke.json",
+  "integration_scope": "Actual Gaussian detector, Zarr and annotation readers; synthetic CELLECT stub; all graphs frozen before annotation reads. No real-label coverage measured locally."
+}

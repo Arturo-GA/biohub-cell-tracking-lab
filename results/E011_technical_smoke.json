@@ -1,0 +1,28 @@
+{
+  "config": {
+    "merge_um": 1.2,
+    "mother_radius_um": 20.0,
+    "max_daughters": 16,
+    "sister_min_um": 1.5,
+    "sister_max_um": 20.0,
+    "midpoint_max_um": 10.0,
+    "continuation_um": 10.0,
+    "max_continuations": 8,
+    "horizon": 4,
+    "sample_queries": 128
+  },
+  "nodes": 65144,
+  "mother_daughter_edges": 1002802,
+  "continuation_edges": 288143,
+  "division_pairs": 3595348,
+  "mothers_with_pairs": 64455,
+  "graph_sha256": "12947e6f3ccf4f87b28b5373ad2dd3c2c189c936998d7ec63a4a25b39bdae57f",
+  "sample_queries": 128,
+  "sample_queries_with_paths": 126,
+  "annotations_read": false,
+  "reference_graph_used": false,
+  "representation": "Packed division pairs and adjacent-frame detection DAG; all eligible pairs are queryable, sampled paths are not a final selection.",
+  "seconds": 2.64000000001397,
+  "scope": "Technical full-volume smoke using existing detector arrays only. No annotation access, coverage evaluation or parameter selection.",
+  "dataset": "44b6_53f95252"
+}
