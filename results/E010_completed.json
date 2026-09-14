@@ -1,0 +1,496 @@
+{
+  "experiment": "E010",
+  "status": "complete",
+  "config": {
+    "horizon": 4,
+    "persistence": 2,
+    "proposal_nms_um": 1.2,
+    "immutable_exclusion_um": 1.5,
+    "search_um": 8.0,
+    "parent_um": 14.0,
+    "step_um": 6.0,
+    "min_sister_um": 2.6,
+    "max_sister_um": 14.0,
+    "centroid_um": 4.0,
+    "candidates_per_frame": 6,
+    "path_beam": 8,
+    "max_orphans_per_mother": 4,
+    "min_signal": 0.035,
+    "max_pre_contrast": 0.1,
+    "min_post_contrast": 0.06,
+    "min_contrast_onset": 0.18,
+    "min_mass_ratio": 0.5,
+    "max_mass_ratio": 2.7,
+    "milp_seconds": 60.0
+  },
+  "scope": "Conditional training diagnostic: the four videos are in the public secondary detector training set and have been used for prior error analysis. Not independent validation or a leaderboard score.",
+  "annotations_used_for_reconstruction": false,
+  "ground_truth_used_only_for_final_evaluation": true,
+  "neural_training": false,
+  "full_harmonic_rerun": false,
+  "leaderboard_submitted": false,
+  "selection": "One fixed configuration; no diagnostic threshold sweep or annotated-event restriction.",
+  "input_manifest_sha256": "080e2d5ab689e32c7011ff847efcc4b89de65fcf0aefeacaeceffdd4f3c69cf0",
+  "source_hashes": {
+    "src/biohub_lab/joint_lineage.py": "16240dfe455bc38e34a4cfcfedbc4135ecb8b4e19bd4936a813e4ef85fc87c4f",
+    "scripts/joint_runner.py": "cc914fed25d1baab7e4290e9d4287e398ac6da2aab75c1441ce9b2f17030c646"
+  },
+  "datasets": [
+    "44b6_53f95252",
+    "44b6_341df25f",
+    "6bba_afb141ff",
+    "6bba_337b1b3a"
+  ],
+  "shapes": {
+    "44b6_341df25f": [
+      100,
+      64,
+      256,
+      256
+    ],
+    "44b6_53f95252": [
+      100,
+      64,
+      256,
+      256
+    ],
+    "6bba_337b1b3a": [
+      100,
+      64,
+      256,
+      256
+    ],
+    "6bba_afb141ff": [
+      100,
+      64,
+      256,
+      256
+    ]
+  },
+  "statistics": {
+    "44b6_341df25f": {
+      "config": {
+        "horizon": 4,
+        "persistence": 2,
+        "proposal_nms_um": 1.2,
+        "immutable_exclusion_um": 1.5,
+        "search_um": 8.0,
+        "parent_um": 14.0,
+        "step_um": 6.0,
+        "min_sister_um": 2.6,
+        "max_sister_um": 14.0,
+        "centroid_um": 4.0,
+        "candidates_per_frame": 6,
+        "path_beam": 8,
+        "max_orphans_per_mother": 4,
+        "min_signal": 0.035,
+        "max_pre_contrast": 0.1,
+        "min_post_contrast": 0.06,
+        "min_contrast_onset": 0.18,
+        "min_mass_ratio": 0.5,
+        "max_mass_ratio": 2.7,
+        "milp_seconds": 60.0
+      },
+      "candidate_centers": 12010,
+      "windows": 989,
+      "positive_hypotheses": 98,
+      "selected_events": 27,
+      "pair_decisions": {
+        "same_center": 5934,
+        "separation": 2079,
+        "no_mother_image_signal": 115,
+        "no_image_split_onset": 3026,
+        "centroid": 2100,
+        "already_two_image_peaks": 714,
+        "positive": 456,
+        "mass_proxy": 39,
+        "weak_daughter_image_signal": 39,
+        "nonpositive_gain": 3
+      },
+      "solver": {
+        "status": 0,
+        "events": 98,
+        "conflicts": 171,
+        "gap": 0.0,
+        "optimal": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "changes": {
+        "removed_base_nodes": 42,
+        "added_nodes": 51,
+        "removed_base_edges": 66,
+        "added_edges": 102
+      },
+      "final_nodes": 8422,
+      "final_edges": 8215,
+      "sources": "Frozen Harmonic graph, raw-image CELLECT/Gaussian proposals, raw .zarr intensities only",
+      "annotations_read": false,
+      "topology_validated": true,
+      "seconds": 29.454385693000006,
+      "image_seconds": 22.914948734999996
+    },
+    "44b6_53f95252": {
+      "config": {
+        "horizon": 4,
+        "persistence": 2,
+        "proposal_nms_um": 1.2,
+        "immutable_exclusion_um": 1.5,
+        "search_um": 8.0,
+        "parent_um": 14.0,
+        "step_um": 6.0,
+        "min_sister_um": 2.6,
+        "max_sister_um": 14.0,
+        "centroid_um": 4.0,
+        "candidates_per_frame": 6,
+        "path_beam": 8,
+        "max_orphans_per_mother": 4,
+        "min_signal": 0.035,
+        "max_pre_contrast": 0.1,
+        "min_post_contrast": 0.06,
+        "min_contrast_onset": 0.18,
+        "min_mass_ratio": 0.5,
+        "max_mass_ratio": 2.7,
+        "milp_seconds": 60.0
+      },
+      "candidate_centers": 64665,
+      "windows": 7023,
+      "positive_hypotheses": 1098,
+      "selected_events": 178,
+      "pair_decisions": {
+        "same_center": 24398,
+        "separation": 12396,
+        "no_image_split_onset": 13766,
+        "positive": 5497,
+        "no_mother_image_signal": 10168,
+        "centroid": 45975,
+        "already_two_image_peaks": 4913,
+        "weak_daughter_image_signal": 1050,
+        "nonpositive_gain": 71,
+        "mass_proxy": 702
+      },
+      "solver": {
+        "status": 0,
+        "events": 1098,
+        "conflicts": 5405,
+        "gap": 0.0,
+        "optimal": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "changes": {
+        "removed_base_nodes": 423,
+        "added_nodes": 575,
+        "removed_base_edges": 615,
+        "added_edges": 945
+      },
+      "final_nodes": 31760,
+      "final_edges": 30964,
+      "sources": "Frozen Harmonic graph, raw-image CELLECT/Gaussian proposals, raw .zarr intensities only",
+      "annotations_read": false,
+      "topology_validated": true,
+      "seconds": 91.79312094900001,
+      "image_seconds": 28.05449754700004
+    },
+    "6bba_337b1b3a": {
+      "config": {
+        "horizon": 4,
+        "persistence": 2,
+        "proposal_nms_um": 1.2,
+        "immutable_exclusion_um": 1.5,
+        "search_um": 8.0,
+        "parent_um": 14.0,
+        "step_um": 6.0,
+        "min_sister_um": 2.6,
+        "max_sister_um": 14.0,
+        "centroid_um": 4.0,
+        "candidates_per_frame": 6,
+        "path_beam": 8,
+        "max_orphans_per_mother": 4,
+        "min_signal": 0.035,
+        "max_pre_contrast": 0.1,
+        "min_post_contrast": 0.06,
+        "min_contrast_onset": 0.18,
+        "min_mass_ratio": 0.5,
+        "max_mass_ratio": 2.7,
+        "milp_seconds": 60.0
+      },
+      "candidate_centers": 21296,
+      "windows": 3488,
+      "positive_hypotheses": 305,
+      "selected_events": 79,
+      "pair_decisions": {
+        "centroid": 6149,
+        "same_center": 5086,
+        "no_mother_image_signal": 1762,
+        "positive": 1864,
+        "no_image_split_onset": 565,
+        "separation": 1863,
+        "weak_daughter_image_signal": 152,
+        "already_two_image_peaks": 522,
+        "mass_proxy": 324,
+        "nonpositive_gain": 4
+      },
+      "solver": {
+        "status": 0,
+        "events": 305,
+        "conflicts": 582,
+        "gap": 0.0,
+        "optimal": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "changes": {
+        "removed_base_nodes": 156,
+        "added_nodes": 164,
+        "removed_base_edges": 237,
+        "added_edges": 324
+      },
+      "final_nodes": 29405,
+      "final_edges": 28484,
+      "sources": "Frozen Harmonic graph, raw-image CELLECT/Gaussian proposals, raw .zarr intensities only",
+      "annotations_read": false,
+      "topology_validated": true,
+      "seconds": 51.62881801499998,
+      "image_seconds": 27.55526204099999
+    },
+    "6bba_afb141ff": {
+      "config": {
+        "horizon": 4,
+        "persistence": 2,
+        "proposal_nms_um": 1.2,
+        "immutable_exclusion_um": 1.5,
+        "search_um": 8.0,
+        "parent_um": 14.0,
+        "step_um": 6.0,
+        "min_sister_um": 2.6,
+        "max_sister_um": 14.0,
+        "centroid_um": 4.0,
+        "candidates_per_frame": 6,
+        "path_beam": 8,
+        "max_orphans_per_mother": 4,
+        "min_signal": 0.035,
+        "max_pre_contrast": 0.1,
+        "min_post_contrast": 0.06,
+        "min_contrast_onset": 0.18,
+        "min_mass_ratio": 0.5,
+        "max_mass_ratio": 2.7,
+        "milp_seconds": 60.0
+      },
+      "candidate_centers": 7270,
+      "windows": 610,
+      "positive_hypotheses": 74,
+      "selected_events": 21,
+      "pair_decisions": {
+        "same_center": 2490,
+        "separation": 1233,
+        "no_image_split_onset": 990,
+        "centroid": 1712,
+        "positive": 363,
+        "nonpositive_gain": 10,
+        "no_mother_image_signal": 82,
+        "already_two_image_peaks": 158,
+        "weak_daughter_image_signal": 16,
+        "mass_proxy": 20
+      },
+      "solver": {
+        "status": 0,
+        "events": 74,
+        "conflicts": 125,
+        "gap": 0.0,
+        "optimal": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "changes": {
+        "removed_base_nodes": 50,
+        "added_nodes": 55,
+        "removed_base_edges": 70,
+        "added_edges": 96
+      },
+      "final_nodes": 5567,
+      "final_edges": 5311,
+      "sources": "Frozen Harmonic graph, raw-image CELLECT/Gaussian proposals, raw .zarr intensities only",
+      "annotations_read": false,
+      "topology_validated": true,
+      "seconds": 28.68922841599999,
+      "image_seconds": 25.279603158000043
+    }
+  },
+  "csv_sha256": "e930ad5f1d486bba4b7ac5b46121069ae3c1859e3b204c132331e70aa08b20ff",
+  "validated": true,
+  "final_counts": {
+    "44b6_341df25f": {
+      "nodes": 8422,
+      "edges": 8215
+    },
+    "44b6_53f95252": {
+      "nodes": 31760,
+      "edges": 30964
+    },
+    "6bba_337b1b3a": {
+      "nodes": 29405,
+      "edges": 28484
+    },
+    "6bba_afb141ff": {
+      "nodes": 5567,
+      "edges": 5311
+    }
+  },
+  "seconds": 213.779601233,
+  "metrics": {
+    "summary": {
+      "n": 4,
+      "edge_jaccard": 0.9331514324693042,
+      "division_jaccard": 0.1,
+      "division_tp": 2,
+      "division_fp": 13,
+      "division_fn": 5,
+      "node_recall": 0.9919512402310567,
+      "adj_edge_jaccard": 0.9365245623779258,
+      "n_adj": 4,
+      "score": 0.9465245623779258
+    },
+    "samples": [
+      {
+        "edge_tp": 207,
+        "edge_fp": 1,
+        "edge_fn": 2,
+        "division_tp": 1,
+        "division_fp": 1,
+        "division_fn": 0,
+        "num_pred_nodes": 8422,
+        "node_recall": 0.9907407407407407,
+        "total_node_ratio": 0.13259817105970953,
+        "edge_jaccard": 0.9857142857142858,
+        "adj_edge_jaccard": 0.9726438945669715,
+        "dataset": "44b6_341df25f"
+      },
+      {
+        "edge_tp": 67,
+        "edge_fp": 3,
+        "edge_fn": 1,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 0,
+        "num_pred_nodes": 31760,
+        "node_recall": 1.0,
+        "total_node_ratio": -0.17964613199018467,
+        "edge_jaccard": 0.9436619718309859,
+        "adj_edge_jaccard": 0.9606144941455527,
+        "dataset": "44b6_53f95252"
+      },
+      {
+        "edge_tp": 1183,
+        "edge_fp": 53,
+        "edge_fn": 30,
+        "division_tp": 1,
+        "division_fp": 7,
+        "division_fn": 1,
+        "num_pred_nodes": 29405,
+        "node_recall": 1.0,
+        "total_node_ratio": -0.03526902887139108,
+        "edge_jaccard": 0.9344391785150079,
+        "adj_edge_jaccard": 0.9377348547515685,
+        "dataset": "6bba_337b1b3a"
+      },
+      {
+        "edge_tp": 595,
+        "edge_fp": 26,
+        "edge_fn": 31,
+        "division_tp": 0,
+        "division_fp": 4,
+        "division_fn": 4,
+        "num_pred_nodes": 5567,
+        "node_recall": 0.9770642201834863,
+        "total_node_ratio": -0.0804426825239511,
+        "edge_jaccard": 0.9125766871165644,
+        "adj_edge_jaccard": 0.9199176987886121,
+        "dataset": "6bba_afb141ff"
+      }
+    ],
+    "scope": "Conditional training diagnostic: the four videos are in the public secondary detector training set and have been used for prior error analysis. Not independent validation or a leaderboard score.",
+    "official_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2"
+  },
+  "control": {
+    "n": 4,
+    "edge_jaccard": 0.9382433668801464,
+    "division_jaccard": 0.25,
+    "division_tp": 2,
+    "division_fp": 1,
+    "division_fn": 5,
+    "node_recall": 0.9919512402310567,
+    "adj_edge_jaccard": 0.941695109466634,
+    "n_adj": 4,
+    "score": 0.9666951094666341
+  },
+  "delta": {
+    "score": -0.020170547088708246,
+    "adj_edge_jaccard": -0.005170547088708233,
+    "division_jaccard": -0.15
+  },
+  "selected_events": 305,
+  "quality_status": "below_control_same_division_recall_more_false_positives",
+  "version": 1,
+  "kernel": "https://www.kaggle.com/code/jarturo/biohub-lab-joint-lineage-selection",
+  "payload_sha256": "46b73b5232382dd2b30d72fe3e15ba2313309327740050d3ad3a966fed826f32",
+  "checked_at_utc": "2026-09-14T22:24:00.887213+00:00",
+  "totals": {
+    "nodes": 75154,
+    "edges": 72974,
+    "predicted_forks": 378,
+    "windows": 12110,
+    "positive_hypotheses": 1575,
+    "selected_events": 305,
+    "changes": {
+      "removed_base_nodes": 671,
+      "added_nodes": 845,
+      "removed_base_edges": 988,
+      "added_edges": 1467
+    },
+    "edge_tp": 2052,
+    "edge_fp": 83,
+    "edge_fn": 64
+  },
+  "artifact_hashes": {
+    "44b6_341df25f": {
+      "candidate_pool.npz": "53f9dd744ad229a0b5a824debe4e115fbf912e8464ab1c70a3b399c4d8f3bff3",
+      "event_audit.jsonl": "39d4310314322da3b6baa60ec09e977c86f0807bd2d77ff91e473c0d8fd70ad4",
+      "final_graph.npz": "4f46eb1f90f6723862112daf93e9d5bf9de9174b5a392250eab8f25c5e3592b6",
+      "receipt.json": "2769d4a2b84868b50df5dd7d82cd7861c4666c4d860ea1b8451e2699fcf453e4",
+      "window_audit.jsonl": "42ea843711ef1269022b80e07bd534229492b2437c3b74ea1f57fe1818982577"
+    },
+    "44b6_53f95252": {
+      "candidate_pool.npz": "5a96babe6c86f44b98b4c95bf6deb83b83f7a9ca729996ce77977dbf536f2283",
+      "event_audit.jsonl": "48fe182ce2a77dde2e3ab1b7c9a65cc862c0813581d87279544e237be7196376",
+      "final_graph.npz": "0c6edc925ff1f40410c1cea911179192c756acafcf82c87b7bba7ecb8a0364c3",
+      "receipt.json": "0221bdf658260b0a0bac95b5c5b74ba091f2c9968cbd92e6dbac8a4c22ad7ccc",
+      "window_audit.jsonl": "d64f0ead7b1ee29896738e8d6abc539edc546d359adce68dd2e84f7726c430ab"
+    },
+    "6bba_337b1b3a": {
+      "candidate_pool.npz": "baba7da81b3ccb89e90ff9bc2b7049c15a987e3665e0bfa73967e677025bd711",
+      "event_audit.jsonl": "c6ad5baaa1c8a94a64f949d2754677d4b53625bf3d03a9043711127780c17475",
+      "final_graph.npz": "0b6eb1fea9565af6a9333792e0f4c99da79d40b5c9d010b150cc69c21bc63d2c",
+      "receipt.json": "4949b73f2df2e2f15c5a9df2e2b67c7260d613e44b706714489ae880ea576956",
+      "window_audit.jsonl": "94779a1d68835ca61d28d60080d6e6b93def22825f6e56dc2b004702c9974e9e"
+    },
+    "6bba_afb141ff": {
+      "candidate_pool.npz": "59b5272fa515a46e60541a709086642b2bc9f012ca141338d378c9f205429acb",
+      "event_audit.jsonl": "67d0000366e93ba5c4c30e993cac71116169a5c884f746bea1d67615d8e826b1",
+      "final_graph.npz": "b11db2fbf1c82e2670319def19624106031d4bab059ed52f20a79ff805a4db65",
+      "receipt.json": "661973d4b4f625f5ffe95c2c62e44048310f1c5d996a68234e787c9ae2925c81",
+      "window_audit.jsonl": "28e44443e0b6444cb1c114a325347d340a48a646df1b69e6c205933e02b1de08"
+    }
+  },
+  "verification": {
+    "source_payload": true,
+    "source_and_manifest_hashes": true,
+    "cached_inputs": true,
+    "candidate_pools": true,
+    "window_inventory": true,
+    "window_event_membership": true,
+    "final_graph_reconstructed": true,
+    "final_csv": true,
+    "packing_objective": true,
+    "metric_aggregation": true,
+    "raw_image_scores_recomputed_locally": false,
+    "official_graph_matching_rerun_locally": false
+  },
+  "decision": "do_not_submit_this_version"
+}

@@ -35,4 +35,36 @@ Las pruebas cubren reemplazo de centros fusionados, rechazo de dos células pree
 
 [Ultrack, Nature Methods, 2025](https://www.nature.com/articles/s41592-025-02778-0) formula conjuntamente la selección de hipótesis de segmentación y sus enlaces temporales. E010 toma esa idea como orientación. El código aquí es propio y trabaja con centros, trayectorias huérfanas y eventos; no reproduce el árbol de segmentaciones ni la implementación completa de Ultrack, y no utiliza sus pesos.
 
-Lanzado en [Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-joint-lineage-selection), versión 1, el 14 de septiembre de 2026. Estado inicial observado: **QUEUED**. Resultados pendientes. Pasaron las **63 pruebas locales**, incluidas las nueve nuevas. Recibos: `results/E010_launch.json` y `results/E010_preflight.json`. No se publica automáticamente una submission ni se mantiene un monitor de ejecución.
+Lanzado en [Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-joint-lineage-selection), versión 1, el 14 de septiembre de 2026. Pasaron las **63 pruebas locales**, incluidas las nueve nuevas. Recibos de lanzamiento y comprobación previa: `results/E010_launch.json` y `results/E010_preflight.json`.
+
+## Resultado verificado: negativo
+
+Kaggle confirmó **COMPLETE**. El pipeline registró **213,78 segundos** (3,56 minutos), sin instalación ni cola. La optimización seleccionó 305 eventos de 1.575 hipótesis positivas procedentes de las 12.110 ventanas. Retiró 671 centros del control e incorporó 845; eliminó 988 enlaces y añadió 1.467. El resultado contiene 75.154 nodos, 72.974 enlaces y 378 bifurcaciones, frente a 73 bifurcaciones del control.
+
+| Métrica del diagnóstico | Harmonic | E010 |
+|---|---:|---:|
+| Score oficial | 0,9666951095 | 0,9465245624 |
+| Jaccard ajustado de enlaces | 0,9416951095 | 0,9365245624 |
+| Divisiones correctas / falsas / omitidas | 2 / 1 / 5 | 2 / 13 / 5 |
+| Enlaces correctos / falsos / omitidos | 2051 / 70 / 65 | 2052 / 83 / 64 |
+| Recall de nodos | 0,9919512402 | 0,9919512402 |
+
+La diferencia de score es **−0,0201705471**. Se recuperó un enlace anotado neto, a costa de trece enlaces falsos adicionales; no aumentaron las divisiones correctas. Las 305 bifurcaciones nuevas no equivalen a 305 falsos positivos oficiales: las anotaciones son dispersas y la métrica solo puede evaluar parte del grafo. Estas cifras tampoco son un score público de Kaggle.
+
+Se verificaron el paquete realmente descargado, los hashes de fuentes y entradas, la reconstrucción exacta de los pools de candidatos, las 12.110 ventanas, la pertenencia de cada evento a su ventana, el objetivo del solver, los grafos finales y el CSV. Los cuatro problemas enteros terminaron con gap cero. La agregación oficial se reprodujo localmente a partir de los recuentos por video. No se recalcularon localmente las señales de imagen ni el matching oficial de grafos; ese matching se ejecutó en Kaggle. Verificación reproducible: `scripts/verify_joint_result.py`; recibo agregado: `results/E010_completed.json`.
+
+## El fallo de cobertura que explica el resultado
+
+La auditoría posterior de las siete divisiones anotadas encontró que **ninguna de las cinco sin bifurcación cercana en el control tenía una ventana candidata con madre a menos de 7 µm en el fotograma anotado**. Para la madre más próxima de cada evento:
+
+- Tres quedaron fuera por falta de una trayectoria huérfana que cumpliera los requisitos de ancla persistente y geometría.
+- Una quedó fuera porque su continuación no formaba la cadena de seis pasos con un único hijo exigida por el diseño.
+- Una quedó fuera porque faltaba el contexto de dos antecesores.
+
+Las dos divisiones que ya tenían bifurcación cercana permanecieron recuperadas. La existencia de dos centros distintos próximos a las hijas siguió siendo cuatro de siete eventos, igual que el control. Es una comprobación geométrica en el fotograma exacto, **no una reproducción del matching oficial ni una afirmación sobre todos los fotogramas vecinos**.
+
+El error de diseño fue condicionar la generación de hipótesis al grafo final de Harmonic, que ya podía contener roturas o asociaciones equivocadas. El solver no puede recuperar un evento excluido de sus entradas. La comprobación previa contó ventanas, pero no comprobó su cobertura en eventos reales de un conjunto de desarrollo; las pruebas sintéticas de funcionamiento no resolvían esa limitación. A la vez, los criterios de señal y movimiento permitieron cambios que aumentaron los falsos positivos.
+
+Resumen agregado: `results/E010_coverage_audit.json`. Las coordenadas y correspondencias detalladas permanecen en `outputs/E010_coverage_details.json`, fuera de Git. Esta auditoría no cambió las predicciones ni seleccionó umbrales.
+
+**Decisión:** cerrar E010 v1 sin submission. La siguiente implementación debería generar trayectorias desde las propuestas de detección, permitiendo corregir nacimientos y enlaces equivocados, y usar una puntuación de eventos contrastada con negativos reales. Antes de otro entrenamiento o evaluación final, debe medirse la cobertura de hipótesis en un conjunto de desarrollo separado; no ajustar este diseño a los siete eventos ya inspeccionados. No se inició otro notebook durante esta revisión ni quedó una espera o un monitor activo.

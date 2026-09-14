@@ -1,0 +1,21 @@
+{
+  "experiment": "E010",
+  "checked_at_utc": "2026-09-14T22:28:58.390534+00:00",
+  "scope": "Post-hoc exact-frame geometry at 7um for seven annotated divisions; not official graph matching. No thresholds or predictions changed. Other times are not counted by this coverage diagnostic.",
+  "annotated_events_reviewed": 7,
+  "prepared_gt_checksums_verified": true,
+  "baseline_events_with_nearby_fork": 2,
+  "final_events_with_nearby_fork": 2,
+  "baseline_events_without_nearby_fork": 5,
+  "missing_events_with_any_candidate_mother_within_7um_exact_frame": 0,
+  "nearest_mother_rejection_causes": {
+    "no_eligible_persistent_orphan_anchor": 3,
+    "primary_chain_not_single_child_for_six_steps": 1,
+    "missing_two_parent_context": 1
+  },
+  "baseline_distinct_daughter_events": 4,
+  "final_distinct_daughter_events": 4,
+  "predictions_changed": false,
+  "ground_truth_used_for_inference": false,
+  "detailed_coordinates_kept_local": true
+}

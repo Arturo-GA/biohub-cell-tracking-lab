@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 14,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E010_joint_reconstruction_launched_results_pending",
+  "quality_status": "E010_below_control_same_division_recall_more_false_positives",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -216,8 +216,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": true,
-  "active_experiment": "E010",
+  "next_experiment_started": false,
+  "active_experiment": null,
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -301,7 +301,7 @@
       }
     }
   },
-  "next_research_direction": "Review E010 joint event selection and final official metric when Arturo reports completion; no polling or automatic submission.",
+  "next_research_direction": "Generate daughter trajectory hypotheses from detections without requiring persistent Harmonic orphan anchors. Measure proposal coverage on separate development data before evaluating a learned or validated event score; do not tune to the seven inspected diagnostic events.",
   "E008": {
     "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-cellect-detector",
@@ -400,9 +400,7 @@
       "official_graph_matching_rerun_locally": false
     }
   },
-  "active_experiments": [
-    "E010"
-  ],
+  "active_experiments": [],
   "detector_test_evidence": {
     "full_suite_passed": 54,
     "detector_regression_tests": 10,
@@ -414,12 +412,12 @@
     "kernel": "jarturo/biohub-lab-joint-lineage-selection",
     "version": 1,
     "payload_sha256": "46b73b5232382dd2b30d72fe3e15ba2313309327740050d3ad3a966fed826f32",
-    "last_observed_status": "QUEUED",
-    "checked_at_utc": "2026-09-14T19:54:05.784867+00:00",
+    "last_observed_status": "COMPLETE",
+    "checked_at_utc": "2026-09-14T22:24:00.887213+00:00",
     "run_started": true,
     "local_wait_active": false,
     "leaderboard_submitted": false,
-    "results_available": false,
+    "results_available": true,
     "neural_training": false,
     "accelerator": "CPU",
     "implementation": "Joint selection of replacement centers and two daughter paths with image onset evidence and global event conflicts",
@@ -433,6 +431,35 @@
       "E009": 2
     },
     "scope": "Conditional training diagnostic on four previously analyzed videos; not independent validation",
-    "next_action": "Wait for Arturo to report completion, then verify outputs and compare final official metrics. No active local wait."
+    "next_action": "E010 v1 closed without submission. Redesign hypothesis generation and validate coverage on separate development data; no new notebook launched during this review.",
+    "decision": "do_not_submit_this_version",
+    "receipt": "results/E010_completed.json",
+    "coverage_audit": "results/E010_coverage_audit.json",
+    "downloaded_source_verified": true,
+    "final_graph_reconstructed": true,
+    "packing_objective_reproduced": true,
+    "result": {
+      "conditional_score": 0.9465245623779258,
+      "conditional_control_score": 0.9666951094666341,
+      "delta_vs_harmonic": {
+        "score": -0.020170547088708246,
+        "adj_edge_jaccard": -0.005170547088708233,
+        "division_jaccard": -0.15
+      },
+      "division_tp_fp_fn": [
+        2,
+        13,
+        5
+      ],
+      "control_division_tp_fp_fn": [
+        2,
+        1,
+        5
+      ],
+      "selected_events": 305,
+      "predicted_forks": 378,
+      "seconds": 213.779601233,
+      "missing_events_with_exact_frame_candidate_windows": 0
+    }
   }
 }
