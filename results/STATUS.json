@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 54,
+  "local_tests_passed": 63,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -51,10 +51,10 @@
     "submitted_by_this_task": false,
     "public_score": 0.885
   },
-  "notebooks_schema_validated": 13,
+  "notebooks_schema_validated": 14,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "both_detector_augmentations_below_control_no_additional_official_divisions",
+  "quality_status": "E010_joint_reconstruction_launched_results_pending",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -77,7 +77,8 @@
     "development_only_division_threshold",
     "additive_orphan_assignment_preserving_baseline",
     "cellect_complementary_detector",
-    "gaussian_complementary_detector"
+    "gaussian_complementary_detector",
+    "joint_multiframe_center_and_division_event_selection"
   ],
   "research_only": [
     "FOCUS-3D_distillation",
@@ -215,8 +216,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": false,
-  "active_experiment": null,
+  "next_experiment_started": true,
+  "active_experiment": "E010",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -300,7 +301,7 @@
       }
     }
   },
-  "next_research_direction": "Joint temporal selection of detection and division hypotheses, with stage-by-stage proposal provenance; recovered daughter can remain orphaned and near-GT proposals can be absent from the final graph.",
+  "next_research_direction": "Review E010 joint event selection and final official metric when Arturo reports completion; no polling or automatic submission.",
   "E008": {
     "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-cellect-detector",
@@ -399,12 +400,39 @@
       "official_graph_matching_rerun_locally": false
     }
   },
-  "active_experiments": [],
+  "active_experiments": [
+    "E010"
+  ],
   "detector_test_evidence": {
     "full_suite_passed": 54,
     "detector_regression_tests": 10,
     "actual_kaggle_checkpoint_verified": true,
     "actual_kaggle_predictor_hook_executed": true
   },
-  "monitoring_active": false
+  "monitoring_active": false,
+  "E010": {
+    "kernel": "jarturo/biohub-lab-joint-lineage-selection",
+    "version": 1,
+    "payload_sha256": "46b73b5232382dd2b30d72fe3e15ba2313309327740050d3ad3a966fed826f32",
+    "last_observed_status": "QUEUED",
+    "checked_at_utc": "2026-09-14T19:54:05.784867+00:00",
+    "run_started": true,
+    "local_wait_active": false,
+    "leaderboard_submitted": false,
+    "results_available": false,
+    "neural_training": false,
+    "accelerator": "CPU",
+    "implementation": "Joint selection of replacement centers and two daughter paths with image onset evidence and global event conflicts",
+    "candidate_windows": 12110,
+    "launch_receipt": "results/E010_launch.json",
+    "preflight_receipt": "results/E010_preflight.json",
+    "documentation": "docs/JOINT_LINEAGE.es.md",
+    "input_versions": {
+      "E001": 1,
+      "E008": 2,
+      "E009": 2
+    },
+    "scope": "Conditional training diagnostic on four previously analyzed videos; not independent validation",
+    "next_action": "Wait for Arturo to report completion, then verify outputs and compare final official metrics. No active local wait."
+  }
 }

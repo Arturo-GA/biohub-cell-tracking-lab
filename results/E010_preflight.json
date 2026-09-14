@@ -1,0 +1,43 @@
+{
+  "experiment": "E010",
+  "payload_sha256": "46b73b5232382dd2b30d72fe3e15ba2313309327740050d3ad3a966fed826f32",
+  "local_tests_passed": 63,
+  "new_tests_passed": 9,
+  "notebook_schema_valid": true,
+  "all_packaged_files_match": true,
+  "upstream_receipts_and_arrays_verified": true,
+  "annotated_graphs_read": false,
+  "graph_inventory": {
+    "44b6_341df25f": {
+      "baseline_nodes": 8413,
+      "baseline_edges": 8179,
+      "raw_cached_proposals": 12871,
+      "extra_candidate_centers": 12010,
+      "windows": 989
+    },
+    "44b6_53f95252": {
+      "baseline_nodes": 31608,
+      "baseline_edges": 30634,
+      "raw_cached_proposals": 66039,
+      "extra_candidate_centers": 64665,
+      "windows": 7023
+    },
+    "6bba_337b1b3a": {
+      "baseline_nodes": 29397,
+      "baseline_edges": 28397,
+      "raw_cached_proposals": 21930,
+      "extra_candidate_centers": 21296,
+      "windows": 3488
+    },
+    "6bba_afb141ff": {
+      "baseline_nodes": 5562,
+      "baseline_edges": 5285,
+      "raw_cached_proposals": 7557,
+      "extra_candidate_centers": 7270,
+      "windows": 610
+    }
+  },
+  "total_windows": 12110,
+  "raw_image_integration": "Synthetic Zarr scene, real reconstruction and CSV validation; final official evaluator mocked in this test only",
+  "quality_status": "not_measured"
+}

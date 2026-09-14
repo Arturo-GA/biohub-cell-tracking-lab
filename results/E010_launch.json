@@ -1,0 +1,13 @@
+{
+  "ref": "/code/jarturo/biohub-lab-joint-lineage-selection",
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-joint-lineage-selection",
+  "versionNumber": 1,
+  "kernelId": 134390773,
+  "launched_at_utc": "2026-09-14T19:54:05.245687+00:00",
+  "payload_sha256": "46b73b5232382dd2b30d72fe3e15ba2313309327740050d3ad3a966fed826f32",
+  "experiment": "E010",
+  "local_wait_active": false,
+  "leaderboard_submitted": false,
+  "initial_status": "QUEUED",
+  "status_checked_at_utc": "2026-09-14T19:54:05.784867+00:00"
+}

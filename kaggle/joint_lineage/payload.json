@@ -1,0 +1,21 @@
+{
+  "sha256": "46b73b5232382dd2b30d72fe3e15ba2313309327740050d3ad3a966fed826f32",
+  "experiment": "E010",
+  "files": [
+    "baseline/harmonic_inference.py",
+    "baseline/joint_inputs.json",
+    "NOTICE.md",
+    "scripts/joint_runner.py",
+    "scripts/notebook_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/detector_proposals.py",
+    "src/biohub_lab/evaluate.py",
+    "src/biohub_lab/joint_lineage.py",
+    "src/biohub_lab/patch.py",
+    "src/biohub_lab/submission.py",
+    "src/biohub_official/__init__.py",
+    "src/biohub_official/division_metrics.py",
+    "src/biohub_official/LICENSE",
+    "src/biohub_official/metrics.py"
+  ]
+}

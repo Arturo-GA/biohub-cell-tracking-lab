@@ -30,6 +30,7 @@ La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envi�
 | `kaggle/temporal_specialist` | E007: nueva red temporal de mitosis con E006 congelado y reparación aditiva de Harmonic | Pesos, umbrales de desarrollo, CSV diagnóstico y métrica oficial |
 | `kaggle/detector_cellect` | E008: detector temporal CELLECT a resolución nativa + Harmonic completo | Propuestas, auditoría de inyección, CSV y métrica oficial |
 | `kaggle/detector_gaussian` | E009: separación de núcleos mediante ajuste de dos gaussianas + Harmonic completo | Propuestas, auditoría de inyección, CSV y métrica oficial |
+| `kaggle/joint_lineage` | E010: selección conjunta de centros y dos trayectorias de hijas usando propuestas guardadas y evidencia de imagen | Grafo reconstruido, decisiones por etapa y métrica oficial |
 
 El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
 
@@ -51,7 +52,9 @@ Los notebooks contienen el código necesario y adjuntan tres datasets públicos 
 
 **E008/E009 completados, sin promoción a submission:** las versiones 2 corrigieron los fallos de integración y terminaron el tracking completo. CELLECT obtuvo **0.9656549** y gaussianas **0.9628131**, frente a **0.9666951** del control; ambos conservaron divisiones TP/FP/FN **2/1/5**. Se verificaron fuentes, CSV, propuestas, inyección y agregación de la métrica. Ambos recuperaron geométricamente una hija antes ausente, pero quedó sin enlace con su madre; otras propuestas cercanas no llegaron al resultado final. La siguiente prioridad es decidir conjuntamente qué centros conservar y cómo reconstruir cada división durante varios fotogramas. Los scores son diagnósticos sobre entrenamiento, no leaderboard. [Resultados, auditoría y límites](docs/DETECTOR_EXPERIMENTS.es.md); recibos `results/E008_completed.json` y `results/E009_completed.json`.
 
-Pruebas: Python 3.12, PyTorch, NumPy, SciPy, scikit-image y nbformat. En PowerShell, desde la raíz:
+**E010 lanzado, resultados pendientes:** el nuevo optimizador puede sustituir centros fusionados, seleccionar propuestas de CELLECT/gaussianas y reconstruir ambas ramas de una división conjuntamente. Explora 12.110 ventanas temporales del control y resuelve conflictos globales entre eventos. Reutiliza inferencias ya completadas, se ejecuta en CPU y evalúa el CSV final con la métrica oficial. Pasaron 63 pruebas locales, incluidas 9 nuevas. Sigue siendo un diagnóstico sobre entrenamiento. [Diseño y límites](docs/JOINT_LINEAGE.es.md), [notebook Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-joint-lineage-selection), [recibo del lanzamiento](results/E010_launch.json). No hay monitor ni espera local activa; se revisarán los resultados cuando Arturo avise.
+
+Pruebas: Python 3.12, PyTorch, NumPy, SciPy, scikit-image, Zarr y nbformat. En PowerShell, desde la raíz:
 
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) 'src')

@@ -1,0 +1,65 @@
+{
+  "experiment": "E010",
+  "datasets": [
+    "44b6_53f95252",
+    "44b6_341df25f",
+    "6bba_afb141ff",
+    "6bba_337b1b3a"
+  ],
+  "control": {
+    "slug": "biohub-lab-official-metric-ab",
+    "version": 1,
+    "receipt_sha256": "b3dd2ccbcee17ce27e6076eb1ca9db10dd41c0c6c352126fca4e7e17505ea6c9",
+    "csv_sha256": "b281534606521727d7582ee22a8df791312fdd2dc61ef285b4e5fbb91a7e3f51"
+  },
+  "proposals": [
+    {
+      "method": "cellect",
+      "slug": "biohub-lab-cellect-detector",
+      "version": 2,
+      "receipt_sha256": "d24a729515f7adcbe3e40ef9ac0f95a46c81de943c1a57a2d7b816e4a2dd9051",
+      "files": {
+        "44b6_53f95252": {
+          "sha256": "3aa432af6cc8744b9dfb1ac867650a1e080ce3c73ef6dcc11992bb8b3cba7377",
+          "count": 60342
+        },
+        "44b6_341df25f": {
+          "sha256": "f127107891928fa3510f3f7ac5ac1e197f32ec26fcc63eca064428f43c51e390",
+          "count": 7608
+        },
+        "6bba_afb141ff": {
+          "sha256": "202f0a67620516936c1e3088b00df2be381ad9679fa0538d7901213574b629cc",
+          "count": 4317
+        },
+        "6bba_337b1b3a": {
+          "sha256": "468a03cb5898956a717933139999772d7588f30cbccf0b265b38fbadb49e0c7e",
+          "count": 18078
+        }
+      }
+    },
+    {
+      "method": "gaussian",
+      "slug": "biohub-lab-gaussian-deblending",
+      "version": 2,
+      "receipt_sha256": "26b0f34aba5e3d94fe1b9b79e842ff6cfb60a1857aa6658ef66cd549341523c9",
+      "files": {
+        "44b6_53f95252": {
+          "sha256": "56be868d9ca92188cbf6e6111e48a200dd0332b1f980b46164d7f78087100488",
+          "count": 5697
+        },
+        "44b6_341df25f": {
+          "sha256": "74b567e7e76e3fcc180a83f6b3d845e8828e982f4dc5d633f07acb4ecf27648d",
+          "count": 5263
+        },
+        "6bba_afb141ff": {
+          "sha256": "e55864ca26bf71bfc619c2455a70278d0b92fcb024081caac7bda0b7df391210",
+          "count": 3240
+        },
+        "6bba_337b1b3a": {
+          "sha256": "74f142c115d3c1f8c957178a3fb782b87c7389aec74470e0fd59b460781358f9",
+          "count": 3852
+        }
+      }
+    }
+  ]
+}
