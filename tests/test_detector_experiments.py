@@ -1,15 +1,41 @@
 import ast
+import hashlib
+import json
+import os
 from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
 import numpy as np
 from biohub_lab.detector_proposals import augment_detections, nms, temporal_filter, patch_predictor, install_pipeline_hook
 from biohub_lab.gaussian_detector import model_and_jac, fit_split, GRID
-from biohub_lab.cellect_detector import preprocess, tile_starts, decode
+from biohub_lab.cellect_detector import preprocess, tile_starts, decode, find_checkpoint, WEIGHT_NAMES
 
 ROOT=Path(__file__).resolve().parents[1]
 
 
 class DetectorTests(unittest.TestCase):
+    def test_checkpoint_accepts_upstream_and_kaggle_names_with_pinned_content(self):
+        content=b'pinned checkpoint fixture'
+        digest=hashlib.sha256(content).hexdigest()
+        for name in WEIGHT_NAMES:
+            with self.subTest(name=name), tempfile.TemporaryDirectory() as folder:
+                root=Path(folder);asset=root/'datasets'/'jarturo'/'cellect'/name
+                asset.parent.mkdir(parents=True);asset.write_bytes(content)
+                self.assertEqual(find_checkpoint(root,expected_sha=digest),asset.resolve())
+                asset.write_bytes(b'wrong weights')
+                with self.assertRaisesRegex(ValueError,'SHA256 mismatch'):
+                    find_checkpoint(root,expected_sha=digest)
+
+    def test_checkpoint_missing_or_ambiguous_fails_closed(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            with self.assertRaisesRegex(ValueError,'exactly one'):
+                find_checkpoint(root)
+            for name in WEIGHT_NAMES:(root/name).write_bytes(b'same')
+            with self.assertRaisesRegex(ValueError,'exactly one'):
+                find_checkpoint(root)
+
     def test_cellect_packaged_source_integrity(self):
         import hashlib
         from biohub_lab.cellect_detector import MODEL_SHA
@@ -70,7 +96,7 @@ class DetectorTests(unittest.TestCase):
         self.assertEqual(len(decode(seg,loc)[0]),0)
 
     def test_runtime_hook_before_registration_and_fail_closed(self):
-        # Execute a minimal upstream-shaped predictor to verify call ordering.
+        # Match the upstream nesting and run the installed hook in a clean scope.
         source='''def predict(arr, ds_path, t, downsample):
     coord_offset={}
     global_node_count=0
@@ -87,8 +113,31 @@ class DetectorTests(unittest.TestCase):
         baseline=(ROOT/'baseline/harmonic_inference.py').read_text()
         changed=install_pipeline_hook(baseline)
         ast.parse(changed)
-        self.assertLess(changed.index('_proposal_changed = patch_predictor'),changed.index('def list_test_stems'))
-        self.assertGreater(changed.index('_proposal_changed = patch_predictor'),changed.index('_runtime_integrity_receipt_path.write_text'))
+        self.assertLess(changed.index('install_predictor_file(_ps,'),changed.index('def list_test_stems'))
+        self.assertGreater(changed.index('install_predictor_file(_ps,'),changed.index('_runtime_integrity_receipt_path.write_text'))
+        # The baseline does not define hashlib here. The full injected block must
+        # run with just the two baseline path variables, not our test imports.
+        anchor='print("secondary edge-feature TTA patch installed and enabled", flush=True)'
+        block=install_pipeline_hook(anchor)
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);predictor=root/'predictor.py';predictor.write_text(source)
+            namespace={'_ps':predictor,'WORKING_DIR':root}
+            exec(compile(block,'<installed-hook>','exec'),namespace)
+            receipt=json.loads((root/'proposal_patch_receipt.json').read_text())
+            self.assertEqual(receipt['before_sha256'],hashlib.sha256(source.encode()).hexdigest())
+            self.assertEqual(receipt['after_sha256'],hashlib.sha256(patched.encode()).hexdigest())
+            self.assertEqual(predictor.read_text(),patched)
+            self.assertNotIn('hashlib',namespace)
+            np.savez_compressed(root/'sample.npz',coords=np.array([[3,10,60,40]],np.float32),
+                                scores=np.array([.9]),shape=np.array([100,64,256,256]))
+            execute={}
+            exec(compile(predictor.read_text(),str(predictor),'exec'),execute)
+            with patch.dict(os.environ,{'BIOHUB_PROPOSAL_DIR':str(root),'BIOHUB_GPU_SHARD':'test'}):
+                result,offset=execute['predict'](np.array([[3,10,10,10]]),root/'sample.zarr',3,(1,4,4))
+            np.testing.assert_array_equal(result,[[3,10,10,10],[3,10,15,10]])
+            self.assertEqual(offset,{3:(0,2)})
+            audit=json.loads((root/'injection_test.jsonl').read_text())
+            self.assertEqual((audit['baseline'],audit['proposals'],audit['added']),(1,1,1))
 
 
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-09-14T17:47:51.340512+00:00",
+  "datasetFiles": [
+    {
+      "name": "CELLECT_LICENSE.txt",
+      "creationDate": "2026-09-14T17:20:03.114Z",
+      "totalBytes": 18092
+    },
+    {
+      "name": "U-ext-x3rd-149.0-4.6540.pth",
+      "creationDate": "2026-09-14T17:20:03.425Z",
+      "totalBytes": 10197221
+    },
+    {
+      "name": "cellect_manifest.json",
+      "creationDate": "2026-09-14T17:20:03.163Z",
+      "totalBytes": 504
+    }
+  ]
+}

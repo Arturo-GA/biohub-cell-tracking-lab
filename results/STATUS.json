@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 52,
+  "local_tests_passed": 54,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 13,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "two_new_detector_experiments_launched_results_pending",
+  "quality_status": "repaired_detector_experiments_relaunched_results_pending",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -304,35 +304,42 @@
   "E008": {
     "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-cellect-detector",
-    "version": 1,
+    "version": 2,
     "last_observed_status": "QUEUED",
-    "launched_at_utc": "2026-09-14T17:22:16.531308+00:00",
-    "status_checked_at_utc": "2026-09-14T17:22:17.144092+00:00",
-    "payload_sha256": "571f3a0893af6041b52941c6adf8e76f53178461b0565c63f988b2c49d12d5aa",
+    "launched_at_utc": "2026-09-14T17:53:39.936160+00:00",
+    "status_checked_at_utc": "2026-09-14T17:53:40.634015+00:00",
+    "payload_sha256": "fec5c73b111af40b8e09d402adefc63649ced13db8e4fa705b7a7b01dccef312",
     "scope": "conditional training diagnostic on four videos",
     "leaderboard_submitted": false,
-    "result_pending": true
+    "result_pending": true,
+    "previous_version_status": "ERROR",
+    "previous_failure_receipt": "results/E008_v1_failed.json",
+    "recovery_verification": "results/E008_E009_recovery_verification.json"
   },
   "E009": {
     "implementation": "gaussian_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-gaussian-deblending",
-    "version": 1,
+    "version": 2,
     "last_observed_status": "QUEUED",
-    "launched_at_utc": "2026-09-14T17:22:19.939492+00:00",
-    "status_checked_at_utc": "2026-09-14T17:22:20.541366+00:00",
-    "payload_sha256": "571f3a0893af6041b52941c6adf8e76f53178461b0565c63f988b2c49d12d5aa",
+    "launched_at_utc": "2026-09-14T17:53:42.917664+00:00",
+    "status_checked_at_utc": "2026-09-14T17:53:43.548040+00:00",
+    "payload_sha256": "fec5c73b111af40b8e09d402adefc63649ced13db8e4fa705b7a7b01dccef312",
     "scope": "conditional training diagnostic on four videos",
     "leaderboard_submitted": false,
-    "result_pending": true
+    "result_pending": true,
+    "previous_version_status": "ERROR",
+    "previous_failure_receipt": "results/E009_v1_failed.json",
+    "recovery_verification": "results/E008_E009_recovery_verification.json"
   },
   "active_experiments": [
     "E008",
     "E009"
   ],
   "detector_test_evidence": {
-    "full_suite_passed": 51,
-    "detector_suite_after_line_ending_integrity_fix": 8,
-    "unique_tests_passed": 52
+    "full_suite_passed": 54,
+    "detector_regression_tests": 10,
+    "actual_kaggle_checkpoint_verified": true,
+    "actual_kaggle_predictor_hook_executed": true
   },
   "monitoring_active": false
 }

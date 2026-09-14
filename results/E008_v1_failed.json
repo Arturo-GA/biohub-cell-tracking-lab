@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "status": "ERROR",
+  "checked_at_utc": "2026-09-14T17:52:38.553044+00:00",
+  "launch": {
+    "ref": "/code/jarturo/biohub-lab-cellect-detector",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-lab-cellect-detector",
+    "versionNumber": 1,
+    "kernelId": 134368338,
+    "launched_at_utc": "2026-09-14T17:22:16.531308+00:00",
+    "payload_sha256": "571f3a0893af6041b52941c6adf8e76f53178461b0565c63f988b2c49d12d5aa",
+    "initial_status": "QUEUED",
+    "status_checked_at_utc": "2026-09-14T17:22:17.144092+00:00"
+  },
+  "log_sha256": "f4a6006eda9de35fa385e98998add337ddb17f252e68f2baeea960c580d1557c",
+  "official_metrics_produced": false,
+  "leaderboard_submitted": false,
+  "stage": "checkpoint discovery before proposal generation",
+  "error": "ValueError: Attach exactly one pinned CELLECT checkpoint: []",
+  "cause": "Kaggle sanitized U-ext+-x3rd-149.0-4.6540.pth to U-ext-x3rd-149.0-4.6540.pth",
+  "fix": "Accept both exact names and verify the pinned SHA256 before starting workers"
+}

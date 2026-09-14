@@ -77,10 +77,9 @@ def main(method, package):
         PYTHONPATH=str(package/'src'), OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1', OMP_NUM_THREADS='2')
     weights = ''
     if method == 'cellect':
-        candidates = list(Path('/kaggle/input').rglob('U-ext+-x3rd-149.0-4.6540.pth'))
-        if len(candidates) != 1:
-            raise ValueError(f'Attach exactly one pinned CELLECT checkpoint: {candidates}')
-        weights = str(candidates[0])
+        from biohub_lab.cellect_detector import find_checkpoint
+        weights = str(find_checkpoint('/kaggle/input'))
+        print('CELLECT_CHECKPOINT_VERIFIED', weights, flush=True)
     receipt = dict(method=method,datasets=names,config=CONFIG,status='generating_proposals',
         scope='Conditional training diagnostic: all four videos occur in the public secondary detector training set. '
               'Prior error analysis used these four videos. This is not independent validation or a leaderboard result.',

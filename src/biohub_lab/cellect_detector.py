@@ -11,11 +11,24 @@ import numpy as np
 from .detector_proposals import nms, temporal_filter, save_proposals
 
 WEIGHT_SHA = 'f3e8e7303976dc5fb6e52ade12d1ff7953d2a28e30c06274b9f309562cd89ce5'
+WEIGHT_NAMES = ('U-ext+-x3rd-149.0-4.6540.pth', 'U-ext-x3rd-149.0-4.6540.pth')
 # Canonical LF hash; upstream distributes this source with CRLF line endings.
 MODEL_SHA = 'bb0902db6161fa8e8fb4eac5ff58d0b6cc4bcf0754cfaecdbc5128f8dc9724da'
 CELLECT_CONFIG = dict(tile_yxz=[256, 256, 32], overlap_yxz=[16, 16, 8],
                      preprocessing='log1p(max(raw, positive_min) + 1900)',
                      localization_probability=.5, nms_um=3., last_frame='repeat_current')
+
+
+def find_checkpoint(input_root, *, expected_sha=WEIGHT_SHA):
+    """Accept upstream and Kaggle-sanitized filenames, verify pinned bytes first."""
+    root = Path(input_root)
+    candidates = sorted({p.resolve() for name in WEIGHT_NAMES for p in root.rglob(name) if p.is_file()})
+    if len(candidates) != 1:
+        raise ValueError(f'Expected exactly one CELLECT checkpoint ({WEIGHT_NAMES}): {candidates}')
+    path = candidates[0]
+    if hashlib.sha256(path.read_bytes()).hexdigest() != expected_sha:
+        raise ValueError(f'CELLECT checkpoint SHA256 mismatch: {path}')
+    return path
 
 
 def tile_starts(length, size, overlap):

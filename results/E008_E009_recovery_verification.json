@@ -1,0 +1,35 @@
+{
+  "checkpoint_filename": "U-ext-x3rd-149.0-4.6540.pth",
+  "checkpoint_sha256": "f3e8e7303976dc5fb6e52ade12d1ff7953d2a28e30c06274b9f309562cd89ce5",
+  "checkpoint_downloaded_from_kaggle": true,
+  "actual_v1_predictor_repaired": true,
+  "installed_hook_executed_without_caller_hashlib": true,
+  "patch_receipt": {
+    "before_sha256": "e53fc4827310cb9b1ed8fdf3958c0fa1cb923b78dd7e5fc8a4f1c252196b4a07",
+    "after_sha256": "eca139b45b4213e179382cb00b1e6a0c68ffe45595e19342248adcfae21a7c86",
+    "stage": "after baseline integrity verification and TTA patches, before detection/graph/ILP"
+  },
+  "candidate_logic_unchanged": true,
+  "gaussian_proposal_artifacts": {
+    "44b6_53f95252": {
+      "sha256": "56be868d9ca92188cbf6e6111e48a200dd0332b1f980b46164d7f78087100488",
+      "proposals": 5697,
+      "frames": 100
+    },
+    "44b6_341df25f": {
+      "sha256": "74b567e7e76e3fcc180a83f6b3d845e8828e982f4dc5d633f07acb4ecf27648d",
+      "proposals": 5263,
+      "frames": 100
+    },
+    "6bba_afb141ff": {
+      "sha256": "e55864ca26bf71bfc619c2455a70278d0b92fcb024081caac7bda0b7df391210",
+      "proposals": 3240,
+      "frames": 100
+    },
+    "6bba_337b1b3a": {
+      "sha256": "74f142c115d3c1f8c957178a3fb782b87c7389aec74470e0fd59b460781358f9",
+      "proposals": 3852,
+      "frames": 100
+    }
+  }
+}

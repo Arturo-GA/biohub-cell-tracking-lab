@@ -115,19 +115,27 @@ def patch_predictor(source):
     return result
 
 
+def install_predictor_file(predictor_path, receipt_path):
+    """Install with this module's imports, independent of the caller's globals."""
+    predictor_path, receipt_path = Path(predictor_path), Path(receipt_path)
+    original = predictor_path.read_text(encoding='utf8')
+    changed = patch_predictor(original)
+    receipt = {
+        'before_sha256': hashlib.sha256(original.encode()).hexdigest(),
+        'after_sha256': hashlib.sha256(changed.encode()).hexdigest(),
+        'stage': 'after baseline integrity verification and TTA patches, before detection/graph/ILP',
+    }
+    predictor_path.write_text(changed, encoding='utf8')
+    receipt_path.write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf8')
+    return receipt
+
+
 def install_pipeline_hook(source):
     anchor = 'print("secondary edge-feature TTA patch installed and enabled", flush=True)'
     if source.count(anchor) != 1:
         raise ValueError('Final runtime patch anchor changed')
     return source.replace(anchor, anchor + '''
-from biohub_lab.detector_proposals import patch_predictor
-_proposal_original = _ps.read_text()
-_proposal_changed = patch_predictor(_proposal_original)
-_ps.write_text(_proposal_changed)
-Path(WORKING_DIR / "proposal_patch_receipt.json").write_text(json.dumps({
-    "before_sha256": hashlib.sha256(_proposal_original.encode()).hexdigest(),
-    "after_sha256": hashlib.sha256(_proposal_changed.encode()).hexdigest(),
-    "stage": "after baseline integrity verification and TTA patches, before detection/graph/ILP",
-}, indent=2))
+from biohub_lab.detector_proposals import install_predictor_file
+install_predictor_file(_ps, WORKING_DIR / "proposal_patch_receipt.json")
 print("Native-resolution proposals installed before coordinate registration", flush=True)
 ''', 1)

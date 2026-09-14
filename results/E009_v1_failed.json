@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "status": "ERROR",
+  "checked_at_utc": "2026-09-14T17:52:38.553044+00:00",
+  "launch": {
+    "ref": "/code/jarturo/biohub-lab-gaussian-deblending",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-lab-gaussian-deblending",
+    "versionNumber": 1,
+    "kernelId": 134368351,
+    "launched_at_utc": "2026-09-14T17:22:19.939492+00:00",
+    "payload_sha256": "571f3a0893af6041b52941c6adf8e76f53178461b0565c63f988b2c49d12d5aa",
+    "initial_status": "QUEUED",
+    "status_checked_at_utc": "2026-09-14T17:22:20.541366+00:00"
+  },
+  "log_sha256": "391e022f8810caadc93dedfb36b9a7c1b919b085deed73d6d6f3261f598e3dd8",
+  "official_metrics_produced": false,
+  "leaderboard_submitted": false,
+  "stage": "runtime patch receipt before tracking inference",
+  "error": "NameError: name 'hashlib' is not defined",
+  "cause": "Injected receipt code depended on a global import absent at that point in the frozen baseline",
+  "fix": "Move installation and receipt generation into a self-contained imported function",
+  "proposal_seconds": 519.9418707909999,
+  "proposals_by_dataset": {
+    "44b6_53f95252": 5697,
+    "44b6_341df25f": 5263,
+    "6bba_afb141ff": 3240,
+    "6bba_337b1b3a": 3852
+  }
+}
