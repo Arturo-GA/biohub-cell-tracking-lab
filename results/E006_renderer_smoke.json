@@ -1,0 +1,8 @@
+{
+  "scope": "Local procedural smoke run without real templates; engineering and label checks, not a quality score",
+  "scenes": 64,
+  "seconds": 1.9689999999827705,
+  "divisions": 141,
+  "edge_coverage": 1.0,
+  "projected_patch_bytes_per_2048_scenes": 1500672960
+}

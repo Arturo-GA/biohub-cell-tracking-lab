@@ -26,6 +26,7 @@ La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envi�
 | `kaggle/temporal_prepare` | Cinco frames por célula y distractores DoG sobre los 199 videos | Recortes y ejemplos reutilizables |
 | `kaggle/temporal_train` | Dos modelos propios, cada uno excluyendo un embrión; después comparación con Harmonic | Pesos, splits y evaluaciones; sin submission |
 | `kaggle/temporal_test` | Ensemble de los dos modelos temporales sobre todo el test | `submission.csv` y recibo de inferencia |
+| `kaggle/temporal_dense` | E006: linajes densos sintéticos, preentrenamiento y adaptación por embrión | Pesos, manifiestos y comparación automática con E004 y Harmonic |
 
 El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
 
@@ -40,6 +41,8 @@ Los notebooks contienen el código necesario y adjuntan tres datasets públicos 
 **E005 terminó en el leaderboard con 0.913**, frente a **0.946** del control: submission **56223367**, estado **COMPLETE**, script version `349689941`. El ensemble reutilizó los dos modelos de E004 con los mismos umbrales. El CSV visible pasó la validación y conservó exactamente las detecciones del control, pero sus bifurcaciones predichas pasaron de 98 a 0. **Se cierra esta versión como resultado negativo.** [Implementación, resultado y límites](docs/TEMPORAL_SUBMISSION.es.md), [recibo completo](results/E005_test_completed.json).
 
 ## Desarrollo
+
+**E006 implementado:** 2.048 películas sintéticas por separación, 4.000 pasos de preentrenamiento y 3.000 de adaptación real. Las texturas se extraen exclusivamente del embrión de entrenamiento. Se conserva la arquitectura de E004 para estudiar la aportación de supervisión densa. [Diseño, ejecución y límites](docs/DENSE_PRETRAINING.es.md). El estado remoto y los recibos se registran en `results/STATUS.json`.
 
 Pruebas: Python 3.12, PyTorch, NumPy, SciPy, scikit-image y nbformat. En PowerShell, desde la raíz:
 

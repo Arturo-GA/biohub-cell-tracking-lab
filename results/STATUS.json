@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 35,
+  "local_tests_passed": 39,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -51,7 +51,7 @@
     "submitted_by_this_task": false,
     "public_score": 0.885
   },
-  "notebooks_schema_validated": 9,
+  "notebooks_schema_validated": 10,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
   "quality_status": "temporal_ensemble_failed_to_improve_public_baseline",
@@ -152,5 +152,24 @@
     "receipt": "results/E005_test_completed.json",
     "submission_receipt": "results/E005_submission.json"
   },
-  "latest_submission_public_score": 0.913
+  "latest_submission_public_score": 0.913,
+  "E006": {
+    "kernel": "jarturo/biohub-lab-dense-lineage-pretraining",
+    "version": 1,
+    "payload_sha256": "fe82ed0a7ab5057572148654c4d7e3a63791be44cdba663ae85f608cd64e8674",
+    "last_observed_status": "RUNNING",
+    "run_started": true,
+    "local_wait_active": false,
+    "leaderboard_submitted": false,
+    "scenes_per_fold": 2048,
+    "pretrain_steps_per_fold": 4000,
+    "real_finetune_steps_per_fold": 3000,
+    "folds": 2,
+    "experiment": "Dense procedural lineage pretraining with training-embryo textures; same E004 architecture and fine-tuning protocol",
+    "launch_receipt": "results/E006_launch.json",
+    "renderer_smoke_receipt": "results/E006_renderer_smoke.json",
+    "checked_at_utc": "2026-09-14T15:22:59.098075+00:00",
+    "next_action": "User will notify when notebook completes. Review dense_experiment_receipt.json, per-fold holdout metrics and conditional official metrics before test inference.",
+    "results_available": false
+  }
 }

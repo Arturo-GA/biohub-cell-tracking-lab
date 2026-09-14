@@ -62,11 +62,15 @@ Arturo autorizó medir los pesos de E004 en Kaggle pese al resultado local negat
 
 En el test visible el detector es idéntico a E000, incluidos su hash y sus 122.745 nodos. El ensemble agrega 226 enlaces, retira 272 y no produce bifurcaciones, frente a 98 bifurcaciones predichas por el control. Esto identifica una limitación del candidato, sin confundir esos conteos con eventos verdaderos anotados ni explicar por sí solo la descomposición del score oculto. Se cierra esta versión. [Resultado y límites](TEMPORAL_SUBMISSION.es.md), `results/E005_test_completed.json`.
 
+## E006 — Supervisión densa antes de la adaptación real (implementado)
+
+Renderer procedural de películas 3D completamente etiquetadas, con divisiones y cruces negativos. Cada separación genera 2.048 escenas utilizando texturas exclusivamente de sus videos de entrenamiento. El modelo mantiene la arquitectura y adaptación de E004; cambia su inicialización mediante 4.000 pasos de preentrenamiento. El notebook encadena la adaptación de 3.000 pasos y ambas evaluaciones, con comparación automática frente a E004 y Harmonic. [Diseño y límites](DENSE_PRETRAINING.es.md).
+
 ## Orden y decisión actual
 
 1. Conservar E000 y su 0.946 público como control. E001, E003 y E004 no demostraron mejora local; E005 confirmó un resultado público inferior con los pesos temporales. Se cierra el ensemble actual.
 2. Mantener la separación por embrión de E004 para nuevos modelos; declarar por separado cualquier dependencia de un detector entrenado con el embrión reservado.
-3. La siguiente hipótesis temporal es ampliar la supervisión de divisiones con linajes densos. Los recursos sintéticos que usan templates reales deben regenerarse con el embrión de entrenamiento para conservar la separación.
+3. E006 implementa la supervisión de divisiones con linajes densos. Se generan las texturas con el embrión de entrenamiento para conservar la separación. Revisar sus resultados completos antes de preparar otra submission.
 4. E002 queda como ruta alternativa si una evaluación independiente identifica pérdidas de detección. Una mejora de clasificación o de un diagnóstico condicional no equivale por sí sola a una mejora de leaderboard.
 
 No se transporta el umbral 0.01 de RSNA a esta métrica. No se promueve automáticamente una diferencia pequeña de un diagnóstico sobre train. Para análisis de incertidumbre, re-muestrear videos o adquisiciones, nunca miles de enlaces como si fueran independientes. Con pocos embriones, el intervalo también tiene limitaciones.

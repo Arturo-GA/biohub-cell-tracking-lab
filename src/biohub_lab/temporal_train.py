@@ -12,7 +12,7 @@ from .temporal_model import TemporalLinker
 
 
 class CacheStore:
-    def __init__(self,root,names=None):
+    def __init__(self,root,names=None,mmap_patches=True):
         self.root=Path(root)
         manifest=json.loads((self.root/'cache_manifest.json').read_text())
         if not manifest['complete']: raise ValueError('Incomplete cache')
@@ -20,7 +20,7 @@ class CacheStore:
         self.graphs={}; self.patches={}
         for name in self.names:
             with np.load(self.root/name/'graph.npz') as z: self.graphs[name]={k:z[k] for k in z.files}
-            self.patches[name]=np.load(self.root/name/'patches.npy',mmap_mode='r')
+            self.patches[name]=np.load(self.root/name/'patches.npy',mmap_mode='r' if mmap_patches else None)
 
     def pack(self,name,targets,triple_refs,device,drop_parent=False,rng=None,augment=False):
         g=self.graphs[name]; targets=np.asarray(targets)
@@ -125,7 +125,7 @@ def validate_divisions(model,store,names,device,full=True):
         prevalence=positive/len(y))
 
 
-def train_fold(root,output,held_group,steps=3000):
+def train_fold(root,output,held_group,steps=3000,initial_checkpoint=None):
     config=TemporalConfig(); output=Path(output); output.mkdir(parents=True,exist_ok=True)
     device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     torch.set_num_threads(2 if device.type=='cuda' else 4)
@@ -133,6 +133,18 @@ def train_fold(root,output,held_group,steps=3000):
     store=CacheStore(root); split=make_split(store.names,held_group)
     (output/'split.json').write_text(json.dumps(split,indent=2))
     model=TemporalLinker(config).to(device)
+    initialization='random; no public checkpoint';initial_sha=None
+    if initial_checkpoint is not None:
+        initial=torch.load(initial_checkpoint,map_location=device,weights_only=False)
+        if initial['held_group']!=held_group or TemporalConfig(**initial['config'])!=config:
+            raise ValueError('Pretraining split/config mismatch')
+        if not set(initial['training_videos']).issubset(split['train']):
+            raise ValueError('Pretraining used videos outside the fine-tuning training split')
+        if any(x['video'] not in split['train'] for x in initial['template_sources']):
+            raise ValueError('Pretraining appearance source outside training split')
+        model.load_state_dict(initial['state_dict'])
+        initialization='Dense procedural lineage pretraining; training-embryo appearance only'
+        initial_sha=hashlib.sha256(Path(initial_checkpoint).read_bytes()).hexdigest()
     opt=torch.optim.AdamW(model.parameters(),lr=3e-4,weight_decay=1e-3)
     scheduler=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=steps,eta_min=2e-5)
     scaler=torch.amp.GradScaler('cuda',enabled=device.type=='cuda')
@@ -178,7 +190,8 @@ def train_fold(root,output,held_group,steps=3000):
                 best=value
                 torch.save(dict(state_dict=model.state_dict(),config=asdict(config),split=split,step=step,
                     division_prior=division_prior,division_positive_count=len(pos),division_negative_count=len(neg),
-                    dev=dev,training_steps_requested=steps,initialization='random; no public checkpoint'),output/'best.pt')
+                    dev=dev,training_steps_requested=steps,initialization=initialization,
+                    initial_checkpoint_sha256=initial_sha),output/'best.pt')
             (output/'history.json').write_text(json.dumps(history,indent=2))
     checkpoint=torch.load(output/'best.pt',map_location=device,weights_only=False)
     model.load_state_dict(checkpoint['state_dict'])
@@ -186,6 +199,7 @@ def train_fold(root,output,held_group,steps=3000):
     holdout['divisions']=validate_divisions(model,store,split['holdout'],device,full=True)
     result=dict(held_group=held_group,steps=steps,best_step=checkpoint['step'],seconds=time.monotonic()-started,
         holdout=holdout,scope='Held-out-prefix association test on GT centers plus image-derived distractors; not competition score',
-        device=str(device),checkpoint_sha256=hashlib.sha256((output/'best.pt').read_bytes()).hexdigest())
+        device=str(device),checkpoint_sha256=hashlib.sha256((output/'best.pt').read_bytes()).hexdigest(),
+        initialization=initialization,initial_checkpoint_sha256=initial_sha)
     (output/'training_receipt.json').write_text(json.dumps(result,indent=2))
     print('FOLD_COMPLETE',held_group,json.dumps(result['holdout']['summary']),flush=True)
