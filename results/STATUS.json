@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 23,
+  "local_tests_passed": 32,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -65,7 +65,12 @@
     "image_watershed_morphology",
     "HOCT_pretrained_linker",
     "exact_capacity_two_lineage_solver",
-    "offline_HOCT_notebooks"
+    "offline_HOCT_notebooks",
+    "raw_image_temporal_encoder",
+    "learned_parent_candidate_attention",
+    "symmetric_division_triples",
+    "lineage_hypothesis_integer_program",
+    "embryo_holdout_training"
   ],
   "research_only": [
     "FOCUS-3D_distillation",
@@ -78,5 +83,18 @@
     "displayed_score_delta": -0.001,
     "precision_note": "Kaggle API returned the score as the string 0.946; reference supplied by user to three decimal places",
     "improvement_demonstrated": false
+  },
+  "E004": {
+    "implementation": "raw_five_frame_encoder_parent_attention_symmetric_division_head",
+    "data_audit": "results/E004_data_audit.json",
+    "training_plan": "two leave-one-embryo-out models initialized from scratch; 3000 steps each",
+    "prepare_kernel": "jarturo/biohub-lab-temporal-prepare",
+    "prepare_version": 2,
+    "prepare_last_observed_status": "RUNNING",
+    "train_kernel": "jarturo/biohub-lab-temporal-train",
+    "train_run_started": false,
+    "result": null,
+    "leaderboard_submitted": false,
+    "train_payload_sha256": "5032fd239989ff2a5585f485df4270476e066c076ffe677e41bec49c1f45036f"
   }
 }

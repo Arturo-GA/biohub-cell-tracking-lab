@@ -11,6 +11,7 @@ La inferencia de los cuatro videos visibles termin처 en 26,14 minutos y se envi�
 - [Experimentos y criterios de decisi처n](docs/EXPERIMENTS.es.md).
 - [Procedencia y licencias](NOTICE.md).
 - [Registro de ejecuci처n](results/STATUS.json).
+- [Modelo temporal propio y evaluaci처n por embri처n](docs/TEMPORAL_IMPLEMENTATION.es.md).
 
 ## Notebooks
 
