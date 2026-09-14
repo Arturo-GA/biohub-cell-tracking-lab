@@ -1,0 +1,187 @@
+{
+  "method": "gaussian",
+  "datasets": [
+    "44b6_53f95252",
+    "44b6_341df25f",
+    "6bba_afb141ff",
+    "6bba_337b1b3a"
+  ],
+  "config": {
+    "dedup_um": 3.0,
+    "temporal_um": 3.0,
+    "max_addition_fraction": 0.15,
+    "min_addition_budget": 16,
+    "coordinate_order": "tzyx",
+    "seed": 20260914
+  },
+  "status": "complete",
+  "scope": "Conditional training diagnostic: all four videos occur in the public secondary detector training set. Prior error analysis used these four videos. This is not independent validation or a leaderboard result.",
+  "ground_truth_used_for_proposals": false,
+  "baseline_checkpoints_unchanged": true,
+  "full_harmonic_graph_and_postprocessing": true,
+  "leaderboard_submitted": false,
+  "proposal_seconds": 420.03868115599994,
+  "tracking_seconds": 1009.024032517,
+  "seconds": 1437.443191876,
+  "metrics": {
+    "summary": {
+      "n": 4,
+      "edge_jaccard": 0.9333945796968305,
+      "division_jaccard": 0.25,
+      "division_tp": 2,
+      "division_fp": 1,
+      "division_fn": 5,
+      "node_recall": 0.9858562691131498,
+      "adj_edge_jaccard": 0.9378131228713834,
+      "n_adj": 4,
+      "score": 0.9628131228713834
+    },
+    "samples": [
+      {
+        "edge_tp": 209,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 0,
+        "num_pred_nodes": 8430,
+        "node_recall": 1.0,
+        "total_node_ratio": 0.1336740182894029,
+        "edge_jaccard": 1.0,
+        "adj_edge_jaccard": 0.9866325981710597,
+        "dataset": "44b6_341df25f"
+      },
+      {
+        "edge_tp": 67,
+        "edge_fp": 2,
+        "edge_fn": 1,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "num_pred_nodes": 31547,
+        "node_recall": 1.0,
+        "total_node_ratio": -0.18514787550045203,
+        "edge_jaccard": 0.9571428571428572,
+        "adj_edge_jaccard": 0.9748641537979004,
+        "dataset": "44b6_53f95252"
+      },
+      {
+        "edge_tp": 1182,
+        "edge_fp": 46,
+        "edge_fn": 31,
+        "division_tp": 1,
+        "division_fp": 1,
+        "division_fn": 1,
+        "num_pred_nodes": 29374,
+        "node_recall": 1.0,
+        "total_node_ratio": -0.036286089238845146,
+        "edge_jaccard": 0.9388403494837172,
+        "adj_edge_jaccard": 0.9422470339539568,
+        "dataset": "6bba_337b1b3a"
+      },
+      {
+        "edge_tp": 574,
+        "edge_fp": 13,
+        "edge_fn": 52,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 4,
+        "num_pred_nodes": 5328,
+        "node_recall": 0.9434250764525994,
+        "total_node_ratio": -0.1199207135777998,
+        "edge_jaccard": 0.8982785602503912,
+        "adj_edge_jaccard": 0.9090507808440778,
+        "dataset": "6bba_afb141ff"
+      }
+    ],
+    "scope": "Conditional training diagnostic: all four videos occur in the public secondary detector training set. Prior error analysis used these four videos. This is not independent validation or a leaderboard result.",
+    "official_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2"
+  },
+  "control": {
+    "n": 4,
+    "edge_jaccard": 0.9382433668801464,
+    "division_jaccard": 0.25,
+    "division_tp": 2,
+    "division_fp": 1,
+    "division_fn": 5,
+    "node_recall": 0.9919512402310567,
+    "adj_edge_jaccard": 0.941695109466634,
+    "n_adj": 4,
+    "score": 0.9666951094666341
+  },
+  "delta": {
+    "score": -0.0038819865952506305,
+    "adj_edge_jaccard": -0.0038819865952506305,
+    "division_jaccard": 0.0
+  },
+  "csv_sha256": "6e84e3c26d717579c88df342fd32d014ebd17a35de277973c6d637b976324e93",
+  "run_source_sha256": "f4add68542d288d592339eac828b7b6f2a55a24eaa10e59d3492d3c61266c9d1",
+  "injection_summary": {
+    "44b6_53f95252": {
+      "baseline": 36491,
+      "proposals": 5697,
+      "added": 2245
+    },
+    "44b6_341df25f": {
+      "baseline": 9209,
+      "proposals": 5263,
+      "added": 1615
+    },
+    "6bba_afb141ff": {
+      "baseline": 6874,
+      "proposals": 3240,
+      "added": 1343
+    },
+    "6bba_337b1b3a": {
+      "baseline": 30393,
+      "proposals": 3852,
+      "added": 435
+    }
+  },
+  "final_counts": {
+    "44b6_341df25f": {
+      "nodes": 8430,
+      "edges": 8187
+    },
+    "44b6_53f95252": {
+      "nodes": 31547,
+      "edges": 30572
+    },
+    "6bba_337b1b3a": {
+      "nodes": 29374,
+      "edges": 28373
+    },
+    "6bba_afb141ff": {
+      "nodes": 5328,
+      "edges": 5055
+    }
+  },
+  "validated": true,
+  "quality_status": "below_control_no_additional_official_division",
+  "experiment": "E009",
+  "version": 2,
+  "kernel": "https://www.kaggle.com/code/jarturo/biohub-lab-gaussian-deblending",
+  "checked_at_utc": "2026-09-14T18:42:19.517038+00:00",
+  "payload_sha256": "fec5c73b111af40b8e09d402adefc63649ced13db8e4fa705b7a7b01dccef312",
+  "decision": "do_not_submit_this_version",
+  "totals": {
+    "nodes": 74679,
+    "edges": 72187,
+    "predicted_forks": 77,
+    "proposals": 18052,
+    "added_before_ilp": 5638,
+    "edge_tp": 2032,
+    "edge_fp": 61,
+    "edge_fn": 84
+  },
+  "verification": {
+    "source_payload": true,
+    "run_source": true,
+    "checkpoint_integrity_receipt": true,
+    "final_csv": true,
+    "proposals": true,
+    "injection_frames": 400,
+    "metric_aggregation": true,
+    "official_graph_matching_rerun_locally": false
+  }
+}

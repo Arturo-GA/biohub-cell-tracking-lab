@@ -50,3 +50,29 @@ E009 completó las propuestas en 519,94 segundos: 5.697, 5.263, 3.240 y 3.852 en
 Pasaron 54 pruebas, incluidas nuevas regresiones para los nombres de archivo de Kaggle y la instalación completa del hook en un contexto sin imports heredados. Además se ejecutó la reparación sobre el predictor real descargado de E009 y se verificó que el predictor resultante conserva exactamente la lógica prevista. Los fallos y sus recibos originales se preservan en `results/E008_v1_failed.json` y `results/E009_v1_failed.json`; la comprobación con archivos reales queda en `results/E008_E009_recovery_verification.json`. Las correcciones no cambian los parámetros de los experimentos.
 
 Las **versiones 2** de ambos notebooks fueron aceptadas el 14 de septiembre a las 17:53 UTC (12:53 en Lima), con estado inicial **QUEUED**. Los recibos actuales `E008_launch.json` y `E009_launch.json` corresponden a estas versiones; los originales están preservados dentro de los registros de fallo de v1. El payload corregido tiene SHA256 `fec5c73b111af40b8e09d402adefc63649ced13db8e4fa705b7a7b01dccef312`. No se espera ni consulta su finalización: Arturo avisa cuando terminen.
+
+## Resultados verificados de la versión 2
+
+Tras el aviso de Arturo, Kaggle confirmó **COMPLETE** para ambos notebooks. Ninguno superó al control:
+
+| Ejecución | Score diagnóstico | Delta frente a Harmonic | Aristas TP/FP/FN | Divisiones TP/FP/FN | Nodos finales |
+|---|---:|---:|---|---|---:|
+| Harmonic control | 0,9666951095 | — | 2051/70/65 | 2/1/5 | 74.980 |
+| E008 CELLECT | 0,9656549406 | −0,0010401688 | 2045/67/71 | 2/1/5 | 74.771 |
+| E009 Gaussianas | 0,9628131229 | −0,0038819866 | 2032/61/84 | 2/1/5 | 74.679 |
+
+CELLECT generó 90.345 propuestas corroboradas temporalmente e incorporó 11.134 centros antes del ILP. Gaussianas generó 18.052 e incorporó 5.638. Los nodos finales disminuyeron a pesar de esas incorporaciones: la competencia por enlaces y las etapas posteriores pueden modificar el resultado completo. No se interpreta esa diferencia de recuentos como una medida exacta de cuántas propuestas sobrevivieron. Los forks predichos totales fueron 86 y 77, frente a 73 del control; la métrica oficial siguió encontrando solo dos divisiones correctas. El tiempo registrado del pipeline, sin cola ni bootstrap, fue de 19,74 y 23,96 minutos.
+
+Se verificaron el payload del notebook descargado, el script ejecutado, los hashes de los pesos declarados en el recibo de integridad, los CSV, las propuestas y las 400 filas de inyección por experimento. Se reprodujo localmente la agregación oficial a partir de los recuentos por video; **no se repitió localmente el matching oficial de grafos**. Los recuentos originales proceden de la ejecución oficial dentro de Kaggle. Registros: `results/E008_completed.json`, `results/E009_completed.json`; verificación reproducible: `scripts/verify_detector_results.py`.
+
+## Qué explica la auditoría de divisiones
+
+La inspección de siete eventos anotados compara las propuestas, el grafo final y la existencia de dos candidatos distintos dentro de 7 µm en el fotograma exacto. Es un análisis posterior sobre estos mismos videos; no selecciona parámetros ni cambia predicciones.
+
+- Ambos experimentos recuperaron una hija antes ausente del vecindario de 7 µm. Sin embargo, esa nueva hija quedó sin padre y la madre conservó un único enlace hacia la otra hija. La detección mejoró geométricamente; la división no se reconstruyó.
+- En otro evento, ambos métodos propusieron un centro dentro de 7 µm de una hija que siguió sin vecino final dentro de ese radio. Los archivos actuales no permiten separar si la propuesta se descartó por deduplicación, presupuesto de adiciones, ILP o postprocesamiento.
+- Compartir el centro más próximo no implica necesariamente ausencia de dos candidatos: la búsqueda de correspondencias distintas encuentra ese caso incluso en el control. Por eso el vecino más cercano, como registró la auditoría anterior, no basta para afirmar que falta una detección.
+
+El resumen agregado se guarda en `results/E008_E009_mitosis_audit.json`. Las coordenadas anotadas y las correspondencias detalladas de los siete eventos quedan localmente en `outputs/E008_E009_mitosis_audit_details.json`, fuera de Git. La correspondencia por distancia y fotograma exacto no sustituye la métrica oficial, que incorpora contexto del linaje y tolerancia temporal.
+
+**Decisión:** cerrar estas dos versiones sin submission y conservar E000 como referencia pública. El siguiente diseño debe evaluar conjuntamente la conservación de centros y la conexión de madre/dos hijas durante varios fotogramas. Debe registrar la selección de cada propuesta por etapa para distinguir rechazo de detección y pérdida de asociación. No se inicia otra ejecución durante esta revisión ni se ajustan umbrales a estos siete eventos.

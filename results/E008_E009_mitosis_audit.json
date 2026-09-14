@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-09-14T18:54:22.388414+00:00",
+  "events_reviewed": 7,
+  "prepared_GT_checksums_verified": true,
+  "predictions_changed": false,
+  "scope": "Exact-frame geometric diagnostic at 7um, not official matching or a score oracle. Proposal-to-final absence cannot distinguish NMS/budget rejection, ILP selection and postprocessing. These seven events were inspected after results; not independent validation.",
+  "detailed_annotation_coordinates_kept_local": true,
+  "arms": {
+    "control": {
+      "events_with_distinct_daughters_within_7um": 4,
+      "events_with_nearby_final_fork": 2,
+      "events_recovering_a_previously_missing_daughter": 0,
+      "recovered_events_with_orphan_daughter": 0,
+      "previously_missing_daughters_proposed_but_absent_from_final_neighborhood": 0
+    },
+    "E008": {
+      "events_with_distinct_daughters_within_7um": 5,
+      "events_with_nearby_final_fork": 2,
+      "events_recovering_a_previously_missing_daughter": 1,
+      "recovered_events_with_orphan_daughter": 1,
+      "previously_missing_daughters_proposed_but_absent_from_final_neighborhood": 1
+    },
+    "E009": {
+      "events_with_distinct_daughters_within_7um": 5,
+      "events_with_nearby_final_fork": 2,
+      "events_recovering_a_previously_missing_daughter": 1,
+      "recovered_events_with_orphan_daughter": 1,
+      "previously_missing_daughters_proposed_but_absent_from_final_neighborhood": 1
+    }
+  }
+}
