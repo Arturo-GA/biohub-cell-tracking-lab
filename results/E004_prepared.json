@@ -1,0 +1,14 @@
+{
+  "nodes": 266529,
+  "gt_nodes": 133318,
+  "gt_edges": 128883,
+  "covered_edges": 128866,
+  "division_positive": 151,
+  "division_negative": 49724,
+  "videos": 199,
+  "seconds": 813.2901064090001,
+  "complete": true,
+  "cache_kernel": "jarturo/biohub-lab-temporal-prepare",
+  "version": 2,
+  "manifest_sha256": "5dcbed720332a59e429192d52f810d879e609b2d74ab409357831ca3d4c387e9"
+}

@@ -1,8 +1,10 @@
 # Investigación para Biohub — 13 de septiembre de 2026
 
+**Actualización al cierre de E004, 14 de septiembre:** el control tiene un score público confirmado de **0.946**. HOCT y el nuevo modelo temporal entrenado desde cero no superaron sus controles. E004 sí estableció una evaluación del modelo temporal dejando un embrión completo fuera del entrenamiento; su comparación con el detector público se declara condicional. Resultados en `TEMPORAL_IMPLEMENTATION.es.md`. El siguiente cambio de datos propuesto es supervisión densa de divisiones, preservando esa separación; no se ha ejecutado aún.
+
 La oportunidad más interesante que encontré es **combinar un detector 3D nuevo y destilado con un linker que modele mejor las divisiones**. FOCUS-3D y HOCT son las dos líneas principales. Division Guard ya terminó sin recuperar ninguna arista anotada ni división adicional y se cerró. HOCT ya tiene implementación de inferencia propia y ejecución en Kaggle; ver `HOCT_IMPLEMENTATION.es.md`.
 
-## Situación verificada
+## Situación al inicio de la investigación, antes de las ejecuciones
 
 La API del leaderboard devolvió 0.970, 0.968 y 0.966 en los tres primeros puestos durante la consulta de esta sesión. Son valores redondeados y temporales. No había submissions propias de Biohub en la cuenta consultada. La referencia pública con título 0.947 está aproximadamente 0.019 por debajo del tercer puesto en esa foto, pero su score no se ha reproducido aquí. [Leaderboard oficial](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/leaderboard).
 

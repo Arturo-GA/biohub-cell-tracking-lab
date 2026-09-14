@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 32,
+  "local_tests_passed": 33,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -51,7 +51,7 @@
     "submitted_by_this_task": false,
     "public_score": 0.885
   },
-  "notebooks_schema_validated": 5,
+  "notebooks_schema_validated": 8,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
   "quality_status": "baseline_scored_below_user_reported_reference",
@@ -90,11 +90,37 @@
     "training_plan": "two leave-one-embryo-out models initialized from scratch; 3000 steps each",
     "prepare_kernel": "jarturo/biohub-lab-temporal-prepare",
     "prepare_version": 2,
-    "prepare_last_observed_status": "RUNNING",
+    "prepare_last_observed_status": "COMPLETE",
     "train_kernel": "jarturo/biohub-lab-temporal-train",
-    "train_run_started": false,
-    "result": null,
+    "train_run_started": true,
+    "result": {
+      "conditional_score": 0.9412436633478294,
+      "conditional_control_score": 0.9666951094666341,
+      "delta": {
+        "score": -0.025451446118804677,
+        "adj_edge_jaccard": -0.0004514461188046548,
+        "division_jaccard": -0.25
+      },
+      "division_tp_fp_fn": [
+        0,
+        1,
+        7
+      ],
+      "oof_parent_accuracy": {
+        "44b6": 0.9948552405931606,
+        "6bba": 0.9881529842192615
+      },
+      "oof_nearest_accuracy": {
+        "44b6": 0.9979320084737213,
+        "6bba": 0.9918207909625242
+      }
+    },
     "leaderboard_submitted": false,
-    "train_payload_sha256": "5032fd239989ff2a5585f485df4270476e066c076ffe677e41bec49c1f45036f"
+    "train_payload_sha256": "5032fd239989ff2a5585f485df4270476e066c076ffe677e41bec49c1f45036f",
+    "train_version": 2,
+    "train_last_observed_status": "COMPLETE",
+    "model_training_steps_confirmed": true,
+    "decision": "do_not_submit_current_candidate",
+    "receipt": "results/E004_completed.json"
   }
 }

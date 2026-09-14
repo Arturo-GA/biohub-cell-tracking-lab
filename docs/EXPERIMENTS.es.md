@@ -48,15 +48,23 @@ Usar un checkpoint público local y máscaras 3D derivadas de imágenes. Medir s
 
 Una vez verificadas las representaciones y las etiquetas utilizables, estudiar una cabeza ligera sobre features congeladas. No iniciar entrenamiento completo sin confirmar la disponibilidad del código y del protocolo. El código de entrenamiento aún no estaba publicado en el anuncio consultado.
 
-## Orden y decisión
+## E004 — Encoder de cinco frames, atención de padres y divisiones explícitas (completado)
 
-1. Completar E000/E001; registrar incluso un resultado negativo.
-2. Verificar split de entrenamiento de los artefactos y ampliar la evaluación a videos completos independientes. Agrupar por embrión/adquisición; dividir frames al azar introduce fuga.
-3. Priorizar E002 si predominan nodos perdidos; E003 si predominan asociaciones erróneas con nodos detectados.
-4. Comparar control/candidato en el leaderboard con presupuesto limitado y luego validar estabilidad antes de elegir finales.
+Se entrenaron dos modelos desde cero, cada uno reservando un embrión completo, sobre ejemplos procedentes de los 199 videos. La auditoría verificó 151 divisiones reales. Cada modelo completó 3.000 pasos y se eligió el paso 1.000 usando desarrollo del embrión de entrenamiento.
+
+**Resultado negativo para promoción:** evaluación oficial condicional **0.9412437**, frente a **0.9666951** de Harmonic con las mismas detecciones. Delta de aristas ajustadas −0.0004514; delta de contribución de divisiones −0.025. Divisiones TP/FP/FN 0/1/7 frente a 2/1/5. En la elección de padres con centros anotados y distractores, el modelo también quedó por debajo del vecino más cercano en ambos embriones reservados. No se generó una nueva submission ni se realizó un barrido de umbrales.
+
+El encoder y el modelo temporal sí se evaluaron fuera del embrión de entrenamiento; la comparación completa con Harmonic sigue condicionada por su detector entrenado con todos los videos. [Diseño, resultados y límites](TEMPORAL_IMPLEMENTATION.es.md). Registro: `results/E004_completed.json`.
+
+## Orden y decisión actual
+
+1. Conservar E000 y su 0.946 público como control. E001, E003 y E004 están cerrados sin una mejora de tracking que justifique una submission.
+2. Mantener la separación por embrión de E004 para nuevos modelos; declarar por separado cualquier dependencia de un detector entrenado con el embrión reservado.
+3. La siguiente hipótesis temporal es ampliar la supervisión de divisiones con linajes densos. Los recursos sintéticos que usan templates reales deben regenerarse con el embrión de entrenamiento para conservar la separación.
+4. E002 queda como ruta alternativa si una evaluación independiente identifica pérdidas de detección. Una mejora de clasificación o de un diagnóstico condicional no equivale por sí sola a una mejora de leaderboard.
 
 No se transporta el umbral 0.01 de RSNA a esta métrica. No se promueve automáticamente una diferencia pequeña de un diagnóstico sobre train. Para análisis de incertidumbre, re-muestrear videos o adquisiciones, nunca miles de enlaces como si fueran independientes. Con pocos embriones, el intervalo también tiene limitaciones.
 
 ## Estado
 
-Ver `results/STATUS.json`. E002 sigue pendiente. E003 usa inferencia HOCT real con pesos públicos; no se ha realizado entrenamiento HOCT o FOCUS-3D. E001 terminó sin ganancia demostrada y no se seguirá ajustando como línea principal.
+Ver `results/STATUS.json`. E002 sigue pendiente. E003 usó inferencia HOCT real con pesos públicos; no se ha realizado entrenamiento HOCT o FOCUS-3D. E004 sí entrenó dos modelos propios desde cero y completó sus evaluaciones. No hay otro entrenamiento ni nueva submission iniciados al cierre de E004.

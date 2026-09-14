@@ -2,7 +2,7 @@ import unittest
 import numpy as np
 import torch
 from biohub_lab.temporal_model import TemporalLinker
-from biohub_lab.temporal_train import make_split
+from biohub_lab.temporal_train import make_split,train_fold
 from biohub_lab.temporal_inference import solve_hypotheses
 from biohub_lab.temporal_data import TemporalConfig, examples, extract_patches, parent_candidates
 
@@ -71,6 +71,30 @@ class TemporalModelTests(unittest.TestCase):
         grad=model.encoder[0].weight.grad
         self.assertTrue(torch.isfinite(grad).all())
         self.assertGreater(float(grad.abs().sum()),0.)
+
+    def test_cpu_training_checkpoint_and_heldout_pipeline(self):
+        import json,tempfile
+        from pathlib import Path
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)/'cache'; root.mkdir()
+            coords=np.array([[0,0,0,0],[0,0,0,10],[1,0,0,0],[1,0,0,2],[1,0,0,10],[1,0,0,20]],np.float32)
+            edges=np.array([[0,2],[0,3],[1,4]],np.int64)
+            names=[f'{g}_{i}' for g in ('a','b') for i in range(6)]
+            (root/'cache_manifest.json').write_text(json.dumps({'complete':True,'videos':[{'name':n} for n in names]}))
+            rng=np.random.default_rng(17)
+            for name in names:
+                (root/name).mkdir()
+                np.savez(root/name/'graph.npz',coords=coords,edges=edges,**examples(coords,edges))
+                np.save(root/name/'patches.npy',rng.integers(0,256,size=(6,5,9,17,17),dtype=np.uint8))
+            output=Path(folder)/'model'
+            with patch('torch.cuda.is_available',return_value=False): train_fold(root,output,'b',steps=2)
+            receipt=json.loads((output/'training_receipt.json').read_text())
+            self.assertEqual(receipt['holdout']['summary']['n'],18)
+            self.assertEqual(receipt['holdout']['divisions']['positive'],6)
+            self.assertEqual(receipt['device'],'cpu')
+            checkpoint=torch.load(output/'best.pt',weights_only=False)
+            self.assertTrue(all(n.startswith('a_') for n in checkpoint['split']['train']))
 
 
 class TemporalSolverTests(unittest.TestCase):

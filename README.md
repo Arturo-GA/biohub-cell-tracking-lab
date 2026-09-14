@@ -22,14 +22,19 @@ La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envi�
 | `kaggle/diagnostic` | Control y candidato sobre una muestra fija de train | CSVs de ambos, métrica oficial y `run_receipt.json` |
 | `kaggle/hoct_diagnostic` | Máscaras 3D + HOCT + matching exacto, reutilizando detecciones | Métrica oficial, morfología y probabilidades por video |
 | `kaggle/hoct_test` | Mismo reemplazo completo del enlazador sobre todo el test | `submission.csv` |
+| `kaggle/temporal_audit` | Inventario de anotaciones y procedencia de splits | Auditoría JSON |
+| `kaggle/temporal_prepare` | Cinco frames por célula y distractores DoG sobre los 199 videos | Recortes y ejemplos reutilizables |
+| `kaggle/temporal_train` | Dos modelos propios, cada uno excluyendo un embrión; después comparación con Harmonic | Pesos, splits y evaluaciones; sin submission |
 
 El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
 
-La nueva línea reemplaza todas las asociaciones por HOCT y usa morfología medida en máscaras watershed 3D. No modifica únicamente parámetros del código público. [Implementación y diferencias respecto al paper](docs/HOCT_IMPLEMENTATION.es.md). [Ejecución en Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-hoct-morphology-diagnostic).
+E003 reemplazó todas las asociaciones por HOCT y usó morfología medida en máscaras watershed 3D. [Implementación y diferencias respecto al paper](docs/HOCT_IMPLEMENTATION.es.md). [Ejecución en Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-hoct-morphology-diagnostic).
 
 **E003 terminó con resultado negativo:** HOCT **0.9195083**, control **0.9666951**, delta **−0.0471868**. Las divisiones falsas evaluadas aumentaron de 1 a 12. No se promueve esta versión a submission ni se interpreta el score como validación independiente. Se procesaron los cuatro videos en 12,06 minutos, excluyendo instalación/cola. [Registro completo](results/E003_completed.json). El notebook `hoct_test` se conserva como implementación reproducible, **no como candidato recomendado**.
 
-Los notebooks contienen el código necesario y adjuntan tres datasets públicos de Pilkwang: soporte, segundo seed y DeepCenter. La ejecución requiere GPU de Kaggle; internet desactivado. Los hashes de los pesos y del código de soporte se verifican al arrancar. Los datos, los pesos y las credenciales no se guardan en Git.
+Los notebooks contienen el código necesario y adjuntan tres datasets públicos de Pilkwang: soporte, segundo seed y DeepCenter. La inferencia Harmonic requiere GPU; la auditoría y preparación temporal usan CPU. El entrenamiento temporal admite GPU o CPU y esta ejecución completa se realizó en GPU. Internet está desactivado. Los hashes de los pesos públicos y del código de soporte se verifican al arrancar. Los datos, los pesos y las credenciales no se guardan en Git.
+
+**E004 también se completó:** se implementaron y entrenaron dos redes propias de imágenes de cinco frames, atención entre padres candidatos y una cabeza de divisiones. Cada una excluyó un embrión completo. En la comparación condicional con detecciones Harmonic, obtuvo **0.9412437 frente a 0.9666951**; las divisiones evaluadas pasaron de 2 aciertos a 0. El resultado no es leaderboard y el detector público de esa comparación vio esos videos. En la evaluación separada del modelo temporal sobre los 199 videos tampoco se superó al vecino más cercano al elegir padres. **No se envió este candidato.** [Resultados y límites](docs/TEMPORAL_IMPLEMENTATION.es.md), [recibo completo](results/E004_completed.json), [entrenamiento Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-temporal-train).
 
 ## Desarrollo
 
