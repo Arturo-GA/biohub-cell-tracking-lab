@@ -1,7 +1,6 @@
 """Score dense detections and optimize singleton/division hypotheses jointly."""
 from itertools import combinations
 import math
-from pathlib import Path
 import numpy as np
 from scipy.optimize import Bounds, LinearConstraint, milp
 from scipy.sparse import coo_matrix
@@ -65,18 +64,15 @@ def load_model(path,device):
     return model,checkpoint
 
 
-@torch.inference_mode()
-def score_video(model,checkpoint,coords,image_path,device):
-    config=model.config; coords=np.asarray(coords,np.float32)
-    volume=load_volume(image_path,config)
+def _encode_and_score_parents(model,coords,parents,volume,device):
+    config=model.config
     # Encode each detected node once; five frames provide motion/appearance evidence.
     features=[]
     for start in range(0,len(coords),256):
         patch=extract_patches(volume,coords[start:start+256],config)
         with torch.autocast(device_type=device.type,enabled=device.type=='cuda',dtype=torch.float16):
             features.append(model.encode(torch.as_tensor(patch,device=device)).float())
-    del volume
-    h=torch.cat(features); parents=parent_candidates(coords,config)
+    h=torch.cat(features)
     probabilities=np.zeros((len(coords),config.max_parents+1),np.float32)
     for start in range(0,len(coords),256):
         ids=np.arange(start,min(start+256,len(coords))); src=parents[ids]; valid=src>=0
@@ -87,17 +83,21 @@ def score_video(model,checkpoint,coords,image_path,device):
         # Orphans trained by removing 10% of known parents. Keep that explicit prior;
         # no leaderboard-driven calibration is performed here.
         probabilities[ids]=logits.float().softmax(-1).cpu().numpy()
-    target,slot=np.where(parents>=0)
-    edges=np.column_stack([parents[target,slot],target])
-    p=probabilities[target,slot]; orphan=probabilities[target,-1]
-    gains=np.log(np.clip(p,1e-7,1))-np.log(np.clip(orphan,1e-7,1))
+    return h,probabilities
+
+
+def _candidate_triples(edges,p):
     children={}
     for (s,t),prob in zip(edges,p): children.setdefault(int(s),[]).append((float(prob),int(t)))
     triples=[]
     for s,items in children.items():
         kids=[t for prob,t in sorted(items,reverse=True)[:4] if prob>=.05]
         triples.extend((s,*sorted((a,b))) for a,b in combinations(kids,2))
-    triples=np.asarray(triples,np.int64).reshape(-1,3); scores=[]
+    return np.asarray(triples,np.int64).reshape(-1,3)
+
+
+def _score_divisions(model,checkpoint,h,coords,triples,device):
+    scores=[]
     prior=float(np.clip(checkpoint['division_prior'],1e-6,1-1e-6))
     correction=math.log(prior/(1-prior))
     for start in range(0,len(triples),512):
@@ -106,10 +106,52 @@ def score_video(model,checkpoint,coords,image_path,device):
         with torch.autocast(device_type=device.type,enabled=device.type=='cuda',dtype=torch.float16):
             logits=model.divisions(h,torch.as_tensor(part,device=device),torch.as_tensor(delta,device=device))
         scores.extend(logits.float().cpu().numpy()+correction)
-    scores=np.asarray(scores,np.float32)
+    return np.asarray(scores,np.float32),prior
+
+
+@torch.inference_mode()
+def score_video_ensemble(members,coords,image_path,device):
+    """Uniform probability average on shared candidates, then one lineage solve.
+
+    Every member sees every test video, irrespective of its dataset name. Division
+    logits are corrected with each member's training prior before probabilities
+    are averaged. Thresholds and the solver objective match single-model inference.
+    """
+    if not members: raise ValueError('At least one trained model is required')
+    config=members[0][0].config
+    if any(model.config!=config for model,_ in members):
+        raise ValueError('Ensemble members must share preprocessing and candidate configuration')
+    coords=np.asarray(coords,np.float32)
+    if not len(coords): raise ValueError('Cannot track an empty detection set')
+    volume=load_volume(image_path,config); parents=parent_candidates(coords,config)
+    encoded=[]; member_probabilities=[]
+    for model,_ in members:
+        h,prob=_encode_and_score_parents(model,coords,parents,volume,device)
+        encoded.append(h); member_probabilities.append(prob)
+    del volume
+    probabilities=np.mean(np.stack(member_probabilities),axis=0)
+    target,slot=np.where(parents>=0)
+    edges=np.column_stack([parents[target,slot],target])
+    p=probabilities[target,slot]; orphan=probabilities[target,-1]
+    gains=np.log(np.clip(p,1e-7,1))-np.log(np.clip(orphan,1e-7,1))
+    triples=_candidate_triples(edges,p)
+    member_scores=[]; priors=[]
+    for (model,checkpoint),h in zip(members,encoded):
+        score,prior=_score_divisions(model,checkpoint,h,coords,triples,device)
+        member_scores.append(score); priors.append(prior)
+    # Preserve the original numeric path for single-model diagnostic runs.
+    scores=(member_scores[0] if len(members)==1 else
+        logit(np.clip(np.mean(expit(np.stack(member_scores)),axis=0),1e-7,1-1e-7)).astype(np.float32))
+    if not np.isfinite(probabilities).all() or not np.isfinite(scores).all():
+        raise ValueError('Nonfinite temporal model probabilities')
     accepted=scores>=0. # Calibrated division evidence must favor a real fork.
     selected,solver=solve_hypotheses(coords,edges,gains,triples[accepted],scores[accepted])
     return selected,dict(nodes=len(coords),candidate_edges=len(edges),division_hypotheses=len(triples),
         accepted_division_hypotheses=int(accepted.sum()),selected_edges=len(selected),solver=solver,
-        division_prior=prior),dict(edges=edges,probabilities=p,orphan=probabilities[:,-1],
+        division_prior=priors[0] if len(members)==1 else None,division_priors=priors,
+        ensemble_members=len(members),ensemble_method='uniform probability mean before joint optimization'),dict(edges=edges,probabilities=p,orphan=probabilities[:,-1],
         triples=triples,division_logits=scores)
+
+
+def score_video(model,checkpoint,coords,image_path,device):
+    return score_video_ensemble([(model,checkpoint)],coords,image_path,device)

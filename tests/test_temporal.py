@@ -3,7 +3,7 @@ import numpy as np
 import torch
 from biohub_lab.temporal_model import TemporalLinker
 from biohub_lab.temporal_train import make_split,train_fold
-from biohub_lab.temporal_inference import solve_hypotheses
+from biohub_lab.temporal_inference import solve_hypotheses,score_video,score_video_ensemble
 from biohub_lab.temporal_data import TemporalConfig, examples, extract_patches, parent_candidates
 
 
@@ -128,6 +128,69 @@ class TemporalSolverTests(unittest.TestCase):
             for (p,a,b),v in zip(triples,bonuses):
                 if (p,a) in chosen_set and (p,b) in chosen_set: actual+=v
             self.assertAlmostEqual(actual,best,places=5)
+
+
+class TemporalSubmissionTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls): torch.set_num_threads(2)
+
+    def test_duplicate_member_is_single_model_and_order_is_invariant(self):
+        from unittest.mock import patch
+        cfg=TemporalConfig(patch_shape=(3,3,3),downsample=(1,1,1))
+        a=(TemporalLinker(cfg).eval(),{'division_prior':.01})
+        b=(TemporalLinker(cfg).eval(),{'division_prior':.07})
+        coords=np.array([[0,2,2,2],[1,2,2,2],[1,2,2,3],[2,2,2,2]],np.float32)
+        volume=np.ones((3,5,5,5),np.uint8)*100
+        device=torch.device('cpu')
+        with patch('biohub_lab.temporal_inference.load_volume',return_value=volume):
+            single=score_video(*a,coords,'unused.zarr',device)
+            duplicate=score_video_ensemble([a,a],coords,'unused.zarr',device)
+            forward=score_video_ensemble([a,b],coords,'unused.zarr',device)
+            reverse=score_video_ensemble([b,a],coords,'unused.zarr',device)
+        np.testing.assert_array_equal(single[0],duplicate[0])
+        np.testing.assert_allclose(single[2]['probabilities'],duplicate[2]['probabilities'])
+        np.testing.assert_allclose(single[2]['division_logits'],duplicate[2]['division_logits'],atol=1e-5)
+        np.testing.assert_array_equal(forward[0],reverse[0])
+        for key in forward[2]: np.testing.assert_allclose(forward[2][key],reverse[2][key],atol=1e-5)
+
+    def test_test_only_new_embryo_final_csv_and_checkpoint_integrity(self):
+        import csv,hashlib,json,tempfile,zarr
+        from dataclasses import asdict
+        from pathlib import Path
+        from unittest.mock import patch
+        from biohub_lab.submission import COLUMNS,read_and_validate
+        from biohub_lab.temporal_submission import predict_test
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder); data=root/'test'; data.mkdir(); name='unseen_embryo'
+            image=zarr.open_group(str(data/(name+'.zarr')),mode='w')
+            volume=np.random.default_rng(20).integers(0,256,(3,5,5,5),dtype=np.uint8)
+            image.create_array('0',data=volume)
+            cfg=TemporalConfig(patch_shape=(3,3,3),downsample=(1,1,1)); hashes={}
+            for group in ('fold_a','fold_b'):
+                model=TemporalLinker(cfg).eval(); path=root/'models'/group/'best.pt'
+                path.parent.mkdir(parents=True)
+                torch.save(dict(config=asdict(cfg),state_dict=model.state_dict(),step=1,division_prior=.01),path)
+                hashes[group]=hashlib.sha256(path.read_bytes()).hexdigest()
+            seed=root/'detector.csv'
+            with seed.open('w',newline='') as stream:
+                writer=csv.writer(stream); writer.writerow(COLUMNS)
+                for i,node in enumerate((10,20,30)):
+                    writer.writerow([i,name,'node',node,i,2,2,2,-1,-1])
+                writer.writerow([3,name,'edge',-1,-1,-1,-1,-1,10,20])
+                writer.writerow([4,name,'edge',-1,-1,-1,-1,-1,20,30])
+            with patch('torch.cuda.is_available',return_value=False):
+                receipt=predict_test(seed,data,root/'models',root/'output',hashes)
+                with self.assertRaisesRegex(ValueError,'checksum'):
+                    predict_test(seed,data,root/'models',root/'bad',{'fold_a':'0'*64})
+            final=root/'output/submission.csv'
+            parsed=read_and_validate(final,{name:volume.shape})
+            self.assertEqual(set(parsed),{name}); self.assertEqual(set(parsed[name][0]),{0,1,2})
+            self.assertEqual(receipt['models'].keys(),hashes.keys())
+            self.assertEqual(receipt['statistics'][name]['ensemble_members'],2)
+            self.assertEqual(hashlib.sha256(final.read_bytes()).hexdigest(),receipt['submission_sha256'])
+            self.assertFalse((root/'bad/submission.csv').exists())
+            self.assertFalse((root/'train').exists())
+            self.assertTrue(json.loads((root/'output/temporal_test_receipt.json').read_text())['validated'])
 
 
 if __name__=='__main__': unittest.main()

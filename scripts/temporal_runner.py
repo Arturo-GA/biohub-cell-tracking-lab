@@ -10,9 +10,9 @@ import subprocess
 from biohub_lab.temporal_data import prepare_video
 
 
-def competition():
+def competition(split='train'):
     return next(p for p in [Path('/kaggle/input/competitions/biohub-cell-tracking-during-development'),
-        Path('/kaggle/input/biohub-cell-tracking-during-development')] if (p/'train').exists())
+        Path('/kaggle/input/biohub-cell-tracking-during-development')] if (p/split).exists())
 
 
 def prepare():
@@ -114,10 +114,25 @@ def diagnostic(package):
     print('TEMPORAL_DIAGNOSTIC_COMPLETE',json.dumps(receipt['delta']),flush=True)
 
 
+def test(package):
+    from biohub_lab.temporal_submission import predict_test
+    root=Path('/kaggle/working')
+    candidates=[Path('/kaggle/input/biohub-lab-temporal-train'),
+        Path('/kaggle/input/notebooks/jarturo/biohub-lab-temporal-train')]
+    previous=next(p for p in candidates if (p/'temporal_training_receipt.json').exists())
+    # The detector always processes current runtime test images, including hidden ones.
+    subprocess.run([sys.executable,'-u',str(Path(package)/'scripts/notebook_runner.py'),
+        'control',str(package)],check=True)
+    seed=root/'harmonic_detector.csv'
+    (root/'submission.csv').replace(seed)
+    predict_test(seed,competition('test')/'test',previous/'temporal_models',root)
+
+
 if __name__=='__main__':
     if sys.argv[1]=='prepare': prepare()
     elif sys.argv[1] in ('train','train_cpu'): train(sys.argv[2])
     elif sys.argv[1]=='diagnostic': diagnostic(sys.argv[2])
+    elif sys.argv[1]=='test': test(sys.argv[2])
     elif sys.argv[1]=='fold':
         from biohub_lab.temporal_train import train_fold
         train_fold(sys.argv[2],Path('/kaggle/working/temporal_models')/sys.argv[3],sys.argv[3])

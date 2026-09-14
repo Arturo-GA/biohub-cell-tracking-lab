@@ -1,6 +1,6 @@
 # E004 — Modelo temporal propio con evaluación por embrión
 
-Implementación y entrenamiento completados el 14 de septiembre de 2026 UTC. El control de leaderboard permanece en **0.946** y la referencia aportada por Arturo es **0.947**. **Esta versión no mejora el control y no se envía al leaderboard.** Recibo completo: `results/E004_completed.json`.
+Implementación y entrenamiento completados el 14 de septiembre de 2026 UTC. El control de leaderboard permanece en **0.946** y la referencia aportada por Arturo es **0.947**. **Esta versión no mejoró el control en el diagnóstico local; la decisión inicial fue no enviarla.** Recibo completo: `results/E004_completed.json`. Posteriormente Arturo autorizó medir los pesos existentes en Kaggle: el ensemble de test se registra por separado como [E005](TEMPORAL_SUBMISSION.es.md).
 
 ## Resultado
 
@@ -53,7 +53,7 @@ El problema se resuelve por frame mediante programación entera. Se registran es
 - `src/biohub_lab/temporal_data.py`, `temporal_model.py`, `temporal_train.py` y `temporal_inference.py` contienen datos, red, entrenamiento e inferencia.
 - `tests/test_temporal.py` verifica contexto temporal, separación, supervisión escasa, simetría, gradientes, máscaras de padding y optimización contra enumeración exhaustiva.
 
-Los recortes y checkpoints permanecen en Kaggle o en directorios locales ignorados por Git. Las dos separaciones y la métrica oficial condicional ya se revisaron: **se descarta esta versión para submission y no se entrena una versión final sobre ambos embriones**.
+Los recortes y checkpoints permanecen en Kaggle o en directorios locales ignorados por Git. Tras revisar las dos separaciones y la métrica oficial condicional, la decisión inicial fue descartar la submission y no entrenar una versión final sobre ambos embriones. E005 documenta la autorización posterior de Arturo para enviar un ensemble de los pesos existentes, sin nuevo entrenamiento.
 
 ## Siguiente hipótesis que merece una implementación distinta
 

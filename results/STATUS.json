@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-13",
+  "date": "2026-09-14",
   "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
   "github_private": true,
   "external_leaderboard_reference": {
@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 33,
+  "local_tests_passed": 35,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -51,7 +51,7 @@
     "submitted_by_this_task": false,
     "public_score": 0.885
   },
-  "notebooks_schema_validated": 8,
+  "notebooks_schema_validated": 9,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
   "quality_status": "baseline_scored_below_user_reported_reference",
@@ -122,5 +122,18 @@
     "model_training_steps_confirmed": true,
     "decision": "do_not_submit_current_candidate",
     "receipt": "results/E004_completed.json"
+  },
+  "E005": {
+    "kernel": "jarturo/biohub-lab-temporal-submission",
+    "version": 1,
+    "payload_sha256": "cbe246e6bcb1c1d646897d16786eed5cfaf49acb9bbe66b1cd014002abdf5337",
+    "test_run_started": true,
+    "last_observed_status": "ACCEPTED",
+    "leaderboard_submitted": false,
+    "decision": "submit_existing_two_model_ensemble_for_external_measurement_as_authorized_by_user",
+    "training_reused": "jarturo/biohub-lab-temporal-train version 2",
+    "local_validation_note": "E004 single-fold comparison was negative; E005 ensemble has no independent local score",
+    "launch_receipt": "results/E005_test_launch.json",
+    "checked_at_utc": "2026-09-14T05:19:55.162478+00:00"
   }
 }

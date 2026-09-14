@@ -43,7 +43,7 @@ script={('audit_temporal_data.py' if mode=='audit' else 'temporal_runner.py')!r}
 subprocess.run([sys.executable,'-u',str(package/'scripts'/script),{mode!r},str(package)],env=env,check=True)
 '''
     ast.parse(code)
-    title='Biohub Lab Temporal '+mode.title()
+    title='Biohub Lab Temporal '+('Submission' if mode=='test' else mode.title())
     nb=dict(nbformat=4,nbformat_minor=5,metadata={'kernelspec':{'name':'python3','display_name':'Python 3','language':'python'}},
         cells=[dict(id='description',cell_type='markdown',metadata={},source=[f'# {title}\n',
             'Own temporal association experiment. Split provenance and evaluation scope are recorded explicitly.\n']),
@@ -52,6 +52,7 @@ subprocess.run([sys.executable,'-u',str(package/'scripts'/script),{mode!r},str(p
     meta.update(id='jarturo/'+title.lower().replace(' ','-').replace('_','-'),title=title,enable_gpu=mode not in ('audit','prepare','train_cpu'))
     if mode in ('audit','prepare','train_cpu'): meta.pop('machine_shape',None)
     if mode in ('train','train_cpu'): meta['kernel_sources']=['jarturo/biohub-lab-temporal-prepare','jarturo/biohub-lab-official-metric-ab']
+    if mode=='test': meta['kernel_sources']=['jarturo/biohub-lab-temporal-train']
     folder=ROOT/'kaggle'/('temporal_'+mode)
     folder.mkdir(exist_ok=True)
     (folder/'notebook.ipynb').write_text(json.dumps(nb,indent=1),encoding='utf8')

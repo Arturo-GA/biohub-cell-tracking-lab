@@ -25,6 +25,7 @@ La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envi�
 | `kaggle/temporal_audit` | Inventario de anotaciones y procedencia de splits | Auditoría JSON |
 | `kaggle/temporal_prepare` | Cinco frames por célula y distractores DoG sobre los 199 videos | Recortes y ejemplos reutilizables |
 | `kaggle/temporal_train` | Dos modelos propios, cada uno excluyendo un embrión; después comparación con Harmonic | Pesos, splits y evaluaciones; sin submission |
+| `kaggle/temporal_test` | Ensemble de los dos modelos temporales sobre todo el test | `submission.csv` y recibo de inferencia |
 
 El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
 
@@ -35,6 +36,8 @@ E003 reemplazó todas las asociaciones por HOCT y usó morfología medida en má
 Los notebooks contienen el código necesario y adjuntan tres datasets públicos de Pilkwang: soporte, segundo seed y DeepCenter. La inferencia Harmonic requiere GPU; la auditoría y preparación temporal usan CPU. El entrenamiento temporal admite GPU o CPU y esta ejecución completa se realizó en GPU. Internet está desactivado. Los hashes de los pesos públicos y del código de soporte se verifican al arrancar. Los datos, los pesos y las credenciales no se guardan en Git.
 
 **E004 también se completó:** se implementaron y entrenaron dos redes propias de imágenes de cinco frames, atención entre padres candidatos y una cabeza de divisiones. Cada una excluyó un embrión completo. En la comparación condicional con detecciones Harmonic, obtuvo **0.9412437 frente a 0.9666951**; las divisiones evaluadas pasaron de 2 aciertos a 0. El resultado no es leaderboard y el detector público de esa comparación vio esos videos. En la evaluación separada del modelo temporal sobre los 199 videos tampoco se superó al vecino más cercano al elegir padres. **No se envió este candidato.** [Resultados y límites](docs/TEMPORAL_IMPLEMENTATION.es.md), [recibo completo](results/E004_completed.json), [entrenamiento Kaggle](https://www.kaggle.com/code/jarturo/biohub-lab-temporal-train).
+
+**E005:** Arturo autorizó una prueba de leaderboard con los pesos ya entrenados. Se preparó la inferencia completa combinando las probabilidades de ambos modelos, con los mismos umbrales y un solo optimizador de linajes. La decisión inicial de E004 se conserva como historial; este envío busca medir el candidato en test. [Implementación y límites de la submission](docs/TEMPORAL_SUBMISSION.es.md). Su estado actual se registra en `results/STATUS.json`.
 
 ## Desarrollo
 
