@@ -1,0 +1,11 @@
+{
+  "experiment": "E013",
+  "command": "python -X utf8 -m unittest discover -s tests -v",
+  "tests_passed": 86,
+  "new_event_graph_tests": 9,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 7.882,
+  "device": "CPU",
+  "scope": "Technical unit and integration tests, including a synthetic training/checkpoint/calibration/CSV pipeline. Not model accuracy evidence."
+}

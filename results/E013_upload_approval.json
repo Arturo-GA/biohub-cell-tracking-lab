@@ -1,0 +1,17 @@
+{
+  "experiment": "E013",
+  "occurred_at_utc": "2026-09-15T14:32:54.300362+00:00",
+  "action": "Upload and start the two private E013 Kaggle notebooks",
+  "started": false,
+  "review_result": "rejected_before_execution",
+  "reason": "Automatic approval review required explicit authorization for this concrete code payload to Kaggle despite prior general experiment authorization.",
+  "payload_manifest": "kaggle/event_graph/payload.json",
+  "resolved": true,
+  "explicit_user_confirmation": "S\u00ed, s\u00fabelos y ejec\u00fatalos",
+  "authorized_destinations": [
+    "jarturo/biohub-lab-learned-event-graph",
+    "jarturo/biohub-lab-event-graph-control"
+  ],
+  "upload_completed": true,
+  "resolution_recorded_at_utc": "2026-09-15T14:36:11.324682+00:00"
+}

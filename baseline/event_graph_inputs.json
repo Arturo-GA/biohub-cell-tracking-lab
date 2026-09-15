@@ -1,0 +1,152 @@
+{
+  "experiment": "E013",
+  "slug": "biohub-lab-harmonic-detection-dag",
+  "version": 1,
+  "frozen_sha256": "1f059313ec9f27739abf6059c10cfdece548079de5189135d52000c301a955a4",
+  "files": {
+    "44b6_0c582fdc": {
+      "combined/graph.npz": "a7754ab7c34c519b84c0c8e95fb8ed18fb177beb1ec2b472599dd5714eee6a61"
+    },
+    "44b6_1574802b": {
+      "combined/graph.npz": "5aff13dcf993b5ee9251e13ea9cbefa4843f6d361542f67b536351086ab1b7c4"
+    },
+    "44b6_18ced818": {
+      "combined/graph.npz": "4092cfc103ad1ff653ba7f735cc4abbfc8dc0f3f769f114a0f6e4f7b3d63f0db"
+    },
+    "44b6_24264f12": {
+      "combined/graph.npz": "2adb899cc1b494752f65cf4dd41837b56e1d0729f0d659c8d9f733308ff80051"
+    },
+    "44b6_267148e4": {
+      "combined/graph.npz": "4fa737532cc85c69390af76c7d66b710644638e3f9a2f507d3c9f8cf72f0e10e"
+    },
+    "44b6_33b596bf": {
+      "combined/graph.npz": "22e16dde873f3cd7abaff5d2dddee15a45b3f1f2b541baeb567c6d25d1fc2d72"
+    },
+    "44b6_551a5dba": {
+      "combined/graph.npz": "6e889bd1bf62547f12207d6f0c7882ba7c5cbb8dfd659e003dd229896e744bce"
+    },
+    "44b6_706092f0": {
+      "combined/graph.npz": "be7f6331fb94030dbd3d3f5303466aaf1987cb31dad455ed9e6bdf6c343b9e4e"
+    },
+    "44b6_7a302da0": {
+      "combined/graph.npz": "627630116b44bcde3654216ca83966a43e868793e6c191dc973d9e9add2fd69c"
+    },
+    "44b6_87bba6c4": {
+      "combined/graph.npz": "09096e630d3e50c72826201cd0039c80a9fccd0df6c38443858928a7d553fef0"
+    },
+    "44b6_8cc6506c": {
+      "combined/graph.npz": "cf0f12d1ebfdf6a8ed1d620d8b1326104009de17b43395a57841d0a1cf29276d"
+    },
+    "44b6_8f5ab931": {
+      "combined/graph.npz": "fe7cdffc7f05d41c7a424ea96df408b5b289f808563de6b059425ca2e892c198"
+    },
+    "44b6_8f9ecab4": {
+      "combined/graph.npz": "58db386717ee6afbc7abf3124d9b002eae2bceaa2222c5f7abaf7cd19fbe0fbe"
+    },
+    "44b6_90724892": {
+      "combined/graph.npz": "092dd2c553ee914a48353aface15906929f5e338b1d5f89704d1196e0a6bd35b"
+    },
+    "44b6_95029e92": {
+      "combined/graph.npz": "423bbc410517635c481f7b36765e3d044e3b08a01a1a97afceea2679f2417d05"
+    },
+    "44b6_996155de": {
+      "combined/graph.npz": "112be5fe3a37900ba36b9a282f4719bcc089beb36a81c46c7af612f4a88f1438"
+    },
+    "44b6_9be80b04": {
+      "combined/graph.npz": "a458dd341d171aff19a347d562e16b1f96dd5ff8f07d696b51f85e84b700a9a7"
+    },
+    "44b6_a21120c2": {
+      "combined/graph.npz": "38cf229c531a87443df6d41252f655dd03ad865f9f309c6ed909f8e2bd7b6c16"
+    },
+    "44b6_d29c9ab2": {
+      "combined/graph.npz": "5e6a9809b310fe7e04f387739ac33d4f12461dabd37a50dceaaefe1010865f9b"
+    },
+    "44b6_d78e09d9": {
+      "combined/graph.npz": "1b1aaa6177689c0283f6b51de6dea7ff819329b604af50dbb84b1c951dbb5445"
+    },
+    "44b6_db3c847b": {
+      "combined/graph.npz": "54e2ba9de699ad996ed64f54ba888a606696a3e1787b4061685cf3a29c81f9ab"
+    },
+    "44b6_e31261b4": {
+      "combined/graph.npz": "9c94fe494594bdefee7c6d0a8eb0560419f6095ee8b7df980993bfe9f372244e"
+    },
+    "44b6_eb2880fc": {
+      "combined/graph.npz": "9e9524668d562feea1fb89d642977274a5ccc0244f22d54535388f06487b7dd3"
+    },
+    "44b6_f28707c6": {
+      "combined/graph.npz": "e1a93f966bdee02dca70e55bc9e174f2fef70c725650ee6c4d8b41a7c41afd08"
+    },
+    "6bba_085bf656": {
+      "combined/graph.npz": "3587598eef50dc198565fc4848059c7e4e370b36cbaa73a761cfca13fb4aa57c"
+    },
+    "6bba_09961292": {
+      "combined/graph.npz": "4e791e28eaa4e679fadb4120ee87c291a71ecdc0e3655be29ba755c92098ab1a"
+    },
+    "6bba_12665c0e": {
+      "combined/graph.npz": "70fe95fdfdbc6d04f17d616aca4e0419f16e3c1ca8cef94362df7d3f64be6cc1"
+    },
+    "6bba_1d0d8384": {
+      "combined/graph.npz": "31e9b5dee95c9947781f02b972f79306a5de388fe8f0ccbad8adafc05cd3d872"
+    },
+    "6bba_283bf9f1": {
+      "combined/graph.npz": "70bbf93a76300eadb91c4169c7684d153626d3b40d559a3845bf3a185f7c1942"
+    },
+    "6bba_372c8cb8": {
+      "combined/graph.npz": "64ab015c9827bb0300dd38a27fa1df80962293d91e6cf8870488989448a8561c"
+    },
+    "6bba_3db54e20": {
+      "combined/graph.npz": "ebc5aff8626038256e75fb15dd8425939f380a39058761ce8f86e48d6da31f64"
+    },
+    "6bba_4aa14c89": {
+      "combined/graph.npz": "e66418a88aee96fab2b4d9716d9bcb743dbc6b0a226402b77ab2533eaa4e4ff8"
+    },
+    "6bba_61dd1e0d": {
+      "combined/graph.npz": "d99fef017ecc0a5a55a849755acb932716968200c249c4b582781b034302a6a9"
+    },
+    "6bba_6ca87370": {
+      "combined/graph.npz": "ac7d7479178fbaeaa1178ea73f115ddf9dfabbe488e880e8f430f190b427abf0"
+    },
+    "6bba_705ec2c9": {
+      "combined/graph.npz": "4a344141f06fc8b0d22f56851b8be42d82e404cb6c1d36201cec42d5575eebbd"
+    },
+    "6bba_767a1e17": {
+      "combined/graph.npz": "0f7fb86a03e2ffb089f96ff262d1b119ec9e2b60533abe748f06eefc9e920696"
+    },
+    "6bba_8b7818bf": {
+      "combined/graph.npz": "8f28b9accc5f0dde3bca7d81c8a02f3491cc9dd38f7bd9cdf62321befee98137"
+    },
+    "6bba_9e23430b": {
+      "combined/graph.npz": "50ce4dbc6c07d55b37e76665e3287f8db8ac0bd600f201f4094f19f204c955d7"
+    },
+    "6bba_a5e926bb": {
+      "combined/graph.npz": "f4e9b59429cf21843e1dbc87e7454d199847e52881b513a90e580ab5097f9148"
+    },
+    "6bba_ab78413d": {
+      "combined/graph.npz": "6eaa9476b10b8a7ee88dbb4eff8548fb75edbfd32a78d9550fb20878dd709da5"
+    },
+    "6bba_b204cac7": {
+      "combined/graph.npz": "a3e5bfef9f687ee930d3fe1dd3abe3bee7ae374f561550ae4d40d4d5512b4d3c"
+    },
+    "6bba_c328f2fd": {
+      "combined/graph.npz": "6eb0ca319dc6af201a1d78839bc8ff259572615cb70a79747cebcf01a0713b46"
+    },
+    "6bba_d2b9fc0c": {
+      "combined/graph.npz": "22bf50eac7d6ac5d5202a80d35eaa5eac7909157da35e0e525a9505f07d976b8"
+    },
+    "6bba_d82a4fc6": {
+      "combined/graph.npz": "aeec460a5ee2a0105fe8c96ec9614b70ec3ec1881d7bc207818e0d3ac7643319"
+    },
+    "6bba_ed9377fd": {
+      "combined/graph.npz": "9f230bd15cc9610e6058e0b31309b31412e22aeadc245f7b7be518a7deb4f351"
+    },
+    "6bba_f17befbc": {
+      "combined/graph.npz": "887725750b2b71ea08285f55b55023e947730bda1f2b247bcc498815cfb1bc78"
+    },
+    "6bba_fbc898dc": {
+      "combined/graph.npz": "191e53e7d9cfd6fd37d1de3d8bc83d9001e7a5e9ab312d32cd445138e5e03041"
+    },
+    "6bba_fc5f39dc": {
+      "combined/graph.npz": "cd0f15b88445c6f2a26a66e063088f97a58a3570a469bc83b389f75fbd410d4b"
+    }
+  }
+}

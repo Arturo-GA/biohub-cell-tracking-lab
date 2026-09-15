@@ -1,0 +1,29 @@
+{
+  "experiment": "E013",
+  "payload_sha256": {
+    "event_graph": "8bf3bea546be650da1da603e28acced148640d4dec65b91ffb1e84567dc81cd6",
+    "event_graph_control": "8bf3bea546be650da1da603e28acced148640d4dec65b91ffb1e84567dc81cd6"
+  },
+  "actual_public_checkpoints_verified": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f"
+  },
+  "actual_dual_UNet_cpu_features": true,
+  "association_calls_blocked": true,
+  "annotation_access_blocked": true,
+  "subvoxel_sampling_changes_features": true,
+  "feature_shape": [
+    11,
+    64
+  ],
+  "all_eligible_pairs_scored": 12,
+  "selected_edges": 8,
+  "feasible_temporal_milp": true,
+  "final_integer_csv_valid": true,
+  "cached_e012_graphs_verified": 48,
+  "all_packaged_files_verified": true,
+  "extracted_minimal_package_imports_verified": true,
+  "official_metric_executed_locally": false,
+  "metric_dependencies_provided_by_kaggle_support": true,
+  "scope": "Technical test on synthetic images; random graph model. No accuracy evidence."
+}

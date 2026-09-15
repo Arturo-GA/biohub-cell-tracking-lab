@@ -1,0 +1,17 @@
+{
+  "experiment": "E013-control",
+  "ref": "/code/jarturo/biohub-lab-event-graph-control",
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-event-graph-control",
+  "versionNumber": 1,
+  "kernelId": 134501543,
+  "launched_at_utc": "2026-09-15T14:35:14.772339+00:00",
+  "payload_sha256": "8bf3bea546be650da1da603e28acced148640d4dec65b91ffb1e84567dc81cd6",
+  "notebook_sha256": "4d6836f8c653c6d2864db86b4fcdd6738c8052ef89eda96684e356ee869edc1f",
+  "evaluation_videos": 48,
+  "selector_fit_videos": 0,
+  "selector_calibration_videos": 0,
+  "local_wait_active": false,
+  "leaderboard_submitted": false,
+  "initial_status": "QUEUED",
+  "status_checked_at_utc": "2026-09-15T14:35:15.454362+00:00"
+}
