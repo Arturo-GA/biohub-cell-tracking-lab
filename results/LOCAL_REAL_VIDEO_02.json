@@ -1,0 +1,54 @@
+{
+  "video": "44b6_1d530831",
+  "status": "complete",
+  "verified_at_utc": "2026-09-15T20:09:40.319689+00:00",
+  "device": "local_RTX_3050_Laptop_GPU",
+  "shape": [
+    100,
+    64,
+    256,
+    256
+  ],
+  "nodes": 92396,
+  "stages": {
+    "gaussian": 4533,
+    "cellect": 55029,
+    "harmonic": 41231
+  },
+  "visual_shape": [
+    92396,
+    64
+  ],
+  "neighbor_shape": [
+    92396,
+    25
+  ],
+  "seconds": 352.67199999999866,
+  "torch_peak_allocated_bytes": 1421175808,
+  "torch_peak_reserved_bytes": 1612709888,
+  "process_peak_rss_bytes": 5531570176,
+  "measurement_scope": "Current process only; prior completed stages excluded",
+  "reused_stages": [],
+  "runtime_adaptation": "Redirect sole /kaggle/working log directory to the local video folder; inference statements unchanged",
+  "local_logging_regression_tests_passed": 2,
+  "retention_log_frames": 100,
+  "image_sha256": "20b834e71776091ceb73d5e0234fc801ee019cbcaee223d75aa5b5bb8de18959",
+  "files": {
+    "graph.npz": "08802731085e956ed370130c0aee7e6ee88cce57109221f2fdbef646b029d740",
+    "features.npz": "1636df6a5c05f578e3a870bed65182fc9e3572d9b0db4e47aa87b756d7851dc3"
+  },
+  "verification": {
+    "generation_hashes": true,
+    "real_image_identity": true,
+    "gaussian_cpu_cache_exact": true,
+    "feature_shape_dtype_and_finiteness": true,
+    "sequential_feature_concatenation_exact": true,
+    "complete_neighborhoods_recomputed": true,
+    "graph_coordinate_bounds": true
+  },
+  "annotations_read": false,
+  "training_started": false,
+  "complete_feature_videos": 2,
+  "required_feature_videos": 112,
+  "scope": "Real image detector and feature preparation of a fixed fit video; no selector training or candidate score yet."
+}

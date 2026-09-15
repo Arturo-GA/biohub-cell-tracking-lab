@@ -1,0 +1,24 @@
+{
+  "tests_passed": 3,
+  "contiguous_prefix_and_budget_verified": true,
+  "missing_inputs_and_invalid_ranges_rejected": true,
+  "notebook_minimal_imports_verified": true,
+  "payload_sha256": "c427b888f5c2526c04ce4a72e43154c6f5230f19bc9038cc4717fc2797df0c11",
+  "offset": 2,
+  "requested_count": 4,
+  "requested_videos": [
+    "44b6_2a2eff9f",
+    "44b6_3a861e03",
+    "44b6_3bb3690f",
+    "44b6_668e0cc7"
+  ],
+  "source_budget_bytes": 4294967296,
+  "completed_control_notebook_preserved": true,
+  "control_notebook_sha256": "549eb5a8f5d0829e98b31156e57d775f466732f4892e4033a1ce31fa6bcbd943",
+  "scientific_split_changed": false,
+  "training_started": false,
+  "gpu": false,
+  "tpu": false,
+  "private": true,
+  "remote_batch_completion_not_yet_checked": true
+}

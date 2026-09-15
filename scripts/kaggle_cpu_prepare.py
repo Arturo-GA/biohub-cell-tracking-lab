@@ -13,8 +13,8 @@ from biohub_lab.gaussian_detector import GAUSSIAN_CONFIG, run_video
 from notebook_runner import competition_dir
 
 
-def main(package, offset=0):
-    package=Path(package);root=Path('/kaggle/working/local_inputs');root.mkdir(exist_ok=True)
+def main(package, offset=0, root=None):
+    package=Path(package);root=Path(root or '/kaggle/working/local_inputs');root.mkdir(parents=True,exist_ok=True)
     manifest=json.loads((package/'baseline/event_graph_split.json').read_text());split=manifest['split']
     data=competition_dir()/'train';inventory=sorted(p.stem for p in data.glob('*.zarr'))
     if signature(inventory)!=manifest['training_names_sha256']:
@@ -44,6 +44,45 @@ def main(package, offset=0):
         remaining_input_videos=ordered[offset+1:],scope='One resumable input shard of the fixed 64 fit/calibration videos, not a reduced training experiment'))
 
 
+def select_batch(ordered,offset,count,sizes,budget=4*2**30):
+    """Return a contiguous bounded prefix; never skip a video to fit the budget."""
+    if not 0<=offset<len(ordered) or not 1<=count<=4 or offset+count>len(ordered):
+        raise ValueError('Batch must contain 1-4 videos within the fixed input cohort')
+    selected=[];total=0
+    for name in ordered[offset:offset+count]:
+        size=sizes[name]
+        if size<=0:raise ValueError('Missing or empty image store: '+name)
+        if total+size>budget:break
+        selected.append(name);total+=size
+    if not selected:raise ValueError('First video exceeds the batch budget; do not skip it')
+    return selected,total
+
+
+def batch(package,offset,count):
+    package=Path(package);root=Path('/kaggle/working/local_inputs');root.mkdir(exist_ok=True)
+    split=json.loads((package/'baseline/event_graph_split.json').read_text())['split']
+    ordered=split['fit']+split['calibration'];data=competition_dir()/'train'
+    sizes={name:sum(p.stat().st_size for p in (data/(name+'.zarr')).rglob('*') if p.is_file())
+           for name in ordered[offset:offset+count]}
+    names,total=select_batch(ordered,offset,count,sizes)
+    if shutil.disk_usage(root).free-total<2*2**30:raise ValueError('Insufficient CPU output disk reserve')
+    record=dict(status='preparing',offset=offset,requested_count=count,videos=names,completed=[],
+        next_offset=offset+len(names),source_bytes=total,budget_bytes=4*2**30,
+        annotations_read=False,accelerator='none',training_started=False,
+        scope='Contiguous input batch; the full fixed 48/16/48 experiment is unchanged')
+    save_json(root/'batch_result.json',record)
+    try:
+        for index,name in enumerate(names,offset):
+            main(package,index,root/name);record['completed'].append(name)
+            save_json(root/'batch_result.json',record)
+        record['status']='complete';save_json(root/'batch_result.json',record)
+    except Exception as error:
+        record.update(status='failed',error=str(error));save_json(root/'batch_result.json',record);raise
+
+
 if __name__=='__main__':
     import sys
-    main(sys.argv[1],int(sys.argv[2]) if len(sys.argv)>2 else 0)
+    offset=int(sys.argv[2]) if len(sys.argv)>2 else 0
+    count=int(sys.argv[3]) if len(sys.argv)>3 else 1
+    if count==1:main(sys.argv[1],offset)
+    else:batch(sys.argv[1],offset,count)

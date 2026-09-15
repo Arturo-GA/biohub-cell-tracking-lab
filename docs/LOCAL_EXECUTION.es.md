@@ -36,11 +36,27 @@ Se verificaron los **102 archivos** importados del video y el hash de sus gaussi
 
 El primer intento completó CELLECT y se detuvo al escribir el registro de Harmonic en `/kaggle/working`. Tras redirigir solo ese registro, la reanudación reutilizó CELLECT y las gaussianas. El proceso exitoso restante tardó **260,89 segundos**, con máximos de PyTorch de **693,3 MiB asignados y 884 MiB reservados**, y unos **5,18 GiB de memoria de proceso**. Estas mediciones excluyen la etapa CELLECT del intento anterior, la preparación CPU y la descarga; tampoco incluyen toda la memoria del dispositivo.
 
-Hay **1 de 112 juegos completos de grafos/características** y están copiados y verificados los **48 grafos de E012** en `outputs/local_event_graph/videos`. No se ha iniciado el entrenamiento científico del selector local. Los resultados recuperables del candidato E013 se incorporarán cuando Arturo avise, evitando repetir etapas completas.
+Hay **2 de 112 juegos completos de grafos/características** y están copiados y verificados los **48 grafos de E012** en `outputs/local_event_graph/videos`. No se ha iniciado el entrenamiento científico del selector local. La consulta única de continuación del 15 de septiembre a las 19:58 UTC todavía mostró el candidato E013 antiguo como `RUNNING`; sus resultados recuperables se incorporarán cuando estén disponibles, evitando repetir etapas completas.
 
 El siguiente bloque se construye con `scripts/build_cpu_workflow.py --offset 1`, y así sucesivamente hasta 63. Cada envío usa un recibo nuevo con `scripts/launch_cpu_notebook.py`; un recibo existente impide repetir accidentalmente el lanzamiento. Se avanza cuando el bloque anterior está guardado y verificado, sin crear monitores.
 
-El bloque de `offset 1`, video `44b6_1d530831`, ya fue aceptado como **versión 2** el 15 de septiembre a las **19:44 UTC**, privado y con GPU/TPU desactivadas. [Lanzamiento](../results/CPU_IMAGE_PREPARE_v2_launch.json). Sus resultados se recuperarán cuando Arturo avise; no se ha consultado el estado de esa nueva versión.
+El bloque de `offset 1`, video `44b6_1d530831`, terminó como **versión 2**. Se recuperaron y verificaron sus 102 archivos de imagen, unos 518 MB, y 4.533 propuestas gaussianas. La preparación CPU tardó **301,93 segundos**. [Resultado verificado](../results/CPU_IMAGE_PREPARE_v2_completed.json).
+
+La laptop completó ese segundo video sin errores: **92.396 centros**, con 64 características finitas y 25 vecinos por centro. CELLECT, Harmonic, construcción del grafo y extracción visual terminaron en **352,67 segundos**. Se reutilizaron las gaussianas CPU; la descarga y su cálculo no forman parte de ese tiempo. Los máximos registrados por PyTorch fueron **1,32 GiB asignados y 1,50 GiB reservados**; la memoria máxima del proceso fue unos **5,15 GiB**. Se verificaron hashes, límites espaciales, concatenación visual y todos los vecinos. [Resultado local del segundo video](../results/LOCAL_REAL_VIDEO_02.json).
+
+## Preparación CPU por lotes
+
+La **versión 3** fue aceptada el 15 de septiembre a las **20:05 UTC**, privada y con GPU/TPU desactivadas. Prepara hasta cuatro videos desde `offset 2`, con un presupuesto total de **4 GiB de archivos de imagen**. El lote conserva un prefijo consecutivo de la lista: si el siguiente video excede el presupuesto, queda para el lote posterior. No se cambia la partición ni se omiten videos del experimento. [Lanzamiento](../results/CPU_IMAGE_PREPARE_v3_launch.json).
+
+Cada video conserva su carpeta, archivo ZIP, gaussianas y recibos. `batch_result.json` registra los videos seleccionados, los completados y el siguiente índice. La laptop los procesa secuencialmente mediante:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/run_local_prepared_batch.py --cpu-root outputs/cpu_prepare_v3/local_inputs
+```
+
+El importador mantiene sus límites de caché y reserva de disco. Este comando se usa después de descargar y verificar las salidas, cuando el lote haya terminado; no consulta Kaggle ni espera a notebooks remotos. Se puede reconstruir un lote con `scripts/build_cpu_workflow.py --offset 2 --count 4 --prepare-only`. La opción `--prepare-only` conserva intacto el notebook del control ya evaluado. No se ha consultado automáticamente el estado de la versión 3.
+
+Pasaron **tres pruebas de regresión** del lote: presupuesto y orden consecutivo, rechazo de índices/entradas inválidos y rechazo de paquetes hijos incompletos. Los dos paquetes CPU compilan y se importan, y se comprobó que el notebook del control conserva exactamente su hash de lanzamiento. Son **101 pruebas distintas acumuladas** con las anteriores, sin repetir toda la batería histórica. [Verificación del lote](../results/CPU_BATCH_PREFLIGHT.json).
 
 ## Entrenamiento y evaluación por etapas
 

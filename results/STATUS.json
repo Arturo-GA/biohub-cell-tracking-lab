@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 98,
+  "local_tests_passed": 101,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E013_control_verified_first_real_local_features_complete_selector_untrained",
+  "quality_status": "E013_control_verified_two_real_local_feature_videos_complete_local_selector_not_yet_trained",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -870,7 +870,7 @@
     "next_action": "Recover candidate outputs only when Arturo reports completion; local CUDA infrastructure and CPU preparation can proceed independently.",
     "version": 1,
     "kernel_id": 134501537,
-    "checked_at_utc": "2026-09-15T17:44:04.192053+00:00",
+    "checked_at_utc": "2026-09-15T19:58:56.213741+00:00",
     "launched_at_utc": "2026-09-15T14:35:11.477816+00:00",
     "launch_receipt": "results/E013_launch.json",
     "interruption_review": "results/E013_interruption_review.json"
@@ -903,7 +903,7 @@
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "control_verified_first_real_local_video_complete_next_cpu_shard_launched",
+    "status": "two_real_local_videos_complete_next_cpu_batch_launched",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
@@ -925,7 +925,7 @@
       "evaluation": 48
     },
     "next_steps": [
-      "When Arturo reports completion, recover and verify CPU preparation version 2; do not monitor it automatically.",
+      "When Arturo reports completion, recover and verify CPU preparation version 3, including each completed child package; do not monitor it automatically.",
       "Continue missing detector/features locally in bounded video shards and reuse any verified original E013 outputs when reported.",
       "Complete all 112 graph/feature sets, freeze them before supervision, prepare fit/calibration labels, and run the full 6000-step local training with resume.",
       "Calibrate and score locally, solve/evaluate in Kaggle CPU, compare against the verified control score 0.9092570108739322 on the same 48-video development cohort.",
@@ -938,7 +938,7 @@
     "environment_receipt": "results/LOCAL_ENVIRONMENT.json",
     "local_training_root": "outputs/local_event_graph",
     "evaluation_graphs_imported_and_verified": 48,
-    "complete_real_feature_videos_local": 1,
+    "complete_real_feature_videos_local": 2,
     "first_cpu_preparation_launched": true,
     "control_predictions_upload_permission": "explicitly_authorized_and_uploaded",
     "control_dataset": "jarturo/biohub-lab-control-cpu-cache",
@@ -946,25 +946,34 @@
     "control_cpu_evaluation_launched": true,
     "control_cpu_evaluation_completed": true,
     "control_result": "results/E013_cpu_control_completed.json",
-    "real_video_preparation": "results/LOCAL_REAL_VIDEO_PREPARATION.json"
+    "real_video_preparation": "results/LOCAL_REAL_VIDEO_02.json",
+    "cpu_preparation_batching": true,
+    "cpu_batch_max_videos": 4
   },
   "CPU_IMAGE_PREPARE": {
     "kernel": "jarturo/biohub-lab-cpu-image-preparation",
-    "version": 2,
-    "launch_receipt": "results/CPU_IMAGE_PREPARE_v2_launch.json",
+    "version": 3,
+    "launch_receipt": "results/CPU_IMAGE_PREPARE_v3_launch.json",
     "launch_accepted": true,
     "last_observed_status": null,
     "status_not_polled": true,
-    "offset": 1,
-    "video": "44b6_1d530831",
+    "offset": 2,
     "gpu": false,
     "tpu": false,
     "private": true,
     "local_wait_active": false,
     "kernel_id": 134523205,
-    "launched_at_utc": "2026-09-15T19:44:14.754840+00:00",
-    "last_completed_version": 1,
-    "completed_receipt": "results/CPU_IMAGE_PREPARE_v1_completed.json"
+    "launched_at_utc": "2026-09-15T20:05:07.514896+00:00",
+    "last_completed_version": 2,
+    "completed_receipt": "results/CPU_IMAGE_PREPARE_v2_completed.json",
+    "requested_count": 4,
+    "requested_videos": [
+      "44b6_2a2eff9f",
+      "44b6_3a861e03",
+      "44b6_3bb3690f",
+      "44b6_668e0cc7"
+    ],
+    "batch_source_budget_bytes": 4294967296
   },
   "CPU_CONTROL_RECOVERY": {
     "kernel": "jarturo/biohub-lab-cpu-control-recovery",
@@ -999,11 +1008,15 @@
   },
   "LOCAL_REAL_VIDEO_PREPARATION": {
     "status": "complete",
-    "video": "44b6_144b256d",
-    "nodes": 107746,
-    "receipt": "results/LOCAL_REAL_VIDEO_PREPARATION.json",
-    "complete_feature_videos": 1,
+    "video": "44b6_1d530831",
+    "nodes": 92396,
+    "receipt": "results/LOCAL_REAL_VIDEO_02.json",
+    "complete_feature_videos": 2,
     "required_feature_videos": 112,
-    "training_started": false
+    "training_started": false,
+    "completed_receipts": [
+      "results/LOCAL_REAL_VIDEO_PREPARATION.json",
+      "results/LOCAL_REAL_VIDEO_02.json"
+    ]
   }
 }

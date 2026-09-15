@@ -10,8 +10,8 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def build(offset=0):
-    if not 0 <= offset < 64:
+def build(offset=0,count=1,prepare_only=False):
+    if not 0 <= offset < 64 or not 1<=count<=4 or offset+count>64:
         raise ValueError('Preparation offset must be in the fixed 64-video input cohort')
     names = ['__init__.py','control_export.py','evaluate.py','submission.py','event_data.py','event_portable.py',
         'event_train.py','event_model.py','detector_proposals.py','gaussian_detector.py','patch.py']
@@ -54,29 +54,32 @@ subprocess.run([sys.executable,'-u',str(package/'scripts/kaggle_cpu_control.py')
         language='python',kernel_type='notebook',is_private=True,enable_gpu=False,enable_tpu=False,enable_internet=False,
         competition_sources=['biohub-cell-tracking-during-development'],dataset_sources=['pilkwang/biohub-tracking-support-pack-50ep-v1',
             'jarturo/biohub-lab-control-cpu-cache'],kernel_sources=[],model_sources=[])
-    (folder/'notebook.ipynb').write_text(json.dumps(notebook,indent=1)+'\n',encoding='utf8')
-    (folder/'kernel-metadata.json').write_text(json.dumps(meta,indent=2)+'\n')
-    (folder/'payload.json').write_text(json.dumps(dict(sha256=digest,files=[p.relative_to(ROOT).as_posix() for p in sorted(files)],
-        contains_images=False,contains_weights=False,contains_annotations=False,contains_credentials=False),indent=2)+'\n')
-    print(json.dumps(dict(folder=str(folder),payload_sha256=digest,accelerator='none')))
+    payload_record=dict(sha256=digest,files=[p.relative_to(ROOT).as_posix() for p in sorted(files)],
+        contains_images=False,contains_weights=False,contains_annotations=False,contains_credentials=False)
+    if not prepare_only:
+        (folder/'notebook.ipynb').write_text(json.dumps(notebook,indent=1)+'\n',encoding='utf8')
+        (folder/'kernel-metadata.json').write_text(json.dumps(meta,indent=2)+'\n')
+        (folder/'payload.json').write_text(json.dumps(payload_record,indent=2)+'\n')
+    print(json.dumps(dict(folder=str(ROOT/'kaggle/cpu_prepare' if prepare_only else folder),payload_sha256=digest,accelerator='none')))
     prepare=json.loads(json.dumps(notebook));prepare_meta=dict(meta)
     prepare_code=code.replace("cmd+['tracksdata','polars>=1.36','zarr>=3.0.10,<4','geff-spec<1.2']", "cmd+['zarr>=3.0.10,<4']")
     prepare_code=prepare_code.replace("scripts/kaggle_cpu_control.py", "scripts/kaggle_cpu_prepare.py")
-    if offset:
-        prepare_code=prepare_code.replace("str(package)],env=env,check=True)", "str(package),"+repr(str(offset))+"],env=env,check=True)")
+    if offset or count!=1:
+        prepare_code=prepare_code.replace("str(package)],env=env,check=True)", "str(package),"+repr(str(offset))+","+repr(str(count))+"],env=env,check=True)")
     ast.parse(prepare_code)
     prepare['cells'][0]['source']=['# Biohub CPU image preparation\n',
-        'Export one verified image shard and prepare Gaussian proposals on CPU. No annotation access. Continue the fixed 48/16/48 experiment in resumable stages on the laptop.\n']
+        f'Export up to {count} consecutive verified image shards, bounded to 4 GiB for batches, and prepare Gaussian proposals on CPU. No annotation access. Continue the fixed 48/16/48 experiment in resumable stages on the laptop.\n']
     prepare['cells'][1]['source']=prepare_code.splitlines(True)
     prepare_meta.update(id='jarturo/biohub-lab-cpu-image-preparation',title='Biohub Lab CPU Image Preparation',
         dataset_sources=['pilkwang/biohub-tracking-support-pack-50ep-v1'])
     target=ROOT/'kaggle/cpu_prepare';target.mkdir(exist_ok=True)
     (target/'notebook.ipynb').write_text(json.dumps(prepare,indent=1)+'\n',encoding='utf8')
     (target/'kernel-metadata.json').write_text(json.dumps(prepare_meta,indent=2)+'\n')
-    (target/'payload.json').write_bytes((folder/'payload.json').read_bytes())
+    (target/'payload.json').write_text(json.dumps(payload_record,indent=2)+'\n')
 
 
 if __name__ == '__main__':
     import argparse
     parser=argparse.ArgumentParser();parser.add_argument('--offset',type=int,default=0)
-    build(parser.parse_args().offset)
+    parser.add_argument('--count',type=int,default=1);parser.add_argument('--prepare-only',action='store_true')
+    args=parser.parse_args();build(args.offset,args.count,args.prepare_only)
