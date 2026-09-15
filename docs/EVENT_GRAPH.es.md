@@ -1,6 +1,6 @@
 # E013: modelo de eventos sobre detecciones reales
 
-**Actualización de cómputo, 15 de septiembre:** la siguiente ejecución se preparará para la GPU de la laptop y Kaggle CPU, siguiendo el [plan de migración](LOCAL_KAGGLE_CPU.es.md). La implementación y los notebooks versión 1 descritos aquí preceden esa adaptación. El control terminó la inferencia y falló en la validación de una coordenada; se recuperó su CSV para corregir y evaluar sin repetir la inferencia. [Revisión](../results/E013_interruption_review.json).
+**Actualización de cómputo, 15 de septiembre:** la ejecución local usa la GPU de la laptop y Kaggle CPU, siguiendo el [plan de migración](LOCAL_KAGGLE_CPU.es.md). La implementación y los notebooks versión 1 descritos aquí preceden esa adaptación. El control terminó la inferencia y falló en la validación de una coordenada; su exportación corregida ya se evaluó en CPU sin repetir la inferencia: **0,909257 en los 48 videos**, con 3 divisiones correctas, 22 falsas y 30 omitidas. El CSV descargado coincide exactamente con la corrección local y se reprodujo el agregado. Es la referencia de desarrollo para la comparación emparejada, no un score del leaderboard. [Resultado verificado](../results/E013_cpu_control_completed.json).
 
 E012 encontró candidatos compatibles con 33/33 divisiones y 24/25 continuaciones anotadas completas, pero todavía no eligió un grafo ni produjo un score. E013 implementa y entrena el selector que faltaba. El mejor resultado público propio sigue siendo **0.946** hasta una nueva submission evaluada.
 
@@ -34,7 +34,7 @@ Cada ventana tiene un límite de cinco segundos y una tolerancia relativa de 2 %
 
 ## Dos ejecuciones de Kaggle
 
-Kaggle aceptó ambos notebooks privados, **versión 1**, el 15 de septiembre de 2026 a las **14:35 UTC**, con estado inicial **QUEUED**. Tras un rechazo inicial de la revisión automática, Arturo autorizó expresamente este envío y la subida se completó. No se consultará nuevamente su progreso hasta su aviso. Recibos: [`E013_launch.json`](../results/E013_launch.json) y [`E013-control_launch.json`](../results/E013-control_launch.json). Los resultados siguen pendientes.
+Kaggle aceptó ambos notebooks privados, **versión 1**, el 15 de septiembre de 2026 a las **14:35 UTC**, con estado inicial **QUEUED**. Tras un rechazo inicial de la revisión automática, Arturo autorizó expresamente este envío y la subida se completó. No se consultará nuevamente su progreso hasta su aviso. Recibos: [`E013_launch.json`](../results/E013_launch.json) y [`E013-control_launch.json`](../results/E013-control_launch.json). El control ya se recuperó y evaluó mediante CPU Control Recovery v2; los resultados del candidato siguen pendientes.
 
 Para evitar acumular preparación, entrenamiento e inferencia de ambos sistemas en una sola sesión, el experimento tiene dos notebooks privados:
 

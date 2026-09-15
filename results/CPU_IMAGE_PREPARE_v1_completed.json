@@ -1,0 +1,36 @@
+{
+  "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+  "version": 1,
+  "status": "COMPLETE",
+  "checked_at_utc": "2026-09-15T19:34:33.238282+00:00",
+  "verified_at_utc": "2026-09-15T19:43:27.813041+00:00",
+  "video": "44b6_144b256d",
+  "offset": 0,
+  "next_offset": 1,
+  "seconds": 304.1262741820001,
+  "source_bytes": 544335541,
+  "image_files": 102,
+  "shape": [
+    100,
+    64,
+    256,
+    256
+  ],
+  "image_sha256": "c68a838af0f3505dc8c9c61eaf4ed39ba25602895eb58aa84a0d20b6a7a10517",
+  "archive_sha256": "acc99631ec4f094f29b48e142964aad2308dd6d89ecfa93802003f3581d3094a",
+  "gaussian_sha256": "f0b755fe9c9b4b354dcaeab9234dca0c9e209a76aaf99fce3d858e487977d19b",
+  "gaussian_proposals": 4825,
+  "payload_sha256": "686a914454e8f22a7493ec46c7f6e98c687243cf2c7b85f79469456e65bbbb98",
+  "verification": {
+    "remote_sources_match_launch_payload": true,
+    "archive_sha256": true,
+    "all_imported_image_files": true,
+    "fixed_split_manifest": true,
+    "gaussian_hash_and_bounds": true
+  },
+  "annotations_read": false,
+  "gpu": false,
+  "tpu": false,
+  "remaining_fit_calibration_input_videos": 63,
+  "training_started": false
+}

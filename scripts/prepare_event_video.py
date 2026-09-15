@@ -1,5 +1,6 @@
 """Prepare one image-only video locally, reusing verified detector/feature stages."""
 import argparse
+import ast
 import hashlib
 import importlib.util
 import json
@@ -19,6 +20,18 @@ from biohub_lab.event_train import load_arrays
 from biohub_lab.harmonic_centers import CHECKPOINTS, DETECTOR_CONFIG, merge_primary, save_centers
 from biohub_lab.detection_dag import build_dag, save_dag
 from event_stages import device_policy
+
+
+def local_detector_tree(source, filename, log_directory):
+    """Redirect the pinned detector's sole Kaggle log path, preserving inference."""
+    tree=ast.parse(source,filename=filename)
+    paths=[node for node in ast.walk(tree) if isinstance(node,ast.Call)
+           and isinstance(node.func,ast.Name) and node.func.id=='Path'
+           and len(node.args)==1 and isinstance(node.args[0],ast.Constant)
+           and node.args[0].value=='/kaggle/working']
+    if len(paths)!=1:raise ValueError('Expected exactly one pinned Kaggle logging path')
+    paths[0].args[0]=ast.Constant(value=str(Path(log_directory).resolve()))
+    return ast.fix_missing_locations(tree)
 
 
 def main():
@@ -61,8 +74,13 @@ def main():
     sys.path.insert(0,str(Path(args.support_repo)/'src'))
     os.environ.update(BIOHUB_EDGE_FEATURE_TTA='0',BIOHUB_SECONDARY_EDGE_FEATURE_TTA='0',BIOHUB_DIAGNOSTIC_ARM='',BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION='.90')
     spec=importlib.util.spec_from_file_location('portable_image_detector',args.module)
-    module=importlib.util.module_from_spec(spec);sys.modules[spec.name]=module;spec.loader.exec_module(module)
+    module=importlib.util.module_from_spec(spec);sys.modules[spec.name]=module
+    # The original file is hash-checked above and remains unchanged on disk.
+    tree=local_detector_tree(Path(args.module).read_text(),args.module,folder)
+    exec(compile(tree,args.module,'exec'),module.__dict__)
     device=torch.device(args.device);shape=zarr.open_group(str(image),mode='r')['0'].shape
+    if device.type=='cuda':torch.cuda.reset_peak_memory_stats(device)
+    print('PREPARING_REAL_VIDEO',args.video,list(shape),flush=True)
     def stage_complete(name):
         path=folder/name;pin=folder/(name+'.sha256')
         if path.exists() and pin.exists():
@@ -71,6 +89,8 @@ def main():
         return False
     def pin(name):
         (folder/(name+'.sha256')).write_text(sha(folder/name)+'\n')
+    reused_stages=[name for name in ('gaussian.npz','cellect.npz','harmonic.npz','graph.npz',
+                   'visual_primary.npy','visual_secondary.npy') if stage_complete(name)]
     if args.gaussian_cache and not stage_complete('gaussian.npz'):
         cache=Path(args.gaussian_cache);record=json.loads((cache/'gaussian_receipt.json').read_text())
         from biohub_lab.gaussian_detector import GAUSSIAN_CONFIG
@@ -79,6 +99,7 @@ def main():
             sha(cache/'gaussian.npz')!=record['proposals_sha256']):
             raise ValueError('CPU Gaussian package provenance mismatch')
         shutil.copyfile(cache/'gaussian.npz',folder/'gaussian.npz');pin('gaussian.npz')
+        print('CPU_GAUSSIAN_REUSED',args.video,flush=True)
     cached=(Path(args.cached_e012)/'videos'/args.video/'combined/graph.npz') if args.cached_e012 else None
     if not stage_complete('graph.npz'):
         if cached and cached.is_file():
@@ -91,10 +112,13 @@ def main():
             from biohub_lab.gaussian_detector import run_video as gaussian
             for name,runner in [('cellect.npz',cellect),('gaussian.npz',gaussian)]:
                 if not stage_complete(name):
+                    print('STAGE_STARTED',args.video,name,flush=True)
                     kwargs=dict(weights=args.cellect,device=args.device) if name=='cellect.npz' else {}
                     runner(image,folder/name,**kwargs);pin(name)
+                    print('STAGE_COMPLETE',args.video,name,flush=True)
                     if device.type=='cuda':torch.cuda.empty_cache()
             if not stage_complete('harmonic.npz'):
+                print('STAGE_STARTED',args.video,'harmonic.npz',flush=True)
                 primary,window,ds=module.load_model(Path(args.primary),device)
                 secondary,w2,ds2=module.load_model(Path(args.secondary),device)
                 if window!=2 or w2!=2 or tuple(ds)!=(1,4,4) or tuple(ds2)!=tuple(ds):raise ValueError('Frozen architecture changed')
@@ -103,28 +127,40 @@ def main():
                     secondary_model=secondary,secondary_detection_weight=.80)
                 if associations:raise ValueError('Image-only detector returned associations')
                 save_centers(folder/'harmonic.npz',coords,shape,dict(checkpoint_sha256=CHECKPOINTS));pin('harmonic.npz')
+                print('STAGE_COMPLETE',args.video,'harmonic.npz',flush=True)
                 del primary,secondary
                 if device.type=='cuda':torch.cuda.empty_cache()
             base=load_arrays(folder/'harmonic.npz');aux=[load_arrays(folder/name) for name in ('cellect.npz','gaussian.npz')]
             points,scores,origin=merge_primary(base['coords'],[(a['coords'],a['scores']) for a in aux],shape)
             save_dag(build_dag(points,scores,origin,shape),folder,args.video)
         pin('graph.npz')
+        print('STAGE_COMPLETE',args.video,'graph.npz',flush=True)
     graph=load_arrays(folder/'graph.npz')
     if not np.array_equal(graph['shape'],shape):raise ValueError('Image shape differs from graph')
     for key in ('primary','secondary'):
         filename='visual_'+key+'.npy'
         if not stage_complete(filename):
+            print('STAGE_STARTED',args.video,filename,flush=True)
             model,window,ds=module.load_model(Path(getattr(args,key)),device)
             if window!=2 or tuple(ds)!=(1,4,4):raise ValueError('Frozen feature architecture changed')
             visual=extract_visual(module,[model],image,graph['coords'],device)
             np.save(folder/filename,visual,allow_pickle=False);pin(filename)
+            print('STAGE_COMPLETE',args.video,filename,flush=True)
             del model,visual
             if device.type=='cuda':torch.cuda.empty_cache()
     visual=np.concatenate([np.load(folder/('visual_'+key+'.npy'),allow_pickle=False) for key in ('primary','secondary')],axis=1)
     np.savez_compressed(folder/'features.npz',visual=visual,neighbors=neighborhoods(graph['coords']))
     receipt=dict(dataset=args.video,annotations_read=False,harmonic_associations_used=False,portable_identity=identity,
         nodes=len(graph['coords']),shape=list(map(int,shape)),seconds=time.monotonic()-started,
+        runtime_adaptation='Redirect sole /kaggle/working log directory to the local video folder; inference statements unchanged',
+        reused_stages=reused_stages,measurement_scope='Current process only; prior completed stages excluded',
         files={f:sha(folder/f) for f in ('graph.npz','features.npz')})
+    if device.type=='cuda':
+        receipt['torch_peak_allocated_bytes']=torch.cuda.max_memory_allocated(device)
+        receipt['torch_peak_reserved_bytes']=torch.cuda.max_memory_reserved(device)
+    import psutil
+    memory=psutil.Process().memory_info()
+    receipt['process_peak_rss_bytes']=getattr(memory,'peak_wset',memory.rss)
     save_json(receipt_path,receipt);print('PORTABLE_VIDEO_READY',args.video,json.dumps(receipt),flush=True)
 
 

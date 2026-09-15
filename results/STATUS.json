@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 96,
+  "local_tests_passed": 98,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E012_combined_coverage_passed_event_selection_untrained",
+  "quality_status": "E013_control_verified_first_real_local_features_complete_selector_untrained",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -221,8 +221,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": false,
-  "active_experiment": null,
+  "next_experiment_started": true,
+  "active_experiment": "E013_LOCAL_CPU_WORKFLOW",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -306,7 +306,7 @@
       }
     }
   },
-  "next_research_direction": "Develop learned event and continuation scoring with consistent global graph selection and separate selector fitting/calibration/evaluation. Measure official final-CSV performance against Harmonic before a new submission. No new notebook or training launched in this review.",
+  "next_research_direction": "Continue the fixed local GPU and Kaggle CPU input pipeline, reuse completed E013 artifacts when reported, train the full selector after all features are frozen, and compare against the verified 48-video control.",
   "E008": {
     "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-cellect-detector",
@@ -408,7 +408,7 @@
   "active_experiments": [
     "E013",
     "CPU_IMAGE_PREPARE",
-    "CPU_CONTROL_RECOVERY"
+    "E013_LOCAL_CPU_WORKFLOW"
   ],
   "detector_test_evidence": {
     "full_suite_passed": 54,
@@ -884,25 +884,26 @@
     "checked_at_utc": "2026-09-15T17:44:05.391881+00:00",
     "launched_at_utc": "2026-09-15T14:35:14.772339+00:00",
     "run_started": true,
-    "results_available": false,
+    "results_available": true,
     "local_wait_active": false,
     "leaderboard_submitted": false,
     "evaluation_videos": 48,
     "launch_receipt": "results/E013-control_launch.json",
     "documentation": "docs/EVENT_GRAPH.es.md",
-    "next_action": "CPU Control Recovery version 2 was accepted using the verified private CSV dataset. Retrieve and verify its metrics when Arturo reports completion; no monitoring or repeated inference.",
+    "next_action": "Compare the learned candidate against the verified CPU control on exactly the same 48 videos; no additional control run needed.",
     "interruption_review": "results/E013_interruption_review.json",
     "failure": "Final CSV has out-of-bounds z coordinates; not a quota exception",
     "csv_recovered": true,
     "export_repair": "results/E013_control_export_repair.json",
     "corrected_csv_validated": true,
-    "corrected_official_metric_available": false,
-    "cpu_recovery_launch_receipt": "results/E013_cpu_control_launch.json"
+    "corrected_official_metric_available": true,
+    "cpu_recovery_launch_receipt": "results/E013_cpu_control_launch.json",
+    "corrected_result": "results/E013_cpu_control_completed.json"
   },
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "implemented_and_verified_waiting_for_real_features_and_cpu_results",
+    "status": "control_verified_first_real_local_video_complete_next_cpu_shard_launched",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
@@ -924,12 +925,11 @@
       "evaluation": 48
     },
     "next_steps": [
-      "When Arturo reports completion, retrieve and verify CPU preparation outputs and any completed E013 candidate artifacts without polling.",
-      "Import the CPU image shard and Gaussian proposals, then generate missing frozen detectors/features locally, one video at a time.",
-      "Continue the fixed 64 fit/calibration input videos and complete evaluation features; reuse any verified E013 outputs.",
-      "Freeze all 112 graph/feature sets before supervision, prepare labels on CPU, then run the full 6000-step local selector training with resume.",
-      "When Arturo reports completion, retrieve the CPU control result and verify its repaired CSV hash and complete 48-video metric coverage.",
-      "Calibrate and score locally, solve/evaluate in Kaggle CPU, and measure final CPU submission runtime separately."
+      "When Arturo reports completion, recover and verify CPU preparation version 2; do not monitor it automatically.",
+      "Continue missing detector/features locally in bounded video shards and reuse any verified original E013 outputs when reported.",
+      "Complete all 112 graph/feature sets, freeze them before supervision, prepare fit/calibration labels, and run the full 6000-step local training with resume.",
+      "Calibrate and score locally, solve/evaluate in Kaggle CPU, compare against the verified control score 0.9092570108739322 on the same 48-video development cohort.",
+      "Measure final CPU submission runtime separately before deciding on a new leaderboard submission."
     ],
     "implementation_documentation": "docs/LOCAL_EXECUTION.es.md",
     "cpu_workflow_launcher_enforces_policy": true,
@@ -938,41 +938,72 @@
     "environment_receipt": "results/LOCAL_ENVIRONMENT.json",
     "local_training_root": "outputs/local_event_graph",
     "evaluation_graphs_imported_and_verified": 48,
-    "complete_real_feature_videos_local": 0,
+    "complete_real_feature_videos_local": 1,
     "first_cpu_preparation_launched": true,
     "control_predictions_upload_permission": "explicitly_authorized_and_uploaded",
     "control_dataset": "jarturo/biohub-lab-control-cpu-cache",
     "control_dataset_private_verified": true,
-    "control_cpu_evaluation_launched": true
+    "control_cpu_evaluation_launched": true,
+    "control_cpu_evaluation_completed": true,
+    "control_result": "results/E013_cpu_control_completed.json",
+    "real_video_preparation": "results/LOCAL_REAL_VIDEO_PREPARATION.json"
   },
   "CPU_IMAGE_PREPARE": {
     "kernel": "jarturo/biohub-lab-cpu-image-preparation",
-    "version": 1,
-    "launch_receipt": "results/CPU_IMAGE_PREPARE_launch.json",
+    "version": 2,
+    "launch_receipt": "results/CPU_IMAGE_PREPARE_v2_launch.json",
     "launch_accepted": true,
     "last_observed_status": null,
     "status_not_polled": true,
-    "offset": 0,
-    "video": "44b6_144b256d",
+    "offset": 1,
+    "video": "44b6_1d530831",
     "gpu": false,
     "tpu": false,
     "private": true,
-    "local_wait_active": false
+    "local_wait_active": false,
+    "kernel_id": 134523205,
+    "launched_at_utc": "2026-09-15T19:44:14.754840+00:00",
+    "last_completed_version": 1,
+    "completed_receipt": "results/CPU_IMAGE_PREPARE_v1_completed.json"
   },
   "CPU_CONTROL_RECOVERY": {
     "kernel": "jarturo/biohub-lab-cpu-control-recovery",
     "version": 2,
     "kernel_id": 134522665,
     "launch_accepted": true,
-    "last_observed_status": null,
-    "status_not_polled": true,
+    "last_observed_status": "COMPLETE",
+    "status_not_polled": false,
     "launch_receipt": "results/E013_cpu_control_launch.json",
     "dataset_receipt": "results/CONTROL_CPU_DATASET.json",
     "private": true,
     "gpu": false,
     "tpu": false,
     "local_wait_active": false,
-    "results_available": false,
-    "leaderboard_submitted": false
+    "results_available": true,
+    "leaderboard_submitted": false,
+    "checked_at_utc": "2026-09-15T19:34:27.897319+00:00",
+    "completed_receipt": "results/E013_cpu_control_completed.json",
+    "summary": {
+      "n": 48,
+      "n_adj": 48,
+      "edge_jaccard": 0.9024204175046813,
+      "division_jaccard": 0.05454545454545454,
+      "division_tp": 3,
+      "division_fp": 22,
+      "division_fn": 30,
+      "node_recall": 0.9823334553668251,
+      "adj_edge_jaccard": 0.9038024654193867,
+      "score": 0.9092570108739322
+    },
+    "csv_sha256": "503b20ac95207a3f2be32efc4ae3c6ee44ea3ed85000e06072cc6249199aa366"
+  },
+  "LOCAL_REAL_VIDEO_PREPARATION": {
+    "status": "complete",
+    "video": "44b6_144b256d",
+    "nodes": 107746,
+    "receipt": "results/LOCAL_REAL_VIDEO_PREPARATION.json",
+    "complete_feature_videos": 1,
+    "required_feature_videos": 112,
+    "training_started": false
   }
 }

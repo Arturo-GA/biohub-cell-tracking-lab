@@ -12,6 +12,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--cpu-package',required=True)
     args=parser.parse_args();package=Path(args.cpu_package).resolve()
     imported=import_package(package,ROOT/'outputs/local_images')
+    print('IMAGE_IMPORT_VERIFIED', imported, flush=True)
     command=[sys.executable,'-u',str(ROOT/'scripts/prepare_event_video.py'),
         '--root',str(ROOT/'outputs/local_event_graph'),'--video',imported['video'],'--image',imported['image'],
         '--primary',str(ROOT/'artifacts/e012_detector_check/primary/edge_predictor_best.pth'),

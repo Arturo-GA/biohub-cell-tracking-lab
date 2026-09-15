@@ -1,0 +1,67 @@
+{
+  "kernel": "jarturo/biohub-lab-cpu-control-recovery",
+  "version": 2,
+  "status": "COMPLETE",
+  "checked_at_utc": "2026-09-15T19:34:27.897319+00:00",
+  "verified_at_utc": "2026-09-15T19:37:45.431127+00:00",
+  "summary": {
+    "n": 48,
+    "n_adj": 48,
+    "edge_jaccard": 0.9024204175046813,
+    "division_jaccard": 0.05454545454545454,
+    "division_tp": 3,
+    "division_fp": 22,
+    "division_fn": 30,
+    "node_recall": 0.9823334553668251,
+    "adj_edge_jaccard": 0.9038024654193867,
+    "score": 0.9092570108739322
+  },
+  "seconds": 130.62872280200003,
+  "payload_sha256": "686a914454e8f22a7493ec46c7f6e98c687243cf2c7b85f79469456e65bbbb98",
+  "csv_sha256": "503b20ac95207a3f2be32efc4ae3c6ee44ea3ed85000e06072cc6249199aa366",
+  "metrics_sha256": "66ce2b0b0b8718f14a6277d75d558262442d6f5d365c475a0aea8a7d406a93ff",
+  "official_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "groups": {
+    "44b6": {
+      "n": 24,
+      "n_adj": 24,
+      "edge_jaccard": 0.888406779661017,
+      "division_jaccard": 0.10526315789473684,
+      "division_tp": 2,
+      "division_fp": 11,
+      "division_fn": 6,
+      "node_recall": 0.9855586268251645,
+      "adj_edge_jaccard": 0.898233077675268,
+      "score": 0.9087593934647418
+    },
+    "6bba": {
+      "n": 24,
+      "n_adj": 24,
+      "edge_jaccard": 0.9072357079625402,
+      "division_jaccard": 0.027777777777777776,
+      "division_tp": 1,
+      "division_fp": 11,
+      "division_fn": 24,
+      "node_recall": 0.9791082839084858,
+      "adj_edge_jaccard": 0.9057161883198609,
+      "score": 0.9084939660976387
+    }
+  },
+  "verification": {
+    "remote_packaged_sources_match_launch_payload": true,
+    "downloaded_csv_matches_validated_local_export": true,
+    "exact_48_video_cohort": true,
+    "all_sample_metrics_finite": true,
+    "aggregate_recomputed": true,
+    "node_count_preserved": true,
+    "export_repair_matches_original_receipt": true
+  },
+  "nodes": 1072577,
+  "edges": 1031579,
+  "topology_changed": false,
+  "scope": "Conditional development control on the fixed E012 cohort; not an independent validation or leaderboard score.",
+  "gpu": false,
+  "tpu": false,
+  "leaderboard_submitted": false,
+  "decision": "Use as the paired reference for the learned event graph; no candidate improvement demonstrated yet."
+}

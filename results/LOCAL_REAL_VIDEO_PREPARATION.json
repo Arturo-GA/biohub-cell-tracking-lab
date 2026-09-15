@@ -1,0 +1,57 @@
+{
+  "video": "44b6_144b256d",
+  "status": "complete",
+  "verified_at_utc": "2026-09-15T19:51:24.695321+00:00",
+  "device": "local_RTX_3050_Laptop_GPU",
+  "shape": [
+    100,
+    64,
+    256,
+    256
+  ],
+  "nodes": 107746,
+  "stages": {
+    "gaussian": 4825,
+    "cellect": 69141,
+    "harmonic": 37731
+  },
+  "visual_shape": [
+    107746,
+    64
+  ],
+  "neighbor_shape": [
+    107746,
+    25
+  ],
+  "seconds": 260.89100000000326,
+  "torch_peak_allocated_bytes": 726964736,
+  "torch_peak_reserved_bytes": 926941184,
+  "process_peak_rss_bytes": 5556531200,
+  "measurement_scope": "Successful resumed process: Harmonic, graph and visual features. Prior CELLECT and CPU Gaussian stages excluded.",
+  "reused_stages": [
+    "gaussian.npz",
+    "cellect.npz"
+  ],
+  "resolved_integration_failure": "The original detector wrote its retention log to /kaggle/working. Redirected only that path at load time; original pinned source and inference unchanged.",
+  "local_logging_regression_tests_passed": 2,
+  "retention_log_frames": 100,
+  "image_sha256": "c68a838af0f3505dc8c9c61eaf4ed39ba25602895eb58aa84a0d20b6a7a10517",
+  "files": {
+    "graph.npz": "0a0e3c83b99c834b5ba914c4685651af72dc0efef3d4dfa4420c8fd237eb531a",
+    "features.npz": "2e18bb615fcbfe4e35098de511ad2d6d7c24703566fd243d38c601d597c64356"
+  },
+  "verification": {
+    "generation_hashes": true,
+    "real_image_identity": true,
+    "gaussian_cpu_cache_exact": true,
+    "feature_shape_dtype_and_finiteness": true,
+    "sequential_feature_concatenation_exact": true,
+    "complete_neighborhoods_recomputed": true,
+    "graph_coordinate_bounds": true
+  },
+  "annotations_read": false,
+  "training_started": false,
+  "complete_feature_videos": 1,
+  "required_feature_videos": 112,
+  "scope": "Real image detector and feature preparation of the first fixed fit video; no selector training or candidate score yet."
+}

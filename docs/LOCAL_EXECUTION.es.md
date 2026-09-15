@@ -8,6 +8,7 @@ Implementación del 15 de septiembre de 2026. El entorno aislado `C:\dev\biohub\
 - La prueba de capacidad ejecutó **100 pasos sobre una ventana real de 17.300 centros**, con características y etiquetas sintéticas: mediana **0,704 s/paso**, máximo **300,8 MiB asignados y 368 MiB reservados por PyTorch**. El proceso llegó a unos **4,0 GiB de RAM**. Es memoria del asignador de PyTorch, no toda la ocupación del dispositivo, que también incluye contexto y escritorio.
 - El codificador por bloques procesó un grafo completo de **165.029 centros** en **9,06 segundos**, manteniendo estados entre capas en CPU. El proceso llegó a unos **4,3 GiB de RAM**. Esta cifra no incluye puntuar todas las parejas ni ejecutar el solver.
 - En una prueba CUDA determinista, pausar al paso 2 y continuar hasta el 4 reprodujo exactamente pesos, optimizador, scaler y muestras de la ejecución continua. La ejecución normal puede tener diferencias numéricas propias de CUDA; el checkpoint conserva todo su estado reanudable.
+- La primera ejecución con imágenes reales completó CELLECT, Harmonic, el grafo y las características de los dos UNet en la RTX 3050. Se corrigió una ruta fija de registro de Kaggle mediante una sustitución comprobada de una sola constante al cargar el módulo, manteniendo intacto su archivo y sus instrucciones de inferencia. Pasaron **dos pruebas adicionales** de esa adaptación: **98 pruebas distintas acumuladas**, sin repetir toda la batería previa.
 
 Recibos: [capacidad](../results/LOCAL_CUDA_BENCHMARK.json), [reanudación CUDA](../results/LOCAL_CUDA_RESUME_CHECK.json), [paquetes CPU](../results/CPU_WORKFLOW_PREFLIGHT.json), [comprobaciones de implementación](../results/LOCAL_IMPLEMENTATION_CHECKS.json). La extracción secuencial también reprodujo exactamente las características de ambos detectores juntos usando los pesos públicos reales sobre imágenes sintéticas. [Comprobación](../results/LOCAL_FEATURE_EXTRACTION_CHECK.json). Estas pruebas no entrenaron un candidato científico ni produjeron una estimación de score. No se extrapola el tiempo por paso al tiempo total: faltan carga de datos, características, calibración y selección.
 
@@ -21,19 +22,25 @@ Recibos: [capacidad](../results/LOCAL_CUDA_BENCHMARK.json), [reanudación CUDA](
 
 ## Entrada por video
 
-Se inició el notebook privado [CPU Image Preparation](https://www.kaggle.com/code/jarturo/biohub-lab-cpu-image-preparation), con GPU y TPU desactivadas. Empaqueta el primer video de ajuste y calcula sus propuestas gaussianas. No lee GEFF. Es el primer bloque de la preparación de los 64 videos de ajuste/calibración; no sustituye la partición por un experimento de un video. No se consulta su progreso automáticamente.
+La versión 1 del notebook privado [CPU Image Preparation](https://www.kaggle.com/code/jarturo/biohub-lab-cpu-image-preparation) terminó correctamente, con GPU y TPU desactivadas. Empaquetó el primer video de ajuste (`44b6_144b256d`, unos 544 MB) y calculó sus propuestas gaussianas en **304,13 segundos**, sin leer GEFF. Es el primer bloque de la preparación de los 64 videos de ajuste/calibración; no sustituye la partición por un experimento de un video. Se consultó su estado tras el aviso de Arturo, sin monitor automático.
 
-Cuando sus salidas estén disponibles, descargar `local_inputs` a una carpeta de `outputs/`. Desde la raíz del proyecto:
+Las salidas recuperadas se guardan en `outputs/cpu_finished_check/prepare/local_inputs`. Desde la raíz del proyecto:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts/run_local_prepared_video.py --cpu-package outputs/cpu_image_prepare/local_inputs
+.\.venv\Scripts\python.exe scripts/run_local_prepared_video.py --cpu-package outputs/cpu_finished_check/prepare/local_inputs
 ```
 
-El importador verifica el ZIP y cada archivo, rechaza rutas fuera del destino y conserva una reserva de 10 GiB de disco y una caché de imágenes de hasta 6 GiB. El ejecutor verifica los pesos públicos y el código del detector, reutiliza las gaussianas CPU y completa las detecciones/características que falten. Extrae las características de cada UNet por separado. La detección combinada todavía carga ambos modelos; su capacidad con imágenes reales grandes debe medirse. Si falla una etapa, los productos anteriores con recibo válido se conservan.
+El importador verifica el ZIP y cada archivo, rechaza rutas fuera del destino y conserva una reserva de 10 GiB de disco y una caché de imágenes de hasta 6 GiB. El ejecutor verifica los pesos públicos y el código del detector, reutiliza las gaussianas CPU y completa las detecciones/características que falten. Extrae las características de cada UNet por separado. La detección combinada carga ambos modelos y ya completó este primer video real; queda por comprobar la capacidad con otros tamaños. Si falla una etapa, los productos anteriores con recibo válido se conservan.
 
-Ya están copiados y verificados los **48 grafos de E012** en `outputs/local_event_graph/videos`. Todavía faltan las características visuales reales. Los resultados recuperables del candidato E013 se incorporarán cuando Arturo avise, evitando repetir etapas completas. Hasta entonces, la preparación CPU puede avanzar de forma independiente.
+Se verificaron los **102 archivos** importados del video y el hash de sus gaussianas. La laptop completó sus **100 fotogramas** de tamaño `64 × 256 × 256`: **107.746 centros**, características finitas de **64 canales** y **25 vecinos** por centro. La comprobación posterior reprodujo todos los vecinos y la concatenación de características; también verificó los límites espaciales y los hashes finales. [Preparación CPU verificada](../results/CPU_IMAGE_PREPARE_v1_completed.json), [resultado local verificado](../results/LOCAL_REAL_VIDEO_PREPARATION.json).
+
+El primer intento completó CELLECT y se detuvo al escribir el registro de Harmonic en `/kaggle/working`. Tras redirigir solo ese registro, la reanudación reutilizó CELLECT y las gaussianas. El proceso exitoso restante tardó **260,89 segundos**, con máximos de PyTorch de **693,3 MiB asignados y 884 MiB reservados**, y unos **5,18 GiB de memoria de proceso**. Estas mediciones excluyen la etapa CELLECT del intento anterior, la preparación CPU y la descarga; tampoco incluyen toda la memoria del dispositivo.
+
+Hay **1 de 112 juegos completos de grafos/características** y están copiados y verificados los **48 grafos de E012** en `outputs/local_event_graph/videos`. No se ha iniciado el entrenamiento científico del selector local. Los resultados recuperables del candidato E013 se incorporarán cuando Arturo avise, evitando repetir etapas completas.
 
 El siguiente bloque se construye con `scripts/build_cpu_workflow.py --offset 1`, y así sucesivamente hasta 63. Cada envío usa un recibo nuevo con `scripts/launch_cpu_notebook.py`; un recibo existente impide repetir accidentalmente el lanzamiento. Se avanza cuando el bloque anterior está guardado y verificado, sin crear monitores.
+
+El bloque de `offset 1`, video `44b6_1d530831`, ya fue aceptado como **versión 2** el 15 de septiembre a las **19:44 UTC**, privado y con GPU/TPU desactivadas. [Lanzamiento](../results/CPU_IMAGE_PREPARE_v2_launch.json). Sus resultados se recuperarán cuando Arturo avise; no se ha consultado el estado de esa nueva versión.
 
 ## Entrenamiento y evaluación por etapas
 
@@ -62,4 +69,8 @@ Se reprodujo el suavizado del punto problemático a partir de sus predicciones o
 
 Kaggle rechazó adjuntar directamente las salidas del notebook fallido. Arturo autorizó expresamente la subida del CSV recuperado; se creó el dataset [Control CPU Cache](https://www.kaggle.com/datasets/jarturo/biohub-lab-control-cpu-cache), versión 1, y la API confirmó que es privado y contiene el archivo completo. El notebook exige su hash original antes de corregirlo y evaluarlo. [Recibo del dataset](../results/CONTROL_CPU_DATASET.json).
 
-El 15 de septiembre de 2026 a las 19:23 UTC, Kaggle aceptó la **versión 2** de [CPU Control Recovery](https://www.kaggle.com/code/jarturo/biohub-lab-cpu-control-recovery), con GPU y TPU desactivadas. [Recibo del lanzamiento](../results/E013_cpu_control_launch.json). La confirmación específica resolvió el rechazo previo de permisos. No hay monitor ni envío automático al leaderboard; todavía no se ha recuperado la métrica oficial de este control corregido.
+El 15 de septiembre de 2026 a las 19:23 UTC, Kaggle aceptó la **versión 2** de [CPU Control Recovery](https://www.kaggle.com/code/jarturo/biohub-lab-cpu-control-recovery), con GPU y TPU desactivadas. [Recibo del lanzamiento](../results/E013_cpu_control_launch.json). La confirmación específica resolvió el rechazo previo de permisos.
+
+Tras el aviso de Arturo, la API confirmó **COMPLETE**. Se descargó el CSV y se verificó su identidad exacta con la corrección local (`503b20ac…9aa366`), los 20 archivos fuente del paquete y la cobertura íntegra de los 48 videos. El agregado se recalculó a partir de las métricas por video. La evaluación tardó **130,63 segundos**, con score **0,909257**, Jaccard de enlaces ajustado **0,903802** y Jaccard de divisiones **0,054545**: 3 correctas, 22 falsas y 30 omitidas. [Resultado y verificaciones](../results/E013_cpu_control_completed.json).
+
+Este valor es una referencia de desarrollo condicional para E013; no se compara directamente con el **0,946** público propio ni con el **0,947** comunicado para Harmonic, porque pertenecen a conjuntos distintos. Todavía no demuestra una mejora del candidato. No hubo monitor ni envío al leaderboard. La comprobación se reproduce con `scripts/audit_cpu_control.py`; las métricas detalladas y el CSV permanecen en `outputs/cpu_finished_check/control` fuera de Git.
