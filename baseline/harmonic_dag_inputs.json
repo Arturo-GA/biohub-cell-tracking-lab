@@ -1,0 +1,395 @@
+{
+  "experiment": "E012",
+  "slug": "biohub-lab-detection-dag-coverage",
+  "version": 1,
+  "frozen_sha256": "691e0345e6a93016bc2de9b06773cabafa359a200321231e0a98081b7d4c79a7",
+  "development_manifest_sha256": "2edb8d005c29998929b7fd2b365afbfa48760339b96783084cfa7666924409e2",
+  "datasets": [
+    "44b6_0c582fdc",
+    "44b6_1574802b",
+    "44b6_18ced818",
+    "44b6_24264f12",
+    "44b6_267148e4",
+    "44b6_33b596bf",
+    "44b6_551a5dba",
+    "44b6_706092f0",
+    "44b6_7a302da0",
+    "44b6_87bba6c4",
+    "44b6_8cc6506c",
+    "44b6_8f5ab931",
+    "44b6_8f9ecab4",
+    "44b6_90724892",
+    "44b6_95029e92",
+    "44b6_996155de",
+    "44b6_9be80b04",
+    "44b6_a21120c2",
+    "44b6_d29c9ab2",
+    "44b6_d78e09d9",
+    "44b6_db3c847b",
+    "44b6_e31261b4",
+    "44b6_eb2880fc",
+    "44b6_f28707c6",
+    "6bba_085bf656",
+    "6bba_09961292",
+    "6bba_12665c0e",
+    "6bba_1d0d8384",
+    "6bba_283bf9f1",
+    "6bba_372c8cb8",
+    "6bba_3db54e20",
+    "6bba_4aa14c89",
+    "6bba_61dd1e0d",
+    "6bba_6ca87370",
+    "6bba_705ec2c9",
+    "6bba_767a1e17",
+    "6bba_8b7818bf",
+    "6bba_9e23430b",
+    "6bba_a5e926bb",
+    "6bba_ab78413d",
+    "6bba_b204cac7",
+    "6bba_c328f2fd",
+    "6bba_d2b9fc0c",
+    "6bba_d82a4fc6",
+    "6bba_ed9377fd",
+    "6bba_f17befbc",
+    "6bba_fbc898dc",
+    "6bba_fc5f39dc"
+  ],
+  "files": {
+    "44b6_0c582fdc": {
+      "cellect.npz": "0374a5fa28698ac7035511cd406ad5e4d625b0f5330fc859066f0d27e3ee25de",
+      "cellect.json": "e595355669170f55172a4604fb91a455a9b96cc493f77a3b2a27271dc8e80321",
+      "gaussian.npz": "92807ff766a5157d2408e41175c7165fe2f88d9ac69aa87573ac3827883824e9",
+      "gaussian.json": "52b5e8152b3cceffc6f5ba1832caa7b8f0bce52e8f0eeb12960b798c12e364fe",
+      "dag/graph.npz": "18854299aea5bed99d3c03bf1e6b4aa6254db7d4ca844c61c87be7f4e7e2c6d0"
+    },
+    "44b6_1574802b": {
+      "cellect.npz": "165422819a04d3acace62c718daa1e639c582f9f2ead01563f5a69b1102ccd8a",
+      "cellect.json": "df150c28bb3ada0db6ba24ad9072410c73a09b3c51bcac6eb75be914d47158a1",
+      "gaussian.npz": "25b04a103b532bdafaa96bfd70a8b17944eba0642ca7d8dfc14b80e668bb81a8",
+      "gaussian.json": "ceae01a1ff4c4de29613dc9a3597379656fecbb459f93139225663a2651ef417",
+      "dag/graph.npz": "93f7254cf9cdf9103f358f053e3b42dc4595e7bc19b3831f7b66edaeb2b88ed7"
+    },
+    "44b6_18ced818": {
+      "cellect.npz": "be28562e796d4aaa06100b4feda886158dfc79ec31e47f96f9f0233db3db908a",
+      "cellect.json": "c201c0dc7dd6dda7e81558821f06051110d6bc2c9db5a00b88fe5cf6ed560864",
+      "gaussian.npz": "d24af28f6954c1abb619c54165edbe0972d2afaf16a20e71bae11ebad792653f",
+      "gaussian.json": "f2f0a1326627b10dc22a34cd62a5f93db8323021d87d3d0cc60b0f81792a6fbe",
+      "dag/graph.npz": "6a8eaf5a0e928fe111c21fc6659f2e8ad1bc3522f1e820480dc3e5d74f0d055a"
+    },
+    "44b6_24264f12": {
+      "cellect.npz": "52c23e6057a85dfd0dcad97467fb8da27a8936cb6675a14e261c8f165e63db80",
+      "cellect.json": "4d995b6b53bdbf4f9ab6fde39cea14b1cbd073a9c0cd712111157e839c23b026",
+      "gaussian.npz": "074191ea2657ab55c025d565fc0bac577505bcded8f9d676f1cc159f8aae877c",
+      "gaussian.json": "6cc6de961fc776f9ef618134a7389a218711fe309f07c2e383406b2cfeb97727",
+      "dag/graph.npz": "0b828dc026a0c3f77980d053f64c873ec082ab36e760422a59989f5b7075a8a4"
+    },
+    "44b6_267148e4": {
+      "cellect.npz": "45debca959520134fa3751a2b5397a8f6ae39dc1f130ed5398add313a7ce1103",
+      "cellect.json": "dc235e720208c6096f5eb708b353eb5877a9f31cca35e98dabdd9eb243b59594",
+      "gaussian.npz": "e0c99592ce5d1dd9e12a2d9c965e5dc1e9f34db7dfa3a82c61c343bd4918a185",
+      "gaussian.json": "08880dbfd9066e6c78ed1c9fa2c778e9cbba8998478242646b7fb948ee579e64",
+      "dag/graph.npz": "57777c75d8ab6fb2c056fc26b75101c4a53dcda06b64578a86dba5b6ce75088b"
+    },
+    "44b6_33b596bf": {
+      "cellect.npz": "1a67c584a142cfeaa3df2e8013a99a4e2d8f4152ac82c9205246f0ad8393f40d",
+      "cellect.json": "c84355bc2e4f5f477f28e2053785c82c11857f1be2a26b9b1b0d73dee12dd826",
+      "gaussian.npz": "7dc74e49a00c8e1dc6023398916f9acd1c6ee376cd48d6f0714dd4882491e0c7",
+      "gaussian.json": "d260d1ef094be91bbb52fc750191122ff9a3d882d1ac2f8c88adfed5fa24257f",
+      "dag/graph.npz": "a132e103c620ba748478c199941589ecb1b7e8bed17da546fe3a1f742fce4e0f"
+    },
+    "44b6_551a5dba": {
+      "cellect.npz": "2aa478c8bd712eeeb974c3dc092015a5f80ad702d7dd2ab69feca48fe2116f9c",
+      "cellect.json": "3bc93c20229a4391ce0fb4447d3676087b70035251a826a4b835c254e699baba",
+      "gaussian.npz": "2e705e8c3bbcd2c710506c02a4d40da850b8cfbfc539daa59e1f7c338df04d09",
+      "gaussian.json": "c5483f67e00676c2622f8cd2ca4a6f296226db661eec8ff5a6f90d221e6d195f",
+      "dag/graph.npz": "c6b54b832b76bcf71c88d54ccca2dd8511cad3be3031e1cc7eeb19434aa5fede"
+    },
+    "44b6_706092f0": {
+      "cellect.npz": "203b73002816c13559581e348c9cfbbfee67f36559a44793b3b99a369e782fd4",
+      "cellect.json": "9d60507130900190d39a7cbbcdfc9712db63abef90a34b6b1ea9ea5fcf0d23e0",
+      "gaussian.npz": "b6585a9d5ac5d58e53aa8ca1951dc46398eec6fddb20046330ea1f73cc252711",
+      "gaussian.json": "bfea765823ccaf825527440a85a923cdfab8fef01a49a6f26bc48dc25247177d",
+      "dag/graph.npz": "6d21e2bef22f682aff3fbb3b4aee3adcae11e8a3285a782db4ca9e3ccbaf0679"
+    },
+    "44b6_7a302da0": {
+      "cellect.npz": "1083b0006cf4a8af7f8227e43789aa6b5b6fcdbdb5e60883201db529d74050ab",
+      "cellect.json": "0eb62a6858870b4edf53f7eb059f50306458a38a3870016870c91c13d0473f5c",
+      "gaussian.npz": "368270326143e8975b6d701c6e2c46f2aabc48679ae07f302283494bb3ad693f",
+      "gaussian.json": "750af154bfc16a8b5b853b5739f55cf987f130359e9cadeccd7cf0642c8bb66e",
+      "dag/graph.npz": "61a46d298ed72f2ed680d3d06bd610b04913c34f6dd95db7d4fef628884b6493"
+    },
+    "44b6_87bba6c4": {
+      "cellect.npz": "788107eb3a8b8184ab5a38fbe2078dc5cfa3fe2cd509f39d6021294addcf5407",
+      "cellect.json": "8d04006f6c5fbc3b8612917c4724b51d0e176308c4f69ed07f8492acda2e69a1",
+      "gaussian.npz": "9a732792b3a74c9cf2a7d7364e56c8096572cc394d32d1c1641de986fc6360b7",
+      "gaussian.json": "dfdb2d15593f1d8c0749ef92375cff0b4a9953024cabd8ab788946165677a6a8",
+      "dag/graph.npz": "a311fc49e1271dade14e349eeef1da002db7f2d6c10ac864786cf7888f151597"
+    },
+    "44b6_8cc6506c": {
+      "cellect.npz": "88def743b5d119ff19d14fc5ae77be1d47e6bf7aebfcd67e2418cfe977a9388d",
+      "cellect.json": "0d6e184f41f6f3c705949476e7425bf354f1dce961dc9d5b37d410db6d2fdb8c",
+      "gaussian.npz": "4409e2a3be163275e2b8279b3fc2c3dc85798d4ffbb81e11ade705d09cd881c1",
+      "gaussian.json": "e2a1c3963c3d62e6850d5dd79eadb080be2eb207130c1093c30f28ea6f5922b6",
+      "dag/graph.npz": "f08c2052a962d05fa24b0b4c04f087f5ef99949a4656318d33ec302ac2b015c9"
+    },
+    "44b6_8f5ab931": {
+      "cellect.npz": "c901c91838dbe7b49a073ec2a20390b5dc7070ba68273bce417de1e748c6d066",
+      "cellect.json": "4caa375ee0a096f37655b0e1604bb29355f4b9351eaa91f183f29bec5790f4b0",
+      "gaussian.npz": "cbc7c77e8a8c5d2ffad61eb23ae3ab157a7f720509498d4d10037dea497a89fc",
+      "gaussian.json": "d4e35d1871e73c34f96dd35befee8606c5b7a32e582fd09357c6a81deca4d5c6",
+      "dag/graph.npz": "e1c763c5097b7aa808ce57318e027d81ea62379e67a31cd2cdae2d4a07ef026b"
+    },
+    "44b6_8f9ecab4": {
+      "cellect.npz": "ecf0227854e691769218d56c55e8951c0ca877e455992e9d36eab08658fd2b44",
+      "cellect.json": "ac92b51ba1841451b7aae411f9dde74de3532e1a5fbf220d0d1b35515ea3fe31",
+      "gaussian.npz": "c9012e4cc1c022c446b1b4972d554997f9c8ebcb5039177fd864148712e4228e",
+      "gaussian.json": "a40bb87617faf02c384fac25f7bf9df98892896c26dacea321cd55d985d9e562",
+      "dag/graph.npz": "a98f2e5746c0937f302abcc277ae40b9a601a18306e73b0a63bf82c9ea6c06b9"
+    },
+    "44b6_90724892": {
+      "cellect.npz": "f9491e93a2b6b0a6851a9947b3237dbf0855321946865f9dbc186f15543cd611",
+      "cellect.json": "27d38a32ca87d1546b479d0a01cb6d83d0403bc977dbffaa1f1fdb0d4096a61d",
+      "gaussian.npz": "a7a3c3faf715927e5ab55e82fb1ba7b5d25aec8a0508f7647f36a29f88d7651e",
+      "gaussian.json": "f57df21e49c00a60338c12d0cbbd6d6e95a51ddcf947bb6139ad4ccbd4a657f7",
+      "dag/graph.npz": "501344455088835c8a263b741c13a5b43cf96daf2032e0b4a6c2ceee938dffa7"
+    },
+    "44b6_95029e92": {
+      "cellect.npz": "da40f2d5bb11a8de355c31723f43e4c55c170d0182da45fac7397e5226525cbf",
+      "cellect.json": "81e9020ff608cf9d5efcad42e9a5ff41473f8260062d5cefef65f914c8f08bab",
+      "gaussian.npz": "62d614cd9a463376d006cc5f254b77abc5363a79321cdf81014e95903e1e48b7",
+      "gaussian.json": "acb30087421fd9c87fb5ac8260829dcf35409dc53a44f2c77a76e2ce131627d6",
+      "dag/graph.npz": "025fcde5afa4cc3a0fddb3f2384a79c2e035aa5c12391131ba76cb07a9a96227"
+    },
+    "44b6_996155de": {
+      "cellect.npz": "562d721c5983988961d0ff6f823c5c7dd59f67ccdc240ada7eeffb56663e86a5",
+      "cellect.json": "2e6f9ebc1078f595af63db6b503c4aeca6b67e7120f6bdfcdb8a5395a7072f59",
+      "gaussian.npz": "29ec803d33ee5b48a29b960d5a1b9630c4211c962b98a2cc1ad05fbc082d8608",
+      "gaussian.json": "dba1270a4785e2e7a77f58f2077d7005b37eaffd0a3cc211077dadba3a2b302d",
+      "dag/graph.npz": "a14c0879a620949274fc7cbba3c55e1ccc67681f36f2cdf2cffa9abfca92a2e9"
+    },
+    "44b6_9be80b04": {
+      "cellect.npz": "6e5976f87d2c1005f999eb7679209211393d4f6ecb978092ca9c54b15155026d",
+      "cellect.json": "6d573cd6ffd0215935f4c59437f58eacd2505ee67461865f7275e1361b47da62",
+      "gaussian.npz": "c6ed340ffa8e5e4f54e89f12e2a87a4b6fe577efcbaa168bfb53cb208194a706",
+      "gaussian.json": "0fe614610134c6dae788ea547ad9211d19e1f5f8b55263ebd689e8f65dbc7538",
+      "dag/graph.npz": "ec94964524f85fc144686c6cd8d585cc92060012c7c4ce7479fa5ffce68505f2"
+    },
+    "44b6_a21120c2": {
+      "cellect.npz": "2caa480449d79e43b82117c15f14bba817a7fe8546bf60c76605c47336881bbe",
+      "cellect.json": "92b592b8a5fd1d6854f6408cbbbc06030fef80cf7b264d9bf58ea6e6da9dbbf5",
+      "gaussian.npz": "91929abbf4ad0325bf0700fd5041072ab7662cb28e0deca5a8d97cbe20f9d248",
+      "gaussian.json": "d37ed7026b777a50b5b452d7416b44d7e60b2ff32b6f6932ef7e9a177740dc4b",
+      "dag/graph.npz": "72cae4cf4f434e27f354b71ad9d28fcbf5f30f9c314a6755394e54b2372abe75"
+    },
+    "44b6_d29c9ab2": {
+      "cellect.npz": "3faffe260af37f2a318304827035c7f06f125a634f1aa335490e5a2870b61892",
+      "cellect.json": "067061fcae6163eacf58a107601b33403914c0f0356b2f8859d29aa7b509e019",
+      "gaussian.npz": "e4423a1ba3a1f5882e6a2283d2a7a3fd5a527fbbbfd9efba4f7d6c10bddda71b",
+      "gaussian.json": "5270feed5cedef65f2a5c0f9d16178065cd683ad0de121afa3d14c3191caa0e6",
+      "dag/graph.npz": "c2e2ee734c68c4004a50a43dc98001998dfad44dd2d7dea3b7b6dbeaa697d639"
+    },
+    "44b6_d78e09d9": {
+      "cellect.npz": "3ff1abcb7e97b8b8d1e85ec9e86272df62a86b2f592e5a1de32a23854c84c89d",
+      "cellect.json": "09602131a72672ec9e3dc1793c2c0865f128540156d1726b5f01d5d88e7afcb4",
+      "gaussian.npz": "aa6262e01de59bd8cfb7812f8ab7f70b0e66216f311d60a23f5feb3f6f9d255a",
+      "gaussian.json": "1449cb29aff1abfb3c2c5b4914049638e3e25158fc449e8a52fa3f8f114083ea",
+      "dag/graph.npz": "09896ae44fedc2a267b5654cd1489a4dc190dbb5fbc7f64463f33d63edd512c8"
+    },
+    "44b6_db3c847b": {
+      "cellect.npz": "800368de81773a39c868f1b111da9470e114fef952ecc03d4dcfaa8183555108",
+      "cellect.json": "51713ba8fd2c8e13c34269d6246cf57facdae6ccdcc6afcb03f4651d4c776ae4",
+      "gaussian.npz": "62d3a8256d84efd81d146d187df868d8dafd99e687c9a492b5dac7dd0a62b0da",
+      "gaussian.json": "94a9cefbca745bc684fc86dccd4ca6e8873b1d27a342737001c69ec6be77a823",
+      "dag/graph.npz": "fc38559c426381d34c8055b4afac47ebd83c4fc7a0c6bd7b95abe2c77b766127"
+    },
+    "44b6_e31261b4": {
+      "cellect.npz": "9b96050d0f356cbe8e1cceb75293ca502e02d4b8827683437942a368bc60b41b",
+      "cellect.json": "f93798157f50669b28ef089b92e512a2392c94a3329de879b207038ea3667037",
+      "gaussian.npz": "f2e0fea8afefaabe3b8590336d8fa8b33d470ea38c48866b7a0fbcd6daaa78fd",
+      "gaussian.json": "14e02b5f66dd3f02f00122e5539429038a7847d05c15944b7104ce1a604bed1f",
+      "dag/graph.npz": "d661e6af21165085efed4e4dbb982a190609d6ef48f57a9f33ec947e005ab904"
+    },
+    "44b6_eb2880fc": {
+      "cellect.npz": "96ea85d48e66340f037f15cffff92090001937e3a5a8dcdeb826f72235c07878",
+      "cellect.json": "5674d20c0122eca52d661a2638b4886ff5cef6e58fcc9bb09cb461f33c3bae2b",
+      "gaussian.npz": "26949a19cd29621aa335c850bfb06168328c23dcf6cba983ea4160171f5a32e8",
+      "gaussian.json": "bd768f8bdecd0e32239870e5541cec8a2bb90c72f33f660250a6ccedb6e65e7e",
+      "dag/graph.npz": "abec4bdceccc7f9de5795fdd225de955fa005baffa41772562dd124b2112b719"
+    },
+    "44b6_f28707c6": {
+      "cellect.npz": "55949c7d532349be83c72bb168ff44eff95c9aa6bed56da8d590c051814c534e",
+      "cellect.json": "d53dfd3702f24cba7789cf440a2ce52f54c370d8d67eacb9debfbd93a8b53060",
+      "gaussian.npz": "8c7d80b535d8c87fbe5f19e641ca5fac8cb15fda9f36593bd5519d467b8f37f0",
+      "gaussian.json": "1d909eb908f6b99d071c0c50b609c63babebef3c8542cb351778182d3302b8ca",
+      "dag/graph.npz": "6ac85e908b746d47f6eb9cacefbde35f55d09ba605877d7c0dbb07ed270cb61a"
+    },
+    "6bba_085bf656": {
+      "cellect.npz": "573b809c748432be2800c70816ee381b39d3850ec248b998bbe47eb992b989f6",
+      "cellect.json": "211b0e22c1ca2b31ca43117f826754696abab7d94bc550cb9ae4348f7738ccac",
+      "gaussian.npz": "f07afbee4c2b1241595453b6162c93097e77fd26a7921411f6e054a3a8874adb",
+      "gaussian.json": "6ca8de048f02f06642a6f840a7d2825737a0012316da235caa34d65c4442757c",
+      "dag/graph.npz": "1c3ce28fa6ad372c85cdda3fd70edfc57d2b45c7cea3954f578f224d495fc5be"
+    },
+    "6bba_09961292": {
+      "cellect.npz": "25806eddaf412060545732e42de5b978dbc8593dae01f66904177ad5e7371e1a",
+      "cellect.json": "56fa3e83ce48ef3210ffd89b6d61e58a98a3d5d85cd6cc0ecdf4af4ff5980e79",
+      "gaussian.npz": "54bb429c70436b17accf325cf3ff93efb7be99fbfd0bf7c808d905187835bcbb",
+      "gaussian.json": "fbbc47b22e4076ff4860773bb2cbb107392847eac134778ee3f365dfde54e1b6",
+      "dag/graph.npz": "e4be6c27b9ff7ac0dc5d8656ad77b420f2685352aa51ad7996078b9d918e56b8"
+    },
+    "6bba_12665c0e": {
+      "cellect.npz": "3eefaaab955e40923217af804f9eb96e08cb34ef8bd07e6408d65c56a4311d6e",
+      "cellect.json": "622cf56efed4aaee1e094d67b600aac88e59a7909e6e49637dea86fe45f55d7a",
+      "gaussian.npz": "a0d89f78c677fd5316e2f18ae8d14467e2511c880bf58a1627228c21f7c12b03",
+      "gaussian.json": "e0565c86d1017abb3ecc06ed8825184fd73642bd07b3cda961a1d99d3f23175c",
+      "dag/graph.npz": "93a1cd8b2f4b2cad6fe2ec051052ad0e86a8ab052d58ec8ec4925b898c3185c1"
+    },
+    "6bba_1d0d8384": {
+      "cellect.npz": "0cbb8d1c9708362c06a1d7122bf8f08fdc6e70274897729be9cedfbeb45d8d63",
+      "cellect.json": "f5cd7a61049e32c01774e1e8d7e4839c87f3c4e5e01ab33f6158e131fdf5b658",
+      "gaussian.npz": "1860126d92133db244383071d35dc65f790d23d49f42c1a86d0bdb2108b99902",
+      "gaussian.json": "07acdab71e8d251832470106ddd7b67d687b5ecf5e2935381bffa93e6fd0c79b",
+      "dag/graph.npz": "7e7dc9c0981b9b8d14f964d933be8de41cfc3ebfc3782a5859feb6264555d703"
+    },
+    "6bba_283bf9f1": {
+      "cellect.npz": "809d72b924667729071c85904f52b7f869cd2c13143d4f1a157d4f9dcfd7772d",
+      "cellect.json": "762b01e5fd3dbd332b49a340d315828b7ce992cf52a08e34d33b85a0a6d61446",
+      "gaussian.npz": "1b2577c6d3c8b05e0f17062e5298d18ed786f7c4fc3a38cba44114f403f8458a",
+      "gaussian.json": "9761452877e06c54d549db621ceff3640ba473268f22ac4296b74d1d48a44205",
+      "dag/graph.npz": "5cb3888958761882933b031f6ad2ce01116f3e6972317364e6f687993c84f086"
+    },
+    "6bba_372c8cb8": {
+      "cellect.npz": "040f208e114135a15451ac42bea6cd65596ecee587c00d147aba47fa7b069f62",
+      "cellect.json": "3ab766919ace026e380ddc53b9cc79f45c098c5b2e98104bd092e1a75e4acf71",
+      "gaussian.npz": "dfc89c1a43649de1b0ce04e6ab918f6ab4253ea3e70735ee7b31fce11a0fa133",
+      "gaussian.json": "071d3730ffedd6be67f1540e759d5ab96795ac371c4e487de2569014bcc34f86",
+      "dag/graph.npz": "6a6948cd649bebb613998920afc47e1cbd89bdde43c8bfde35a2a9c7a9151a9e"
+    },
+    "6bba_3db54e20": {
+      "cellect.npz": "db9af03ba08e8ccd543430b9a306d9242fe1a3f564c01198753ad7e410a0644a",
+      "cellect.json": "9c77bd7817edb445359a167acb5cac1531b4271b66a5d824c2addbd9449abbcc",
+      "gaussian.npz": "f5abb8737487b1df7d1de86ab177e01b305d65ad98754b829dc7eb43ad3791eb",
+      "gaussian.json": "545c521964fa32cc9d3b0d1695f8469a1cf2f5b30216dff58fe924c56740b239",
+      "dag/graph.npz": "fd9fb3a06c718c9a156b671fa49ef5c96ff922ad81463b0b95a5bf7c3d5fd462"
+    },
+    "6bba_4aa14c89": {
+      "cellect.npz": "8446c09d27c1122b1a3a68c9042ab6fe7a84673961fb47522962bf262af252b3",
+      "cellect.json": "5476662be7db26c1cffd6122dec82a31968140a6853243640a726c008983e3da",
+      "gaussian.npz": "70371ee26695aacd6771ba7fb07bd85433428c516c125e0c5ab069d493817c0e",
+      "gaussian.json": "7e6fab95ac83dad7040f2884f5d00753657c10e0a837fa11c32f166a7a2cea45",
+      "dag/graph.npz": "31dfa0779d1198a9fa883981055ab3c11469a7ce59597f1f83f67fc05ca88eb3"
+    },
+    "6bba_61dd1e0d": {
+      "cellect.npz": "2d587f0d07b0f309f7cd83b54325fce9c2041cb5cbc33ed14740ee1fb98c3022",
+      "cellect.json": "a812c8e6df505782f2570a57dcdfb08f05827ac904aaf0d7629b47079ab05ff6",
+      "gaussian.npz": "5b0036a7629ece53bf2fd06a4ab083ba61971abdf87bc2f01a05060a4431033d",
+      "gaussian.json": "e7608f436d43b2f9717f7f58e7a4acb9ae8488ef512cb86b073e6b4ad5f80891",
+      "dag/graph.npz": "234325fd744101e55ca8f268c88f4278cca9f123ef67dad7e78d6f7916ccab7b"
+    },
+    "6bba_6ca87370": {
+      "cellect.npz": "72840a125b503abf419835c3318ec715a10d7ef919f51fade455a562dd3fa54a",
+      "cellect.json": "7770a91fdaffac03ba17dd653dd341b001559a088e4b8aea94c1303812221480",
+      "gaussian.npz": "a130b9c8b6347478f02ad41cca705726222f86a4b02ab313b5d9bd4a40ff8ec3",
+      "gaussian.json": "d6bc450b78ec389a5fd1f857edf0adeedd9e3d54fc3829a3845c68fc932c4ff5",
+      "dag/graph.npz": "f990be7bbcbb4993de116e9b816ce3056eae1bd40d7fa7976504bf198673222d"
+    },
+    "6bba_705ec2c9": {
+      "cellect.npz": "ab28672f96fa42fff5feaa266d1362743b9d28d7c9f03aa4e7c3c254aef2334b",
+      "cellect.json": "958b7f9669ef089a6d20dfcb78fc9ac0d2dfda1c98b87311cff7ad264bd191b5",
+      "gaussian.npz": "f2c195e2fe8552e860935d3d62b2d622ac709a983602c68f62691ef16d8cbb3c",
+      "gaussian.json": "71e45aaa9adbd2267b63fda3b6706ea94260b0204355cb0fcec7feb6e9b7b77a",
+      "dag/graph.npz": "e68a450b7f707dadb4954a9fdc7b59ced7febd06925347bec7e4989132bc1e38"
+    },
+    "6bba_767a1e17": {
+      "cellect.npz": "3a10ad4474ce2258b241a133a62d5179afbb1e1622ee713d683abe50af1b8a4f",
+      "cellect.json": "f9b4c0d3f2779a63593148d63eec8d0c869161d5667379929bbb28c0a5ba9c33",
+      "gaussian.npz": "ad8e469a561625ce56d5ebfa1504e86605d7e9f310dc26317fd8da13ee97d779",
+      "gaussian.json": "83c23a7476ce4cbb367f86faa2b47aa062e6b046567abe94423414ee455a33ee",
+      "dag/graph.npz": "3ea1007fe1bd8d1b2da92d3aab2c81498782a653d2cfaba2bdc7036b56a2e3f5"
+    },
+    "6bba_8b7818bf": {
+      "cellect.npz": "635711edd1a6c4fa0120a493de175f6f62e393d52f5163a8697fef8f69858023",
+      "cellect.json": "243c2a2feb0baa5c9c56d42437580887e911b9104af467310d3086cee07e757d",
+      "gaussian.npz": "04a9b2da8e7d62169e96a6871debca677cd1a819155c3c43e738a4cca5a79f91",
+      "gaussian.json": "9a7d3a45e6eaa728533cb2c20ab158696f5f280b1917b683ac797c13308521db",
+      "dag/graph.npz": "e37c6c6212b36eb6ea24f46a77e69fbac58506d8163bc225e8b8efeea37941a5"
+    },
+    "6bba_9e23430b": {
+      "cellect.npz": "c5af0ecfdd30ffdcc2b4b8e94d5b655c3bc0f8882d0423adb9a134b74b07dee3",
+      "cellect.json": "f2175082b7d1944f4b9faf546761be661dbd555a38b3654b9a5190c0da5f24d8",
+      "gaussian.npz": "cc2534d6a22d6b087fb15469d0fe13461c353081a93963a67f345c084bbaa317",
+      "gaussian.json": "d757d0be3bded7b432d6095d19b1e7cf4b76c5c47816f77b902bb846d2d8e6e3",
+      "dag/graph.npz": "728c424709f26cda3169d7c026d78d51c2ede52ce2bda8536888bcc1e805a113"
+    },
+    "6bba_a5e926bb": {
+      "cellect.npz": "3764daa374f0d61566f4c05a8d8b8bf7e199a821263a6dc6b1234b836430dcb9",
+      "cellect.json": "0282ae6989801d2df74c21d62aa9145f5b87b171b3ca9eb739a546569eb3fef2",
+      "gaussian.npz": "3d98a4e390af53fcb74ff6dfd80a509f6f2815c3bc31bfae0b837212fc9b7fc6",
+      "gaussian.json": "e90469450d80c9ffc9170660d4e12d973d4483945884f2f97a95e6b895aff48c",
+      "dag/graph.npz": "d88b31dbaf28486f399751027326b3fb052d7d2ef6f1770f0d95db3f091c5d43"
+    },
+    "6bba_ab78413d": {
+      "cellect.npz": "677e1ce9bcb038a21f0e12aaefc5df377091573ad4bfeab2aa5941847e9fb6d5",
+      "cellect.json": "014e25b5d22b399712cb115e95bd33ebc5eb5bdd9ba6e53b3a6b28affeaa5b1a",
+      "gaussian.npz": "a5761bbd49184ddc6857acc68f81280917a6ebbb0e6a4d81e5071bf5e9aab63f",
+      "gaussian.json": "dd3cdf99782ca2624e471f18273a3ad1ee90dcd66ec43bfc1754eb1c20e82677",
+      "dag/graph.npz": "6bd306a1f74cec196b6d840fabe181dfe699b9a46f67c90bdff0049daf65beb7"
+    },
+    "6bba_b204cac7": {
+      "cellect.npz": "aed5a37d511ae25929e0b072aea02249283bef68a1ed5ef35afbf8199fcf8660",
+      "cellect.json": "cc67afbe74918e905e63fb67414b8bb0c5f59041f429f9dc770368e134acce05",
+      "gaussian.npz": "3265bd378e87162364e3ff0d8673eb9731de96907a0a96d7b7583e1d64bbaeff",
+      "gaussian.json": "3be5491bb7b7c9718fadcfa2b1c45bcc108604838a4d997eeb16d704c6849b6d",
+      "dag/graph.npz": "40ca719e97438b8768be1d3cf26cfc96e01dbd90f91ef8e0c2a3aae43d74b1d2"
+    },
+    "6bba_c328f2fd": {
+      "cellect.npz": "01d6244e5be935ad84bdd526ca3982e6df3a0c59913b36cdfc6b8ef662dbd9e4",
+      "cellect.json": "060521266b10013a79b8099a023dad23aad72253068122eda9db40ba64253ad9",
+      "gaussian.npz": "38d408b4533b8a30c807f3daa1ed0f284f1bd1db8a3634465120721496fdbbc6",
+      "gaussian.json": "fd2555107e54de779e0bbeed3303aa8a1b03831b6aa608099caf0cf8fcc2877e",
+      "dag/graph.npz": "8d9acc589ad2756b0f1875c1157b3c7676946394da03782756f676a32494ec48"
+    },
+    "6bba_d2b9fc0c": {
+      "cellect.npz": "517014591beeb2ee2fe24366d92829ec6c4150cb9ebddbdfb9a81c8ed72e41ec",
+      "cellect.json": "864adcc9d72313682496e9a893fc8345605d4e072a2aabe04dfb13c4ee0485ef",
+      "gaussian.npz": "7c97926e41fd0569b1a876e966e6f160c892c6c374513328ce4b48927f986f93",
+      "gaussian.json": "5d1a7a7c7c83cc83c10fe86499460482a575d0fa7cc138795c68f429e4040ff7",
+      "dag/graph.npz": "29ae48aae5496768bd618669fc3d67f70d9cc05b73152e414892c10c340d977e"
+    },
+    "6bba_d82a4fc6": {
+      "cellect.npz": "dfa8ac715b014f47c461787f7580581865920941739814199efe490a869c5403",
+      "cellect.json": "21426bf357534158f4016c4d08b9ba762659079e6e2beb40ae205bbc9733207f",
+      "gaussian.npz": "e7b7c81826a467eef177503ef2d03816c05d4d3d3050fe3f9b8aa96d3c242214",
+      "gaussian.json": "ea6c1e164198b0b1c6a31a44bcddd6c0bf74e96b385093455c72403c996bd593",
+      "dag/graph.npz": "a6317b135eacd38c779aff9eff3f888ec72230ea3c64dd08b09e185d8d47632b"
+    },
+    "6bba_ed9377fd": {
+      "cellect.npz": "7fad2f8fbb21797b483809c52528efb67ede90e2fceca020e115ed1bbebfb7cf",
+      "cellect.json": "8d39bd7ff8cf1cfcb6becfd44dc023f1268e9e23cd231f6d44859f61498f7941",
+      "gaussian.npz": "46b2a8f2a2e5d58a96127fe56247c66c9dbeafd69403d6adb11782ff84b37bd2",
+      "gaussian.json": "1586bec7de3ab8d43adc65a7706757dc95d957d88b0533e53752100aafee6fb5",
+      "dag/graph.npz": "db82da3fc117702d680909ea9c0648851d293153bdc2715d6629fedb4622867b"
+    },
+    "6bba_f17befbc": {
+      "cellect.npz": "792c73eac9a01355178fc5925e9319d58f7a52ef9e3d88693fce1f8337268565",
+      "cellect.json": "dd62f7f33408a27c0d568758dd10f841c69d72c4eccc86b399ad0ae6fdb51814",
+      "gaussian.npz": "a11de917c5409e472b2b1a4d45b145b8b4b0ca5411660a1dce70cd1917c5959e",
+      "gaussian.json": "f174b8bfa0506643c1b00567630c765f6bf70080e07116772040fd80a024eded",
+      "dag/graph.npz": "571d3985692d250e3c0f63847d567e262e962a07594b91ebb04c2c09e6e90743"
+    },
+    "6bba_fbc898dc": {
+      "cellect.npz": "338dd6300ccd1270a9867246ea130e0647cd52f0ffb81a066778f2f8740b5ef0",
+      "cellect.json": "d22ed58a5f59daf0d060ece119a0cd11309712d229d2bb04178534a85f235ae0",
+      "gaussian.npz": "dc00fa1b2df56f5e23881666e172d3b84a1ed2f81f4a493a838e300e2b226686",
+      "gaussian.json": "3c029bac01a3880f07d12646da741856120bc9c2d7554e092a70fad9575c805a",
+      "dag/graph.npz": "381f6dfe83d9d28dde3334f77c2ad448d7f0f1d18df61f334406a6ac072d1eaf"
+    },
+    "6bba_fc5f39dc": {
+      "cellect.npz": "db17d2fb2ebda1c10ee42e6c4b3e8df8fe61211d04427affe77cb80a8348bf2e",
+      "cellect.json": "e8506955d749d2fba85f84d2a050d51fa56578f680265ff511a1ec1944fd3ba8",
+      "gaussian.npz": "c1ca9d8e97a61d4741cd7d4d36aede5ff77b498ee0d62a5d17cba2050d1e1051",
+      "gaussian.json": "16576273135f07efbd40f221f019a82538a136a0016ae6c817bd2b4e96875ecd",
+      "dag/graph.npz": "5c3a0217815fb024a727331bffd6b80e4fdcf4682ade4341a1f0ab06fb33d3a1"
+    }
+  }
+}

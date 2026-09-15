@@ -1,0 +1,19 @@
+{
+  "experiment": "E012",
+  "sha256": "fd30f4e2dd1a5eec78ab710f0d653bbc527beb46a609f930c9aecc4e45bec749",
+  "files": [
+    "baseline/detection_dag_dev.json",
+    "baseline/harmonic_dag_inputs.json",
+    "baseline/harmonic_inference.py",
+    "NOTICE.md",
+    "scripts/harmonic_dag_runner.py",
+    "scripts/notebook_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/dag_coverage.py",
+    "src/biohub_lab/detection_dag.py",
+    "src/biohub_lab/detector_proposals.py",
+    "src/biohub_lab/harmonic_centers.py",
+    "src/biohub_lab/patch.py",
+    "src/biohub_lab/temporal_data.py"
+  ]
+}

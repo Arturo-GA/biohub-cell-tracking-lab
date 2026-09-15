@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 72,
+  "local_tests_passed": 77,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -51,10 +51,10 @@
     "submitted_by_this_task": false,
     "public_score": 0.885
   },
-  "notebooks_schema_validated": 15,
+  "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E011_closed_coverage_gate_failed_detection_support_insufficient",
+  "quality_status": "E012_primary_harmonic_detection_dag_coverage_pending",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -81,7 +81,9 @@
     "joint_multiframe_center_and_division_event_selection",
     "detection_only_division_pair_dag",
     "exact_two_disjoint_daughter_path_queries",
-    "frozen_development_hypothesis_coverage_audit"
+    "frozen_development_hypothesis_coverage_audit",
+    "harmonic_image_detector_without_associations",
+    "paired_detection_source_coverage_audit"
   ],
   "research_only": [
     "FOCUS-3D_distillation",
@@ -219,8 +221,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": false,
-  "active_experiment": null,
+  "next_experiment_started": true,
+  "active_experiment": "E012",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -304,7 +306,7 @@
       }
     }
   },
-  "next_research_direction": "Audit the same frozen development coverage protocol with primary Harmonic detector centers plus complementary proposals, while keeping association generation independent of Harmonic tracks. No new experiment launched; coverage improvement remains unmeasured.",
+  "next_research_direction": "Review E012 outputs when Arturo reports completion. Verify primary center preservation, all three graph arms, paired coverage and group denominators. No active monitor, automatic training or submission.",
   "E008": {
     "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-cellect-detector",
@@ -403,7 +405,9 @@
       "official_graph_matching_rerun_locally": false
     }
   },
-  "active_experiments": [],
+  "active_experiments": [
+    "E012"
+  ],
   "detector_test_evidence": {
     "full_suite_passed": 54,
     "detector_regression_tests": 10,
@@ -489,7 +493,7 @@
     "technical_smoke": "results/E011_technical_smoke.json",
     "documentation": "docs/DETECTION_DAG.es.md",
     "development_manifest": "baseline/detection_dag_dev.json",
-    "next_action": "Audit the same frozen development coverage protocol with primary Harmonic detector centers plus complementary proposals, while keeping association generation independent of Harmonic tracks. No new experiment launched; coverage improvement remains unmeasured.",
+    "next_action": "E011 closed. E012 now tests primary Harmonic detections plus fixed E011 proposals under the same coverage protocol.",
     "decision": "do_not_train_or_submit_this_candidate_pool",
     "receipt": "results/E011_completed.json",
     "coverage_audit": "results/E011_bottleneck_audit.json",
@@ -571,5 +575,34 @@
         "hypothesis_constraints_despite_centers_present": 1
       }
     }
+  },
+  "E012": {
+    "kernel": "jarturo/biohub-lab-harmonic-detection-dag",
+    "version": 1,
+    "payload_sha256": "fd30f4e2dd1a5eec78ab710f0d653bbc527beb46a609f930c9aecc4e45bec749",
+    "last_observed_status": "QUEUED",
+    "checked_at_utc": "2026-09-15T03:09:09.637771+00:00",
+    "run_started": true,
+    "local_wait_active": false,
+    "leaderboard_submitted": false,
+    "results_available": false,
+    "neural_training": false,
+    "development_videos": 48,
+    "implementation": "Primary dual-seed Harmonic centers before associations, protected-primary union with E011 proposals, three-arm frozen DAG coverage audit",
+    "arms": [
+      "e011",
+      "harmonic",
+      "combined"
+    ],
+    "cohort_and_coverage_gate_unchanged": true,
+    "cached_E011_version": 1,
+    "harmonic_associations_used": false,
+    "primary_centers_preserved": true,
+    "launch_receipt": "results/E012_launch.json",
+    "preflight_receipt": "results/E012_preflight.json",
+    "real_detector_smoke": "results/E012_detector_smoke.json",
+    "documentation": "docs/HARMONIC_DAG.es.md",
+    "scope": "Paired development coverage in the same two acquisition groups; public secondary detector trained on these videos. Not independent validation or official score.",
+    "next_action": "Review E012 outputs when Arturo reports completion. Verify primary center preservation, all three graph arms, paired coverage and group denominators. No active monitor, automatic training or submission."
   }
 }

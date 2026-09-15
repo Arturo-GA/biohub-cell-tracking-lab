@@ -1,0 +1,21 @@
+{
+  "experiment": "E012",
+  "payload_sha256": "fd30f4e2dd1a5eec78ab710f0d653bbc527beb46a609f930c9aecc4e45bec749",
+  "actual_public_checkpoints_verified": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f"
+  },
+  "public_architecture_and_predictor_hashes_verified": true,
+  "full_runtime_patch_sequence_executed": true,
+  "retained_detector_window_statements_unchanged": true,
+  "actual_model_cpu_synthetic_inference": true,
+  "association_calls_blocked": true,
+  "annotation_access_blocked_during_inference": true,
+  "frames": 5,
+  "synthetic_primary_centers": 10,
+  "synthetic_combined_centers": 11,
+  "primary_centers_preserved": true,
+  "cached_E011_files_verified": 240,
+  "all_packaged_files_verified": true,
+  "scope": "Technical preflight on synthetic images with real public detector weights. No real annotation coverage or performance estimate."
+}

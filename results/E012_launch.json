@@ -1,0 +1,19 @@
+{
+  "experiment": "E012",
+  "ref": "/code/jarturo/biohub-lab-harmonic-detection-dag",
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-harmonic-detection-dag",
+  "versionNumber": 1,
+  "kernelId": 134427028,
+  "launched_at_utc": "2026-09-15T03:09:09.058418+00:00",
+  "payload_sha256": "fd30f4e2dd1a5eec78ab710f0d653bbc527beb46a609f930c9aecc4e45bec749",
+  "development_videos": 48,
+  "arms": [
+    "e011",
+    "harmonic",
+    "combined"
+  ],
+  "local_wait_active": false,
+  "leaderboard_submitted": false,
+  "initial_status": "QUEUED",
+  "status_checked_at_utc": "2026-09-15T03:09:09.637771+00:00"
+}

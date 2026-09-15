@@ -1,0 +1,21 @@
+{
+  "experiment": "E012",
+  "payload_sha256": "fd30f4e2dd1a5eec78ab710f0d653bbc527beb46a609f930c9aecc4e45bec749",
+  "local_tests_passed": 77,
+  "new_tests_passed": 5,
+  "notebook_schema_validated": true,
+  "all_packaged_files_verified": true,
+  "cached_input_files_verified": 240,
+  "real_detector_synthetic_smoke": "results/E012_detector_smoke.json",
+  "development_videos": 48,
+  "cohort_and_coverage_gate_unchanged": true,
+  "arms": [
+    "e011",
+    "harmonic",
+    "combined"
+  ],
+  "primary_centers_preserved": true,
+  "annotations_used_for_generation": false,
+  "neural_training": false,
+  "leaderboard_submitted": false
+}
