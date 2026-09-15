@@ -1,0 +1,12 @@
+{
+  "full_suite_passed": 93,
+  "additional_compute_workflow_tests_passed": 3,
+  "total_unique_tests_passed": 96,
+  "portable_tests_rechecked_after_final_training_guard": 5,
+  "environment": "Biohub .venv torch 2.5.1+cu121",
+  "benchmark": "results/LOCAL_CUDA_BENCHMARK.json",
+  "cuda_resume": "results/LOCAL_CUDA_RESUME_CHECK.json",
+  "feature_extraction": "results/LOCAL_FEATURE_EXTRACTION_CHECK.json",
+  "cpu_payload": "results/CPU_WORKFLOW_PREFLIGHT.json",
+  "scientific_training_started": false
+}

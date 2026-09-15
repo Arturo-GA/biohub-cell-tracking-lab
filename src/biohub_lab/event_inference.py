@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from .event_data import candidates, save_json
 from .event_model import EventGraphNet
-from .event_train import load_video, tensor_video, head_scores
+from .event_train import load_video, tensor_video, head_scores, positions
 from .event_solver import select_graph
 from .submission import COLUMNS
 
@@ -20,14 +20,20 @@ def top_per_mother(indices, gains, count):
     return indices[keep], gains[keep]
 
 
-def score_graph(model, video, calibration, device='cuda'):
-    graph = video['graph']; x, p, neighbors = tensor_video(video, device)
+def score_graph(model, video, calibration, device='cuda', stream_chunk=None):
+    graph = video['graph']
+    if stream_chunk is None:
+        x, p, neighbors = tensor_video(video, device)
+    else:
+        p = torch.as_tensor(positions(graph['coords']), device=device)
     edges_out, edge_gains, triples_out, triple_gains = [], [], [], []
     scored_edges = scored_pairs = 0
     with torch.inference_mode():
-        h = model.encode(x, p, neighbors); quality = model.quality(h).sigmoid().cpu().numpy()
-        for first in range(0, len(x), 256):
-            mothers = np.arange(first, min(first+256, len(x)))
+        h = (model.encode(x, p, neighbors) if stream_chunk is None else
+             model.encode_streamed(video['inputs'], positions(graph['coords']), video['neighbors'], device, stream_chunk).to(device))
+        quality = model.quality(h).sigmoid().cpu().numpy()
+        for first in range(0, len(graph['coords']), 256):
+            mothers = np.arange(first, min(first+256, len(graph['coords'])))
             edges, triples = candidates(graph, mothers)
             logits = head_scores(model, h, p, edges, model.links)
             pair_logits = head_scores(model, h, p, triples, model.divisions)

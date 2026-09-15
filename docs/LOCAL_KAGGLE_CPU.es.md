@@ -1,6 +1,6 @@
 # Estrategia: laptop y Kaggle CPU para Biohub
 
-Decisión de Arturo del **15 de septiembre de 2026**: entrenar con la GPU de su laptop y utilizar Kaggle CPU para preparación y evaluación. No se planifican nuevas ejecuciones en Colab, Kaggle GPU/TPU ni servicios de pago. Este documento define la migración; **todavía no se ha habilitado CUDA local ni se han implementado los nuevos ejecutores**. Los notebooks E013 versión 1 se conservan como antecedentes reproducibles.
+Decisión de Arturo del **15 de septiembre de 2026**: entrenar con la GPU de su laptop y utilizar Kaggle CPU para preparación y evaluación. No se planifican nuevas ejecuciones en Colab, Kaggle GPU/TPU ni servicios de pago. **La infraestructura ya está implementada y CUDA local está verificado**; el entrenamiento científico espera completar las características reales. [Estado, pruebas y comandos](LOCAL_EXECUTION.es.md). Las etapas y presupuestos siguientes describen el plan inicial; los notebooks E013 versión 1 se conservan como antecedentes reproducibles.
 
 El objetivo científico sigue siendo aprender a elegir asociaciones y divisiones a partir de las detecciones combinadas de E012. Conservamos los detectores públicos congelados y entrenamos EventGraphNet. La migración no reduce el experimento a una muestra pequeña ni implica una mejora de score por sí misma.
 

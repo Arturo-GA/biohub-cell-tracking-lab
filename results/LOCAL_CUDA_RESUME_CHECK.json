@@ -1,0 +1,12 @@
+{
+  "cuda": true,
+  "torch": "2.5.1+cu121",
+  "deterministic_algorithms": true,
+  "steps": 4,
+  "pause_after": 2,
+  "weights_exactly_equal": true,
+  "optimizer_exactly_equal": true,
+  "sampler_trace_exactly_equal": true,
+  "scaler_equal": true,
+  "scope": "Synthetic supervision; restart correctness, not a scientific training result"
+}

@@ -1,0 +1,18 @@
+{
+  "cpu_control": {
+    "kernel": "jarturo/biohub-lab-cpu-control-recovery",
+    "payload_sha256": "686a914454e8f22a7493ec46c7f6e98c687243cf2c7b85f79469456e65bbbb98",
+    "private_cpu_metadata_verified": true,
+    "notebook_and_packaged_python_compile": true,
+    "minimal_payload_imports": true,
+    "offline_kaggle_dependency_install_not_executed_locally": true
+  },
+  "cpu_prepare": {
+    "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+    "payload_sha256": "686a914454e8f22a7493ec46c7f6e98c687243cf2c7b85f79469456e65bbbb98",
+    "private_cpu_metadata_verified": true,
+    "notebook_and_packaged_python_compile": true,
+    "minimal_payload_imports": true,
+    "offline_kaggle_dependency_install_not_executed_locally": true
+  }
+}

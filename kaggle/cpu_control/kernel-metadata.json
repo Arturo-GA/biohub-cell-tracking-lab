@@ -1,0 +1,20 @@
+{
+  "id": "jarturo/biohub-lab-cpu-control-recovery",
+  "title": "Biohub Lab CPU Control Recovery",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "dataset_sources": [
+    "pilkwang/biohub-tracking-support-pack-50ep-v1",
+    "jarturo/biohub-lab-control-cpu-cache"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}

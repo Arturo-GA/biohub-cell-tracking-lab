@@ -1,0 +1,8 @@
+{
+  "attempt": 1,
+  "accepted": false,
+  "api_validation_error": {"invalid_kernel_sources": ["jarturo/biohub-lab-event-graph-control"]},
+  "resolution": "Prepare a private dataset of recovered predictions as CPU input.",
+  "dataset_upload_permission": "awaiting_specific_confirmation",
+  "automatic_review_reason": "Prior upload authorization covered code/configuration, not the 111 MB payload of private predicted coordinates and edges destined for Kaggle."
+}

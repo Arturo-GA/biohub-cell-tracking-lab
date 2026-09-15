@@ -1,0 +1,29 @@
+{
+  "sha256": "686a914454e8f22a7493ec46c7f6e98c687243cf2c7b85f79469456e65bbbb98",
+  "files": [
+    "baseline/event_graph_split.json",
+    "NOTICE.md",
+    "scripts/kaggle_cpu_control.py",
+    "scripts/kaggle_cpu_prepare.py",
+    "scripts/notebook_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/control_export.py",
+    "src/biohub_lab/detector_proposals.py",
+    "src/biohub_lab/evaluate.py",
+    "src/biohub_lab/event_data.py",
+    "src/biohub_lab/event_model.py",
+    "src/biohub_lab/event_portable.py",
+    "src/biohub_lab/event_train.py",
+    "src/biohub_lab/gaussian_detector.py",
+    "src/biohub_lab/patch.py",
+    "src/biohub_lab/submission.py",
+    "src/biohub_official/__init__.py",
+    "src/biohub_official/division_metrics.py",
+    "src/biohub_official/LICENSE",
+    "src/biohub_official/metrics.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_annotations": false,
+  "contains_credentials": false
+}

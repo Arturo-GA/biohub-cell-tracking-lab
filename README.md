@@ -2,7 +2,7 @@
 
 Repositorio privado de Arturo para [Biohub — Cell Tracking During Development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development). Investigación y preparación inicial: **13 de septiembre de 2026**.
 
-**Estrategia de cómputo vigente (15 de septiembre):** entrenar el selector en la RTX 3050 de la laptop y utilizar Kaggle CPU para preparación, selección de grafos y evaluación. Sin nuevas ejecuciones en Colab ni aceleradores de Kaggle. [Plan, presupuestos y etapas pendientes](docs/LOCAL_KAGGLE_CPU.es.md). CUDA local, ejecución por etapas y reanudación completa todavía requieren implementación; los notebooks GPU anteriores se conservan como versiones históricas.
+**Cómputo vigente (15 de septiembre):** CUDA local habilitado en la RTX 3050, entrenamiento por video con reanudación completa y ejecutores separados para Kaggle CPU. Pasaron 96 pruebas y una prueba CUDA de 100 pasos sobre 17.300 centros. Se lanzó la preparación del primer video en Kaggle CPU; el entrenamiento científico espera características reales. Sin nuevas ejecuciones en Colab ni aceleradores de Kaggle. [Implementación, medidas y comandos](docs/LOCAL_EXECUTION.es.md), [estrategia](docs/LOCAL_KAGGLE_CPU.es.md). Los notebooks GPU anteriores se conservan como versiones históricas.
 
 La meta es mejorar el tracking real con experimentos reproducibles. **Nuestro control obtuvo 0.946 en el leaderboard público**, frente al **0.947 reportado por Arturo para Harmonic Fusion completo**. Todavía no se ha superado esa referencia ni hay evidencia de alcanzar el podio. El notebook inicial de metric hack obtuvo 0.885; el control actual procede de Harmonic Fusion.
 

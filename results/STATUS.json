@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 77,
+  "local_tests_passed": 96,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -406,7 +406,8 @@
     }
   },
   "active_experiments": [
-    "E013"
+    "E013",
+    "CPU_IMAGE_PREPARE"
   ],
   "detector_test_evidence": {
     "full_suite_passed": 54,
@@ -865,7 +866,7 @@
     "documentation": "docs/EVENT_GRAPH.es.md",
     "payload_sha256": "8bf3bea546be650da1da603e28acced148640d4dec65b91ffb1e84567dc81cd6",
     "scope": "Conditional selector development; E012 evaluation cohort already informed design and public secondary detector trained on all train videos.",
-    "next_action": "Implement the documented laptop GPU + Kaggle CPU migration without polling. When Arturo reports candidate completion, recover and verify reusable outputs; do not launch another Kaggle accelerator run.",
+    "next_action": "Recover candidate outputs only when Arturo reports completion; local CUDA infrastructure and CPU preparation can proceed independently.",
     "version": 1,
     "kernel_id": 134501537,
     "checked_at_utc": "2026-09-15T17:44:04.192053+00:00",
@@ -888,15 +889,18 @@
     "evaluation_videos": 48,
     "launch_receipt": "results/E013-control_launch.json",
     "documentation": "docs/EVENT_GRAPH.es.md",
-    "next_action": "Audit/fix coordinate export using recovered predictions and evaluate the documented corrected control on CPU without repeating completed GPU inference. Follow the laptop + Kaggle CPU strategy; no paid compute planned.",
+    "next_action": "Await specific CSV upload consent, then use the prepared private Kaggle dataset and CPU control notebook. Original predictions preserved; no inference rerun.",
     "interruption_review": "results/E013_interruption_review.json",
     "failure": "Final CSV has out-of-bounds z coordinates; not a quota exception",
-    "csv_recovered": true
+    "csv_recovered": true,
+    "export_repair": "results/E013_control_export_repair.json",
+    "corrected_csv_validated": true,
+    "corrected_official_metric_available": false
   },
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "documented_migration_not_yet_implemented",
+    "status": "implemented_and_verified_waiting_for_real_features_and_control_upload_permission",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
@@ -905,10 +909,10 @@
     "new_kaggle_gpu_or_tpu_runs": false,
     "paid_compute_planned": false,
     "policy_enforced_in_launchers": false,
-    "cuda_environment_ready": false,
-    "local_gpu_memory_benchmark_completed": false,
-    "exact_training_resume_implemented": false,
-    "portable_cpu_stage_runners_implemented": false,
+    "cuda_environment_ready": true,
+    "local_gpu_memory_benchmark_completed": true,
+    "exact_training_resume_implemented": true,
+    "portable_cpu_stage_runners_implemented": true,
     "new_training_started_for_this_plan": false,
     "preserve_existing_run_artifacts": true,
     "automatic_monitoring": false,
@@ -918,13 +922,36 @@
       "evaluation": 48
     },
     "next_steps": [
-      "Audit the recovered control coordinate export and evaluate a documented corrected version on CPU without repeating completed GPU inference.",
-      "Prepare an isolated Biohub CUDA environment after checking disk space and driver compatibility; leave RSNA dependencies unchanged.",
-      "Separate portable per-video data preparation, frozen feature extraction, training, scoring, CPU solving and official evaluation.",
-      "Implement bounded data loading and complete atomic training checkpoints; verify restart and chunk equivalence.",
-      "Benchmark actual memory and step time including dense cases before the full 6000-step experiment.",
-      "Recover existing candidate artifacts when Arturo reports completion; do not poll or block independent migration work.",
-      "Measure final Kaggle CPU inference feasibility separately before preparing a submission."
-    ]
+      "When Arturo reports completion, retrieve and verify CPU preparation outputs and any completed E013 candidate artifacts without polling.",
+      "Import the CPU image shard and Gaussian proposals, then generate missing frozen detectors/features locally, one video at a time.",
+      "Continue the fixed 64 fit/calibration input videos and complete evaluation features; reuse any verified E013 outputs.",
+      "Freeze all 112 graph/feature sets before supervision, prepare labels on CPU, then run the full 6000-step local selector training with resume.",
+      "After specific consent for the recovered prediction CSV, upload its prepared private Kaggle dataset and launch CPU control evaluation.",
+      "Calibrate and score locally, solve/evaluate in Kaggle CPU, and measure final CPU submission runtime separately."
+    ],
+    "implementation_documentation": "docs/LOCAL_EXECUTION.es.md",
+    "cpu_workflow_launcher_enforces_policy": true,
+    "legacy_gpu_launchers_modified": false,
+    "checks": "results/LOCAL_IMPLEMENTATION_CHECKS.json",
+    "environment_receipt": "results/LOCAL_ENVIRONMENT.json",
+    "local_training_root": "outputs/local_event_graph",
+    "evaluation_graphs_imported_and_verified": 48,
+    "complete_real_feature_videos_local": 0,
+    "first_cpu_preparation_launched": true,
+    "control_predictions_upload_permission": "pending_specific_confirmation"
+  },
+  "CPU_IMAGE_PREPARE": {
+    "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+    "version": 1,
+    "launch_receipt": "results/CPU_IMAGE_PREPARE_launch.json",
+    "launch_accepted": true,
+    "last_observed_status": null,
+    "status_not_polled": true,
+    "offset": 0,
+    "video": "44b6_144b256d",
+    "gpu": false,
+    "tpu": false,
+    "private": true,
+    "local_wait_active": false
   }
 }

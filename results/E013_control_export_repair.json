@@ -1,0 +1,17 @@
+{
+  "version": "E013-control-cpu-export-v2",
+  "source_sha256": "2c714da977670aa753394ab56928ace6efbb40fe1ae0a74c9cb94671a3d9b4b4",
+  "corrected_sha256": "503b20ac95207a3f2be32efc4ae3c6ee44ea3ed85000e06072cc6249199aa366",
+  "changed_spatial_coordinates": {
+    "z": 1
+  },
+  "nodes": 1072577,
+  "edges": 1031579,
+  "topology_changed": false,
+  "rule": "Nearest valid integer voxel for upper-border rounding; reject all other out-of-range values",
+  "historical_csv_preserved": true,
+  "official_metric_computed": false,
+  "smoothing_reconstructed_from_raw_predictions": true,
+  "audit_witness_sha256": "24bf6e39fc4dc7a95b38c39757d73a4c139272d9eba26f58bf605771a0bf8f50",
+  "scope": "Recovered full Harmonic control, versioned integer export correction; evaluation pending"
+}

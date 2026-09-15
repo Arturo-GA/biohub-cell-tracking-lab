@@ -1,0 +1,9 @@
+{
+  "cuda": true,
+  "real_public_checkpoints": true,
+  "synthetic_images": true,
+  "visual_channels": 64,
+  "sequential_matches_dual_exactly": true,
+  "module_sha256": "53d4569a57d95edfe35f2605d38ed26a46c7b5ddebbe25523410a138b003f070",
+  "scope": "Feature extraction equivalence with public weights on synthetic images; not full-volume capacity or model quality"
+}

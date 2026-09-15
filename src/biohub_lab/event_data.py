@@ -64,7 +64,9 @@ def extract_visual(module, models, image_path, coords, device):
     low, high = float(q.get('0.001', 0.)), float(q.get('0.999', 1.))
     if not q or high <= low:
         raise ValueError('Missing or invalid image normalization quantiles')
-    result = np.zeros((len(coords), 64), np.float16); seen = np.zeros(len(coords), bool)
+    if not models:
+        raise ValueError('At least one frozen encoder is required')
+    result = np.zeros((len(coords), 32*len(models)), np.float16); seen = np.zeros(len(coords), bool)
     if arr.shape[0] < 2:
         raise ValueError('Two-frame encoders require at least two frames')
     with torch.inference_mode():

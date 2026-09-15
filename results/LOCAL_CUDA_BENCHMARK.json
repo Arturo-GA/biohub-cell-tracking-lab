@@ -1,0 +1,29 @@
+{
+  "recorded_at_utc": "2026-09-15T18:44:39.722058+00:00",
+  "torch": "2.5.1+cu121",
+  "cuda_runtime": "12.1",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "total_vram_mib": 4095.5625,
+  "scope": "Capacity only: real E012 candidate geometry, synthetic features/targets, no GT labels and no reusable trained weights",
+  "training": {
+    "steps": 100,
+    "window_nodes": 17300,
+    "video": "44b6_18ced818",
+    "frame": 31,
+    "median_step_seconds": 0.7039999999979045,
+    "maximum_step_seconds": 3.3910000000032596,
+    "max_allocated_mib": 300.83349609375,
+    "max_reserved_mib": 368.0,
+    "max_process_rss_mib": 4046.26171875
+  },
+  "full_video_streamed_encoder": {
+    "video": "44b6_18ced818",
+    "nodes": 165029,
+    "seconds": 9.06199999999808,
+    "output_finite": true,
+    "max_allocated_mib": 24.72509765625,
+    "max_reserved_mib": 82.0,
+    "process_rss_mib": 4425.19921875
+  },
+  "scientific_training_started": false
+}
