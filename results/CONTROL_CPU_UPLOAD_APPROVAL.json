@@ -1,0 +1,12 @@
+{
+  "authorized_at_utc": "2026-09-15T19:17:02.697594+00:00",
+  "user_reply": "autorizo",
+  "destination": "jarturo/biohub-lab-control-cpu-cache",
+  "private_only": true,
+  "csv_bytes": 111114156,
+  "csv_sha256": "2c714da977670aa753394ab56928ace6efbb40fe1ae0a74c9cb94671a3d9b4b4",
+  "scope": "Upload the prepared recovered control predictions and run the prepared private Kaggle CPU evaluation.",
+  "automatic_review_previous_rejection_resolved_by_explicit_user_authorization": true,
+  "uploaded": true,
+  "uploaded_and_verified_at_utc": "2026-09-15T19:23:40.714286+00:00"
+}

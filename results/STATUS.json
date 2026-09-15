@@ -407,7 +407,8 @@
   },
   "active_experiments": [
     "E013",
-    "CPU_IMAGE_PREPARE"
+    "CPU_IMAGE_PREPARE",
+    "CPU_CONTROL_RECOVERY"
   ],
   "detector_test_evidence": {
     "full_suite_passed": 54,
@@ -889,18 +890,19 @@
     "evaluation_videos": 48,
     "launch_receipt": "results/E013-control_launch.json",
     "documentation": "docs/EVENT_GRAPH.es.md",
-    "next_action": "Await specific CSV upload consent, then use the prepared private Kaggle dataset and CPU control notebook. Original predictions preserved; no inference rerun.",
+    "next_action": "CPU Control Recovery version 2 was accepted using the verified private CSV dataset. Retrieve and verify its metrics when Arturo reports completion; no monitoring or repeated inference.",
     "interruption_review": "results/E013_interruption_review.json",
     "failure": "Final CSV has out-of-bounds z coordinates; not a quota exception",
     "csv_recovered": true,
     "export_repair": "results/E013_control_export_repair.json",
     "corrected_csv_validated": true,
-    "corrected_official_metric_available": false
+    "corrected_official_metric_available": false,
+    "cpu_recovery_launch_receipt": "results/E013_cpu_control_launch.json"
   },
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "implemented_and_verified_waiting_for_real_features_and_control_upload_permission",
+    "status": "implemented_and_verified_waiting_for_real_features_and_cpu_results",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
@@ -926,7 +928,7 @@
       "Import the CPU image shard and Gaussian proposals, then generate missing frozen detectors/features locally, one video at a time.",
       "Continue the fixed 64 fit/calibration input videos and complete evaluation features; reuse any verified E013 outputs.",
       "Freeze all 112 graph/feature sets before supervision, prepare labels on CPU, then run the full 6000-step local selector training with resume.",
-      "After specific consent for the recovered prediction CSV, upload its prepared private Kaggle dataset and launch CPU control evaluation.",
+      "When Arturo reports completion, retrieve the CPU control result and verify its repaired CSV hash and complete 48-video metric coverage.",
       "Calibrate and score locally, solve/evaluate in Kaggle CPU, and measure final CPU submission runtime separately."
     ],
     "implementation_documentation": "docs/LOCAL_EXECUTION.es.md",
@@ -938,7 +940,10 @@
     "evaluation_graphs_imported_and_verified": 48,
     "complete_real_feature_videos_local": 0,
     "first_cpu_preparation_launched": true,
-    "control_predictions_upload_permission": "pending_specific_confirmation"
+    "control_predictions_upload_permission": "explicitly_authorized_and_uploaded",
+    "control_dataset": "jarturo/biohub-lab-control-cpu-cache",
+    "control_dataset_private_verified": true,
+    "control_cpu_evaluation_launched": true
   },
   "CPU_IMAGE_PREPARE": {
     "kernel": "jarturo/biohub-lab-cpu-image-preparation",
@@ -953,5 +958,21 @@
     "tpu": false,
     "private": true,
     "local_wait_active": false
+  },
+  "CPU_CONTROL_RECOVERY": {
+    "kernel": "jarturo/biohub-lab-cpu-control-recovery",
+    "version": 2,
+    "kernel_id": 134522665,
+    "launch_accepted": true,
+    "last_observed_status": null,
+    "status_not_polled": true,
+    "launch_receipt": "results/E013_cpu_control_launch.json",
+    "dataset_receipt": "results/CONTROL_CPU_DATASET.json",
+    "private": true,
+    "gpu": false,
+    "tpu": false,
+    "local_wait_active": false,
+    "results_available": false,
+    "leaderboard_submitted": false
   }
 }

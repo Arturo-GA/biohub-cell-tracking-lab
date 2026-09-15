@@ -1,0 +1,18 @@
+{
+  "dataset": "jarturo/biohub-lab-control-cpu-cache",
+  "dataset_id": 12039312,
+  "version": 1,
+  "status": "ready",
+  "is_private": true,
+  "privacy_verified_via_authenticated_api": true,
+  "files": {
+    "README.md": 250,
+    "submission.csv": 111114156
+  },
+  "csv_source_sha256": "2c714da977670aa753394ab56928ace6efbb40fe1ae0a74c9cb94671a3d9b4b4",
+  "remote_csv_size_matches": true,
+  "remote_csv_sha256_verified": false,
+  "notebook_will_require_exact_source_sha256": true,
+  "verified_at_utc": "2026-09-15T19:23:40.714286+00:00",
+  "approval_receipt": "results/CONTROL_CPU_UPLOAD_APPROVAL.json"
+}
