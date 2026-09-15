@@ -1,5 +1,7 @@
 # E013: modelo de eventos sobre detecciones reales
 
+**Actualización de cómputo, 15 de septiembre:** la siguiente ejecución se preparará para la GPU de la laptop y Kaggle CPU, siguiendo el [plan de migración](LOCAL_KAGGLE_CPU.es.md). La implementación y los notebooks versión 1 descritos aquí preceden esa adaptación. El control terminó la inferencia y falló en la validación de una coordenada; se recuperó su CSV para corregir y evaluar sin repetir la inferencia. [Revisión](../results/E013_interruption_review.json).
+
 E012 encontró candidatos compatibles con 33/33 divisiones y 24/25 continuaciones anotadas completas, pero todavía no eligió un grafo ni produjo un score. E013 implementa y entrena el selector que faltaba. El mejor resultado público propio sigue siendo **0.946** hasta una nueva submission evaluada.
 
 ## Partición y alcance

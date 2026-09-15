@@ -1,0 +1,36 @@
+{
+  "recorded_at_utc": "2026-09-15T18:04:37.183980+00:00",
+  "scope": "Read-only sizing from the 48 cached E012 evaluation graphs and current model definition. No CUDA benchmark or performance estimate.",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "vram_mib": 4096,
+    "driver": "529.04",
+    "source": "Previous direct nvidia-smi hardware check"
+  },
+  "cpu": {
+    "name": "Intel Core i5-11320H",
+    "physical_cores": 4,
+    "logical_processors": 8
+  },
+  "ram_gib": 15.8,
+  "earlier_free_ram_gib": 3.4,
+  "current_free_disk_gib": 28.0,
+  "current_torch": "2.14.0+cpu",
+  "cuda_enabled_in_current_environment": false,
+  "selector_parameters": 191255,
+  "selector_parameter_fp32_mib": 0.7295799255371094,
+  "cached_videos": 48,
+  "cached_nodes": 2699570,
+  "cached_graph_mib": 130.23370456695557,
+  "projected_visual_fp16_mib_for_these_nodes": 329.537353515625,
+  "projected_neighbors_int32_mib_for_these_nodes": 257.45105743408203,
+  "visual_features_available_locally": false,
+  "note": "Feature sizes are projections from existing node counts; features have not been recovered from the still-unreported E013 run. Parameter memory excludes activations and runtime.",
+  "node_counts": {
+    "minimum": 11072,
+    "median": 49031.0,
+    "maximum": 165029
+  },
+  "largest_window_nodes": 17300,
+  "label_free_stress_video": "44b6_18ced818"
+}

@@ -865,7 +865,7 @@
     "documentation": "docs/EVENT_GRAPH.es.md",
     "payload_sha256": "8bf3bea546be650da1da603e28acced148640d4dec65b91ffb1e84567dc81cd6",
     "scope": "Conditional selector development; E012 evaluation cohort already informed design and public secondary detector trained on all train videos.",
-    "next_action": "Wait for Arturo to report completion, then retrieve both outputs and compare official final-CSV metrics on the identical 48 videos. No local monitoring.",
+    "next_action": "Implement the documented laptop GPU + Kaggle CPU migration without polling. When Arturo reports candidate completion, recover and verify reusable outputs; do not launch another Kaggle accelerator run.",
     "version": 1,
     "kernel_id": 134501537,
     "checked_at_utc": "2026-09-15T17:44:04.192053+00:00",
@@ -888,9 +888,43 @@
     "evaluation_videos": 48,
     "launch_receipt": "results/E013-control_launch.json",
     "documentation": "docs/EVENT_GRAPH.es.md",
-    "next_action": "Preserve the running candidate. Audit/fix control coordinate export using recovered predictions, then evaluate without repeating GPU inference. Adapt persistent stage/checkpoint resume before paid compute.",
+    "next_action": "Audit/fix coordinate export using recovered predictions and evaluate the documented corrected control on CPU without repeating completed GPU inference. Follow the laptop + Kaggle CPU strategy; no paid compute planned.",
     "interruption_review": "results/E013_interruption_review.json",
     "failure": "Final CSV has out-of-bounds z coordinates; not a quota exception",
     "csv_recovered": true
+  },
+  "compute_strategy": {
+    "decided_at_date": "2026-09-15",
+    "requested_by": "Arturo",
+    "status": "documented_migration_not_yet_implemented",
+    "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
+    "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
+    "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
+    "remote_target": "Kaggle_CPU",
+    "new_colab_runs": false,
+    "new_kaggle_gpu_or_tpu_runs": false,
+    "paid_compute_planned": false,
+    "policy_enforced_in_launchers": false,
+    "cuda_environment_ready": false,
+    "local_gpu_memory_benchmark_completed": false,
+    "exact_training_resume_implemented": false,
+    "portable_cpu_stage_runners_implemented": false,
+    "new_training_started_for_this_plan": false,
+    "preserve_existing_run_artifacts": true,
+    "automatic_monitoring": false,
+    "scientific_split_preserved": {
+      "fit": 48,
+      "calibration": 16,
+      "evaluation": 48
+    },
+    "next_steps": [
+      "Audit the recovered control coordinate export and evaluate a documented corrected version on CPU without repeating completed GPU inference.",
+      "Prepare an isolated Biohub CUDA environment after checking disk space and driver compatibility; leave RSNA dependencies unchanged.",
+      "Separate portable per-video data preparation, frozen feature extraction, training, scoring, CPU solving and official evaluation.",
+      "Implement bounded data loading and complete atomic training checkpoints; verify restart and chunk equivalence.",
+      "Benchmark actual memory and step time including dense cases before the full 6000-step experiment.",
+      "Recover existing candidate artifacts when Arturo reports completion; do not poll or block independent migration work.",
+      "Measure final Kaggle CPU inference feasibility separately before preparing a submission."
+    ]
   }
 }
