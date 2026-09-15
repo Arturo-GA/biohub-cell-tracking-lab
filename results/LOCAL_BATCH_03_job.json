@@ -1,0 +1,27 @@
+{
+  "recorded_at_utc": "2026-09-15T21:16:41.312484+00:00",
+  "process_alive": true,
+  "pid": 24184,
+  "process_created": 1789506523.9544976,
+  "status_at_snapshot": "processing_local_videos",
+  "live_state": "outputs/pipeline_v3/state.json",
+  "video_progress": "outputs/cpu_prepare_v3/local_run.json",
+  "logs": [
+    "outputs/pipeline_v3/stdout.log",
+    "outputs/pipeline_v3/stderr.log"
+  ],
+  "videos": [
+    "44b6_2a2eff9f",
+    "44b6_3a861e03",
+    "44b6_3bb3690f",
+    "44b6_668e0cc7"
+  ],
+  "input_audit_output": "results/CPU_IMAGE_PREPARE_v3_completed.json",
+  "local_audit_output": "results/LOCAL_REAL_BATCH_03.json",
+  "next_cpu_preflight": "results/CPU_IMAGE_PREPARE_v4_preflight.json",
+  "next_cpu_launch_output": "results/CPU_IMAGE_PREPARE_v4_launch.json",
+  "finite_job": true,
+  "kaggle_status_polling": false,
+  "training_started": false,
+  "regression_tests_passed": 3
+}

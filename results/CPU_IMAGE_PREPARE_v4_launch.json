@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+  "version": 4,
+  "kernel_id": 134523205,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-cpu-image-preparation",
+  "ref": "/code/jarturo/biohub-lab-cpu-image-preparation",
+  "launched_at_utc": "2026-09-15T21:14:44.469673+00:00",
+  "payload_sha256": "c427b888f5c2526c04ce4a72e43154c6f5230f19bc9038cc4717fc2797df0c11",
+  "notebook_sha256": "85e351535a4ba10efdad97f905cc33d6554777e5ca7becaf46c469e79588e0cb",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

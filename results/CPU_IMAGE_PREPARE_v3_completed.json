@@ -1,0 +1,92 @@
+{
+  "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+  "version": 3,
+  "status": "COMPLETE",
+  "checked_at_utc": "2026-09-15T20:57:08.555555+00:00",
+  "verified_at_utc": "2026-09-15T21:14:33.912595+00:00",
+  "offset": 2,
+  "next_offset": 6,
+  "videos": [
+    {
+      "video": "44b6_2a2eff9f",
+      "offset": 2,
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "source_bytes": 514618389,
+      "image_files": 102,
+      "image_sha256": "fa43bf0e78388a8c33305c0bba60b31e799737f9385dfbafb833e79f8d6b78ec",
+      "archive_sha256": "b36320ddddb5b64ab81381d793e57bf55849694dd3df141d8d8a68f1401c7844",
+      "gaussian_sha256": "35b18bd6f85fb3b889614e39dfa42ca8a7c998ebf60036a7484fed33cd8fd615",
+      "gaussian_proposals": 5318,
+      "seconds": 298.790835035
+    },
+    {
+      "video": "44b6_3a861e03",
+      "offset": 3,
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "source_bytes": 493710406,
+      "image_files": 102,
+      "image_sha256": "7c10146e55fff509769db53366124abc5d6ebf3fa753a8a8b817fbe201ae38aa",
+      "archive_sha256": "c291d013c0cc1a709e045119f31dfc11701eedf52f1b902ed53681871ea21294",
+      "gaussian_sha256": "96e72000927431dcc97a20834d39e5d7dd671617831df42be2e015ac5acb595c",
+      "gaussian_proposals": 5137,
+      "seconds": 285.58047538899996
+    },
+    {
+      "video": "44b6_3bb3690f",
+      "offset": 4,
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "source_bytes": 508635810,
+      "image_files": 102,
+      "image_sha256": "9c10990d60b49a5a67f6f48df89e74344aecf206367957b6071af90b819dd7e5",
+      "archive_sha256": "51b8bb315b10df186fe5c47be8e36f4c28d5cce0ab4130aefb02849d092d6f40",
+      "gaussian_sha256": "bd93373299b18a89e7c5e115a9cc67596ef93f671306d56afa107732744845a4",
+      "gaussian_proposals": 5112,
+      "seconds": 292.6344986250001
+    },
+    {
+      "video": "44b6_668e0cc7",
+      "offset": 5,
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "source_bytes": 462592772,
+      "image_files": 102,
+      "image_sha256": "812133c07376dfb3ec6ed86a742ae1b3c4b9d0713eea2ff9d8d1fd4e09ec7262",
+      "archive_sha256": "368fabf9136e120e83c57e072120adc744750b3e4d6d8d96d1a5b26742b11cee",
+      "gaussian_sha256": "fe479040231a73cc3863062d8e36399a24ef21d31168e414344fb69f135152e9",
+      "gaussian_proposals": 5385,
+      "seconds": 291.42236277000006
+    }
+  ],
+  "source_bytes": 1979557377,
+  "payload_sha256": "c427b888f5c2526c04ce4a72e43154c6f5230f19bc9038cc4717fc2797df0c11",
+  "verification": {
+    "remote_sources_match_launch_payload": true,
+    "exact_contiguous_cohort": true,
+    "all_archives_and_imported_image_files": true,
+    "split_manifest": true,
+    "gaussian_hashes_config_and_bounds": true
+  },
+  "annotations_read": false,
+  "gpu": false,
+  "tpu": false,
+  "training_started": false
+}

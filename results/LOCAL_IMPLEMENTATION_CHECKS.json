@@ -1,7 +1,7 @@
 {
   "full_suite_passed": 93,
   "additional_compute_workflow_tests_passed": 3,
-  "total_unique_tests_passed": 101,
+  "total_unique_tests_passed": 104,
   "portable_tests_rechecked_after_final_training_guard": 5,
   "environment": "Biohub .venv torch 2.5.1+cu121",
   "benchmark": "results/LOCAL_CUDA_BENCHMARK.json",
@@ -13,5 +13,8 @@
   "real_image_preparation": "results/LOCAL_REAL_VIDEO_PREPARATION.json",
   "control_recovery_audit": "results/E013_cpu_control_completed.json",
   "cpu_batch_boundary_and_completion_tests_passed": 3,
-  "second_real_image_preparation": "results/LOCAL_REAL_VIDEO_02.json"
+  "second_real_image_preparation": "results/LOCAL_REAL_VIDEO_02.json",
+  "batch_continuation_regression_tests_passed": 3,
+  "cpu_batch_tests_rechecked": 3,
+  "finite_local_job": "results/LOCAL_BATCH_03_job.json"
 }

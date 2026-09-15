@@ -1,6 +1,8 @@
 """Process a completed CPU batch sequentially using the existing local guards."""
 import argparse
+from datetime import datetime,timezone
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -29,7 +31,25 @@ def packages(root):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--cpu-root',required=True)
+    parser.add_argument('--run-state')
     args=parser.parse_args()
-    for folder in packages(args.cpu_root):
-        subprocess.run([sys.executable,'-u',str(ROOT/'scripts/run_local_prepared_video.py'),
-                        '--cpu-package',str(folder)],cwd=ROOT,check=True)
+    folders=packages(args.cpu_root)
+    state_path=Path(args.run_state) if args.run_state else Path(args.cpu_root).parent/'local_run.json'
+    if state_path.exists() and json.loads(state_path.read_text()).get('status')=='running':
+        raise RuntimeError('Existing running batch receipt; inspect it before starting another process')
+    state=dict(status='running',pid=os.getpid(),started_at_utc=datetime.now(timezone.utc).isoformat(),
+               videos=[p.name for p in folders],completed=[],training_started=False)
+    def save():
+        state_path.parent.mkdir(parents=True,exist_ok=True)
+        temp=state_path.with_suffix('.tmp');temp.write_text(json.dumps(state,indent=2)+'\n');temp.replace(state_path)
+    save()
+    try:
+        for folder in folders:
+            state['current']=folder.name;save()
+            subprocess.run([sys.executable,'-u',str(ROOT/'scripts/run_local_prepared_video.py'),
+                            '--cpu-package',str(folder)],cwd=ROOT,check=True)
+            state['completed'].append(folder.name);save()
+        state.update(status='complete',completed_at_utc=datetime.now(timezone.utc).isoformat())
+        state.pop('current',None);save()
+    except Exception as error:
+        state.update(status='failed',error=str(error));save();raise

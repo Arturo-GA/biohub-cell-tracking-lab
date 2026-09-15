@@ -1,0 +1,21 @@
+{
+  "prepared_at_utc": "2026-09-15T21:07:45.025840+00:00",
+  "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+  "offset": 6,
+  "requested_count": 4,
+  "requested_videos": [
+    "44b6_66f9292d",
+    "44b6_71a4179f",
+    "44b6_74d0c52e",
+    "44b6_7e557709"
+  ],
+  "source_budget_bytes": 4294967296,
+  "payload_sha256": "c427b888f5c2526c04ce4a72e43154c6f5230f19bc9038cc4717fc2797df0c11",
+  "notebook_sha256": "85e351535a4ba10efdad97f905cc33d6554777e5ca7becaf46c469e79588e0cb",
+  "private": true,
+  "gpu": false,
+  "tpu": false,
+  "launch_condition": "After CPU batch v3 downloads and all imported images are verified",
+  "cpu_metadata_and_minimal_payload_preflight_passed": true,
+  "launched_at_preflight_time": false
+}

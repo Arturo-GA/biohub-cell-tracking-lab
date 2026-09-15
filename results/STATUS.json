@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 101,
+  "local_tests_passed": 104,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -870,7 +870,7 @@
     "next_action": "Recover candidate outputs only when Arturo reports completion; local CUDA infrastructure and CPU preparation can proceed independently.",
     "version": 1,
     "kernel_id": 134501537,
-    "checked_at_utc": "2026-09-15T19:58:56.213741+00:00",
+    "checked_at_utc": "2026-09-15T20:57:20.950380+00:00",
     "launched_at_utc": "2026-09-15T14:35:11.477816+00:00",
     "launch_receipt": "results/E013_launch.json",
     "interruption_review": "results/E013_interruption_review.json"
@@ -903,7 +903,7 @@
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "two_real_local_videos_complete_next_cpu_batch_launched",
+    "status": "cpu_batch_v3_complete_finite_local_job_running",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
@@ -925,7 +925,7 @@
       "evaluation": 48
     },
     "next_steps": [
-      "When Arturo reports completion, recover and verify CPU preparation version 3, including each completed child package; do not monitor it automatically.",
+      "The finite local job finishes the current transfer, audits CPU batch v3, launches the reviewed next CPU batch once, processes four videos locally and audits their features; inspect its live state when Arturo asks for progress.",
       "Continue missing detector/features locally in bounded video shards and reuse any verified original E013 outputs when reported.",
       "Complete all 112 graph/feature sets, freeze them before supervision, prepare fit/calibration labels, and run the full 6000-step local training with resume.",
       "Calibrate and score locally, solve/evaluate in Kaggle CPU, compare against the verified control score 0.9092570108739322 on the same 48-video development cohort.",
@@ -948,32 +948,37 @@
     "control_result": "results/E013_cpu_control_completed.json",
     "real_video_preparation": "results/LOCAL_REAL_VIDEO_02.json",
     "cpu_preparation_batching": true,
-    "cpu_batch_max_videos": 4
+    "cpu_batch_max_videos": 4,
+    "local_batch_job": "results/LOCAL_BATCH_03_job.json",
+    "local_batch_live_state": "outputs/pipeline_v3/state.json"
   },
   "CPU_IMAGE_PREPARE": {
     "kernel": "jarturo/biohub-lab-cpu-image-preparation",
-    "version": 3,
-    "launch_receipt": "results/CPU_IMAGE_PREPARE_v3_launch.json",
+    "version": 4,
+    "launch_receipt": "results/CPU_IMAGE_PREPARE_v4_launch.json",
     "launch_accepted": true,
     "last_observed_status": null,
     "status_not_polled": true,
-    "offset": 2,
+    "offset": 6,
     "gpu": false,
     "tpu": false,
     "private": true,
     "local_wait_active": false,
     "kernel_id": 134523205,
-    "launched_at_utc": "2026-09-15T20:05:07.514896+00:00",
-    "last_completed_version": 2,
-    "completed_receipt": "results/CPU_IMAGE_PREPARE_v2_completed.json",
+    "launched_at_utc": "2026-09-15T21:14:44.469673+00:00",
+    "last_completed_version": 3,
+    "completed_receipt": "results/CPU_IMAGE_PREPARE_v3_completed.json",
     "requested_count": 4,
     "requested_videos": [
-      "44b6_2a2eff9f",
-      "44b6_3a861e03",
-      "44b6_3bb3690f",
-      "44b6_668e0cc7"
+      "44b6_66f9292d",
+      "44b6_71a4179f",
+      "44b6_74d0c52e",
+      "44b6_7e557709"
     ],
-    "batch_source_budget_bytes": 4294967296
+    "batch_source_budget_bytes": 4294967296,
+    "results_available": false,
+    "recovery_in_progress": false,
+    "last_completed_observed_receipt": "results/CPU_IMAGE_PREPARE_v3_observed.json"
   },
   "CPU_CONTROL_RECOVERY": {
     "kernel": "jarturo/biohub-lab-cpu-control-recovery",
@@ -1018,5 +1023,58 @@
       "results/LOCAL_REAL_VIDEO_PREPARATION.json",
       "results/LOCAL_REAL_VIDEO_02.json"
     ]
+  },
+  "LOCAL_BATCH_03": {
+    "recorded_at_utc": "2026-09-15T21:16:41.312484+00:00",
+    "process_alive": true,
+    "pid": 24184,
+    "process_created": 1789506523.9544976,
+    "status_at_snapshot": "processing_local_videos",
+    "live_state": "outputs/pipeline_v3/state.json",
+    "video_progress": "outputs/cpu_prepare_v3/local_run.json",
+    "logs": [
+      "outputs/pipeline_v3/stdout.log",
+      "outputs/pipeline_v3/stderr.log"
+    ],
+    "videos": [
+      "44b6_2a2eff9f",
+      "44b6_3a861e03",
+      "44b6_3bb3690f",
+      "44b6_668e0cc7"
+    ],
+    "input_audit_output": "results/CPU_IMAGE_PREPARE_v3_completed.json",
+    "local_audit_output": "results/LOCAL_REAL_BATCH_03.json",
+    "next_cpu_preflight": "results/CPU_IMAGE_PREPARE_v4_preflight.json",
+    "next_cpu_launch_output": "results/CPU_IMAGE_PREPARE_v4_launch.json",
+    "finite_job": true,
+    "kaggle_status_polling": false,
+    "training_started": false,
+    "regression_tests_passed": 3
+  },
+  "CPU_IMAGE_PREPARE_NEXT": {
+    "offset": 6,
+    "requested_count": 4,
+    "preflight": "results/CPU_IMAGE_PREPARE_v4_preflight.json",
+    "launch_delegated_to_finite_local_job": true,
+    "launch_receipt": "results/CPU_IMAGE_PREPARE_v4_launch.json",
+    "launch_accepted_at_snapshot": true,
+    "gpu": false,
+    "tpu": false,
+    "private": true,
+    "accepted_launch": {
+      "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+      "version": 4,
+      "kernel_id": 134523205,
+      "url": "https://www.kaggle.com/code/jarturo/biohub-lab-cpu-image-preparation",
+      "ref": "/code/jarturo/biohub-lab-cpu-image-preparation",
+      "launched_at_utc": "2026-09-15T21:14:44.469673+00:00",
+      "payload_sha256": "c427b888f5c2526c04ce4a72e43154c6f5230f19bc9038cc4717fc2797df0c11",
+      "notebook_sha256": "85e351535a4ba10efdad97f905cc33d6554777e5ca7becaf46c469e79588e0cb",
+      "enable_gpu": false,
+      "enable_tpu": false,
+      "is_private": true,
+      "monitoring": false,
+      "leaderboard_submitted": false
+    }
   }
 }

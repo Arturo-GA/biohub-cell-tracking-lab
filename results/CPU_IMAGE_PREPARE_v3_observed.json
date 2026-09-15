@@ -1,0 +1,22 @@
+{
+  "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+  "version": 3,
+  "checked_at_utc": "2026-09-15T20:57:08.555555+00:00",
+  "status": "COMPLETE",
+  "offset": 2,
+  "next_offset": 6,
+  "videos": [
+    "44b6_2a2eff9f",
+    "44b6_3a861e03",
+    "44b6_3bb3690f",
+    "44b6_668e0cc7"
+  ],
+  "source_bytes": 1979557377,
+  "completed_cpu_videos": 4,
+  "image_download_and_local_processing_job": "outputs/pipeline_v3/state.json",
+  "download_verification_available": true,
+  "gpu": false,
+  "tpu": false,
+  "annotations_read": false,
+  "training_started": false
+}

@@ -36,7 +36,7 @@ Se verificaron los **102 archivos** importados del video y el hash de sus gaussi
 
 El primer intento completó CELLECT y se detuvo al escribir el registro de Harmonic en `/kaggle/working`. Tras redirigir solo ese registro, la reanudación reutilizó CELLECT y las gaussianas. El proceso exitoso restante tardó **260,89 segundos**, con máximos de PyTorch de **693,3 MiB asignados y 884 MiB reservados**, y unos **5,18 GiB de memoria de proceso**. Estas mediciones excluyen la etapa CELLECT del intento anterior, la preparación CPU y la descarga; tampoco incluyen toda la memoria del dispositivo.
 
-Hay **2 de 112 juegos completos de grafos/características** y están copiados y verificados los **48 grafos de E012** en `outputs/local_event_graph/videos`. No se ha iniciado el entrenamiento científico del selector local. La consulta única de continuación del 15 de septiembre a las 19:58 UTC todavía mostró el candidato E013 antiguo como `RUNNING`; sus resultados recuperables se incorporarán cuando estén disponibles, evitando repetir etapas completas.
+Al iniciar el procesamiento del lote 3 hay **2 de 112 juegos completos de grafos/características verificados** y están copiados y verificados los **48 grafos de E012** en `outputs/local_event_graph/videos`. No se ha iniciado el entrenamiento científico del selector local. La consulta única de continuación del 15 de septiembre a las 20:57 UTC todavía mostró el candidato E013 antiguo como `RUNNING`; sus resultados recuperables se incorporarán cuando estén disponibles, evitando repetir etapas completas.
 
 El siguiente bloque se construye con `scripts/build_cpu_workflow.py --offset 1`, y así sucesivamente hasta 63. Cada envío usa un recibo nuevo con `scripts/launch_cpu_notebook.py`; un recibo existente impide repetir accidentalmente el lanzamiento. Se avanza cuando el bloque anterior está guardado y verificado, sin crear monitores.
 
@@ -54,9 +54,21 @@ Cada video conserva su carpeta, archivo ZIP, gaussianas y recibos. `batch_result
 .\.venv\Scripts\python.exe scripts/run_local_prepared_batch.py --cpu-root outputs/cpu_prepare_v3/local_inputs
 ```
 
-El importador mantiene sus límites de caché y reserva de disco. Este comando se usa después de descargar y verificar las salidas, cuando el lote haya terminado; no consulta Kaggle ni espera a notebooks remotos. Se puede reconstruir un lote con `scripts/build_cpu_workflow.py --offset 2 --count 4 --prepare-only`. La opción `--prepare-only` conserva intacto el notebook del control ya evaluado. No se ha consultado automáticamente el estado de la versión 3.
+El importador mantiene sus límites de caché y reserva de disco. Este comando se usa después de descargar y verificar las salidas, cuando el lote haya terminado; no consulta Kaggle ni espera a notebooks remotos. Se puede reconstruir un lote con `scripts/build_cpu_workflow.py --offset 2 --count 4 --prepare-only`. La opción `--prepare-only` conserva intacto el notebook del control ya evaluado.
 
 Pasaron **tres pruebas de regresión** del lote: presupuesto y orden consecutivo, rechazo de índices/entradas inválidos y rechazo de paquetes hijos incompletos. Los dos paquetes CPU compilan y se importan, y se comprobó que el notebook del control conserva exactamente su hash de lanzamiento. Son **101 pruebas distintas acumuladas** con las anteriores, sin repetir toda la batería histórica. [Verificación del lote](../results/CPU_BATCH_PREFLIGHT.json).
+
+## Continuación finita del lote 3
+
+Tras el aviso de Arturo se confirmó que la versión 3 terminó sus **cuatro videos**, con **1.979.557.377 bytes** de imágenes. [Estado remoto recuperado](../results/CPU_IMAGE_PREPARE_v3_observed.json). La descarga usa dos conexiones y comprueba cada hash. La cifra anterior de dos juegos completos no incorpora estos cuatro hasta que termine su preparación y auditoría local.
+
+`continue_downloaded_batch.py` quedó iniciado como un proceso oculto de Windows. Es un trabajo finito: espera únicamente a que termine el proceso local de descarga ya existente, verifica e importa todas las imágenes, lanza **una sola vez** el siguiente lote CPU revisado, procesa secuencialmente estos cuatro videos en la laptop y verifica los resultados. No consulta estados de Kaggle, no crea una automatización recurrente y no envía submissions. Una descarga incompleta impide tanto el procesamiento como la subida siguiente; un fallo al subir el siguiente notebook queda registrado y permite continuar el trabajo local ya verificado.
+
+El siguiente lote comienza en `offset 6`, con hasta cuatro videos. El proceso comprobó el hash del notebook y la continuidad de la partición antes de enviarlo; el lanzador volvió a exigir privacidad y GPU/TPU desactivadas. [Paquete revisado](../results/CPU_IMAGE_PREPARE_v4_preflight.json). Kaggle aceptó la **versión 4** a las **21:14 UTC**. [Lanzamiento](../results/CPU_IMAGE_PREPARE_v4_launch.json). No se consulta su progreso automáticamente.
+
+El estado vivo está en `outputs/pipeline_v3/state.json`; el avance por video, en `outputs/cpu_prepare_v3/local_run.json`, y los registros en `outputs/pipeline_v3/stdout.log` y `stderr.log`. [Instantánea del trabajo iniciado](../results/LOCAL_BATCH_03_job.json). La [auditoría de las cuatro entradas](../results/CPU_IMAGE_PREPARE_v3_completed.json) ya pasó y comenzó el procesamiento local. La auditoría final de características escribirá `results/LOCAL_REAL_BATCH_03.json` cuando termine. No se inicia otro lote GPU mientras este trabajo local siga activo; recuperar datos de Kaggle puede hacerse de forma independiente. La preparación CPU completa no cuenta todavía como características locales completas.
+
+Pasaron tres pruebas nuevas de continuidad y checksum del notebook, incluido el rechazo de rutas fuera del paquete, y se repitieron las tres pruebas del lote. Son **104 pruebas distintas acumuladas**. Los datos, predicciones e imágenes permanecen fuera de Git.
 
 ## Entrenamiento y evaluación por etapas
 
