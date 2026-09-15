@@ -406,8 +406,7 @@
     }
   },
   "active_experiments": [
-    "E013",
-    "E013-control"
+    "E013"
   ],
   "detector_test_evidence": {
     "full_suite_passed": 54,
@@ -851,7 +850,7 @@
     "implementation": "Dual frozen UNet visual features, learned local graph attention, explicit divisions and overlapping temporal MILP",
     "kernel": "jarturo/biohub-lab-learned-event-graph",
     "control_kernel": "jarturo/biohub-lab-event-graph-control",
-    "last_observed_status": "QUEUED",
+    "last_observed_status": "RUNNING",
     "run_started": true,
     "local_wait_active": false,
     "leaderboard_submitted": false,
@@ -869,17 +868,18 @@
     "next_action": "Wait for Arturo to report completion, then retrieve both outputs and compare official final-CSV metrics on the identical 48 videos. No local monitoring.",
     "version": 1,
     "kernel_id": 134501537,
-    "checked_at_utc": "2026-09-15T14:35:12.081971+00:00",
+    "checked_at_utc": "2026-09-15T17:44:04.192053+00:00",
     "launched_at_utc": "2026-09-15T14:35:11.477816+00:00",
-    "launch_receipt": "results/E013_launch.json"
+    "launch_receipt": "results/E013_launch.json",
+    "interruption_review": "results/E013_interruption_review.json"
   },
   "E013-control": {
     "kernel": "jarturo/biohub-lab-event-graph-control",
     "version": 1,
     "kernel_id": 134501543,
     "payload_sha256": "8bf3bea546be650da1da603e28acced148640d4dec65b91ffb1e84567dc81cd6",
-    "last_observed_status": "QUEUED",
-    "checked_at_utc": "2026-09-15T14:35:15.454362+00:00",
+    "last_observed_status": "ERROR",
+    "checked_at_utc": "2026-09-15T17:44:05.391881+00:00",
     "launched_at_utc": "2026-09-15T14:35:14.772339+00:00",
     "run_started": true,
     "results_available": false,
@@ -888,6 +888,9 @@
     "evaluation_videos": 48,
     "launch_receipt": "results/E013-control_launch.json",
     "documentation": "docs/EVENT_GRAPH.es.md",
-    "next_action": "Wait for Arturo to report completion, then retrieve both outputs and compare official final-CSV metrics on the identical 48 videos. No local monitoring."
+    "next_action": "Preserve the running candidate. Audit/fix control coordinate export using recovered predictions, then evaluate without repeating GPU inference. Adapt persistent stage/checkpoint resume before paid compute.",
+    "interruption_review": "results/E013_interruption_review.json",
+    "failure": "Final CSV has out-of-bounds z coordinates; not a quota exception",
+    "csv_recovered": true
   }
 }

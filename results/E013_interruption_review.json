@@ -1,0 +1,243 @@
+{
+  "experiment": "E013",
+  "review_trigger": "Arturo reports exhausted Kaggle quota and asks about paid alternatives",
+  "candidate_status": {
+    "kernel": "jarturo/biohub-lab-learned-event-graph",
+    "status": "RUNNING",
+    "checked_at_utc": "2026-09-15T17:44:04.192053+00:00"
+  },
+  "control_status": {
+    "kernel": "jarturo/biohub-lab-event-graph-control",
+    "status": "ERROR",
+    "checked_at_utc": "2026-09-15T17:44:05.391881+00:00"
+  },
+  "account_gpu_quota_not_verified": true,
+  "candidate_outputs_not_published_at_check": true,
+  "candidate_loss_of_work_not_established": true,
+  "control_failure_stage": "Final CSV validation before official metric calculation",
+  "control_error": "44b6_8f9ecab4: z out of bounds",
+  "control_error_is_not_a_quota_error": true,
+  "control_seconds": 8998.251977922,
+  "control_csv_recovered": true,
+  "recovery": {
+    "event_control_experiment/harmonic_control/bidirectional_production_runtime_integrity.json": {
+      "bytes": 2471,
+      "sha256": "adc5c2e72a9c3fe46a8c3c8063486558755ab50b469833bc6333185267f0e5df"
+    },
+    "event_control_experiment/harmonic_control/run.py": {
+      "bytes": 173341,
+      "sha256": "2ab580a1cb6930e709d4c24e7f6760b2db063b63e11be101ee47b6cb147f25a3"
+    },
+    "event_control_experiment/harmonic_control/submission.csv": {
+      "bytes": 111114156,
+      "sha256": "2c714da977670aa753394ab56928ace6efbb40fe1ae0a74c9cb94671a3d9b4b4"
+    }
+  },
+  "totals": {
+    "node": 1072577,
+    "edge": 1031579,
+    "out_of_bounds_nodes": 1
+  },
+  "out_of_bounds_axes": {
+    "z": 1
+  },
+  "per_video": {
+    "44b6_0c582fdc": {
+      "node": 27656,
+      "edge": 26628
+    },
+    "44b6_1574802b": {
+      "node": 19637,
+      "edge": 19002
+    },
+    "44b6_18ced818": {
+      "node": 74259,
+      "edge": 71173
+    },
+    "44b6_24264f12": {
+      "node": 27090,
+      "edge": 26147
+    },
+    "44b6_267148e4": {
+      "node": 22247,
+      "edge": 21320
+    },
+    "44b6_33b596bf": {
+      "node": 23967,
+      "edge": 23072
+    },
+    "44b6_551a5dba": {
+      "node": 31712,
+      "edge": 30343
+    },
+    "44b6_706092f0": {
+      "node": 29825,
+      "edge": 28539
+    },
+    "44b6_7a302da0": {
+      "node": 45061,
+      "edge": 43243
+    },
+    "44b6_87bba6c4": {
+      "node": 29295,
+      "edge": 27974
+    },
+    "44b6_8cc6506c": {
+      "node": 18991,
+      "edge": 18223
+    },
+    "44b6_8f5ab931": {
+      "node": 27952,
+      "edge": 26993
+    },
+    "44b6_8f9ecab4": {
+      "node": 41252,
+      "out_of_bounds_nodes": 1,
+      "edge": 39593
+    },
+    "44b6_90724892": {
+      "node": 23376,
+      "edge": 22502
+    },
+    "44b6_95029e92": {
+      "node": 4806,
+      "edge": 4699
+    },
+    "44b6_996155de": {
+      "node": 9330,
+      "edge": 9052
+    },
+    "44b6_9be80b04": {
+      "node": 26198,
+      "edge": 25135
+    },
+    "44b6_a21120c2": {
+      "node": 21997,
+      "edge": 21293
+    },
+    "44b6_d29c9ab2": {
+      "node": 36474,
+      "edge": 35618
+    },
+    "44b6_d78e09d9": {
+      "node": 23644,
+      "edge": 22810
+    },
+    "44b6_db3c847b": {
+      "node": 15619,
+      "edge": 15066
+    },
+    "44b6_e31261b4": {
+      "node": 67338,
+      "edge": 64890
+    },
+    "44b6_eb2880fc": {
+      "node": 37400,
+      "edge": 36007
+    },
+    "44b6_f28707c6": {
+      "node": 21734,
+      "edge": 20958
+    },
+    "6bba_085bf656": {
+      "node": 8300,
+      "edge": 8029
+    },
+    "6bba_09961292": {
+      "node": 29753,
+      "edge": 28917
+    },
+    "6bba_12665c0e": {
+      "node": 8088,
+      "edge": 7732
+    },
+    "6bba_1d0d8384": {
+      "node": 17326,
+      "edge": 16621
+    },
+    "6bba_283bf9f1": {
+      "node": 21703,
+      "edge": 20850
+    },
+    "6bba_372c8cb8": {
+      "node": 6619,
+      "edge": 6458
+    },
+    "6bba_3db54e20": {
+      "node": 23331,
+      "edge": 22115
+    },
+    "6bba_4aa14c89": {
+      "node": 7195,
+      "edge": 6920
+    },
+    "6bba_61dd1e0d": {
+      "node": 9629,
+      "edge": 9317
+    },
+    "6bba_6ca87370": {
+      "node": 6371,
+      "edge": 6111
+    },
+    "6bba_705ec2c9": {
+      "node": 5929,
+      "edge": 5657
+    },
+    "6bba_767a1e17": {
+      "node": 48733,
+      "edge": 46001
+    },
+    "6bba_8b7818bf": {
+      "node": 5687,
+      "edge": 5516
+    },
+    "6bba_9e23430b": {
+      "node": 7497,
+      "edge": 7217
+    },
+    "6bba_a5e926bb": {
+      "node": 7886,
+      "edge": 7446
+    },
+    "6bba_ab78413d": {
+      "node": 13699,
+      "edge": 13031
+    },
+    "6bba_b204cac7": {
+      "node": 5411,
+      "edge": 5267
+    },
+    "6bba_c328f2fd": {
+      "node": 31330,
+      "edge": 30399
+    },
+    "6bba_d2b9fc0c": {
+      "node": 18855,
+      "edge": 18211
+    },
+    "6bba_d82a4fc6": {
+      "node": 28985,
+      "edge": 28118
+    },
+    "6bba_ed9377fd": {
+      "node": 4344,
+      "edge": 4223
+    },
+    "6bba_f17befbc": {
+      "node": 26258,
+      "edge": 25073
+    },
+    "6bba_fbc898dc": {
+      "node": 4997,
+      "edge": 4856
+    },
+    "6bba_fc5f39dc": {
+      "node": 17791,
+      "edge": 17214
+    }
+  },
+  "csv_modified": false,
+  "no_new_compute_launched": true,
+  "local_monitor_active": false,
+  "next_action": "Preserve the running candidate. Audit/fix control coordinate export using recovered predictions, then evaluate without repeating GPU inference. Adapt persistent stage/checkpoint resume before paid compute."
+}
