@@ -1,5 +1,7 @@
 # Ejecución local y Kaggle CPU
 
+**Actualización al terminar E013:** el entrenamiento original completó los 6.000 pasos, pero el candidato obtuvo 0,314681 frente a 0,909257 del control. Se suspende repetir esa preparación o entrenamiento sin cambios; se reutilizará el caché original para rediseñar la asociación. CPU Image v4 terminó y el lote local anterior dejó seis videos verificados. El resto de esta página documenta la implementación y sus avances anteriores. [Resultado y siguiente experimento](E013_RESULTADO.es.md).
+
 Implementación del 15 de septiembre de 2026. El entorno aislado `C:\dev\biohub\.venv` tiene **PyTorch 2.5.1+cu121** y ejecuta operaciones en la RTX 3050 con el driver existente. No se modificó RSNA ni el driver. Se eligió la distribución oficial CUDA 12.1 y se comprobó su funcionamiento en este equipo. [Distribuciones oficiales de PyTorch](https://pytorch.org/get-started/previous-versions/), [compatibilidad de CUDA](https://docs.nvidia.com/deploy/cuda-compatibility/minor-version-compatibility.html).
 
 ## Comprobaciones completadas

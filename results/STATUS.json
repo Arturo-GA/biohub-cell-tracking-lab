@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E013_control_verified_two_real_local_feature_videos_complete_local_selector_not_yet_trained",
+  "quality_status": "E013_completed_rejected_against_paired_control; reuse_original_features_for_redesign",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -852,11 +852,11 @@
     "implementation": "Dual frozen UNet visual features, learned local graph attention, explicit divisions and overlapping temporal MILP",
     "kernel": "jarturo/biohub-lab-learned-event-graph",
     "control_kernel": "jarturo/biohub-lab-event-graph-control",
-    "last_observed_status": "RUNNING",
+    "last_observed_status": "COMPLETE",
     "run_started": true,
     "local_wait_active": false,
     "leaderboard_submitted": false,
-    "results_available": false,
+    "results_available": true,
     "neural_training_implemented": true,
     "selector_fit_videos": 48,
     "selector_calibration_videos": 16,
@@ -867,13 +867,18 @@
     "documentation": "docs/EVENT_GRAPH.es.md",
     "payload_sha256": "8bf3bea546be650da1da603e28acced148640d4dec65b91ffb1e84567dc81cd6",
     "scope": "Conditional selector development; E012 evaluation cohort already informed design and public secondary detector trained on all train videos.",
-    "next_action": "Recover candidate outputs only when Arturo reports completion; local CUDA infrastructure and CPU preparation can proceed independently.",
+    "next_action": "Diagnose sparse supervision and assignment using original cached features; preserve control baseline",
     "version": 1,
     "kernel_id": 134501537,
-    "checked_at_utc": "2026-09-15T20:57:20.950380+00:00",
+    "checked_at_utc": "2026-09-15T22:02:52.806726+00:00",
     "launched_at_utc": "2026-09-15T14:35:11.477816+00:00",
     "launch_receipt": "results/E013_launch.json",
-    "interruption_review": "results/E013_interruption_review.json"
+    "interruption_review": "results/E013_interruption_review.json",
+    "neural_training_completed": true,
+    "completed_receipt": "results/E013_completed_comparison.json",
+    "candidate_score": 0.31468136061128416,
+    "paired_control_score": 0.9092570108739322,
+    "decision": "do_not_submit_or_repeat_unchanged"
   },
   "E013-control": {
     "kernel": "jarturo/biohub-lab-event-graph-control",
@@ -903,7 +908,7 @@
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "cpu_batch_v3_complete_finite_local_job_running",
+    "status": "original_E013_completed_reuse_cache_before_further_preparation",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
@@ -925,11 +930,12 @@
       "evaluation": 48
     },
     "next_steps": [
-      "The finite local job finishes the current transfer, audits CPU batch v3, launches the reviewed next CPU batch once, processes four videos locally and audits their features; inspect its live state when Arturo asks for progress.",
-      "Continue missing detector/features locally in bounded video shards and reuse any verified original E013 outputs when reported.",
-      "Complete all 112 graph/feature sets, freeze them before supervision, prepare fit/calibration labels, and run the full 6000-step local training with resume.",
-      "Calibrate and score locally, solve/evaluate in Kaggle CPU, compare against the verified control score 0.9092570108739322 on the same 48-video development cohort.",
-      "Measure final CPU submission runtime separately before deciding on a new leaderboard submission."
+      "Preserve original checkpoints, source and frozen feature manifests; completed and audited.",
+      "Recover only required original graph/features with hash and disk checks; do not mix their indices with local regenerated graphs.",
+      "Use fixed fit/calibration data to diagnose competing-edge ranking and duplicate detections; keep unknown labels masked.",
+      "Design structured association training and calibrate on full calibration trajectories; evaluate assignment separately from learned scores.",
+      "Train the revised selector on the laptop and solve/evaluate using Kaggle CPU. No paid compute, Colab or new Kaggle GPU runs.",
+      "Compare the frozen revised experiment with the same control before deciding on a leaderboard submission."
     ],
     "implementation_documentation": "docs/LOCAL_EXECUTION.es.md",
     "cpu_workflow_launcher_enforces_policy": true,
@@ -938,7 +944,7 @@
     "environment_receipt": "results/LOCAL_ENVIRONMENT.json",
     "local_training_root": "outputs/local_event_graph",
     "evaluation_graphs_imported_and_verified": 48,
-    "complete_real_feature_videos_local": 2,
+    "complete_real_feature_videos_local": 6,
     "first_cpu_preparation_launched": true,
     "control_predictions_upload_permission": "explicitly_authorized_and_uploaded",
     "control_dataset": "jarturo/biohub-lab-control-cpu-cache",
@@ -950,15 +956,16 @@
     "cpu_preparation_batching": true,
     "cpu_batch_max_videos": 4,
     "local_batch_job": "results/LOCAL_BATCH_03_job.json",
-    "local_batch_live_state": "outputs/pipeline_v3/state.json"
+    "local_batch_live_state": "outputs/pipeline_v3/state.json",
+    "original_remote_feature_videos": 112
   },
   "CPU_IMAGE_PREPARE": {
     "kernel": "jarturo/biohub-lab-cpu-image-preparation",
     "version": 4,
     "launch_receipt": "results/CPU_IMAGE_PREPARE_v4_launch.json",
     "launch_accepted": true,
-    "last_observed_status": null,
-    "status_not_polled": true,
+    "last_observed_status": "COMPLETE",
+    "status_not_polled": false,
     "offset": 6,
     "gpu": false,
     "tpu": false,
@@ -966,8 +973,8 @@
     "local_wait_active": false,
     "kernel_id": 134523205,
     "launched_at_utc": "2026-09-15T21:14:44.469673+00:00",
-    "last_completed_version": 3,
-    "completed_receipt": "results/CPU_IMAGE_PREPARE_v3_completed.json",
+    "last_completed_version": 4,
+    "completed_receipt": "results/CPU_IMAGE_PREPARE_v4_observed.json",
     "requested_count": 4,
     "requested_videos": [
       "44b6_66f9292d",
@@ -976,9 +983,13 @@
       "44b6_7e557709"
     ],
     "batch_source_budget_bytes": 4294967296,
-    "results_available": false,
+    "results_available": true,
     "recovery_in_progress": false,
-    "last_completed_observed_receipt": "results/CPU_IMAGE_PREPARE_v3_observed.json"
+    "last_completed_observed_receipt": "results/CPU_IMAGE_PREPARE_v4_observed.json",
+    "checked_at_utc": "2026-09-15T22:02:40.378042+00:00",
+    "next_action": "Hold additional batches; original E013 features already exist",
+    "last_fully_downloaded_version": 3,
+    "last_fully_downloaded_receipt": "results/CPU_IMAGE_PREPARE_v3_completed.json"
   },
   "CPU_CONTROL_RECOVERY": {
     "kernel": "jarturo/biohub-lab-cpu-control-recovery",
@@ -1016,20 +1027,21 @@
     "video": "44b6_1d530831",
     "nodes": 92396,
     "receipt": "results/LOCAL_REAL_VIDEO_02.json",
-    "complete_feature_videos": 2,
+    "complete_feature_videos": 6,
     "required_feature_videos": 112,
     "training_started": false,
     "completed_receipts": [
       "results/LOCAL_REAL_VIDEO_PREPARATION.json",
-      "results/LOCAL_REAL_VIDEO_02.json"
+      "results/LOCAL_REAL_VIDEO_02.json",
+      "results/LOCAL_REAL_BATCH_03.json"
     ]
   },
   "LOCAL_BATCH_03": {
-    "recorded_at_utc": "2026-09-15T21:16:41.312484+00:00",
-    "process_alive": true,
+    "recorded_at_utc": "2026-09-15T22:12:03.151388+00:00",
+    "process_alive": false,
     "pid": 24184,
     "process_created": 1789506523.9544976,
-    "status_at_snapshot": "processing_local_videos",
+    "status_at_snapshot": "complete",
     "live_state": "outputs/pipeline_v3/state.json",
     "video_progress": "outputs/cpu_prepare_v3/local_run.json",
     "logs": [
@@ -1049,7 +1061,8 @@
     "finite_job": true,
     "kaggle_status_polling": false,
     "training_started": false,
-    "regression_tests_passed": 3
+    "regression_tests_passed": 3,
+    "completed_at_utc": "2026-09-15T21:38:52.294682+00:00"
   },
   "CPU_IMAGE_PREPARE_NEXT": {
     "offset": 6,
@@ -1075,6 +1088,8 @@
       "is_private": true,
       "monitoring": false,
       "leaderboard_submitted": false
-    }
+    },
+    "last_observed_status": "COMPLETE",
+    "next_launch_planned": false
   }
 }

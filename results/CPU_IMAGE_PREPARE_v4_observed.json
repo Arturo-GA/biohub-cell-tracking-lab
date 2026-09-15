@@ -1,0 +1,34 @@
+{
+  "kernel": "jarturo/biohub-lab-cpu-image-preparation",
+  "status": "COMPLETE",
+  "checked_at_utc": "2026-09-15T22:02:40.378042+00:00",
+  "version": 4,
+  "batch": {
+    "status": "complete",
+    "offset": 6,
+    "requested_count": 4,
+    "videos": [
+      "44b6_66f9292d",
+      "44b6_71a4179f",
+      "44b6_74d0c52e",
+      "44b6_7e557709"
+    ],
+    "completed": [
+      "44b6_66f9292d",
+      "44b6_71a4179f",
+      "44b6_74d0c52e",
+      "44b6_7e557709"
+    ],
+    "next_offset": 10,
+    "source_bytes": 1996928014,
+    "budget_bytes": 4294967296,
+    "annotations_read": false,
+    "accelerator": "none",
+    "training_started": false,
+    "scope": "Contiguous input batch; the full fixed 48/16/48 experiment is unchanged"
+  },
+  "large_artifacts_downloaded": false,
+  "reason": "Original E013 already generated all 112 feature sets; avoid duplicate preparation",
+  "launch_receipt": "results/CPU_IMAGE_PREPARE_v4_launch.json",
+  "new_run_launched": false
+}

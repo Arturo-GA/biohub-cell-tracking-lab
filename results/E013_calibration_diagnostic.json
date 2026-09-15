@@ -1,0 +1,20 @@
+{
+  "edge": {
+    "auroc": 0.6491889758957067,
+    "positive_fraction": 0.9127632278857286,
+    "positive_mean_logit": 2.6540775299072266,
+    "negative_mean_logit": 2.3895761966705322
+  },
+  "division": {
+    "auroc": 0.30923477990642645,
+    "positive_fraction": 0.0017378116212202598,
+    "positive_mean_logit": -1.0003082752227783,
+    "negative_mean_logit": -0.6087680459022522
+  },
+  "scope": "Known candidate correspondences on the fixed 16 calibration videos; not independent biological events",
+  "edge_threshold_accepts_all_known_candidates": true,
+  "division_threshold_tp": 2,
+  "division_threshold_fp": 631,
+  "division_threshold_fn": 53,
+  "conclusion": "Weak link discrimination and reversed division ranking; root cause not yet isolated"
+}

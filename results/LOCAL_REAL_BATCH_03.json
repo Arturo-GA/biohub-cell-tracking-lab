@@ -1,0 +1,119 @@
+{
+  "status": "complete",
+  "verified_at_utc": "2026-09-15T21:38:51.904051+00:00",
+  "videos": [
+    {
+      "video": "44b6_2a2eff9f",
+      "nodes": 107598,
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "stages": {
+        "gaussian": 5318,
+        "cellect": 61616,
+        "harmonic": 46725
+      },
+      "files": {
+        "graph.npz": "fa9041cb6888b3b4c4f870097c7c14c9202f5cf18a91442c19895fd98a1faf1f",
+        "features.npz": "9db9a9a714627b476d0562d50a8452b4c7e46f791f421a983364984ae41127e8"
+      },
+      "seconds": 351.57800000000134,
+      "torch_peak_allocated_bytes": 1421175808,
+      "torch_peak_reserved_bytes": 1612709888,
+      "process_peak_rss_bytes": 5449920512,
+      "measurement_scope": "Current process only; prior completed stages excluded",
+      "reused_stages": []
+    },
+    {
+      "video": "44b6_3a861e03",
+      "nodes": 80364,
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "stages": {
+        "gaussian": 5137,
+        "cellect": 44464,
+        "harmonic": 38809
+      },
+      "files": {
+        "graph.npz": "a7bb63d80b6e0202ae5ac99321624650cbf489c4e66685d5ab52dd7c1a237830",
+        "features.npz": "bb090e60c716a87c2549880e81790c1a72b9f77d55835853a2f24094338bad0f"
+      },
+      "seconds": 348.109000000004,
+      "torch_peak_allocated_bytes": 1421175808,
+      "torch_peak_reserved_bytes": 1612709888,
+      "process_peak_rss_bytes": 5515960320,
+      "measurement_scope": "Current process only; prior completed stages excluded",
+      "reused_stages": []
+    },
+    {
+      "video": "44b6_3bb3690f",
+      "nodes": 77089,
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "stages": {
+        "gaussian": 5112,
+        "cellect": 56776,
+        "harmonic": 19575
+      },
+      "files": {
+        "graph.npz": "3d69d5fc698921a8a163303cc88675bec42030726f2a8374435ed6dba8330b79",
+        "features.npz": "699964679610b0cd3cbef00054954638a8dbddb1a8cea484f8f8b1bae0a964b7"
+      },
+      "seconds": 350.5149999999994,
+      "torch_peak_allocated_bytes": 1421175808,
+      "torch_peak_reserved_bytes": 1612709888,
+      "process_peak_rss_bytes": 5513551872,
+      "measurement_scope": "Current process only; prior completed stages excluded",
+      "reused_stages": []
+    },
+    {
+      "video": "44b6_668e0cc7",
+      "nodes": 74025,
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "stages": {
+        "gaussian": 5385,
+        "cellect": 37902,
+        "harmonic": 36515
+      },
+      "files": {
+        "graph.npz": "628719d3a707f0c78bf057edf75ea6ce32273e39d3b1be9d8ba3fdd9633cafba",
+        "features.npz": "5164579fb7fc72b0a62d8b706f06bbf48e2e3c52781ecfd068d80ecc87c88052"
+      },
+      "seconds": 348.78199999999924,
+      "torch_peak_allocated_bytes": 1421175808,
+      "torch_peak_reserved_bytes": 1612709888,
+      "process_peak_rss_bytes": 5513551872,
+      "measurement_scope": "Current process only; prior completed stages excluded",
+      "reused_stages": []
+    }
+  ],
+  "verification": {
+    "generation_and_stage_hashes": true,
+    "image_identity": true,
+    "feature_shape_dtype_and_finiteness": true,
+    "sequential_feature_concatenation_exact": true,
+    "complete_neighborhoods_recomputed": true,
+    "graph_coordinate_bounds": true,
+    "primary_centers_preserved": true,
+    "retention_log_complete": true
+  },
+  "annotations_read": false,
+  "training_started": false,
+  "scope": "Real detector and feature preparation on the fixed input partition; not a candidate score."
+}

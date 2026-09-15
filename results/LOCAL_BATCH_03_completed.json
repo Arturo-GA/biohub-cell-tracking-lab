@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-09-15T21:38:52.294682+00:00",
+  "verified_video_count": 4,
+  "complete_local_feature_videos": 6,
+  "receipt": "results/LOCAL_REAL_BATCH_03.json",
+  "training_started": false
+}
