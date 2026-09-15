@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-15",
   "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
   "github_private": true,
   "external_leaderboard_reference": {
@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E012_primary_harmonic_detection_dag_coverage_pending",
+  "quality_status": "E012_combined_coverage_passed_event_selection_untrained",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -221,8 +221,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": true,
-  "active_experiment": "E012",
+  "next_experiment_started": false,
+  "active_experiment": null,
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -306,7 +306,7 @@
       }
     }
   },
-  "next_research_direction": "Review E012 outputs when Arturo reports completion. Verify primary center preservation, all three graph arms, paired coverage and group denominators. No active monitor, automatic training or submission.",
+  "next_research_direction": "Develop learned event and continuation scoring with consistent global graph selection and separate selector fitting/calibration/evaluation. Measure official final-CSV performance against Harmonic before a new submission. No new notebook or training launched in this review.",
   "E008": {
     "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-cellect-detector",
@@ -405,9 +405,7 @@
       "official_graph_matching_rerun_locally": false
     }
   },
-  "active_experiments": [
-    "E012"
-  ],
+  "active_experiments": [],
   "detector_test_evidence": {
     "full_suite_passed": 54,
     "detector_regression_tests": 10,
@@ -580,12 +578,12 @@
     "kernel": "jarturo/biohub-lab-harmonic-detection-dag",
     "version": 1,
     "payload_sha256": "fd30f4e2dd1a5eec78ab710f0d653bbc527beb46a609f930c9aecc4e45bec749",
-    "last_observed_status": "QUEUED",
-    "checked_at_utc": "2026-09-15T03:09:09.637771+00:00",
+    "last_observed_status": "COMPLETE",
+    "checked_at_utc": "2026-09-15T13:47:42.592192+00:00",
     "run_started": true,
     "local_wait_active": false,
     "leaderboard_submitted": false,
-    "results_available": false,
+    "results_available": true,
     "neural_training": false,
     "development_videos": 48,
     "implementation": "Primary dual-seed Harmonic centers before associations, protected-primary union with E011 proposals, three-arm frozen DAG coverage audit",
@@ -603,6 +601,247 @@
     "real_detector_smoke": "results/E012_detector_smoke.json",
     "documentation": "docs/HARMONIC_DAG.es.md",
     "scope": "Paired development coverage in the same two acquisition groups; public secondary detector trained on these videos. Not independent validation or official score.",
-    "next_action": "Review E012 outputs when Arturo reports completion. Verify primary center preservation, all three graph arms, paired coverage and group denominators. No active monitor, automatic training or submission."
+    "next_action": "Develop learned event and continuation scoring with consistent global graph selection and separate selector fitting/calibration/evaluation. Measure official final-CSV performance against Harmonic before a new submission. No new notebook or training launched in this review.",
+    "receipt": "results/E012_completed.json",
+    "coverage_audit": "results/E012_coverage_audit.json",
+    "decision": "proceed_to_event_scoring_research_not_ready_for_submission",
+    "result": {
+      "arms": {
+        "e011": {
+          "totals": {
+            "events": 33,
+            "centers_covered": 18,
+            "pairs_covered": 17,
+            "paths_covered": 16,
+            "full_context_events": 25,
+            "annotated_paths_covered": 11
+          },
+          "rates": {
+            "centers_covered": 0.5454545454545454,
+            "pairs_covered": 0.5151515151515151,
+            "paths_covered": 0.48484848484848486,
+            "annotated_paths_covered": 0.44
+          },
+          "groups": {
+            "44b6": {
+              "counts": {
+                "events": 8,
+                "centers_covered": 5,
+                "pairs_covered": 5,
+                "paths_covered": 5,
+                "full_context_events": 7,
+                "annotated_paths_covered": 5
+              },
+              "rates": {
+                "centers_covered": 0.625,
+                "pairs_covered": 0.625,
+                "paths_covered": 0.625,
+                "annotated_paths_covered": 0.7142857142857143
+              }
+            },
+            "6bba": {
+              "counts": {
+                "events": 25,
+                "centers_covered": 13,
+                "pairs_covered": 12,
+                "paths_covered": 11,
+                "full_context_events": 18,
+                "annotated_paths_covered": 6
+              },
+              "rates": {
+                "centers_covered": 0.52,
+                "pairs_covered": 0.48,
+                "paths_covered": 0.44,
+                "annotated_paths_covered": 0.3333333333333333
+              }
+            }
+          },
+          "coverage_gate_passed": false
+        },
+        "harmonic": {
+          "totals": {
+            "events": 33,
+            "centers_covered": 31,
+            "pairs_covered": 31,
+            "paths_covered": 31,
+            "full_context_events": 25,
+            "annotated_paths_covered": 21
+          },
+          "rates": {
+            "centers_covered": 0.9393939393939394,
+            "pairs_covered": 0.9393939393939394,
+            "paths_covered": 0.9393939393939394,
+            "annotated_paths_covered": 0.84
+          },
+          "groups": {
+            "44b6": {
+              "counts": {
+                "events": 8,
+                "centers_covered": 7,
+                "pairs_covered": 7,
+                "paths_covered": 7,
+                "full_context_events": 7,
+                "annotated_paths_covered": 4
+              },
+              "rates": {
+                "centers_covered": 0.875,
+                "pairs_covered": 0.875,
+                "paths_covered": 0.875,
+                "annotated_paths_covered": 0.5714285714285714
+              }
+            },
+            "6bba": {
+              "counts": {
+                "events": 25,
+                "centers_covered": 24,
+                "pairs_covered": 24,
+                "paths_covered": 24,
+                "full_context_events": 18,
+                "annotated_paths_covered": 17
+              },
+              "rates": {
+                "centers_covered": 0.96,
+                "pairs_covered": 0.96,
+                "paths_covered": 0.96,
+                "annotated_paths_covered": 0.9444444444444444
+              }
+            }
+          },
+          "coverage_gate_passed": false
+        },
+        "combined": {
+          "totals": {
+            "events": 33,
+            "centers_covered": 33,
+            "pairs_covered": 33,
+            "paths_covered": 33,
+            "full_context_events": 25,
+            "annotated_paths_covered": 24
+          },
+          "rates": {
+            "centers_covered": 1.0,
+            "pairs_covered": 1.0,
+            "paths_covered": 1.0,
+            "annotated_paths_covered": 0.96
+          },
+          "groups": {
+            "44b6": {
+              "counts": {
+                "events": 8,
+                "centers_covered": 8,
+                "pairs_covered": 8,
+                "paths_covered": 8,
+                "full_context_events": 7,
+                "annotated_paths_covered": 7
+              },
+              "rates": {
+                "centers_covered": 1.0,
+                "pairs_covered": 1.0,
+                "paths_covered": 1.0,
+                "annotated_paths_covered": 1.0
+              }
+            },
+            "6bba": {
+              "counts": {
+                "events": 25,
+                "centers_covered": 25,
+                "pairs_covered": 25,
+                "paths_covered": 25,
+                "full_context_events": 18,
+                "annotated_paths_covered": 17
+              },
+              "rates": {
+                "centers_covered": 1.0,
+                "pairs_covered": 1.0,
+                "paths_covered": 1.0,
+                "annotated_paths_covered": 0.9444444444444444
+              }
+            }
+          },
+          "coverage_gate_passed": true
+        }
+      },
+      "delta_vs_e011": {
+        "events": 0,
+        "centers_covered": 15,
+        "pairs_covered": 16,
+        "paths_covered": 17,
+        "full_context_events": 0,
+        "annotated_paths_covered": 13
+      },
+      "seconds": 5179.814477037,
+      "paired_coverage_transitions": {
+        "e011": {
+          "centers": {
+            "retained": 18,
+            "gained": 15
+          },
+          "pairs": {
+            "retained": 17,
+            "gained": 16
+          },
+          "paths": {
+            "retained": 16,
+            "gained": 17
+          },
+          "annotated_paths": {
+            "retained": 11,
+            "gained": 13,
+            "still_missing": 1
+          }
+        },
+        "harmonic": {
+          "centers": {
+            "retained": 31,
+            "gained": 2
+          },
+          "pairs": {
+            "retained": 31,
+            "gained": 2
+          },
+          "paths": {
+            "retained": 31,
+            "gained": 2
+          },
+          "annotated_paths": {
+            "retained": 21,
+            "gained": 3,
+            "still_missing": 1
+          }
+        }
+      },
+      "remaining_full_context_failure": {
+        "missing_centers_in_annotated_temporal_context": 1
+      }
+    },
+    "verification": {
+      "source_payload": true,
+      "source_and_manifest_hashes": true,
+      "actual_detector_source_reproduced": true,
+      "checkpoint_and_config_hashes": true,
+      "runtime_integrity_receipt": true,
+      "development_selection": true,
+      "cached_E011_files": 240,
+      "new_frozen_files": 432,
+      "graph_reconstruction_exact_videos": {
+        "harmonic": 48,
+        "combined": 48
+      },
+      "graph_equivalent_neighbor_ties_videos": {
+        "harmonic": 0,
+        "combined": 0
+      },
+      "all_primary_centers_preserved": true,
+      "pair_masks": true,
+      "sampled_paths": true,
+      "ground_truth_cache_checksums": true,
+      "coverage_counts_and_witnesses_recomputed_all_arms": true,
+      "E011_previous_result_reproduced": true,
+      "coverage_gates_recomputed": true,
+      "full_image_detector_inference_rerun_locally": false
+    },
+    "primary_centers_preserved_count": 1237567,
+    "added_auxiliary_centers": 1462003,
+    "coverage_verified_at_utc": "2026-09-15T13:55:18.869613+00:00"
   }
 }

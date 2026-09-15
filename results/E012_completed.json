@@ -1,0 +1,1553 @@
+{
+  "experiment": "E012",
+  "status": "complete",
+  "config": {
+    "merge_um": 1.2,
+    "mother_radius_um": 20.0,
+    "max_daughters": 16,
+    "sister_min_um": 1.5,
+    "sister_max_um": 20.0,
+    "midpoint_max_um": 10.0,
+    "continuation_um": 10.0,
+    "max_continuations": 8,
+    "horizon": 4,
+    "sample_queries": 128
+  },
+  "gate": {
+    "min_events": 20,
+    "min_full_context_events": 20,
+    "min_events_per_group": 5,
+    "min_full_context_per_group": 5,
+    "min_pair_coverage": 0.9,
+    "min_path_coverage": 0.9,
+    "min_annotated_path_coverage": 0.85,
+    "match_um": 7.0
+  },
+  "detector_config": {
+    "det_threshold": 0.965,
+    "det_tta": true,
+    "pool_kernel_um": 3.0,
+    "secondary_detection_weight": 0.8,
+    "minimum_candidate_retention": 0.9,
+    "edge_feature_tta": false,
+    "secondary_edge_feature_tta": false
+  },
+  "neural_training": false,
+  "leaderboard_submitted": false,
+  "annotations_used_for_generation": false,
+  "harmonic_associations_used": false,
+  "scope": "Paired coverage audit on the same 48 development videos as E011. Same two acquisition groups; public secondary detector saw these videos during training. Not independent validation or official score.",
+  "datasets": [
+    "44b6_0c582fdc",
+    "44b6_1574802b",
+    "44b6_18ced818",
+    "44b6_24264f12",
+    "44b6_267148e4",
+    "44b6_33b596bf",
+    "44b6_551a5dba",
+    "44b6_706092f0",
+    "44b6_7a302da0",
+    "44b6_87bba6c4",
+    "44b6_8cc6506c",
+    "44b6_8f5ab931",
+    "44b6_8f9ecab4",
+    "44b6_90724892",
+    "44b6_95029e92",
+    "44b6_996155de",
+    "44b6_9be80b04",
+    "44b6_a21120c2",
+    "44b6_d29c9ab2",
+    "44b6_d78e09d9",
+    "44b6_db3c847b",
+    "44b6_e31261b4",
+    "44b6_eb2880fc",
+    "44b6_f28707c6",
+    "6bba_085bf656",
+    "6bba_09961292",
+    "6bba_12665c0e",
+    "6bba_1d0d8384",
+    "6bba_283bf9f1",
+    "6bba_372c8cb8",
+    "6bba_3db54e20",
+    "6bba_4aa14c89",
+    "6bba_61dd1e0d",
+    "6bba_6ca87370",
+    "6bba_705ec2c9",
+    "6bba_767a1e17",
+    "6bba_8b7818bf",
+    "6bba_9e23430b",
+    "6bba_a5e926bb",
+    "6bba_ab78413d",
+    "6bba_b204cac7",
+    "6bba_c328f2fd",
+    "6bba_d2b9fc0c",
+    "6bba_d82a4fc6",
+    "6bba_ed9377fd",
+    "6bba_f17befbc",
+    "6bba_fbc898dc",
+    "6bba_fc5f39dc"
+  ],
+  "development_manifest_sha256": "2edb8d005c29998929b7fd2b365afbfa48760339b96783084cfa7666924409e2",
+  "cached_input_manifest_sha256": "99c77e1910920e6b735abb565c7bac9acfee13575d0ee1cf1706526a7bcd2107",
+  "runtime": {
+    "primary": "/kaggle/working/tracking_repo/weights/unet_transformer/split_0/edge_predictor_best.pth",
+    "secondary": "/kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth",
+    "module": "/kaggle/working/harmonic_dag_experiment/image_detector.py",
+    "checkpoint_sha256": {
+      "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+      "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f"
+    },
+    "detector_source_sha256": "53d4569a57d95edfe35f2605d38ed26a46c7b5ddebbe25523410a138b003f070",
+    "patched_predictor_sha256": "ddca518b0e838b2123f30cfcb31819fb159b4e68fc20ef6b3a42003cc2d528ed",
+    "trainer_sha256": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+    "config_sha256": {
+      "primary": "e9b4e396c58081bca08adf8275bd0bd1c2d3fd6eb091a1912a5116cb6de7b50a",
+      "secondary": "e9b4e396c58081bca08adf8275bd0bd1c2d3fd6eb091a1912a5116cb6de7b50a"
+    }
+  },
+  "source_hashes": {
+    "src/biohub_lab/detection_dag.py": "9d5840045a5e39edc36c7d8c4987b0f6275392bd50948686bae1fc508f77fc47",
+    "src/biohub_lab/dag_coverage.py": "f7a6383e70a48caa131de3d296d77c782a791485b51ef2adebd8e69780e879de",
+    "src/biohub_lab/harmonic_centers.py": "2c2cfdee12594dd7049da27a3bd275ae73aecae5dd74693a230f4ef0f8fa394f",
+    "scripts/harmonic_dag_runner.py": "c7701025a88193010204f8c9116e5972e0db1ebb988d5161c455ca73d2c44098"
+  },
+  "generation_seconds": 5168.295228436,
+  "frozen_inputs_sha256": "1f059313ec9f27739abf6059c10cfdece548079de5189135d52000c301a955a4",
+  "seconds": 5179.814477037,
+  "arms": {
+    "e011": {
+      "gate": {
+        "min_events": 20,
+        "min_full_context_events": 20,
+        "min_events_per_group": 5,
+        "min_full_context_per_group": 5,
+        "min_pair_coverage": 0.9,
+        "min_path_coverage": 0.9,
+        "min_annotated_path_coverage": 0.85,
+        "match_um": 7.0
+      },
+      "totals": {
+        "events": 33,
+        "centers_covered": 18,
+        "pairs_covered": 17,
+        "paths_covered": 16,
+        "full_context_events": 25,
+        "annotated_paths_covered": 11
+      },
+      "rates": {
+        "centers_covered": 0.5454545454545454,
+        "pairs_covered": 0.5151515151515151,
+        "paths_covered": 0.48484848484848486,
+        "annotated_paths_covered": 0.44
+      },
+      "groups": {
+        "44b6": {
+          "counts": {
+            "events": 8,
+            "centers_covered": 5,
+            "pairs_covered": 5,
+            "paths_covered": 5,
+            "full_context_events": 7,
+            "annotated_paths_covered": 5
+          },
+          "rates": {
+            "centers_covered": 0.625,
+            "pairs_covered": 0.625,
+            "paths_covered": 0.625,
+            "annotated_paths_covered": 0.7142857142857143
+          }
+        },
+        "6bba": {
+          "counts": {
+            "events": 25,
+            "centers_covered": 13,
+            "pairs_covered": 12,
+            "paths_covered": 11,
+            "full_context_events": 18,
+            "annotated_paths_covered": 6
+          },
+          "rates": {
+            "centers_covered": 0.52,
+            "pairs_covered": 0.48,
+            "paths_covered": 0.44,
+            "annotated_paths_covered": 0.3333333333333333
+          }
+        }
+      },
+      "coverage_gate_passed": false,
+      "reasons": [
+        "below_pairs_covered_in_44b6",
+        "below_paths_covered_in_44b6",
+        "below_annotated_paths_covered_in_44b6",
+        "below_pairs_covered_in_6bba",
+        "below_paths_covered_in_6bba",
+        "below_annotated_paths_covered_in_6bba",
+        "below_pairs_covered",
+        "below_paths_covered",
+        "below_annotated_paths_covered"
+      ],
+      "decision": "fix_coverage_or_collect_more_development_evidence_before_training",
+      "accuracy_demonstrated": false,
+      "training_started": false,
+      "leaderboard_submitted": false,
+      "scope": "Coverage ceilings with annotation-conditioned witnesses, not prediction accuracy. Passing is necessary, not sufficient for training or submission.",
+      "per_video": {
+        "44b6_0c582fdc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_1574802b": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_18ced818": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_24264f12": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_267148e4": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_33b596bf": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_551a5dba": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_706092f0": {
+          "events": 1,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 1,
+          "annotated_paths_covered": 0
+        },
+        "44b6_7a302da0": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_87bba6c4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8cc6506c": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8f5ab931": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8f9ecab4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_90724892": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_95029e92": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_996155de": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_9be80b04": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_a21120c2": {
+          "events": 2,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 1,
+          "annotated_paths_covered": 0
+        },
+        "44b6_d29c9ab2": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_d78e09d9": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_db3c847b": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_e31261b4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_eb2880fc": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_f28707c6": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_085bf656": {
+          "events": 1,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_09961292": {
+          "events": 4,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 1
+        },
+        "6bba_12665c0e": {
+          "events": 3,
+          "centers_covered": 3,
+          "pairs_covered": 3,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 1
+        },
+        "6bba_1d0d8384": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_283bf9f1": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_372c8cb8": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_3db54e20": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_4aa14c89": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_61dd1e0d": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_6ca87370": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_705ec2c9": {
+          "events": 1,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 1,
+          "annotated_paths_covered": 0
+        },
+        "6bba_767a1e17": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_8b7818bf": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_9e23430b": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_a5e926bb": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_ab78413d": {
+          "events": 2,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 2,
+          "annotated_paths_covered": 0
+        },
+        "6bba_b204cac7": {
+          "events": 2,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 2,
+          "annotated_paths_covered": 0
+        },
+        "6bba_c328f2fd": {
+          "events": 2,
+          "centers_covered": 1,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 2,
+          "annotated_paths_covered": 0
+        },
+        "6bba_d2b9fc0c": {
+          "events": 2,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 2,
+          "annotated_paths_covered": 0
+        },
+        "6bba_d82a4fc6": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_ed9377fd": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_f17befbc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_fbc898dc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_fc5f39dc": {
+          "events": 2,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 2,
+          "annotated_paths_covered": 1
+        }
+      }
+    },
+    "harmonic": {
+      "gate": {
+        "min_events": 20,
+        "min_full_context_events": 20,
+        "min_events_per_group": 5,
+        "min_full_context_per_group": 5,
+        "min_pair_coverage": 0.9,
+        "min_path_coverage": 0.9,
+        "min_annotated_path_coverage": 0.85,
+        "match_um": 7.0
+      },
+      "totals": {
+        "events": 33,
+        "centers_covered": 31,
+        "pairs_covered": 31,
+        "paths_covered": 31,
+        "full_context_events": 25,
+        "annotated_paths_covered": 21
+      },
+      "rates": {
+        "centers_covered": 0.9393939393939394,
+        "pairs_covered": 0.9393939393939394,
+        "paths_covered": 0.9393939393939394,
+        "annotated_paths_covered": 0.84
+      },
+      "groups": {
+        "44b6": {
+          "counts": {
+            "events": 8,
+            "centers_covered": 7,
+            "pairs_covered": 7,
+            "paths_covered": 7,
+            "full_context_events": 7,
+            "annotated_paths_covered": 4
+          },
+          "rates": {
+            "centers_covered": 0.875,
+            "pairs_covered": 0.875,
+            "paths_covered": 0.875,
+            "annotated_paths_covered": 0.5714285714285714
+          }
+        },
+        "6bba": {
+          "counts": {
+            "events": 25,
+            "centers_covered": 24,
+            "pairs_covered": 24,
+            "paths_covered": 24,
+            "full_context_events": 18,
+            "annotated_paths_covered": 17
+          },
+          "rates": {
+            "centers_covered": 0.96,
+            "pairs_covered": 0.96,
+            "paths_covered": 0.96,
+            "annotated_paths_covered": 0.9444444444444444
+          }
+        }
+      },
+      "coverage_gate_passed": false,
+      "reasons": [
+        "below_pairs_covered_in_44b6",
+        "below_paths_covered_in_44b6",
+        "below_annotated_paths_covered_in_44b6",
+        "below_annotated_paths_covered"
+      ],
+      "decision": "fix_coverage_or_collect_more_development_evidence_before_training",
+      "accuracy_demonstrated": false,
+      "training_started": false,
+      "leaderboard_submitted": false,
+      "scope": "Coverage ceilings with annotation-conditioned witnesses, not prediction accuracy. Passing is necessary, not sufficient for training or submission.",
+      "per_video": {
+        "44b6_0c582fdc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_1574802b": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_18ced818": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_24264f12": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_267148e4": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_33b596bf": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_551a5dba": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_706092f0": {
+          "events": 1,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 1,
+          "annotated_paths_covered": 0
+        },
+        "44b6_7a302da0": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_87bba6c4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8cc6506c": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8f5ab931": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8f9ecab4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_90724892": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_95029e92": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_996155de": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_9be80b04": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 0
+        },
+        "44b6_a21120c2": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_d29c9ab2": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_d78e09d9": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_db3c847b": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_e31261b4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_eb2880fc": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 0
+        },
+        "44b6_f28707c6": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_085bf656": {
+          "events": 1,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_09961292": {
+          "events": 4,
+          "centers_covered": 4,
+          "pairs_covered": 4,
+          "paths_covered": 4,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_12665c0e": {
+          "events": 3,
+          "centers_covered": 3,
+          "pairs_covered": 3,
+          "paths_covered": 3,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_1d0d8384": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_283bf9f1": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_372c8cb8": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_3db54e20": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_4aa14c89": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_61dd1e0d": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_6ca87370": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_705ec2c9": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_767a1e17": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_8b7818bf": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_9e23430b": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_a5e926bb": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_ab78413d": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 1
+        },
+        "6bba_b204cac7": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_c328f2fd": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_d2b9fc0c": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_d82a4fc6": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_ed9377fd": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_f17befbc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_fbc898dc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_fc5f39dc": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        }
+      }
+    },
+    "combined": {
+      "gate": {
+        "min_events": 20,
+        "min_full_context_events": 20,
+        "min_events_per_group": 5,
+        "min_full_context_per_group": 5,
+        "min_pair_coverage": 0.9,
+        "min_path_coverage": 0.9,
+        "min_annotated_path_coverage": 0.85,
+        "match_um": 7.0
+      },
+      "totals": {
+        "events": 33,
+        "centers_covered": 33,
+        "pairs_covered": 33,
+        "paths_covered": 33,
+        "full_context_events": 25,
+        "annotated_paths_covered": 24
+      },
+      "rates": {
+        "centers_covered": 1.0,
+        "pairs_covered": 1.0,
+        "paths_covered": 1.0,
+        "annotated_paths_covered": 0.96
+      },
+      "groups": {
+        "44b6": {
+          "counts": {
+            "events": 8,
+            "centers_covered": 8,
+            "pairs_covered": 8,
+            "paths_covered": 8,
+            "full_context_events": 7,
+            "annotated_paths_covered": 7
+          },
+          "rates": {
+            "centers_covered": 1.0,
+            "pairs_covered": 1.0,
+            "paths_covered": 1.0,
+            "annotated_paths_covered": 1.0
+          }
+        },
+        "6bba": {
+          "counts": {
+            "events": 25,
+            "centers_covered": 25,
+            "pairs_covered": 25,
+            "paths_covered": 25,
+            "full_context_events": 18,
+            "annotated_paths_covered": 17
+          },
+          "rates": {
+            "centers_covered": 1.0,
+            "pairs_covered": 1.0,
+            "paths_covered": 1.0,
+            "annotated_paths_covered": 0.9444444444444444
+          }
+        }
+      },
+      "coverage_gate_passed": true,
+      "reasons": [],
+      "decision": "eligible_for_event_scoring_research",
+      "accuracy_demonstrated": false,
+      "training_started": false,
+      "leaderboard_submitted": false,
+      "scope": "Coverage ceilings with annotation-conditioned witnesses, not prediction accuracy. Passing is necessary, not sufficient for training or submission.",
+      "per_video": {
+        "44b6_0c582fdc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_1574802b": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_18ced818": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_24264f12": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_267148e4": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_33b596bf": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_551a5dba": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_706092f0": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_7a302da0": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_87bba6c4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8cc6506c": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8f5ab931": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_8f9ecab4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_90724892": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_95029e92": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_996155de": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_9be80b04": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_a21120c2": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_d29c9ab2": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_d78e09d9": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_db3c847b": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_e31261b4": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "44b6_eb2880fc": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "44b6_f28707c6": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_085bf656": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_09961292": {
+          "events": 4,
+          "centers_covered": 4,
+          "pairs_covered": 4,
+          "paths_covered": 4,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_12665c0e": {
+          "events": 3,
+          "centers_covered": 3,
+          "pairs_covered": 3,
+          "paths_covered": 3,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_1d0d8384": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_283bf9f1": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_372c8cb8": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_3db54e20": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_4aa14c89": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_61dd1e0d": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_6ca87370": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_705ec2c9": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_767a1e17": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_8b7818bf": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_9e23430b": {
+          "events": 1,
+          "centers_covered": 1,
+          "pairs_covered": 1,
+          "paths_covered": 1,
+          "full_context_events": 1,
+          "annotated_paths_covered": 1
+        },
+        "6bba_a5e926bb": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_ab78413d": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 1
+        },
+        "6bba_b204cac7": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_c328f2fd": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_d2b9fc0c": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        },
+        "6bba_d82a4fc6": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_ed9377fd": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_f17befbc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_fbc898dc": {
+          "events": 0,
+          "centers_covered": 0,
+          "pairs_covered": 0,
+          "paths_covered": 0,
+          "full_context_events": 0,
+          "annotated_paths_covered": 0
+        },
+        "6bba_fc5f39dc": {
+          "events": 2,
+          "centers_covered": 2,
+          "pairs_covered": 2,
+          "paths_covered": 2,
+          "full_context_events": 2,
+          "annotated_paths_covered": 2
+        }
+      }
+    }
+  },
+  "delta_vs_e011": {
+    "events": 0,
+    "centers_covered": 15,
+    "pairs_covered": 16,
+    "paths_covered": 17,
+    "full_context_events": 0,
+    "annotated_paths_covered": 13
+  },
+  "totals": {
+    "harmonic": {
+      "nodes": 1237567,
+      "mother_daughter_edges": 16065491,
+      "continuation_edges": 3367768,
+      "division_pairs": 33928772,
+      "sample_queries": 6144,
+      "sample_queries_with_paths": 5894
+    },
+    "combined": {
+      "nodes": 2699570,
+      "mother_daughter_edges": 40927676,
+      "continuation_edges": 14896102,
+      "division_pairs": 194294999,
+      "sample_queries": 6144,
+      "sample_queries_with_paths": 6080
+    }
+  },
+  "decision": "proceed_to_event_scoring_research_not_ready_for_submission",
+  "version": 1,
+  "kernel": "https://www.kaggle.com/code/jarturo/biohub-lab-harmonic-detection-dag",
+  "payload_sha256": "fd30f4e2dd1a5eec78ab710f0d653bbc527beb46a609f930c9aecc4e45bec749",
+  "checked_at_utc": "2026-09-15T13:47:42.592192+00:00",
+  "verification": {
+    "source_payload": true,
+    "source_and_manifest_hashes": true,
+    "actual_detector_source_reproduced": true,
+    "checkpoint_and_config_hashes": true,
+    "runtime_integrity_receipt": true,
+    "development_selection": true,
+    "cached_E011_files": 240,
+    "new_frozen_files": 432,
+    "graph_reconstruction_exact_videos": {
+      "harmonic": 48,
+      "combined": 48
+    },
+    "graph_equivalent_neighbor_ties_videos": {
+      "harmonic": 0,
+      "combined": 0
+    },
+    "all_primary_centers_preserved": true,
+    "pair_masks": true,
+    "sampled_paths": true,
+    "ground_truth_cache_checksums": true,
+    "coverage_counts_and_witnesses_recomputed_all_arms": true,
+    "E011_previous_result_reproduced": true,
+    "coverage_gates_recomputed": true,
+    "full_image_detector_inference_rerun_locally": false
+  },
+  "primary_centers_preserved": 1237567,
+  "added_auxiliary_centers": 1462003,
+  "quality_status": "combined_coverage_gate_passed_accuracy_not_yet_measured"
+}

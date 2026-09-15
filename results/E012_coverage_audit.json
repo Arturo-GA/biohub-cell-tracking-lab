@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-09-15T13:55:18.869613+00:00",
+  "events_reviewed": 33,
+  "scope": "Paired post-hoc audit at the fixed 7um radius on 48 development videos. Optimistic coverage, not accuracy; no prediction or threshold changed.",
+  "paired_coverage_transitions": {
+    "e011": {
+      "centers": {
+        "retained": 18,
+        "gained": 15
+      },
+      "pairs": {
+        "retained": 17,
+        "gained": 16
+      },
+      "paths": {
+        "retained": 16,
+        "gained": 17
+      },
+      "annotated_paths": {
+        "retained": 11,
+        "gained": 13,
+        "still_missing": 1
+      }
+    },
+    "harmonic": {
+      "centers": {
+        "retained": 31,
+        "gained": 2
+      },
+      "pairs": {
+        "retained": 31,
+        "gained": 2
+      },
+      "paths": {
+        "retained": 31,
+        "gained": 2
+      },
+      "annotated_paths": {
+        "retained": 21,
+        "gained": 3,
+        "still_missing": 1
+      }
+    }
+  },
+  "harmonic_initial_missing_centers": {
+    "daughters_missing_or_not_distinct": 2
+  },
+  "combined_remaining_full_context_failures": {
+    "missing_centers_in_annotated_temporal_context": 1
+  },
+  "ground_truth_correspondences_kept_local": true,
+  "predictions_changed": false
+}
