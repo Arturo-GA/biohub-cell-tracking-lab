@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 15,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E011_detection_dag_development_coverage_pending",
+  "quality_status": "E011_closed_coverage_gate_failed_detection_support_insufficient",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -219,8 +219,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": true,
-  "active_experiment": "E011",
+  "next_experiment_started": false,
+  "active_experiment": null,
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -304,7 +304,7 @@
       }
     }
   },
-  "next_research_direction": "Review E011 frozen coverage on 48 separate development videos when Arturo reports completion. Passing coverage is necessary but does not establish association accuracy. No automatic training or submission.",
+  "next_research_direction": "Audit the same frozen development coverage protocol with primary Harmonic detector centers plus complementary proposals, while keeping association generation independent of Harmonic tracks. No new experiment launched; coverage improvement remains unmeasured.",
   "E008": {
     "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-cellect-detector",
@@ -403,9 +403,7 @@
       "official_graph_matching_rerun_locally": false
     }
   },
-  "active_experiments": [
-    "E011"
-  ],
+  "active_experiments": [],
   "detector_test_evidence": {
     "full_suite_passed": 54,
     "detector_regression_tests": 10,
@@ -471,12 +469,12 @@
     "kernel": "jarturo/biohub-lab-detection-dag-coverage",
     "version": 1,
     "payload_sha256": "568e60d1d98929279cb7d3707c802367df988b785466d824044f2b7f5f5b8960",
-    "last_observed_status": "QUEUED",
-    "checked_at_utc": "2026-09-14T23:24:13.166485+00:00",
+    "last_observed_status": "COMPLETE",
+    "checked_at_utc": "2026-09-15T02:31:40.025250+00:00",
     "run_started": true,
     "local_wait_active": false,
     "leaderboard_submitted": false,
-    "results_available": false,
+    "results_available": true,
     "neural_training": false,
     "implementation": "Detection-only factored division-pair DAG, exact disjoint two-path flow and post-freeze development coverage",
     "development_videos": 48,
@@ -491,6 +489,87 @@
     "technical_smoke": "results/E011_technical_smoke.json",
     "documentation": "docs/DETECTION_DAG.es.md",
     "development_manifest": "baseline/detection_dag_dev.json",
-    "next_action": "Wait for Arturo to report completion, then verify generated graphs and coverage denominators/stages. No active local wait or automatic training."
+    "next_action": "Audit the same frozen development coverage protocol with primary Harmonic detector centers plus complementary proposals, while keeping association generation independent of Harmonic tracks. No new experiment launched; coverage improvement remains unmeasured.",
+    "decision": "do_not_train_or_submit_this_candidate_pool",
+    "receipt": "results/E011_completed.json",
+    "coverage_audit": "results/E011_bottleneck_audit.json",
+    "verification": {
+      "source_payload": true,
+      "source_and_manifest_hashes": true,
+      "development_selection": true,
+      "all_frozen_file_hashes": true,
+      "detector_receipts": true,
+      "merged_detection_arrays": true,
+      "graph_reconstruction_exact_videos": 48,
+      "graph_equivalent_neighbor_ties_videos": 0,
+      "pair_masks": true,
+      "sampled_paths": true,
+      "ground_truth_cache_checksums": true,
+      "coverage_counts_recomputed": true,
+      "all_annotation_witnesses_reproduced": true,
+      "readiness_gate_recomputed": true,
+      "raw_image_detector_inference_rerun_locally": false
+    },
+    "result": {
+      "coverage": {
+        "events": 33,
+        "centers_covered": 18,
+        "pairs_covered": 17,
+        "paths_covered": 16,
+        "full_context_events": 25,
+        "annotated_paths_covered": 11
+      },
+      "rates": {
+        "centers_covered": 0.5454545454545454,
+        "pairs_covered": 0.5151515151515151,
+        "paths_covered": 0.48484848484848486,
+        "annotated_paths_covered": 0.44
+      },
+      "groups": {
+        "44b6": {
+          "counts": {
+            "events": 8,
+            "centers_covered": 5,
+            "pairs_covered": 5,
+            "paths_covered": 5,
+            "full_context_events": 7,
+            "annotated_paths_covered": 5
+          },
+          "rates": {
+            "centers_covered": 0.625,
+            "pairs_covered": 0.625,
+            "paths_covered": 0.625,
+            "annotated_paths_covered": 0.7142857142857143
+          }
+        },
+        "6bba": {
+          "counts": {
+            "events": 25,
+            "centers_covered": 13,
+            "pairs_covered": 12,
+            "paths_covered": 11,
+            "full_context_events": 18,
+            "annotated_paths_covered": 6
+          },
+          "rates": {
+            "centers_covered": 0.52,
+            "pairs_covered": 0.48,
+            "paths_covered": 0.44,
+            "annotated_paths_covered": 0.3333333333333333
+          }
+        }
+      },
+      "coverage_gate_passed": false,
+      "seconds": 7602.831747756,
+      "missing_center_breakdown": {
+        "daughters_missing_or_not_distinct": 10,
+        "both_mother_and_daughters_missing": 3,
+        "mother_missing": 2
+      },
+      "failed_full_context_paths": {
+        "missing_centers_in_annotated_temporal_context": 13,
+        "hypothesis_constraints_despite_centers_present": 1
+      }
+    }
   }
 }

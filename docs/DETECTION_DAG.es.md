@@ -60,4 +60,41 @@ Las pruebas nuevas comprueban madres sin historial, hijas sin enlaces, reorganiz
 
 Implementación propia. El flujo con capacidades y el almacenamiento de parejas son herramientas del generador; no se presenta como reproducción de un tracker publicado ni como un modelo ya competitivo.
 
-**Lanzado:** [Biohub Lab Detection DAG Coverage](https://www.kaggle.com/code/jarturo/biohub-lab-detection-dag-coverage), versión 1, el 14 de septiembre de 2026. Estado inicial observado: **QUEUED**. Pasaron 72 pruebas locales, incluidas las nueve nuevas. Una comprobación técnica sin etiquetas construyó el grafo de 65.144 detecciones de un video completo, representando 3.595.348 parejas; esto valida funcionamiento y tamaño, no cobertura real. Recibos: `results/E011_launch.json`, `results/E011_preflight.json`, `results/E011_technical_smoke.json`. Resultados de desarrollo pendientes; sin monitor local de ejecución.
+**Ejecución completada:** [Biohub Lab Detection DAG Coverage](https://www.kaggle.com/code/jarturo/biohub-lab-detection-dag-coverage), versión 1, lanzada el 14 de septiembre de 2026 y comprobada completa el 15 de septiembre a las 02:31 UTC. Pasaron 72 pruebas locales antes del lanzamiento, incluidas las nueve nuevas. Recibos: `results/E011_launch.json`, `results/E011_preflight.json`, `results/E011_technical_smoke.json`.
+
+## Resultado: cobertura insuficiente para entrenar
+
+Terminaron los **48 videos** en 7.602,83 segundos, aproximadamente **2 h 7 min**, excluyendo instalación y cola. Se representaron 1.646.262 centros, 23.657.173 enlaces posibles madre/hija, 7.168.158 continuaciones y 85.542.826 parejas de hijas. Estos tamaños describen las hipótesis disponibles; no son detecciones correctas ni divisiones predichas.
+
+| Etapa de cobertura | Total | Grupo 44b6 | Grupo 6bba |
+|---|---:|---:|---:|
+| Madre y dos hijas distintas disponibles | 18/33 (54,5 %) | 5/8 (62,5 %) | 13/25 (52,0 %) |
+| Pareja inicial representada | 17/33 (51,5 %) | 5/8 (62,5 %) | 12/25 (48,0 %) |
+| Dos trayectorias sin compartir centros | 16/33 (48,5 %) | 5/8 (62,5 %) | 11/25 (44,0 %) |
+| Trayectorias compatibles con las ramas anotadas | 11/25 (44,0 %) | 5/7 (71,4 %) | 6/18 (33,3 %) |
+
+Hay suficientes eventos para aplicar el criterio previo: 33 divisiones y 25 con contexto completo, con los mínimos satisfechos en cada grupo. **Fallaron los mínimos de cobertura globales y de ambos grupos.** El último renglón usa un denominador diferente porque ocho divisiones carecen del contexto anotado completo exigido; no se interpreta como 11 de 33.
+
+De las 33 divisiones, **15 se pierden antes de formar parejas por falta de centros compatibles**; una más se pierde al restringir las parejas y otra al exigir dos continuaciones. Por tanto, el principal problema inicial está en el conjunto de detecciones que recibe el generador. La existencia de trayectorias cualesquiera tampoco basta: solo 11 de los 25 eventos con contexto completo tienen dos trayectorias compatibles con sus ramas anotadas.
+
+E011 no entrenó un modelo, no generó una submission y no calculó la métrica oficial. **Se cierra esta configuración sin entrenamiento ni envío:** un clasificador de eventos no puede seleccionar centros ausentes de sus candidatos. Nuestro mejor score público verificado sigue siendo 0.946; no se volvió a consultar el leaderboard para esta auditoría.
+
+## Auditoría de las pérdidas y siguiente dirección
+
+Se reconstruyeron **exactamente los 48 grafos** desde los archivos de propuestas descargados. Coincidieron las matrices de centros, los vecinos, las máscaras de parejas, las 6.144 consultas muestreadas y sus trayectorias. Se comprobaron el payload lanzado, código, selección de videos, pesos según los recibos, archivos congelados y checksums de las anotaciones preparadas. Se recalcularon todos los recuentos y testigos de cobertura, reproduciendo también el criterio fallido. **No se volvió a ejecutar localmente la inferencia de imágenes de los detectores.**
+
+Los 15 eventos sin centros iniciales suficientes se distribuyen así:
+
+- **10:** hay madre cercana, pero faltan dos detecciones distintas compatibles con las hijas.
+- **2:** hay dos hijas compatibles, pero falta la madre.
+- **3:** faltan tanto la madre como dos hijas compatibles.
+
+Al comprobar madre y dos hijas, CELLECT solo cubre **17/33**, gaussianas **3/33** y la unión antes de la deduplicación **18/33**. El conjunto combinado conserva esos **18/33**: la deduplicación final a 1,2 µm no explica la pérdida de cobertura inicial. Estos recuentos no miden falsos positivos y se refieren a las propuestas ya filtradas por cada detector.
+
+Entre los **14 de 25** eventos que no permiten seguir ambas ramas anotadas durante todo el contexto, **13** carecen de centros compatibles en algún momento de ese contexto; en **uno** hay centros por fotograma, pero las restricciones de hipótesis impiden conectarlos de la forma requerida. Esto refuerza el diagnóstico de detecciones insuficientes, sin demostrar que las asociaciones restantes sean fáciles de elegir.
+
+La decisión de E011 eliminó también los centros principales de Harmonic, además de sus asociaciones. CELLECT y gaussianas habían sido usados como **complementos** en E008/E009; su cobertura como conjunto completo de detecciones no estaba demostrada. Por ello, E011 no permite concluir que construir trayectorias desde detecciones sea una mala arquitectura, ni constituye una comparación controlada con E010: cambiaron tanto los videos como las fuentes de detección.
+
+La siguiente dirección propuesta es **recuperar los centros de los detectores de Harmonic como base, conservar las propuestas complementarias y construir las asociaciones desde cero con el generador nuevo**. Primero habría que medir cobertura en los mismos 48 videos con el protocolo ya fijado. Es una hipótesis de trabajo: todavía no se ha medido la cobertura de esos centros en esta muestra. No se relajaron umbrales ni se inició un nuevo notebook durante esta revisión.
+
+Resultados agregados: [`E011_completed.json`](../results/E011_completed.json) y [`E011_bottleneck_audit.json`](../results/E011_bottleneck_audit.json). Verificador: [`verify_detection_dag_result.py`](../scripts/verify_detection_dag_result.py), ejecutado con `src` y `scripts` en `PYTHONPATH`. Las correspondencias detalladas con anotaciones permanecen en `outputs/E011_bottleneck_details.json`, excluido de Git.

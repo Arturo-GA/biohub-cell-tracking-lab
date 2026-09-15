@@ -1,0 +1,589 @@
+{
+  "experiment": "E011",
+  "status": "complete",
+  "config": {
+    "merge_um": 1.2,
+    "mother_radius_um": 20.0,
+    "max_daughters": 16,
+    "sister_min_um": 1.5,
+    "sister_max_um": 20.0,
+    "midpoint_max_um": 10.0,
+    "continuation_um": 10.0,
+    "max_continuations": 8,
+    "horizon": 4,
+    "sample_queries": 128
+  },
+  "gate": {
+    "min_events": 20,
+    "min_full_context_events": 20,
+    "min_events_per_group": 5,
+    "min_full_context_per_group": 5,
+    "min_pair_coverage": 0.9,
+    "min_path_coverage": 0.9,
+    "min_annotated_path_coverage": 0.85,
+    "match_um": 7.0
+  },
+  "scope": "48 development videos separate from the four previous diagnostic videos. Same two acquisition groups and videos used in earlier model training; not an unseen end-to-end holdout. CELLECT training membership is unverified. No model is trained or selected here.",
+  "annotations_used_for_generation": false,
+  "harmonic_graph_used": false,
+  "neural_training": false,
+  "leaderboard_submitted": false,
+  "local_monitor_requested": false,
+  "datasets": [
+    "44b6_0c582fdc",
+    "44b6_1574802b",
+    "44b6_18ced818",
+    "44b6_24264f12",
+    "44b6_267148e4",
+    "44b6_33b596bf",
+    "44b6_551a5dba",
+    "44b6_706092f0",
+    "44b6_7a302da0",
+    "44b6_87bba6c4",
+    "44b6_8cc6506c",
+    "44b6_8f5ab931",
+    "44b6_8f9ecab4",
+    "44b6_90724892",
+    "44b6_95029e92",
+    "44b6_996155de",
+    "44b6_9be80b04",
+    "44b6_a21120c2",
+    "44b6_d29c9ab2",
+    "44b6_d78e09d9",
+    "44b6_db3c847b",
+    "44b6_e31261b4",
+    "44b6_eb2880fc",
+    "44b6_f28707c6",
+    "6bba_085bf656",
+    "6bba_09961292",
+    "6bba_12665c0e",
+    "6bba_1d0d8384",
+    "6bba_283bf9f1",
+    "6bba_372c8cb8",
+    "6bba_3db54e20",
+    "6bba_4aa14c89",
+    "6bba_61dd1e0d",
+    "6bba_6ca87370",
+    "6bba_705ec2c9",
+    "6bba_767a1e17",
+    "6bba_8b7818bf",
+    "6bba_9e23430b",
+    "6bba_a5e926bb",
+    "6bba_ab78413d",
+    "6bba_b204cac7",
+    "6bba_c328f2fd",
+    "6bba_d2b9fc0c",
+    "6bba_d82a4fc6",
+    "6bba_ed9377fd",
+    "6bba_f17befbc",
+    "6bba_fbc898dc",
+    "6bba_fc5f39dc"
+  ],
+  "development_manifest_sha256": "2edb8d005c29998929b7fd2b365afbfa48760339b96783084cfa7666924409e2",
+  "source_hashes": {
+    "src/biohub_lab/detection_dag.py": "9d5840045a5e39edc36c7d8c4987b0f6275392bd50948686bae1fc508f77fc47",
+    "src/biohub_lab/dag_coverage.py": "f7a6383e70a48caa131de3d296d77c782a791485b51ef2adebd8e69780e879de",
+    "scripts/detection_dag_runner.py": "dec18b9bc358207c80698f9755c159df0ae02f3691a09c602c1eb782a72f7911"
+  },
+  "generation_seconds": 7596.729404289001,
+  "frozen_inputs_sha256": "691e0345e6a93016bc2de9b06773cabafa359a200321231e0a98081b7d4c79a7",
+  "seconds": 7602.831747756,
+  "readiness": {
+    "gate": {
+      "min_events": 20,
+      "min_full_context_events": 20,
+      "min_events_per_group": 5,
+      "min_full_context_per_group": 5,
+      "min_pair_coverage": 0.9,
+      "min_path_coverage": 0.9,
+      "min_annotated_path_coverage": 0.85,
+      "match_um": 7.0
+    },
+    "totals": {
+      "events": 33,
+      "centers_covered": 18,
+      "pairs_covered": 17,
+      "paths_covered": 16,
+      "full_context_events": 25,
+      "annotated_paths_covered": 11
+    },
+    "rates": {
+      "centers_covered": 0.5454545454545454,
+      "pairs_covered": 0.5151515151515151,
+      "paths_covered": 0.48484848484848486,
+      "annotated_paths_covered": 0.44
+    },
+    "groups": {
+      "44b6": {
+        "counts": {
+          "events": 8,
+          "centers_covered": 5,
+          "pairs_covered": 5,
+          "paths_covered": 5,
+          "full_context_events": 7,
+          "annotated_paths_covered": 5
+        },
+        "rates": {
+          "centers_covered": 0.625,
+          "pairs_covered": 0.625,
+          "paths_covered": 0.625,
+          "annotated_paths_covered": 0.7142857142857143
+        }
+      },
+      "6bba": {
+        "counts": {
+          "events": 25,
+          "centers_covered": 13,
+          "pairs_covered": 12,
+          "paths_covered": 11,
+          "full_context_events": 18,
+          "annotated_paths_covered": 6
+        },
+        "rates": {
+          "centers_covered": 0.52,
+          "pairs_covered": 0.48,
+          "paths_covered": 0.44,
+          "annotated_paths_covered": 0.3333333333333333
+        }
+      }
+    },
+    "coverage_gate_passed": false,
+    "reasons": [
+      "below_pairs_covered_in_44b6",
+      "below_paths_covered_in_44b6",
+      "below_annotated_paths_covered_in_44b6",
+      "below_pairs_covered_in_6bba",
+      "below_paths_covered_in_6bba",
+      "below_annotated_paths_covered_in_6bba",
+      "below_pairs_covered",
+      "below_paths_covered",
+      "below_annotated_paths_covered"
+    ],
+    "decision": "fix_coverage_or_collect_more_development_evidence_before_training",
+    "accuracy_demonstrated": false,
+    "training_started": false,
+    "leaderboard_submitted": false,
+    "scope": "Coverage ceilings with annotation-conditioned witnesses, not prediction accuracy. Passing is necessary, not sufficient for training or submission.",
+    "per_video": {
+      "44b6_0c582fdc": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_1574802b": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_18ced818": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_24264f12": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_267148e4": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 1,
+        "annotated_paths_covered": 1
+      },
+      "44b6_33b596bf": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_551a5dba": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_706092f0": {
+        "events": 1,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 1,
+        "annotated_paths_covered": 0
+      },
+      "44b6_7a302da0": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 1,
+        "annotated_paths_covered": 1
+      },
+      "44b6_87bba6c4": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_8cc6506c": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_8f5ab931": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_8f9ecab4": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_90724892": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_95029e92": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_996155de": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 1,
+        "annotated_paths_covered": 1
+      },
+      "44b6_9be80b04": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 1,
+        "annotated_paths_covered": 1
+      },
+      "44b6_a21120c2": {
+        "events": 2,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 1,
+        "annotated_paths_covered": 0
+      },
+      "44b6_d29c9ab2": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_d78e09d9": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_db3c847b": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_e31261b4": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "44b6_eb2880fc": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 1,
+        "annotated_paths_covered": 1
+      },
+      "44b6_f28707c6": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_085bf656": {
+        "events": 1,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_09961292": {
+        "events": 4,
+        "centers_covered": 2,
+        "pairs_covered": 2,
+        "paths_covered": 2,
+        "full_context_events": 2,
+        "annotated_paths_covered": 1
+      },
+      "6bba_12665c0e": {
+        "events": 3,
+        "centers_covered": 3,
+        "pairs_covered": 3,
+        "paths_covered": 2,
+        "full_context_events": 2,
+        "annotated_paths_covered": 1
+      },
+      "6bba_1d0d8384": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_283bf9f1": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_372c8cb8": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_3db54e20": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_4aa14c89": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_61dd1e0d": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_6ca87370": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 1,
+        "annotated_paths_covered": 1
+      },
+      "6bba_705ec2c9": {
+        "events": 1,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 1,
+        "annotated_paths_covered": 0
+      },
+      "6bba_767a1e17": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_8b7818bf": {
+        "events": 2,
+        "centers_covered": 2,
+        "pairs_covered": 2,
+        "paths_covered": 2,
+        "full_context_events": 1,
+        "annotated_paths_covered": 1
+      },
+      "6bba_9e23430b": {
+        "events": 1,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 1,
+        "annotated_paths_covered": 1
+      },
+      "6bba_a5e926bb": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_ab78413d": {
+        "events": 2,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 2,
+        "annotated_paths_covered": 0
+      },
+      "6bba_b204cac7": {
+        "events": 2,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 2,
+        "annotated_paths_covered": 0
+      },
+      "6bba_c328f2fd": {
+        "events": 2,
+        "centers_covered": 1,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 2,
+        "annotated_paths_covered": 0
+      },
+      "6bba_d2b9fc0c": {
+        "events": 2,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 2,
+        "annotated_paths_covered": 0
+      },
+      "6bba_d82a4fc6": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_ed9377fd": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_f17befbc": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_fbc898dc": {
+        "events": 0,
+        "centers_covered": 0,
+        "pairs_covered": 0,
+        "paths_covered": 0,
+        "full_context_events": 0,
+        "annotated_paths_covered": 0
+      },
+      "6bba_fc5f39dc": {
+        "events": 2,
+        "centers_covered": 1,
+        "pairs_covered": 1,
+        "paths_covered": 1,
+        "full_context_events": 2,
+        "annotated_paths_covered": 1
+      }
+    }
+  },
+  "totals": {
+    "nodes": 1646262,
+    "mother_daughter_edges": 23657173,
+    "continuation_edges": 7168158,
+    "division_pairs": 85542826,
+    "sample_queries": 6144,
+    "sample_queries_with_paths": 5759
+  },
+  "decision": "do_not_train_or_submit_this_candidate_pool",
+  "version": 1,
+  "kernel": "https://www.kaggle.com/code/jarturo/biohub-lab-detection-dag-coverage",
+  "payload_sha256": "568e60d1d98929279cb7d3707c802367df988b785466d824044f2b7f5f5b8960",
+  "checked_at_utc": "2026-09-15T02:31:40.025250+00:00",
+  "verification": {
+    "source_payload": true,
+    "source_and_manifest_hashes": true,
+    "development_selection": true,
+    "all_frozen_file_hashes": true,
+    "detector_receipts": true,
+    "merged_detection_arrays": true,
+    "graph_reconstruction_exact_videos": 48,
+    "graph_equivalent_neighbor_ties_videos": 0,
+    "pair_masks": true,
+    "sampled_paths": true,
+    "ground_truth_cache_checksums": true,
+    "coverage_counts_recomputed": true,
+    "all_annotation_witnesses_reproduced": true,
+    "readiness_gate_recomputed": true,
+    "raw_image_detector_inference_rerun_locally": false
+  },
+  "proposal_totals": {
+    "cellect": 1459447,
+    "gaussian": 210320
+  },
+  "quality_status": "coverage_gate_failed_detection_support_insufficient"
+}

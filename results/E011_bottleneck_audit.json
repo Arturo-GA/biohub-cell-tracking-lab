@@ -1,0 +1,28 @@
+{
+  "checked_at_utc": "2026-09-15T02:45:00.316149+00:00",
+  "scope": "Post-hoc audit at the fixed 7um match radius on the 48 development videos. Coverage ceilings only, not accuracy or official metric. No predictions or thresholds changed.",
+  "events_reviewed": 33,
+  "failure_stage_counts": {
+    "covered": 16,
+    "missing_detection": 15,
+    "no_disjoint_continuations": 1,
+    "initial_pair_pruned": 1
+  },
+  "missing_center_breakdown": {
+    "daughters_missing_or_not_distinct": 10,
+    "both_mother_and_daughters_missing": 3,
+    "mother_missing": 2
+  },
+  "center_coverage_by_source": {
+    "cellect": 17,
+    "gaussian": 3,
+    "union_before_merge": 18,
+    "merged": 18
+  },
+  "failed_full_context_paths": {
+    "missing_centers_in_annotated_temporal_context": 13,
+    "hypothesis_constraints_despite_centers_present": 1
+  },
+  "ground_truth_coordinates_kept_local": true,
+  "predictions_changed": false
+}
