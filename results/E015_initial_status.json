@@ -1,0 +1,5 @@
+{
+  "kernel": "jarturo/biohub-lab-detection-identity-audit",
+  "status": "KernelWorkerStatus.RUNNING",
+  "automatic_monitoring": false
+}

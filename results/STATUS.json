@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 113,
+  "local_tests_passed": 117,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -1133,5 +1133,23 @@
     "control_score": 0.9092570108739322,
     "selected_arm": "continuations",
     "decision": "reject_E014_candidate_preserve_Harmonic_control"
+  },
+  "E015": {
+    "kernel": "jarturo/biohub-lab-detection-identity-audit",
+    "version": 1,
+    "last_observed_status": "RUNNING",
+    "launch_receipt": "results/E015_launch.json",
+    "preflight": "results/E015_preflight.json",
+    "documentation": "docs/E015_INVESTIGACION_IDENTIDAD.es.md",
+    "gpu": false,
+    "tpu": false,
+    "automatic_monitoring": false,
+    "leaderboard_submitted": false,
+    "calibration_videos": 16,
+    "evaluation_videos": 0,
+    "training_started": false,
+    "unit_tests_passed": 4,
+    "results_available": false,
+    "purpose": "Audit duplicate identity supervision and annotation-free graph projection before retraining"
   }
 }

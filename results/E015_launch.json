@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-detection-identity-audit",
+  "version": 1,
+  "kernel_id": 134989505,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-detection-identity-audit",
+  "ref": "/code/jarturo/biohub-lab-detection-identity-audit",
+  "launched_at_utc": "2026-09-19T14:23:40.058003+00:00",
+  "payload_sha256": "0589dc09b9c688f5559aeaa2a4deae300fad373816d8e0bf618df938740de8a8",
+  "notebook_sha256": "c2c89bcf90e9ba0089bac024727e1979d9c58d43d1b1b9a89a2ab5f383272078",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}
