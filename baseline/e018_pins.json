@@ -1,0 +1,8 @@
+{
+  "compare_result_sha256": "20264b369f39c1f7cc1fa9df50e6c50f0ceddf2d035e41a8a5abfea3913c43f3",
+  "tissue_result_sha256": "0289f96b439da81bbcb3b805b0bad2b3ddfe58c7cc047611f1c7af5d86f2f2a9",
+  "harmonic_csv_sha256": "9d39a33fa0f4132619b91bb41ff261df428f95126f82a1f2678b963ba1a92ef4",
+  "tissue_csv_sha256": "d2164ca0d05262e50658524004a1e681f5541411046b04ae5deaedfe28335a61",
+  "harmonic_metrics_sha256": "fde869c5ccdede0b058d57e07e982f945e760f3f6ea469a3fa83ef6f2a7962d3",
+  "tissue_metrics_sha256": "85025577fb0263d320fbd50d21bf20bad4ce5b014d36c0461fdc77a4d16b6f43"
+}

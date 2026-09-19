@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-edge-complementarity-cpu",
+  "version": 1,
+  "kernel_id": 135005059,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-edge-complementarity-cpu",
+  "ref": "/code/jarturo/biohub-lab-edge-complementarity-cpu",
+  "launched_at_utc": "2026-09-19T17:18:53.371319+00:00",
+  "payload_sha256": "f5e083ccbec77be74aa471b778c4b0a9c5f210a9253cddb80e9a9b47314506a1",
+  "notebook_sha256": "ca228888d881c3ae40ad472eb2f4925d5a6345521f11bfbdfd3ddb78e8b20140",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

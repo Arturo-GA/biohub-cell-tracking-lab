@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 128,
+  "local_tests_passed": 132,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -1251,5 +1251,21 @@
     "videos_better_than_harmonic": 2,
     "videos_worse_than_harmonic": 14,
     "next_run_started": false
+  },
+  "E018": {
+    "kernel": "jarturo/biohub-lab-edge-complementarity-cpu",
+    "version": 1,
+    "last_observed_status": "RUNNING",
+    "launch_receipt": "results/E018_launch.json",
+    "preflight": "results/E018_preflight.json",
+    "documentation": "docs/E018_COMPLEMENTARIEDAD.es.md",
+    "gpu": false,
+    "tpu": false,
+    "automatic_monitoring": false,
+    "leaderboard_submitted": false,
+    "training_started": false,
+    "calibration_videos": 16,
+    "results_available": false,
+    "purpose": "Official-matcher correct-edge complementarity and fixed geometry histograms; no prediction fusion"
   }
 }
