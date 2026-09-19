@@ -1,0 +1,10 @@
+{
+  "status": "submitted",
+  "kernel": "jarturo/biohub-lab-visual-global-assignment",
+  "version": 1,
+  "attempted_at_utc": "2026-09-19T20:05:28.813335+00:00",
+  "csv_sha256": "3102a33dc9fe04f8dee84300984682972764a6b0ad558e3106d9c45aa7c965a7",
+  "message": "Exact visual global assignment; frozen reserved validation E023",
+  "ref": 56370600,
+  "response_message": ""
+}

@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "source_files_verified": 13,
+  "csv_sha256": "3102a33dc9fe04f8dee84300984682972764a6b0ad558e3106d9c45aa7c965a7",
+  "csv_locally_validated": true,
+  "videos": 4,
+  "seconds": 2178.3195905410003,
+  "launch_receipt_sha256": "a42a0456a0759b26bb7f56cdb25a3008446ab94a4ab4623ec0cceb6419f4db2b",
+  "leaderboard_submitted": false
+}

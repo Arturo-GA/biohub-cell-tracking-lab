@@ -1349,10 +1349,17 @@
     "decision": "All frozen checks passed; final test inference launched"
   },
   "visual_submission": {
-    "status": "RUNNING",
+    "status": "PENDING",
     "kernel": "jarturo/biohub-lab-visual-global-assignment",
     "version": 1,
     "launch_receipt": "results/VISUAL_SUBMISSION_launch.json",
-    "leaderboard_submitted": false
+    "leaderboard_submitted": true,
+    "inference_status": "COMPLETE",
+    "submission_ref": 56370600,
+    "public_score": null,
+    "completed_receipt": "results/VISUAL_SUBMISSION_completed.json",
+    "submission_receipt": "results/VISUAL_SUBMISSION_attempt.json",
+    "status_receipt": "results/VISUAL_SUBMISSION_status.json",
+    "csv_locally_validated": true
   }
 }
