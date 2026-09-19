@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-anchored-tracklets-cpu",
+  "version": 1,
+  "kernel_id": 135006964,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-anchored-tracklets-cpu",
+  "ref": "/code/jarturo/biohub-lab-anchored-tracklets-cpu",
+  "launched_at_utc": "2026-09-19T17:37:36.404150+00:00",
+  "payload_sha256": "51d4d1f06ba8d5f9cc0ddfc2b4ef2d69323aab5e07796faffc4986e862be3617",
+  "notebook_sha256": "c32ac6f61d8d33c4551329013aae7a3a6d42eebc32ba0f58253ef7cdb012acc5",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

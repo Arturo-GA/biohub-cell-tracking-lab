@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 132,
+  "local_tests_passed": 136,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -1255,7 +1255,7 @@
   "E018": {
     "kernel": "jarturo/biohub-lab-edge-complementarity-cpu",
     "version": 1,
-    "last_observed_status": "RUNNING",
+    "last_observed_status": "COMPLETE",
     "launch_receipt": "results/E018_launch.json",
     "preflight": "results/E018_preflight.json",
     "documentation": "docs/E018_COMPLEMENTARIEDAD.es.md",
@@ -1265,7 +1265,43 @@
     "leaderboard_submitted": false,
     "training_started": false,
     "calibration_videos": 16,
-    "results_available": false,
-    "purpose": "Official-matcher correct-edge complementarity and fixed geometry histograms; no prediction fusion"
-  }
+    "results_available": true,
+    "purpose": "Official-matcher correct-edge complementarity and fixed geometry histograms; no prediction fusion",
+    "completed_receipt": "results/E018_completed.json",
+    "totals": {
+      "gt_edges": 7175,
+      "both_correct": 6301,
+      "harmonic_only": 373,
+      "tissue_only": 169,
+      "neither_correct": 332,
+      "harmonic_tp": 6674,
+      "tissue_tp": 6470,
+      "rescued_with_both_endpoints_matched_in_harmonic": 62,
+      "rescued_with_missing_harmonic_endpoint": 107,
+      "diagnostic_union_tp": 6843
+    },
+    "seconds": 36.391402277
+  },
+  "E019": {
+    "kernel": "jarturo/biohub-lab-anchored-tracklets-cpu",
+    "version": 1,
+    "status": "COMPLETE",
+    "launch_receipt": "results/E019_launch.json",
+    "documentation": "docs/E018_E019_RECUPERACION.es.md",
+    "gpu": false,
+    "leaderboard_submitted": false,
+    "training_started": false,
+    "short_run_followup_authorized": true,
+    "completed_receipt": "results/E019_completed.json",
+    "candidate_score": 0.8998049084251912,
+    "harmonic_score": 0.9007529595605399,
+    "score_delta": -0.000948051135348682,
+    "videos_better": 2,
+    "videos_worse": 14,
+    "seconds": 69.38684719799994,
+    "decision": "Reject anchored recovery; retain Harmonic and do not sweep thresholds on calibration",
+    "results_available": true,
+    "next_run_started": false
+  },
+  "short_run_followup_policy": "User authorized checking short runs to completion and continuing justified next steps in active task; no recurring automation or automatic leaderboard submission"
 }

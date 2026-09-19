@@ -1,0 +1,65 @@
+{
+  "status": "complete",
+  "seconds": 36.391402277,
+  "source_files_verified": 25,
+  "totals": {
+    "gt_edges": 7175,
+    "both_correct": 6301,
+    "harmonic_only": 373,
+    "tissue_only": 169,
+    "neither_correct": 332,
+    "harmonic_tp": 6674,
+    "tissue_tp": 6470,
+    "rescued_with_both_endpoints_matched_in_harmonic": 62,
+    "rescued_with_missing_harmonic_endpoint": 107,
+    "diagnostic_union_tp": 6843
+  },
+  "feature_histograms": {
+    "rescued_tp": {
+      "distance_gt6": 35,
+      "incomplete_or_branched_context": 87,
+      "acceleration_gt2": 106,
+      "distance_le3": 72,
+      "acceleration_unknown": 42,
+      "distance_3to6": 62,
+      "two_sided_context": 82,
+      "acceleration_le2": 21
+    },
+    "shared_tp": {
+      "distance_3to6": 1515,
+      "two_sided_context": 5672,
+      "acceleration_gt2": 4077,
+      "distance_le3": 4687,
+      "acceleration_le2": 1892,
+      "distance_gt6": 99,
+      "incomplete_or_branched_context": 629,
+      "acceleration_unknown": 332
+    },
+    "false_positive": {
+      "distance_le3": 277,
+      "incomplete_or_branched_context": 264,
+      "acceleration_le2": 79,
+      "acceleration_unknown": 148,
+      "acceleration_gt2": 398,
+      "distance_3to6": 261,
+      "two_sided_context": 361,
+      "distance_gt6": 87
+    },
+    "unknown": {
+      "distance_le3": 228269,
+      "two_sided_context": 246072,
+      "acceleration_gt2": 190721,
+      "distance_3to6": 77604,
+      "incomplete_or_branched_context": 70433,
+      "acceleration_unknown": 39157,
+      "acceleration_le2": 86627,
+      "distance_gt6": 10632
+    }
+  },
+  "result_sha256": "09f786e8eda87a6f4407077624307e015497162a0e8f125d7e8e04dd8b806227",
+  "accounting_verified": true,
+  "official_matching_rerun_locally": false,
+  "leaderboard_submitted": false,
+  "scope": "GT-dependent diagnostic on 16 calibration videos. Oracle edge union is not a score or deployable predictor.",
+  "decision": "Test annotation-free anchored donor tracklets while preserving Harmonic edges and divisions; do not fit a gate on calibration GT"
+}
