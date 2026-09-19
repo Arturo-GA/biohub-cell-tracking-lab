@@ -1,0 +1,12 @@
+{
+  "payload_sha256": "b444f444f0ed3ec65ce20dabda68a8adbfaa3962a07ff43585d892e1fc8341de",
+  "source_files_compiled": true,
+  "cpu_only": true,
+  "fit_videos": 48,
+  "calibration_videos": 16,
+  "evaluation_videos": 0,
+  "training_steps": 3000,
+  "unit_tests_passed": 4,
+  "no_automatic_monitoring": true,
+  "notebook_sha256": "3abf841c0e76f40b0254b8aedadcbede697364a4a24833e381b21cbed31af8e0"
+}

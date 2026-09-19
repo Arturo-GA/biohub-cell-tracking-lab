@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-identity-parent-cpu",
+  "version": 1,
+  "kernel_id": 134993620,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-identity-parent-cpu",
+  "ref": "/code/jarturo/biohub-lab-identity-parent-cpu",
+  "launched_at_utc": "2026-09-19T15:11:08.387733+00:00",
+  "payload_sha256": "b444f444f0ed3ec65ce20dabda68a8adbfaa3962a07ff43585d892e1fc8341de",
+  "notebook_sha256": "3abf841c0e76f40b0254b8aedadcbede697364a4a24833e381b21cbed31af8e0",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

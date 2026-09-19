@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 117,
+  "local_tests_passed": 121,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -1160,5 +1160,24 @@
     "seconds": 92.054489079,
     "decision": "Retain identity diagnosis; do not submit projection. Next implement identity-aware competitive association on cached features.",
     "next_training_started": false
+  },
+  "E016": {
+    "kernel": "jarturo/biohub-lab-identity-parent-cpu",
+    "version": 1,
+    "last_observed_status": "RUNNING",
+    "launch_receipt": "results/E016_launch.json",
+    "preflight": "results/E016_preflight.json",
+    "documentation": "docs/E016_IDENTIDAD_PADRES.es.md",
+    "gpu": false,
+    "tpu": false,
+    "automatic_monitoring": false,
+    "leaderboard_submitted": false,
+    "fit_videos": 48,
+    "calibration_videos": 16,
+    "training_steps": 3000,
+    "launch_accepted": true,
+    "results_available": false,
+    "unit_tests_passed": 4,
+    "control": "Geometric assignment on same primary detections; not full Harmonic"
   }
 }
