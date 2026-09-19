@@ -1,0 +1,33 @@
+{
+  "sha256": "40c1e6cf0a579b315bae9ddbf95193263df2ff6622aeb41cbcd46caa5a6ea523",
+  "files": [
+    "NOTICE.md",
+    "baseline/e014_cpu_pins.json",
+    "baseline/e015_identity_pins.json",
+    "baseline/e017_pins.json",
+    "baseline/event_graph_split.json",
+    "scripts/association_cpu_runner.py",
+    "scripts/detection_identity_runner.py",
+    "scripts/identity_parent_runner.py",
+    "scripts/tissue_trajectory_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/association_cpu.py",
+    "src/biohub_lab/association_rank.py",
+    "src/biohub_lab/detection_identity.py",
+    "src/biohub_lab/detector_proposals.py",
+    "src/biohub_lab/evaluate.py",
+    "src/biohub_lab/event_data.py",
+    "src/biohub_lab/event_solver.py",
+    "src/biohub_lab/identity_parent.py",
+    "src/biohub_lab/submission.py",
+    "src/biohub_lab/temporal_data.py",
+    "src/biohub_lab/tissue_trajectory.py",
+    "src/biohub_official/LICENSE",
+    "src/biohub_official/__init__.py",
+    "src/biohub_official/division_metrics.py",
+    "src/biohub_official/metrics.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

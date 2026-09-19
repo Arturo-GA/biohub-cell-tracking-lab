@@ -1,0 +1,12 @@
+{
+  "cpu": {
+    "kernel": "jarturo/biohub-lab-tissue-trajectory-cpu",
+    "status": "RUNNING",
+    "checked_at_utc": "2026-09-19T15:31:27.501660+00:00"
+  },
+  "control": {
+    "kernel": "jarturo/biohub-lab-harmonic-calibration-control",
+    "status": "RUNNING",
+    "checked_at_utc": "2026-09-19T15:31:28.651707+00:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kernel": "jarturo/biohub-lab-harmonic-calibration-control",
+  "version": 1,
+  "kernel_id": 134995180,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-harmonic-calibration-control",
+  "payload_sha256": "e243c3ff7b89bff79015a25846048a5835ee1fbe83862e84bc5c10242b38d9ef",
+  "notebook_sha256": "77644f47c5344c02eda227bf640561beb2930d0394349aaf531451d3ff007e40",
+  "launched_at_utc": "2026-09-19T15:29:59.820786+00:00",
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false,
+  "calibration_videos": 16,
+  "purpose": "Full Harmonic image inference; official evaluation deferred to CPU"
+}

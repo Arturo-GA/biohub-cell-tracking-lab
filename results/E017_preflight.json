@@ -1,0 +1,21 @@
+{
+  "cpu": {
+    "payload_sha256": "40c1e6cf0a579b315bae9ddbf95193263df2ff6622aeb41cbcd46caa5a6ea523",
+    "notebook_sha256": "8ec80b5e060947cdadf094957d03e49147f4b991326e34553a91e21106bcb160",
+    "files": 25,
+    "gpu": false,
+    "private": true,
+    "calibration_videos": 16
+  },
+  "control": {
+    "payload_sha256": "e243c3ff7b89bff79015a25846048a5835ee1fbe83862e84bc5c10242b38d9ef",
+    "notebook_sha256": "77644f47c5344c02eda227bf640561beb2930d0394349aaf531451d3ff007e40",
+    "files": 42,
+    "gpu": true,
+    "private": true,
+    "calibration_videos": 16
+  },
+  "unit_tests_passed": 4,
+  "automatic_monitoring": false,
+  "gpu_justification": "Full frozen Harmonic volumetric neural inference with TTA; no new training, CPU-only association experiment separate"
+}

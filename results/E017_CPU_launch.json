@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-tissue-trajectory-cpu",
+  "version": 1,
+  "kernel_id": 134995160,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-tissue-trajectory-cpu",
+  "ref": "/code/jarturo/biohub-lab-tissue-trajectory-cpu",
+  "launched_at_utc": "2026-09-19T15:29:47.244406+00:00",
+  "payload_sha256": "40c1e6cf0a579b315bae9ddbf95193263df2ff6622aeb41cbcd46caa5a6ea523",
+  "notebook_sha256": "8ec80b5e060947cdadf094957d03e49147f4b991326e34553a91e21106bcb160",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}
