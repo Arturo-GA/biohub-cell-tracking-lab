@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-visual-sequence-cpu",
+  "version": 1,
+  "kernel_id": 135008629,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-visual-sequence-cpu",
+  "ref": "/code/jarturo/biohub-lab-visual-sequence-cpu",
+  "launched_at_utc": "2026-09-19T17:54:19.328850+00:00",
+  "payload_sha256": "1d8c43c337be47e4008f5e932f8b876b0ae0b6fb22f0882efa4b3e96d4f340d3",
+  "notebook_sha256": "ddd34686fc1372c8f7b2ead4182b210bbf8441fdc76ef0c3bf058b170a37537c",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

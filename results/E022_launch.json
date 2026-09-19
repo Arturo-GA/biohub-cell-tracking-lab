@@ -1,0 +1,13 @@
+{
+  "kernel": "jarturo/biohub-lab-visual-candidate-capture",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-visual-candidate-capture",
+  "payload_sha256": "c0a224ce4ca717cb19ad52b8faf20f2ffa441f79734c8b28cccae641d46fa891",
+  "notebook_sha256": "7c52f8c6b8c7c0e7402af981849d44dd3b35ca8c99987b88136c1dea4df8b8a8",
+  "launched_at_utc": "2026-09-19T18:10:46.101167+00:00",
+  "enable_gpu": true,
+  "is_private": true,
+  "calibration_videos": 2,
+  "leaderboard_submitted": false,
+  "gpu_justification": "Dense 3D image inference and TTA; candidate graph optimization/evaluation remain CPU"
+}

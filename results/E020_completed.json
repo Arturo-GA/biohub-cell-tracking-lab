@@ -1,0 +1,251 @@
+{
+  "experiment": "E020",
+  "status": "complete",
+  "source_files_verified": 25,
+  "arms": {
+    "visual": {
+      "summary": {
+        "n": 16,
+        "n_adj": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "score": 0.9007529595605399
+      },
+      "score_delta": 0.0,
+      "paired": [
+        {
+          "dataset": "44b6_0db75fae",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_5740d24b",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_587a1e22",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_9bfa6a0a",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_aaf8b0ea",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_c15fded2",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_c8e2a523",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_cf2536e8",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_1f58c2f6",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_5c824876",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_6479435d",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_76db78c1",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_7b5d3b2c",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_9a41d029",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_c73a1d11",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_f1fde7e0",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ],
+      "better": 0,
+      "worse": 0,
+      "added": 3,
+      "removed": 0,
+      "alternatives": 3
+    },
+    "sequence": {
+      "summary": {
+        "n": 16,
+        "n_adj": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "score": 0.9007529595605399
+      },
+      "score_delta": 0.0,
+      "paired": [
+        {
+          "dataset": "44b6_0db75fae",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_5740d24b",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_587a1e22",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_9bfa6a0a",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_aaf8b0ea",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_c15fded2",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_c8e2a523",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_cf2536e8",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_1f58c2f6",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_5c824876",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_6479435d",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_76db78c1",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_7b5d3b2c",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_9a41d029",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_c73a1d11",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_f1fde7e0",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ],
+      "better": 0,
+      "worse": 0,
+      "added": 0,
+      "removed": 0,
+      "alternatives": 3
+    }
+  },
+  "seconds": 312.10424636199997,
+  "result_sha256": "0928ec0dae39bf6903e6b530e8be36c871a6f091e91540aa105756a568ba15bb",
+  "aggregates_recomputed": true,
+  "unchanged_node_counts": true,
+  "csv_downloaded_and_verified": false,
+  "official_metric_rerun_locally": false,
+  "leaderboard_submitted": false,
+  "scope": "Reused calibration, conditional on public pretrained models; not independent validation"
+}

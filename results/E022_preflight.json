@@ -1,0 +1,9 @@
+{
+  "payload_sha256": "c0a224ce4ca717cb19ad52b8faf20f2ffa441f79734c8b28cccae641d46fa891",
+  "notebook_sha256": "7c52f8c6b8c7c0e7402af981849d44dd3b35ca8c99987b88136c1dea4df8b8a8",
+  "files": 45,
+  "gpu": true,
+  "private": true,
+  "calibration_videos": 2,
+  "gpu_justification": "Dense 3D image inference and TTA; candidate graph optimization/evaluation remain CPU"
+}

@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-visual-replay-cpu",
+  "version": 1,
+  "kernel_id": 135009338,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-visual-replay-cpu",
+  "ref": "/code/jarturo/biohub-lab-visual-replay-cpu",
+  "launched_at_utc": "2026-09-19T18:01:41.855195+00:00",
+  "payload_sha256": "f234d7e7e0bf47a44ec80b2fb0de8086e3d0b5db292781d3b1327ab99aef8018",
+  "notebook_sha256": "e8520cfd243bfa2f9ee026c6ca1f14d11018165e71a06d3866f3718ff0f4df77",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

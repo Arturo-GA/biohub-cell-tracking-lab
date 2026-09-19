@@ -1,0 +1,8 @@
+{
+  "videos": [
+    "44b6_0db75fae",
+    "6bba_1f58c2f6"
+  ],
+  "selection": "First sorted calibration filename per specimen, independent of results",
+  "purpose": "Exact alternative graph capture and runtime smoke"
+}
