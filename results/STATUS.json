@@ -1164,7 +1164,7 @@
   "E016": {
     "kernel": "jarturo/biohub-lab-identity-parent-cpu",
     "version": 1,
-    "last_observed_status": "RUNNING",
+    "last_observed_status": "COMPLETE",
     "launch_receipt": "results/E016_launch.json",
     "preflight": "results/E016_preflight.json",
     "documentation": "docs/E016_IDENTIDAD_PADRES.es.md",
@@ -1176,8 +1176,42 @@
     "calibration_videos": 16,
     "training_steps": 3000,
     "launch_accepted": true,
-    "results_available": false,
+    "results_available": true,
     "unit_tests_passed": 4,
-    "control": "Geometric assignment on same primary detections; not full Harmonic"
+    "control": "Geometric assignment on same primary detections; not full Harmonic",
+    "completed_receipt": "results/E016_completed.json",
+    "results_documentation": "docs/E016_RESULTADOS.es.md",
+    "summaries": {
+      "learned": {
+        "n": 16,
+        "edge_jaccard": 0.8012757605495584,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 6,
+        "node_recall": 0.9933183100189678,
+        "adj_edge_jaccard": 0.7897406308756266,
+        "n_adj": 16,
+        "score": 0.7897406308756266
+      },
+      "geometric": {
+        "n": 16,
+        "edge_jaccard": 0.8001469507714916,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 6,
+        "node_recall": 0.9932616244146819,
+        "adj_edge_jaccard": 0.7887821295656314,
+        "n_adj": 16,
+        "score": 0.7887821295656314
+      }
+    },
+    "score_delta": 0.0009585013099951967,
+    "videos_improved": 4,
+    "videos_worse": 12,
+    "seconds": 157.177371527,
+    "decision": "Do not submit or extend training; small aggregate gain with 12 of 16 regressions. Compare full Harmonic on same cohort and diagnose graph edits.",
+    "next_run_started": false
   }
 }

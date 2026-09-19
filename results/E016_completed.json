@@ -1,0 +1,201 @@
+{
+  "status": "complete",
+  "kernel": "jarturo/biohub-lab-identity-parent-cpu",
+  "version": 1,
+  "checked_at_utc": "2026-09-19T15:17:57.622645+00:00",
+  "result_sha256": "dfb8d056a57922b349c9e0350964d11c8d61138c7b422f8b6f55a879112610d7",
+  "source_files_verified": 22,
+  "training_steps": 3000,
+  "seconds": 157.177371527,
+  "accelerator": "none",
+  "fit_videos": 48,
+  "calibration_videos": 16,
+  "summaries": {
+    "learned": {
+      "n": 16,
+      "edge_jaccard": 0.8012757605495584,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 0,
+      "division_fn": 6,
+      "node_recall": 0.9933183100189678,
+      "adj_edge_jaccard": 0.7897406308756266,
+      "n_adj": 16,
+      "score": 0.7897406308756266
+    },
+    "geometric": {
+      "n": 16,
+      "edge_jaccard": 0.8001469507714916,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 0,
+      "division_fn": 6,
+      "node_recall": 0.9932616244146819,
+      "adj_edge_jaccard": 0.7887821295656314,
+      "n_adj": 16,
+      "score": 0.7887821295656314
+    }
+  },
+  "score_delta": 0.0009585013099951967,
+  "totals": {
+    "learned": {
+      "edge_tp": 6532,
+      "edge_fp": 977,
+      "edge_fn": 643,
+      "num_pred_nodes": 365696
+    },
+    "geometric": {
+      "edge_tp": 6534,
+      "edge_fp": 991,
+      "edge_fn": 641,
+      "num_pred_nodes": 364674
+    }
+  },
+  "paired": [
+    {
+      "dataset": "44b6_0db75fae",
+      "adjusted_edge_delta": -0.0052870340180414255,
+      "raw_edge_delta": -0.005284552845528423,
+      "tp_delta": 0,
+      "fp_delta": 1,
+      "fn_delta": 0
+    },
+    {
+      "dataset": "44b6_5740d24b",
+      "adjusted_edge_delta": -0.00034224745934519074,
+      "raw_edge_delta": 0.0,
+      "tp_delta": 0,
+      "fp_delta": 0,
+      "fn_delta": 0
+    },
+    {
+      "dataset": "44b6_587a1e22",
+      "adjusted_edge_delta": -0.013938832796043243,
+      "raw_edge_delta": -0.014013647642679872,
+      "tp_delta": -3,
+      "fp_delta": 3,
+      "fn_delta": 3
+    },
+    {
+      "dataset": "44b6_9bfa6a0a",
+      "adjusted_edge_delta": -0.003608130334789017,
+      "raw_edge_delta": -0.0031645569620253333,
+      "tp_delta": -1,
+      "fp_delta": 0,
+      "fn_delta": 1
+    },
+    {
+      "dataset": "44b6_aaf8b0ea",
+      "adjusted_edge_delta": -0.00041594211330386877,
+      "raw_edge_delta": 0.0,
+      "tp_delta": 0,
+      "fp_delta": 0,
+      "fn_delta": 0
+    },
+    {
+      "dataset": "44b6_c15fded2",
+      "adjusted_edge_delta": -0.09173435256048723,
+      "raw_edge_delta": -0.09166101694915263,
+      "tp_delta": -6,
+      "fp_delta": 7,
+      "fn_delta": 6
+    },
+    {
+      "dataset": "44b6_c8e2a523",
+      "adjusted_edge_delta": -0.015016313218814692,
+      "raw_edge_delta": -0.01470277450713997,
+      "tp_delta": -1,
+      "fp_delta": 2,
+      "fn_delta": 1
+    },
+    {
+      "dataset": "44b6_cf2536e8",
+      "adjusted_edge_delta": -0.000390862503257039,
+      "raw_edge_delta": 0.0,
+      "tp_delta": 0,
+      "fp_delta": 0,
+      "fn_delta": 0
+    },
+    {
+      "dataset": "6bba_1f58c2f6",
+      "adjusted_edge_delta": 0.024568105570143772,
+      "raw_edge_delta": 0.025370330899983973,
+      "tp_delta": 4,
+      "fp_delta": -9,
+      "fn_delta": -4
+    },
+    {
+      "dataset": "6bba_5c824876",
+      "adjusted_edge_delta": 0.01773049229286383,
+      "raw_edge_delta": 0.0180011536712259,
+      "tp_delta": 9,
+      "fp_delta": -14,
+      "fn_delta": -9
+    },
+    {
+      "dataset": "6bba_6479435d",
+      "adjusted_edge_delta": 0.020109542849149786,
+      "raw_edge_delta": 0.020861712711410352,
+      "tp_delta": 6,
+      "fp_delta": -14,
+      "fn_delta": -6
+    },
+    {
+      "dataset": "6bba_76db78c1",
+      "adjusted_edge_delta": -0.00012276819854994958,
+      "raw_edge_delta": 0.0,
+      "tp_delta": 0,
+      "fp_delta": 0,
+      "fn_delta": 0
+    },
+    {
+      "dataset": "6bba_7b5d3b2c",
+      "adjusted_edge_delta": -0.0072563645611324334,
+      "raw_edge_delta": -0.00688729569807478,
+      "tp_delta": -2,
+      "fp_delta": 2,
+      "fn_delta": 2
+    },
+    {
+      "dataset": "6bba_9a41d029",
+      "adjusted_edge_delta": -0.021549481604490994,
+      "raw_edge_delta": -0.02169188286318635,
+      "tp_delta": -13,
+      "fp_delta": 22,
+      "fn_delta": 13
+    },
+    {
+      "dataset": "6bba_c73a1d11",
+      "adjusted_edge_delta": -0.0005099193851476613,
+      "raw_edge_delta": -0.0004905042457824527,
+      "tp_delta": -1,
+      "fp_delta": -1,
+      "fn_delta": 1
+    },
+    {
+      "dataset": "6bba_f1fde7e0",
+      "adjusted_edge_delta": 0.032404491840466454,
+      "raw_edge_delta": 0.03272904483430794,
+      "tp_delta": 6,
+      "fp_delta": -13,
+      "fn_delta": -6
+    }
+  ],
+  "videos_improved": 4,
+  "videos_worse": 12,
+  "videos_tied": 0,
+  "fit_examples": 29104,
+  "null_fit_examples": 45,
+  "csv_sha256_reported": {
+    "learned": "b6a9dd218a6e5a006d4476492b96d49fff8218d5af595c1654a346409899d699",
+    "geometric": "361835ffaaf0e43368b55adaa3f0f5d25446bcfaa0a6ff774d5c40f596abced1"
+  },
+  "checkpoint_sha256_reported": "18428e83ae37d9b7e87c238bf6449c719c5d9d18b012b26e63c8262a7ea7c334",
+  "aggregates_recomputed": true,
+  "official_metric_rerun_locally": false,
+  "csv_downloaded_and_verified": false,
+  "checkpoint_downloaded_and_verified": false,
+  "leaderboard_submitted": false,
+  "decision": "Do not submit or extend training: small paired gain; next compare full Harmonic on same calibration cohort and diagnose disagreement graph edits.",
+  "scope": "Conditional calibration; geometric control is not full Harmonic; E015-to-E016 changes confound detection set and training"
+}
