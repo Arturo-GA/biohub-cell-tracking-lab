@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-18",
   "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
   "github_private": true,
   "external_leaderboard_reference": {
@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 104,
+  "local_tests_passed": 110,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E013_completed_rejected_against_paired_control; reuse_original_features_for_redesign",
+  "quality_status": "E014_training_queued;E013_rejected;official_improvement_unproven",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -908,13 +908,13 @@
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "original_E013_completed_reuse_cache_before_further_preparation",
+    "status": "E014_Kaggle_GPU_training_accepted",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
-    "remote_target": "Kaggle_CPU",
+    "remote_target": "Kaggle_GPU_training_and_CPU_evaluation",
     "new_colab_runs": false,
-    "new_kaggle_gpu_or_tpu_runs": false,
+    "new_kaggle_gpu_or_tpu_runs": true,
     "paid_compute_planned": false,
     "policy_enforced_in_launchers": false,
     "cuda_environment_ready": true,
@@ -930,12 +930,9 @@
       "evaluation": 48
     },
     "next_steps": [
-      "Preserve original checkpoints, source and frozen feature manifests; completed and audited.",
-      "Recover only required original graph/features with hash and disk checks; do not mix their indices with local regenerated graphs.",
-      "Use fixed fit/calibration data to diagnose competing-edge ranking and duplicate detections; keep unknown labels masked.",
-      "Design structured association training and calibrate on full calibration trajectories; evaluate assignment separately from learned scores.",
-      "Train the revised selector on the laptop and solve/evaluate using Kaggle CPU. No paid compute, Colab or new Kaggle GPU runs.",
-      "Compare the frozen revised experiment with the same control before deciding on a leaderboard submission."
+      "Wait for Arturo to report E014 completion; no automatic monitoring.",
+      "Recover E014 checkpoints and compare calibration ranking with E013.",
+      "Evaluate structured association on complete calibration trajectories before freezing and evaluating the 48-video candidate."
     ],
     "implementation_documentation": "docs/LOCAL_EXECUTION.es.md",
     "cpu_workflow_launcher_enforces_policy": true,
@@ -957,7 +954,11 @@
     "cpu_batch_max_videos": 4,
     "local_batch_job": "results/LOCAL_BATCH_03_job.json",
     "local_batch_live_state": "outputs/pipeline_v3/state.json",
-    "original_remote_feature_videos": 112
+    "original_remote_feature_videos": 112,
+    "new_kaggle_gpu_runs_authorized": true,
+    "new_kaggle_tpu_runs_authorized": false,
+    "gpu_authorization_date": "2026-09-18",
+    "new_training_launch_accepted": true
   },
   "CPU_IMAGE_PREPARE": {
     "kernel": "jarturo/biohub-lab-cpu-image-preparation",
@@ -1091,5 +1092,20 @@
     },
     "last_observed_status": "COMPLETE",
     "next_launch_planned": false
+  },
+  "E014": {
+    "kernel": "jarturo/biohub-lab-association-ranking",
+    "version": 1,
+    "last_observed_status": "QUEUED",
+    "launch_receipt": "results/E014_launch.json",
+    "preflight": "results/E014_preflight.json",
+    "documentation": "docs/E014_ASSOCIATION_RANK.es.md",
+    "training_steps": 6000,
+    "fit_videos": 48,
+    "calibration_videos": 16,
+    "automatic_monitoring": false,
+    "leaderboard_submitted": false,
+    "official_evaluation_pending": true,
+    "results_available": false
   }
 }

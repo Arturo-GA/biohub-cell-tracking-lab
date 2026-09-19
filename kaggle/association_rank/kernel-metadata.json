@@ -1,0 +1,20 @@
+{
+  "id": "jarturo/biohub-lab-association-ranking",
+  "title": "Biohub Lab Association Ranking",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "kernel_sources": [
+    "jarturo/biohub-lab-learned-event-graph"
+  ],
+  "model_sources": []
+}

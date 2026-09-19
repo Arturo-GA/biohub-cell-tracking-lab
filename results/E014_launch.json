@@ -1,0 +1,30 @@
+{
+  "experiment": "E014",
+  "kernel": "jarturo/biohub-lab-association-ranking",
+  "version": 1,
+  "kernel_id": 134922639,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-association-ranking",
+  "launched_at_utc": "2026-09-19T01:38:14.305048+00:00",
+  "payload_sha256": "8938ad7b5403e1cd85c9a0fa21d500b96597245041b064deca38d78fd072ac23",
+  "notebook_sha256": "4ba825ce2775b81de22dc9df077ba88018213409123ed5c13a5d44e58232a0d6",
+  "metadata_sha256": "b58a07662b7a0bb8b8190b78ba36135e0c887b565ffb51e02d886bb241b5cbd7",
+  "source_files_verified": 5,
+  "split_sizes": [
+    48,
+    16,
+    48
+  ],
+  "private": true,
+  "gpu": true,
+  "tpu": false,
+  "internet": false,
+  "unit_tests_passed": 6,
+  "synthetic_training_checkpoint_smoke_steps": 3,
+  "session_timeout_seconds": 7200,
+  "leaderboard_submission": false,
+  "authorization": "Arturo explicitly renewed permission to use Kaggle GPU on 2026-09-18",
+  "automatic_monitoring": false,
+  "training_steps": 6000,
+  "training_images_recomputed": false,
+  "initial_status": "QUEUED"
+}
