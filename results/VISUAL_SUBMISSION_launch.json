@@ -1,0 +1,13 @@
+{
+  "kernel": "jarturo/biohub-lab-visual-global-assignment",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-visual-global-assignment",
+  "payload_sha256": "a0a2eaf6e112fe29e665e71b1691ec97a2eb93ca3a8284467c9c20ffe76a8256",
+  "notebook_sha256": "1e80d2ed0e690df3cd5959ea1e1db209ad128c9e8279b77e5b396bf498610e40",
+  "launched_at_utc": "2026-09-19T19:27:47.544746+00:00",
+  "enable_gpu": true,
+  "is_private": true,
+  "reserved_validation_receipt_sha256": "42ac46df66291651616d8fbe059fb621526bc2e95d110488e4f04a38fd0f6460",
+  "leaderboard_submitted": false,
+  "gpu_justification": "Full volumetric neural inference; following association uses CPU with the equivalent fast solver"
+}

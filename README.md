@@ -2,7 +2,7 @@
 
 Repositorio privado de Arturo para [Biohub — Cell Tracking During Development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development). Investigación y preparación inicial: **13 de septiembre de 2026**.
 
-**Estado vigente, 19 de septiembre:** E022 recupera alternativas de asociación antes del filtrado de Harmonic y mejora el piloto de dos videos de **0,787431 a 0,815029**; ambos videos mejoraron y el control se reprodujo exactamente. Se está validando la configuración congelada sobre ocho videos antes reservados (E023). Todavía no se ha enviado este candidato al leaderboard. [Resultados y protocolo](docs/E020_E021_ASOCIACION_VISUAL.es.md), [auditoría del piloto](results/E022_completed.json), [criterios fijados de validación](baseline/e023_validation.json).
+**Estado vigente, 19 de septiembre:** la asociación visual recuperada antes del filtrado de Harmonic pasó E023 sobre ocho videos reservados: **0,943683 → 0,950283**, diferencia **+0,006600**. Mejoraron seis videos, uno empató y uno empeoró; ambos especímenes mejoraron en conjunto y las divisiones no cambiaron. La configuración congelada pasó todos los criterios previos. La inferencia final sobre test está ejecutándose; todavía no se ha enviado este candidato al leaderboard. [Resultados y protocolo](docs/E020_E021_ASOCIACION_VISUAL.es.md), [auditoría de validación](results/E023_completed.json), [criterios fijados](baseline/e023_validation.json).
 
 **Cómputo:** laptop y Kaggle CPU para asociación, pruebas y evaluación; Kaggle GPU únicamente para inferencia volumétrica. Sin Colab. El optimizador rápido produce exactamente el CSV del piloto; la asociación de sus dos videos tarda 0,88 y 1,58 segundos en la laptop. [Comprobación](results/E023_fast_assignment_equivalence.json). Los experimentos anteriores se conservan como historial.
 
@@ -43,7 +43,7 @@ La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envi�
 | `kaggle/visual_replay` | E021: Transformer público sobre características antiguas | Métricas de calibración; no se promueve |
 | `kaggle/visual_capture` / `kaggle/visual_exact` | E022: captura exacta GPU y comparación CPU separadas | Piloto positivo sobre dos videos |
 | `kaggle/visual_validation_capture` / `kaggle/visual_validation` | E023: ocho videos reservados, configuración fija | Validación y criterio de promoción |
-| `kaggle/visual_submission` | Inferencia final preparada, pendiente de validación | `submission.csv` |
+| `kaggle/visual_submission` | Inferencia final lanzada tras pasar E023 | `submission.csv` |
 
 El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
 

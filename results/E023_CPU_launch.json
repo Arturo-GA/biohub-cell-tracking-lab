@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-visual-reserved-cpu",
+  "version": 1,
+  "kernel_id": 135017141,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-visual-reserved-cpu",
+  "ref": "/code/jarturo/biohub-lab-visual-reserved-cpu",
+  "launched_at_utc": "2026-09-19T19:23:16.706609+00:00",
+  "payload_sha256": "e090879310d58ab8c53a72cbedfe71caa986f3ad29184459711c17f69fb20655",
+  "notebook_sha256": "289acf8cb3ad81d12589976ffb25df20a2e47e4dfd4cf3bc3c9a3e6ddf0d7126",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

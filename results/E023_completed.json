@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "source_files_verified": {
+    "gpu": 47,
+    "cpu": 33
+  },
+  "summaries": {
+    "harmonic": {
+      "n": 8,
+      "n_adj": 8,
+      "edge_jaccard": 0.9330818109610802,
+      "adj_edge_jaccard": 0.9436828898822122,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 2,
+      "division_fn": 5,
+      "node_recall": 0.987062002291847,
+      "score": 0.9436828898822122
+    },
+    "visual": {
+      "n": 8,
+      "n_adj": 8,
+      "edge_jaccard": 0.9396173774412117,
+      "adj_edge_jaccard": 0.9502832669356378,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 2,
+      "division_fn": 5,
+      "node_recall": 0.987062002291847,
+      "score": 0.9502832669356378
+    }
+  },
+  "score_delta": 0.006600377053425643,
+  "group_score_deltas": {
+    "44b6_": 0.002153529619812522,
+    "6bba_": 0.009159197842601996
+  },
+  "paired": [
+    {
+      "dataset": "44b6_12dfb391",
+      "adj_edge_delta": -0.0024313617141007438,
+      "tp_delta": -1,
+      "fp_delta": 1
+    },
+    {
+      "dataset": "44b6_415c0a3a",
+      "adj_edge_delta": 0.0,
+      "tp_delta": 0,
+      "fp_delta": 0
+    },
+    {
+      "dataset": "44b6_c50204e0",
+      "adj_edge_delta": 0.0050616218608697805,
+      "tp_delta": 1,
+      "fp_delta": -1
+    },
+    {
+      "dataset": "44b6_e35b117d",
+      "adj_edge_delta": 0.01282485805542477,
+      "tp_delta": 2,
+      "fp_delta": -2
+    },
+    {
+      "dataset": "6bba_2646afc7",
+      "adj_edge_delta": 0.007987553471029085,
+      "tp_delta": 4,
+      "fp_delta": -2
+    },
+    {
+      "dataset": "6bba_6db0e9b4",
+      "adj_edge_delta": 0.03168567295954372,
+      "tp_delta": 6,
+      "fp_delta": -9
+    },
+    {
+      "dataset": "6bba_cf35214c",
+      "adj_edge_delta": 0.0060487006351441774,
+      "tp_delta": 2,
+      "fp_delta": -3
+    },
+    {
+      "dataset": "6bba_ef7b4f7e",
+      "adj_edge_delta": 0.0032754283245424176,
+      "tp_delta": 2,
+      "fp_delta": -2
+    }
+  ],
+  "promotion_checks": {
+    "minimum_score_gain": true,
+    "each_specimen_nonnegative": true,
+    "improved_at_least_worsened": true,
+    "division_tp_not_lower": true,
+    "division_fp_not_higher": true,
+    "all_exports_valid": true
+  },
+  "promote": true,
+  "production_csv_exactly_matches_frozen": true,
+  "result_sha256": "c1e9c9e56ebafb8d4497fbee0ff5196d485ba9f3003b4e37d4aca6353729c83d",
+  "gpu_process_seconds": 2743.885852685,
+  "cpu_seconds": 125.54908362699996,
+  "scope": "Previously reserved for this project; public pretrained models may have seen these images. Conditional validation only.",
+  "leaderboard_submitted": false
+}

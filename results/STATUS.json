@@ -1333,12 +1333,26 @@
     "leaderboard_submitted": false
   },
   "E023": {
-    "status": "CAPTURE_RUNNING",
+    "status": "COMPLETE",
     "launch_receipt": "results/E023_launch.json",
     "reserved_videos": 8,
     "configuration": "baseline/e023_validation.json",
     "cpu_notebook_prepared": true,
     "final_submission_notebook_prepared": true,
+    "leaderboard_submitted": false,
+    "completed_receipt": "results/E023_completed.json",
+    "cpu_launch_receipt": "results/E023_CPU_launch.json",
+    "harmonic_score": 0.9436828898822122,
+    "visual_score": 0.9502832669356378,
+    "score_delta": 0.006600377053425643,
+    "promote": true,
+    "decision": "All frozen checks passed; final test inference launched"
+  },
+  "visual_submission": {
+    "status": "RUNNING",
+    "kernel": "jarturo/biohub-lab-visual-global-assignment",
+    "version": 1,
+    "launch_receipt": "results/VISUAL_SUBMISSION_launch.json",
     "leaderboard_submitted": false
   }
 }
