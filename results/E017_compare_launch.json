@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-full-calibration-compare-cpu",
+  "version": 1,
+  "kernel_id": 135004112,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-full-calibration-compare-cpu",
+  "ref": "/code/jarturo/biohub-lab-full-calibration-compare-cpu",
+  "launched_at_utc": "2026-09-19T17:09:44.115699+00:00",
+  "payload_sha256": "2fe364aca0db1a88f7411a6caf99b47c4f13ae0e7f2eff87e12bd836fb29859c",
+  "notebook_sha256": "d2b908c7a984e288ee90f75aa92686e93bf60d6f0dd2808d860e60934c722de7",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

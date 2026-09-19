@@ -1,0 +1,156 @@
+{
+  "status": "complete",
+  "candidate": {
+    "n": 16,
+    "edge_jaccard": 0.8294871794871795,
+    "division_jaccard": 0.0,
+    "division_tp": 0,
+    "division_fp": 0,
+    "division_fn": 6,
+    "node_recall": 0.9925758596197753,
+    "adj_edge_jaccard": 0.8180056358683028,
+    "n_adj": 16,
+    "score": 0.8180056358683028
+  },
+  "geometric": {
+    "n": 16,
+    "edge_jaccard": 0.8001469507714916,
+    "division_jaccard": 0.0,
+    "division_tp": 0,
+    "division_fp": 0,
+    "division_fn": 6,
+    "node_recall": 0.9932616244146819,
+    "adj_edge_jaccard": 0.7887821295656314,
+    "n_adj": 16,
+    "score": 0.7887821295656314
+  },
+  "score_delta": 0.029223506302671343,
+  "seconds": 183.57571502400003,
+  "source_files_verified": 25,
+  "control_source_files_verified": 42,
+  "control_inference_seconds": 3055.286835625,
+  "control_csv_sha256_reported": "9d39a33fa0f4132619b91bb41ff261df428f95126f82a1f2678b963ba1a92ef4",
+  "control_evaluation_pending": true,
+  "totals": {
+    "candidate": {
+      "edge_tp": 6470,
+      "edge_fp": 625,
+      "edge_fn": 705,
+      "num_pred_nodes": 363279
+    },
+    "geometric": {
+      "edge_tp": 6534,
+      "edge_fp": 991,
+      "edge_fn": 641,
+      "num_pred_nodes": 364674
+    }
+  },
+  "paired": [
+    {
+      "dataset": "44b6_0db75fae",
+      "adj_edge_delta": 0.07468037485406576,
+      "tp_delta": 4,
+      "fp_delta": -9
+    },
+    {
+      "dataset": "44b6_5740d24b",
+      "adj_edge_delta": 0.0056644223207446,
+      "tp_delta": 0,
+      "fp_delta": -1
+    },
+    {
+      "dataset": "44b6_587a1e22",
+      "adj_edge_delta": 0.036997846842726445,
+      "tp_delta": 2,
+      "fp_delta": -14
+    },
+    {
+      "dataset": "44b6_9bfa6a0a",
+      "adj_edge_delta": -0.0019669197768710234,
+      "tp_delta": -5,
+      "fp_delta": -6
+    },
+    {
+      "dataset": "44b6_aaf8b0ea",
+      "adj_edge_delta": 0.00976803569916862,
+      "tp_delta": 1,
+      "fp_delta": -1
+    },
+    {
+      "dataset": "44b6_c15fded2",
+      "adj_edge_delta": 0.018794260592507106,
+      "tp_delta": -1,
+      "fp_delta": -4
+    },
+    {
+      "dataset": "44b6_c8e2a523",
+      "adj_edge_delta": 0.00801710509400666,
+      "tp_delta": -2,
+      "fp_delta": -4
+    },
+    {
+      "dataset": "44b6_cf2536e8",
+      "adj_edge_delta": 0.032808269342332164,
+      "tp_delta": 0,
+      "fp_delta": -3
+    },
+    {
+      "dataset": "6bba_1f58c2f6",
+      "adj_edge_delta": 0.08354353773502055,
+      "tp_delta": 4,
+      "fp_delta": -41
+    },
+    {
+      "dataset": "6bba_5c824876",
+      "adj_edge_delta": 0.0162241894989803,
+      "tp_delta": -4,
+      "fp_delta": -26
+    },
+    {
+      "dataset": "6bba_6479435d",
+      "adj_edge_delta": 0.029109339569202253,
+      "tp_delta": -17,
+      "fp_delta": -58
+    },
+    {
+      "dataset": "6bba_76db78c1",
+      "adj_edge_delta": -0.0049964872528821536,
+      "tp_delta": -4,
+      "fp_delta": -1
+    },
+    {
+      "dataset": "6bba_7b5d3b2c",
+      "adj_edge_delta": -0.013798285371635965,
+      "tp_delta": -6,
+      "fp_delta": 2
+    },
+    {
+      "dataset": "6bba_9a41d029",
+      "adj_edge_delta": 0.023902648642555202,
+      "tp_delta": 2,
+      "fp_delta": -37
+    },
+    {
+      "dataset": "6bba_c73a1d11",
+      "adj_edge_delta": 0.05788539639022483,
+      "tp_delta": -9,
+      "fp_delta": -135
+    },
+    {
+      "dataset": "6bba_f1fde7e0",
+      "adj_edge_delta": -0.013072712566065792,
+      "tp_delta": -29,
+      "fp_delta": -28
+    }
+  ],
+  "videos_improved": 12,
+  "videos_worse": 4,
+  "result_sha256": "0289f96b439da81bbcb3b805b0bad2b3ddfe58c7cc047611f1c7af5d86f2f2a9",
+  "control_result_sha256": "a5dec86329f67c9fe96d2c2e9a21a4c5306e56ffc88243833b70898c77e99533",
+  "aggregates_recomputed": true,
+  "csv_downloaded_and_verified": false,
+  "official_metric_rerun_locally": false,
+  "leaderboard_submitted": false,
+  "decision": "Retain trajectory hypothesis for full paired comparison; not yet evidence of beating Harmonic",
+  "scope": "16 calibration videos; conditional development"
+}

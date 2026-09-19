@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 125,
+  "local_tests_passed": 128,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -1218,12 +1218,12 @@
     "documentation": "docs/E017_TRAYECTORIAS_TEJIDO.es.md",
     "cpu": {
       "kernel": "jarturo/biohub-lab-tissue-trajectory-cpu",
-      "status": "RUNNING",
+      "status": "COMPLETE",
       "checked_at_utc": "2026-09-19T15:31:27.501660+00:00"
     },
     "control": {
       "kernel": "jarturo/biohub-lab-harmonic-calibration-control",
-      "status": "RUNNING",
+      "status": "COMPLETE",
       "checked_at_utc": "2026-09-19T15:31:28.651707+00:00"
     },
     "cpu_launch": "results/E017_CPU_launch.json",
@@ -1234,6 +1234,15 @@
     "leaderboard_submitted": false,
     "automatic_monitoring": false,
     "control_official_evaluation_pending": true,
-    "decision": "Compare collective-motion sequence optimization and full Harmonic on the same calibration videos; no promotion yet"
+    "decision": "12 of 16 improve versus geometry; full Harmonic CPU evaluation launched, no promotion yet",
+    "completed_receipt": "results/E017_completed.json",
+    "results_documentation": "docs/E017_RESULTADOS.es.md",
+    "candidate_score": 0.8180056358683028,
+    "geometric_score": 0.7887821295656314,
+    "videos_improved": 12,
+    "videos_worse": 4,
+    "compare_launch": "results/E017_compare_launch.json",
+    "compare_status": "RUNNING",
+    "compare_kernel": "jarturo/biohub-lab-full-calibration-compare-cpu"
   }
 }
