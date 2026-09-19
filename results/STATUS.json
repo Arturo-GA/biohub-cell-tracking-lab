@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E014_rejected_48_of_48_worse_than_Harmonic_control",
+  "quality_status": "E016_E017_rejected_as_full_replacements_after_paired_Harmonic_comparison",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -1233,8 +1233,8 @@
     "training_started": false,
     "leaderboard_submitted": false,
     "automatic_monitoring": false,
-    "control_official_evaluation_pending": true,
-    "decision": "12 of 16 improve versus geometry; full Harmonic CPU evaluation launched, no promotion yet",
+    "control_official_evaluation_pending": false,
+    "decision": "Reject E016/E017 full replacements; retain Harmonic. Diagnose complementary errors before any new architecture.",
     "completed_receipt": "results/E017_completed.json",
     "results_documentation": "docs/E017_RESULTADOS.es.md",
     "candidate_score": 0.8180056358683028,
@@ -1242,7 +1242,14 @@
     "videos_improved": 12,
     "videos_worse": 4,
     "compare_launch": "results/E017_compare_launch.json",
-    "compare_status": "RUNNING",
-    "compare_kernel": "jarturo/biohub-lab-full-calibration-compare-cpu"
+    "compare_status": "COMPLETE",
+    "compare_kernel": "jarturo/biohub-lab-full-calibration-compare-cpu",
+    "compare_completed_receipt": "results/E017_compare_completed.json",
+    "final_documentation": "docs/E017_COMPARACION_FINAL.es.md",
+    "harmonic_score": 0.9007529595605399,
+    "delta_vs_harmonic": -0.08274732369223714,
+    "videos_better_than_harmonic": 2,
+    "videos_worse_than_harmonic": 14,
+    "next_run_started": false
   }
 }

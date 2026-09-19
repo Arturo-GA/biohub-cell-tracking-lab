@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "source_files_verified": 25,
+  "seconds": 45.189819829000044,
+  "summaries": {
+    "tissue": {
+      "n": 16,
+      "edge_jaccard": 0.8294871794871795,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 0,
+      "division_fn": 6,
+      "node_recall": 0.9925758596197753,
+      "adj_edge_jaccard": 0.8180056358683028,
+      "n_adj": 16,
+      "score": 0.8180056358683028
+    },
+    "learned": {
+      "n": 16,
+      "edge_jaccard": 0.8012757605495584,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 0,
+      "division_fn": 6,
+      "node_recall": 0.9933183100189678,
+      "adj_edge_jaccard": 0.7897406308756266,
+      "n_adj": 16,
+      "score": 0.7897406308756266
+    },
+    "geometric": {
+      "n": 16,
+      "edge_jaccard": 0.8001469507714916,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 0,
+      "division_fn": 6,
+      "node_recall": 0.9932616244146819,
+      "adj_edge_jaccard": 0.7887821295656314,
+      "n_adj": 16,
+      "score": 0.7887821295656314
+    },
+    "harmonic": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    }
+  },
+  "score_delta_vs_harmonic": {
+    "tissue": -0.08274732369223714,
+    "learned": -0.11101232868491329,
+    "geometric": -0.11197082999490848
+  },
+  "paired_videos": {
+    "tissue": {
+      "better": 2,
+      "worse": 14
+    },
+    "learned": {
+      "better": 0,
+      "worse": 16
+    },
+    "geometric": {
+      "better": 0,
+      "worse": 16
+    }
+  },
+  "totals": {
+    "harmonic": {
+      "edge_tp": 6674,
+      "edge_fp": 485,
+      "edge_fn": 501,
+      "num_pred_nodes": 318094
+    },
+    "tissue": {
+      "edge_tp": 6470,
+      "edge_fp": 625,
+      "edge_fn": 705,
+      "num_pred_nodes": 363279
+    },
+    "learned": {
+      "edge_tp": 6532,
+      "edge_fp": 977,
+      "edge_fn": 643,
+      "num_pred_nodes": 365696
+    },
+    "geometric": {
+      "edge_tp": 6534,
+      "edge_fp": 991,
+      "edge_fn": 641,
+      "num_pred_nodes": 364674
+    }
+  },
+  "export_unchanged": true,
+  "result_sha256": "20264b369f39c1f7cc1fa9df50e6c50f0ceddf2d035e41a8a5abfea3913c43f3",
+  "aggregates_recomputed": true,
+  "csv_downloaded_and_verified": false,
+  "official_metric_rerun_locally": false,
+  "leaderboard_submitted": false,
+  "decision": "Reject E016/E017 as full replacements; retain full Harmonic. Diagnose complementary correct links before any fusion.",
+  "scope": "Same 16 calibration videos; conditional development, not a leaderboard score"
+}
