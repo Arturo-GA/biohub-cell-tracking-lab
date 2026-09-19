@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "steps": 6000,
+  "source_files_verified": 5,
+  "result_sha256": "ee0ca886204b84a625aac6846ae0db361e6c102e33ddf8fe9a03ff463eba3a2a",
+  "input_identity_sha256": "d51a3f735fc6dec68d506f1185e5def917739845bdfd975480317e53e2b4b754",
+  "heads": {
+    "edge": {
+      "step": 3000,
+      "checkpoint_sha256": "68b9cedc3ce73874fbf4c532e32b5a1b0a32ee37e583ec4298f442e9e9338f80",
+      "selection_skill": 0.9807687620884951,
+      "eligible_videos": 14
+    },
+    "division": {
+      "step": 4000,
+      "checkpoint_sha256": "f85a262a0ff90619f534ce2c4db855ccb9c0f1cbce09abbd7c1ef3ea1939f808",
+      "selection_skill": 0.30702261975881245,
+      "eligible_videos": 4
+    }
+  },
+  "pooled_calibration": {
+    "edge": {
+      "average_precision": 0.9982114937242255,
+      "positives": 58342,
+      "examples": 63918
+    },
+    "division": {
+      "average_precision": 0.006850735771613013,
+      "positives": 55,
+      "examples": 31649
+    }
+  },
+  "thresholds": {
+    "edge": {
+      "logit": -1.9086129665374756,
+      "f_beta": 0.9840742066942896,
+      "beta": 1.0,
+      "tp": 57713,
+      "fp": 1239,
+      "fn": 629,
+      "positives": 58342,
+      "negatives": 5576
+    },
+    "division": {
+      "logit": 11.330086708068848,
+      "f_beta": 0.07042253521126761,
+      "beta": 0.5,
+      "tp": 1,
+      "fp": 3,
+      "fn": 54,
+      "positives": 55,
+      "negatives": 31594
+    }
+  },
+  "training_seconds": 156.647755319,
+  "total_process_seconds": 357.851510182,
+  "official_score_available": false,
+  "leaderboard_submitted": false,
+  "scope": "Known candidate calibration; full trajectory evaluation pending"
+}

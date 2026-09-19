@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-association-cpu-evaluation",
+  "version": 1,
+  "kernel_id": 134926424,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-association-cpu-evaluation",
+  "ref": "/code/jarturo/biohub-lab-association-cpu-evaluation",
+  "launched_at_utc": "2026-09-19T02:35:09.503702+00:00",
+  "payload_sha256": "05d2fec1023d6376738c37eba772a260afdbd30df8c6601a9e5827e676e61e28",
+  "notebook_sha256": "b14e93a3813b6d24c4e91e0754416a612dcde6bcf28d5614f687a99ee27c8088",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

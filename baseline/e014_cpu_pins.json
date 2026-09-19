@@ -1,0 +1,38 @@
+{
+  "e014_result_sha256": "ee0ca886204b84a625aac6846ae0db361e6c102e33ddf8fe9a03ff463eba3a2a",
+  "frozen_inputs_sha256": "1c8f7d3d1134db7ed3d80355a3a61eac8b99bf2dd9dec68fc50362d16b6fb5c0",
+  "checkpoint_sha256": {
+    "edge": "68b9cedc3ce73874fbf4c532e32b5a1b0a32ee37e583ec4298f442e9e9338f80",
+    "division": "f85a262a0ff90619f534ce2c4db855ccb9c0f1cbce09abbd7c1ef3ea1939f808"
+  },
+  "thresholds": {
+    "edge": {
+      "logit": -1.9086129665374756,
+      "f_beta": 0.9840742066942896,
+      "beta": 1.0,
+      "tp": 57713,
+      "fp": 1239,
+      "fn": 629,
+      "positives": 58342,
+      "negatives": 5576
+    },
+    "division": {
+      "logit": 11.330086708068848,
+      "f_beta": 0.07042253521126761,
+      "beta": 0.5,
+      "tp": 1,
+      "fp": 3,
+      "fn": 54,
+      "positives": 55,
+      "negatives": 31594
+    }
+  },
+  "paired_control_score": 0.9092570108739322,
+  "arms": [
+    "continuations",
+    "divisions"
+  ],
+  "selection": "Highest official score on the 16 calibration videos; ties favor continuations",
+  "quality": "Neutral constant 0.5",
+  "solver": "Existing overlapping MILP with recorded fallback; default 5 second window time limit"
+}

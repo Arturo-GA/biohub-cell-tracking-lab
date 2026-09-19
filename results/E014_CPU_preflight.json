@@ -1,0 +1,11 @@
+{
+  "payload_sha256": "05d2fec1023d6376738c37eba772a260afdbd30df8c6601a9e5827e676e61e28",
+  "source_files_verified": 16,
+  "cpu_only": true,
+  "unit_tests_passed": 3,
+  "calibration_videos": 16,
+  "evaluation_videos": 48,
+  "training_started": false,
+  "no_automatic_monitoring": true,
+  "notebook_sha256": "b14e93a3813b6d24c4e91e0754416a612dcde6bcf28d5614f687a99ee27c8088"
+}

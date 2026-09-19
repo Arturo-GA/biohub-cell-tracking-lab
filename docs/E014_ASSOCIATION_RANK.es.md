@@ -1,5 +1,7 @@
 # E014: aprendizaje de asociaciones con el caché E013
 
+**Actualización:** E014 terminó los 6.000 pasos; se recuperaron y verificaron sus pesos. La evaluación de trayectorias está ejecutándose en CPU. [Resultados y política de ahorro de GPU](E014_CPU_RESULTADOS.es.md). El lanzamiento descrito abajo es el registro histórico.
+
 Arturo autorizó de nuevo usar GPU Kaggle el 18 de septiembre de 2026. La API informó 6 horas disponibles, ninguna consumida ni reservada y pago por uso desactivado. Esta autorización sustituye la restricción anterior de no iniciar nuevas GPU Kaggle; Colab y cómputo pagado siguen fuera del plan.
 
 Se lanzó la versión 1 del notebook privado [Biohub Lab Association Ranking](https://www.kaggle.com/code/jarturo/biohub-lab-association-ranking). Kaggle aceptó la ejecución y su primera respuesta fue **QUEUED**. [Recibo de lanzamiento](../results/E014_launch.json). Sesión GPU T4 con límite de 7.200 segundos; sin seguimiento automático ni submission al leaderboard.

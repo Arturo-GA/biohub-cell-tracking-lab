@@ -30,7 +30,7 @@
     "decision": "do_not_submit",
     "total_video_seconds": 723.5988115210001
   },
-  "local_tests_passed": 110,
+  "local_tests_passed": 113,
   "control_test_run": {
     "kernel": "jarturo/biohub-lab-harmonic-control",
     "version": 1,
@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E014_training_queued;E013_rejected;official_improvement_unproven",
+  "quality_status": "E014_known_link_ranking_promising_divisions_weak_CPU_official_evaluation_pending",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -908,11 +908,11 @@
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "E014_Kaggle_GPU_training_accepted",
+    "status": "E014_complete_CPU_evaluation_running",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
-    "remote_target": "Kaggle_GPU_training_and_CPU_evaluation",
+    "remote_target": "Kaggle_CPU_default",
     "new_colab_runs": false,
     "new_kaggle_gpu_or_tpu_runs": true,
     "paid_compute_planned": false,
@@ -921,7 +921,7 @@
     "local_gpu_memory_benchmark_completed": true,
     "exact_training_resume_implemented": true,
     "portable_cpu_stage_runners_implemented": true,
-    "new_training_started_for_this_plan": false,
+    "new_training_started_for_this_plan": true,
     "preserve_existing_run_artifacts": true,
     "automatic_monitoring": false,
     "scientific_split_preserved": {
@@ -930,9 +930,9 @@
       "evaluation": 48
     },
     "next_steps": [
-      "Wait for Arturo to report E014 completion; no automatic monitoring.",
-      "Recover E014 checkpoints and compare calibration ranking with E013.",
-      "Evaluate structured association on complete calibration trajectories before freezing and evaluating the 48-video candidate."
+      "Await user completion notification for E014 CPU evaluation; do not monitor automatically.",
+      "Recover frozen calibration selection, candidate metrics and solver fallbacks; compare the same 48 videos to control.",
+      "Use CPU for any viable future preparation, association, evaluation or small-model training; justify GPU necessity before allocating it."
     ],
     "implementation_documentation": "docs/LOCAL_EXECUTION.es.md",
     "cpu_workflow_launcher_enforces_policy": true,
@@ -958,7 +958,9 @@
     "new_kaggle_gpu_runs_authorized": true,
     "new_kaggle_tpu_runs_authorized": false,
     "gpu_authorization_date": "2026-09-18",
-    "new_training_launch_accepted": true
+    "new_training_launch_accepted": true,
+    "gpu_policy": "Only when technically necessary; CPU acceptable even for hours, including small-model training",
+    "gpu_policy_updated_date": "2026-09-18"
   },
   "CPU_IMAGE_PREPARE": {
     "kernel": "jarturo/biohub-lab-cpu-image-preparation",
@@ -1096,7 +1098,7 @@
   "E014": {
     "kernel": "jarturo/biohub-lab-association-ranking",
     "version": 1,
-    "last_observed_status": "QUEUED",
+    "last_observed_status": "COMPLETE",
     "launch_receipt": "results/E014_launch.json",
     "preflight": "results/E014_preflight.json",
     "documentation": "docs/E014_ASSOCIATION_RANK.es.md",
@@ -1106,6 +1108,22 @@
     "automatic_monitoring": false,
     "leaderboard_submitted": false,
     "official_evaluation_pending": true,
-    "results_available": false
+    "results_available": true,
+    "completed_receipt": "results/E014_completed.json",
+    "training_seconds": 156.647755319,
+    "total_process_seconds": 357.851510182
+  },
+  "E014_CPU": {
+    "kernel": "jarturo/biohub-lab-association-cpu-evaluation",
+    "version": 1,
+    "last_observed_status": "RUNNING",
+    "checked_at_utc": "2026-09-19T02:36:20.886666+00:00",
+    "launch_receipt": "results/E014_CPU_launch.json",
+    "preflight": "results/E014_CPU_preflight.json",
+    "documentation": "docs/E014_CPU_RESULTADOS.es.md",
+    "gpu": false,
+    "tpu": false,
+    "automatic_monitoring": false,
+    "leaderboard_submitted": false
   }
 }

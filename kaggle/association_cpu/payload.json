@@ -1,0 +1,24 @@
+{
+  "sha256": "05d2fec1023d6376738c37eba772a260afdbd30df8c6601a9e5827e676e61e28",
+  "files": [
+    "NOTICE.md",
+    "baseline/e014_cpu_pins.json",
+    "baseline/event_graph_split.json",
+    "scripts/association_cpu_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/association_cpu.py",
+    "src/biohub_lab/association_rank.py",
+    "src/biohub_lab/detector_proposals.py",
+    "src/biohub_lab/evaluate.py",
+    "src/biohub_lab/event_data.py",
+    "src/biohub_lab/event_solver.py",
+    "src/biohub_lab/submission.py",
+    "src/biohub_official/LICENSE",
+    "src/biohub_official/__init__.py",
+    "src/biohub_official/division_metrics.py",
+    "src/biohub_official/metrics.py"
+  ],
+  "contains_weights": false,
+  "contains_images": false,
+  "contains_credentials": false
+}
