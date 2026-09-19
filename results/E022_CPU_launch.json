@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-visual-exact-cpu",
+  "version": 1,
+  "kernel_id": 135011847,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-visual-exact-cpu",
+  "ref": "/code/jarturo/biohub-lab-visual-exact-cpu",
+  "launched_at_utc": "2026-09-19T18:26:24.651328+00:00",
+  "payload_sha256": "7d9bfd3abe0116c9493a0f74d1fb703d41cd46741a7de1a3e2a76b8398e2030e",
+  "notebook_sha256": "e69fd7d01201a2f337340ce3db88848fe2eb131522e408edbe285477de5e86aa",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

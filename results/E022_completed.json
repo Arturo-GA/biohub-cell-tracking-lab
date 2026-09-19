@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "gpu_source_files_verified": 45,
+  "cpu_source_files_verified": 29,
+  "gpu_process_seconds": 768.559566962,
+  "cpu_seconds": 303.46059160199997,
+  "captured_pairs": 198,
+  "control_exactly_reproduced": true,
+  "summaries": {
+    "harmonic": {
+      "n": 2,
+      "edge_jaccard": 0.7980392156862746,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 1,
+      "division_fn": 0,
+      "node_recall": 0.9794349896521931,
+      "adj_edge_jaccard": 0.7874306425607434,
+      "n_adj": 2,
+      "score": 0.7874306425607434
+    },
+    "visual": {
+      "n": 2,
+      "edge_jaccard": 0.826,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 1,
+      "division_fn": 0,
+      "node_recall": 0.9794349896521931,
+      "adj_edge_jaccard": 0.8150290633948811,
+      "n_adj": 2,
+      "score": 0.8150290633948811
+    },
+    "sequence": {
+      "n": 2,
+      "edge_jaccard": 0.8095238095238095,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 1,
+      "division_fn": 0,
+      "node_recall": 0.9794349896521931,
+      "adj_edge_jaccard": 0.7987575031791562,
+      "n_adj": 2,
+      "score": 0.7987575031791562
+    }
+  },
+  "deltas": {
+    "visual": 0.02759842083413777,
+    "sequence": 0.011326860618412815
+  },
+  "paired": {
+    "visual": [
+      {
+        "dataset": "44b6_0db75fae",
+        "adj_edge_delta": 0.01245138151182723,
+        "tp_delta": 1,
+        "fp_delta": -1
+      },
+      {
+        "dataset": "6bba_1f58c2f6",
+        "adj_edge_delta": 0.03310459438496316,
+        "tp_delta": 5,
+        "fp_delta": -9
+      }
+    ],
+    "sequence": [
+      {
+        "dataset": "44b6_0db75fae",
+        "adj_edge_delta": 0.01863314777338021,
+        "tp_delta": 1,
+        "fp_delta": -2
+      },
+      {
+        "dataset": "6bba_1f58c2f6",
+        "adj_edge_delta": 0.008247470164041037,
+        "tp_delta": 0,
+        "fp_delta": -4
+      }
+    ]
+  },
+  "result_sha256": "e9e0274746df543aeca2fffe9321de2ac65f2ef3b3f822776ae5f199997be381",
+  "aggregates_recomputed": true,
+  "scope": "Two fixed calibration videos; smoke only, not validation or submission evidence",
+  "leaderboard_submitted": false,
+  "decision": "Freeze visual-only configuration and validate on eight filename-selected reserved videos before any submission"
+}

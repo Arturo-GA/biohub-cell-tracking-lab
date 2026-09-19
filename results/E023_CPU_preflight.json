@@ -1,0 +1,10 @@
+{
+  "payload_sha256": "e090879310d58ab8c53a72cbedfe71caa986f3ad29184459711c17f69fb20655",
+  "notebook_sha256": "289acf8cb3ad81d12589976ffb25df20a2e47e4dfd4cf3bc3c9a3e6ddf0d7126",
+  "files": 33,
+  "gpu": false,
+  "private": true,
+  "calibration_videos": 0,
+  "reserved_videos": 8,
+  "exact_pilot_equivalence": "equivalent_on_both_real_pilot_videos"
+}

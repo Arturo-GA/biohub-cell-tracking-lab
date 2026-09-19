@@ -1,0 +1,22 @@
+{
+  "status": "equivalent_on_both_real_pilot_videos",
+  "results": {
+    "44b6_0db75fae": {
+      "seconds": 0.875,
+      "exact_edges_equal": true,
+      "nodes_unchanged": true,
+      "edges": 17115,
+      "added": 346,
+      "removed": 350
+    },
+    "6bba_1f58c2f6": {
+      "seconds": 1.5789999999979045,
+      "exact_edges_equal": true,
+      "nodes_unchanged": true,
+      "edges": 30999,
+      "added": 1096,
+      "removed": 1087
+    }
+  },
+  "config_changed": false
+}

@@ -1,0 +1,13 @@
+{
+  "payload_sha256": "a0a2eaf6e112fe29e665e71b1691ec97a2eb93ca3a8284467c9c20ffe76a8256",
+  "notebook_sha256": "1e80d2ed0e690df3cd5959ea1e1db209ad128c9e8279b77e5b396bf498610e40",
+  "files": 13,
+  "gpu": true,
+  "private": true,
+  "calibration_videos": 0,
+  "test_inference": true,
+  "leaderboard_submitted": false,
+  "launch_pending_reserved_validation": true,
+  "contains_training_predictions": false,
+  "gpu_justification": "Full volumetric neural inference; following association uses CPU with the equivalent fast solver"
+}

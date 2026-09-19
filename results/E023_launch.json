@@ -1,0 +1,13 @@
+{
+  "kernel": "jarturo/biohub-lab-visual-reserved-capture",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-visual-reserved-capture",
+  "payload_sha256": "7e0c259bbf7edc087e7282bf06726171f99b1b26dbfab29baa1130a75fb97d5e",
+  "notebook_sha256": "3a08ef6d6486c8210e339d686c818770f6bf072837dbf878605c339bcfd6694e",
+  "launched_at_utc": "2026-09-19T18:35:26.728563+00:00",
+  "enable_gpu": true,
+  "is_private": true,
+  "reserved_videos": 8,
+  "leaderboard_submitted": false,
+  "gpu_justification": "Exact 3D image inference and TTA on eight reserved videos; CPU handles all association and evaluation"
+}

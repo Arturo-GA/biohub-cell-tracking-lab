@@ -1303,5 +1303,42 @@
     "results_available": true,
     "next_run_started": false
   },
-  "short_run_followup_policy": "User authorized checking short runs to completion and continuing justified next steps in active task; no recurring automation or automatic leaderboard submission"
+  "short_run_followup_policy": "User authorizes following short runs to completion, continuing justified experiments, and making a worthwhile submission after supporting evidence. CPU default; GPU only for necessary volumetric work. No recurring automation created.",
+  "E020": {
+    "status": "COMPLETE",
+    "gpu": false,
+    "completed_receipt": "results/E020_completed.json",
+    "decision": "No metric improvement; limited alignment after smoothing",
+    "leaderboard_submitted": false
+  },
+  "E021": {
+    "status": "COMPLETE",
+    "gpu": false,
+    "completed_receipt": "results/E021_completed.json",
+    "visual_score": 0.8984100130972947,
+    "sequence_score": 0.9007529595605399,
+    "harmonic_score": 0.9007529595605399,
+    "decision": "Reject replay for submission",
+    "leaderboard_submitted": false
+  },
+  "E022": {
+    "status": "COMPLETE",
+    "completed_receipt": "results/E022_completed.json",
+    "control_reproduction": "results/E022_control_reproduction.json",
+    "videos": 2,
+    "visual_score": 0.8150290633948811,
+    "harmonic_score": 0.7874306425607434,
+    "score_delta": 0.02759842083413777,
+    "decision": "Freeze visual configuration and validate reserved cohort",
+    "leaderboard_submitted": false
+  },
+  "E023": {
+    "status": "CAPTURE_RUNNING",
+    "launch_receipt": "results/E023_launch.json",
+    "reserved_videos": 8,
+    "configuration": "baseline/e023_validation.json",
+    "cpu_notebook_prepared": true,
+    "final_submission_notebook_prepared": true,
+    "leaderboard_submitted": false
+  }
 }

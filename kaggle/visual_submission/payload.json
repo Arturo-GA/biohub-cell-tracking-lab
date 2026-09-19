@@ -1,0 +1,21 @@
+{
+  "sha256": "a0a2eaf6e112fe29e665e71b1691ec97a2eb93ca3a8284467c9c20ffe76a8256",
+  "files": [
+    "NOTICE.md",
+    "baseline/harmonic_inference.py",
+    "scripts/visual_submission_postprocess.py",
+    "scripts/visual_submission_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/association_rank.py",
+    "src/biohub_lab/calibration_export.py",
+    "src/biohub_lab/detection_identity.py",
+    "src/biohub_lab/patch.py",
+    "src/biohub_lab/submission.py",
+    "src/biohub_lab/visual_assignment.py",
+    "src/biohub_lab/visual_candidates.py",
+    "src/biohub_lab/visual_capture.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-visual-production-check",
+  "version": 1,
+  "kernel_id": 135013578,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-visual-production-check",
+  "ref": "/code/jarturo/biohub-lab-visual-production-check",
+  "launched_at_utc": "2026-09-19T18:44:59.020108+00:00",
+  "payload_sha256": "0b797c8d80f42d0a0326b0a532083f830131fb77367b039e1a05b34840cb078a",
+  "notebook_sha256": "0462765242cea325092860c9bf756973e88aa894d860c5d606414e7dfba4b641",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,10 @@
+{
+  "payload_sha256": "7e0c259bbf7edc087e7282bf06726171f99b1b26dbfab29baa1130a75fb97d5e",
+  "notebook_sha256": "3a08ef6d6486c8210e339d686c818770f6bf072837dbf878605c339bcfd6694e",
+  "files": 47,
+  "gpu": true,
+  "private": true,
+  "calibration_videos": 0,
+  "reserved_videos": 8,
+  "gpu_justification": "Exact 3D image inference and TTA on eight reserved videos; CPU handles all association and evaluation"
+}

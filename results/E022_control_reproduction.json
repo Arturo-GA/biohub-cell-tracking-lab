@@ -1,0 +1,24 @@
+{
+  "status": "exact_reproduction",
+  "all_node_coordinates_and_ids_equal": true,
+  "all_edges_equal": true,
+  "videos": {
+    "44b6_0db75fae": {
+      "nodes_equal": true,
+      "edges_equal": true,
+      "nodes": 17765,
+      "edges": 17119,
+      "different_nodes": 0,
+      "edge_symmetric_difference": 0
+    },
+    "6bba_1f58c2f6": {
+      "nodes_equal": true,
+      "edges_equal": true,
+      "nodes": 32328,
+      "edges": 30990,
+      "different_nodes": 0,
+      "edge_symmetric_difference": 0
+    }
+  },
+  "csv_hashes_verified_on_download": true
+}

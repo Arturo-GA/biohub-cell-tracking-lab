@@ -2,7 +2,9 @@
 
 Repositorio privado de Arturo para [Biohub — Cell Tracking During Development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development). Investigación y preparación inicial: **13 de septiembre de 2026**.
 
-**Cómputo vigente (15 de septiembre):** CUDA local habilitado en la RTX 3050, entrenamiento por video con reanudación completa y ejecutores separados para Kaggle CPU. Pasaron 96 pruebas y una prueba CUDA de 100 pasos sobre 17.300 centros. Se lanzó la preparación del primer video en Kaggle CPU; el entrenamiento científico espera características reales. Sin nuevas ejecuciones en Colab ni aceleradores de Kaggle. [Implementación, medidas y comandos](docs/LOCAL_EXECUTION.es.md), [estrategia](docs/LOCAL_KAGGLE_CPU.es.md). Los notebooks GPU anteriores se conservan como versiones históricas.
+**Estado vigente, 19 de septiembre:** E022 recupera alternativas de asociación antes del filtrado de Harmonic y mejora el piloto de dos videos de **0,787431 a 0,815029**; ambos videos mejoraron y el control se reprodujo exactamente. Se está validando la configuración congelada sobre ocho videos antes reservados (E023). Todavía no se ha enviado este candidato al leaderboard. [Resultados y protocolo](docs/E020_E021_ASOCIACION_VISUAL.es.md), [auditoría del piloto](results/E022_completed.json), [criterios fijados de validación](baseline/e023_validation.json).
+
+**Cómputo:** laptop y Kaggle CPU para asociación, pruebas y evaluación; Kaggle GPU únicamente para inferencia volumétrica. Sin Colab. El optimizador rápido produce exactamente el CSV del piloto; la asociación de sus dos videos tarda 0,88 y 1,58 segundos en la laptop. [Comprobación](results/E023_fast_assignment_equivalence.json). Los experimentos anteriores se conservan como historial.
 
 La meta es mejorar el tracking real con experimentos reproducibles. **Nuestro control obtuvo 0.946 en el leaderboard público**, frente al **0.947 reportado por Arturo para Harmonic Fusion completo**. Todavía no se ha superado esa referencia ni hay evidencia de alcanzar el podio. El notebook inicial de metric hack obtuvo 0.885; el control actual procede de Harmonic Fusion.
 
@@ -37,6 +39,11 @@ La inferencia de los cuatro videos visibles terminó en 26,14 minutos y se envi�
 | `kaggle/harmonic_dag` | E012: centros principales de Harmonic, sin sus asociaciones, más propuestas fijadas de E011 | Comparación de cobertura E011 / Harmonic solo / combinación en los mismos 48 videos |
 | `kaggle/event_graph` | E013: nueva red de atención entre detecciones, divisiones explícitas y selección temporal consistente | Pesos, calibración separada, CSV y métrica oficial en los 48 videos de E012 |
 | `kaggle/event_graph_control` | E013-control: Harmonic completo sobre los mismos 48 videos | Control emparejado para comparar la nueva selección |
+| `kaggle/visual_sequence` | E020: probabilidades del grafo guardado, cobertura limitada por el suavizado | Métricas de calibración; no mejora |
+| `kaggle/visual_replay` | E021: Transformer público sobre características antiguas | Métricas de calibración; no se promueve |
+| `kaggle/visual_capture` / `kaggle/visual_exact` | E022: captura exacta GPU y comparación CPU separadas | Piloto positivo sobre dos videos |
+| `kaggle/visual_validation_capture` / `kaggle/visual_validation` | E023: ocho videos reservados, configuración fija | Validación y criterio de promoción |
+| `kaggle/visual_submission` | Inferencia final preparada, pendiente de validación | `submission.csv` |
 
 El [diagnóstico inicial](https://www.kaggle.com/code/jarturo/biohub-lab-official-metric-ab) terminó: control **0.9666951**, Division Guard **0.9667049**. No recuperó ninguna arista anotada ni división adicional. Se cierra esa línea sin mejora demostrada. Se verificó que **los cuatro videos estuvieron en el entrenamiento del segundo detector**; estas cifras son in-sample, no validación independiente ni leaderboard. [Resultado completo](results/E001_completed.json).
 

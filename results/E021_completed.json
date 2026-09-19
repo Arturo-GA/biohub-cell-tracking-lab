@@ -1,0 +1,251 @@
+{
+  "experiment": "E021",
+  "status": "complete",
+  "source_files_verified": 28,
+  "arms": {
+    "visual": {
+      "summary": {
+        "n": 16,
+        "n_adj": 16,
+        "edge_jaccard": 0.868931407002473,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8684100130972947,
+        "score": 0.8984100130972947
+      },
+      "score_delta": -0.002342946463245177,
+      "paired": [
+        {
+          "dataset": "44b6_0db75fae",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_5740d24b",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_587a1e22",
+          "adj_edge_delta": -0.004439931938778896,
+          "tp_delta": 0,
+          "fp_delta": 2
+        },
+        {
+          "dataset": "44b6_9bfa6a0a",
+          "adj_edge_delta": -0.003197069461486124,
+          "tp_delta": 0,
+          "fp_delta": 1
+        },
+        {
+          "dataset": "44b6_aaf8b0ea",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_c15fded2",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_c8e2a523",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_cf2536e8",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_1f58c2f6",
+          "adj_edge_delta": -0.012796465426394898,
+          "tp_delta": -1,
+          "fp_delta": 5
+        },
+        {
+          "dataset": "6bba_5c824876",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_6479435d",
+          "adj_edge_delta": 0.004000657474807379,
+          "tp_delta": 2,
+          "fp_delta": -1
+        },
+        {
+          "dataset": "6bba_76db78c1",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_7b5d3b2c",
+          "adj_edge_delta": 0.003528090653791338,
+          "tp_delta": 1,
+          "fp_delta": -1
+        },
+        {
+          "dataset": "6bba_9a41d029",
+          "adj_edge_delta": -0.005383344206127405,
+          "tp_delta": -2,
+          "fp_delta": 6
+        },
+        {
+          "dataset": "6bba_c73a1d11",
+          "adj_edge_delta": -0.008098225986866159,
+          "tp_delta": 0,
+          "fp_delta": 11
+        },
+        {
+          "dataset": "6bba_f1fde7e0",
+          "adj_edge_delta": 0.004244952405740965,
+          "tp_delta": 2,
+          "fp_delta": 0
+        }
+      ],
+      "better": 3,
+      "worse": 5,
+      "added": 1589,
+      "removed": 886,
+      "alternatives": 961261
+    },
+    "sequence": {
+      "summary": {
+        "n": 16,
+        "n_adj": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "score": 0.9007529595605399
+      },
+      "score_delta": 0.0,
+      "paired": [
+        {
+          "dataset": "44b6_0db75fae",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_5740d24b",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_587a1e22",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_9bfa6a0a",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_aaf8b0ea",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_c15fded2",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_c8e2a523",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "44b6_cf2536e8",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_1f58c2f6",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_5c824876",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_6479435d",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_76db78c1",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_7b5d3b2c",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_9a41d029",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_c73a1d11",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "dataset": "6bba_f1fde7e0",
+          "adj_edge_delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ],
+      "better": 0,
+      "worse": 0,
+      "added": 20,
+      "removed": 509,
+      "alternatives": 961261
+    }
+  },
+  "seconds": 1153.321975885,
+  "result_sha256": "267a82a9b8a76110deae86a6713d131e3d2691a541517033a7c060be49c80ee4",
+  "aggregates_recomputed": true,
+  "unchanged_node_counts": true,
+  "csv_downloaded_and_verified": false,
+  "official_metric_rerun_locally": false,
+  "leaderboard_submitted": false,
+  "scope": "Reused calibration, conditional on public pretrained models; not independent validation"
+}

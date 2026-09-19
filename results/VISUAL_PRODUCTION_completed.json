@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "seconds": 11.455753940000022,
+  "production_csv_exactly_matches_pilot": true,
+  "csv_sha256": "ac573f5e8c481b6b05633abb88da338e6dddf8978faf77659cdc15b3dec71210",
+  "annotations_read": false,
+  "accelerator": "none",
+  "leaderboard_submitted": false,
+  "source_files_verified": 34,
+  "result_sha256": "c4e5fa6e72b71bc0807a61f74158456f7f7ad2d2066544974caa53259d7ae03e",
+  "actual_production_postprocessor_verified": true
+}

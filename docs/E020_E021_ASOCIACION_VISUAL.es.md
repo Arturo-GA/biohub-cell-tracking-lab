@@ -1,4 +1,4 @@
-# E020/E021: recuperar alternativas visuales antes de decidir trayectorias
+# E020–E023: recuperar alternativas visuales antes de decidir asociaciones
 
 Protocolo del 19 de septiembre de 2026. Experimentos CPU, sin entrenamiento nuevo ni submission automático de candidatos inferiores. El objetivo autorizado es continuar hasta disponer de un envío defendible.
 
@@ -22,8 +22,28 @@ E021 carga exclusivamente el Transformer del checkpoint secundario público veri
 
 GPU consumida por E020/E021: ninguna. Código, configuraciones y recibos pueden ir al repositorio privado; características, pesos y predicciones detalladas permanecen fuera de Git.
 
+E021 terminó en 1.153,32 segundos de CPU. Sus 28 archivos de código se verificaron contra el paquete lanzado y se recalcularon los agregados desde los resultados por video. La variante visual quedó en **0,8984100131**, frente a **0,9007529596** de Harmonic: tres videos mejoraron y cinco empeoraron. La variante temporal empató exactamente en score; modificó enlaces sin cambiar los aciertos/errores anotados. Había 961.261 alternativas permitidas por el decodificador, pero esa cantidad no representa alternativas correctas. Ninguna variante se promueve a submission. Recibo: `results/E021_completed.json`.
+
 ## E022: evidencia visual exacta
 
 Se lanzó una captura de dos videos elegidos por nombre (primero de cada espécimen) para verificar la inferencia completa. Usa GPU solamente para las redes volumétricas de Harmonic, con sus pesos, TTA y configuración originales. La instrumentación guarda, sin modificar la matriz de probabilidades ni la selección original, la unión de las ocho mejores alternativas por madre y por hija. El resultado original sigue generándose como control.
 
 La fase CPU lee las identidades del GEFF con el mismo lector del exportador; relaciona las coordenadas capturadas con ese grafo antes del suavizado y conserva las coordenadas finales del CSV para comparar únicamente la asociación. Produce las dos variantes con el mismo optimizador y parámetros E020. Se congela todo antes de evaluar. Dos videos son una comprobación funcional, no evidencia suficiente para presentar una mejora general ni autorizar por sí solos un envío competitivo. Los resultados positivos requerirán ampliar la comparación y reproducir la inferencia final.
+
+La captura GPU terminó: 198 pares, 768,56 segundos de proceso; sus 45 archivos de paquete coinciden con el lanzamiento. Este tiempo de proceso no se presenta como saldo exacto descontado de la cuota de Kaggle. La evaluación CPU se lanzó al comprobar la finalización, sin esperar un nuevo aviso del usuario.
+
+La comparación E022 terminó en 303,46 segundos de CPU. **Visual: 0,8150290634; Harmonic: 0,7874306426; diferencia: +0,0275984208.** Ambos videos mejoraron: +0,012451 en `44b6_0db75fae` y +0,033105 en `6bba_1f58c2f6`. Se recuperaron seis enlaces verdaderos y se evitaron diez falsos en total; las divisiones no cambiaron. La variante temporal quedó en 0,7987575032. Son dos videos, sin divisiones GT en este piloto: no prueban generalización ni mejora de mitosis.
+
+Los CSV descargados del control anterior y de la captura tienen exactamente los mismos 50.093 nodos (incluidas coordenadas e identidades) y 48.109 enlaces. La auditoría verifica 45 archivos GPU, 29 CPU y recalcula las métricas. Recibos: `results/E022_completed.json` y `results/E022_control_reproduction.json`.
+
+## E023 y preparación de submission
+
+Se eligió y congeló la variante visual. Resuelve conjuntamente las asociaciones de todas las células **dentro de cada pareja de fotogramas**, sin penalización temporal. No se debe describir esta variante como un óptimo conjunto no separable de toda la película. Conserva los nodos y fija las divisiones y los enlaces sin evidencia visual recuperable.
+
+Antes de consultar etiquetas o resultados adicionales se eligieron ocho videos del grupo `reserved` de la partición E013: cuatro de cada espécimen mediante hash del nombre. Esta reserva es relativa a ese protocolo; no implica que los modelos públicos ni todas las investigaciones históricas del proyecto desconozcan las imágenes. Se mantiene la cautela sobre validación condicional.
+
+La promoción exige simultáneamente: aumento de score de al menos 0,005; diferencia no negativa en cada espécimen; al menos tantos videos que mejoran como que empeoran; divisiones TP que no disminuyan y FP que no aumenten; exportaciones válidas. La configuración y las reglas están en `baseline/e023_validation.json`. No se alterarán para rescatar un resultado desfavorable.
+
+La captura GPU de esos ocho videos se lanzó como `jarturo/biohub-lab-visual-reserved-capture`. La evaluación separada está preparada en `kaggle/visual_validation`. También está preparada la inferencia final en `kaggle/visual_submission`, con solo los modelos públicos y test; no adjunta resultados de train. Su lanzamiento exige el recibo positivo de E023.
+
+Se aceleró la misma asignación visual aprovechando su separabilidad. Produce exactamente los enlaces de ambos pilotos reales: 0,88 y 1,58 segundos por video en CPU local. La ruta completa de postprocesamiento también se ejecutó en Kaggle CPU y reprodujo el hash exacto del CSV piloto; tardó 11,46 segundos de proceso. E023 verificará igualmente que esa ruta de producción reproduce su CSV reservado antes de evaluar. No son nuevas configuraciones ni nuevos entrenamientos.

@@ -1,0 +1,26 @@
+{
+  "videos": [
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "selection": "Four filename-hash-selected reserved videos per specimen; no annotation or score selection",
+  "candidate": "E022 visual global assignment",
+  "temporal_weight": 0.0,
+  "appearance_probability": 0.05,
+  "capture_topk": 8,
+  "promotion": {
+    "minimum_score_gain": 0.005,
+    "each_specimen_score_delta_nonnegative": true,
+    "improved_videos_at_least_worsened": true,
+    "division_tp_must_not_decrease": true,
+    "division_fp_must_not_increase": true,
+    "all_exports_valid": true
+  },
+  "scope": "Previously reserved for this project; public pretrained models may have seen these images. Conditional validation only."
+}
