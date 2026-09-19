@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "checked_at_utc": "2026-09-19T13:59:57.286948+00:00",
+  "kernel": "jarturo/biohub-lab-association-cpu-evaluation",
+  "version": 1,
+  "accelerator": "none",
+  "seconds": 9445.98457946,
+  "source_files_verified": 16,
+  "payload_sha256": "05d2fec1023d6376738c37eba772a260afdbd30df8c6601a9e5827e676e61e28",
+  "result_sha256": "5e162d8afc859769b4999d389710ccc78cd734c68f80ba550c43884a39f73949",
+  "selected_arm": "continuations",
+  "candidate": {
+    "n": 48,
+    "edge_jaccard": 0.374725419558914,
+    "division_jaccard": 0.0,
+    "division_tp": 0,
+    "division_fp": 0,
+    "division_fn": 33,
+    "node_recall": 0.9948462993582718,
+    "adj_edge_jaccard": 0.3243507546597743,
+    "n_adj": 48,
+    "score": 0.3243507546597743
+  },
+  "control": {
+    "n": 48,
+    "n_adj": 48,
+    "edge_jaccard": 0.9024204175046813,
+    "division_jaccard": 0.05454545454545454,
+    "division_tp": 3,
+    "division_fp": 22,
+    "division_fn": 30,
+    "node_recall": 0.9823334553668251,
+    "adj_edge_jaccard": 0.9038024654193867,
+    "score": 0.9092570108739322
+  },
+  "score_delta": -0.5849062562141578,
+  "calibration": {
+    "continuations": {
+      "n": 16,
+      "edge_jaccard": 0.3480049362402304,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 0,
+      "division_fn": 6,
+      "node_recall": 0.9867117700551613,
+      "adj_edge_jaccard": 0.3025646493423892,
+      "n_adj": 16,
+      "score": 0.3025646493423892
+    },
+    "divisions": {
+      "n": 16,
+      "edge_jaccard": 0.3463907366346391,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 6,
+      "division_fn": 6,
+      "node_recall": 0.9870319567732283,
+      "adj_edge_jaccard": 0.3012249286702519,
+      "n_adj": 16,
+      "score": 0.3012249286702519
+    }
+  },
+  "solver": {
+    "calibration_continuations": {
+      "windows": 400,
+      "fallback_windows": 63,
+      "statuses": {
+        "0": 333,
+        "1": 67
+      }
+    },
+    "calibration_divisions": {
+      "windows": 400,
+      "fallback_windows": 63,
+      "statuses": {
+        "0": 332,
+        "1": 68
+      }
+    },
+    "evaluation_continuations": {
+      "windows": 1200,
+      "fallback_windows": 302,
+      "statuses": {
+        "1": 306,
+        "0": 894
+      }
+    }
+  },
+  "paired": {
+    "videos_better_adjusted_edges": 0,
+    "videos_worse_adjusted_edges": 48,
+    "candidate_nodes": 2622332,
+    "control_nodes": 1072577,
+    "videos_without_fallback": 28,
+    "videos_without_fallback_worse_than_control": 28,
+    "candidate_to_control_node_ratio": 2.4448892713530124
+  },
+  "csv_sha256_reported": "28555f9f9eed7f09cf53bef9bfd329bddf274d31d6c46e3ae5a7522fd6dcc1e2",
+  "csv_downloaded_and_verified": false,
+  "aggregates_recomputed": true,
+  "official_metric_rerun_locally": false,
+  "leaderboard_submitted": false,
+  "decision": "reject_E014_candidate_preserve_Harmonic_control",
+  "scope": "Conditional development on 48 videos already used for design; not a leaderboard score"
+}

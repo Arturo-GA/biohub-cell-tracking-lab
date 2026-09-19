@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-19",
   "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
   "github_private": true,
   "external_leaderboard_reference": {
@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E014_known_link_ranking_promising_divisions_weak_CPU_official_evaluation_pending",
+  "quality_status": "E014_rejected_48_of_48_worse_than_Harmonic_control",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -908,7 +908,7 @@
   "compute_strategy": {
     "decided_at_date": "2026-09-15",
     "requested_by": "Arturo",
-    "status": "E014_complete_CPU_evaluation_running",
+    "status": "E014_CPU_complete_no_new_compute_launched",
     "documentation": "docs/LOCAL_KAGGLE_CPU.es.md",
     "sizing_receipt": "results/LOCAL_COMPUTE_SIZING.json",
     "training_target": "local_NVIDIA_RTX_3050_Laptop_GPU_4096_MiB",
@@ -930,9 +930,9 @@
       "evaluation": 48
     },
     "next_steps": [
-      "Await user completion notification for E014 CPU evaluation; do not monitor automatically.",
-      "Recover frozen calibration selection, candidate metrics and solver fallbacks; compare the same 48 videos to control.",
-      "Use CPU for any viable future preparation, association, evaluation or small-model training; justify GPU necessity before allocating it."
+      "Preserve Harmonic as the tracking baseline; E013 and E014 replacements are rejected.",
+      "Before another training run, audit one-to-one detection matching and multiple detections near the same cell on existing calibration outputs, using CPU.",
+      "Require gains on complete calibration trajectories for any new residual correction or replacement before another 48-video evaluation."
     ],
     "implementation_documentation": "docs/LOCAL_EXECUTION.es.md",
     "cpu_workflow_launcher_enforces_policy": true,
@@ -1107,23 +1107,31 @@
     "calibration_videos": 16,
     "automatic_monitoring": false,
     "leaderboard_submitted": false,
-    "official_evaluation_pending": true,
+    "official_evaluation_pending": false,
     "results_available": true,
     "completed_receipt": "results/E014_completed.json",
     "training_seconds": 156.647755319,
-    "total_process_seconds": 357.851510182
+    "total_process_seconds": 357.851510182,
+    "decision": "reject_complete_tracker",
+    "official_development_score": 0.3243507546597743
   },
   "E014_CPU": {
     "kernel": "jarturo/biohub-lab-association-cpu-evaluation",
     "version": 1,
-    "last_observed_status": "RUNNING",
-    "checked_at_utc": "2026-09-19T02:36:20.886666+00:00",
+    "last_observed_status": "COMPLETE",
+    "checked_at_utc": "2026-09-19T13:59:57.286948+00:00",
     "launch_receipt": "results/E014_CPU_launch.json",
     "preflight": "results/E014_CPU_preflight.json",
     "documentation": "docs/E014_CPU_RESULTADOS.es.md",
     "gpu": false,
     "tpu": false,
     "automatic_monitoring": false,
-    "leaderboard_submitted": false
+    "leaderboard_submitted": false,
+    "completed_receipt": "results/E014_CPU_completed.json",
+    "results_available": true,
+    "candidate_score": 0.3243507546597743,
+    "control_score": 0.9092570108739322,
+    "selected_arm": "continuations",
+    "decision": "reject_E014_candidate_preserve_Harmonic_control"
   }
 }
