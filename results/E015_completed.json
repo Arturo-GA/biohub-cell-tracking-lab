@@ -1,0 +1,84 @@
+{
+  "kernel": "jarturo/biohub-lab-detection-identity-audit",
+  "version": 1,
+  "status": "complete",
+  "checked_at_utc": "2026-09-19T14:56:38.512489+00:00",
+  "result_sha256": "897eea770b09924030a2a0dad12669b4bbe610d75266ea3529b049c64e168a50",
+  "source_files_verified": 20,
+  "seconds": 92.054489079,
+  "accelerator": "none",
+  "original": {
+    "n": 16,
+    "edge_jaccard": 0.3480049362402304,
+    "division_jaccard": 0.0,
+    "division_tp": 0,
+    "division_fp": 0,
+    "division_fn": 6,
+    "node_recall": 0.9867117700551613,
+    "adj_edge_jaccard": 0.3025646493423892,
+    "n_adj": 16,
+    "score": 0.3025646493423892
+  },
+  "projected": {
+    "n": 16,
+    "edge_jaccard": 0.5249624812406203,
+    "division_jaccard": 0.0,
+    "division_tp": 0,
+    "division_fp": 0,
+    "division_fn": 6,
+    "node_recall": 0.9846677878630667,
+    "adj_edge_jaccard": 0.4843702306760836,
+    "n_adj": 16,
+    "score": 0.4843702306760836
+  },
+  "score_delta": 0.1818055813336944,
+  "videos_improved": {
+    "edge_jaccard": 16,
+    "adj_edge_jaccard": 16
+  },
+  "identity_diagnostics": {
+    "original": {
+      "predicted_nodes": 774181,
+      "annotated_nodes": 7432,
+      "many_to_one_matched_predictions": 18744,
+      "many_to_one_covered_gt": 7299,
+      "gt_with_multiple_predictions": 5778,
+      "one_to_one_matched_predictions": 7302,
+      "many_to_one_edges": {
+        "mapped_edge_instances": 15084,
+        "positive_edge_instances": 15048,
+        "distinct_positive_gt_edges": 6835
+      },
+      "one_to_one_edges": {
+        "mapped_edge_instances": 4238,
+        "positive_edge_instances": 4230,
+        "distinct_positive_gt_edges": 4230
+      }
+    },
+    "projected": {
+      "predicted_nodes": 590382,
+      "annotated_nodes": 7432,
+      "many_to_one_matched_predictions": 13985,
+      "many_to_one_covered_gt": 7290,
+      "gt_with_multiple_predictions": 4274,
+      "one_to_one_matched_predictions": 7292,
+      "many_to_one_edges": {
+        "mapped_edge_instances": 10877,
+        "positive_edge_instances": 10854,
+        "distinct_positive_gt_edges": 6774
+      },
+      "one_to_one_edges": {
+        "mapped_edge_instances": 5258,
+        "positive_edge_instances": 5247,
+        "distinct_positive_gt_edges": 5247
+      }
+    }
+  },
+  "aggregates_recomputed": true,
+  "official_metric_rerun_locally": false,
+  "csv_downloaded_and_verified": false,
+  "csv_sha256_reported": "9320b30ffc03fb649052bb36fdfda3d4f4e76f1e75c6812df2bece14d3d3b436",
+  "leaderboard_submitted": false,
+  "decision": "Identity discrepancy supported; projection alone is insufficient. Next: identity-aware supervision and competitive parent assignment.",
+  "scope": "16 calibration videos; no paired Harmonic score for this cohort; not a leaderboard improvement"
+}

@@ -1137,7 +1137,7 @@
   "E015": {
     "kernel": "jarturo/biohub-lab-detection-identity-audit",
     "version": 1,
-    "last_observed_status": "RUNNING",
+    "last_observed_status": "COMPLETE",
     "launch_receipt": "results/E015_launch.json",
     "preflight": "results/E015_preflight.json",
     "documentation": "docs/E015_INVESTIGACION_IDENTIDAD.es.md",
@@ -1149,7 +1149,16 @@
     "evaluation_videos": 0,
     "training_started": false,
     "unit_tests_passed": 4,
-    "results_available": false,
-    "purpose": "Audit duplicate identity supervision and annotation-free graph projection before retraining"
+    "results_available": true,
+    "purpose": "Audit duplicate identity supervision and annotation-free graph projection before retraining",
+    "completed_receipt": "results/E015_completed.json",
+    "results_documentation": "docs/E015_RESULTADOS.es.md",
+    "original_score": 0.3025646493423892,
+    "projected_score": 0.4843702306760836,
+    "score_delta": 0.1818055813336944,
+    "videos_improved": 16,
+    "seconds": 92.054489079,
+    "decision": "Retain identity diagnosis; do not submit projection. Next implement identity-aware competitive association on cached features.",
+    "next_training_started": false
   }
 }
