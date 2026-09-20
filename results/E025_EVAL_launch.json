@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-point-adapt-evaluation-cpu",
+  "version": 1,
+  "kernel_id": 135067275,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-point-adapt-evaluation-cpu",
+  "ref": "/code/jarturo/biohub-lab-point-adapt-evaluation-cpu",
+  "launched_at_utc": "2026-09-20T06:13:27.731234+00:00",
+  "payload_sha256": "5388b8d47bd5fa21b5c104d6dbfb7174d2544f60f57949cd5831822079099d3d",
+  "notebook_sha256": "e3a78fc72e62522c4d890792c153ade620a1ce2a4e248c9a037e2ac894006d83",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

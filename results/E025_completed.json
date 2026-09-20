@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "training_source_files_verified": 9,
+  "evaluation_source_files_verified": 25,
+  "training_seconds": 514.0743268,
+  "total_gpu_process_seconds": 568.990246139,
+  "cpu_seconds": 29.83059466599991,
+  "history": [
+    {
+      "step": 0,
+      "validation": [
+        18.64586205012165,
+        3.710270648545702,
+        3.269310568043693e-05,
+        0.18895195930963382,
+        0.46301875890365807,
+        3.2688163457805786e-05
+      ]
+    },
+    {
+      "step": 200,
+      "validation": [
+        28.10956921480829,
+        5.5962888388146155,
+        0.015559419519846074,
+        0.18817088927607983,
+        0.3635787661111394,
+        0.007510489130012843
+      ]
+    },
+    {
+      "step": 400,
+      "validation": [
+        26.771705214865506,
+        5.298249513189472,
+        0.16303029720872075,
+        0.18133036908693612,
+        0.3975251983489443,
+        0.03799227172295616
+      ]
+    },
+    {
+      "step": 600,
+      "validation": [
+        22.36063197895419,
+        4.414434191322707,
+        0.17470725469134862,
+        0.1804819903918542,
+        0.42917008682941926,
+        0.04093017998994952
+      ]
+    },
+    {
+      "step": 800,
+      "validation": [
+        22.47506440547295,
+        4.432923335949008,
+        0.19558245366404492,
+        0.17766926903277636,
+        0.43821703942768764,
+        0.04421904354256867
+      ]
+    }
+  ],
+  "weight_sha256": "5347dcb70d6f85633c529063280760956d52eb40a562922858a69500cdbf87c8",
+  "original_totals": {
+    "gt_nodes": 39,
+    "harmonic_nodes": 1707,
+    "nucverse_nodes": 444,
+    "harmonic_matched": 39,
+    "nucverse_matched": 11,
+    "nucverse_only": 0,
+    "harmonic_only": 28,
+    "union_coverage_upper_bound": 39
+  },
+  "adapted_totals": {
+    "gt_nodes": 39,
+    "harmonic_nodes": 1707,
+    "nucverse_nodes": 306,
+    "harmonic_matched": 39,
+    "nucverse_matched": 10,
+    "nucverse_only": 0,
+    "harmonic_only": 29,
+    "union_coverage_upper_bound": 39
+  },
+  "result_sha256": "24bf36178c7537e8d6e90a2bef686fe85f0a877bab5e756232fdc297460b2786",
+  "scope": "Sparse one-to-one node coverage only; union is diagnostic, not a valid prediction or tracking score; unmatched detections are not false positives",
+  "leaderboard_submitted": false
+}

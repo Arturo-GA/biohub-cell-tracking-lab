@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-point-normalization-cpu",
+  "version": 1,
+  "kernel_id": 135067761,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-point-normalization-cpu",
+  "ref": "/code/jarturo/biohub-lab-point-normalization-cpu",
+  "launched_at_utc": "2026-09-20T06:18:19.631042+00:00",
+  "payload_sha256": "492f802298265dd86d8441286799154f3bd9871f6c68de813583ec9568bf1834",
+  "notebook_sha256": "31a512e0b18ff696ac5c7c1e6f78df98fb02804cd0d4ddbcfcc2069e5ac1da86",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

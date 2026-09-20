@@ -1,0 +1,19 @@
+{
+  "id": "jarturo/biohub-lab-point-normalization-cpu",
+  "title": "Biohub Lab Point Normalization CPU",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-lab-nucverse-preparation-cpu",
+    "jarturo/biohub-lab-point-adapt-data-cpu",
+    "jarturo/biohub-lab-point-adapt-training"
+  ],
+  "model_sources": []
+}

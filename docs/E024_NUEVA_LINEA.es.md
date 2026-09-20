@@ -26,3 +26,17 @@ Se abrió **E025: adaptación con imágenes reales y supervisión puntual parcia
 E025 ajusta todos los parámetros del modelo, con aprendizaje 1e-5 y 800 actualizaciones fijadas antes del resultado. Las pérdidas de 16 videos separados se registran en pasos 0/200/400/600/800; no se elige un checkpoint por leaderboard ni se cambia el decodificador. El checkpoint final genera campos en los mismos ocho fotogramas completos para una comparación CPU emparejada. La preparación tardó 211,39 segundos de CPU. El entrenamiento se lanzó como `jarturo/biohub-lab-point-adapt-training` v1 a las 06:02:51 UTC del 20 de septiembre; límite interno de una hora comprobado entre pasos, seguido de inferencia acotada.
 
 Las columnas de `history.json` son: pérdida total, BCE en puntos positivos, BCE en negativos fotométricos, pérdida de atracción local, probabilidad media en positivos y probabilidad media en negativos. Son diagnósticos de aprendizaje, no métricas de tracking. La promoción competitiva sigue requiriendo un grafo completo, métrica oficial y control comparable.
+
+## Referencia provisional para plata
+
+La consulta autenticada del leaderboard público a las 06:09 UTC del 20 de septiembre contó 3.745 equipos con puntuación. Aplicando como aproximación el top 5 % de las [reglas de progresión de Kaggle](https://www.kaggle.com/progression/competitions), la posición 187 mostraba 0,948. Había 902 equipos por encima del 0,946 mostrado por nuestro submission y 157 empatados en ese valor. Recibo: `results/SILVER_TARGET_snapshot.json`.
+
+Esto no garantiza plata con 0,948: son puntuaciones redondeadas del leaderboard público, y la clasificación final, los desempates y los equipos elegibles pueden cambiar el corte. El objetivo experimental requiere margen y una mejora reproducible, no optimizar solo las tres cifras visibles.
+
+## E025 completado y diagnóstico de normalización
+
+El entrenamiento completó 800 pasos en 514,07 segundos; entrenamiento más inferencia consumieron 568,99 segundos de proceso GPU (no equivalen necesariamente al cómputo facturado por Kaggle). La evaluación CPU tardó 29,83 segundos. Se verificaron los 9 archivos de entrenamiento, los 25 de evaluación, la separación de videos y los hashes de los pesos y los datos.
+
+El checkpoint adaptado recuperó **10/39 centros**, frente a 11/39 del original y 39/39 de Harmonic. Produjo 306 instancias. La pérdida de validación pasó de 18,65 a 22,48. No se envió este candidato y no se interpreta esta cobertura como puntuación de tracking. Recibo: `results/E025_completed.json`.
+
+Se lanzó un diagnóstico exclusivamente CPU que compara, sobre los mismos ocho recortes fijados por nombre, las estadísticas almacenadas y las estadísticas del lote de las capas BatchNormalization. Desactiva dropout en ambos casos y restaura el estado antes de cada pasada; no tiene optimizador ni modifica pesos para un submission. Compara original y adaptado en cuatro recortes de entrenamiento y cuatro de validación. Su propósito es distinguir un desajuste entre los modos de ejecución de una mala generalización, antes de otro entrenamiento. La hipótesis no está confirmada por la diferencia de pérdidas entre grupos: hace falta esta comparación emparejada. Recibo de lanzamiento: `results/E025_NORM_launch.json`.

@@ -1,0 +1,13 @@
+{
+  "sha256": "492f802298265dd86d8441286799154f3bd9871f6c68de813583ec9568bf1834",
+  "files": [
+    "scripts/point_adapt_norm_diagnostic.py",
+    "baseline/e025_point_adapt.json",
+    "vendor/nucverse/attention_unet_3d.py",
+    "vendor/nucverse/LICENSE",
+    "NOTICE.md"
+  ],
+  "contains_credentials": false,
+  "contains_images": false,
+  "contains_weights": false
+}
