@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "result_sha256": "4096a7b34790a9ed0a2dd175b20dfacbcb25ffc83c780f608bc261cf894e487c",
+  "seconds": 146.06026712800002,
+  "metrics": {
+    "frozen_bn": {
+      "n": 16,
+      "edge_jaccard": 0.772428083861531,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 0,
+      "division_fn": 6,
+      "node_recall": 0.9738456392525954,
+      "adj_edge_jaccard": 0.7560163254498212,
+      "n_adj": 16,
+      "score": 0.7560163254498212
+    },
+    "batch_bn": {
+      "n": 16,
+      "edge_jaccard": 0.7454674724493423,
+      "division_jaccard": 0.0,
+      "division_tp": 0,
+      "division_fp": 0,
+      "division_fn": 6,
+      "node_recall": 0.9810771983440307,
+      "adj_edge_jaccard": 0.7144964338770817,
+      "n_adj": 16,
+      "score": 0.7144964338770817
+    }
+  },
+  "control": {
+    "n": 16,
+    "edge_jaccard": 0.8712793733681462,
+    "division_jaccard": 0.3,
+    "division_tp": 3,
+    "division_fp": 4,
+    "division_fn": 3,
+    "node_recall": 0.9779746966019673,
+    "adj_edge_jaccard": 0.8707529595605399,
+    "n_adj": 16,
+    "score": 0.9007529595605399
+  },
+  "coverage": {
+    "frozen_bn": {
+      "truth": 7432,
+      "dense_matched": 7247,
+      "harmonic_matched": 7224,
+      "dense_only": 140,
+      "harmonic_only": 117,
+      "equal_count_dense_matched": 6383,
+      "dense_nodes": 509249,
+      "harmonic_nodes": 318094
+    },
+    "batch_bn": {
+      "truth": 7432,
+      "dense_matched": 7321,
+      "harmonic_matched": 7224,
+      "dense_only": 152,
+      "harmonic_only": 55,
+      "equal_count_dense_matched": 5329,
+      "dense_nodes": 552711,
+      "harmonic_nodes": 318094
+    }
+  },
+  "decision": "Reject replacement and submission; coverage is complementary but confidence ranking and geometric tracking are insufficient",
+  "scope": "Conditional diagnostic; public detector training membership unknown; no independent holdout claim",
+  "leaderboard_submitted": false
+}

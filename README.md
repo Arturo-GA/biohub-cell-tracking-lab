@@ -1,5 +1,7 @@
 # Biohub Cell Tracking Lab
 
+**E031/E032 completados:** detector denso evaluado en 16 videos completos, con scores locales 0,7560/0,7145 frente a 0,9008 de Harmonic. La condición por lote recupera 152 centros anotados omitidos por Harmonic, pero necesita muchos más candidatos. Cuatro cabezas temporales entrenadas en CPU: apariencia y geometría empatan en 6.021/6.725 aciertos, por debajo de 6.118 del vecino más cercano. No se promueven ni se envían. Proceso GPU: 164 s; preparación, evaluación y cabezas en CPU. No quedan ejecuciones pendientes. [E031](docs/E031_DETECTOR_DENSO.es.md), [E032](docs/E032_ASOCIACION_TEMPORAL_REAL.es.md).
+
 [Revision de papers, discusiones y siete notebooks nuevos posterior a E030](docs/RESEARCH_POST_E030.es.md). Prioridad propuesta: deteccion densa y aprendizaje temporal sobre candidatos reales; sin nuevo entrenamiento ni submission en esta revision.
 
 **E030 completado:** implementados y entrenados el modelo DINO de identidad/progenitores y la cabeza de divisiones, con decodificador conjunto y siete pruebas locales aprobadas. Separación de 40 videos para entrenamiento, ocho para desarrollo y 16 para calibración. En centros anotados perturbados acertó 586/588 enlaces, frente a 585 sin imagen y 588 con vecino más cercano; AP de división 0,219 sobre seis eventos. No demuestra mejora competitiva y no se envía. Extracción GPU: 202 s; entrenamiento/evaluación de las cabezas CPU: 60 s. Pesos y resultados guardados; no hay jobs pendientes. [Resultados y límites de E030](docs/E030_IDENTIDADES_CON_IMAGEN.es.md).

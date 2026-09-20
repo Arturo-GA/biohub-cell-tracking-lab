@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "seconds": 164.478342132,
+  "predictions": 32,
+  "result_sha256": "a09a6f6533ff80f0b6e202fb2b3314683dda7cd29029381853c67e030671a149",
+  "weight_sha256": "e177eba1e161efc63b4b5385740066ef2c824134585613c2d4719be5bd337065",
+  "source_sha256": "68e13d3424721ee43e6d247f97d9f533dbeb735b46c038ec3c636035ee3a4e23",
+  "leaderboard_submitted": false
+}

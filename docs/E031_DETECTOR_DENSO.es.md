@@ -25,6 +25,18 @@ Una mejora de cobertura con un gran aumento de puntos no basta para promover. La
 
 Nuestro control también tiene limitaciones de procedencia ya documentadas. Estos 16 videos son calibración reutilizada, no un nuevo holdout. Cualquier score obtenido aquí será local y condicionado; no es el score público de Kaggle.
 
-## Estado
+## Resultado completo
 
-Preparación CPU completada y recibo descargado. Inferencia GPU lanzada; evaluación CPU preparada para ejecutarse cuando finalice y se verifique la salida GPU. Tres pruebas del enlazador aprobadas. Sin submission nuevo y sin mejora de puntaje demostrada aún. Los recibos `results/E031_*` y `results/STATUS.json` registran los estados posteriores.
+Las tres etapas terminaron. Preparación: 325 s CPU. Proceso GPU: 164 s, incluyendo carga y exportación del script; no es una medición exacta de la cuota facturada. Evaluación: 146 s CPU. Tres pruebas del enlazador aprobadas.
+
+| Condición | Score local completo | Centros anotados cubiertos / 7.432 | Puntos predichos antes del filtro de tracks |
+|---|---:|---:|---:|
+| Harmonic congelado | 0,900753 | 7.224 | 318.094 |
+| Detector + BN congelada + asociación geométrica | 0,756016 | 7.247 | 509.249 |
+| Detector + BN por lote + asociación geométrica | 0,714496 | 7.321 | 552.711 |
+
+La condición por lote recupera **152 ocurrencias anotadas** que Harmonic omite y pierde 55 que Harmonic conserva. No son necesariamente 152 células distintas. A igual número máximo de candidatos por fotograma, ordenados por probabilidad del detector, conserva solo 5.329 centros anotados; la condición congelada conserva 6.383. La ganancia de cobertura no se obtiene gratuitamente: mantener los centros recuperados requiere muchos candidatos de baja prioridad según ese score.
+
+**Decisión:** no reemplazar Harmonic ni enviar estos CSV. El modelo aporta candidatos complementarios, pero no una mejora de tracking con este decodificador. Ni estos resultados ni su procedencia justifican promoverlo como solución superior. E032 prueba si las características guardadas permiten aprender una asociación útil; no se repite inferencia GPU.
+
+Recibo completo: `results/E031_completed.json`. Sin submission ni jobs E031 pendientes.

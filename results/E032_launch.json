@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-dense-temporal-rank-cpu",
+  "version": 1,
+  "kernel_id": 135132247,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-dense-temporal-rank-cpu",
+  "ref": "/code/jarturo/biohub-dense-temporal-rank-cpu",
+  "launched_at_utc": "2026-09-20T17:11:19.933319+00:00",
+  "payload_sha256": "5a16d83f51bb5f964ac9693df357c6f5635d2b34d7a5b4aa973e49e30f1b00c3",
+  "notebook_sha256": "99bd854bac03084b5e64588060abebe3cd9bb4e3fec3390787fab94857592cfc",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

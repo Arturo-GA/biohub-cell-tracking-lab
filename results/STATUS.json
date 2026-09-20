@@ -1501,7 +1501,7 @@
     "pending_jobs": false
   },
   "E031": {
-    "status": "GPU_LAUNCHED",
+    "status": "COMPLETE",
     "documentation": "docs/E031_DETECTOR_DENSO.es.md",
     "preparation": "results/E031_PREP_completed.json",
     "gpu_launch": "results/E031_GPU_launch.json",
@@ -1509,6 +1509,27 @@
     "training": false,
     "leaderboard_submitted": false,
     "local_tests_passed": 3,
-    "scope": "Conditional calibration; detector training membership unknown"
+    "scope": "Conditional calibration; detector training membership unknown",
+    "gpu_completed": "results/E031_GPU_completed.json",
+    "gpu_process_seconds": 164.478342132,
+    "evaluation_launch": "results/E031_EVAL_launch.json",
+    "completed_receipt": "results/E031_completed.json",
+    "decision": "Reject replacement; full graph scores below Harmonic",
+    "pending_jobs": false
+  },
+  "E032": {
+    "status": "COMPLETE",
+    "documentation": "docs/E032_ASOCIACION_TEMPORAL_REAL.es.md",
+    "launch": "results/E032_launch.json",
+    "training_device": "CPU",
+    "encoder_trained": false,
+    "heads": 4,
+    "steps_per_head": 1000,
+    "split": "Both cross-embryo directions",
+    "local_tests_passed": 2,
+    "leaderboard_submitted": false,
+    "completed_receipt": "results/E032_completed.json",
+    "decision": "Reject heads; no advantage over nearest-parent control",
+    "pending_jobs": false
   }
 }

@@ -1,0 +1,11 @@
+{
+  "experiment": "E032",
+  "mode": "batch_bn",
+  "seed": 320920,
+  "steps": 1000,
+  "split": "Train on one embryo, evaluate the other; both directions",
+  "selection": "Fixed final step, all represented annotated edges with at least two actual gated parents",
+  "train_unknown_near_parent": "masked within7um; no background labels",
+  "radius_um": 20.0,
+  "candidate_k": 12
+}

@@ -1,0 +1,298 @@
+{
+  "status": "complete",
+  "result_sha256": "7346c46f458be42436181bd3fe435cc71abe906e5ba02ff6044d733bd68d7fc4",
+  "seconds": 25.989347685999974,
+  "weights_verified": 4,
+  "aggregate": {
+    "geometry": {
+      "targets": 6725,
+      "correct": 6021,
+      "nearest": 6118,
+      "shuffled": 6021
+    },
+    "image": {
+      "targets": 6725,
+      "correct": 6021,
+      "nearest": 6118,
+      "shuffled": 5996
+    }
+  },
+  "results": [
+    {
+      "heldout_embryo": "44b6",
+      "image": false,
+      "steps": 1000,
+      "videos": [
+        {
+          "video": "44b6_0db75fae",
+          "targets": 151,
+          "correct": 131,
+          "nearest": 141,
+          "shuffled": 131
+        },
+        {
+          "video": "44b6_5740d24b",
+          "targets": 170,
+          "correct": 166,
+          "nearest": 167,
+          "shuffled": 166
+        },
+        {
+          "video": "44b6_587a1e22",
+          "targets": 371,
+          "correct": 325,
+          "nearest": 352,
+          "shuffled": 325
+        },
+        {
+          "video": "44b6_9bfa6a0a",
+          "targets": 253,
+          "correct": 221,
+          "nearest": 223,
+          "shuffled": 221
+        },
+        {
+          "video": "44b6_aaf8b0ea",
+          "targets": 204,
+          "correct": 200,
+          "nearest": 201,
+          "shuffled": 200
+        },
+        {
+          "video": "44b6_c15fded2",
+          "targets": 102,
+          "correct": 92,
+          "nearest": 93,
+          "shuffled": 92
+        },
+        {
+          "video": "44b6_c8e2a523",
+          "targets": 164,
+          "correct": 150,
+          "nearest": 154,
+          "shuffled": 150
+        },
+        {
+          "video": "44b6_cf2536e8",
+          "targets": 72,
+          "correct": 69,
+          "nearest": 69,
+          "shuffled": 69
+        }
+      ],
+      "targets": 1487,
+      "correct": 1354,
+      "nearest": 1400,
+      "shuffled": 1354,
+      "weight_sha256": "cfccacc0ed45385e2c7b102f2b2b619082dba68ed2056193ca929e22e863a022"
+    },
+    {
+      "heldout_embryo": "44b6",
+      "image": true,
+      "steps": 1000,
+      "videos": [
+        {
+          "video": "44b6_0db75fae",
+          "targets": 151,
+          "correct": 136,
+          "nearest": 141,
+          "shuffled": 137
+        },
+        {
+          "video": "44b6_5740d24b",
+          "targets": 170,
+          "correct": 165,
+          "nearest": 167,
+          "shuffled": 167
+        },
+        {
+          "video": "44b6_587a1e22",
+          "targets": 371,
+          "correct": 335,
+          "nearest": 352,
+          "shuffled": 337
+        },
+        {
+          "video": "44b6_9bfa6a0a",
+          "targets": 253,
+          "correct": 224,
+          "nearest": 223,
+          "shuffled": 222
+        },
+        {
+          "video": "44b6_aaf8b0ea",
+          "targets": 204,
+          "correct": 199,
+          "nearest": 201,
+          "shuffled": 201
+        },
+        {
+          "video": "44b6_c15fded2",
+          "targets": 102,
+          "correct": 93,
+          "nearest": 93,
+          "shuffled": 93
+        },
+        {
+          "video": "44b6_c8e2a523",
+          "targets": 164,
+          "correct": 153,
+          "nearest": 154,
+          "shuffled": 153
+        },
+        {
+          "video": "44b6_cf2536e8",
+          "targets": 72,
+          "correct": 69,
+          "nearest": 69,
+          "shuffled": 69
+        }
+      ],
+      "targets": 1487,
+      "correct": 1374,
+      "nearest": 1400,
+      "shuffled": 1379,
+      "weight_sha256": "47d65d7238e1debc2022109cea2b841bf8e0bbc1a5eb00778f79ca68da5d16a5"
+    },
+    {
+      "heldout_embryo": "6bba",
+      "image": false,
+      "steps": 1000,
+      "videos": [
+        {
+          "video": "6bba_1f58c2f6",
+          "targets": 290,
+          "correct": 246,
+          "nearest": 251,
+          "shuffled": 246
+        },
+        {
+          "video": "6bba_5c824876",
+          "targets": 1052,
+          "correct": 995,
+          "nearest": 1006,
+          "shuffled": 995
+        },
+        {
+          "video": "6bba_6479435d",
+          "targets": 515,
+          "correct": 427,
+          "nearest": 430,
+          "shuffled": 427
+        },
+        {
+          "video": "6bba_76db78c1",
+          "targets": 452,
+          "correct": 428,
+          "nearest": 430,
+          "shuffled": 428
+        },
+        {
+          "video": "6bba_7b5d3b2c",
+          "targets": 501,
+          "correct": 457,
+          "nearest": 459,
+          "shuffled": 457
+        },
+        {
+          "video": "6bba_9a41d029",
+          "targets": 1348,
+          "correct": 1246,
+          "nearest": 1243,
+          "shuffled": 1246
+        },
+        {
+          "video": "6bba_c73a1d11",
+          "targets": 640,
+          "correct": 492,
+          "nearest": 520,
+          "shuffled": 492
+        },
+        {
+          "video": "6bba_f1fde7e0",
+          "targets": 440,
+          "correct": 376,
+          "nearest": 379,
+          "shuffled": 376
+        }
+      ],
+      "targets": 5238,
+      "correct": 4667,
+      "nearest": 4718,
+      "shuffled": 4667,
+      "weight_sha256": "f058680282e0cc20c01812fc47b271679bb27d6b4908e1d4f09aa20430c8b72d"
+    },
+    {
+      "heldout_embryo": "6bba",
+      "image": true,
+      "steps": 1000,
+      "videos": [
+        {
+          "video": "6bba_1f58c2f6",
+          "targets": 290,
+          "correct": 245,
+          "nearest": 251,
+          "shuffled": 240
+        },
+        {
+          "video": "6bba_5c824876",
+          "targets": 1052,
+          "correct": 991,
+          "nearest": 1006,
+          "shuffled": 977
+        },
+        {
+          "video": "6bba_6479435d",
+          "targets": 515,
+          "correct": 432,
+          "nearest": 430,
+          "shuffled": 427
+        },
+        {
+          "video": "6bba_76db78c1",
+          "targets": 452,
+          "correct": 428,
+          "nearest": 430,
+          "shuffled": 425
+        },
+        {
+          "video": "6bba_7b5d3b2c",
+          "targets": 501,
+          "correct": 456,
+          "nearest": 459,
+          "shuffled": 452
+        },
+        {
+          "video": "6bba_9a41d029",
+          "targets": 1348,
+          "correct": 1223,
+          "nearest": 1243,
+          "shuffled": 1230
+        },
+        {
+          "video": "6bba_c73a1d11",
+          "targets": 640,
+          "correct": 499,
+          "nearest": 520,
+          "shuffled": 493
+        },
+        {
+          "video": "6bba_f1fde7e0",
+          "targets": 440,
+          "correct": 373,
+          "nearest": 379,
+          "shuffled": 373
+        }
+      ],
+      "targets": 5238,
+      "correct": 4647,
+      "nearest": 4718,
+      "shuffled": 4617,
+      "weight_sha256": "5b88b4a5afc538df73f609f349435bfab1b599861eeec3a59180e0461d159fa7"
+    }
+  ],
+  "decision": "Reject promotion; image head ties learned geometry and loses to nearest parent in both heldout embryos",
+  "scope": "Cross-embryo association-head validation, conditional on detector provenance and represented GT edges; not full graph score",
+  "leaderboard_submitted": false,
+  "pending_jobs": false
+}
