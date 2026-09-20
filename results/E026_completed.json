@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "inference_source_files_verified": 8,
+  "evaluation_source_files_verified": 25,
+  "weight_sha256": "5347dcb70d6f85633c529063280760956d52eb40a562922858a69500cdbf87c8",
+  "optimizer_steps": 0,
+  "moving_statistics_unchanged": true,
+  "gpu_process_seconds": 89.51600893399996,
+  "cpu_seconds": 188.441123429,
+  "original_totals": {
+    "gt_nodes": 39,
+    "harmonic_nodes": 1707,
+    "nucverse_nodes": 444,
+    "harmonic_matched": 39,
+    "nucverse_matched": 11,
+    "nucverse_only": 0,
+    "harmonic_only": 28,
+    "union_coverage_upper_bound": 39
+  },
+  "adapted_stored_statistics_totals": {
+    "gt_nodes": 39,
+    "harmonic_nodes": 1707,
+    "nucverse_nodes": 306,
+    "harmonic_matched": 39,
+    "nucverse_matched": 10,
+    "nucverse_only": 0,
+    "harmonic_only": 29,
+    "union_coverage_upper_bound": 39
+  },
+  "adapted_batch_statistics_totals": {
+    "gt_nodes": 39,
+    "harmonic_nodes": 1707,
+    "nucverse_nodes": 1181,
+    "harmonic_matched": 39,
+    "nucverse_matched": 28,
+    "nucverse_only": 0,
+    "harmonic_only": 11,
+    "union_coverage_upper_bound": 39
+  },
+  "result_sha256": "5c142440348a44f189237732de089de10a0289abca8e672d964c04061c6cf6b5",
+  "scope": "Sparse one-to-one node coverage only; union is diagnostic, not a valid prediction or tracking score; unmatched detections are not false positives",
+  "leaderboard_submitted": false
+}
