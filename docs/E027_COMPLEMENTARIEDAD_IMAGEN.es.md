@@ -1,0 +1,11 @@
+# E027: detección en fallos conocidos de Harmonic
+
+La corrección de normalización E026 aumentó la cobertura del nuevo segmentador de 10/39 a 28/39 centros. Sin embargo, Harmonic ya cubría los 39. E027 cambia la pregunta: ¿el segmentador recupera centros anotados que el control omite?
+
+Se congeló una regla de selección antes de la inferencia: entre los 16 videos de calibración, escoger por video un fotograma con centros anotados no emparejados por Harmonic a 7 µm. Priorizar los que incluyen familiares de una división, luego el número de omisiones y después el fotograma más temprano. Evaluar imágenes completas de ese instante y sus vecinos inmediatos, sin recortes alrededor de etiquetas. Esto es un diagnóstico condicionado a errores conocidos, no una estimación imparcial del rendimiento ni una reserva nueva.
+
+La preparación CPU terminó en 17,41 segundos y se verificaron sus 36 archivos. Seleccionó 33 fotogramas de 12 videos; cuatro no tenían omisiones. Los fotogramas centrales reúnen 21 centros omitidos y uno está vinculado directamente a una división. La escasa representación de omisiones en divisiones limita las conclusiones sobre mitosis. CSV del control fijado por SHA256 y misma escala física y correspondencia uno a uno que E024–E026. Recibo: `results/E027_INPUTS_completed.json`.
+
+La inferencia reutiliza el checkpoint final E025 y la normalización E026. No hay optimizador, búsqueda de umbrales ni etiquetas en el predictor. El agrupamiento y la correspondencia de referencia siguen en CPU con el mismo paquete de evaluación que E026. GPU solo ejecuta la red 3D. Los resultados se siguen durante la sesión y la evaluación se encadena sin pedir un aviso del usuario.
+
+Después se examinan en la laptop las distancias de los centros recuperados a las detecciones existentes y a candidatos de fotogramas vecinos. Esto distingue señales de localización y posibles detecciones complementarias, pero la proximidad por sí sola no demuestra identidad celular, aristas correctas ni precisión: las anotaciones son parciales. No se sumarán automáticamente todas las instancias al grafo. La promoción requiere un predictor sin etiquetas, un grafo completo y mejora con la métrica oficial en otros videos reservados.

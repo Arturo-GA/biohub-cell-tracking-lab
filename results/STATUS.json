@@ -221,8 +221,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": false,
-  "active_experiment": null,
+  "next_experiment_started": true,
+  "active_experiment": "E027_CONTROL_ERROR_WINDOWS",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -1419,5 +1419,17 @@
     "cpu_seconds": 188.441123429,
     "next_run_started": false
   },
-  "next_research_priority": "Evaluate complementary detection on calibration division/error windows, then reserved full-graph validation; Cellpose-DINO/SAM researched alternative, not yet implemented"
+  "next_research_priority": "Evaluate complementary detection on calibration division/error windows, then reserved full-graph validation; Cellpose-DINO/SAM researched alternative, not yet implemented",
+  "E027": {
+    "status": "RUNNING",
+    "input_receipt": "results/E027_INPUTS_completed.json",
+    "gpu_launch": "results/E027_GPU_launch.json",
+    "frames": 33,
+    "videos": 12,
+    "training": false,
+    "evaluation_cpu_prepared": true,
+    "leaderboard_submitted": false,
+    "scope": "Error-conditioned calibration detection coverage",
+    "documentation": "docs/E027_COMPLEMENTARIEDAD_IMAGEN.es.md"
+  }
 }

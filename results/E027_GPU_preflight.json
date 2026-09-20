@@ -1,0 +1,9 @@
+{
+  "payload_sha256": "4be091aee4e438ad78cfec63f7d8ae7aa1f93e46af78a0d874d3d594440be1bf",
+  "notebook_sha256": "14e3d9912a8bfad08a3e65cab016ced3590d0e4fa5f7b24b374b168b380d5b3b",
+  "files": 8,
+  "gpu": true,
+  "private": true,
+  "optimizer_steps": 0,
+  "gpu_justification": "Neural inference only for error-window full 3D frames; CPU diagnosis and evaluation"
+}

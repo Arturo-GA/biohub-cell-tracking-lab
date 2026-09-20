@@ -1,0 +1,16 @@
+{
+  "sha256": "4be091aee4e438ad78cfec63f7d8ae7aa1f93e46af78a0d874d3d594440be1bf",
+  "files": [
+    "scripts/error_window_inference_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/nucverse_tiles.py",
+    "baseline/e026_normalization.json",
+    "baseline/e027_error_windows.json",
+    "vendor/nucverse/attention_unet_3d.py",
+    "vendor/nucverse/LICENSE",
+    "NOTICE.md"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

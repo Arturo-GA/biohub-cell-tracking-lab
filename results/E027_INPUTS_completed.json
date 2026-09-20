@@ -1,0 +1,194 @@
+{
+  "status": "complete",
+  "source_files_verified": 36,
+  "manifest_sha256": "f7e0b87fc615bac322ee1dbb1924628895bcf5e6cf294c88ae7e268e0fca72f5",
+  "frames": 33,
+  "videos": 12,
+  "anchor_missing_centers": 21,
+  "anchor_missing_division_relatives": 1,
+  "seconds": 17.40637776899996,
+  "windows": [
+    {
+      "video": "44b6_0db75fae",
+      "anchor": {
+        "frame": 0,
+        "missing": 1,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        0,
+        1
+      ]
+    },
+    {
+      "video": "44b6_5740d24b",
+      "skipped": "No unmatched annotated centers in control"
+    },
+    {
+      "video": "44b6_587a1e22",
+      "anchor": {
+        "frame": 56,
+        "missing": 1,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "video": "44b6_9bfa6a0a",
+      "skipped": "No unmatched annotated centers in control"
+    },
+    {
+      "video": "44b6_aaf8b0ea",
+      "anchor": {
+        "frame": 62,
+        "missing": 1,
+        "missing_division": 1,
+        "division_nodes": 2
+      },
+      "frames": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "video": "44b6_c15fded2",
+      "anchor": {
+        "frame": 21,
+        "missing": 1,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "video": "44b6_c8e2a523",
+      "anchor": {
+        "frame": 74,
+        "missing": 1,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "video": "44b6_cf2536e8",
+      "skipped": "No unmatched annotated centers in control"
+    },
+    {
+      "video": "6bba_1f58c2f6",
+      "anchor": {
+        "frame": 35,
+        "missing": 1,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "video": "6bba_5c824876",
+      "anchor": {
+        "frame": 0,
+        "missing": 2,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        0,
+        1
+      ]
+    },
+    {
+      "video": "6bba_6479435d",
+      "anchor": {
+        "frame": 34,
+        "missing": 4,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "video": "6bba_76db78c1",
+      "skipped": "No unmatched annotated centers in control"
+    },
+    {
+      "video": "6bba_7b5d3b2c",
+      "anchor": {
+        "frame": 35,
+        "missing": 1,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "video": "6bba_9a41d029",
+      "anchor": {
+        "frame": 18,
+        "missing": 2,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "video": "6bba_c73a1d11",
+      "anchor": {
+        "frame": 29,
+        "missing": 4,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "video": "6bba_f1fde7e0",
+      "anchor": {
+        "frame": 0,
+        "missing": 2,
+        "missing_division": 0,
+        "division_nodes": 0
+      },
+      "frames": [
+        0,
+        1
+      ]
+    }
+  ],
+  "scope": "Error-conditioned calibration diagnostic; not unbiased performance, tracking score or final holdout"
+}

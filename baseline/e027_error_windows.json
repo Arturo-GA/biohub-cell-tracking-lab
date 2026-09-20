@@ -1,0 +1,37 @@
+{
+  "videos": [
+    "44b6_0db75fae",
+    "44b6_5740d24b",
+    "44b6_587a1e22",
+    "44b6_9bfa6a0a",
+    "44b6_aaf8b0ea",
+    "44b6_c15fded2",
+    "44b6_c8e2a523",
+    "44b6_cf2536e8",
+    "6bba_1f58c2f6",
+    "6bba_5c824876",
+    "6bba_6479435d",
+    "6bba_76db78c1",
+    "6bba_7b5d3b2c",
+    "6bba_9a41d029",
+    "6bba_c73a1d11",
+    "6bba_f1fde7e0"
+  ],
+  "control_sha256": "9d39a33fa0f4132619b91bb41ff261df428f95126f82a1f2678b963ba1a92ef4",
+  "selection": "One anchor per calibration video with unmatched annotated centers; prioritize missing division relatives, then missing count, then earliest frame; full frames t-1,t,t+1",
+  "annotations_used_to_select_frames": true,
+  "patch": [
+    64,
+    128,
+    128
+  ],
+  "stride": [
+    48,
+    96,
+    96
+  ],
+  "gpu_deadline_seconds": 1800,
+  "preprocessing": "Same as E026",
+  "weight_source": "Frozen E025 checkpoint; E026 image-local normalization",
+  "scope": "Error-conditioned diagnostic, never an unbiased tracking or leaderboard estimate"
+}
