@@ -1,6 +1,6 @@
 # Biohub Cell Tracking Lab
 
-**E030 en ejecución:** implementados los descriptores DINO reales, el modelo de identidad y progenitores, la cabeza de divisiones y el decodificador conjunto. Preparación CPU completada; extracción GPU en curso. Las cabezas se entrenarán en CPU con 40 videos, ocho de desarrollo y 16 de calibración. Es un diagnóstico con centros anotados perturbados; todavía no demuestra mejora del seguimiento ni autoriza otro submission. [Protocolo E030](docs/E030_IDENTIDADES_CON_IMAGEN.es.md).
+**E030 completado:** implementados y entrenados el modelo DINO de identidad/progenitores y la cabeza de divisiones, con decodificador conjunto y siete pruebas locales aprobadas. Separación de 40 videos para entrenamiento, ocho para desarrollo y 16 para calibración. En centros anotados perturbados acertó 586/588 enlaces, frente a 585 sin imagen y 588 con vecino más cercano; AP de división 0,219 sobre seis eventos. No demuestra mejora competitiva y no se envía. Extracción GPU: 202 s; entrenamiento/evaluación de las cabezas CPU: 60 s. Pesos y resultados guardados; no hay jobs pendientes. [Resultados y límites de E030](docs/E030_IDENTIDADES_CON_IMAGEN.es.md).
 
 Repositorio privado de Arturo para [Biohub — Cell Tracking During Development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development). Investigación y preparación inicial: **13 de septiembre de 2026**.
 

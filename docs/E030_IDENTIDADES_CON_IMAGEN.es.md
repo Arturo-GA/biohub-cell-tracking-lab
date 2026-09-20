@@ -30,4 +30,21 @@ Antes de promover un submission deben fijarse puntos de operación usando detecc
 
 Siete pruebas locales pasaron (incluyen aprendizaje de identidad con distancias idénticas y rechazo de saltos temporales): geometría física, extracción repetible independiente de `styles`, simetría de identidad/división, competencia conjunta de duplicados y divisiones, y sensibilidad/gradientes de la apariencia. Paquetes privados con código y configuración; imágenes, etiquetas y pesos quedan fuera de Git.
 
-La preparación CPU terminó en 278,90 segundos: 13 364 centros perturbados, 35 divisiones en el conjunto fit original y ninguna en las transiciones de calibración. Código y manifiesto verificados. Extracción GPU en ejecución; después se entrenan las cabezas en CPU con la separación 40/8/16 descrita arriba. No hay nuevo submission.
+Las tres etapas terminaron y fueron auditadas. Preparación CPU: **278,90 s**, 13 364 centros perturbados. Extracción GPU: **202,43 s** de proceso, con error máximo de repetición cero. Entrenamiento y evaluación CPU: **59,84 s**, 600 pasos por modelo, 518 500 parámetros por cabeza conjunta. El tiempo de proceso no equivale necesariamente al consumo facturado de cuota Kaggle.
+
+Se verificaron los 4/6/5 archivos fuente de las tres etapas, los manifiestos encadenados, la separación 40/8/16 y los dos checkpoints descargados, sus hashes y su carga estricta. Pesos guardados en `outputs/e030_train/image_identity_train/` y en la salida privada de Kaggle; fuera de Git. Recibo consolidado: `results/E030_completed.json`.
+
+## Resultado y decisión
+
+| Diagnóstico | Imagen DINO | Sin imagen | Imagen permutada | Vecino más cercano |
+|---|---:|---:|---:|---:|
+| Enlaces correctos, 16 videos de calibración | 586/588 | 585/588 | 585/588 | 588/588 |
+| Enlaces correctos, ocho videos de desarrollo | 367/368 | 367/368 | 366/368 | 367/368 |
+| AP de división, seis eventos de desarrollo | 0,2193 | 0,2082 | 0,1676 | No medida |
+| AP de identidad, calibración | 1,0000 | 1,0000 | 1,0000 | No medida |
+
+Los 16 videos de calibración no contienen divisiones en las transiciones seleccionadas; allí la AP de división es indefinida, no cero. Todos los progenitores verdaderos están representados, así que este diagnóstico tampoco verifica detecciones omitidas ni la opción de progenitor ausente en evaluación.
+
+**No se promueve ni se envía un submission.** La rama visual cambia algunas predicciones, pero no supera al vecino más cercano en enlaces; la diferencia de AP sobre seis divisiones es insuficiente para afirmar una mejora general. La identidad perfecta incluso sin imagen demuestra que los duplicados perturbados de este currículo son demasiado fáciles. No se afirma una mejora de la métrica oficial, de Harmonic ni del leaderboard.
+
+La implementación y el primer entrenamiento quedan completados. No se justifica repetir más épocas sobre este currículo. Para continuar esta arquitectura hace falta supervisar candidatos reales de Harmonic/NucVerse: duplicados de distintas fuentes, vecinos confundibles, progenitores ausentes y divisiones completas. La calibración de esos candidatos y la evaluación del grafo entero siguen pendientes; no se ejecutaron en E030. No quedan trabajos activos.
