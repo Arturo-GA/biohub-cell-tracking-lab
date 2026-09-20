@@ -1,0 +1,7 @@
+{
+  "model_sha256": "68e13d3424721ee43e6d247f97d9f533dbeb735b46c038ec3c636035ee3a4e23",
+  "dataset": "hengck23/hengck23-cell-point-detector-demo",
+  "weight": "00000030.pth",
+  "license": "unknown per dataset metadata; attached original for private diagnostic only",
+  "training_membership": "unknown"
+}

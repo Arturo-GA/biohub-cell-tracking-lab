@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-dense-detector-prepare-cpu",
+  "version": 1,
+  "kernel_id": 135130663,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-dense-detector-prepare-cpu",
+  "ref": "/code/jarturo/biohub-dense-detector-prepare-cpu",
+  "launched_at_utc": "2026-09-20T16:53:54.494831+00:00",
+  "payload_sha256": "b318f59f98ec369d48daac458ed4101e99b75b63b15b9813ef67904fe43ab4ff",
+  "notebook_sha256": "8474cbd6963e9e9d1d17e7a2e73ddf6d7eb71d8f55e8274f95b1a166e3b156ba",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-dense-detector-gpu",
+  "url": "https://www.kaggle.com/code/jarturo/biohub-dense-detector-gpu",
+  "version": 1,
+  "launched_at_utc": "2026-09-20T17:01:33.739062+00:00",
+  "notebook_sha256": "890bbb56fc31a4094c5da7e59d9cb259782ecd6067cc8721bbdf677d40cb970a",
+  "payload_sha256": "d797b38f1496c8c477a36936baab5d5c08fa136eb683f6144a69f97034ee1aa3",
+  "gpu_only_neural_inference": true,
+  "gpu": true,
+  "is_private": true,
+  "leaderboard_submitted": false
+}

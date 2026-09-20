@@ -1,0 +1,10 @@
+{
+  "sha256": "b318f59f98ec369d48daac458ed4101e99b75b63b15b9813ef67904fe43ab4ff",
+  "files": [
+    "baseline/e031_dense_detector.json",
+    "scripts/dense_detector_prepare_runner.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

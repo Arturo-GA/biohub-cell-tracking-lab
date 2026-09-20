@@ -1,0 +1,5 @@
+{
+  "notebook_sha256": "890bbb56fc31a4094c5da7e59d9cb259782ecd6067cc8721bbdf677d40cb970a",
+  "payload_sha256": "d797b38f1496c8c477a36936baab5d5c08fa136eb683f6144a69f97034ee1aa3",
+  "gpu_only_neural_inference": true
+}

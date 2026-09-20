@@ -1,0 +1,11 @@
+{
+  "sha256": "d797b38f1496c8c477a36936baab5d5c08fa136eb683f6144a69f97034ee1aa3",
+  "files": [
+    "scripts/dense_detector_gpu_runner.py",
+    "baseline/e031_source_pin.json",
+    "baseline/e031_dense_detector.json"
+  ],
+  "contains_credentials": false,
+  "contains_weights": false,
+  "contains_images": false
+}

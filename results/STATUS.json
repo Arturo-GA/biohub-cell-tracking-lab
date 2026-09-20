@@ -1499,5 +1499,16 @@
     "development_division_ap": 0.21934437301723494,
     "decision": "Reject promotion; require actual ambiguous detector candidates",
     "pending_jobs": false
+  },
+  "E031": {
+    "status": "GPU_LAUNCHED",
+    "documentation": "docs/E031_DETECTOR_DENSO.es.md",
+    "preparation": "results/E031_PREP_completed.json",
+    "gpu_launch": "results/E031_GPU_launch.json",
+    "evaluation_prepared": true,
+    "training": false,
+    "leaderboard_submitted": false,
+    "local_tests_passed": 3,
+    "scope": "Conditional calibration; detector training membership unknown"
   }
 }
