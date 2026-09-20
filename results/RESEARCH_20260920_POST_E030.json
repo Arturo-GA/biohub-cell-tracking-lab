@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-20",
+  "type": "research_only",
+  "report": "docs/RESEARCH_POST_E030.es.md",
+  "notebooks": [
+    {
+      "ref": "hengck23/cell-point-detector",
+      "file": "artifacts\\research_20260920\\notebooks\\hengck23__cell-point-detector\\cell-point-detector.ipynb",
+      "sha256": "ac42811a80c0b3ee78d023e19d780663132cb4b6289cd17703cce7397ea973a2",
+      "code_lines": 589,
+      "cells": 8,
+      "url": "https://www.kaggle.com/code/hengck23/cell-point-detector",
+      "review": "static_selected_components_not_executed",
+      "new_to_recorded_review": true
+    },
+    {
+      "ref": "arnav170/biohub-reid3",
+      "file": "artifacts\\research_20260920\\notebooks\\arnav170__biohub-reid3\\biohub-reid3.ipynb",
+      "sha256": "9bc863af03c0ce4cde5f241909b3354ebc3271ca26298d0b20a4b3fb3883accf",
+      "code_lines": 4806,
+      "cells": 12,
+      "url": "https://www.kaggle.com/code/arnav170/biohub-reid3",
+      "review": "static_selected_components_not_executed",
+      "new_to_recorded_review": true
+    },
+    {
+      "ref": "binasalama/biohub-learned-unet-transformer-ilp-gap-recovery",
+      "file": "artifacts\\research_20260920\\notebooks\\binasalama__biohub-learned-unet-transformer-ilp-gap-recovery\\biohub-learned-unet-transformer-ilp-gap-recovery.ipynb",
+      "sha256": "bcb1bd98df91a23bdf6afc749a160479a51e8e1bdaab681b4bea5c1e8447c89a",
+      "code_lines": 1756,
+      "cells": 11,
+      "url": "https://www.kaggle.com/code/binasalama/biohub-learned-unet-transformer-ilp-gap-recovery",
+      "review": "static_selected_components_not_executed",
+      "new_to_recorded_review": true
+    },
+    {
+      "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+      "file": "artifacts\\research_20260920\\notebooks\\raunakdey07__biohub-harmonic-fusion-v3\\biohub-harmonic-fusion-v3.ipynb",
+      "sha256": "201d3d7744f378fd642cb195055b5d4222febad2890f4660f9393f90c2785df8",
+      "code_lines": 4202,
+      "cells": 13,
+      "url": "https://www.kaggle.com/code/raunakdey07/biohub-harmonic-fusion-v3",
+      "review": "static_selected_components_not_executed",
+      "new_to_recorded_review": true
+    },
+    {
+      "ref": "howonkang/biohub-0947-short5-prepp-r1",
+      "file": "artifacts\\research_20260920\\notebooks\\howonkang__biohub-0947-short5-prepp-r1\\biohub-0947-short5-prepp-r1.ipynb",
+      "sha256": "f64e693f7984ef8ac2ada524013e9097a6c22fa425e306bee605b0db726f0785",
+      "code_lines": 4279,
+      "cells": 12,
+      "url": "https://www.kaggle.com/code/howonkang/biohub-0947-short5-prepp-r1",
+      "review": "static_selected_components_not_executed",
+      "new_to_recorded_review": true
+    },
+    {
+      "ref": "newwang12/biohub-v1-grouped",
+      "file": "artifacts\\research_20260920\\notebooks\\newwang12__biohub-v1-grouped\\biohub-v1-grouped.ipynb",
+      "sha256": "134c725beb245252af04eaab5e75ae3bbef05ce73a5d5dbdefd2a1b3b862f79a",
+      "code_lines": 2186,
+      "cells": 13,
+      "url": "https://www.kaggle.com/code/newwang12/biohub-v1-grouped",
+      "review": "static_selected_components_not_executed",
+      "new_to_recorded_review": true
+    },
+    {
+      "ref": "noisyislands/biohub-xgboost-division-events",
+      "file": "artifacts\\research_20260920\\notebooks\\noisyislands__biohub-xgboost-division-events\\biohub-xgboost-division-events.py",
+      "sha256": "c44d163efc6a49ac59cf056cbf9f31f08b03a3fd9601f85bb9e1576b24d73bde",
+      "code_lines": 474,
+      "format": "script",
+      "url": "https://www.kaggle.com/code/noisyislands/biohub-xgboost-division-events",
+      "review": "static_selected_components_not_executed",
+      "new_to_recorded_review": true
+    }
+  ],
+  "papers": [
+    {
+      "name": "Zyss et al. Contrastive learning for cell division detection and tracking",
+      "url": "https://link.springer.com/article/10.1186/s12859-025-06344-5",
+      "review": "full_text_selected_methods_and_evaluation",
+      "priority": 1
+    },
+    {
+      "name": "SpatialDINO",
+      "url": "https://github.com/kirchhausenlab/spatialdino",
+      "review": "abstract_and_author_repository",
+      "priority": 2,
+      "t4_feasibility_verified": false
+    },
+    {
+      "name": "ARGUS",
+      "url": "https://arxiv.org/html/2607.08297v1",
+      "review": "full_text_selected_methods",
+      "priority": "low_2d_and_overlap_with_prior_work"
+    },
+    {
+      "name": "Bayesian Transformers and Higher-Order Graph Matching",
+      "url": "https://github.com/NabaviLab/bayesian-transformer-cell-tracking",
+      "review": "abstract_and_repository_only",
+      "priority": "reserve"
+    }
+  ],
+  "discussion_ids": [
+    "739685",
+    "737438",
+    "739731",
+    "736937",
+    "738217"
+  ],
+  "discussion_access": "indexed_web_text_may_omit_recent_comments",
+  "detector_training_manifest_verified": false,
+  "leader_methods_verified": false,
+  "current_public_scores_reverified": false,
+  "gpu_seconds_used": 0,
+  "jobs_launched": 0,
+  "submission_created": false,
+  "improvement_demonstrated": false,
+  "decision": "dense_detection_and_temporal_representation_on_real_inference_candidates"
+}

@@ -1,5 +1,7 @@
 # Biohub Cell Tracking Lab
 
+[Revision de papers, discusiones y siete notebooks nuevos posterior a E030](docs/RESEARCH_POST_E030.es.md). Prioridad propuesta: deteccion densa y aprendizaje temporal sobre candidatos reales; sin nuevo entrenamiento ni submission en esta revision.
+
 **E030 completado:** implementados y entrenados el modelo DINO de identidad/progenitores y la cabeza de divisiones, con decodificador conjunto y siete pruebas locales aprobadas. Separación de 40 videos para entrenamiento, ocho para desarrollo y 16 para calibración. En centros anotados perturbados acertó 586/588 enlaces, frente a 585 sin imagen y 588 con vecino más cercano; AP de división 0,219 sobre seis eventos. No demuestra mejora competitiva y no se envía. Extracción GPU: 202 s; entrenamiento/evaluación de las cabezas CPU: 60 s. Pesos y resultados guardados; no hay jobs pendientes. [Resultados y límites de E030](docs/E030_IDENTIDADES_CON_IMAGEN.es.md).
 
 Repositorio privado de Arturo para [Biohub — Cell Tracking During Development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development). Investigación y preparación inicial: **13 de septiembre de 2026**.
