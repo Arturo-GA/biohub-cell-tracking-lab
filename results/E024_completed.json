@@ -1,0 +1,176 @@
+{
+  "status": "complete",
+  "gpu_source_files_verified": 7,
+  "cpu_source_files_verified": 25,
+  "totals": {
+    "gt_nodes": 39,
+    "harmonic_nodes": 1707,
+    "nucverse_nodes": 444,
+    "harmonic_matched": 39,
+    "nucverse_matched": 11,
+    "nucverse_only": 0,
+    "harmonic_only": 28,
+    "union_coverage_upper_bound": 39
+  },
+  "gpu_seconds": 74.754366576,
+  "cpu_seconds": 38.36566102699999,
+  "frames": [
+    {
+      "video": "44b6_0db75fae",
+      "frame": 25,
+      "gt_nodes": 2,
+      "harmonic_nodes": 246,
+      "nucverse_nodes": 29,
+      "harmonic_matched": 2,
+      "nucverse_matched": 0,
+      "nucverse_only": 0,
+      "harmonic_only": 2,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 47210,
+        "in_bounds_voxels": 47210,
+        "seeds": 29,
+        "instances": 29,
+        "assigned_voxels": 33904
+      }
+    },
+    {
+      "video": "44b6_0db75fae",
+      "frame": 75,
+      "gt_nodes": 2,
+      "harmonic_nodes": 110,
+      "nucverse_nodes": 52,
+      "harmonic_matched": 2,
+      "nucverse_matched": 0,
+      "nucverse_only": 0,
+      "harmonic_only": 2,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 110615,
+        "in_bounds_voxels": 110615,
+        "seeds": 52,
+        "instances": 52,
+        "assigned_voxels": 90839
+      }
+    },
+    {
+      "video": "44b6_5740d24b",
+      "frame": 25,
+      "gt_nodes": 2,
+      "harmonic_nodes": 113,
+      "nucverse_nodes": 15,
+      "harmonic_matched": 2,
+      "nucverse_matched": 1,
+      "nucverse_only": 0,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 12722,
+        "in_bounds_voxels": 12722,
+        "seeds": 15,
+        "instances": 15,
+        "assigned_voxels": 7345
+      }
+    },
+    {
+      "video": "44b6_5740d24b",
+      "frame": 75,
+      "gt_nodes": 2,
+      "harmonic_nodes": 105,
+      "nucverse_nodes": 11,
+      "harmonic_matched": 2,
+      "nucverse_matched": 0,
+      "nucverse_only": 0,
+      "harmonic_only": 2,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 9204,
+        "in_bounds_voxels": 9204,
+        "seeds": 11,
+        "instances": 11,
+        "assigned_voxels": 7070
+      }
+    },
+    {
+      "video": "6bba_1f58c2f6",
+      "frame": 25,
+      "gt_nodes": 3,
+      "harmonic_nodes": 391,
+      "nucverse_nodes": 42,
+      "harmonic_matched": 3,
+      "nucverse_matched": 0,
+      "nucverse_only": 0,
+      "harmonic_only": 3,
+      "union_coverage_upper_bound": 3,
+      "decoding": {
+        "foreground_voxels": 21314,
+        "in_bounds_voxels": 21181,
+        "seeds": 42,
+        "instances": 42,
+        "assigned_voxels": 20390
+      }
+    },
+    {
+      "video": "6bba_1f58c2f6",
+      "frame": 75,
+      "gt_nodes": 3,
+      "harmonic_nodes": 240,
+      "nucverse_nodes": 31,
+      "harmonic_matched": 3,
+      "nucverse_matched": 1,
+      "nucverse_only": 0,
+      "harmonic_only": 2,
+      "union_coverage_upper_bound": 3,
+      "decoding": {
+        "foreground_voxels": 26072,
+        "in_bounds_voxels": 26072,
+        "seeds": 31,
+        "instances": 31,
+        "assigned_voxels": 25228
+      }
+    },
+    {
+      "video": "6bba_5c824876",
+      "frame": 25,
+      "gt_nodes": 17,
+      "harmonic_nodes": 237,
+      "nucverse_nodes": 127,
+      "harmonic_matched": 17,
+      "nucverse_matched": 8,
+      "nucverse_only": 0,
+      "harmonic_only": 9,
+      "union_coverage_upper_bound": 17,
+      "decoding": {
+        "foreground_voxels": 91868,
+        "in_bounds_voxels": 91810,
+        "seeds": 127,
+        "instances": 127,
+        "assigned_voxels": 88231
+      }
+    },
+    {
+      "video": "6bba_5c824876",
+      "frame": 75,
+      "gt_nodes": 8,
+      "harmonic_nodes": 265,
+      "nucverse_nodes": 137,
+      "harmonic_matched": 8,
+      "nucverse_matched": 1,
+      "nucverse_only": 0,
+      "harmonic_only": 7,
+      "union_coverage_upper_bound": 8,
+      "decoding": {
+        "foreground_voxels": 106796,
+        "in_bounds_voxels": 104239,
+        "seeds": 137,
+        "instances": 137,
+        "assigned_voxels": 97433
+      }
+    }
+  ],
+  "extra_union_matches": 0,
+  "node_count_ratio": 0.2601054481546573,
+  "scope": "Sparse one-to-one node coverage only; union is diagnostic, not a valid prediction or tracking score; unmatched detections are not false positives",
+  "result_sha256": "95cd0d2b95484afe63cd51ad7ebeb6b687ba964c0e736548305fb24b377c546f",
+  "leaderboard_submitted": false
+}

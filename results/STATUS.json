@@ -1364,7 +1364,7 @@
     "decision": "No displayed public improvement; freeze association and prioritize complementary segmentation"
   },
   "E024": {
-    "status": "CPU_EVALUATION_RUNNING",
+    "status": "COMPLETE",
     "goal": "silver medal",
     "line": "Complementary volumetric nuclear instance segmentation",
     "gpu_kernel": "jarturo/biohub-lab-nucverse-inference",
@@ -1373,6 +1373,22 @@
     "evaluation_cpu_prepared": true,
     "leaderboard_submitted": false,
     "gpu_inference_seconds": 74.754366576,
-    "evaluation_launch": "results/E024_EVAL_launch.json"
+    "evaluation_launch": "results/E024_EVAL_launch.json",
+    "completed_receipt": "results/E024_completed.json",
+    "mask_diagnostic": "results/E024_mask_diagnostic.json",
+    "decision": "Reject unadapted transfer; mask coverage also poor; start partial-point domain adaptation"
+  },
+  "E025": {
+    "status": "TRAINING",
+    "kernel": "jarturo/biohub-lab-point-adapt-training",
+    "launch_receipt": "results/E025_TRAIN_launch.json",
+    "data_receipt": "results/E025_DATA_completed.json",
+    "fit_videos": 48,
+    "validation_videos": 16,
+    "fit_crops": 1536,
+    "validation_crops": 64,
+    "steps": 800,
+    "evaluation_cpu_prepared": true,
+    "leaderboard_submitted": false
   }
 }

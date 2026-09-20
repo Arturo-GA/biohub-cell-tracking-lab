@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-lab-point-adapt-training",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-point-adapt-training",
+  "payload_sha256": "7961599819d314d301aa843eb30c5127206199ae91808be95e1b1fd0b99efd9d",
+  "notebook_sha256": "aa52e268ad07107f88a0dd6b656587ca357dfd5d49a956ccb76acde607ee9dc9",
+  "launched_at_utc": "2026-09-20T06:02:51.152491+00:00",
+  "gpu": true,
+  "is_private": true,
+  "gpu_justification": "Backpropagation through a 40M-parameter volumetric segmenter and neural inference; data preparation and instance evaluation use CPU",
+  "leaderboard_submitted": false
+}

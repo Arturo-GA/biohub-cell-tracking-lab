@@ -1,0 +1,17 @@
+{
+  "sha256": "7961599819d314d301aa843eb30c5127206199ae91808be95e1b1fd0b99efd9d",
+  "files": [
+    "scripts/point_adapt_train_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/nucverse_tiles.py",
+    "baseline/e025_point_adapt.json",
+    "baseline/e024_runtime.json",
+    "baseline/e024_benchmark.json",
+    "vendor/nucverse/attention_unet_3d.py",
+    "vendor/nucverse/LICENSE",
+    "NOTICE.md"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

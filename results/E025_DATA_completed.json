@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "source_files_verified": 25,
+  "counts": {
+    "fit": 1536,
+    "validation": 64
+  },
+  "fit_videos": 48,
+  "validation_videos": 16,
+  "splits_disjoint": true,
+  "seconds": 211.38712865099998,
+  "manifest_sha256": "35ecef1564deddf1847b440b707312f4f36f2b1d69c8e28c0a19bbece7459215",
+  "scope": "Partial point labels plus weak photometric negatives; unknown voxels are not background labels"
+}
