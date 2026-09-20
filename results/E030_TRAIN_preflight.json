@@ -1,0 +1,8 @@
+{
+  "payload_sha256": "3a0628f42cb99fe915623c56557d37a70fe2cd5b79416c9cba0c1a008d3cac79",
+  "files": 4,
+  "gpu": false,
+  "private": true,
+  "notebook_sha256": "7392008191d4a13106b3ccda84af11d03d9993c44a2cfa0e17d739f6c804d91f",
+  "stage": "train"
+}

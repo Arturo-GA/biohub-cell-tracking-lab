@@ -1,0 +1,19 @@
+{
+  "id": "jarturo/biohub-image-identity-features",
+  "title": "Biohub Image Identity Features",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-image-identity-data-cpu",
+    "jarturo/biohub-lab-cellpose-preparation-cpu"
+  ],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

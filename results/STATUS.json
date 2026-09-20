@@ -221,8 +221,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": false,
-  "active_experiment": null,
+  "next_experiment_started": true,
+  "active_experiment": "E030",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -1419,7 +1419,7 @@
     "cpu_seconds": 188.441123429,
     "next_run_started": false
   },
-  "next_research_priority": "Joint identity competition and learned temporal/division associations from actual DINO encoder tokens; Cellpose styles are random placeholders and must not be used; not implemented or trained yet",
+  "next_research_priority": "E030 implemented: DINO identity, parent competition and symmetric division; annotated curriculum before detector-space validation",
   "E027": {
     "status": "COMPLETE",
     "input_receipt": "results/E027_INPUTS_completed.json",
@@ -1475,5 +1475,13 @@
     "division_tp_delta": 0,
     "decision": "Reject promotion and radius sweeps; learn identity-aware image associations before more full-volume inference",
     "next_run_started": false
+  },
+  "E030": {
+    "status": "CPU_DATA_RUNNING",
+    "documentation": "docs/E030_IDENTIDADES_CON_IMAGEN.es.md",
+    "data_launch": "results/E030_DATA_launch.json",
+    "gpu_only_for": "Frozen encoder descriptor extraction",
+    "training_device": "CPU",
+    "leaderboard_submitted": false
   }
 }

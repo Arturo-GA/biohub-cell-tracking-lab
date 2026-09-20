@@ -1,0 +1,14 @@
+{
+  "sha256": "15a7467b879b9ad43b1b959db9542e92c1da97e8bfac738bf8a1c534b4620e6b",
+  "files": [
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/image_identity.py",
+    "baseline/e030_image_identity.json",
+    "scripts/image_identity_features_runner.py",
+    "scripts/cellpose_runtime.py",
+    "baseline/e028_runtime.json"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

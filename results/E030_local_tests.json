@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "test_physical_sections_respect_anisotropy",
+    "test_real_tokens_ignore_random_styles",
+    "test_division_and_identity_symmetry",
+    "test_decoder_joint_division_and_duplicate_competition",
+    "test_appearance_can_change_equal_geometry_scores",
+    "test_learns_identity_when_distance_cannot_disambiguate",
+    "test_decoder_refuses_nonconsecutive_or_invalid_duplicate_events"
+  ],
+  "count": 7,
+  "seconds": 9.921000000002095,
+  "runner": "direct functions; pytest unavailable"
+}

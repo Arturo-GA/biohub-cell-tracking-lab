@@ -1,0 +1,16 @@
+{
+  "kernel": "jarturo/biohub-image-identity-data-cpu",
+  "version": 1,
+  "kernel_id": 135125804,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-image-identity-data-cpu",
+  "ref": "/code/jarturo/biohub-image-identity-data-cpu",
+  "launched_at_utc": "2026-09-20T16:09:11.862378+00:00",
+  "payload_sha256": "c8c51a20077be340ec996227952ee515e2711f1a49071d3cf8df355ea09f452c",
+  "notebook_sha256": "1aea85f37d971a497aee05b176fd26da1a2510ed87802b05bcee6161e6fce0f9",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false,
+  "requested_kernel": "jarturo/biohub-lab-image-identity-data-cpu"
+}

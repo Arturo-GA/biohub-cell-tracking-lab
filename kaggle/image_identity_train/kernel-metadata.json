@@ -1,0 +1,18 @@
+{
+  "id": "jarturo/biohub-image-identity-train-cpu",
+  "title": "Biohub Image Identity Train CPU",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-image-identity-data-cpu",
+    "jarturo/biohub-image-identity-features"
+  ],
+  "model_sources": []
+}
