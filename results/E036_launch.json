@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-joint-division-cpu",
+  "version": 1,
+  "kernel_id": 135144733,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-joint-division-cpu",
+  "ref": "/code/jarturo/biohub-joint-division-cpu",
+  "launched_at_utc": "2026-09-20T19:46:39.950843+00:00",
+  "payload_sha256": "c37ac29836fb8be5114dbc993eb40ccbb101ce07e75c9d65d9b68d5c74a42b93",
+  "notebook_sha256": "192ad5c5afae54a0bdcdc84491badd8eaf8a0b110037a140467149fb1bac071e",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

@@ -1678,5 +1678,53 @@
         "score": 0.9007529595605399
       }
     }
+  },
+  "E036": {
+    "status": "COMPLETE",
+    "kernel": "jarturo/biohub-joint-division-cpu",
+    "protocol": "docs/E036_RECONSTRUCCION_CONJUNTA.es.md",
+    "gpu": false,
+    "training": false,
+    "leaderboard_submitted": false,
+    "result": "results/E036_completed.json",
+    "decision": "Reject fixed kinetic event criterion: no annotated division recovered, worse edge metric; no parameter sweep or submission.",
+    "metrics": {
+      "control": {
+        "n": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "n_adj": 16,
+        "score": 0.9007529595605399
+      },
+      "parents": {
+        "n": 16,
+        "edge_jaccard": 0.8710351129095418,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8705037700845695,
+        "n_adj": 16,
+        "score": 0.9005037700845695
+      },
+      "joint": {
+        "n": 16,
+        "edge_jaccard": 0.8710351129095418,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8705036221134148,
+        "n_adj": 16,
+        "score": 0.9005036221134148
+      }
+    }
   }
 }

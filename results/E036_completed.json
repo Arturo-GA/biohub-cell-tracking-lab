@@ -1,0 +1,538 @@
+{
+  "status": "complete",
+  "version": 1,
+  "kernel": "jarturo/biohub-joint-division-cpu",
+  "manifest_sha256": "6a88eaa3dbe8ec321a3446d557b9ae35f2be31f523f911b17618c294f839935d",
+  "seconds": 212.3647377090001,
+  "metrics": {
+    "control": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    },
+    "parents": {
+      "n": 16,
+      "edge_jaccard": 0.8710351129095418,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8705037700845695,
+      "n_adj": 16,
+      "score": 0.9005037700845695
+    },
+    "joint": {
+      "n": 16,
+      "edge_jaccard": 0.8710351129095418,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8705036221134148,
+      "n_adj": 16,
+      "score": 0.9005036221134148
+    }
+  },
+  "changes": {
+    "control": [],
+    "parents": [
+      {
+        "video": "44b6_0db75fae",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_5740d24b",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_587a1e22",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "selected": 23,
+        "parent_events": 23,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 20,
+        "added_edges": 23,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_c15fded2",
+        "selected": 1,
+        "parent_events": 1,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 1,
+        "added_edges": 1,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "selected": 9,
+        "parent_events": 9,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 9,
+        "added_edges": 9,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "selected": 1,
+        "parent_events": 1,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 1,
+        "added_edges": 1,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_5c824876",
+        "selected": 3,
+        "parent_events": 3,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 3,
+        "added_edges": 3,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_6479435d",
+        "selected": 5,
+        "parent_events": 5,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 5,
+        "added_edges": 5,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_76db78c1",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "6bba_9a41d029",
+        "selected": 1,
+        "parent_events": 1,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 1,
+        "added_edges": 1,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "selected": 3,
+        "parent_events": 3,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 3,
+        "added_edges": 3,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "selected": 1,
+        "parent_events": 1,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 1,
+        "added_edges": 1,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      }
+    ],
+    "joint": [
+      {
+        "video": "44b6_0db75fae",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_5740d24b",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_587a1e22",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "selected": 26,
+        "parent_events": 23,
+        "donor_events": 3,
+        "added_nodes": 3,
+        "removed_edges": 20,
+        "added_edges": 29,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_c15fded2",
+        "selected": 1,
+        "parent_events": 1,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 1,
+        "added_edges": 1,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "selected": 9,
+        "parent_events": 9,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 9,
+        "added_edges": 9,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "selected": 1,
+        "parent_events": 1,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 1,
+        "added_edges": 1,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_5c824876",
+        "selected": 3,
+        "parent_events": 3,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 3,
+        "added_edges": 3,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_6479435d",
+        "selected": 5,
+        "parent_events": 5,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 5,
+        "added_edges": 5,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_76db78c1",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0,
+        "solver": null
+      },
+      {
+        "video": "6bba_9a41d029",
+        "selected": 1,
+        "parent_events": 1,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 1,
+        "added_edges": 1,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "selected": 3,
+        "parent_events": 3,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 3,
+        "added_edges": 3,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "selected": 1,
+        "parent_events": 1,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 1,
+        "added_edges": 1,
+        "solver": {
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "gap": 0.0
+        }
+      }
+    ]
+  },
+  "gpu": false,
+  "leaderboard_submitted": false,
+  "comparison": {
+    "control": {
+      "totals": {
+        "edge_tp": 6674,
+        "edge_fp": 485,
+        "edge_fn": 501,
+        "num_pred_nodes": 318094
+      },
+      "delta": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "num_pred_nodes": 0
+      },
+      "changes": {
+        "selected": 0,
+        "parent_events": 0,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 0,
+        "added_edges": 0
+      },
+      "changed_videos": []
+    },
+    "parents": {
+      "totals": {
+        "edge_tp": 6673,
+        "edge_fp": 486,
+        "edge_fn": 502,
+        "num_pred_nodes": 318094
+      },
+      "delta": {
+        "edge_tp": -1,
+        "edge_fp": 1,
+        "edge_fn": 1,
+        "num_pred_nodes": 0
+      },
+      "changes": {
+        "selected": 47,
+        "parent_events": 47,
+        "donor_events": 0,
+        "added_nodes": 0,
+        "removed_edges": 44,
+        "added_edges": 47
+      },
+      "changed_videos": [
+        {
+          "video": "44b6_9bfa6a0a",
+          "edge_tp": -1,
+          "edge_fp": 1,
+          "edge_fn": 1,
+          "num_pred_nodes": 0,
+          "adj_edge_jaccard": -0.006878940439673187
+        }
+      ]
+    },
+    "joint": {
+      "totals": {
+        "edge_tp": 6673,
+        "edge_fp": 486,
+        "edge_fn": 502,
+        "num_pred_nodes": 318097
+      },
+      "delta": {
+        "edge_tp": -1,
+        "edge_fp": 1,
+        "edge_fn": 1,
+        "num_pred_nodes": 3
+      },
+      "changes": {
+        "selected": 50,
+        "parent_events": 47,
+        "donor_events": 3,
+        "added_nodes": 3,
+        "removed_edges": 44,
+        "added_edges": 53
+      },
+      "changed_videos": [
+        {
+          "video": "44b6_9bfa6a0a",
+          "edge_tp": -1,
+          "edge_fp": 1,
+          "edge_fn": 1,
+          "num_pred_nodes": 3,
+          "adj_edge_jaccard": -0.006882960322709297
+        }
+      ]
+    }
+  },
+  "all_optimizations_optimal": true,
+  "decision": "Reject fixed kinetic event criterion: no annotated division recovered, worse edge metric; no parameter sweep or submission.",
+  "scope": "16 reused calibration videos; upstream detector training provenance unknown"
+}

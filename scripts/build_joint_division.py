@@ -1,0 +1,12 @@
+import json
+from pathlib import Path
+from build_tissue_trajectory_notebooks import ROOT,package,sha
+def main():
+    if (ROOT/'results/E036_launch.json').exists():raise RuntimeError('Already launched; do not overwrite frozen notebook')
+    config=dict(experiment='E036',graph_manifest_sha256='c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22',dense_manifest_sha256='a09a6f6533ff80f0b6e202fb2b3314683dda7cd29029381853c67e030671a149',control_score=.9007529595605399,protocol='Fixed counterfactual kinetic energy and disjoint event optimization. Mother has one existing child and velocity history. Both daughters have three-frame tails. Reassign other continuation parents; preserve existing divisions. Reconstruct at most one missing daughter frame with dense batch_bn detection, >3um from existing nodes, <=4um from backward tail extrapolation, >=1um uniqueness margin and <=8um step. Existing daughters nearest5 within20um. Opposite daughter displacement cosine<=-0.25, separation2..16um, separation grows>=0.5um in2frames. Robust motion sigma median continuation residual clipped1..4um. Split prior3, displaced termination prior4, missing detection prior2; clipped old-link squared residual<=16. Event energy gain>1. MILP disjoint affected nodes,60s limit. CPU only. No E035 classifier or gate changes, no annotation-based candidate selection, no sweeps. Reused16-video calibration and unknown upstream detector training provenance.')
+    (ROOT/'baseline/e036_joint_division.json').write_text(json.dumps(config,indent=2)+'\n')
+    files=json.loads((ROOT/'kaggle/identity_parent/payload.json').read_text())['files']+['baseline/e036_joint_division.json','src/biohub_lab/joint_division.py','scripts/joint_division_runner.py']
+    folder=ROOT/'kaggle/joint_division';checks=package(Path('kaggle/identity_parent'),folder,files,'scripts/identity_parent_runner.py','scripts/joint_division_runner.py','biohub-joint-division-cpu','Biohub Joint Division CPU',False,['jarturo/biohub-temporal-graph-prepare-cpu','jarturo/biohub-dense-detector-gpu'])
+    nb=json.loads((folder/'notebook.ipynb').read_text());nb['cells'][0]['source']=['# E036 Joint division reconstruction\n'+config['protocol']];(folder/'notebook.ipynb').write_text(json.dumps(nb,indent=2)+'\n');checks['notebook_sha256']=sha(folder/'notebook.ipynb')
+    (ROOT/'results/E036_preflight.json').write_text(json.dumps(checks,indent=2)+'\n');print(checks)
+if __name__=='__main__':main()
