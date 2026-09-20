@@ -1,0 +1,22 @@
+"""Read bounded-lived Kaggle log streams; disconnects do not mean job failures."""
+import json,sys
+import requests
+from kaggle.api.kaggle_api_extended import KaggleApi
+from kagglesdk.kernels.types.kernels_api_service import ApiGetKernelSessionLogsStreamRequest
+api=KaggleApi();api.authenticate();user,slug=sys.argv[1].split('/');after=float(sys.argv[2]) if len(sys.argv)>2 else 0
+seen=set()
+with api.build_kaggle_client() as client:
+    r=ApiGetKernelSessionLogsStreamRequest();r.user_name=user;r.kernel_slug=slug;r.wait_for_logs_url_seconds=5
+    try:
+        response=client.kernels.kernels_api_client.get_kernel_session_logs_stream(r)
+        for line in response.iter_lines(decode_unicode=True):
+            if not line.startswith('data: '):continue
+            try:event=json.loads(line[6:])
+            except json.JSONDecodeError:continue  # SSE terminal/heartbeat markers are not log JSON.
+            if not isinstance(event,dict):continue
+            message=event.get('data','')
+            if event.get('time',0)<after or message in seen:continue
+            if any(k in message for k in ['DIVISION_DATA','DIVISION_HEAD','DIVISION_METRIC','Traceback','Error:']):
+                seen.add(message);print(round(event.get('time',0),1),message.rstrip(),flush=True)
+    except requests.exceptions.ChunkedEncodingError:
+        print('Log stream disconnected; check kernel status separately.',flush=True)

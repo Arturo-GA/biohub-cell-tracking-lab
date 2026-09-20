@@ -1614,5 +1614,69 @@
         "score": 0.9009710132212845
       }
     }
+  },
+  "E035": {
+    "status": "COMPLETE",
+    "stage": "complete",
+    "protocol": "docs/E035_SECUENCIAS_DIVISION.es.md",
+    "gpu": false,
+    "leaderboard_submitted": false,
+    "prepared_positive": {
+      "fit": 20,
+      "development": 4,
+      "validation": 3
+    },
+    "result": "results/E035_completed.json",
+    "decision": "Reject current local image-summary sequence classifier: no arm meets frozen development gate; no graph changes. Do not lower threshold using calibration. Structural diagnosis motivates joint parent reassignment and missing-daughter recovery, not additional tuning of these heads.",
+    "metrics": {
+      "control": {
+        "n": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "n_adj": 16,
+        "score": 0.9007529595605399
+      },
+      "geometry": {
+        "n": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "n_adj": 16,
+        "score": 0.9007529595605399
+      },
+      "static": {
+        "n": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "n_adj": 16,
+        "score": 0.9007529595605399
+      },
+      "sequence": {
+        "n": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "n_adj": 16,
+        "score": 0.9007529595605399
+      }
+    }
   }
 }

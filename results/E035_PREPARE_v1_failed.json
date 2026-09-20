@@ -1,0 +1,8 @@
+{
+  "status": "error",
+  "version": 1,
+  "stage": "data_loading_before_training",
+  "reason": "tracksdata edge_attrs includes edge identifier; reading unnamed rows produced three columns instead of two",
+  "fixed_in_version": 2,
+  "gpu": false
+}

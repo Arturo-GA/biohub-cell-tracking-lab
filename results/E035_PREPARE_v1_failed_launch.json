@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-division-sequence-prepare-cpu",
+  "version": 1,
+  "kernel_id": 135138950,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-division-sequence-prepare-cpu",
+  "ref": "/code/jarturo/biohub-division-sequence-prepare-cpu",
+  "launched_at_utc": "2026-09-20T18:33:03.636054+00:00",
+  "payload_sha256": "486fd3e37574238ea1db5574b1ee89ffa2d4e979f7666dfd9850924c12668b0b",
+  "notebook_sha256": "ac13aaae4852d9bd1addd4c1b5da60d34288ad9b12203d3b23ba11213637db5f",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

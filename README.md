@@ -1,5 +1,7 @@
 # Biohub Cell Tracking Lab
 
+**E035 completado:** entrenados tres clasificadores de divisiones en CPU. AP en desarrollo: geometría 0,406; apariencia inicial 0,443; secuencia 0,413. Ninguno superó la condición fijada en desarrollo; no hubo cambios del grafo y todos conservaron 0,900753 local. La auditoría señala hijas ausentes y conflictos de padre fuera del alcance de esta integración. Sin GPU ni submission; no quedan ejecuciones pendientes. [Resultados y límites](docs/E035_SECUENCIAS_DIVISION.es.md).
+
 **E034 completado:** puentes geométricos 0,901014 local (+4 enlaces correctos, +1 incorrecto); con filtro visual 0,900971 (+3 correctos, +1 incorrecto), frente a 0,900753 del control. Ganancia pequeña, sin ventaja del filtro visual ni nuevo submission. GPU: 17 segundos de proceso; preparación y evaluación CPU. No quedan ejecuciones pendientes. [Resultados y protocolo](docs/E034_PUENTES_TEMPORALES.es.md).
 
 **E033 completado:** encoder temporal 3D entrenado desde imágenes. En 6.725 decisiones obtiene 6.211 aciertos frente a 6.118 de geometría, mejorando en ambos embriones. La integración completa cambia 112 enlaces pero empata con Harmonic en 0,900753 local; las métricas por video son idénticas. Se conserva el encoder como componente prometedor, sin promover la integración ni enviar submission. Ambos procesos GPU sumaron 126 segundos; preparación y métricas en CPU. No quedan ejecuciones pendientes. [Protocolo y resultados](docs/E033_ENCODER_TEMPORAL_3D.es.md).

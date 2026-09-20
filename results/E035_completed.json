@@ -1,0 +1,317 @@
+{
+  "status": "complete",
+  "experiment": "E035",
+  "data_counts": {
+    "fit": {
+      "candidates": 9392,
+      "positive": 20,
+      "negative": 9372,
+      "unknown": 0,
+      "annotated_divisions": 29
+    },
+    "development": {
+      "candidates": 1120,
+      "positive": 4,
+      "negative": 1116,
+      "unknown": 0,
+      "annotated_divisions": 6
+    },
+    "validation": {
+      "candidates": 82352,
+      "positive": 3,
+      "negative": 13,
+      "unknown": 82336,
+      "annotated_divisions": 6
+    }
+  },
+  "heads": {
+    "geometry": {
+      "fit_positive": 20,
+      "fit_negative": 9372,
+      "development_positive": 4,
+      "development_ap": 0.40589285714285717,
+      "threshold": null,
+      "gate_passed": false,
+      "development_accepted_tp": 0,
+      "development_accepted_fp": 0,
+      "calibration_candidate_positive": 3,
+      "calibration_known_candidates": 16,
+      "calibration_ap": 1.0
+    },
+    "static": {
+      "fit_positive": 20,
+      "fit_negative": 9372,
+      "development_positive": 4,
+      "development_ap": 0.4425595238095238,
+      "threshold": null,
+      "gate_passed": false,
+      "development_accepted_tp": 0,
+      "development_accepted_fp": 0,
+      "calibration_candidate_positive": 3,
+      "calibration_known_candidates": 16,
+      "calibration_ap": 0.9166666666666665
+    },
+    "sequence": {
+      "fit_positive": 20,
+      "fit_negative": 9372,
+      "development_positive": 4,
+      "development_ap": 0.4133928571428571,
+      "threshold": null,
+      "gate_passed": false,
+      "development_accepted_tp": 0,
+      "development_accepted_fp": 0,
+      "calibration_candidate_positive": 3,
+      "calibration_known_candidates": 16,
+      "calibration_ap": 0.9166666666666665
+    }
+  },
+  "metrics": {
+    "control": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    },
+    "geometry": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    },
+    "static": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    },
+    "sequence": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    }
+  },
+  "candidate_coverage": [
+    {
+      "video": "44b6_0db75fae",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "44b6_5740d24b",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "44b6_587a1e22",
+      "annotated_divisions": 1,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "44b6_9bfa6a0a",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "44b6_aaf8b0ea",
+      "annotated_divisions": 1,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "44b6_c15fded2",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "44b6_c8e2a523",
+      "annotated_divisions": 1,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "44b6_cf2536e8",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "6bba_1f58c2f6",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "6bba_5c824876",
+      "annotated_divisions": 1,
+      "represented_positive": 1,
+      "already_connected": 1,
+      "potential_missing": 0
+    },
+    {
+      "video": "6bba_6479435d",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "6bba_76db78c1",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "6bba_7b5d3b2c",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "6bba_9a41d029",
+      "annotated_divisions": 2,
+      "represented_positive": 2,
+      "already_connected": 1,
+      "potential_missing": 1
+    },
+    {
+      "video": "6bba_c73a1d11",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    },
+    {
+      "video": "6bba_f1fde7e0",
+      "annotated_divisions": 0,
+      "represented_positive": 0,
+      "already_connected": 0,
+      "potential_missing": 0
+    }
+  ],
+  "division_audit": [
+    {
+      "video": "44b6_587a1e22",
+      "truth_mother": 21000000052,
+      "missing_node_ids": [],
+      "represented": false,
+      "complete_context": true,
+      "daughter_has_other_parent": true,
+      "mother_has_other_child": false,
+      "already_connected": false
+    },
+    {
+      "video": "44b6_aaf8b0ea",
+      "truth_mother": 390000000000,
+      "missing_node_ids": [
+        391000000000
+      ]
+    },
+    {
+      "video": "44b6_c8e2a523",
+      "truth_mother": 128000000004,
+      "missing_node_ids": [],
+      "represented": false,
+      "complete_context": true,
+      "daughter_has_other_parent": true,
+      "mother_has_other_child": false,
+      "already_connected": false
+    },
+    {
+      "video": "6bba_5c824876",
+      "truth_mother": 3000057,
+      "missing_node_ids": [],
+      "represented": true,
+      "complete_context": true,
+      "daughter_has_other_parent": false,
+      "mother_has_other_child": false,
+      "already_connected": true
+    },
+    {
+      "video": "6bba_9a41d029",
+      "truth_mother": 50000865,
+      "missing_node_ids": [],
+      "represented": true,
+      "complete_context": true,
+      "daughter_has_other_parent": false,
+      "mother_has_other_child": false,
+      "already_connected": true
+    },
+    {
+      "video": "6bba_9a41d029",
+      "truth_mother": 53000912,
+      "missing_node_ids": [],
+      "represented": true,
+      "complete_context": true,
+      "daughter_has_other_parent": false,
+      "mother_has_other_child": false,
+      "already_connected": false
+    }
+  ],
+  "division_audit_scope": "Independent geometric one-to-one diagnostic mapping, not the official evaluator matching; do not equate its connectivity with official division TP.",
+  "all_per_video_metrics_identical": true,
+  "changed_events": 0,
+  "gpu_process_seconds": 0,
+  "prepare_cpu_seconds": 728.0515472730001,
+  "train_evaluate_cpu_seconds": 137.559759971,
+  "evaluation_manifest_sha256": "8006e1c2f6dc52259a1de00b74653a1ca0c2bb327b82f61d1098246a7fd0ec70",
+  "leaderboard_submitted": false,
+  "decision": "Reject current local image-summary sequence classifier: no arm meets frozen development gate; no graph changes. Do not lower threshold using calibration. Structural diagnosis motivates joint parent reassignment and missing-daughter recovery, not additional tuning of these heads.",
+  "models": [
+    {
+      "file": "geometry_model.pkl",
+      "bytes": 1960292,
+      "sha256": "97ace895523e19adb38aef217a78d3482942e5dcb39befa4556e1bf4c23d9b6e"
+    },
+    {
+      "file": "sequence_model.pkl",
+      "bytes": 1741865,
+      "sha256": "3787c2e47e43a3293da549f6a997f636ddb1dd630aa35de385a02b45979ea5d7"
+    },
+    {
+      "file": "static_model.pkl",
+      "bytes": 1814034,
+      "sha256": "53633ec352df3b7b725c4e73fee40227d0392ce784bb3aa838fc92a992a9068d"
+    }
+  ]
+}
