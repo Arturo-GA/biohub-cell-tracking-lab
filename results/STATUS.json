@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "Public score unchanged at 0.946; E026 fixes detector normalization but has no demonstrated tracking gain",
+  "quality_status": "Complementary detection demonstrated on error-conditioned calibration windows; no new tracking or public improvement",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -221,8 +221,8 @@
     "downloaded_csv_verified": true,
     "checkpoint_contents_verified": true
   },
-  "next_experiment_started": true,
-  "active_experiment": "E028_CELLPOSE_EVALUATION",
+  "next_experiment_started": false,
+  "active_experiment": null,
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -1419,7 +1419,7 @@
     "cpu_seconds": 188.441123429,
     "next_run_started": false
   },
-  "next_research_priority": "Evaluate complementary detection on calibration division/error windows, then reserved full-graph validation; Cellpose-DINO/SAM researched alternative, not yet implemented",
+  "next_research_priority": "Label-free temporal integration of complementary NucVerse detections with identity competition; Cellpose only selectively because of measured cost; official full-graph reserved validation required",
   "E027": {
     "status": "COMPLETE",
     "input_receipt": "results/E027_INPUTS_completed.json",
@@ -1440,7 +1440,7 @@
     "next_run_started": false
   },
   "E028": {
-    "status": "EVALUATING",
+    "status": "COMPLETE",
     "architecture": "Cellpose-DINO ViT-B",
     "preparation_receipt": "results/E028_PREP_completed.json",
     "gpu_launch": "results/E028_GPU_launch.json",
@@ -1449,6 +1449,12 @@
     "leaderboard_submitted": false,
     "documentation": "docs/E028_CELLPOSE_DINO.es.md",
     "evaluation_launch": "results/E028_EVAL_launch.json",
-    "gpu_process_seconds": 345.096491979
+    "gpu_process_seconds": 345.096491979,
+    "completed_receipt": "results/E028_completed.json",
+    "control_missed_centers": 5,
+    "recovered_centers": 2,
+    "nucverse_recovers_same_misses": 0,
+    "decision": "Retain as selective specialist or future teacher; prioritize cheaper NucVerse temporal integration",
+    "next_run_started": false
   }
 }

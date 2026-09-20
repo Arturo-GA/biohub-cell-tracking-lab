@@ -11,3 +11,15 @@ Antes de conocer la cobertura de E027 se fijaron dos imágenes completas, una po
 La GPU ejecuta exclusivamente inferencia de los pesos públicos, con vistas ortogonales 3D, anisotropía física 4, bloques 384, lote 4, float32 y normalización predeterminada de Cellpose. No hay optimizador ni lectura de anotaciones. Se guardan flujos y probabilidad para que la dinámica de máscaras, centros y correspondencia con referencias corran en CPU. Límite interno de 900 segundos comprobado antes de cada lote neuronal. Los datos preparados, pesos y wheels se verifican mediante hashes; el notebook de inferencia está sin Internet.
 
 La evaluación conserva la dinámica oficial de Cellpose: 200 iteraciones, umbral de probabilidad 0, mínimo 15 voxels, fracción máxima 0,4, dispositivo CPU. Los centroides se congelan antes de abrir referencias. Se comparan contra Harmonic y contra NucVerse en **exactamente las mismas dos imágenes**. Ni detectar más instancias ni cubrir algún punto omitido equivale a mejorar el tracking o justificar un submission.
+
+## Resultado y decisión
+
+Cellpose cubrió 7 de 13 centros anotados; Harmonic cubrió 8 y NucVerse 5 en estas mismas imágenes. De los cinco centros omitidos por Harmonic, **Cellpose recuperó dos y NucVerse ninguno**. Ambos centros adicionales proceden de `6bba_6479435d`, frame 34. En el frame 62 de la ventana de división no hubo recuperación exclusiva. Esto demuestra complementariedad puntual en este piloto, no recuperación de mitosis ni superioridad global de Cellpose.
+
+Cellpose produjo 728 instancias frente a 497 nodos del control y 319 de NucVerse. No se enviará esa unión: no hay aristas evaluadas y el exceso de instancias no etiquetadas no puede convertirse en una estimación de precisión. El resultado tampoco respalda reemplazar Harmonic.
+
+Inferencia: 345,10 segundos de proceso GPU, con 150,73 y 153,18 segundos por volumen; la preparación CPU ya se había separado. La agrupación y evaluación tardaron 37,23 segundos CPU. Se verificaron seis archivos de inferencia, seis de evaluación, versiones/wheels/pesos y las referencias iguales a E027. Recibo: `results/E028_completed.json`.
+
+Decisión: priorizar la integración temporal de NucVerse como complemento de menor coste. Cellpose-DINO queda como especialista selectivo o posible profesor para un modelo rápido; ejecutar todos los videos completos con él sería aproximadamente 30 veces más caro por volumen bajo estas configuraciones medidas. No se inició destilación ni se eligieron umbrales por leaderboard. La siguiente promoción sigue requiriendo generación de propuestas sin etiquetas, resolución de identidades duplicadas y evaluación oficial del grafo en otros videos reservados.
+
+E027 y E028 terminaron y se revisaron en la sesión. No se hizo un nuevo submission, no queda un notebook pendiente y no se creó un monitor recurrente. Los procesos neuronales de ambos experimentos sumaron 569,00 segundos; ese tiempo de proceso no equivale necesariamente al cómputo de cuota que aplica Kaggle.

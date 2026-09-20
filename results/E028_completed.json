@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "inference_source_files_verified": 6,
+  "evaluation_source_files_verified": 6,
+  "frames": [
+    {
+      "video": "44b6_aaf8b0ea",
+      "frame": 62,
+      "gt_nodes": 3,
+      "harmonic_nodes": 154,
+      "candidate_nodes": 238,
+      "harmonic_matched": 2,
+      "candidate_matched": 2,
+      "candidate_only": 0,
+      "nucverse_nodes": 146,
+      "nucverse_matched": 2,
+      "nucverse_only": 0
+    },
+    {
+      "video": "6bba_6479435d",
+      "frame": 34,
+      "gt_nodes": 10,
+      "harmonic_nodes": 343,
+      "candidate_nodes": 490,
+      "harmonic_matched": 6,
+      "candidate_matched": 5,
+      "candidate_only": 2,
+      "nucverse_nodes": 173,
+      "nucverse_matched": 3,
+      "nucverse_only": 0
+    }
+  ],
+  "totals": {
+    "gt_nodes": 13,
+    "harmonic_nodes": 497,
+    "candidate_nodes": 728,
+    "harmonic_matched": 8,
+    "candidate_matched": 7,
+    "candidate_only": 2
+  },
+  "gpu_process_seconds": 345.096491979,
+  "cpu_seconds": 37.230791924000016,
+  "result_sha256": "0b9300529b9c4f7da74977345feaa3d1388dfe1f5a05ed2e23c375e43d85a8eb",
+  "scope": "Two preselected error-conditioned calibration frames; detection only, not tracking score or an unbiased model comparison",
+  "leaderboard_submitted": false
+}
