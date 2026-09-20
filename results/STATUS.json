@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "Complementary detection demonstrated on error-conditioned calibration windows; no new tracking or public improvement",
+  "quality_status": "Complementary detections found, but naive graph integration gives only +0.00005196 on biased calibration; no new submission",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -1419,7 +1419,7 @@
     "cpu_seconds": 188.441123429,
     "next_run_started": false
   },
-  "next_research_priority": "Label-free temporal integration of complementary NucVerse detections with identity competition; Cellpose only selectively because of measured cost; official full-graph reserved validation required",
+  "next_research_priority": "Joint identity competition and learned temporal/division associations from actual DINO encoder tokens; Cellpose styles are random placeholders and must not be used; not implemented or trained yet",
   "E027": {
     "status": "COMPLETE",
     "input_receipt": "results/E027_INPUTS_completed.json",
@@ -1455,6 +1455,25 @@
     "recovered_centers": 2,
     "nucverse_recovers_same_misses": 0,
     "decision": "Retain as selective specialist or future teacher; prioritize cheaper NucVerse temporal integration",
+    "next_run_started": false
+  },
+  "E029": {
+    "status": "COMPLETE",
+    "launch_receipt": "results/E029_launch.json",
+    "gpu": false,
+    "training": false,
+    "leaderboard_submitted": false,
+    "local_tests_passed": 2,
+    "documentation": "docs/E029_INTEGRACION_DIAGNOSTICA.es.md",
+    "scope": "Official graph metric, but donor windows are error-conditioned; not independent validation",
+    "completed_receipt": "results/E029_completed.json",
+    "score_delta": 5.19594668045853e-05,
+    "added_nodes": 217,
+    "added_edges": 115,
+    "edge_tp_delta": 1,
+    "edge_fp_delta": 0,
+    "division_tp_delta": 0,
+    "decision": "Reject promotion and radius sweeps; learn identity-aware image associations before more full-volume inference",
     "next_run_started": false
   }
 }

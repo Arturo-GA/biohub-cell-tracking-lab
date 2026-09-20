@@ -1,0 +1,8 @@
+{
+  "tests_passed": 2,
+  "tests": [
+    "preserves_control_excludes_duplicates_and_isolated_candidates",
+    "links_one_to_one_and_no_missing_frame_crossing"
+  ],
+  "runner": "Direct invocation of test functions; pytest is not installed"
+}

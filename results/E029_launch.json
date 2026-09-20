@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-segmentation-tracklets-cpu",
+  "version": 1,
+  "kernel_id": 135123567,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-segmentation-tracklets-cpu",
+  "ref": "/code/jarturo/biohub-lab-segmentation-tracklets-cpu",
+  "launched_at_utc": "2026-09-20T15:44:48.380611+00:00",
+  "payload_sha256": "ede591f5eac346f0857654b8459857d36edba076e9f3a96d6268674f2a4ca534",
+  "notebook_sha256": "321aa19683d7f73a9d63faf05bcb85b58e2bc6a7c0c88d1dc11a9d00f9c4f7c1",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "source_files_verified": 28,
+  "csv_sha256": "05b123dd7ff80eb9f518c12086e2c99e37a65ac83282f2480086517403eb5dba",
+  "candidate": {
+    "n": 16,
+    "edge_jaccard": 0.8714099216710183,
+    "division_jaccard": 0.3,
+    "division_tp": 3,
+    "division_fp": 4,
+    "division_fn": 3,
+    "node_recall": 0.9787708749459163,
+    "adj_edge_jaccard": 0.8708049190273445,
+    "n_adj": 16,
+    "score": 0.9008049190273445
+  },
+  "control": {
+    "n": 16,
+    "edge_jaccard": 0.8712793733681462,
+    "division_jaccard": 0.3,
+    "division_tp": 3,
+    "division_fp": 4,
+    "division_fn": 3,
+    "node_recall": 0.9779746966019673,
+    "adj_edge_jaccard": 0.8707529595605399,
+    "n_adj": 16,
+    "score": 0.9007529595605399
+  },
+  "score_delta": 5.19594668045853e-05,
+  "added_nodes": 217,
+  "added_edges": 115,
+  "seconds": 46.46840391799998,
+  "scope": "Graph diagnostic on 16 calibration videos with additions restricted to annotation-selected E027 windows; cannot establish unbiased improvement or justify submission",
+  "leaderboard_submitted": false,
+  "independent_validation": false
+}
