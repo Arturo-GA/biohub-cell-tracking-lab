@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-19",
+  "date": "2026-09-20",
   "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
   "github_private": true,
   "external_leaderboard_reference": {
@@ -1349,17 +1349,30 @@
     "decision": "All frozen checks passed; final test inference launched"
   },
   "visual_submission": {
-    "status": "PENDING",
+    "status": "COMPLETE",
     "kernel": "jarturo/biohub-lab-visual-global-assignment",
     "version": 1,
     "launch_receipt": "results/VISUAL_SUBMISSION_launch.json",
     "leaderboard_submitted": true,
     "inference_status": "COMPLETE",
     "submission_ref": 56370600,
-    "public_score": null,
+    "public_score": 0.946,
     "completed_receipt": "results/VISUAL_SUBMISSION_completed.json",
     "submission_receipt": "results/VISUAL_SUBMISSION_attempt.json",
     "status_receipt": "results/VISUAL_SUBMISSION_status.json",
-    "csv_locally_validated": true
+    "csv_locally_validated": true,
+    "decision": "No displayed public improvement; freeze association and prioritize complementary segmentation"
+  },
+  "E024": {
+    "status": "CPU_EVALUATION_RUNNING",
+    "goal": "silver medal",
+    "line": "Complementary volumetric nuclear instance segmentation",
+    "gpu_kernel": "jarturo/biohub-lab-nucverse-inference",
+    "gpu_launch": "results/E024_GPU_launch.json",
+    "preparation": "results/E024_PREPARATION_completed.json",
+    "evaluation_cpu_prepared": true,
+    "leaderboard_submitted": false,
+    "gpu_inference_seconds": 74.754366576,
+    "evaluation_launch": "results/E024_EVAL_launch.json"
   }
 }

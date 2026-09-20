@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-nucverse-evaluation-cpu",
+  "version": 1,
+  "kernel_id": 135064474,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-nucverse-evaluation-cpu",
+  "ref": "/code/jarturo/biohub-lab-nucverse-evaluation-cpu",
+  "launched_at_utc": "2026-09-20T05:45:51.238924+00:00",
+  "payload_sha256": "5388b8d47bd5fa21b5c104d6dbfb7174d2544f60f57949cd5831822079099d3d",
+  "notebook_sha256": "e39d93cc27de693864065339714ff69f05edc793638e209d1e5a390bd353d942",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

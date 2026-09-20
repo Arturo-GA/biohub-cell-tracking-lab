@@ -1,0 +1,12 @@
+{
+  "sha256": "ef7de90821240f4979d1425e8983f8d5474c6a61c5cdb99de374603dce203bee",
+  "files": [
+    "scripts/nucverse_prepare_runner.py",
+    "baseline/e024_nucverse.json",
+    "vendor/nucverse/attention_unet_3d.py",
+    "vendor/nucverse/LICENSE"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

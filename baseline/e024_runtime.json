@@ -1,0 +1,6 @@
+{
+  "weight_sha256": "38e65c00b26413c37c8959392d96d10e3d4ed7cb8f8c21ff4c33f740969b406c",
+  "tensorflow": "2.20.0",
+  "keras": "3.13.2",
+  "numpy": "2.0.2"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "asset_source_files_verified": 4,
+  "input_source_files_verified": 35,
+  "asset_receipt": "outputs/e024_prep_recovery/nucverse_assets/result.json",
+  "input_receipt": "outputs/e024_inputs_recovery/nucverse_inputs/result.json",
+  "weight_sha256": "38e65c00b26413c37c8959392d96d10e3d4ed7cb8f8c21ff4c33f740969b406c",
+  "weight_bytes": 486294864,
+  "tensorflow": "2.20.0",
+  "keras": "3.13.2",
+  "numpy": "2.0.2",
+  "parameters": 40458005,
+  "strict_weight_load": true,
+  "finite_smoke_outputs": true,
+  "asset_cpu_seconds": 206.572683057,
+  "input_cpu_seconds": 11.001163012000006,
+  "frames": 8,
+  "weights_license": "CC-BY-4.0",
+  "weights_doi": "10.5281/zenodo.18517324"
+}

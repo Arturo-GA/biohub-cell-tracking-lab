@@ -1,0 +1,16 @@
+# E024: segmentación nuclear 3D complementaria
+
+El submission 56370600 terminó con **0,946**, igual al control público. La asociación visual E022/E023 modificó realmente el grafo y mejoró la validación condicional, pero no produjo una mejora pública visible. No demuestra un techo matemático ni una igualdad de errores: se congela esta variante y se deja de priorizar su ajuste. La meta del usuario es medalla de plata; no se convierte en una promesa ni en un umbral de puntuación inventado.
+
+La nueva línea cambia la evidencia de imagen: **NucVerse3D generalista**, arquitectura residual con atención y dos salidas (máscara nuclear y campo de gradientes). Se busca separar núcleos agrupados y recuperar centros que no representa Harmonic. Si aporta evidencia útil y el coste permite usarla, el siguiente paso será construir propuestas temporales desde sus máscaras o usarlo como profesor de un detector rápido. No se añade automáticamente cada centro al submission: E008/E009 ya demostraron que más propuestas pueden empeorar el tracking.
+
+Fuentes verificadas el 20 de septiembre: [repositorio de los autores](https://github.com/Segovia-lab/NucVerse3D) y [pesos Zenodo](https://doi.org/10.5281/zenodo.18517324). FOCUS-3D sigue con acceso automático condicionado en Hugging Face; no se aceptaron términos ni se compartió información de contacto. NucVerse ofrece un checkpoint generalista público, cuya selección quedó fijada antes de medir Biohub. Código MIT y pesos CC-BY-4.0; atribución en `NOTICE.md`.
+
+## Diseño ejecutado
+
+1. Kaggle CPU descargó solo el miembro generalista del ZIP público (486 MB extraídos, evitando descargar el archivo completo de 7,9 GB). Verificó CRC/tamaño, registró SHA256 y cargó estrictamente los pesos. La prueba CPU pasó con TensorFlow 2.20.0, Keras 3.13.2 y 40.458.005 parámetros; duró 206,57 segundos. Esto comprueba compatibilidad, no calidad.
+2. Otra ejecución CPU congeló ocho fotogramas completos de cuatro videos de calibración, dos por espécimen, seleccionados por nombre y fotogramas 25/75. No se recortó alrededor de etiquetas. Duró 11,00 segundos; no es una reserva independiente.
+3. `jarturo/biohub-lab-nucverse-inference` ejecuta exclusivamente las redes 3D sobre esos fotogramas. Usa bloques 64×128×128, solape fijo y promedio uniforme, normalización 2/99,8 y resolución nativa. No se reproduce la deconvolución del pipeline de autores. Límite interno de 1.800 segundos comprobado entre bloques. No entrena ni envía un submission.
+4. El notebook CPU preparado agrupa voxels con el campo de gradientes, congela los centros y después lee las referencias. Mide correspondencia uno a uno a 7 µm, cobertura complementaria, cantidad de instancias y coste. Las detecciones sin correspondencia **no** se etiquetan como falsas porque las anotaciones son escasas. La unión de coberturas es solo un diagnóstico; no equivale a un grafo válido ni a score de tracking.
+
+Las preparaciones verificaron 4 y 35 archivos de paquete. Cuatro pruebas locales verifican reconstrucción con solapes/bordes, rechazo de salidas no finitas, separación de dos núcleos sintéticos y matching físico de máxima cardinalidad. La inferencia GPU y la evaluación CPU se siguen en esta sesión, sin pedir avisos del usuario para encadenarlas.

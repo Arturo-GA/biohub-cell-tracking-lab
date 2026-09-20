@@ -1,0 +1,15 @@
+{
+  "sha256": "6779b1b96bd681c6206e3d2acddd38f50bbcd2edf62d7cc1dd854b89ac1789ff",
+  "files": [
+    "scripts/nucverse_inference_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/nucverse_tiles.py",
+    "baseline/e024_runtime.json",
+    "baseline/e024_benchmark.json",
+    "vendor/nucverse/attention_unet_3d.py",
+    "vendor/nucverse/LICENSE"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

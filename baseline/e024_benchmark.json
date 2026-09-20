@@ -1,0 +1,26 @@
+{
+  "videos": [
+    "44b6_0db75fae",
+    "44b6_5740d24b",
+    "6bba_1f58c2f6",
+    "6bba_5c824876"
+  ],
+  "frames": [
+    25,
+    75
+  ],
+  "selection": "First two calibration names per specimen, fixed frame indices, no label-conditioned crops",
+  "preprocessing": "Native voxel spacing; percentiles 2/99.8 without deconvolution; fixed generalist unscaled weights",
+  "patch": [
+    64,
+    128,
+    128
+  ],
+  "stride": [
+    48,
+    96,
+    96
+  ],
+  "gpu_deadline_seconds": 1800,
+  "evaluation": "One-to-one physical point coverage and complementary missed nuclei; sparse unmatched detections are not false-positive labels"
+}

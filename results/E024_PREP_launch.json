@@ -1,0 +1,16 @@
+{
+  "kernel": "jarturo/biohub-lab-nucverse-preparation-cpu",
+  "version": 1,
+  "kernel_id": 135063360,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-nucverse-preparation-cpu",
+  "ref": "/code/jarturo/biohub-lab-nucverse-preparation-cpu",
+  "launched_at_utc": "2026-09-20T05:31:53.192051+00:00",
+  "payload_sha256": "ef7de90821240f4979d1425e8983f8d5474c6a61c5cdb99de374603dce203bee",
+  "notebook_sha256": "11cc71d4dedbcd59153990fa7c24511663d771a078e3abedcc4a9a68284cb0f0",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false,
+  "requested_kernel": "jarturo/biohub-lab-nucverse-prepare-cpu"
+}

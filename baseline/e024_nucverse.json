@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/Segovia-lab/NucVerse3D",
+  "commit": "d809a2e6cf380342708b7a9107574b259e6b34eb",
+  "code_license": "MIT",
+  "archive_doi": "10.5281/zenodo.18517324",
+  "weights_url": "https://zenodo.org/api/records/18517324/files/models.zip/content",
+  "member": {
+    "name": "models/resunet_combined_1000/best_model.weights.h5",
+    "size": 486294864,
+    "compressed": 436930126,
+    "offset": 160,
+    "crc": 1823508897
+  },
+  "model": "resunet_combined_1000",
+  "selection": "Generalist unscaled checkpoint fixed before Biohub evaluation",
+  "architecture_sha256": "3f81b5ff47155a084ccc0937eae122fb6b93732c360efc048965d595ea786fc3",
+  "goal": "Complementary 3D nuclear instance segmentation for missing or merged detections; silver medal objective, no guarantee"
+}

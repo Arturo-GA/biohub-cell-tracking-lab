@@ -1,0 +1,9 @@
+{
+  "payload_sha256": "6779b1b96bd681c6206e3d2acddd38f50bbcd2edf62d7cc1dd854b89ac1789ff",
+  "notebook_sha256": "686978947e486c90142010df159e6dd49e5c22ddbb5315de7e5a8d37fed73656",
+  "files": 7,
+  "gpu": true,
+  "private": true,
+  "frames": 8,
+  "gpu_justification": "Full-frame volumetric neural segmentation only; downloads and instance decoding/evaluation use CPU"
+}

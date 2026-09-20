@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-lab-nucverse-inference",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-nucverse-inference",
+  "payload_sha256": "6779b1b96bd681c6206e3d2acddd38f50bbcd2edf62d7cc1dd854b89ac1789ff",
+  "notebook_sha256": "686978947e486c90142010df159e6dd49e5c22ddbb5315de7e5a8d37fed73656",
+  "launched_at_utc": "2026-09-20T05:40:05.029488+00:00",
+  "gpu": true,
+  "is_private": true,
+  "gpu_justification": "Full-frame volumetric neural segmentation only; downloads and instance decoding/evaluation use CPU",
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-nucverse-inputs-cpu",
+  "version": 1,
+  "kernel_id": 135063727,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-nucverse-inputs-cpu",
+  "ref": "/code/jarturo/biohub-lab-nucverse-inputs-cpu",
+  "launched_at_utc": "2026-09-20T05:36:12.276225+00:00",
+  "payload_sha256": "51766c09f9ed361188b8fc5fa661c74df1e66e8bff35f2b9afb58702e146f77c",
+  "notebook_sha256": "a864987810fc1b1ac7395bc818cd44db9b0a1afeb5d64c502a7ef827cd2fecac",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}
