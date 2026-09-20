@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "seconds": 99.17867992699999,
+  "manifest_sha256": "3717afed1078dd01267891ec7676e135613dd43b48a0577c93870ec4e789cc57",
+  "folds": [
+    {
+      "heldout_embryo": "44b6",
+      "steps": 1000,
+      "optimizer_updates": 997,
+      "first_conv_change_l2": 0.31361258029937744,
+      "checkpoint_sha256": "6517e7b5a957172de06ea9c5ad026b0beba462486f852d08238966833df5e470"
+    },
+    {
+      "heldout_embryo": "6bba",
+      "steps": 1000,
+      "optimizer_updates": 997,
+      "first_conv_change_l2": 0.2847766578197479,
+      "checkpoint_sha256": "007a39b654f39bdb611b1c5dc967030e4508ad6060c62641ab4fcd463d7fea89"
+    }
+  ],
+  "weights_verified": 2,
+  "encoder_trained": true,
+  "leaderboard_submitted": false
+}

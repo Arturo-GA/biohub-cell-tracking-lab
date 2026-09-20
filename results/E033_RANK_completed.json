@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "manifest_sha256": "2456278f0dda6615d96d9f7888765da3d8e882a27d19f881cb58a48491a0cf21",
+  "totals": {
+    "targets": 6725,
+    "nearest": 6118,
+    "random": 6120,
+    "trained": 6211,
+    "shuffled": 3402,
+    "visual_only": 5858
+  },
+  "folds": {
+    "44b6": {
+      "targets": 1487,
+      "nearest": 1400,
+      "random": 1398,
+      "trained": 1409,
+      "shuffled": 696,
+      "visual_only": 1305
+    },
+    "6bba": {
+      "targets": 5238,
+      "nearest": 4718,
+      "random": 4722,
+      "trained": 4802,
+      "shuffled": 2706,
+      "visual_only": 4553
+    }
+  },
+  "accuracy_delta": 0.013828996282527881,
+  "proceed_to_full_graph": true,
+  "leaderboard_submitted": false
+}

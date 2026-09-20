@@ -30,6 +30,13 @@ def crop_temporal(padded,coord,size=16):
     if out.shape!=(3,size,size,size):raise ValueError('Crop out of bounds')
     return out
 
+def gather_temporal(padded,centers):
+    """Vectorized extraction identical to crop_temporal for already scaled centers."""
+    axis=torch.arange(16,device=padded.device);delta=torch.tensor([-1,0,1],device=padded.device)
+    t=(centers[:,0,None]+delta).clamp(0,len(padded)-1)
+    z=centers[:,1,None]+axis;y=centers[:,2,None]+axis;x=centers[:,3,None]+axis
+    return padded[t[:,:,None,None,None],z[:,None,:,None,None],y[:,None,None,:,None],x[:,None,None,None,:]]
+
 class TemporalVolumeEncoder(nn.Module):
     def __init__(self):
         super().__init__()

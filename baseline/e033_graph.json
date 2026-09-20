@@ -1,0 +1,9 @@
+{
+  "experiment": "E033-graph",
+  "original_edge_prior": 1.0,
+  "image_manifest_sha256": "7167b59f9ecf522153c92f546fa306e3fa083745d128fc7e6d7f73285ecebcf0",
+  "training_manifest_sha256": "3717afed1078dd01267891ec7676e135613dd43b48a0577c93870ec4e789cc57",
+  "control_sha256": "9d39a33fa0f4132619b91bb41ff261df428f95126f82a1f2678b963ba1a92ef4",
+  "control_score": 0.9007529595605399,
+  "protocol": "Fixed complete continuation assignment, original-edge prior1,12 nearest parents within20um plus original, cosine temperature0.2. All nodes and degrees preserved; divisions and gap edges locked. No parameter sweep."
+}

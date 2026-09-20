@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-temporal-volume-evaluate-cpu",
+  "version": 1,
+  "kernel_id": 135134473,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-temporal-volume-evaluate-cpu",
+  "ref": "/code/jarturo/biohub-temporal-volume-evaluate-cpu",
+  "launched_at_utc": "2026-09-20T17:38:03.658930+00:00",
+  "payload_sha256": "21c9c5303ee1f5c91de74c9467507bc5f005b327b61d4da955bea002c4f70651",
+  "notebook_sha256": "c3af54d86efe3457a0cf7b90a9666e0db298c5b9f4b608c546f800a70ec0b961",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

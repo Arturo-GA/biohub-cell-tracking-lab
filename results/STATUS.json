@@ -1533,7 +1533,7 @@
     "pending_jobs": false
   },
   "E033": {
-    "status": "GPU_TRAINING_LAUNCHED",
+    "status": "GRAPH_GPU_INFERENCE_LAUNCHED",
     "documentation": "docs/E033_ENCODER_TEMPORAL_3D.es.md",
     "data_receipt": "results/E033_PREPARE_completed.json",
     "training_launch": "results/E033_TRAIN_launch.json",
@@ -1541,6 +1541,16 @@
     "split": "Both cross-embryo directions",
     "local_tests_passed": 3,
     "evaluation_prepared": true,
-    "leaderboard_submitted": false
+    "leaderboard_submitted": false,
+    "training_completed": "results/E033_TRAIN_completed.json",
+    "gpu_process_seconds": 99.17867992699999,
+    "evaluation_launch": "results/E033_EVALUATE_launch.json",
+    "rank_result": "results/E033_RANK_completed.json",
+    "trained_correct": 6211,
+    "nearest_correct": 6118,
+    "targets": 6725,
+    "graph_preparation": "results/E033_GRAPH_PREPARE_launch.json",
+    "graph_gpu_launch": "results/E033_GRAPH_FEATURES_launch.json",
+    "graph_tests_passed": 3
   }
 }

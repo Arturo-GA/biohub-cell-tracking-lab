@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-temporal-graph-prepare-cpu",
+  "version": 1,
+  "kernel_id": 135135075,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-temporal-graph-prepare-cpu",
+  "ref": "/code/jarturo/biohub-temporal-graph-prepare-cpu",
+  "launched_at_utc": "2026-09-20T17:45:15.479760+00:00",
+  "payload_sha256": "4364a8c00d81dddf33426e95e5ca12dd99453e9ed4d70a939a563e692db7b59c",
+  "notebook_sha256": "f8c549d05f7dbe6ac60e23989c130893da1516445746ed5f012f63c39034c716",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

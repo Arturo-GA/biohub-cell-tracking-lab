@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-temporal-graph-features",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-temporal-graph-features",
+  "launched_at_utc": "2026-09-20T17:48:34.603945+00:00",
+  "notebook_sha256": "3e978d773a46f6f179f4e2713c0e7ea4aed2654910221f8420b3451d5efbadef",
+  "payload_sha256": "45e99e55984dcffb87f2b2f69204d665559e307756d02830568bf13ec25de12d",
+  "gpu": true,
+  "private": true,
+  "training": false,
+  "leaderboard_submitted": false
+}

@@ -29,3 +29,21 @@ La independencia se aplica al encoder nuevo y a sus etiquetas por embrión. Los 
 ## Verificación y estado inicial
 
 Tres pruebas locales aprobadas: recortes y bordes temporales correctos, negativos de identidad conocida separados de hipótesis desconocidas, y gradiente que modifica realmente las convoluciones. Preparación CPU completada en 37,85 s. Entrenamiento GPU lanzado; evaluación CPU preparada. Los recibos `results/E033_*` registran los estados y resultados posteriores.
+
+## Resultado del encoder y paso al grafo completo
+
+Entrenamiento y evaluación terminados. Encoder de 74.912 parámetros, 1.000 iteraciones y 997 actualizaciones efectivas por dirección: tres pasos omitidos por precisión mixta. Proceso GPU completo: 99,18 s. Ambos checkpoints se descargaron y cargaron estrictamente, con hashes verificados.
+
+| Control | Aciertos / 6.725 |
+|---|---:|
+| Geometría | 6.118 |
+| Encoder aleatorio + geometría | 6.120 |
+| Encoder entrenado + geometría | **6.211** |
+| Encoder entrenado permutado + geometría | 3.402 |
+| Encoder entrenado sin geometría | 5.858 |
+
+Mejora de 93 decisiones, **1,383 puntos porcentuales**. En `44b6`: 1.409 frente a 1.400. En `6bba`: 4.802 frente a 4.718. Supera el filtro fijado y justifica la evaluación del grafo; aún no es una mejora de score completo ni público.
+
+La integración conserva todos los nodos de Harmonic y el número de conexiones entrantes/salientes de cada nodo. Las divisiones y saltos de fotogramas permanecen bloqueados. En cada transición se permite una asignación completa entre los progenitores y los hijos originales de continuaciones, con candidatos a 20 µm y un término fijo de preferencia por el enlace original. Se comparan el grafo original, reasignación geométrica y reasignación con el encoder; no hay barrido de parámetros. El encoder aplicado a cada video fue entrenado en el otro embrión.
+
+Tres pruebas adicionales verifican la conservación de divisiones y grados, una reasignación controlada por apariencia y la igualdad exacta entre los recortes de entrenamiento y su extracción vectorizada. Preparación y métrica en CPU; GPU solo para calcular las nuevas representaciones en los nodos de Harmonic.
