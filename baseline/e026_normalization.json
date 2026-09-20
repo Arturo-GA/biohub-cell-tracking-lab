@@ -1,0 +1,7 @@
+{
+  "weight_sha256": "5347dcb70d6f85633c529063280760956d52eb40a562922858a69500cdbf87c8",
+  "source": "E025 final checkpoint",
+  "mode": "Per-tile batch statistics, batch size one, no dropout, no optimization",
+  "hypothesis": "Paired CPU diagnosis showed stored-statistics mismatch; confirm coverage on full frames with unchanged decoder",
+  "selection": "Fixed eight E024 calibration frames; no new holdout claim"
+}

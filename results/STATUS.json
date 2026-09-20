@@ -222,7 +222,7 @@
     "checkpoint_contents_verified": true
   },
   "next_experiment_started": true,
-  "active_experiment": "E025_NORMALIZATION_DIAGNOSTIC",
+  "active_experiment": "E026_NORMALIZATION_INFERENCE",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -1398,7 +1398,17 @@
     "total_gpu_process_seconds": 568.990246139,
     "decision": "Reject current checkpoint; CPU paired normalization diagnostic before further GPU",
     "normalization_launch": "results/E025_NORM_launch.json",
-    "normalization_status": "RUNNING"
+    "normalization_status": "COMPLETE",
+    "normalization_receipt": "results/E025_NORM_completed.json"
   },
-  "silver_target_snapshot": "results/SILVER_TARGET_snapshot.json"
+  "silver_target_snapshot": "results/SILVER_TARGET_snapshot.json",
+  "E026": {
+    "status": "RUNNING",
+    "gpu_launch": "results/E026_GPU_launch.json",
+    "evaluation_cpu_prepared": true,
+    "training": false,
+    "weight_source": "E025 final checkpoint",
+    "decision": "Test image-local normalization supported by CPU paired diagnosis; no decoder changes",
+    "leaderboard_submitted": false
+  }
 }

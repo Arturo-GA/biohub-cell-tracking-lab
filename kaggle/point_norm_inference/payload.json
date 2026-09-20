@@ -1,0 +1,16 @@
+{
+  "sha256": "083388c502d6f737e17f4c891e71f5af294bcf0146762a26ea50b70a74cc6592",
+  "files": [
+    "scripts/point_norm_inference_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/nucverse_tiles.py",
+    "baseline/e026_normalization.json",
+    "baseline/e024_benchmark.json",
+    "vendor/nucverse/attention_unet_3d.py",
+    "vendor/nucverse/LICENSE",
+    "NOTICE.md"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-lab-point-normalization-inference",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-point-normalization-inference",
+  "payload_sha256": "083388c502d6f737e17f4c891e71f5af294bcf0146762a26ea50b70a74cc6592",
+  "notebook_sha256": "aca5c6a4754f96f7f61431d6209de590ceaa563625c86d6c271d84a9a9890708",
+  "launched_at_utc": "2026-09-20T06:23:04.926477+00:00",
+  "gpu": true,
+  "is_private": true,
+  "gpu_justification": "Neural inference only for eight full 3D frames; CPU diagnosis and evaluation",
+  "leaderboard_submitted": false
+}
