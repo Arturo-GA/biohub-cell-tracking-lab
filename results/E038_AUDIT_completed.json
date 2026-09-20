@@ -1,0 +1,1411 @@
+{
+  "kernel": "jarturo/biohub-e038-audit-cpu",
+  "version": 1,
+  "manifest_sha256": "8138e10813fafafb28b067d83b77f55a86da21ded81aed8972c5b196f3c19fca",
+  "result": {
+    "status": "complete",
+    "videos": [
+      {
+        "video": "44b6_0113de3b",
+        "nodes": 52,
+        "edges": 50,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_0b24845f",
+        "nodes": 51,
+        "edges": 49,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_0c582fdc",
+        "nodes": 71,
+        "edges": 70,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_0db75fae",
+        "nodes": 157,
+        "edges": 151,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_12dfb391",
+        "nodes": 788,
+        "edges": 773,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_144b256d",
+        "nodes": 121,
+        "edges": 119,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_1574802b",
+        "nodes": 155,
+        "edges": 153,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_18ced818",
+        "nodes": 100,
+        "edges": 99,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_1d530831",
+        "nodes": 276,
+        "edges": 271,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_24264f12",
+        "nodes": 230,
+        "edges": 221,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_267148e4",
+        "nodes": 280,
+        "edges": 277,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_2a2eff9f",
+        "nodes": 214,
+        "edges": 210,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_2f31fc2f",
+        "nodes": 89,
+        "edges": 85,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_33b596bf",
+        "nodes": 50,
+        "edges": 49,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_341df25f",
+        "nodes": 216,
+        "edges": 209,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_3a861e03",
+        "nodes": 935,
+        "edges": 919,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_3bb3690f",
+        "nodes": 400,
+        "edges": 396,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_40c45f5a",
+        "nodes": 200,
+        "edges": 198,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "nodes": 331,
+        "edges": 322,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_53f95252",
+        "nodes": 70,
+        "edges": 68,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_551a5dba",
+        "nodes": 228,
+        "edges": 224,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_5740d24b",
+        "nodes": 173,
+        "edges": 170,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_587a1e22",
+        "nodes": 381,
+        "edges": 371,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_5f15d135",
+        "nodes": 278,
+        "edges": 273,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_668e0cc7",
+        "nodes": 643,
+        "edges": 631,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_66f9292d",
+        "nodes": 200,
+        "edges": 198,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_706092f0",
+        "nodes": 118,
+        "edges": 117,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_71a4179f",
+        "nodes": 121,
+        "edges": 119,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_74d0c52e",
+        "nodes": 140,
+        "edges": 139,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_7a302da0",
+        "nodes": 516,
+        "edges": 507,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_7e557709",
+        "nodes": 570,
+        "edges": 560,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_808952d6",
+        "nodes": 181,
+        "edges": 179,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_81c256f0",
+        "nodes": 199,
+        "edges": 197,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_87bba6c4",
+        "nodes": 153,
+        "edges": 149,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_8cc6506c",
+        "nodes": 400,
+        "edges": 396,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_8f5ab931",
+        "nodes": 616,
+        "edges": 604,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_8f9ecab4",
+        "nodes": 374,
+        "edges": 370,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_90724892",
+        "nodes": 105,
+        "edges": 103,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_949adeb1",
+        "nodes": 388,
+        "edges": 378,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_95029e92",
+        "nodes": 200,
+        "edges": 198,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_97725144",
+        "nodes": 225,
+        "edges": 221,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_996155de",
+        "nodes": 380,
+        "edges": 377,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_9be80b04",
+        "nodes": 222,
+        "edges": 220,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "nodes": 264,
+        "edges": 259,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_a21120c2",
+        "nodes": 296,
+        "edges": 286,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_a2bb48bb",
+        "nodes": 416,
+        "edges": 410,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "nodes": 209,
+        "edges": 206,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_abf82518",
+        "nodes": 96,
+        "edges": 94,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_b2c44266",
+        "nodes": 170,
+        "edges": 168,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_c15fded2",
+        "nodes": 104,
+        "edges": 102,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_c50204e0",
+        "nodes": 333,
+        "edges": 325,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_c771cb04",
+        "nodes": 227,
+        "edges": 223,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "nodes": 168,
+        "edges": 164,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_c96cfa10",
+        "nodes": 629,
+        "edges": 616,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "nodes": 76,
+        "edges": 75,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_cf8fed6b",
+        "nodes": 191,
+        "edges": 188,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_d29c9ab2",
+        "nodes": 1353,
+        "edges": 1328,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_d2f34f90",
+        "nodes": 283,
+        "edges": 281,
+        "divisions": 2,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_d5e7d891",
+        "nodes": 906,
+        "edges": 893,
+        "divisions": 2,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_d754aa59",
+        "nodes": 72,
+        "edges": 70,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_d78e09d9",
+        "nodes": 463,
+        "edges": 451,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_db3c847b",
+        "nodes": 165,
+        "edges": 162,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_ddf577ad",
+        "nodes": 659,
+        "edges": 647,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_deabac95",
+        "nodes": 126,
+        "edges": 124,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_e28840c6",
+        "nodes": 311,
+        "edges": 309,
+        "divisions": 2,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_e29f0176",
+        "nodes": 51,
+        "edges": 50,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "44b6_e31261b4",
+        "nodes": 116,
+        "edges": 113,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_e35b117d",
+        "nodes": 270,
+        "edges": 266,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_e57ff5c6",
+        "nodes": 193,
+        "edges": 186,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_eb2880fc",
+        "nodes": 390,
+        "edges": 379,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "44b6_f28707c6",
+        "nodes": 63,
+        "edges": 61,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_05b6850b",
+        "nodes": 861,
+        "edges": 845,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_05db0fb1",
+        "nodes": 1229,
+        "edges": 1183,
+        "divisions": 3,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_062c8d37",
+        "nodes": 930,
+        "edges": 898,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_07477033",
+        "nodes": 613,
+        "edges": 602,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_07e24132",
+        "nodes": 359,
+        "edges": 345,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_085bf656",
+        "nodes": 1198,
+        "edges": 1168,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_09961292",
+        "nodes": 1950,
+        "edges": 1871,
+        "divisions": 4,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_0c7fa718",
+        "nodes": 704,
+        "edges": 659,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_0e7c0d07",
+        "nodes": 209,
+        "edges": 198,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_12665c0e",
+        "nodes": 1036,
+        "edges": 998,
+        "divisions": 3,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_13f19531",
+        "nodes": 737,
+        "edges": 704,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_15403b9a",
+        "nodes": 758,
+        "edges": 729,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_1d0d8384",
+        "nodes": 1438,
+        "edges": 1365,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_1ebfb80d",
+        "nodes": 745,
+        "edges": 719,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "nodes": 317,
+        "edges": 299,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_207c6aaf",
+        "nodes": 475,
+        "edges": 450,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_20852818",
+        "nodes": 952,
+        "edges": 909,
+        "divisions": 3,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_2312ac41",
+        "nodes": 1156,
+        "edges": 1132,
+        "divisions": 2,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_23af9eeb",
+        "nodes": 513,
+        "edges": 499,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_2540cd90",
+        "nodes": 529,
+        "edges": 523,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_2646afc7",
+        "nodes": 738,
+        "edges": 721,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_268e1230",
+        "nodes": 641,
+        "edges": 609,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_2819ca14",
+        "nodes": 986,
+        "edges": 949,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_283bf9f1",
+        "nodes": 1342,
+        "edges": 1288,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_312f0dc3",
+        "nodes": 520,
+        "edges": 500,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_32db13fc",
+        "nodes": 862,
+        "edges": 811,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_337b1b3a",
+        "nodes": 1272,
+        "edges": 1213,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_372c8cb8",
+        "nodes": 1036,
+        "edges": 1007,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_3a1849c2",
+        "nodes": 1173,
+        "edges": 1142,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_3abfe10a",
+        "nodes": 997,
+        "edges": 935,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_3c5691b6",
+        "nodes": 765,
+        "edges": 746,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_3db54e20",
+        "nodes": 502,
+        "edges": 474,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_3fda6b25",
+        "nodes": 1207,
+        "edges": 1179,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_43fea39d",
+        "nodes": 910,
+        "edges": 880,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_474be664",
+        "nodes": 292,
+        "edges": 286,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_48816121",
+        "nodes": 935,
+        "edges": 918,
+        "divisions": 5,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_4aa14c89",
+        "nodes": 707,
+        "edges": 681,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_4f99ce20",
+        "nodes": 1057,
+        "edges": 1010,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_4ffd3da3",
+        "nodes": 706,
+        "edges": 689,
+        "divisions": 3,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_55b7eebe",
+        "nodes": 705,
+        "edges": 688,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_55c70843",
+        "nodes": 490,
+        "edges": 467,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_57b7cc1e",
+        "nodes": 1659,
+        "edges": 1592,
+        "divisions": 3,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_5a4d9360",
+        "nodes": 747,
+        "edges": 722,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_5b28472a",
+        "nodes": 737,
+        "edges": 724,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_5c039895",
+        "nodes": 1174,
+        "edges": 1145,
+        "divisions": 3,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_5c824876",
+        "nodes": 1170,
+        "edges": 1130,
+        "divisions": 1,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_5dfe9ad1",
+        "nodes": 1542,
+        "edges": 1487,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_5f89039d",
+        "nodes": 904,
+        "edges": 885,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_61dd1e0d",
+        "nodes": 558,
+        "edges": 543,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_61ecbe65",
+        "nodes": 640,
+        "edges": 614,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_6321a359",
+        "nodes": 827,
+        "edges": 798,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_6479435d",
+        "nodes": 617,
+        "edges": 580,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_67ebd073",
+        "nodes": 462,
+        "edges": 438,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_6ca87370",
+        "nodes": 1081,
+        "edges": 1052,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "nodes": 449,
+        "edges": 440,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_6feb10f0",
+        "nodes": 1368,
+        "edges": 1343,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_6feeb0b1",
+        "nodes": 1389,
+        "edges": 1343,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_705ec2c9",
+        "nodes": 596,
+        "edges": 562,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_718b21f9",
+        "nodes": 661,
+        "edges": 652,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_74686d6a",
+        "nodes": 586,
+        "edges": 576,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_767a1e17",
+        "nodes": 718,
+        "edges": 658,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_76db78c1",
+        "nodes": 617,
+        "edges": 604,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_784a78c9",
+        "nodes": 1788,
+        "edges": 1739,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_786893ac",
+        "nodes": 1465,
+        "edges": 1395,
+        "divisions": 3,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_789f8168",
+        "nodes": 713,
+        "edges": 681,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_78a7bd97",
+        "nodes": 886,
+        "edges": 832,
+        "divisions": 2,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_7af54fde",
+        "nodes": 1131,
+        "edges": 1092,
+        "divisions": 2,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "nodes": 565,
+        "edges": 555,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_7d3058ae",
+        "nodes": 1200,
+        "edges": 1173,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_7f87b3d8",
+        "nodes": 1000,
+        "edges": 934,
+        "divisions": 3,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_80d12824",
+        "nodes": 680,
+        "edges": 654,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_825bd1c6",
+        "nodes": 968,
+        "edges": 930,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_87289e13",
+        "nodes": 724,
+        "edges": 699,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_8b7818bf",
+        "nodes": 741,
+        "edges": 725,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_907271db",
+        "nodes": 945,
+        "edges": 921,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_91951b3a",
+        "nodes": 1188,
+        "edges": 1148,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_96833384",
+        "nodes": 758,
+        "edges": 721,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_969618f6",
+        "nodes": 679,
+        "edges": 658,
+        "divisions": 3,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_971fa5e0",
+        "nodes": 792,
+        "edges": 767,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_9a41d029",
+        "nodes": 1401,
+        "edges": 1353,
+        "divisions": 2,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_9e23430b",
+        "nodes": 914,
+        "edges": 891,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_a5e926bb",
+        "nodes": 741,
+        "edges": 698,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_a90a0b9c",
+        "nodes": 1147,
+        "edges": 1112,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_ab78413d",
+        "nodes": 1179,
+        "edges": 1138,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_acd782a8",
+        "nodes": 356,
+        "edges": 330,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_ae82a791",
+        "nodes": 1495,
+        "edges": 1471,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_aeee7805",
+        "nodes": 795,
+        "edges": 768,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_af149c94",
+        "nodes": 1350,
+        "edges": 1317,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_afb141ff",
+        "nodes": 654,
+        "edges": 626,
+        "divisions": 4,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_b1ae37b9",
+        "nodes": 612,
+        "edges": 579,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_b204cac7",
+        "nodes": 826,
+        "edges": 811,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_b329af44",
+        "nodes": 1316,
+        "edges": 1268,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_b693381b",
+        "nodes": 983,
+        "edges": 935,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_bb9f20c3",
+        "nodes": 1925,
+        "edges": 1879,
+        "divisions": 3,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_bbb708ca",
+        "nodes": 892,
+        "edges": 861,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_c27cba08",
+        "nodes": 517,
+        "edges": 493,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_c328f2fd",
+        "nodes": 511,
+        "edges": 500,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "nodes": 737,
+        "edges": 710,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_cdcfe533",
+        "nodes": 1419,
+        "edges": 1348,
+        "divisions": 4,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_cf35214c",
+        "nodes": 842,
+        "edges": 817,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_cff5865f",
+        "nodes": 1571,
+        "edges": 1501,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_d0fc38b5",
+        "nodes": 835,
+        "edges": 813,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_d1acb6ff",
+        "nodes": 681,
+        "edges": 643,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_d2b9fc0c",
+        "nodes": 944,
+        "edges": 921,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_d3da753b",
+        "nodes": 887,
+        "edges": 857,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_d5eae175",
+        "nodes": 528,
+        "edges": 519,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_d6ecebbb",
+        "nodes": 886,
+        "edges": 862,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_d82a4fc6",
+        "nodes": 545,
+        "edges": 530,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_debd7bfa",
+        "nodes": 766,
+        "edges": 729,
+        "divisions": 4,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_df673a83",
+        "nodes": 668,
+        "edges": 654,
+        "divisions": 4,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_e16ffc58",
+        "nodes": 964,
+        "edges": 942,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_e5e44988",
+        "nodes": 666,
+        "edges": 634,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_ebdf3b34",
+        "nodes": 847,
+        "edges": 803,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_ebff6e76",
+        "nodes": 1318,
+        "edges": 1264,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_ed9377fd",
+        "nodes": 531,
+        "edges": 508,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_edf14583",
+        "nodes": 801,
+        "edges": 760,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_eebc57a5",
+        "nodes": 1026,
+        "edges": 989,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "nodes": 1234,
+        "edges": 1201,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_f17befbc",
+        "nodes": 1078,
+        "edges": 1015,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "nodes": 476,
+        "edges": 446,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_f20478e9",
+        "nodes": 1003,
+        "edges": 963,
+        "divisions": 1,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_f4ae811c",
+        "nodes": 1001,
+        "edges": 965,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_f8ffd5e7",
+        "nodes": 389,
+        "edges": 370,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_fbc898dc",
+        "nodes": 655,
+        "edges": 639,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_fc516dc6",
+        "nodes": 788,
+        "edges": 762,
+        "divisions": 0,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_fc5f39dc",
+        "nodes": 471,
+        "edges": 458,
+        "divisions": 2,
+        "previous_cohort": false
+      },
+      {
+        "video": "6bba_fc83837d",
+        "nodes": 957,
+        "edges": 923,
+        "divisions": 0,
+        "previous_cohort": true
+      },
+      {
+        "video": "6bba_fe670320",
+        "nodes": 716,
+        "edges": 680,
+        "divisions": 2,
+        "previous_cohort": true
+      }
+    ],
+    "spatialdino": {
+      "url": "https://spatialdino.s3.amazonaws.com/models/spatial_dino/step=249999/backbone.pth",
+      "status": "downloaded",
+      "sha256": "ce955465ea00333f3b17af6d5c6bd93627577069d19dffe314c7c48bbf649bdf",
+      "bytes": 86068439
+    },
+    "seconds": 29.45823373899998,
+    "annotation_scope": "Consecutive annotated edges only; unannotated cells are unknown, never negatives."
+  }
+}

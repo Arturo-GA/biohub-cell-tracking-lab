@@ -1,0 +1,32 @@
+{
+  "sha256": "87a432352f928776ea56b21169e3ae179929ce0b87d2f3404c8ae1a747fba69b",
+  "files": [
+    "NOTICE.md",
+    "baseline/e014_cpu_pins.json",
+    "baseline/e015_identity_pins.json",
+    "baseline/e035_division_sequence.json",
+    "baseline/event_graph_split.json",
+    "scripts/association_cpu_runner.py",
+    "scripts/detection_identity_runner.py",
+    "scripts/identity_parent_runner.py",
+    "scripts/three_lines_audit_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/association_cpu.py",
+    "src/biohub_lab/association_rank.py",
+    "src/biohub_lab/detection_identity.py",
+    "src/biohub_lab/detector_proposals.py",
+    "src/biohub_lab/evaluate.py",
+    "src/biohub_lab/event_data.py",
+    "src/biohub_lab/event_solver.py",
+    "src/biohub_lab/identity_parent.py",
+    "src/biohub_lab/submission.py",
+    "src/biohub_lab/temporal_data.py",
+    "src/biohub_official/LICENSE",
+    "src/biohub_official/__init__.py",
+    "src/biohub_official/division_metrics.py",
+    "src/biohub_official/metrics.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

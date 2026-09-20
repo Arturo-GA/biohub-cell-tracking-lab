@@ -1,0 +1,313 @@
+{
+  "kernel": "jarturo/biohub-e040-train",
+  "version": 1,
+  "manifest_sha256": "506bd776e9393fd05bc009151fb369340926605c4fc895ff6ce60bd729cb285e",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E040",
+      "seed": 400920,
+      "steps": 2000,
+      "batch": 16,
+      "deadline_seconds": 1800,
+      "fit": [
+        "44b6_0113de3b",
+        "44b6_0b24845f",
+        "44b6_0c582fdc",
+        "44b6_12dfb391",
+        "44b6_1574802b",
+        "44b6_18ced818",
+        "44b6_1d530831",
+        "44b6_24264f12",
+        "44b6_2f31fc2f",
+        "44b6_33b596bf",
+        "44b6_3a861e03",
+        "44b6_3bb3690f",
+        "44b6_40c45f5a",
+        "44b6_415c0a3a",
+        "44b6_53f95252",
+        "44b6_551a5dba",
+        "44b6_5f15d135",
+        "44b6_668e0cc7",
+        "44b6_66f9292d",
+        "44b6_706092f0",
+        "44b6_71a4179f",
+        "44b6_7e557709",
+        "44b6_808952d6",
+        "44b6_81c256f0",
+        "44b6_87bba6c4",
+        "44b6_8cc6506c",
+        "44b6_8f5ab931",
+        "44b6_8f9ecab4",
+        "44b6_90724892",
+        "44b6_949adeb1",
+        "44b6_97725144",
+        "44b6_a21120c2",
+        "44b6_a2bb48bb",
+        "44b6_abf82518",
+        "44b6_b2c44266",
+        "44b6_c50204e0",
+        "44b6_c771cb04",
+        "44b6_c96cfa10",
+        "44b6_d29c9ab2",
+        "44b6_d2f34f90",
+        "44b6_d5e7d891",
+        "44b6_d754aa59",
+        "44b6_d78e09d9",
+        "44b6_db3c847b",
+        "44b6_ddf577ad",
+        "44b6_e28840c6",
+        "44b6_e29f0176",
+        "44b6_e35b117d",
+        "44b6_e57ff5c6",
+        "44b6_eb2880fc",
+        "44b6_f28707c6",
+        "6bba_05b6850b",
+        "6bba_062c8d37",
+        "6bba_07477033",
+        "6bba_07e24132",
+        "6bba_085bf656",
+        "6bba_09961292",
+        "6bba_0c7fa718",
+        "6bba_0e7c0d07",
+        "6bba_12665c0e",
+        "6bba_13f19531",
+        "6bba_15403b9a",
+        "6bba_1d0d8384",
+        "6bba_1ebfb80d",
+        "6bba_20852818",
+        "6bba_2312ac41",
+        "6bba_23af9eeb",
+        "6bba_2540cd90",
+        "6bba_2646afc7",
+        "6bba_268e1230",
+        "6bba_2819ca14",
+        "6bba_283bf9f1",
+        "6bba_312f0dc3",
+        "6bba_337b1b3a",
+        "6bba_372c8cb8",
+        "6bba_3a1849c2",
+        "6bba_3c5691b6",
+        "6bba_3fda6b25",
+        "6bba_43fea39d",
+        "6bba_474be664",
+        "6bba_48816121",
+        "6bba_4aa14c89",
+        "6bba_4f99ce20",
+        "6bba_4ffd3da3",
+        "6bba_55b7eebe",
+        "6bba_55c70843",
+        "6bba_57b7cc1e",
+        "6bba_5a4d9360",
+        "6bba_5b28472a",
+        "6bba_5c039895",
+        "6bba_5dfe9ad1",
+        "6bba_5f89039d",
+        "6bba_61dd1e0d",
+        "6bba_61ecbe65",
+        "6bba_6321a359",
+        "6bba_67ebd073",
+        "6bba_6ca87370",
+        "6bba_6db0e9b4",
+        "6bba_6feb10f0",
+        "6bba_6feeb0b1",
+        "6bba_705ec2c9",
+        "6bba_718b21f9",
+        "6bba_767a1e17",
+        "6bba_784a78c9",
+        "6bba_786893ac",
+        "6bba_789f8168",
+        "6bba_78a7bd97",
+        "6bba_7af54fde",
+        "6bba_7d3058ae",
+        "6bba_7f87b3d8",
+        "6bba_80d12824",
+        "6bba_825bd1c6",
+        "6bba_87289e13",
+        "6bba_8b7818bf",
+        "6bba_907271db",
+        "6bba_91951b3a",
+        "6bba_96833384",
+        "6bba_971fa5e0",
+        "6bba_9e23430b",
+        "6bba_a5e926bb",
+        "6bba_a90a0b9c",
+        "6bba_ab78413d",
+        "6bba_acd782a8",
+        "6bba_ae82a791",
+        "6bba_aeee7805",
+        "6bba_af149c94",
+        "6bba_afb141ff",
+        "6bba_b1ae37b9",
+        "6bba_b204cac7",
+        "6bba_b329af44",
+        "6bba_b693381b",
+        "6bba_bb9f20c3",
+        "6bba_bbb708ca",
+        "6bba_c27cba08",
+        "6bba_c328f2fd",
+        "6bba_cdcfe533",
+        "6bba_cf35214c",
+        "6bba_d0fc38b5",
+        "6bba_d1acb6ff",
+        "6bba_d2b9fc0c",
+        "6bba_d5eae175",
+        "6bba_d6ecebbb",
+        "6bba_d82a4fc6",
+        "6bba_debd7bfa",
+        "6bba_df673a83",
+        "6bba_e16ffc58",
+        "6bba_e5e44988",
+        "6bba_ebdf3b34",
+        "6bba_ed9377fd",
+        "6bba_edf14583",
+        "6bba_eebc57a5",
+        "6bba_ef7b4f7e",
+        "6bba_f17befbc",
+        "6bba_f20478e9",
+        "6bba_f8ffd5e7",
+        "6bba_fbc898dc",
+        "6bba_fc516dc6",
+        "6bba_fc5f39dc",
+        "6bba_fe670320"
+      ],
+      "development": [
+        "44b6_267148e4",
+        "44b6_341df25f",
+        "44b6_7a302da0",
+        "44b6_95029e92",
+        "44b6_996155de",
+        "44b6_9be80b04",
+        "44b6_deabac95",
+        "44b6_e31261b4",
+        "6bba_05db0fb1",
+        "6bba_207c6aaf",
+        "6bba_3abfe10a",
+        "6bba_3db54e20",
+        "6bba_74686d6a",
+        "6bba_cff5865f",
+        "6bba_d3da753b",
+        "6bba_ebff6e76"
+      ],
+      "protocol": "Expanded real divisions:159 fit videos with124 annotated events,16 development videos with15. Preserve original calibration and old8 development outside training. Include all true binary consecutive events, no full-track-history requirement. Negative pair requires at least one daughter with a known different parent. Six nearest known daughters within20um plus own children; sample max128 negative triples/fit video. Joint five-frame32cube image and symmetric mother/daughter Gaussian query masks; train7-channel3D CNN and geometry11D head. Balanced positive/negative training, no development labels during GPU. CPU same-data ExtraTrees geometry control, repeated-center test-time ablation. Gate3TP0FP and AP+0.05 vs both controls; no automatic leaderboard submission."
+    },
+    "positive": 124,
+    "negative": 14413,
+    "optimizer_updates": 1996,
+    "first_layer_change": 0.8678897619247437,
+    "history": [
+      {
+        "step": 250,
+        "loss": 0.23073984682559967
+      },
+      {
+        "step": 500,
+        "loss": 0.006260734982788563
+      },
+      {
+        "step": 750,
+        "loss": 0.01140303909778595
+      },
+      {
+        "step": 1000,
+        "loss": 0.11999054253101349
+      },
+      {
+        "step": 1250,
+        "loss": 0.003074937965720892
+      },
+      {
+        "step": 1500,
+        "loss": 0.003974598832428455
+      },
+      {
+        "step": 1750,
+        "loss": 0.352884441614151
+      },
+      {
+        "step": 2000,
+        "loss": 0.0008313090074807405
+      }
+    ],
+    "checkpoint": "joint_event.pt",
+    "checkpoint_sha256": "f6a333f22090de033a196a1b36f2f4e738ae8cdbfe1d405696859f52e509da4f",
+    "outputs": [
+      {
+        "video": "44b6_267148e4",
+        "file": "44b6_267148e4_scores.npz",
+        "sha256": "2c3240ac734b27667683b41c4791cc6de51686b5eaae464fefa0e6408c26ebdc"
+      },
+      {
+        "video": "44b6_341df25f",
+        "file": "44b6_341df25f_scores.npz",
+        "sha256": "cf2e8a2bd2d3ef0013455380192383247fd8687296866dbc98a7a1b773acc6a8"
+      },
+      {
+        "video": "44b6_7a302da0",
+        "file": "44b6_7a302da0_scores.npz",
+        "sha256": "dfedbccfbb1bc54aced2e47aa62097dbe2bab57487f158447ff4fd5c6991f9fd"
+      },
+      {
+        "video": "44b6_95029e92",
+        "file": "44b6_95029e92_scores.npz",
+        "sha256": "8a33dae6e35ad11ba86affdc5a9373b0c0ddd6f0259caef752a568fb0cce6c7e"
+      },
+      {
+        "video": "44b6_996155de",
+        "file": "44b6_996155de_scores.npz",
+        "sha256": "c123196b40d83808c8b42c64ed0ffcb9259004b206741642fe7a996be2006994"
+      },
+      {
+        "video": "44b6_9be80b04",
+        "file": "44b6_9be80b04_scores.npz",
+        "sha256": "736992fa294bafdbf3ed0d04d3274d72e94570dc5284ab5f6177cbea7d8a881e"
+      },
+      {
+        "video": "44b6_deabac95",
+        "file": "44b6_deabac95_scores.npz",
+        "sha256": "7968e777ec9aeb8de8559e175526c874caff0f236d515e6718581d91ed49bb2c"
+      },
+      {
+        "video": "6bba_05db0fb1",
+        "file": "6bba_05db0fb1_scores.npz",
+        "sha256": "ac5e845698e4359738b30b716b774494a8f92ea04050c5352998cf87b8d9c14a"
+      },
+      {
+        "video": "6bba_207c6aaf",
+        "file": "6bba_207c6aaf_scores.npz",
+        "sha256": "c9fa1e6e7ea19ad3ecd7dcffd696e480e3e9f91b358d6012319b92c4a598191b"
+      },
+      {
+        "video": "6bba_3abfe10a",
+        "file": "6bba_3abfe10a_scores.npz",
+        "sha256": "8f8e8b2d79fe05568ca52bdc3eafd7be9180909d1f3dff6f3b343e38a171861e"
+      },
+      {
+        "video": "6bba_3db54e20",
+        "file": "6bba_3db54e20_scores.npz",
+        "sha256": "b4110a8cc17b428804ac63d07efc36f0af08699f6c1c7993315e4d8841cae0f9"
+      },
+      {
+        "video": "6bba_74686d6a",
+        "file": "6bba_74686d6a_scores.npz",
+        "sha256": "d36485021f3e56621f676e7af3f1dea0db2b2649b28727c4fc374169622c57f3"
+      },
+      {
+        "video": "6bba_cff5865f",
+        "file": "6bba_cff5865f_scores.npz",
+        "sha256": "6b5cb8d1c0cd13a948188eccbe5d3fe18ca7ca9fcdc6ace452a930baca96d390"
+      },
+      {
+        "video": "6bba_d3da753b",
+        "file": "6bba_d3da753b_scores.npz",
+        "sha256": "e0b51a8759b4836145a36208440500597e4af63e8685fc0a600972af61c0f63c"
+      },
+      {
+        "video": "6bba_ebff6e76",
+        "file": "6bba_ebff6e76_scores.npz",
+        "sha256": "5ecf19759c3b0120a41c7b03be92b57dd06f3b7229c5fde57c814df38a8c2dfb"
+      }
+    ],
+    "seconds": 87.47905983500004
+  }
+}

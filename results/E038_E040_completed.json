@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "execution_order": [
+    "E038",
+    "E039",
+    "E040"
+  ],
+  "all_three_executed": true,
+  "decisions": {
+    "E038": "reject_localization_adapter_continue_E039",
+    "E039": "reject_temporal_center_field_continue_E040",
+    "E040": "reject_joint_event_component"
+  },
+  "gpu_process_seconds": 453.530018298,
+  "cpu_process_seconds": 1440.096553426,
+  "timing_scope": "Reported runner processes only; startup, export and quota billing not measured.",
+  "new_local_tests_passed": 5,
+  "spatial_adapter_max_abs_error": 1.430511474609375e-06,
+  "leaderboard_submitted": false,
+  "official_tracking_scores_computed": false,
+  "background_jobs_remaining": false,
+  "report": "docs/E038_E040_TRES_LINEAS.es.md"
+}

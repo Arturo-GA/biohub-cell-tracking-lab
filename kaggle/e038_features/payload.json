@@ -1,0 +1,11 @@
+{
+  "sha256": "4a4359bc56d1984470f68895d65496a9d6f54fb72c46f8096e08dba8c9ebc5e3",
+  "files": [
+    "baseline/e038_protocol.json",
+    "scripts/spatial_probe_features_runner.py",
+    "src/biohub_lab/spatial_probe.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

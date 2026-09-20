@@ -1,0 +1,13 @@
+{
+  "kernel": "jarturo/biohub-e039-infer",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e039-infer",
+  "launched_at_utc": "2026-09-20T20:52:34.212664+00:00",
+  "payload_sha256": "6d91c2049500d07b62c37674ea451e49f21fe62ce11c50747c2f07166846aa05",
+  "notebook_sha256": "5a91aafa1d5f2ba3cbc88c6c3973920356b191e5b8a9d99b18379c74c1c4ed2e",
+  "files": 5,
+  "gpu": true,
+  "private": true,
+  "calibration_videos": 16,
+  "leaderboard_submitted": false
+}

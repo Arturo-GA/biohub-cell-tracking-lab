@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "arms": {
+    "temporal": {
+      "best_within_ties": 0.37180439313229563,
+      "worst_within_ties": 0.22553034161783034,
+      "max_score": 0.99951171875,
+      "max_score_positives": 0,
+      "max_score_negatives": 1,
+      "scores_equal_one": 0
+    },
+    "repeated_center": {
+      "best_within_ties": 0.21008451177669327,
+      "worst_within_ties": 0.1530177381164894,
+      "max_score": 0.99951171875,
+      "max_score_positives": 0,
+      "max_score_negatives": 4,
+      "scores_equal_one": 0
+    }
+  },
+  "reason": "GPU sigmoid produced half-precision probability ties. Exact AP bounds for every possible ordering inside those ties cannot establish the preregistered improvement; the highest temporal score is a unique known false event. No retraining or threshold change.",
+  "geometry_ap": 0.6578623122237673
+}

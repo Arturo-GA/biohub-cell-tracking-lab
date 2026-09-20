@@ -1,0 +1,13 @@
+{
+  "kernel": "jarturo/biohub-e038-features",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e038-features",
+  "launched_at_utc": "2026-09-20T20:41:34.192291+00:00",
+  "payload_sha256": "4a4359bc56d1984470f68895d65496a9d6f54fb72c46f8096e08dba8c9ebc5e3",
+  "notebook_sha256": "48c2b550ae2a3a7d09d2537f8b09022574dd5b079688c103c5b6bf1876b28989",
+  "files": 3,
+  "gpu": true,
+  "private": true,
+  "calibration_videos": 16,
+  "leaderboard_submitted": false
+}

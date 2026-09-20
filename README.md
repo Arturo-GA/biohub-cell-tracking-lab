@@ -1,5 +1,14 @@
 # Biohub Cell Tracking Lab
 
+**E038–E040 completados y rechazados:** SpatialDINO no mejora la localización
+frente al control de intensidades (5,435 frente a 5,395 µm). El detector temporal
+recupera 175 centros a 3 µm frente a 177 del estático, con presupuesto de 256.
+El modelo conjunto de madre/hijas, entrenado con 124 divisiones, obtiene AP
+0,257 frente a 0,658 de geometría sobre 15 divisiones de desarrollo.
+Las tres pruebas se ejecutaron en orden. GPU: 7,6 minutos de proceso; datos y
+métricas en CPU. Sin nuevo submission ni trabajos pendientes.
+[Protocolo y resultados](docs/E038_E040_TRES_LINEAS.es.md).
+
 **E037 completado y rechazado:** seis cabezas entrenadas con representaciones de los encoders E033. Mejor AP neuronal en desarrollo: 0,325, frente a 0,406 de geometría y 0,443 de apariencia local E035. Ninguna superó la condición fijada; no se lanzó la integración al grafo ni submission. GPU: 7,6 s de proceso; preparación/cabezas en CPU. No quedan ejecuciones pendientes. [Resultados y protocolo](docs/E037_DIVISION_NEURONAL.es.md).
 
 **E036 completado y rechazado:** reasignación de padres y reconstrucción conjunta bajan de 0,900753 a 0,900504 local. La variante conjunta aplica 50 eventos y añade 3 nodos, pero pierde un enlace correcto y añade uno incorrecto; no recupera divisiones anotadas. Todas las optimizaciones alcanzaron su óptimo. Proceso CPU: 212 s, GPU: cero. Sin submission ni ejecuciones pendientes. [Resultados y protocolo](docs/E036_RECONSTRUCCION_CONJUNTA.es.md).

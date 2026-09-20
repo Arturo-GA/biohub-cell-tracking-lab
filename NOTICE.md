@@ -31,3 +31,20 @@ training datasets. Those datasets are not redistributed by this repository.
 Dependency wheels retain their own licenses; weights and wheels are outside Git.
 Pinned revisions, hashes, compatibility handling, and experimental scope are
 recorded in `baseline/e028_cellpose.json` and `docs/E028_CELLPOSE_DINO.es.md`.
+
+## SpatialDINO y experimentos E038–E040
+
+E038 utiliza el checkpoint público de [SpatialDINO](https://github.com/kirchhausenlab/spatialdino),
+Kirchhausen Lab, `step=249999/backbone.pth`, servido por su bucket público AWS.
+El adaptador de inferencia `spatial_probe.py` implementa las operaciones de su
+ViT-S/8 3D con SDPA de PyTorch. Arquitectura contrastada con el commit
+`ca3ab86b34430d963f12a3909baaeb9343c63b7d`; el repositorio anuncia licencia MIT.
+Los archivos de referencia conservan sus avisos originales en una carpeta
+ignorada. Los pesos no se incluyen en Git y no se infiere una licencia propia
+para ellos a partir de la licencia del código. La procedencia, hash y límites
+de la adaptación constan en `docs/E038_E040_TRES_LINEAS.es.md`.
+
+E039 y E040 son modelos propios entrenados desde cero: campo 3D hacia centros
+con supervisión parcial y consulta de imágenes de madre/dos hijas,
+respectivamente. No se presentan como reproducciones de SpatialDINO, HOCT,
+Trackastra ni de otro método publicado.

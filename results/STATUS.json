@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E030 image identity implemented and trained, but annotation-space curriculum does not beat nearest-neighbor links; no new submission",
+  "quality_status": "All three image experiments completed; E038 and E039 failed their development gates; E040 reject_joint_event_component; no new submission or official tracking score",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -306,7 +306,7 @@
       }
     }
   },
-  "next_research_direction": "Continue the fixed local GPU and Kaggle CPU input pipeline, reuse completed E013 artifacts when reported, train the full selector after all features are frozen, and compare against the verified 48-video control.",
+  "next_research_direction": "Do not submit or sweep the rejected E038-E040 adaptations; their component metrics do not demonstrate a tracking improvement",
   "E008": {
     "implementation": "cellect_raw_image_proposals_before_full_harmonic_tracking",
     "kernel": "jarturo/biohub-lab-cellect-detector",
@@ -405,11 +405,7 @@
       "official_graph_matching_rerun_locally": false
     }
   },
-  "active_experiments": [
-    "E013",
-    "CPU_IMAGE_PREPARE",
-    "E013_LOCAL_CPU_WORKFLOW"
-  ],
+  "active_experiments": [],
   "detector_test_evidence": {
     "full_suite_passed": 54,
     "detector_regression_tests": 10,
@@ -1737,5 +1733,26 @@
     "decision": "Reject frozen identity encoder transfer with these division heads: all neural variants below geometry and previous local appearance on development; all frozen threshold gates fail. No graph integration or submission.",
     "graph_launched": false,
     "gpu_process_seconds": 7.571777336000025
-  }
+  },
+  "E038": {
+    "status": "COMPLETE",
+    "decision": "reject_localization_adapter",
+    "receipt": "results/E038_completed.json"
+  },
+  "E039": {
+    "status": "COMPLETE",
+    "decision": "reject_temporal_center_field",
+    "receipt": "results/E039_completed.json"
+  },
+  "E040": {
+    "status": "COMPLETE",
+    "decision": "reject_joint_event_component",
+    "receipt": "results/E040_completed.json",
+    "fit_positive": 124,
+    "development_positive": 15,
+    "passed": false
+  },
+  "three_lines_active_stage": null,
+  "manual_turn_monitoring": false,
+  "three_lines_summary": "results/E038_E040_completed.json"
 }

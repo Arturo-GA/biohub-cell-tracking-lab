@@ -1,0 +1,13 @@
+{
+  "sha256": "6d91c2049500d07b62c37674ea451e49f21fe62ce11c50747c2f07166846aa05",
+  "files": [
+    "baseline/e039_protocol.json",
+    "scripts/spatial_probe_features_runner.py",
+    "scripts/temporal_detector_infer_runner.py",
+    "src/biohub_lab/spatial_probe.py",
+    "src/biohub_lab/temporal_detector.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

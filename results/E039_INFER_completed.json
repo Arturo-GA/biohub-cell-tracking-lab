@@ -1,0 +1,173 @@
+{
+  "kernel": "jarturo/biohub-e039-infer",
+  "version": 1,
+  "manifest_sha256": "aa338171525cfcdfe378f19be8db1141ed6ccb447c6cafea03f9987e1af2d93d",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E039",
+      "seed": 390920,
+      "steps": 2000,
+      "batch": 4,
+      "deadline_seconds": 2400,
+      "fit": [
+        "44b6_1d530831",
+        "44b6_3a861e03",
+        "44b6_3bb3690f",
+        "44b6_668e0cc7",
+        "44b6_66f9292d",
+        "44b6_71a4179f",
+        "44b6_7e557709",
+        "44b6_81c256f0",
+        "44b6_949adeb1",
+        "44b6_a2bb48bb",
+        "44b6_abf82518",
+        "44b6_b2c44266",
+        "44b6_c771cb04",
+        "44b6_c96cfa10",
+        "44b6_d2f34f90",
+        "44b6_d5e7d891",
+        "44b6_d754aa59",
+        "44b6_ddf577ad",
+        "44b6_e28840c6",
+        "44b6_e29f0176",
+        "6bba_062c8d37",
+        "6bba_0c7fa718",
+        "6bba_2312ac41",
+        "6bba_2819ca14",
+        "6bba_43fea39d",
+        "6bba_4ffd3da3",
+        "6bba_55c70843",
+        "6bba_57b7cc1e",
+        "6bba_5a4d9360",
+        "6bba_5c039895",
+        "6bba_6feeb0b1",
+        "6bba_786893ac",
+        "6bba_78a7bd97",
+        "6bba_7af54fde",
+        "6bba_acd782a8",
+        "6bba_b693381b",
+        "6bba_d0fc38b5",
+        "6bba_e5e44988",
+        "6bba_edf14583",
+        "6bba_fe670320"
+      ],
+      "development": [
+        "44b6_267148e4",
+        "44b6_341df25f",
+        "44b6_7a302da0",
+        "44b6_95029e92",
+        "44b6_996155de",
+        "44b6_9be80b04",
+        "44b6_deabac95",
+        "44b6_e31261b4",
+        "6bba_05db0fb1",
+        "6bba_207c6aaf",
+        "6bba_3abfe10a",
+        "6bba_3db54e20",
+        "6bba_74686d6a",
+        "6bba_cff5865f",
+        "6bba_d3da753b",
+        "6bba_ebff6e76"
+      ],
+      "data_manifest_sha256": "b8df897a2b8496d1b1a37018147df03f9db25b6c55806328e68b675b6ea3454a",
+      "frames": [
+        10,
+        30,
+        50,
+        70,
+        90
+      ],
+      "budgets": [
+        128,
+        256,
+        512
+      ],
+      "protocol": "Paired 1-frame and 3-frame fully convolutional 3D center-vector fields trained from scratch on identical sparse annotations and sampling seeds. Supervision restricted to within3 isotropic voxels of known centers, all other voxels masked. Bounded displacement4 voxels, SmoothL1, AdamW3e-4, 2000 updates/arm. Dense heldout inference on fixed5 frames/video. Image-weighted trilinear voting; compare equal candidate budgets with image DoG peaks. Primary gate at256: improve3um recall vs static and DoG in both embryos with no7um recall loss. No threshold sweep or submission; sparse recall cannot establish precision."
+    },
+    "videos": [
+      {
+        "video": "44b6_267148e4",
+        "file": "44b6_267148e4.npz",
+        "sha256": "2b6b7e65c504ccf98a1a0b09d673798eaef5a997544c55f43d5de1e6898331b0"
+      },
+      {
+        "video": "44b6_341df25f",
+        "file": "44b6_341df25f.npz",
+        "sha256": "c12edd78bdabe292f3a4a9b5da5f52159cda9f07d6cab39d6292aaa893e86775"
+      },
+      {
+        "video": "44b6_7a302da0",
+        "file": "44b6_7a302da0.npz",
+        "sha256": "c8da406aaafcc983dbaaa35b2a5ba91c57695b286ca6fefb3fd2f17a090ccf3e"
+      },
+      {
+        "video": "44b6_95029e92",
+        "file": "44b6_95029e92.npz",
+        "sha256": "7335584205aafde0178ecc24e9a5d6f459e914d02676d018943520d0b9100998"
+      },
+      {
+        "video": "44b6_996155de",
+        "file": "44b6_996155de.npz",
+        "sha256": "37839379262db0727f941d5aa616c8560d9874d568642052124d38d58e528079"
+      },
+      {
+        "video": "44b6_9be80b04",
+        "file": "44b6_9be80b04.npz",
+        "sha256": "fa0a8e6a0e165c696f3b69801ac7bee5ebbcc9846826e61dd87128e2fad510d0"
+      },
+      {
+        "video": "44b6_deabac95",
+        "file": "44b6_deabac95.npz",
+        "sha256": "f00f56bfcd542405b7bd8940c7c8a22d8caeb53bd10b2d59c7c07c2ddc155094"
+      },
+      {
+        "video": "44b6_e31261b4",
+        "file": "44b6_e31261b4.npz",
+        "sha256": "fdf61e648173520eaff75803bc7589b1ff870303628692c842902f41dd30ca8c"
+      },
+      {
+        "video": "6bba_05db0fb1",
+        "file": "6bba_05db0fb1.npz",
+        "sha256": "130f67fa704357cdc8041e8be5273bb1e5881c1b3d197710ab4d32ae61f00739"
+      },
+      {
+        "video": "6bba_207c6aaf",
+        "file": "6bba_207c6aaf.npz",
+        "sha256": "3e7bbd40bdcf5f780b1afce141eb7d88a9d83eb89c5568a799d48f08d215647b"
+      },
+      {
+        "video": "6bba_3abfe10a",
+        "file": "6bba_3abfe10a.npz",
+        "sha256": "982ed1a1daa4727b8926d0b121c9fdd1676863d2338f647e28765adeebbd2738"
+      },
+      {
+        "video": "6bba_3db54e20",
+        "file": "6bba_3db54e20.npz",
+        "sha256": "dd06acbe48a4a73b72f7de7a44bb946581c12ab373d8e97270192a778066e0d7"
+      },
+      {
+        "video": "6bba_74686d6a",
+        "file": "6bba_74686d6a.npz",
+        "sha256": "aa713386d9176178ffbf057c9c94bbb0d01cbd7b698a4313a948e26c97050f29"
+      },
+      {
+        "video": "6bba_cff5865f",
+        "file": "6bba_cff5865f.npz",
+        "sha256": "a67aaf62b3f038aae21ae5600db8160a750103c46bc11a41354df6de0b3a6f49"
+      },
+      {
+        "video": "6bba_d3da753b",
+        "file": "6bba_d3da753b.npz",
+        "sha256": "c4af830272c783de8881e0d7167f269f762bb8124d07d583c82e0c4cd4849491"
+      },
+      {
+        "video": "6bba_ebff6e76",
+        "file": "6bba_ebff6e76.npz",
+        "sha256": "9e237643580658449c95e4900549068ccdbecc864399e444ca7fbc6520393c92"
+      }
+    ],
+    "seconds": 28.471280180000008,
+    "peak_gpu_gb": 0.153023488
+  }
+}

@@ -16,7 +16,7 @@ with api.build_kaggle_client() as client:
             if not isinstance(event,dict):continue
             message=event.get('data','')
             if event.get('time',0)<after or message in seen:continue
-            if any(k in message for k in ['DIVISION_DATA','DIVISION_HEAD','DIVISION_METRIC','JOINT_PROPOSALS','JOINT_METRIC','NEURAL_PREP','NEURAL_FEATURES','NEURAL_HEAD','NEURAL_GRAPH','Traceback','Error:']):
+            if any(k in message for k in ['DIVISION_DATA','DIVISION_HEAD','DIVISION_METRIC','JOINT_PROPOSALS','JOINT_METRIC','NEURAL_PREP','NEURAL_FEATURES','NEURAL_HEAD','NEURAL_GRAPH','THREE_PREP','SPATIAL_','CENTER_','EVENT_','Traceback','Error:']):
                 seen.add(message);print(round(event.get('time',0),1),message.rstrip(),flush=True)
     except requests.exceptions.ChunkedEncodingError:
         print('Log stream disconnected; check kernel status separately.',flush=True)

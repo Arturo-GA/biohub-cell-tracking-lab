@@ -1,0 +1,9 @@
+{
+  "manifest_sha256": "d3d9d601a8d3a484e806dea55442bf65a02c449fc14ec450f063b64568279cbb",
+  "positive_counts": {
+    "fit": 124,
+    "development": 15
+  },
+  "source_kernel": "jarturo/biohub-e040-prepare-cpu",
+  "source_version": 1
+}

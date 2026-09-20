@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e038-audit-cpu",
+  "version": 1,
+  "kernel_id": 135148838,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e038-audit-cpu",
+  "ref": "/code/jarturo/biohub-e038-audit-cpu",
+  "launched_at_utc": "2026-09-20T20:26:19.386855+00:00",
+  "payload_sha256": "87a432352f928776ea56b21169e3ae179929ce0b87d2f3404c8ae1a747fba69b",
+  "notebook_sha256": "e6660ee9e331bd17c3599f85d6ac75ecfcacff450eaea95b05be71bbbe6abb4a",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

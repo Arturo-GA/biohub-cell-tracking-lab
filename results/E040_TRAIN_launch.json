@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-e040-train",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e040-train",
+  "launched_at_utc": "2026-09-20T21:16:50.478338+00:00",
+  "payload_sha256": "936cbd46c998b913df3045a20697715bf1cd57933664b91c79ad69ef6b1ee72a",
+  "notebook_sha256": "3ce807ba52998708f41a51fa02ea5924bc3b3e3ed0e859f151b78e3d05df3543",
+  "files": 7,
+  "gpu": true,
+  "private": true,
+  "leaderboard_submitted": false
+}
