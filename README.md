@@ -130,3 +130,7 @@ La métrica se conserva en `src/biohub_official`, commit oficial `075fc5f5a52d11
 Para recuperar el contexto en otra sesión, leer primero los tres documentos de `docs/` y `results/STATUS.json`. Los resultados ajenos son referencias, nunca mediciones propias.
 
 **E013 lanzado, versión 1:** nueva red con características visuales de ambos UNet, atención entre detecciones y selección temporal de divisiones. Se separan **48 videos de ajuste, 16 de calibración y 48 de evaluación**. Kaggle aceptó el [candidato](https://www.kaggle.com/code/jarturo/biohub-lab-learned-event-graph) y el [control Harmonic completo](https://www.kaggle.com/code/jarturo/biohub-lab-event-graph-control) sobre los mismos videos, inicialmente en cola. Pasaron **86 pruebas** y una comprobación con pesos públicos reales sobre imágenes sintéticas. Todavía no hay resultados de E013 ni nueva submission. No hay monitor local. [Diseño y límites](docs/EVENT_GRAPH.es.md), [recibo del candidato](results/E013_launch.json), [recibo del control](results/E013-control_launch.json).
+
+### E044: ensamble de componentes (2026-09-20)
+
+Se combinó E041 denso con E039 estático en CPU. Existe complementariedad, pero la mezcla por rango a 256 candidatos obtuvo 211/329 aciertos a 3/7 µm frente a 227/321 y 177/354 de los componentes. La unión de 512 obtuvo 272/394 y tampoco superó a los mejores controles de 512. No se envió al leaderboard. [Protocolo y resultados completos](docs/E044_ENSAMBLE.es.md).

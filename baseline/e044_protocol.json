@@ -1,0 +1,27 @@
+{
+  "experiment": "E044",
+  "budget": 256,
+  "frames": [
+    10,
+    30,
+    50,
+    70,
+    90
+  ],
+  "fusion": "Equal-rank interleave dense first; reject candidate within <=1 isotropic voxel of earlier point; stop at 256; inputs top512 each. No GT candidate selection.",
+  "gate": "Per embryo: ensemble matched3 >= best component and matched7 > best component. Sparse component gate only, not submission approval.",
+  "sources": {
+    "dense": {
+      "path": "dense_supervision_training/result.json",
+      "sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0"
+    },
+    "static": {
+      "path": "temporal_detector_fields/result.json",
+      "sha256": "aa338171525cfcdfe378f19be8db1141ed6ccb447c6cafea03f9987e1af2d93d"
+    },
+    "raw": {
+      "path": "three_lines_data/result.json",
+      "sha256": "b8df897a2b8496d1b1a37018147df03f9db25b6c55806328e68b675b6ea3454a"
+    }
+  }
+}

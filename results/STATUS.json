@@ -1783,5 +1783,113 @@
       "consensus": false
     },
     "decision": "No promotion: full-graph gate not met; do not tune on these same outcomes."
+  },
+  "E044": {
+    "status": "COMPLETE",
+    "kernel": "jarturo/biohub-e044-evaluate-cpu",
+    "purpose": "Dense E041 + static E039 equal-budget ensemble",
+    "gpu": false,
+    "leaderboard_submitted": false,
+    "passed": false,
+    "seconds": 49.60090426900001,
+    "decision": "Complementarity observed; equal-budget rank fusion rejected; no submission",
+    "summary": [
+      {
+        "embryo": "all",
+        "arm": "dense",
+        "gt": 488,
+        "predicted": 20480,
+        "matched3": 227,
+        "matched7": 321
+      },
+      {
+        "embryo": "all",
+        "arm": "static",
+        "gt": 488,
+        "predicted": 20480,
+        "matched3": 177,
+        "matched7": 354
+      },
+      {
+        "embryo": "all",
+        "arm": "ensemble",
+        "gt": 488,
+        "predicted": 20480,
+        "matched3": 211,
+        "matched7": 329
+      },
+      {
+        "embryo": "all",
+        "arm": "union_diagnostic",
+        "gt": 488,
+        "predicted": 40960,
+        "matched3": 272,
+        "matched7": 394
+      },
+      {
+        "embryo": "44b6",
+        "arm": "dense",
+        "gt": 104,
+        "predicted": 10240,
+        "matched3": 69,
+        "matched7": 84
+      },
+      {
+        "embryo": "44b6",
+        "arm": "static",
+        "gt": 104,
+        "predicted": 10240,
+        "matched3": 56,
+        "matched7": 93
+      },
+      {
+        "embryo": "44b6",
+        "arm": "ensemble",
+        "gt": 104,
+        "predicted": 10240,
+        "matched3": 71,
+        "matched7": 88
+      },
+      {
+        "embryo": "44b6",
+        "arm": "union_diagnostic",
+        "gt": 104,
+        "predicted": 20480,
+        "matched3": 79,
+        "matched7": 97
+      },
+      {
+        "embryo": "6bba",
+        "arm": "dense",
+        "gt": 384,
+        "predicted": 10240,
+        "matched3": 158,
+        "matched7": 237
+      },
+      {
+        "embryo": "6bba",
+        "arm": "static",
+        "gt": 384,
+        "predicted": 10240,
+        "matched3": 121,
+        "matched7": 261
+      },
+      {
+        "embryo": "6bba",
+        "arm": "ensemble",
+        "gt": 384,
+        "predicted": 10240,
+        "matched3": 140,
+        "matched7": 241
+      },
+      {
+        "embryo": "6bba",
+        "arm": "union_diagnostic",
+        "gt": 384,
+        "predicted": 20480,
+        "matched3": 193,
+        "matched7": 297
+      }
+    ]
   }
 }
