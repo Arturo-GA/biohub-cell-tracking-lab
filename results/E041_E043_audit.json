@@ -1,0 +1,132 @@
+{
+  "status": "complete",
+  "stages": [
+    {
+      "stage": "E041_PREPARE",
+      "kernel": "jarturo/biohub-e041-prepare-cpu",
+      "version": 2,
+      "gpu": false,
+      "seconds": 599.7570155450001,
+      "notebook_sha256": "227e419590066db5f6fa68748b12c206f6746c10e120c6038b7ea7841a1d04cc"
+    },
+    {
+      "stage": "E041_REGRID",
+      "kernel": "jarturo/biohub-e041-regrid-cpu",
+      "version": 2,
+      "gpu": false,
+      "seconds": 483.98551102,
+      "notebook_sha256": "8c561f410ee72fb5a4926de33c90fcf7f7e0e6c2461ab9262626137bc9ca0819"
+    },
+    {
+      "stage": "E041_TRAIN",
+      "kernel": "jarturo/biohub-e041-train",
+      "version": 1,
+      "gpu": true,
+      "seconds": 169.327407773,
+      "notebook_sha256": "0d3cb606a621c3bbd53200d793d4cd4244b0543b7e6c7cc9571007364c8aa4c9"
+    },
+    {
+      "stage": "E041_EVALUATE",
+      "kernel": "jarturo/biohub-e041-evaluate-cpu",
+      "version": 1,
+      "gpu": false,
+      "seconds": 3.5944273999999723,
+      "notebook_sha256": "f0b222b2e607d60808d81d99cd35ae64f4f487eba1969cf8f67a272fa532442c"
+    },
+    {
+      "stage": "E042_PREPARE",
+      "kernel": "jarturo/biohub-e042-prepare-cpu",
+      "version": 1,
+      "gpu": false,
+      "seconds": 719.732287992,
+      "notebook_sha256": "e93cc5ffdb4a798a9843cc7974d1af57e10695cd2a6b10d7426b7521f76c2c87"
+    },
+    {
+      "stage": "E042_TRAIN",
+      "kernel": "jarturo/biohub-e042-train",
+      "version": 1,
+      "gpu": true,
+      "seconds": 119.08046588000002,
+      "notebook_sha256": "db1a94b5ab7ac9b33bd2abbef4b55bc16e7fc19e3ef7246ede9a3f20e452498c"
+    },
+    {
+      "stage": "E042_EVALUATE",
+      "kernel": "jarturo/biohub-e042-evaluate-cpu",
+      "version": 1,
+      "gpu": false,
+      "seconds": 0.5609135469999842,
+      "notebook_sha256": "6516dda236558697cf14073ca9493c22eab54b632bfaccd22bac58c8f9784440"
+    },
+    {
+      "stage": "E043_EVALUATE",
+      "kernel": "jarturo/biohub-e043-evaluate-cpu",
+      "version": 1,
+      "gpu": false,
+      "seconds": 603.806676828,
+      "notebook_sha256": "3d2cbb5c4693b36439fafe232c350de92a49c5a010d46549a0f5c0bc778b6ffa"
+    }
+  ],
+  "gpu_process_seconds": 288.407873653,
+  "cpu_process_seconds": 2411.4368323319995,
+  "resource_scope": "Final successful stages only. Excludes startup/export, failed preparation v1, and superseded regrid v1. Not billed Kaggle quota.",
+  "solver": {
+    "frames": 1584,
+    "map_optimal": 1584,
+    "consensus_optimal": 1584,
+    "sample_optimal": 4752,
+    "samples_attempted": 4752,
+    "uncertain_events": 399,
+    "original_forks": 316,
+    "map_forks": 519,
+    "consensus_forks": 506,
+    "changed_edges": {
+      "map": 211,
+      "consensus": 198
+    }
+  },
+  "weight_verification": {
+    "status": "passed",
+    "models": [
+      {
+        "stage": "E041_TRAIN",
+        "checkpoint": "dense_center.pt",
+        "sha256": "1cd44c4584622f5b1960b809f518e7a52d52ccb1dac03d6400f2713e5d663f48",
+        "parameters": 353921,
+        "strict_load": true,
+        "finite": true
+      },
+      {
+        "stage": "E042_TRAIN",
+        "checkpoint": "coarse.pt",
+        "sha256": "426c02f25371176defe5b53aaadcacfbeaeebb58a4594a68b81dd71db2962bac",
+        "parameters": 450179,
+        "strict_load": true,
+        "finite": true
+      },
+      {
+        "stage": "E042_TRAIN",
+        "checkpoint": "native.pt",
+        "sha256": "aef48fdf585054a2e7b9fb33d774d6181571dabcdde7bee0556d413dbe8fd254",
+        "parameters": 450179,
+        "strict_load": true,
+        "finite": true
+      }
+    ]
+  },
+  "local_checks": {
+    "status": "passed",
+    "tests": 7,
+    "command": "python -m unittest discover -s tests -p test_next_three.py -v",
+    "checks": [
+      "aligned coarse sampling",
+      "paired-query and dense-network gradients",
+      "fork relocation with unique parents",
+      "infeasible assignment fallback",
+      "graph capacities preserved",
+      "exact scipy zoom coordinate registration",
+      "variable division count with unique parents"
+    ],
+    "training_or_leaderboard_evidence": false
+  },
+  "leaderboard_submitted": false
+}

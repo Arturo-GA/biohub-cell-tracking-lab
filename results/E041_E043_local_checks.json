@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "tests": 7,
+  "command": "python -m unittest discover -s tests -p test_next_three.py -v",
+  "checks": [
+    "aligned coarse sampling",
+    "paired-query and dense-network gradients",
+    "fork relocation with unique parents",
+    "infeasible assignment fallback",
+    "graph capacities preserved",
+    "exact scipy zoom coordinate registration",
+    "variable division count with unique parents"
+  ],
+  "training_or_leaderboard_evidence": false
+}

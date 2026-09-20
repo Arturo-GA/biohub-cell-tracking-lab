@@ -15,8 +15,9 @@ with api.build_kaggle_client() as client:
             except json.JSONDecodeError:continue  # SSE terminal/heartbeat markers are not log JSON.
             if not isinstance(event,dict):continue
             message=event.get('data','')
+            if 'DENSE_ARCHIVE' in message:continue  # Large directory listing is not progress.
             if event.get('time',0)<after or message in seen:continue
-            if any(k in message for k in ['DIVISION_DATA','DIVISION_HEAD','DIVISION_METRIC','JOINT_PROPOSALS','JOINT_METRIC','NEURAL_PREP','NEURAL_FEATURES','NEURAL_HEAD','NEURAL_GRAPH','THREE_PREP','SPATIAL_','CENTER_','EVENT_','Traceback','Error:']):
+            if any(k in message for k in ['DENSE_','RESOLUTION_','UNCERT_','DIVISION_DATA','DIVISION_HEAD','DIVISION_METRIC','JOINT_PROPOSALS','JOINT_METRIC','NEURAL_PREP','NEURAL_FEATURES','NEURAL_HEAD','NEURAL_GRAPH','THREE_PREP','SPATIAL_','CENTER_','EVENT_','Traceback','Error:']):
                 seen.add(message);print(round(event.get('time',0),1),message.rstrip(),flush=True)
     except requests.exceptions.ChunkedEncodingError:
         print('Log stream disconnected; check kernel status separately.',flush=True)

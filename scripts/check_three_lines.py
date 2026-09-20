@@ -18,7 +18,7 @@ def main():
         for item in weights:assert hashlib.sha256((paths[0].parent/item['checkpoint']).read_bytes()).hexdigest()==item['sha256']
     record=dict(kernel=receipt['kernel'],version=receipt['version'],manifest_sha256=hashlib.sha256(paths[0].read_bytes()).hexdigest(),result=result)
     (ROOT/f'results/{stage}_completed.json').write_text(json.dumps(record,indent=2)+'\n')
-    brief={k:v for k,v in result.items() if k not in ['config','videos','rows','outputs','history']}
+    brief={k:v for k,v in result.items() if k not in ['config','videos','rows','outputs','history','reports']}
     if 'videos' in result:brief['videos_count']=len(result['videos'])
     print(json.dumps(brief,indent=2),flush=True)
 if __name__=='__main__':main()

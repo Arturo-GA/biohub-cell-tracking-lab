@@ -1,0 +1,16 @@
+{
+  "sha256": "089c791044e917acffc47bc29277bfc949188df6c46d0e6f1dba5f34b534ba7f",
+  "files": [
+    "baseline/e041_protocol.json",
+    "scripts/association_cpu_runner.py",
+    "scripts/dense_supervision_train_runner.py",
+    "scripts/spatial_probe_features_runner.py",
+    "scripts/temporal_detector_evaluate_runner.py",
+    "src/biohub_lab/dense_center.py",
+    "src/biohub_lab/spatial_probe.py",
+    "src/biohub_lab/temporal_detector.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

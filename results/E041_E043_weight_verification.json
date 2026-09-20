@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "models": [
+    {
+      "stage": "E041_TRAIN",
+      "checkpoint": "dense_center.pt",
+      "sha256": "1cd44c4584622f5b1960b809f518e7a52d52ccb1dac03d6400f2713e5d663f48",
+      "parameters": 353921,
+      "strict_load": true,
+      "finite": true
+    },
+    {
+      "stage": "E042_TRAIN",
+      "checkpoint": "coarse.pt",
+      "sha256": "426c02f25371176defe5b53aaadcacfbeaeebb58a4594a68b81dd71db2962bac",
+      "parameters": 450179,
+      "strict_load": true,
+      "finite": true
+    },
+    {
+      "stage": "E042_TRAIN",
+      "checkpoint": "native.pt",
+      "sha256": "aef48fdf585054a2e7b9fb33d774d6181571dabcdde7bee0556d413dbe8fd254",
+      "parameters": 450179,
+      "strict_load": true,
+      "finite": true
+    }
+  ]
+}

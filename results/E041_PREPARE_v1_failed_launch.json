@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e041-prepare-cpu",
+  "version": 1,
+  "kernel_id": 135154793,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e041-prepare-cpu",
+  "ref": "/code/jarturo/biohub-e041-prepare-cpu",
+  "launched_at_utc": "2026-09-20T22:01:37.013030+00:00",
+  "payload_sha256": "a701c1fa2506e026a6b2f01ae9f6cd4f9f391146dbf15bac9fa63850bf083d0d",
+  "notebook_sha256": "16e5febed060630b2c1d55da7ce74fa99f110f6e3e35c36c6a7507f78210357b",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,183 @@
+{
+  "kernel": "jarturo/biohub-e041-regrid-cpu",
+  "version": 2,
+  "manifest_sha256": "97689f24a28090a1dfeda709297eb9f3d7c4c120ec22ac50baf11a3c655a6cee",
+  "result": {
+    "status": "complete",
+    "videos": [
+      {
+        "source": "NIS3D/NIS3D/Drosophila_1/data.tif",
+        "info": "Introduction:\r\nThe drosophila images is selected from public dataset IDR0118. Drosophila images are picked at time-point 50 of the brachyenteron (byn) gene reporter data. The data are for early Drosophila embryogenesis and the cells are large and relatively sparse. This data shows complicated textures within cells and bright background noise.\r\n\r\nResolution:\r\n1 um x 1 um x 1 um\r\n\r\nPaper:\r\nhttps://www.pnas.org/doi/10.1073/pnas.2112892119",
+        "file": "volume_0.npz",
+        "centers": 1681,
+        "rescale": [
+          0.2170469076738702,
+          0.2170469076738702,
+          0.2170469076738702
+        ],
+        "coordinate_scale": [
+          0.2131979695431472,
+          0.21596724667349027,
+          0.21602434077079108
+        ],
+        "voxel_spacing_um": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": [
+          43,
+          212,
+          214
+        ],
+        "patches": 512,
+        "sha256": "04c85f7a2d8494780303b9b0d6c0c493714274d7187e4fd94a225805c314d196"
+      },
+      {
+        "source": "NIS3D/NIS3D/Drosophila_2/data.tif",
+        "info": "Introduction:\r\nThe drosophila images is selected from public dataset IDR0118. Drosophila images are picked at time-point 20 of the brachyenteron (byn) gene reporter data. The data are for early Drosophila embryogenesis and the cells are large and relatively sparse. This data shows complicated textures within cells and bright background noise.\r\n\r\nResolution:\r\n1 um x 1 um x 1 um\r\n\r\nPaper:\r\nhttps://www.pnas.org/doi/10.1073/pnas.2112892119",
+        "file": "volume_1.npz",
+        "centers": 489,
+        "rescale": [
+          0.17872726901187985,
+          0.17872726901187985,
+          0.17872726901187985
+        ],
+        "coordinate_scale": [
+          0.17587939698492464,
+          0.1780962128966223,
+          0.17748478701825557
+        ],
+        "voxel_spacing_um": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": [
+          36,
+          175,
+          176
+        ],
+        "patches": 512,
+        "sha256": "3d7890777a49e98b6666f8e4376bfa635168b47fee35a8099efb2da7dd355853"
+      },
+      {
+        "source": "NIS3D/NIS3D/MusMusculus_1/data.tif",
+        "info": "Introduction:\r\nThe Mus musculus data are selected from public dataset IDR0044. The image is picked at the time-point 200 of embryo 4 and we only use the first 70 z-slices shown neclei due to the quality issue. It was recorded during relatively late Mus musculus embryogenesis.  The center of this image is very blurry, and we use an undefined mask to mask it. This data shows various cell shapes and strong textures within cells. The voxel size is 1 um x 1 um x 1 um.\r\n\r\nResolution:\r\n1 um x 1 um x 1 um\r\n\r\nPaper:\r\nhttps://www.sciencedirect.com/science/article/pii/S0092867418312431?via%3Dihub",
+        "file": "volume_2.npz",
+        "centers": 1560,
+        "rescale": [
+          0.3082774955960179,
+          0.3082774955960179,
+          0.3082774955960179
+        ],
+        "coordinate_scale": [
+          0.30434782608695654,
+          0.3079584775086505,
+          0.307731694828469
+        ],
+        "voxel_spacing_um": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": [
+          22,
+          624,
+          602
+        ],
+        "patches": 512,
+        "sha256": "936d01228e1915506a86b5c3bad7d72ff9d3d20b8da90630c659c59fa8dd30c7"
+      },
+      {
+        "source": "NIS3D/NIS3D/MusMusculus_2/data.tif",
+        "info": "Introduction:\r\nThe Mus musculus data are selected from public dataset IDR0044. The image is picked at the time-point 150 of embryo 4 and we only use the first 65 z-slices shown neclei due to the quality issue. It was recorded during relatively late Mus musculus embryogenesis.  The center of this image is very blurry, and we use an undefined mask to mask it. This data shows various cell shapes and strong textures within cells. The voxel size is 1 um x 1 um x 1 um.\r\n\r\nResolution:\r\n1 um x 1 um x 1 um\r\n\r\nPaper:\r\nhttps://www.sciencedirect.com/science/article/pii/S0092867418312431?via%3Dihub",
+        "file": "volume_3.npz",
+        "centers": 1055,
+        "rescale": [
+          0.2821777179589543,
+          0.2821777179589543,
+          0.2821777179589543
+        ],
+        "coordinate_scale": [
+          0.265625,
+          0.2819188191881919,
+          0.28193548387096773
+        ],
+        "voxel_spacing_um": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": [
+          18,
+          383,
+          438
+        ],
+        "patches": 512,
+        "sha256": "cc65fd8b2cedeb73b7be7ebe3e3eb2a1d500dc5174794ada3bd9312addf248fb"
+      },
+      {
+        "source": "NIS3D/NIS3D/Zebrafish_1/data.tif",
+        "info": "Introduction:\r\nTransgenic zebrafish embryos with fluorescent nuclei marker Tg(bactin2:H2BmCherry), inside their chorions, were embedded in 1% low melting point agarose prepared in E3 medium, enclosed by glass capillary before extruded into the imaging chamber. Images were acquired with Zeiss LightSheet 7 Microscopy, with 20x/N.A. 1.0 detection objective (additional optical zoom factor 0.55x) and dual-side 10x/N.A. 0.3 illumination objectives. Fluorescence was activated by 561nm laser and detected with LP585 filter. Time-lapse imaging was performed at 2-minute interval from 4 to 20 hours post fertilization. Within each time interval, four 3D volumes were acquired with 90-degree rotation in between to achieve full-embryo multi-view coverage. The z-stack was set to have the pixel size of 0.43 um x 0.43 um x 2.5 um, so that each cell nuclei is sectioned by at least 3 planes. We picked the 150 time-point in this data. We used two major steps, deconvolution and fusion, to pre-process Zebrafish 1 data to enhance the quality and reduce the size. In fluorescence microscopy imaging system, the imaging data can be regarded as the convolution between objects and a point spread function (PSF) due to diffraction, which blurs images and cannot be ignored. For this data, we did semi-blind deconvolution, where an extra beads image was taken for PSF estimation. Then the image was deconvoluted using Landweber iteration regularization. Besides, the data quality is better if the cell is closer to the illumination source and camera. To guarantee all cells are not too far away from at least one camera, two images sharing the same field of view are taken from opposite directions simultaneously and then fused together. Here, we fused the two images using Daubechies wavelets (db4). We took the average of approximate coefficients to prevent noise and took the maximum of detail coefficients to keep the signals. The challenges of segmentation in this data are the relatively low SNR and high cell density in certain regions.\r\n\r\nResolution:\r\n0.43 um x 0.43 um x 2.5 um\r\n\r\nPaper:\r\nN/A (in house data)",
+        "file": "volume_4.npz",
+        "centers": 12185,
+        "rescale": [
+          1.1393051206184444,
+          0.19596048074637243,
+          0.19596048074637243
+        ],
+        "coordinate_scale": [
+          1.1420118343195267,
+          0.19541427826993227,
+          0.19541427826993227
+        ],
+        "voxel_spacing_um": [
+          2.5,
+          0.43,
+          0.43
+        ],
+        "shape": [
+          194,
+          376,
+          376
+        ],
+        "patches": 512,
+        "sha256": "d4f0b30e516080c2edec0556563669c9ad2b7982ce4c19d02fd1b3915af79919"
+      },
+      {
+        "source": "NIS3D/NIS3D/Zebrafish_2/data.tif",
+        "info": "Introduction:\r\nThe data are the first time-point of embryo 3 in the public dataset IDR0051. Zebrafish 2 recorded the tailbud of a zebrafish in a late stage of embryo development. There is a significant amount of blurring within more anterior portions of the tail, which is hard even for human to distinguish the boundary and we use the undefined mask to mask it out. This data have very high cell density and small cell size.\r\n\r\nResolution:\r\n1 um x 1 um x 1 um\r\n\r\nPaper:\r\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC6240315/",
+        "file": "volume_5.npz",
+        "centers": 3969,
+        "rescale": [
+          0.6616069601721133,
+          0.6616069601721133,
+          0.6616069601721133
+        ],
+        "coordinate_scale": [
+          0.66,
+          0.6596385542168675,
+          0.6596385542168675
+        ],
+        "voxel_spacing_um": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shape": [
+          133,
+          220,
+          220
+        ],
+        "patches": 512,
+        "sha256": "138a4a31a77c55769cb15650dcd2207386e9b1a9228dccc27d155ff4e5f5a3ea"
+      }
+    ],
+    "seconds": 483.98551102,
+    "license": "CC-BY-4.0",
+    "source": "https://zenodo.org/api/records/11456029/files/NIS3D.zip/content",
+    "source_md5": "f229013526645c79d31bc58ba7f12be7",
+    "scope": "External dense training; confidence 1 and 2 ignored with margin"
+  }
+}

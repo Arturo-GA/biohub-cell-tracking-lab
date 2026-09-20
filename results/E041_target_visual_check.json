@@ -1,0 +1,25 @@
+{
+  "source": "jarturo/biohub-e041-prepare-cpu v2, volume_0.npz",
+  "sha256": "ff83677008c5d19606674d16000967be4f19995812cbdb92a86aa47b2435a8cd",
+  "patches_inspected": [
+    1,
+    17,
+    35
+  ],
+  "slice_selection": "largest total center target per patch",
+  "mask_fraction": 0.765053927898407,
+  "observation": "Visible center targets align with nuclei in three Drosophila patches; not exhaustive annotation curation",
+  "image": "artifacts/e041_qa/targets.png",
+  "final_corrected_check": {
+    "source": "jarturo/biohub-e041-regrid-cpu v2, volume_4.npz",
+    "sha256": "d4f0b30e516080c2edec0556563669c9ad2b7982ce4c19d02fd1b3915af79919",
+    "patches": [
+      1,
+      17,
+      35
+    ],
+    "mask_fraction": 0.9071018099784851,
+    "image": "artifacts/e041_final_qa/targets.png",
+    "observation": "Corrected zebrafish targets and ignored regions visually inspected in three slices; low SNR limits manual assessment; not exhaustive curation"
+  }
+}

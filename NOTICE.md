@@ -48,3 +48,19 @@ E039 y E040 son modelos propios entrenados desde cero: campo 3D hacia centros
 con supervisión parcial y consulta de imágenes de madre/dos hijas,
 respectivamente. No se presentan como reproducciones de SpatialDINO, HOCT,
 Trackastra ni de otro método publicado.
+
+## NIS3D y experimentos E041–E043
+
+E041 usa imágenes y anotaciones externas de **NIS3D: A Completely Annotated
+Benchmark for Dense 3D Nuclei Image Segmentation**, NeurIPS 2023.
+[Repositorio de los autores](https://github.com/yu-lab-vt/NIS3D),
+[registro de datos 11456029](https://zenodo.org/records/11456029), licencia
+CC-BY-4.0 según los metadatos del registro. Se generan recortes normalizados,
+mapas de centros y máscaras de confianza, y se corrige la anisotropía usando
+los `Info.txt`. Datos y pesos quedan fuera de Git; sus hashes se registran.
+
+E042 es un control propio de información espacial. E043 es una implementación
+propia de selección entera de eventos y perturb-and-MAP, inspirada en la línea
+de seguimiento con incertidumbre; se revisó el repositorio público
+[NabaviLab](https://github.com/NabaviLab/bayesian-transformer-cell-tracking).
+No se incorpora su código ni se afirma reproducir su modelo bayesiano.

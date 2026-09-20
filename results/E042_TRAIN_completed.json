@@ -1,0 +1,299 @@
+{
+  "kernel": "jarturo/biohub-e042-train",
+  "version": 1,
+  "manifest_sha256": "051437c502a78118e8b02c95adcc2c60180afdfa9ea612a2dea7e1db9b5b7e78",
+  "result": {
+    "status": "complete",
+    "config": {
+      "seed": 420920,
+      "steps": 3000,
+      "deadline_seconds": 3600,
+      "data_sha256": "e48cf1f1f6c429289a8eae97f393a878df28fcaead1330453da16380c23d8c4e",
+      "input": "two channels: current crop plus annotated consecutive-parent query; same examples in both arms",
+      "gate": "native mean-per-video localization error <0.9 coarse and improves each embryo"
+    },
+    "models": [
+      {
+        "arm": "coarse",
+        "checkpoint": "coarse.pt",
+        "sha256": "426c02f25371176defe5b53aaadcacfbeaeebb58a4594a68b81dd71db2962bac",
+        "updates": 2997,
+        "first_layer_change": 0.40372931957244873,
+        "seconds": 48.20943769799999,
+        "history": [
+          {
+            "step": 250,
+            "loss": 0.41301417350769043
+          },
+          {
+            "step": 500,
+            "loss": 1.0805127620697021
+          },
+          {
+            "step": 750,
+            "loss": 0.8581392168998718
+          },
+          {
+            "step": 1000,
+            "loss": 0.21336649358272552
+          },
+          {
+            "step": 1250,
+            "loss": 0.1791376769542694
+          },
+          {
+            "step": 1500,
+            "loss": 0.7908687591552734
+          },
+          {
+            "step": 1750,
+            "loss": 0.14980946481227875
+          },
+          {
+            "step": 2000,
+            "loss": 0.0863301157951355
+          },
+          {
+            "step": 2250,
+            "loss": 0.38950449228286743
+          },
+          {
+            "step": 2500,
+            "loss": 0.31701087951660156
+          },
+          {
+            "step": 2750,
+            "loss": 0.24378064274787903
+          },
+          {
+            "step": 3000,
+            "loss": 0.11305908858776093
+          }
+        ],
+        "outputs": [
+          {
+            "video": "44b6_267148e4",
+            "file": "44b6_267148e4_coarse.npz",
+            "sha256": "96e6c1558fb301598362ebcea0ae46f4c2c5642198fc0867cf509011c0483dfb"
+          },
+          {
+            "video": "44b6_341df25f",
+            "file": "44b6_341df25f_coarse.npz",
+            "sha256": "57b6e441e6425144d0c70ff5681b2c2f4d3866df6d9f9828cf2dd9325fe9ed99"
+          },
+          {
+            "video": "44b6_7a302da0",
+            "file": "44b6_7a302da0_coarse.npz",
+            "sha256": "0f3d232d4b2e015f03023ea50e97bafa62795941f1751d5c95f3cadf17f9e616"
+          },
+          {
+            "video": "44b6_95029e92",
+            "file": "44b6_95029e92_coarse.npz",
+            "sha256": "d3e3b5d5ac19cce9189fb3cfcda664c8e6344733c59dfb308cf3bbb372f6f5e6"
+          },
+          {
+            "video": "44b6_996155de",
+            "file": "44b6_996155de_coarse.npz",
+            "sha256": "a7ccc855257d0bc7e8af71b21162d47fb3d8a6aa9b4039d46bda039322c90ad2"
+          },
+          {
+            "video": "44b6_9be80b04",
+            "file": "44b6_9be80b04_coarse.npz",
+            "sha256": "e0eee668022dfbc4605e0dc49148613ec65e86214b7b346d58aa8c1ed8f99eb3"
+          },
+          {
+            "video": "44b6_deabac95",
+            "file": "44b6_deabac95_coarse.npz",
+            "sha256": "ead0c0663295c8636e81dd618775226ec8ce9e66be095d7716d29a2539e8a70b"
+          },
+          {
+            "video": "44b6_e31261b4",
+            "file": "44b6_e31261b4_coarse.npz",
+            "sha256": "a80e89d2bb7f327d659a211025d51030fc51fd45e9ef37f2ce5eaa068cdf6a12"
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "file": "6bba_05db0fb1_coarse.npz",
+            "sha256": "c4fd5dccc7dcb9d53e491b5e67d69c38f55ca0c8af83a3d38f9dc768bbb2e43e"
+          },
+          {
+            "video": "6bba_207c6aaf",
+            "file": "6bba_207c6aaf_coarse.npz",
+            "sha256": "b43025353faeab30686e02d138065bb968a3b0c21c575562969191d516322b69"
+          },
+          {
+            "video": "6bba_3abfe10a",
+            "file": "6bba_3abfe10a_coarse.npz",
+            "sha256": "2bb996b8eb2aba15a5b8adcd0b02982472dd4c329104a1567a50d04c4a9aad5e"
+          },
+          {
+            "video": "6bba_3db54e20",
+            "file": "6bba_3db54e20_coarse.npz",
+            "sha256": "a978b12f2c948ec7e346be902289e05844b0c5bc9ddac6c2450d7f340c891588"
+          },
+          {
+            "video": "6bba_74686d6a",
+            "file": "6bba_74686d6a_coarse.npz",
+            "sha256": "75400913954abe8c93d0f8e6ecde6ca752284a82acb58ebbebd6c5391f2d3181"
+          },
+          {
+            "video": "6bba_cff5865f",
+            "file": "6bba_cff5865f_coarse.npz",
+            "sha256": "1aef5935c2d72a2500d6f05ffdd57c0387fdb6b09279234dc32a87056762830c"
+          },
+          {
+            "video": "6bba_d3da753b",
+            "file": "6bba_d3da753b_coarse.npz",
+            "sha256": "b06398a5d98051ca6a83110b4652793a9cd04f249952fda9b7e55a5f3b0dbb54"
+          },
+          {
+            "video": "6bba_ebff6e76",
+            "file": "6bba_ebff6e76_coarse.npz",
+            "sha256": "2a791003709000258afe752fafd3772c223bf1992c5b97028ac0c1cc837693e6"
+          }
+        ]
+      },
+      {
+        "arm": "native",
+        "checkpoint": "native.pt",
+        "sha256": "aef48fdf585054a2e7b9fb33d774d6181571dabcdde7bee0556d413dbe8fd254",
+        "updates": 2997,
+        "first_layer_change": 0.40070950984954834,
+        "seconds": 45.91990513400003,
+        "history": [
+          {
+            "step": 250,
+            "loss": 0.4207257926464081
+          },
+          {
+            "step": 500,
+            "loss": 1.056220293045044
+          },
+          {
+            "step": 750,
+            "loss": 0.8888561725616455
+          },
+          {
+            "step": 1000,
+            "loss": 0.21504519879817963
+          },
+          {
+            "step": 1250,
+            "loss": 0.1788543313741684
+          },
+          {
+            "step": 1500,
+            "loss": 0.845572829246521
+          },
+          {
+            "step": 1750,
+            "loss": 0.14335869252681732
+          },
+          {
+            "step": 2000,
+            "loss": 0.09131934493780136
+          },
+          {
+            "step": 2250,
+            "loss": 0.3844989240169525
+          },
+          {
+            "step": 2500,
+            "loss": 0.2881912887096405
+          },
+          {
+            "step": 2750,
+            "loss": 0.23285195231437683
+          },
+          {
+            "step": 3000,
+            "loss": 0.1054823249578476
+          }
+        ],
+        "outputs": [
+          {
+            "video": "44b6_267148e4",
+            "file": "44b6_267148e4_native.npz",
+            "sha256": "a0d2ae2d482512838cec3f78a1a7866b37696900f32b34aa4a71472705d0be12"
+          },
+          {
+            "video": "44b6_341df25f",
+            "file": "44b6_341df25f_native.npz",
+            "sha256": "73ba737d313c74659c02a58748ab3202df00cc2d51280890a45eb877fb66d289"
+          },
+          {
+            "video": "44b6_7a302da0",
+            "file": "44b6_7a302da0_native.npz",
+            "sha256": "ce16332c7ec1c165d7eda5ad4c8ed57d51652ea447b631d25a07ae5a007bb80f"
+          },
+          {
+            "video": "44b6_95029e92",
+            "file": "44b6_95029e92_native.npz",
+            "sha256": "6704c8ff666b2cc032d5a858eb2ef2188540590a8be7f7b2f23bfff937f2f766"
+          },
+          {
+            "video": "44b6_996155de",
+            "file": "44b6_996155de_native.npz",
+            "sha256": "778a49d3f301b819709116e2dd37379ec950194f9528cdd7943601bd0346004b"
+          },
+          {
+            "video": "44b6_9be80b04",
+            "file": "44b6_9be80b04_native.npz",
+            "sha256": "e6474dc8c834c2a06d043b72c020fa080cb31b64b7919f477f2e206e477be397"
+          },
+          {
+            "video": "44b6_deabac95",
+            "file": "44b6_deabac95_native.npz",
+            "sha256": "03aec072160f9f0213fdc00f68d2febc3c721978564e0e082c31517a69e5f2c1"
+          },
+          {
+            "video": "44b6_e31261b4",
+            "file": "44b6_e31261b4_native.npz",
+            "sha256": "bc46dc39d47a963b17e1caf6dd9b439e3e4bc0393e585d5a96b8c110ff9ca111"
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "file": "6bba_05db0fb1_native.npz",
+            "sha256": "732ce442c8950ee821d80979ad31fb4c0afb9e6b2430bd34d3cae2f4c49c1576"
+          },
+          {
+            "video": "6bba_207c6aaf",
+            "file": "6bba_207c6aaf_native.npz",
+            "sha256": "f7410d5c3d57f439bc4f3683d7607b6cd3dca6c1136c0c97652564de33d4e579"
+          },
+          {
+            "video": "6bba_3abfe10a",
+            "file": "6bba_3abfe10a_native.npz",
+            "sha256": "c3cba36028a0fbf598f5c9af8db7047b5dba0cff3a3762fae7f6faf13c70d559"
+          },
+          {
+            "video": "6bba_3db54e20",
+            "file": "6bba_3db54e20_native.npz",
+            "sha256": "9166fca5b62739cc50f476be24d657614220af6fcaa1a77a8ea9cbb84a84557e"
+          },
+          {
+            "video": "6bba_74686d6a",
+            "file": "6bba_74686d6a_native.npz",
+            "sha256": "1ff1d070aaf7147d38b618d42a420f26c98908234bd14602642af166b083c30d"
+          },
+          {
+            "video": "6bba_cff5865f",
+            "file": "6bba_cff5865f_native.npz",
+            "sha256": "6b7c83cec0baf4a104d10b98018573bf8ff8b4f8bb051e270626d33af53b56cc"
+          },
+          {
+            "video": "6bba_d3da753b",
+            "file": "6bba_d3da753b_native.npz",
+            "sha256": "f9a3a6b13e08614237ef833483638ceef45da7f02b8e17484d6633aa72323ab7"
+          },
+          {
+            "video": "6bba_ebff6e76",
+            "file": "6bba_ebff6e76_native.npz",
+            "sha256": "ac0c735d3e4d8bb67f9709a79b2ef4bf76a61760c8c16a79e30dd05724571c03"
+          }
+        ]
+      }
+    ],
+    "seconds": 119.08046588000002
+  }
+}

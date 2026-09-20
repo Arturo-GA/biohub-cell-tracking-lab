@@ -1,0 +1,127 @@
+{
+  "scope": "Posthoc descriptive paired-video audit, does not change the failed promotion gate",
+  "rows": [
+    {
+      "video": "44b6_267148e4",
+      "dense3": 12,
+      "peaks3": 12,
+      "dense7": 15,
+      "static7": 15
+    },
+    {
+      "video": "44b6_341df25f",
+      "dense3": 6,
+      "peaks3": 6,
+      "dense7": 11,
+      "static7": 11
+    },
+    {
+      "video": "44b6_7a302da0",
+      "dense3": 9,
+      "peaks3": 5,
+      "dense7": 11,
+      "static7": 20
+    },
+    {
+      "video": "44b6_95029e92",
+      "dense3": 10,
+      "peaks3": 10,
+      "dense7": 10,
+      "static7": 10
+    },
+    {
+      "video": "44b6_996155de",
+      "dense3": 18,
+      "peaks3": 15,
+      "dense7": 19,
+      "static7": 18
+    },
+    {
+      "video": "44b6_9be80b04",
+      "dense3": 4,
+      "peaks3": 4,
+      "dense7": 7,
+      "static7": 8
+    },
+    {
+      "video": "44b6_deabac95",
+      "dense3": 7,
+      "peaks3": 5,
+      "dense7": 7,
+      "static7": 7
+    },
+    {
+      "video": "44b6_e31261b4",
+      "dense3": 3,
+      "peaks3": 2,
+      "dense7": 4,
+      "static7": 4
+    },
+    {
+      "video": "6bba_05db0fb1",
+      "dense3": 17,
+      "peaks3": 14,
+      "dense7": 22,
+      "static7": 30
+    },
+    {
+      "video": "6bba_207c6aaf",
+      "dense3": 11,
+      "peaks3": 11,
+      "dense7": 20,
+      "static7": 20
+    },
+    {
+      "video": "6bba_3abfe10a",
+      "dense3": 17,
+      "peaks3": 14,
+      "dense7": 25,
+      "static7": 29
+    },
+    {
+      "video": "6bba_3db54e20",
+      "dense3": 12,
+      "peaks3": 10,
+      "dense7": 21,
+      "static7": 23
+    },
+    {
+      "video": "6bba_74686d6a",
+      "dense3": 12,
+      "peaks3": 5,
+      "dense7": 30,
+      "static7": 27
+    },
+    {
+      "video": "6bba_cff5865f",
+      "dense3": 43,
+      "peaks3": 47,
+      "dense7": 49,
+      "static7": 54
+    },
+    {
+      "video": "6bba_d3da753b",
+      "dense3": 33,
+      "peaks3": 28,
+      "dense7": 41,
+      "static7": 41
+    },
+    {
+      "video": "6bba_ebff6e76",
+      "dense3": 13,
+      "peaks3": 6,
+      "dense7": 29,
+      "static7": 37
+    }
+  ],
+  "videos_win_tie_loss_3um_vs_peaks": [
+    10,
+    5,
+    1
+  ],
+  "sum_gain": 33,
+  "stratified_video_bootstrap_95pct_sum_gain": [
+    11.0,
+    53.0
+  ]
+}

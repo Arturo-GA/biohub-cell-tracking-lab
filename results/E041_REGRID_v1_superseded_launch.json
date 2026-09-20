@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e041-regrid-cpu",
+  "version": 1,
+  "kernel_id": 135155747,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e041-regrid-cpu",
+  "ref": "/code/jarturo/biohub-e041-regrid-cpu",
+  "launched_at_utc": "2026-09-20T22:22:31.063990+00:00",
+  "payload_sha256": "071b7f96473d6c4223a73cb332384a847a044cd69190df66d8ed683783dff97c",
+  "notebook_sha256": "de667d1b1c4a329817f32783cdfed601ec52661cf158e061e6c63c59d0357f9c",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

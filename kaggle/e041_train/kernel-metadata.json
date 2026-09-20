@@ -1,0 +1,19 @@
+{
+  "id": "jarturo/biohub-e041-train",
+  "title": "Biohub E041 TRAIN",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "competition_sources": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-e038-prepare-cpu",
+    "jarturo/biohub-e041-regrid-cpu"
+  ],
+  "model_sources": []
+}

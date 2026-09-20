@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "All three image experiments completed; E038 and E039 failed their development gates; E040 reject_joint_event_component; no new submission or official tracking score",
+  "quality_status": "E041-E043 completed sequentially; E041/E042 gates failed with component signals; E043 {'map': False, 'consensus': False}; no new submission",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -1754,5 +1754,34 @@
   },
   "three_lines_active_stage": null,
   "manual_turn_monitoring": false,
-  "three_lines_summary": "results/E038_E040_completed.json"
+  "three_lines_summary": "results/E041_E043_completed.json",
+  "E041": {
+    "status": "COMPLETE",
+    "stage": "E041_EVALUATE",
+    "launch": "results/E041_PREPARE_launch.json",
+    "runtime_repair": "v1 discovered real archive filenames; v2 corrects aliases",
+    "leaderboard_submitted": false,
+    "receipt": "results/E041_completed.json",
+    "passed": false,
+    "decision": "No promotion: better tight localization but lower 7um recall than static field. Retain dense-supervision signal."
+  },
+  "E042": {
+    "status": "COMPLETE",
+    "stage": "E042_EVALUATE",
+    "leaderboard_submitted": false,
+    "receipt": "results/E042_completed.json",
+    "passed": false,
+    "decision": "No native-resolution promotion: slightly worse in both embryos. Query permutation shows dependence on temporal reference."
+  },
+  "E043": {
+    "status": "COMPLETE",
+    "stage": "E043_EVALUATE",
+    "leaderboard_submitted": false,
+    "receipt": "results/E043_completed.json",
+    "passed": {
+      "map": false,
+      "consensus": false
+    },
+    "decision": "No promotion: full-graph gate not met; do not tune on these same outcomes."
+  }
 }

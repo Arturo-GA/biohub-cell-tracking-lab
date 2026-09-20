@@ -1,0 +1,15 @@
+{
+  "seed": 410920,
+  "steps": 4000,
+  "deadline_seconds": 3600,
+  "data_sha256": "97689f24a28090a1dfeda709297eb9f3d7c4c120ec22ac50baf11a3c655a6cee",
+  "biohub_data_sha256": "b8df897a2b8496d1b1a37018147df03f9db25b6c55806328e68b675b6ea3454a",
+  "frames": [
+    10,
+    30,
+    50,
+    70,
+    90
+  ],
+  "gate": "budget256: dense matched3 greater than all E039 controls in each embryo; matched7 no worse than any"
+}

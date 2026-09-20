@@ -1,0 +1,14 @@
+{
+  "sha256": "a6208e4f18713ae41dd1d111f394298e00a4d0c89fb15d9700d2ae6b0d99f40a",
+  "files": [
+    "baseline/e042_protocol.json",
+    "scripts/association_cpu_runner.py",
+    "scripts/resolution_train_runner.py",
+    "scripts/spatial_probe_features_runner.py",
+    "src/biohub_lab/resolution_probe.py",
+    "src/biohub_lab/spatial_probe.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

@@ -1,5 +1,16 @@
 # Biohub Cell Tracking Lab
 
+**E041–E043 completados, sin nueva submission:** la supervisión densa NIS3D
+recupera 227 centros a 3 µm frente a 194 del mejor control a esa distancia,
+pero pierde cobertura a 7 µm frente al campo estático. La resolución nativa
+no mejora la localización: 3,796 frente a 3,767 µm. El seguimiento con
+incertidumbre baja a 0,893002/0,891838 local frente a 0,900753 de Harmonic,
+con más divisiones falsas. Ninguna variante pasa su criterio completo.
+Se conserva la señal de supervisión densa. Siete pruebas locales y tres pesos
+verificados; GPU 4,8 minutos de proceso, preparación y métricas CPU. Sin Colab
+ni trabajos pendientes de estas etapas.
+[Protocolos, resultados y límites](docs/E041_E043_TRES_LINEAS.es.md).
+
 **E038–E040 completados y rechazados:** SpatialDINO no mejora la localización
 frente al control de intensidades (5,435 frente a 5,395 µm). El detector temporal
 recupera 175 centros a 3 µm frente a 177 del estático, con presupuesto de 256.
