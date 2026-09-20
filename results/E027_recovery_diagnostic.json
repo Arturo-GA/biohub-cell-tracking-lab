@@ -1,0 +1,158 @@
+{
+  "status": "complete",
+  "totals": {
+    "control_missed": 40,
+    "recovered": 14,
+    "near_existing_control_2um": 0,
+    "far_from_control_7um": 6,
+    "with_neighbor_candidate_5um": 8
+  },
+  "recoveries": [
+    {
+      "video": "44b6_0db75fae",
+      "frame": 0,
+      "truth_index": 1,
+      "candidate_to_control_um": 8.22894778812833,
+      "adjacent_candidate_distance_um": [
+        2.2137840603012497
+      ],
+      "has_neighbor_within_5um": true
+    },
+    {
+      "video": "44b6_0db75fae",
+      "frame": 1,
+      "truth_index": 1,
+      "candidate_to_control_um": 9.882207530808072,
+      "adjacent_candidate_distance_um": [
+        2.2137840603012497
+      ],
+      "has_neighbor_within_5um": true
+    },
+    {
+      "video": "44b6_587a1e22",
+      "frame": 56,
+      "truth_index": 0,
+      "candidate_to_control_um": 12.437914718083459,
+      "adjacent_candidate_distance_um": [
+        7.508615508087868,
+        8.597768323720956
+      ],
+      "has_neighbor_within_5um": false
+    },
+    {
+      "video": "44b6_587a1e22",
+      "frame": 57,
+      "truth_index": 1,
+      "candidate_to_control_um": 6.343283558414402,
+      "adjacent_candidate_distance_um": [
+        5.55099164875288
+      ],
+      "has_neighbor_within_5um": false
+    },
+    {
+      "video": "44b6_aaf8b0ea",
+      "frame": 63,
+      "truth_index": 0,
+      "candidate_to_control_um": 3.5213745082960695,
+      "adjacent_candidate_distance_um": [
+        2.003219028359128
+      ],
+      "has_neighbor_within_5um": true
+    },
+    {
+      "video": "44b6_c15fded2",
+      "frame": 21,
+      "truth_index": 0,
+      "candidate_to_control_um": 9.939255529328886,
+      "adjacent_candidate_distance_um": [
+        7.474561541830853,
+        8.511028336969732
+      ],
+      "has_neighbor_within_5um": false
+    },
+    {
+      "video": "44b6_c8e2a523",
+      "frame": 74,
+      "truth_index": 1,
+      "candidate_to_control_um": 2.3644103567531563,
+      "adjacent_candidate_distance_um": [
+        3.4493146369532948,
+        4.687186582040925
+      ],
+      "has_neighbor_within_5um": true
+    },
+    {
+      "video": "44b6_c8e2a523",
+      "frame": 75,
+      "truth_index": 1,
+      "candidate_to_control_um": 9.114405423513118,
+      "adjacent_candidate_distance_um": [
+        6.246969414505903
+      ],
+      "has_neighbor_within_5um": false
+    },
+    {
+      "video": "6bba_5c824876",
+      "frame": 0,
+      "truth_index": 3,
+      "candidate_to_control_um": 3.036353726800284,
+      "adjacent_candidate_distance_um": [
+        2.402729027746766
+      ],
+      "has_neighbor_within_5um": true
+    },
+    {
+      "video": "6bba_5c824876",
+      "frame": 1,
+      "truth_index": 3,
+      "candidate_to_control_um": 2.3266436739742438,
+      "adjacent_candidate_distance_um": [
+        2.402729027746766
+      ],
+      "has_neighbor_within_5um": true
+    },
+    {
+      "video": "6bba_9a41d029",
+      "frame": 19,
+      "truth_index": 5,
+      "candidate_to_control_um": 3.0808269847370244,
+      "adjacent_candidate_distance_um": [
+        3.4604078285137
+      ],
+      "has_neighbor_within_5um": true
+    },
+    {
+      "video": "6bba_f1fde7e0",
+      "frame": 0,
+      "truth_index": 1,
+      "candidate_to_control_um": 2.4072318439689937,
+      "adjacent_candidate_distance_um": [
+        2.206978187888657
+      ],
+      "has_neighbor_within_5um": true
+    },
+    {
+      "video": "6bba_f1fde7e0",
+      "frame": 0,
+      "truth_index": 3,
+      "candidate_to_control_um": 9.545600099171311,
+      "adjacent_candidate_distance_um": [
+        7.509755941206594
+      ],
+      "has_neighbor_within_5um": false
+    },
+    {
+      "video": "6bba_f1fde7e0",
+      "frame": 1,
+      "truth_index": 4,
+      "candidate_to_control_um": 3.907420623948314,
+      "adjacent_candidate_distance_um": [
+        6.892372240331113
+      ],
+      "has_neighbor_within_5um": false
+    }
+  ],
+  "scope": "Post-hoc calibration diagnosis; nearest neighbors do not establish cell identity, valid edges, divisions or precision",
+  "gpu": false,
+  "leaderboard_submitted": false
+}

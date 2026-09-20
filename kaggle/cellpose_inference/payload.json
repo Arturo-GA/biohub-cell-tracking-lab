@@ -1,0 +1,14 @@
+{
+  "sha256": "0c22c1c4bb2e8b56b5e50272511fe54f001af5bb85723f62de134ad0621c7bee",
+  "files": [
+    "scripts/cellpose_inference_runner.py",
+    "scripts/cellpose_runtime.py",
+    "baseline/e028_runtime.json",
+    "baseline/e028_pilot.json",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/nucverse_instances.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

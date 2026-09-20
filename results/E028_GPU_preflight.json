@@ -1,0 +1,9 @@
+{
+  "payload_sha256": "0c22c1c4bb2e8b56b5e50272511fe54f001af5bb85723f62de134ad0621c7bee",
+  "notebook_sha256": "3b47a98f24a01507cdc7a08547463df56f3b05c62fd4f92a7900dd7023301b30",
+  "files": 6,
+  "gpu": true,
+  "private": true,
+  "frames": 2,
+  "gpu_justification": "Neural inference through a different 86M-parameter transformer on two full volumes; preparation and masks/evaluation remain CPU"
+}

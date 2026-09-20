@@ -19,3 +19,15 @@
 - `detection_dag.py` y `dag_coverage.py` (E011) son implementaciones propias de representación de parejas, flujo para dos trayectorias disjuntas y auditoría de cobertura. Reutilizan los adaptadores de detección CELLECT y gaussianas documentados arriba. E011 incluye el código y licencia GPL-2.0 de CELLECT y adjunta sus pesos públicos ya verificados; no utiliza predicciones de Harmonic ni los centros anotados de la preparación temporal como entrada del generador.
 - `harmonic_centers.py` (E012) extrae en runtime las funciones de detección del código de Pilkwang con los parches de Harmonic ya atribuidos arriba, eliminando la predicción de enlaces y usando un lector de metadatos de imagen sin GEFF. Reutiliza los dos checkpoints temporales públicos de Harmonic. Su combinación de centros y comparación de cobertura son adaptadores de este proyecto. E012 consume las propuestas verificadas de E011; no redistribuye sus datos, los pesos ni las correspondencias con anotaciones.
 - Los módulos `event_*` (E013) implementan un selector propio con características congeladas de los dos UNet públicos, atención local, cabezas de enlaces/divisiones y selección temporal mediante MILP. Reutilizan la detección combinada de E012 y el adaptador CELLECT con su licencia. No se presentan como reproducción de otro tracker. El paquete enviado a Kaggle incluye código, licencias, configuración y hashes; las imágenes, anotaciones y pesos se leen de fuentes adjuntas y no se incorporan al paquete ni a Git.
+# Cellpose-DINO experimental dependency (E028)
+
+E028 uses the Cellpose 4.2.1.1 package and public `cpdino-vitb` checkpoint from
+[MouseLand](https://github.com/MouseLand/cellpose), with the
+[DINOv3 code](https://github.com/facebookresearch/dinov3) dependency.
+Authors and references: [Cellpose model documentation](https://cellpose.readthedocs.io/en/latest/models.html)
+and [public model card](https://huggingface.co/mouseland/cellpose-sam).
+The model card lists BSD-3-Clause; Cellpose documents CC-BY-NC for its original
+training datasets. Those datasets are not redistributed by this repository.
+Dependency wheels retain their own licenses; weights and wheels are outside Git.
+Pinned revisions, hashes, compatibility handling, and experimental scope are
+recorded in `baseline/e028_cellpose.json` and `docs/E028_CELLPOSE_DINO.es.md`.

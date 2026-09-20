@@ -1,0 +1,653 @@
+{
+  "status": "complete",
+  "inference_source_files_verified": 8,
+  "evaluation_source_files_verified": 25,
+  "frames": 33,
+  "totals": {
+    "gt_nodes": 203,
+    "harmonic_nodes": 7454,
+    "nucverse_nodes": 5208,
+    "harmonic_matched": 163,
+    "nucverse_matched": 132,
+    "nucverse_only": 14,
+    "harmonic_only": 45,
+    "union_coverage_upper_bound": 178
+  },
+  "control_missed_centers": 40,
+  "candidate_recovers_control_misses": 14,
+  "recovery_fraction": 0.35,
+  "gpu_process_seconds": 223.907291644,
+  "cpu_seconds": 755.479103392,
+  "frames_detail": [
+    {
+      "video": "44b6_0db75fae",
+      "frame": 0,
+      "gt_nodes": 2,
+      "harmonic_nodes": 181,
+      "nucverse_nodes": 185,
+      "harmonic_matched": 1,
+      "nucverse_matched": 2,
+      "nucverse_only": 1,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 353486,
+        "in_bounds_voxels": 353354,
+        "seeds": 185,
+        "instances": 185,
+        "assigned_voxels": 297973
+      }
+    },
+    {
+      "video": "44b6_0db75fae",
+      "frame": 1,
+      "gt_nodes": 2,
+      "harmonic_nodes": 189,
+      "nucverse_nodes": 178,
+      "harmonic_matched": 1,
+      "nucverse_matched": 2,
+      "nucverse_only": 1,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 348922,
+        "in_bounds_voxels": 347945,
+        "seeds": 178,
+        "instances": 178,
+        "assigned_voxels": 289775
+      }
+    },
+    {
+      "video": "44b6_587a1e22",
+      "frame": 55,
+      "gt_nodes": 6,
+      "harmonic_nodes": 212,
+      "nucverse_nodes": 139,
+      "harmonic_matched": 6,
+      "nucverse_matched": 5,
+      "nucverse_only": 0,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 6,
+      "decoding": {
+        "foreground_voxels": 300068,
+        "in_bounds_voxels": 295185,
+        "seeds": 139,
+        "instances": 139,
+        "assigned_voxels": 279593
+      }
+    },
+    {
+      "video": "44b6_587a1e22",
+      "frame": 56,
+      "gt_nodes": 6,
+      "harmonic_nodes": 203,
+      "nucverse_nodes": 150,
+      "harmonic_matched": 5,
+      "nucverse_matched": 6,
+      "nucverse_only": 1,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 6,
+      "decoding": {
+        "foreground_voxels": 306110,
+        "in_bounds_voxels": 302992,
+        "seeds": 150,
+        "instances": 150,
+        "assigned_voxels": 281710
+      }
+    },
+    {
+      "video": "44b6_587a1e22",
+      "frame": 57,
+      "gt_nodes": 6,
+      "harmonic_nodes": 203,
+      "nucverse_nodes": 136,
+      "harmonic_matched": 5,
+      "nucverse_matched": 5,
+      "nucverse_only": 1,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 6,
+      "decoding": {
+        "foreground_voxels": 305066,
+        "in_bounds_voxels": 300921,
+        "seeds": 136,
+        "instances": 136,
+        "assigned_voxels": 277212
+      }
+    },
+    {
+      "video": "44b6_aaf8b0ea",
+      "frame": 61,
+      "gt_nodes": 2,
+      "harmonic_nodes": 155,
+      "nucverse_nodes": 146,
+      "harmonic_matched": 2,
+      "nucverse_matched": 2,
+      "nucverse_only": 0,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 326445,
+        "in_bounds_voxels": 323635,
+        "seeds": 146,
+        "instances": 146,
+        "assigned_voxels": 316935
+      }
+    },
+    {
+      "video": "44b6_aaf8b0ea",
+      "frame": 62,
+      "gt_nodes": 3,
+      "harmonic_nodes": 154,
+      "nucverse_nodes": 146,
+      "harmonic_matched": 2,
+      "nucverse_matched": 2,
+      "nucverse_only": 0,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 3,
+      "decoding": {
+        "foreground_voxels": 325815,
+        "in_bounds_voxels": 321310,
+        "seeds": 146,
+        "instances": 146,
+        "assigned_voxels": 315853
+      }
+    },
+    {
+      "video": "44b6_aaf8b0ea",
+      "frame": 63,
+      "gt_nodes": 3,
+      "harmonic_nodes": 154,
+      "nucverse_nodes": 145,
+      "harmonic_matched": 2,
+      "nucverse_matched": 3,
+      "nucverse_only": 1,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 3,
+      "decoding": {
+        "foreground_voxels": 325967,
+        "in_bounds_voxels": 322094,
+        "seeds": 145,
+        "instances": 145,
+        "assigned_voxels": 313009
+      }
+    },
+    {
+      "video": "44b6_c15fded2",
+      "frame": 20,
+      "gt_nodes": 0,
+      "harmonic_nodes": 196,
+      "nucverse_nodes": 161,
+      "harmonic_matched": 0,
+      "nucverse_matched": 0,
+      "nucverse_only": 0,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 0,
+      "decoding": {
+        "foreground_voxels": 313249,
+        "in_bounds_voxels": 300668,
+        "seeds": 161,
+        "instances": 161,
+        "assigned_voxels": 296929
+      }
+    },
+    {
+      "video": "44b6_c15fded2",
+      "frame": 21,
+      "gt_nodes": 1,
+      "harmonic_nodes": 193,
+      "nucverse_nodes": 172,
+      "harmonic_matched": 0,
+      "nucverse_matched": 1,
+      "nucverse_only": 1,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 1,
+      "decoding": {
+        "foreground_voxels": 346056,
+        "in_bounds_voxels": 337296,
+        "seeds": 172,
+        "instances": 172,
+        "assigned_voxels": 332937
+      }
+    },
+    {
+      "video": "44b6_c15fded2",
+      "frame": 22,
+      "gt_nodes": 2,
+      "harmonic_nodes": 186,
+      "nucverse_nodes": 166,
+      "harmonic_matched": 1,
+      "nucverse_matched": 1,
+      "nucverse_only": 0,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 1,
+      "decoding": {
+        "foreground_voxels": 339415,
+        "in_bounds_voxels": 329766,
+        "seeds": 166,
+        "instances": 166,
+        "assigned_voxels": 324945
+      }
+    },
+    {
+      "video": "44b6_c8e2a523",
+      "frame": 73,
+      "gt_nodes": 2,
+      "harmonic_nodes": 323,
+      "nucverse_nodes": 286,
+      "harmonic_matched": 2,
+      "nucverse_matched": 1,
+      "nucverse_only": 0,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 383441,
+        "in_bounds_voxels": 366517,
+        "seeds": 286,
+        "instances": 286,
+        "assigned_voxels": 361164
+      }
+    },
+    {
+      "video": "44b6_c8e2a523",
+      "frame": 74,
+      "gt_nodes": 2,
+      "harmonic_nodes": 326,
+      "nucverse_nodes": 276,
+      "harmonic_matched": 1,
+      "nucverse_matched": 1,
+      "nucverse_only": 1,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 364019,
+        "in_bounds_voxels": 345952,
+        "seeds": 276,
+        "instances": 276,
+        "assigned_voxels": 338885
+      }
+    },
+    {
+      "video": "44b6_c8e2a523",
+      "frame": 75,
+      "gt_nodes": 2,
+      "harmonic_nodes": 331,
+      "nucverse_nodes": 280,
+      "harmonic_matched": 1,
+      "nucverse_matched": 2,
+      "nucverse_only": 1,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 365563,
+        "in_bounds_voxels": 348698,
+        "seeds": 280,
+        "instances": 280,
+        "assigned_voxels": 342389
+      }
+    },
+    {
+      "video": "6bba_1f58c2f6",
+      "frame": 34,
+      "gt_nodes": 3,
+      "harmonic_nodes": 400,
+      "nucverse_nodes": 213,
+      "harmonic_matched": 3,
+      "nucverse_matched": 1,
+      "nucverse_only": 0,
+      "harmonic_only": 2,
+      "union_coverage_upper_bound": 3,
+      "decoding": {
+        "foreground_voxels": 385853,
+        "in_bounds_voxels": 382168,
+        "seeds": 213,
+        "instances": 213,
+        "assigned_voxels": 370193
+      }
+    },
+    {
+      "video": "6bba_1f58c2f6",
+      "frame": 35,
+      "gt_nodes": 3,
+      "harmonic_nodes": 399,
+      "nucverse_nodes": 200,
+      "harmonic_matched": 2,
+      "nucverse_matched": 1,
+      "nucverse_only": 0,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 399293,
+        "in_bounds_voxels": 398144,
+        "seeds": 200,
+        "instances": 200,
+        "assigned_voxels": 383160
+      }
+    },
+    {
+      "video": "6bba_1f58c2f6",
+      "frame": 36,
+      "gt_nodes": 3,
+      "harmonic_nodes": 404,
+      "nucverse_nodes": 198,
+      "harmonic_matched": 2,
+      "nucverse_matched": 1,
+      "nucverse_only": 0,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 2,
+      "decoding": {
+        "foreground_voxels": 387969,
+        "in_bounds_voxels": 380858,
+        "seeds": 198,
+        "instances": 198,
+        "assigned_voxels": 370383
+      }
+    },
+    {
+      "video": "6bba_5c824876",
+      "frame": 0,
+      "gt_nodes": 11,
+      "harmonic_nodes": 193,
+      "nucverse_nodes": 165,
+      "harmonic_matched": 9,
+      "nucverse_matched": 8,
+      "nucverse_only": 1,
+      "harmonic_only": 2,
+      "union_coverage_upper_bound": 10,
+      "decoding": {
+        "foreground_voxels": 312803,
+        "in_bounds_voxels": 308350,
+        "seeds": 165,
+        "instances": 165,
+        "assigned_voxels": 303612
+      }
+    },
+    {
+      "video": "6bba_5c824876",
+      "frame": 1,
+      "gt_nodes": 11,
+      "harmonic_nodes": 198,
+      "nucverse_nodes": 174,
+      "harmonic_matched": 9,
+      "nucverse_matched": 9,
+      "nucverse_only": 1,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 10,
+      "decoding": {
+        "foreground_voxels": 329907,
+        "in_bounds_voxels": 324443,
+        "seeds": 174,
+        "instances": 174,
+        "assigned_voxels": 321010
+      }
+    },
+    {
+      "video": "6bba_6479435d",
+      "frame": 33,
+      "gt_nodes": 9,
+      "harmonic_nodes": 336,
+      "nucverse_nodes": 174,
+      "harmonic_matched": 7,
+      "nucverse_matched": 4,
+      "nucverse_only": 0,
+      "harmonic_only": 3,
+      "union_coverage_upper_bound": 7,
+      "decoding": {
+        "foreground_voxels": 333835,
+        "in_bounds_voxels": 331421,
+        "seeds": 174,
+        "instances": 174,
+        "assigned_voxels": 300588
+      }
+    },
+    {
+      "video": "6bba_6479435d",
+      "frame": 34,
+      "gt_nodes": 10,
+      "harmonic_nodes": 343,
+      "nucverse_nodes": 173,
+      "harmonic_matched": 6,
+      "nucverse_matched": 3,
+      "nucverse_only": 0,
+      "harmonic_only": 3,
+      "union_coverage_upper_bound": 6,
+      "decoding": {
+        "foreground_voxels": 349580,
+        "in_bounds_voxels": 343578,
+        "seeds": 173,
+        "instances": 173,
+        "assigned_voxels": 314514
+      }
+    },
+    {
+      "video": "6bba_6479435d",
+      "frame": 35,
+      "gt_nodes": 7,
+      "harmonic_nodes": 366,
+      "nucverse_nodes": 151,
+      "harmonic_matched": 5,
+      "nucverse_matched": 3,
+      "nucverse_only": 0,
+      "harmonic_only": 2,
+      "union_coverage_upper_bound": 5,
+      "decoding": {
+        "foreground_voxels": 312814,
+        "in_bounds_voxels": 309967,
+        "seeds": 151,
+        "instances": 151,
+        "assigned_voxels": 285612
+      }
+    },
+    {
+      "video": "6bba_7b5d3b2c",
+      "frame": 34,
+      "gt_nodes": 7,
+      "harmonic_nodes": 62,
+      "nucverse_nodes": 51,
+      "harmonic_matched": 7,
+      "nucverse_matched": 5,
+      "nucverse_only": 0,
+      "harmonic_only": 2,
+      "union_coverage_upper_bound": 7,
+      "decoding": {
+        "foreground_voxels": 228375,
+        "in_bounds_voxels": 213749,
+        "seeds": 51,
+        "instances": 51,
+        "assigned_voxels": 209586
+      }
+    },
+    {
+      "video": "6bba_7b5d3b2c",
+      "frame": 35,
+      "gt_nodes": 7,
+      "harmonic_nodes": 60,
+      "nucverse_nodes": 51,
+      "harmonic_matched": 6,
+      "nucverse_matched": 5,
+      "nucverse_only": 0,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 6,
+      "decoding": {
+        "foreground_voxels": 238552,
+        "in_bounds_voxels": 215543,
+        "seeds": 51,
+        "instances": 51,
+        "assigned_voxels": 211145
+      }
+    },
+    {
+      "video": "6bba_7b5d3b2c",
+      "frame": 36,
+      "gt_nodes": 6,
+      "harmonic_nodes": 58,
+      "nucverse_nodes": 56,
+      "harmonic_matched": 5,
+      "nucverse_matched": 5,
+      "nucverse_only": 0,
+      "harmonic_only": 0,
+      "union_coverage_upper_bound": 5,
+      "decoding": {
+        "foreground_voxels": 231592,
+        "in_bounds_voxels": 212908,
+        "seeds": 56,
+        "instances": 56,
+        "assigned_voxels": 209867
+      }
+    },
+    {
+      "video": "6bba_9a41d029",
+      "frame": 17,
+      "gt_nodes": 13,
+      "harmonic_nodes": 128,
+      "nucverse_nodes": 108,
+      "harmonic_matched": 12,
+      "nucverse_matched": 11,
+      "nucverse_only": 0,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 12,
+      "decoding": {
+        "foreground_voxels": 341336,
+        "in_bounds_voxels": 325591,
+        "seeds": 108,
+        "instances": 108,
+        "assigned_voxels": 321266
+      }
+    },
+    {
+      "video": "6bba_9a41d029",
+      "frame": 18,
+      "gt_nodes": 14,
+      "harmonic_nodes": 124,
+      "nucverse_nodes": 100,
+      "harmonic_matched": 12,
+      "nucverse_matched": 11,
+      "nucverse_only": 0,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 12,
+      "decoding": {
+        "foreground_voxels": 355911,
+        "in_bounds_voxels": 338791,
+        "seeds": 100,
+        "instances": 100,
+        "assigned_voxels": 333187
+      }
+    },
+    {
+      "video": "6bba_9a41d029",
+      "frame": 19,
+      "gt_nodes": 14,
+      "harmonic_nodes": 128,
+      "nucverse_nodes": 107,
+      "harmonic_matched": 13,
+      "nucverse_matched": 13,
+      "nucverse_only": 1,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 14,
+      "decoding": {
+        "foreground_voxels": 360386,
+        "in_bounds_voxels": 338505,
+        "seeds": 107,
+        "instances": 107,
+        "assigned_voxels": 333655
+      }
+    },
+    {
+      "video": "6bba_c73a1d11",
+      "frame": 28,
+      "gt_nodes": 11,
+      "harmonic_nodes": 308,
+      "nucverse_nodes": 135,
+      "harmonic_matched": 11,
+      "nucverse_matched": 3,
+      "nucverse_only": 0,
+      "harmonic_only": 8,
+      "union_coverage_upper_bound": 11,
+      "decoding": {
+        "foreground_voxels": 297910,
+        "in_bounds_voxels": 292246,
+        "seeds": 135,
+        "instances": 135,
+        "assigned_voxels": 279769
+      }
+    },
+    {
+      "video": "6bba_c73a1d11",
+      "frame": 29,
+      "gt_nodes": 12,
+      "harmonic_nodes": 311,
+      "nucverse_nodes": 154,
+      "harmonic_matched": 8,
+      "nucverse_matched": 5,
+      "nucverse_only": 0,
+      "harmonic_only": 3,
+      "union_coverage_upper_bound": 8,
+      "decoding": {
+        "foreground_voxels": 302212,
+        "in_bounds_voxels": 296086,
+        "seeds": 154,
+        "instances": 154,
+        "assigned_voxels": 280741
+      }
+    },
+    {
+      "video": "6bba_c73a1d11",
+      "frame": 30,
+      "gt_nodes": 12,
+      "harmonic_nodes": 329,
+      "nucverse_nodes": 165,
+      "harmonic_matched": 9,
+      "nucverse_matched": 4,
+      "nucverse_only": 0,
+      "harmonic_only": 5,
+      "union_coverage_upper_bound": 9,
+      "decoding": {
+        "foreground_voxels": 281583,
+        "in_bounds_voxels": 277560,
+        "seeds": 165,
+        "instances": 165,
+        "assigned_voxels": 259932
+      }
+    },
+    {
+      "video": "6bba_f1fde7e0",
+      "frame": 0,
+      "gt_nodes": 5,
+      "harmonic_nodes": 148,
+      "nucverse_nodes": 131,
+      "harmonic_matched": 3,
+      "nucverse_matched": 4,
+      "nucverse_only": 2,
+      "harmonic_only": 1,
+      "union_coverage_upper_bound": 5,
+      "decoding": {
+        "foreground_voxels": 308832,
+        "in_bounds_voxels": 300656,
+        "seeds": 131,
+        "instances": 131,
+        "assigned_voxels": 293857
+      }
+    },
+    {
+      "video": "6bba_f1fde7e0",
+      "frame": 1,
+      "gt_nodes": 6,
+      "harmonic_nodes": 153,
+      "nucverse_nodes": 136,
+      "harmonic_matched": 5,
+      "nucverse_matched": 3,
+      "nucverse_only": 1,
+      "harmonic_only": 3,
+      "union_coverage_upper_bound": 6,
+      "decoding": {
+        "foreground_voxels": 288251,
+        "in_bounds_voxels": 283328,
+        "seeds": 136,
+        "instances": 136,
+        "assigned_voxels": 278258
+      }
+    }
+  ],
+  "result_sha256": "a6169a58e3795a4a764807a28c0e9a711ce26742a223defa92935cc64c7c2e1f",
+  "scope": "Error-conditioned calibration coverage, not unbiased recall, tracking improvement or leaderboard score; union is an oracle diagnostic",
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-cellpose-evaluation-cpu",
+  "version": 1,
+  "kernel_id": 135122585,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-cellpose-evaluation-cpu",
+  "ref": "/code/jarturo/biohub-lab-cellpose-evaluation-cpu",
+  "launched_at_utc": "2026-09-20T15:35:53.776461+00:00",
+  "payload_sha256": "37d7ed5db972aa43b2bc97c2ecd8f22f7676b8bd91f78ea7ad450eb459969201",
+  "notebook_sha256": "3d7cc4f08db624bcffe8a69a4173a8d0a682f1b822833641be39522627b32429",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

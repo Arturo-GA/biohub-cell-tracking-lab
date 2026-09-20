@@ -1,0 +1,18 @@
+{
+  "frames": [
+    {
+      "video": "44b6_aaf8b0ea",
+      "frame": 62
+    },
+    {
+      "video": "6bba_6479435d",
+      "frame": 34
+    }
+  ],
+  "gpu_deadline_seconds": 900,
+  "selection": "Before E027 results: per specimen, highest missing-division count, then missing centers, then lexical video; anchor frame only",
+  "anisotropy": 4.0,
+  "bsize": 384,
+  "batch_size": 4,
+  "training": false
+}

@@ -222,7 +222,7 @@
     "checkpoint_contents_verified": true
   },
   "next_experiment_started": true,
-  "active_experiment": "E027_CONTROL_ERROR_WINDOWS",
+  "active_experiment": "E028_CELLPOSE_EVALUATION",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -1421,7 +1421,7 @@
   },
   "next_research_priority": "Evaluate complementary detection on calibration division/error windows, then reserved full-graph validation; Cellpose-DINO/SAM researched alternative, not yet implemented",
   "E027": {
-    "status": "RUNNING",
+    "status": "COMPLETE",
     "input_receipt": "results/E027_INPUTS_completed.json",
     "gpu_launch": "results/E027_GPU_launch.json",
     "frames": 33,
@@ -1430,6 +1430,25 @@
     "evaluation_cpu_prepared": true,
     "leaderboard_submitted": false,
     "scope": "Error-conditioned calibration detection coverage",
-    "documentation": "docs/E027_COMPLEMENTARIEDAD_IMAGEN.es.md"
+    "documentation": "docs/E027_COMPLEMENTARIEDAD_IMAGEN.es.md",
+    "evaluation_launch": "results/E027_EVAL_launch.json",
+    "completed_receipt": "results/E027_completed.json",
+    "recovery_diagnostic": "results/E027_recovery_diagnostic.json",
+    "control_missed_centers": 40,
+    "recovered_centers": 14,
+    "decision": "Retain complementary detector; integration must demonstrate full-graph improvement",
+    "next_run_started": false
+  },
+  "E028": {
+    "status": "EVALUATING",
+    "architecture": "Cellpose-DINO ViT-B",
+    "preparation_receipt": "results/E028_PREP_completed.json",
+    "gpu_launch": "results/E028_GPU_launch.json",
+    "training": false,
+    "frames": 2,
+    "leaderboard_submitted": false,
+    "documentation": "docs/E028_CELLPOSE_DINO.es.md",
+    "evaluation_launch": "results/E028_EVAL_launch.json",
+    "gpu_process_seconds": 345.096491979
   }
 }

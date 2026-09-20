@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "gpu": false,
+  "training": false,
+  "competition_data_read": false,
+  "config": {
+    "cellpose_version": "4.2.1.1",
+    "cellpose_reference_commit": "a54cb48849b7e225a81e8e43dcb042d42427f543",
+    "dinov3_commit": "6876159a11b4df116f30f667f8c9888617df0751",
+    "hf_revision": "7c61431b5fbb078f3296754bd15d9f51b320f837",
+    "model": "cpdino-vitb",
+    "model_card_license": "bsd-3-clause",
+    "sources": [
+      "https://cellpose.readthedocs.io/en/latest/models.html",
+      "https://huggingface.co/mouseland/cellpose-sam",
+      "https://github.com/facebookresearch/dinov3"
+    ]
+  },
+  "weight_sha256": "3ed4c06a3963ab13ff377d4e2957174aaaf637434eb031ae9931fcbfaf9a217f",
+  "weight_bytes": 343599997,
+  "wheels": [
+    {
+      "file": "cellpose-4.2.1.1-py3-none-any.whl",
+      "bytes": 203334,
+      "sha256": "6c5c5159fd459115bee390ffb01d94d5e1006b97c211bf3c1a7b37d5395a1a13"
+    },
+    {
+      "file": "dinov3-0.0.1-py3-none-any.whl",
+      "bytes": 329846,
+      "sha256": "ef1363acc3ad61d7578f5b2264a0359e414552d0842648eb0f73bcf3a8a1df89"
+    },
+    {
+      "file": "fastremap-1.20.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 7550963,
+      "sha256": "2daa147a1c02a74a4e2344a5631482e51e194bcf3bcc50410639511eed260f74"
+    },
+    {
+      "file": "fill_voids-2.1.2-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 1481542,
+      "sha256": "2261bb1c6d0bb34fe4078af215e92630bfeec4028558b5295308b61b54d4a720"
+    },
+    {
+      "file": "imagecodecs-2026.8.16-cp312-abi3-manylinux_2_28_x86_64.whl",
+      "bytes": 28080673,
+      "sha256": "c1068e0db9bc09cbd32510e543caed50f231096aecbb4c9cf7bcfbd2ffc53a50"
+    },
+    {
+      "file": "natsort-8.4.0-py3-none-any.whl",
+      "bytes": 38268,
+      "sha256": "4732914fb471f56b5cce04d7bae6f164a592c7712e1c85f9ef585e197299521c"
+    },
+    {
+      "file": "roifile-2026.7.30-py3-none-any.whl",
+      "bytes": 21611,
+      "sha256": "109e86078ba056b35fc2b6d2dcfac8942408202223b0ef5c4aa6f8047a94d68b"
+    },
+    {
+      "file": "segment_anything-1.0-py3-none-any.whl",
+      "bytes": 36560,
+      "sha256": "86f67d417a915823c3302098effe9008b688945772517310956bb49de0e7f02e"
+    }
+  ],
+  "strict_load": true,
+  "metadata_defaults_added": [
+    "diam_labels",
+    "diam_mean"
+  ],
+  "output_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "parameters": 85854146,
+  "torch": "2.10.0+cpu",
+  "numpy": "2.0.2",
+  "seconds": 61.12221596799998,
+  "scope": "Public assets and compatibility only; no Biohub accuracy measured",
+  "source_files_verified": 2,
+  "result_sha256": "ff8698a52be6cad3d1b8b807fe3a047b8acb71f1b6b32cee5d4ac95165558b74"
+}

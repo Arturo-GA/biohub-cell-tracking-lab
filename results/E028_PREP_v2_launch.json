@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-lab-cellpose-preparation-cpu",
+  "version": 2,
+  "kernel_id": 135121122,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-lab-cellpose-preparation-cpu",
+  "ref": "/code/jarturo/biohub-lab-cellpose-preparation-cpu",
+  "launched_at_utc": "2026-09-20T15:25:17.756016+00:00",
+  "payload_sha256": "5ebecab1ea06e099b8cfda8475494f3f05013d265687f809fa49a7846e805275",
+  "notebook_sha256": "ae5aaf356a3b2507770789b5b97c291882b54bb4f7c6ef12eaaf2dce3675bcd4",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

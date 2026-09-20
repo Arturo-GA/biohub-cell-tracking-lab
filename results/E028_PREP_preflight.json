@@ -1,0 +1,7 @@
+{
+  "payload_sha256": "5ebecab1ea06e099b8cfda8475494f3f05013d265687f809fa49a7846e805275",
+  "notebook_sha256": "ae5aaf356a3b2507770789b5b97c291882b54bb4f7c6ef12eaaf2dce3675bcd4",
+  "files": 2,
+  "gpu": false,
+  "private": true
+}

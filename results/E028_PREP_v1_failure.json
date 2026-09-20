@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "gpu": false,
+  "training": false,
+  "competition_data_read": false,
+  "error": "Error(s) in loading state_dict for CPDINO:\n\tMissing key(s) in state_dict: \"diam_labels\", \"diam_mean\". ",
+  "seconds": 55.778407017000006,
+  "source_files_verified": 2,
+  "resolution": "v2 supplies only two non-trainable diameter metadata defaults, then strict load"
+}

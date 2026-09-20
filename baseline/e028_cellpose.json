@@ -1,0 +1,13 @@
+{
+  "cellpose_version": "4.2.1.1",
+  "cellpose_reference_commit": "a54cb48849b7e225a81e8e43dcb042d42427f543",
+  "dinov3_commit": "6876159a11b4df116f30f667f8c9888617df0751",
+  "hf_revision": "7c61431b5fbb078f3296754bd15d9f51b320f837",
+  "model": "cpdino-vitb",
+  "model_card_license": "bsd-3-clause",
+  "sources": [
+    "https://cellpose.readthedocs.io/en/latest/models.html",
+    "https://huggingface.co/mouseland/cellpose-sam",
+    "https://github.com/facebookresearch/dinov3"
+  ]
+}

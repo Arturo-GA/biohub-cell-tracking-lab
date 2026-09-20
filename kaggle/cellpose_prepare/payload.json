@@ -1,0 +1,10 @@
+{
+  "sha256": "5ebecab1ea06e099b8cfda8475494f3f05013d265687f809fa49a7846e805275",
+  "files": [
+    "scripts/cellpose_prepare_runner.py",
+    "baseline/e028_cellpose.json"
+  ],
+  "contains_credentials": false,
+  "contains_images": false,
+  "contains_weights": false
+}
