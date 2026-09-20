@@ -1,0 +1,8 @@
+{
+  "experiment": "E037",
+  "data_manifest_sha256": "03e0f19031df0ed7cb007e1231956e49c38dfaa4fd5cbfe6befed70792cbc8f1",
+  "encoder_manifest_sha256": "3717afed1078dd01267891ec7676e135613dd43b48a0577c93870ec4e789cc57",
+  "old_geometry_ap": 0.40589285714285717,
+  "old_static_ap": 0.4425595238095238,
+  "protocol": "Same E035 40 fit/8 development examples and labels. CPU three-time16cubed crops normalized exactly as E033 metadataquantiles and log1p. Two independent frozen E033 encoders; one head per encoder and representation. ExtraTrees256 minleaf3 maxfeatures0.8 seed350920; geometry, neural initial192D, neural sequence576D. Development threshold >=2TP and0FP, unchanged from E035. Additional preregistered neural gate: AP >=old static AP+0.05 and >=same-head shuffled-node AP+0.05. Choose passing representation per encoder on development only. Later graph evaluation uses each encoder/head only on its heldout embryo. No calibration images/labels loaded in preparation or head training. No encoder retraining, no sweep or automatic submission."
+}

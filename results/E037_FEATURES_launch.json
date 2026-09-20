@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-neural-division-features",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-neural-division-features",
+  "launched_at_utc": "2026-09-20T20:09:47.117106+00:00",
+  "payload_sha256": "107358b6e73b9861ae46e7f3303504951e5321caee9ec014a3bf9e9b091519db",
+  "notebook_sha256": "c5bfc916e4e6fda4e69b4fff503185d088a8b803f317f91454577a94c8d4e434",
+  "is_private": true,
+  "enable_gpu": true,
+  "preparation_manifest_sha256": "ef0f2048ec121ba31cd1496bf158416a21f533e96ad72dd634b8e0ab2d1b47d8",
+  "leaderboard_submitted": false
+}

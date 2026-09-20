@@ -1,0 +1,12 @@
+{
+  "sha256": "107358b6e73b9861ae46e7f3303504951e5321caee9ec014a3bf9e9b091519db",
+  "files": [
+    "baseline/e037_neural_division.json",
+    "scripts/neural_division_features_runner.py",
+    "src/biohub_lab/neural_division.py",
+    "src/biohub_lab/temporal_volume.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

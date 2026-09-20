@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-neural-division-heads-cpu",
+  "version": 1,
+  "kernel_id": 135147661,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-neural-division-heads-cpu",
+  "ref": "/code/jarturo/biohub-neural-division-heads-cpu",
+  "launched_at_utc": "2026-09-20T20:11:54.040381+00:00",
+  "payload_sha256": "6c8d152e4144a498555505e157571f286babee00d7919737b1e9078134d3d7b5",
+  "notebook_sha256": "04a49ea2456afd2257578df5b5ac5fe98f24df815d518c87cae2fae3cc8a4d38",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

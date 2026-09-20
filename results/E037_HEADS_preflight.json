@@ -1,0 +1,8 @@
+{
+  "payload_sha256": "6c8d152e4144a498555505e157571f286babee00d7919737b1e9078134d3d7b5",
+  "notebook_sha256": "04a49ea2456afd2257578df5b5ac5fe98f24df815d518c87cae2fae3cc8a4d38",
+  "files": 26,
+  "gpu": false,
+  "private": true,
+  "calibration_videos": 16
+}

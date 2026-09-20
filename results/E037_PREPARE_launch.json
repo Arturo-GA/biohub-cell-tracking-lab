@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-neural-division-prepare-cpu",
+  "version": 1,
+  "kernel_id": 135146993,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-neural-division-prepare-cpu",
+  "ref": "/code/jarturo/biohub-neural-division-prepare-cpu",
+  "launched_at_utc": "2026-09-20T20:01:46.857409+00:00",
+  "payload_sha256": "a192880210b5ecddaab1cd0997e17e47550f7cd085c497e79fc2da8dbb872f71",
+  "notebook_sha256": "86fbcfc041d33bed4c38f5288f5f2dbdfb412c8759c85a081340c275fbce5b03",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

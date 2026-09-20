@@ -1726,5 +1726,16 @@
         "score": 0.9005036221134148
       }
     }
+  },
+  "E037": {
+    "status": "COMPLETE",
+    "stage": "complete",
+    "protocol": "docs/E037_DIVISION_NEURONAL.es.md",
+    "leaderboard_submitted": false,
+    "unique_crops": 12698,
+    "result": "results/E037_completed.json",
+    "decision": "Reject frozen identity encoder transfer with these division heads: all neural variants below geometry and previous local appearance on development; all frozen threshold gates fail. No graph integration or submission.",
+    "graph_launched": false,
+    "gpu_process_seconds": 7.571777336000025
   }
 }

@@ -1,5 +1,7 @@
 # Biohub Cell Tracking Lab
 
+**E037 completado y rechazado:** seis cabezas entrenadas con representaciones de los encoders E033. Mejor AP neuronal en desarrollo: 0,325, frente a 0,406 de geometría y 0,443 de apariencia local E035. Ninguna superó la condición fijada; no se lanzó la integración al grafo ni submission. GPU: 7,6 s de proceso; preparación/cabezas en CPU. No quedan ejecuciones pendientes. [Resultados y protocolo](docs/E037_DIVISION_NEURONAL.es.md).
+
 **E036 completado y rechazado:** reasignación de padres y reconstrucción conjunta bajan de 0,900753 a 0,900504 local. La variante conjunta aplica 50 eventos y añade 3 nodos, pero pierde un enlace correcto y añade uno incorrecto; no recupera divisiones anotadas. Todas las optimizaciones alcanzaron su óptimo. Proceso CPU: 212 s, GPU: cero. Sin submission ni ejecuciones pendientes. [Resultados y protocolo](docs/E036_RECONSTRUCCION_CONJUNTA.es.md).
 
 **E035 completado:** entrenados tres clasificadores de divisiones en CPU. AP en desarrollo: geometría 0,406; apariencia inicial 0,443; secuencia 0,413. Ninguno superó la condición fijada en desarrollo; no hubo cambios del grafo y todos conservaron 0,900753 local. La auditoría señala hijas ausentes y conflictos de padre fuera del alcance de esta integración. Sin GPU ni submission; no quedan ejecuciones pendientes. [Resultados y límites](docs/E035_SECUENCIAS_DIVISION.es.md).
