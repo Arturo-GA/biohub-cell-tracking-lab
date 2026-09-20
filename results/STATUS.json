@@ -1477,11 +1477,17 @@
     "next_run_started": false
   },
   "E030": {
-    "status": "CPU_DATA_RUNNING",
+    "status": "GPU_FEATURES_RUNNING",
     "documentation": "docs/E030_IDENTIDADES_CON_IMAGEN.es.md",
     "data_launch": "results/E030_DATA_launch.json",
     "gpu_only_for": "Frozen encoder descriptor extraction",
     "training_device": "CPU",
-    "leaderboard_submitted": false
+    "leaderboard_submitted": false,
+    "data_receipt": "results/E030_DATA_completed.json",
+    "gpu_launch": "results/E030_FEATURES_launch.json",
+    "training_videos": 40,
+    "internal_development_videos": 8,
+    "calibration_videos": 16,
+    "head_protocol": "baseline/e030_head_protocol.json"
   }
 }

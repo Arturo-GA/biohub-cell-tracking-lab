@@ -1,10 +1,11 @@
 {
-  "sha256": "3a0628f42cb99fe915623c56557d37a70fe2cd5b79416c9cba0c1a008d3cac79",
+  "sha256": "e0569cdeb79e9ef9a8a2443af04066369338000e08db905bd4509625c8f5b5c6",
   "files": [
     "src/biohub_lab/__init__.py",
     "src/biohub_lab/image_identity.py",
     "baseline/e030_image_identity.json",
-    "scripts/image_identity_train_runner.py"
+    "scripts/image_identity_train_runner.py",
+    "baseline/e030_head_protocol.json"
   ],
   "contains_images": false,
   "contains_weights": false,

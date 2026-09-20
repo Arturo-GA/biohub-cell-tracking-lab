@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-image-identity-train-cpu",
+  "version": 1,
+  "kernel_id": 135126965,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-image-identity-train-cpu",
+  "ref": "/code/jarturo/biohub-image-identity-train-cpu",
+  "launched_at_utc": "2026-09-20T16:20:56.674372+00:00",
+  "payload_sha256": "e0569cdeb79e9ef9a8a2443af04066369338000e08db905bd4509625c8f5b5c6",
+  "notebook_sha256": "9f9cfb4e92fb23ac6af7f7dcc3b24d9ae988c2294b8df2088e0a7f0ad4cc5c34",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

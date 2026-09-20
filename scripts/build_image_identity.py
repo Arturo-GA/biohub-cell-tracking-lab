@@ -21,7 +21,8 @@ def main():
         kernels=[] if stage=='data' else ['jarturo/biohub-image-identity-data-cpu']
         if gpu:
             files+=['scripts/cellpose_runtime.py','baseline/e028_runtime.json'];kernels+=['jarturo/biohub-lab-cellpose-preparation-cpu']
-        if stage=='train':kernels+=['jarturo/biohub-image-identity-features']
+        if stage=='train':
+            kernels+=['jarturo/biohub-image-identity-features'];files+=['baseline/e030_head_protocol.json']
         slug='biohub-image-identity-'+stage+('' if gpu else '-cpu');title='Biohub Image Identity '+stage.title()+('' if gpu else ' CPU')
         if stage=='data':
             checks=cpu_package(Path('kaggle/identity_parent'),folder,files,'scripts/identity_parent_runner.py',runner,slug,title,False,kernels)

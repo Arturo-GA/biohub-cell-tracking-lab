@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "stage": "data",
+  "source_files_verified": 4,
+  "result_sha256": "9ec2df2e8f64638f26638a374e16ed91134f2c4947102b3b9fa7290c85816f93",
+  "seconds": 278.89614374499996,
+  "leaderboard_submitted": false,
+  "scope": "Annotation-centered jitter curriculum; not detector-space or official graph validation",
+  "nodes": 13364,
+  "fit_division_positive": 35,
+  "validation_division_positive": 0
+}

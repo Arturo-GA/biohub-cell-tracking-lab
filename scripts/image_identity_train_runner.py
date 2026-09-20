@@ -99,10 +99,14 @@ def evaluate(model,rows,shuffle=False):
 def main(package):
     torch.set_num_threads(2);start=time.monotonic();root=Path('/kaggle/working/image_identity_train');root.mkdir(exist_ok=True)
     config=json.loads((package/'baseline/e030_image_identity.json').read_text())
+    protocol=json.loads((package/'baseline/e030_head_protocol.json').read_text())
     data_path=locate('image_identity_data/result.json');feature_path=locate('image_identity_features/result.json')
     data=json.loads(data_path.read_text());features=json.loads(feature_path.read_text())
     assert data['status']==features['status']=='complete' and data['config']==features['config']==config
     assert hashlib.sha256(data_path.read_bytes()).hexdigest()==features['input_manifest_sha256']
+    assert hashlib.sha256(data_path.read_bytes()).hexdigest()==protocol['data_manifest_sha256']
+    assert set(protocol['fit'])|set(protocol['development'])==set(config['fit'])
+    assert not set(protocol['fit'])&set(protocol['development']) and protocol['validation']==config['validation']
     lookup={r['video']:r for r in features['videos']};rows={'fit':[],'validation':[]}
     for item in data['videos']:
         p=data_path.parent/item['file'];f=lookup[item['video']];q=feature_path.parent/f['file']
@@ -113,16 +117,21 @@ def main(package):
         d.update(features=torch.as_tensor(np.load(q,allow_pickle=False).astype(np.float32)),video=item['video'])
         rows[item['split']].append(d)
     assert {r['video'] for r in rows['fit']}==set(config['fit']) and {r['video'] for r in rows['validation']}==set(config['validation'])
+    rows['development']=[r for r in rows['fit'] if r['video'] in protocol['development']]
+    rows['fit']=[r for r in rows['fit'] if r['video'] in protocol['fit']]
     results={};models={}
     for label,use_image in [('image',True),('geometry_ablation',False)]:
         model,history=train(rows['fit'],config,use_image);models[label]=model
-        checkpoint=root/(label+'.pt');torch.save(dict(state_dict=model.state_dict(),config=config,use_image=use_image),checkpoint)
+        checkpoint=root/(label+'.pt');torch.save(dict(state_dict=model.state_dict(),config=config,head_protocol=protocol,use_image=use_image),checkpoint)
         results[label]=dict(training=history,checkpoint_sha256=hashlib.sha256(checkpoint.read_bytes()).hexdigest())
     # Freeze both checkpoints before evaluating ANY calibration labels.
-    for label,model in models.items(): results[label]['validation']=evaluate(model,rows['validation'])
+    for label,model in models.items():
+        results[label]['validation']=evaluate(model,rows['validation'])
+        results[label]['development']=evaluate(model,rows['development'])
     results['shuffled_image_control']=evaluate(models['image'],rows['validation'],shuffle=True)
+    results['shuffled_image_development']=evaluate(models['image'],rows['development'],shuffle=True)
     image=results['image']['validation'];geo=results['geometry_ablation']['validation']
-    result=dict(status='complete',config=config,results=results,seconds=time.monotonic()-start,
+    result=dict(status='complete',config=config,head_protocol=protocol,results=results,seconds=time.monotonic()-start,
         image_parent_delta_vs_geometry=image['parent_accuracy']-geo['parent_accuracy'],
         scope='Jittered annotation-space diagnostic, NOT detector-space or official graph score',
         leaderboard_submitted=False,automatic_promotion=False,

@@ -17,7 +17,7 @@ Referencias: [DINOv3](https://arxiv.org/abs/2508.10104) y [implementación ofici
 1. Kaggle **CPU** prepara imágenes reales de los 48 videos fit y los 16 videos de calibración separados. Escoge ocho transiciones repartidas por video; únicamente en fit añade las transiciones de divisiones anotadas para no desperdiciar su escasa supervisión. No selecciona errores del control.
 2. Cada centro tiene dos perturbaciones independientes de hasta ±1 µm por eje para aprender consistencia frente a errores de localización. Se generan progenitores cercanos y pares de hijas. Una arista es negativa solo si contradice un progenitor anotado. Una división sin evidencia suficiente queda desconocida; no se convierte en negativa por ausencia de etiqueta.
 3. Kaggle **GPU** extrae una sola vez los descriptores del encoder congelado. Límite de 2400 segundos comprobado entre lotes; no hay optimizador ni decodificación de máscaras en GPU.
-4. Kaggle **CPU** entrena 600 pasos fijos de las cabezas pequeñas. Entrena también una ablación que recibe solo geometría, con el mismo protocolo. Elimina aleatoriamente algunos progenitores verdaderos solo durante fit para aprender la opción ausente. Congela ambos checkpoints antes de evaluar calibración.
+4. Antes de entrenar se detectó que las transiciones uniformes de calibración no contienen divisiones. Se fijó `e030_head_protocol.json`: **40 videos para entrenamiento y ocho del conjunto fit original para desarrollo**, con seis divisiones; quedan 29 divisiones para aprendizaje. La separación se eligió por un orden SHA determinista y presencia de divisiones, sin consultar predicciones. Kaggle **CPU** entrena 600 pasos fijos de las cabezas pequeñas. Entrena también una ablación que recibe solo geometría, con el mismo protocolo. Elimina aleatoriamente algunos progenitores verdaderos solo durante fit para aprender la opción ausente. Congela ambos checkpoints antes de evaluar desarrollo y calibración.
 5. Se comparan exactitud de progenitores, disponibilidad del progenitor verdadero, AP de divisiones e identidad, y un control que permuta los descriptores visuales. No hay selección de checkpoints por leaderboard.
 
 ## Qué permite concluir
@@ -28,6 +28,6 @@ Antes de promover un submission deben fijarse puntos de operación usando detecc
 
 ## Verificación y estado
 
-Siete pruebas locales pasaron (incluyen aprendizaje de identidad con distancias id�nticas y rechazo de saltos temporales): geometría física, extracción repetible independiente de `styles`, simetría de identidad/división, competencia conjunta de duplicados y divisiones, y sensibilidad/gradientes de la apariencia. Paquetes privados con código y configuración; imágenes, etiquetas y pesos quedan fuera de Git.
+Siete pruebas locales pasaron (incluyen aprendizaje de identidad con distancias idénticas y rechazo de saltos temporales): geometría física, extracción repetible independiente de `styles`, simetría de identidad/división, competencia conjunta de duplicados y divisiones, y sensibilidad/gradientes de la apariencia. Paquetes privados con código y configuración; imágenes, etiquetas y pesos quedan fuera de Git.
 
-Preparación CPU lanzada; resultados pendientes. No hay nuevo submission.
+La preparación CPU terminó en 278,90 segundos: 13 364 centros perturbados, 35 divisiones en el conjunto fit original y ninguna en las transiciones de calibración. Código y manifiesto verificados. Extracción GPU en ejecución; después se entrenan las cabezas en CPU con la separación 40/8/16 descrita arriba. No hay nuevo submission.
