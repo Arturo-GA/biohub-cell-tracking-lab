@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-temporal-volume-train",
+  "url": "https://www.kaggle.com/code/jarturo/biohub-temporal-volume-train",
+  "version": 1,
+  "launched_at_utc": "2026-09-20T17:33:55.718685+00:00",
+  "notebook_sha256": "0cd54f671130db4ec2d196114e13565fb653df252a94bd2167aef0eb800bfeda",
+  "payload_sha256": "f28ce34a158784b151792931c866fdb7d21e1e5b92c5a952fffb3e243fd4f6a0",
+  "gpu": true,
+  "private": true,
+  "training": true,
+  "leaderboard_submitted": false
+}

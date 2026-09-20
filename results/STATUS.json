@@ -1531,5 +1531,16 @@
     "completed_receipt": "results/E032_completed.json",
     "decision": "Reject heads; no advantage over nearest-parent control",
     "pending_jobs": false
+  },
+  "E033": {
+    "status": "GPU_TRAINING_LAUNCHED",
+    "documentation": "docs/E033_ENCODER_TEMPORAL_3D.es.md",
+    "data_receipt": "results/E033_PREPARE_completed.json",
+    "training_launch": "results/E033_TRAIN_launch.json",
+    "encoder_trained_from_images": true,
+    "split": "Both cross-embryo directions",
+    "local_tests_passed": 3,
+    "evaluation_prepared": true,
+    "leaderboard_submitted": false
   }
 }

@@ -1,0 +1,12 @@
+{
+  "sha256": "f28ce34a158784b151792931c866fdb7d21e1e5b92c5a952fffb3e243fd4f6a0",
+  "files": [
+    "baseline/e033_temporal_volume.json",
+    "src/biohub_lab/temporal_volume.py",
+    "scripts/temporal_volume_train_runner.py",
+    "baseline/e033_input_pin.json"
+  ],
+  "contains_credentials": false,
+  "contains_weights": false,
+  "contains_images": false
+}

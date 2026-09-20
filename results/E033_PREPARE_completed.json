@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "seconds": 37.850577774000044,
+  "manifest_sha256": "1656c5474ab3ad5702c77d812b84c2738b0fe4314895c51552af84b71136f500",
+  "videos": 16,
+  "targets": 6725,
+  "unique_crops": 56384,
+  "train_competitive": 6700,
+  "nearest_correct": 6118
+}

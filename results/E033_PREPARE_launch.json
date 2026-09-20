@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-temporal-volume-prepare-cpu",
+  "version": 1,
+  "kernel_id": 135133790,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-temporal-volume-prepare-cpu",
+  "ref": "/code/jarturo/biohub-temporal-volume-prepare-cpu",
+  "launched_at_utc": "2026-09-20T17:28:57.048014+00:00",
+  "payload_sha256": "5bf355b050b4fddbe473a618e8e270807c807e7ccb4544433ff66da613552ef2",
+  "notebook_sha256": "4e478b5aac00a72c68331fda9942821883aff03d7755bdc01183cf7fe0367309",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,18 @@
+{
+  "id": "jarturo/biohub-temporal-volume-evaluate-cpu",
+  "title": "Biohub Temporal Volume Evaluate CPU",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-temporal-volume-prepare-cpu",
+    "jarturo/biohub-temporal-volume-train"
+  ],
+  "model_sources": []
+}

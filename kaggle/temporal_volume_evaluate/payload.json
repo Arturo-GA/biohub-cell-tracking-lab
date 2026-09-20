@@ -1,0 +1,11 @@
+{
+  "sha256": "21c9c5303ee1f5c91de74c9467507bc5f005b327b61d4da955bea002c4f70651",
+  "files": [
+    "baseline/e033_temporal_volume.json",
+    "src/biohub_lab/temporal_volume.py",
+    "scripts/temporal_volume_evaluate_runner.py"
+  ],
+  "contains_credentials": false,
+  "contains_weights": false,
+  "contains_images": false
+}

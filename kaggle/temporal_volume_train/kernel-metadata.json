@@ -1,0 +1,18 @@
+{
+  "id": "jarturo/biohub-temporal-volume-train",
+  "title": "Biohub Temporal Volume Train",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-temporal-volume-prepare-cpu"
+  ],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

@@ -1,0 +1,14 @@
+{
+  "experiment": "E033",
+  "seed": 330920,
+  "steps": 1000,
+  "batch": 16,
+  "temperature": 0.2,
+  "learning_rate": 0.0003,
+  "deadline_seconds": 1500,
+  "encoder": "3-channel temporal Conv3D, GroupNorm,64-dimensional embedding; trained from scratch",
+  "split": "Two directions, train on one embryo and predict the other",
+  "prediction_manifest_sha256": "a09a6f6533ff80f0b6e202fb2b3314683dda7cd29029381853c67e030671a149",
+  "image_manifest_sha256": "7167b59f9ecf522153c92f546fa306e3fa083745d128fc7e6d7f73285ecebcf0",
+  "promotion": "Aggregate accuracy at least0.005 above nearest, neither embryo below nearest, and0.005 above image-shuffled control; then full graph evaluation still required"
+}
