@@ -1533,7 +1533,7 @@
     "pending_jobs": false
   },
   "E033": {
-    "status": "GRAPH_GPU_INFERENCE_LAUNCHED",
+    "status": "COMPLETE",
     "documentation": "docs/E033_ENCODER_TEMPORAL_3D.es.md",
     "data_receipt": "results/E033_PREPARE_completed.json",
     "training_launch": "results/E033_TRAIN_launch.json",
@@ -1551,6 +1551,15 @@
     "targets": 6725,
     "graph_preparation": "results/E033_GRAPH_PREPARE_launch.json",
     "graph_gpu_launch": "results/E033_GRAPH_FEATURES_launch.json",
-    "graph_tests_passed": 3
+    "graph_tests_passed": 3,
+    "graph_features_completed": "results/E033_GRAPH_FEATURES_completed.json",
+    "graph_gpu_process_seconds": 26.74776227199993,
+    "graph_evaluation_launch": "results/E033_GRAPH_EVALUATE_launch.json",
+    "completed_receipt": "results/E033_completed.json",
+    "full_graph_score": 0.9007529595605399,
+    "full_graph_delta": 0,
+    "changed_edges": 112,
+    "decision": "Retain trained encoder as useful ranking component; reject current full-graph integration for promotion because all16 per-video metrics tie the control",
+    "pending_jobs": false
   }
 }

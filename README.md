@@ -1,5 +1,7 @@
 # Biohub Cell Tracking Lab
 
+**E033 completado:** encoder temporal 3D entrenado desde imágenes. En 6.725 decisiones obtiene 6.211 aciertos frente a 6.118 de geometría, mejorando en ambos embriones. La integración completa cambia 112 enlaces pero empata con Harmonic en 0,900753 local; las métricas por video son idénticas. Se conserva el encoder como componente prometedor, sin promover la integración ni enviar submission. Ambos procesos GPU sumaron 126 segundos; preparación y métricas en CPU. No quedan ejecuciones pendientes. [Protocolo y resultados](docs/E033_ENCODER_TEMPORAL_3D.es.md).
+
 **E031/E032 completados:** detector denso evaluado en 16 videos completos, con scores locales 0,7560/0,7145 frente a 0,9008 de Harmonic. La condición por lote recupera 152 centros anotados omitidos por Harmonic, pero necesita muchos más candidatos. Cuatro cabezas temporales entrenadas en CPU: apariencia y geometría empatan en 6.021/6.725 aciertos, por debajo de 6.118 del vecino más cercano. No se promueven ni se envían. Proceso GPU: 164 s; preparación, evaluación y cabezas en CPU. No quedan ejecuciones pendientes. [E031](docs/E031_DETECTOR_DENSO.es.md), [E032](docs/E032_ASOCIACION_TEMPORAL_REAL.es.md).
 
 [Revision de papers, discusiones y siete notebooks nuevos posterior a E030](docs/RESEARCH_POST_E030.es.md). Prioridad propuesta: deteccion densa y aprendizaje temporal sobre candidatos reales; sin nuevo entrenamiento ni submission en esta revision.

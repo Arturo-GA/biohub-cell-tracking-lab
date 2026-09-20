@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-temporal-graph-evaluate-cpu",
+  "version": 1,
+  "kernel_id": 135135475,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-temporal-graph-evaluate-cpu",
+  "ref": "/code/jarturo/biohub-temporal-graph-evaluate-cpu",
+  "launched_at_utc": "2026-09-20T17:50:43.085209+00:00",
+  "payload_sha256": "bd1a4f69c306a78afccc1f7df665ddf073f6b15e81cd56a531014d66a638de8d",
+  "notebook_sha256": "6a6d9eb12a38fd0529512d924497a7d0cc5047209014f44c3fcefcb68e7325a4",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

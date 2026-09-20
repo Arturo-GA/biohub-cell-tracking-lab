@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "rank_result": "results/E033_RANK_completed.json",
+  "training_result": "results/E033_TRAIN_completed.json",
+  "graph_manifest_sha256": "ef3893660e4f2ccac344d3d6f4411bf3fd08255baa52551d808e477872d60fd2",
+  "graph_metrics": {
+    "control": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    },
+    "geometry": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    },
+    "image": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    }
+  },
+  "changed_edges": {
+    "control": 0,
+    "geometry": 0,
+    "image": 112
+  },
+  "per_video_metrics_identical": true,
+  "graph_evaluation_cpu_seconds": 100.58932260100005,
+  "gpu_process_seconds_total": 125.92644219899992,
+  "decision": "Retain trained encoder as useful ranking component; reject current full-graph integration for promotion because all16 per-video metrics tie the control",
+  "leaderboard_submitted": false,
+  "pending_jobs": false
+}

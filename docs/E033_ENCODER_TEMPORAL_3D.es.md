@@ -47,3 +47,19 @@ Mejora de 93 decisiones, **1,383 puntos porcentuales**. En `44b6`: 1.409 frente 
 La integración conserva todos los nodos de Harmonic y el número de conexiones entrantes/salientes de cada nodo. Las divisiones y saltos de fotogramas permanecen bloqueados. En cada transición se permite una asignación completa entre los progenitores y los hijos originales de continuaciones, con candidatos a 20 µm y un término fijo de preferencia por el enlace original. Se comparan el grafo original, reasignación geométrica y reasignación con el encoder; no hay barrido de parámetros. El encoder aplicado a cada video fue entrenado en el otro embrión.
 
 Tres pruebas adicionales verifican la conservación de divisiones y grados, una reasignación controlada por apariencia y la igualdad exacta entre los recortes de entrenamiento y su extracción vectorizada. Preparación y métrica en CPU; GPU solo para calcular las nuevas representaciones en los nodos de Harmonic.
+
+## Resultado del grafo completo y decisión
+
+Las tres etapas de integración terminaron: preparación CPU 41,48 s; inferencia de representaciones en los 318.094 nodos de Harmonic 26,75 s de proceso GPU; evaluación de los tres grafos 100,59 s CPU.
+
+| Grafo | Score local completo | Enlaces nuevos respecto de Harmonic |
+|---|---:|---:|
+| Harmonic original | 0,900752960 | 0 |
+| Reasignación geométrica | 0,900752960 | 0 |
+| Reasignación con encoder temporal | 0,900752960 | 112 |
+
+Las métricas por video también son idénticas en los 16 casos. Cambiar enlaces no demuestra corregirlos: con las anotaciones disponibles, esas modificaciones no mejoraron ni empeoraron las métricas medidas. Las divisiones conservaron 3 verdaderos positivos, 4 falsos positivos y 3 falsos negativos.
+
+**Decisión:** conservar el encoder entrenado por su mejora en el ranking de candidatos, pero no promover esta integración ni enviar un submission como mejora. El resultado positivo de candidatos usaba detecciones densas; su transferencia a los nodos y estructura ya resueltos por Harmonic no produjo ganancia de score. La integración solo permite permutar progenitores existentes y no puede recuperar nodos omitidos, cambiar nacimientos/finales de tracks ni corregir divisiones. Esas limitaciones no prueban por sí mismas cuál modificación futura funcionará.
+
+No quedan ejecuciones pendientes. Tiempo combinado de ambos procesos GPU: 125,93 s, sin incluir el tiempo adicional de asignación/exportación de Kaggle. Recibo final: `results/E033_completed.json`. Pesos propios guardados en `outputs/e033_train/temporal_volume_training/`; no se incorporan imágenes al repositorio.
