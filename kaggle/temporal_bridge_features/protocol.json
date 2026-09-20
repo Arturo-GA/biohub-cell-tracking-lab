@@ -1,0 +1,10 @@
+{
+  "experiment": "E034",
+  "graph_manifest_sha256": "c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22",
+  "dense_manifest_sha256": "a09a6f6533ff80f0b6e202fb2b3314683dda7cd29029381853c67e030671a149",
+  "training_manifest_sha256": "3717afed1078dd01267891ec7676e135613dd43b48a0577c93870ec4e789cc57",
+  "harmonic_features_sha256": "bac1ff43079fb1cb9a6f89d231e00674a0e517056913b0b7bf4254d4aa8deaf6",
+  "control_score": 0.9007529595605399,
+  "protocol": "Track ends to starts dt2..4; dense donors >3um from existing nodes, <=4um from interpolation, second donor distance margin>=1um, max8um/frame; reject competing endpoints, prohibit donor reuse. Image arm min adjacent cosine>=0.8, cross-embryo encoder. Fixed protocol, no sweep. Reused16-video calibration, upstream detector split unknown.",
+  "stage": "features"
+}

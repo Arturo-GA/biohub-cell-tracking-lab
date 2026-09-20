@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "kernel": "jarturo/biohub-temporal-bridge-evaluate-cpu",
+  "version": 1,
+  "manifest_sha256": "aa65394e05cfaa63197ab3655412aefa0b27f8a1c83093dc1651355764ce3e4f",
+  "seconds": 107.80877714900004
+}

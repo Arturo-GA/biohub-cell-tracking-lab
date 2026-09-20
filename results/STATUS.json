@@ -1561,5 +1561,58 @@
     "changed_edges": 112,
     "decision": "Retain trained encoder as useful ranking component; reject current full-graph integration for promotion because all16 per-video metrics tie the control",
     "pending_jobs": false
+  },
+  "E034": {
+    "status": "COMPLETE",
+    "stage": "complete",
+    "protocol": "docs/E034_PUENTES_TEMPORALES.es.md",
+    "arms": [
+      "control",
+      "geometry",
+      "image"
+    ],
+    "leaderboard_submitted": false,
+    "proposals": 343,
+    "donors": 792,
+    "result": "results/E034_completed.json",
+    "decision": "Small conditional gain; image filter does not beat geometric reconstruction. Retain as optional component, do not promote or sweep thresholds.",
+    "metrics": {
+      "control": {
+        "n": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "n_adj": 16,
+        "score": 0.9007529595605399
+      },
+      "geometry": {
+        "n": 16,
+        "edge_jaccard": 0.8716877692207283,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9782566607416932,
+        "adj_edge_jaccard": 0.871013522067512,
+        "n_adj": 16,
+        "score": 0.9010135220675121
+      },
+      "image": {
+        "n": 16,
+        "edge_jaccard": 0.871557237958491,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9782566607416932,
+        "adj_edge_jaccard": 0.8709710132212845,
+        "n_adj": 16,
+        "score": 0.9009710132212845
+      }
+    }
   }
 }

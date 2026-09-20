@@ -1,0 +1,12 @@
+{
+  "sha256": "c0f511fa605f9921bc536b98ea9d78dc9781f22c34a5195e2114db53aa807e81",
+  "files": [
+    "baseline/e034_bridge.json",
+    "scripts/temporal_bridge_runner.py",
+    "src/biohub_lab/temporal_bridge.py",
+    "src/biohub_lab/temporal_volume.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

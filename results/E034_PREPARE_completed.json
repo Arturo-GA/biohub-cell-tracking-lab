@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "kernel": "jarturo/biohub-temporal-bridge-prepare-cpu",
+  "version": 1,
+  "manifest_sha256": "70a2a63453d6fc9f2b204278a5f0226cfa354be0ea52a031d890a548bc713220",
+  "seconds": 372.578708583
+}

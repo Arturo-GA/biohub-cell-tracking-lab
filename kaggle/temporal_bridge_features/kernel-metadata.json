@@ -1,0 +1,20 @@
+{
+  "id": "jarturo/biohub-temporal-bridge-features",
+  "title": "Biohub Temporal Bridge Features",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "competition_sources": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-temporal-graph-prepare-cpu",
+    "jarturo/biohub-temporal-bridge-prepare-cpu",
+    "jarturo/biohub-temporal-volume-train"
+  ],
+  "model_sources": []
+}

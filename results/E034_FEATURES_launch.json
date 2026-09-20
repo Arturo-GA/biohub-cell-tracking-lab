@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-temporal-bridge-features",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-temporal-bridge-features",
+  "launched_at_utc": "2026-09-20T18:17:29.606186+00:00",
+  "notebook_sha256": "daad44fe4cfabd23a2175a1fdf7b9d07f8714ea2ecc48f14f013650ab9f0e0bb",
+  "payload_sha256": "c0f511fa605f9921bc536b98ea9d78dc9781f22c34a5195e2114db53aa807e81",
+  "enable_gpu": true,
+  "is_private": true,
+  "leaderboard_submitted": false,
+  "preparation_manifest_sha256": "70a2a63453d6fc9f2b204278a5f0226cfa354be0ea52a031d890a548bc713220"
+}

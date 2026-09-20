@@ -1,0 +1,133 @@
+{
+  "status": "complete",
+  "experiment": "E034",
+  "comparison": {
+    "control": {
+      "edge_tp": 6674,
+      "edge_fp": 485,
+      "edge_fn": 501,
+      "num_pred_nodes": 318094,
+      "delta": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "num_pred_nodes": 0
+      },
+      "by_embryo": {
+        "44b6": {
+          "edge_tp": 0,
+          "edge_fp": 0,
+          "edge_fn": 0,
+          "mean_adj_edge_delta": 0.0
+        },
+        "6bba": {
+          "edge_tp": 0,
+          "edge_fp": 0,
+          "edge_fn": 0,
+          "mean_adj_edge_delta": 0.0
+        }
+      },
+      "score": 0.9007529595605399,
+      "bridges": 0
+    },
+    "geometry": {
+      "edge_tp": 6678,
+      "edge_fp": 486,
+      "edge_fn": 497,
+      "num_pred_nodes": 318885,
+      "delta": {
+        "edge_tp": 4,
+        "edge_fp": 1,
+        "edge_fn": -4,
+        "num_pred_nodes": 791
+      },
+      "by_embryo": {
+        "44b6": {
+          "edge_tp": 0,
+          "edge_fp": 0,
+          "edge_fn": 0,
+          "mean_adj_edge_delta": -0.00018697356848307312
+        },
+        "6bba": {
+          "edge_tp": 4,
+          "edge_fp": 1,
+          "edge_fn": -4,
+          "mean_adj_edge_delta": 0.00026963151659475937
+        }
+      },
+      "score": 0.9010135220675121,
+      "bridges": 342
+    },
+    "image": {
+      "edge_tp": 6677,
+      "edge_fp": 486,
+      "edge_fn": 498,
+      "num_pred_nodes": 318453,
+      "delta": {
+        "edge_tp": 3,
+        "edge_fp": 1,
+        "edge_fn": -3,
+        "num_pred_nodes": 359
+      },
+      "by_embryo": {
+        "44b6": {
+          "edge_tp": 0,
+          "edge_fp": 0,
+          "edge_fn": 0,
+          "mean_adj_edge_delta": -9.008021089440543e-05
+        },
+        "6bba": {
+          "edge_tp": 3,
+          "edge_fp": 1,
+          "edge_fn": -3,
+          "mean_adj_edge_delta": 0.00034193364222934175
+        }
+      },
+      "score": 0.9009710132212845,
+      "bridges": 145
+    }
+  },
+  "metrics": {
+    "control": {
+      "n": 16,
+      "edge_jaccard": 0.8712793733681462,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9779746966019673,
+      "adj_edge_jaccard": 0.8707529595605399,
+      "n_adj": 16,
+      "score": 0.9007529595605399
+    },
+    "geometry": {
+      "n": 16,
+      "edge_jaccard": 0.8716877692207283,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9782566607416932,
+      "adj_edge_jaccard": 0.871013522067512,
+      "n_adj": 16,
+      "score": 0.9010135220675121
+    },
+    "image": {
+      "n": 16,
+      "edge_jaccard": 0.871557237958491,
+      "division_jaccard": 0.3,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 3,
+      "node_recall": 0.9782566607416932,
+      "adj_edge_jaccard": 0.8709710132212845,
+      "n_adj": 16,
+      "score": 0.9009710132212845
+    }
+  },
+  "gpu_process_seconds": 17.13840232399997,
+  "evaluation_manifest_sha256": "aa65394e05cfaa63197ab3655412aefa0b27f8a1c83093dc1651355764ce3e4f",
+  "leaderboard_submitted": false,
+  "decision": "Small conditional gain; image filter does not beat geometric reconstruction. Retain as optional component, do not promote or sweep thresholds.",
+  "scope": "Reused16-video calibration; detector training provenance unknown; no independent holdout or leaderboard improvement claim."
+}
