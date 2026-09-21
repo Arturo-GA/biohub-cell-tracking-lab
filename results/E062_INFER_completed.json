@@ -1,0 +1,238 @@
+{
+  "kernel": "jarturo/biohub-e062-infer",
+  "version": 1,
+  "manifest_sha256": "0abfcb5867a2264463b528637e038db86adbfe8804918a0c85155728f7731a2a",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E062",
+      "videos": [
+        "44b6_0db75fae",
+        "44b6_5740d24b",
+        "44b6_587a1e22",
+        "44b6_9bfa6a0a",
+        "44b6_aaf8b0ea",
+        "44b6_c15fded2",
+        "44b6_c8e2a523",
+        "44b6_cf2536e8",
+        "6bba_1f58c2f6",
+        "6bba_5c824876",
+        "6bba_6479435d",
+        "6bba_76db78c1",
+        "6bba_7b5d3b2c",
+        "6bba_9a41d029",
+        "6bba_c73a1d11",
+        "6bba_f1fde7e0",
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "predictions_sha256": "80b6b8573ed3ec729ac6bec92518709b0bdc9be4e963c5a2c065dc98b27a2399",
+      "evaluation_sha256": "9bb1ecc3f58071cf2decbbbad94f1a53a4ab77a5be8f339da97ce1df4334960b",
+      "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+      "protocol": "Replace hard nearest/intensity persistence with pretrained primary UNet/Transformer association on union of base nodes and adapted detector candidates >3um from base. Original nodes and edges remain fixed in final ensemble. Primary forward neural probabilities, not a reproduction of full harmonic dual-seed/TTA fusion. Top8 row/column edges, global per-frame assignment log(p/.05), maximum14um, chains >=5. Same E061 addition/anchor/confidence limits; no threshold sweep. 24 reused research movies. GPU only new neural associations; CPU union and evaluation."
+    },
+    "records": [
+      {
+        "video": "44b6_0db75fae",
+        "file": "44b6_0db75fae.npz",
+        "sha256": "b001618e73731ef49b6153209f3f173f0cea23cd25e71067c6b61eef63770a7e",
+        "union_sha256": "dc9bfe388eaa5cc1250b90ab4675ee656d646cd6b665d1e271cfb8a85e14f6b1",
+        "pairs": 99,
+        "edges": 288084
+      },
+      {
+        "video": "44b6_587a1e22",
+        "file": "44b6_587a1e22.npz",
+        "sha256": "b4a8747af2f30d410bfb742e530465ce0c08898102dd583f660d309777d7d452",
+        "union_sha256": "762d9c1675b983f8ac77219f3d3324095217567ffab05101c125cfbe046c417b",
+        "pairs": 99,
+        "edges": 270009
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "file": "44b6_aaf8b0ea.npz",
+        "sha256": "3a9e31685790a1b1cecbd9748e10238d228a4a55e35ccaf309f83515d2f6ee7d",
+        "union_sha256": "f17e8aa7b205079adc9e57a60afababd8a7cfea4f42d9f726b0d939b3e97780e",
+        "pairs": 99,
+        "edges": 416613
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "file": "44b6_c8e2a523.npz",
+        "sha256": "59b3579876ca7fb2462473feb6d31affa4ae89496b6a05ae42e25c5139619cc0",
+        "union_sha256": "a81c14867b8c987a7bca8c8ac939bc9bdd59d2ccc90e8a7f93aee21c81ad7d7f",
+        "pairs": 99,
+        "edges": 388246
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "file": "6bba_1f58c2f6.npz",
+        "sha256": "158710eafb382c17c7c8b91a6c850cdd6342983bd8d448bbde79020c587be783",
+        "union_sha256": "daef131b94665692e02691854b13af18cbf87adff3c0450613388038f86d0bb4",
+        "pairs": 99,
+        "edges": 508129
+      },
+      {
+        "video": "6bba_6479435d",
+        "file": "6bba_6479435d.npz",
+        "sha256": "a70287ab9443a482dbb900c2d20d9af40a73b5a6e77d403245e43423090afded",
+        "union_sha256": "e98f99de8e01aefaf1d0636405ca94fe20216e77381313bf8a17b5c10bb34381",
+        "pairs": 99,
+        "edges": 442805
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "file": "6bba_7b5d3b2c.npz",
+        "sha256": "ab20f4ad6503b643b477ecbdcba2ee993300c1a2694140122e3720d1d5466d16",
+        "union_sha256": "70dab0cdafa6a7e798745c368425ad9b81ac40b60d7c17495cad7b5c191e25ea",
+        "pairs": 99,
+        "edges": 170527
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "file": "6bba_c73a1d11.npz",
+        "sha256": "1c43ae39985841a642e965596b6021d98f001c32f2d50760927dd13f297705e3",
+        "union_sha256": "135b032406ad301585072ecd6c03cf41589fef274845fa00f94da44d85f6360f",
+        "pairs": 99,
+        "edges": 469797
+      },
+      {
+        "video": "44b6_12dfb391",
+        "file": "44b6_12dfb391.npz",
+        "sha256": "e1602e99edec0922e7393d90ce3b38c1b4968c047c1d5a1ec8def8b65f0425dd",
+        "union_sha256": "a6fdd636c7f1cc0fc12e5906f0a1ebaa38592835fab3949a8bb905ebd1ede09d",
+        "pairs": 99,
+        "edges": 623338
+      },
+      {
+        "video": "44b6_c50204e0",
+        "file": "44b6_c50204e0.npz",
+        "sha256": "798f41eb500db234c8c625ecd245f45e5c9ffd13aae93ac665a965917972b2dc",
+        "union_sha256": "ac7af29dfeeef58c87f4a6c8d3823ada499c0522fc0f147517b1caa220510636",
+        "pairs": 99,
+        "edges": 655776
+      },
+      {
+        "video": "6bba_2646afc7",
+        "file": "6bba_2646afc7.npz",
+        "sha256": "906a230b16fcbcf0199670ae6313c402fb1abecadd290ee23d0030462fd5742b",
+        "union_sha256": "47da8c33911323163852ea44cba168ca3888930a6788e53590cb43fd9e59ff66",
+        "pairs": 99,
+        "edges": 141913
+      },
+      {
+        "video": "6bba_cf35214c",
+        "file": "6bba_cf35214c.npz",
+        "sha256": "f68f5adc85876222e10f0b624f35a029e96564cee8327888f81597bf462d95e5",
+        "union_sha256": "61b00bc5210d5c591afa66622b7c7235048c34ba6f6e6792627629166ce9c19d",
+        "pairs": 99,
+        "edges": 511513
+      },
+      {
+        "video": "44b6_5740d24b",
+        "file": "44b6_5740d24b.npz",
+        "sha256": "c469f31dc879871d3cabe98a083126b1edb85cf4e25607101902f413edb90cbe",
+        "union_sha256": "02cf8a88cae1c89d5ee0d0f47b5f099b6772ac2186ec2d469e4034e8c3f4bd9c",
+        "pairs": 99,
+        "edges": 415421
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "file": "44b6_9bfa6a0a.npz",
+        "sha256": "4c57592a733082b7e2c1b3bb27a33a6fab460b5857321e603ed4a167094e27a1",
+        "union_sha256": "9bfe9814ffb8b38002060aa00b525511163d4acb2f4e249b6ae7317b3b98f137",
+        "pairs": 99,
+        "edges": 622445
+      },
+      {
+        "video": "44b6_c15fded2",
+        "file": "44b6_c15fded2.npz",
+        "sha256": "f8874126ae13c48fd626cecfb579d435097d48be9b7a7372ebdc59637bbb1b81",
+        "union_sha256": "02cb2ad947b9631d7f8c08ce83db93994677d5d50b6029c7401f910a9fb1cc71",
+        "pairs": 99,
+        "edges": 356227
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "file": "44b6_cf2536e8.npz",
+        "sha256": "93d90de40607669e02c47c3b18a9949d3871429ab26fc14f0f8541aea269093a",
+        "union_sha256": "0f9ffcf82a7fe81b8f9855a8e20ad8d63baf2a3025c22e6256c2c8eb83175c0c",
+        "pairs": 99,
+        "edges": 577564
+      },
+      {
+        "video": "6bba_5c824876",
+        "file": "6bba_5c824876.npz",
+        "sha256": "a917e48f4b4c0982911608ad453cae12c7a6c12dd1144bb1d9819cfd3a76064c",
+        "union_sha256": "69d0aa733af5048a8c519eeb2bcc954b73fb8cb42b3ea7e116c100d3bdda037f",
+        "pairs": 99,
+        "edges": 401715
+      },
+      {
+        "video": "6bba_76db78c1",
+        "file": "6bba_76db78c1.npz",
+        "sha256": "4dcab1b6f6d6abd475dbd244f1ff688af721257fa6d09ae1a49a0ab00a90404d",
+        "union_sha256": "fc7c1114009eebef27e9c358c6de1fb6acfab5e02484e1c4c56f101c542ecb40",
+        "pairs": 99,
+        "edges": 176880
+      },
+      {
+        "video": "6bba_9a41d029",
+        "file": "6bba_9a41d029.npz",
+        "sha256": "91f2754dcd4f3d101c8581a220ab8e080e3a5989872999b572c19d3c0006864b",
+        "union_sha256": "8e3e9e7f4b4e3317ee92e52c9ab4393fb4e4cb7c0f6c9e77b47d6035027604fc",
+        "pairs": 99,
+        "edges": 346527
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "file": "6bba_f1fde7e0.npz",
+        "sha256": "c83c0926d716e8b556c0e79c4f3679fc342edd13c00e60c81c10216da931c150",
+        "union_sha256": "71e69001c14720ceb313091f08d1b863ce40724e258e8b9934cae1d3d5607e9f",
+        "pairs": 99,
+        "edges": 180298
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "file": "44b6_415c0a3a.npz",
+        "sha256": "1647c97c36451aaead8b063405c4252cbcb6aa1dca7aafdde2e5886a9429b6c4",
+        "union_sha256": "eabe039a03636e3df7d84f0585c36cf07f1e048b7d50e4a56c56410739bbaf3b",
+        "pairs": 99,
+        "edges": 597483
+      },
+      {
+        "video": "44b6_e35b117d",
+        "file": "44b6_e35b117d.npz",
+        "sha256": "ef75f473d79d0749892e0d08d5b76ab201f6575d4608f46bf9fa3a1323822f0b",
+        "union_sha256": "4f117d90c859af96eddd71fafead3e6a76ec3c32ca9f572ecc0a0e7c3fab67fe",
+        "pairs": 99,
+        "edges": 539650
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "file": "6bba_6db0e9b4.npz",
+        "sha256": "95039752a6b919cbe7f0b1dcc5b24e60d6c2e26a104c38631c74ca7dca47cb94",
+        "union_sha256": "c8abc9a3b4493d0339d106e67d55baadaec8e58e73724fbe6853a5de91433bfe",
+        "pairs": 99,
+        "edges": 566839
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "file": "6bba_ef7b4f7e.npz",
+        "sha256": "09137d01f66c9f24ec5cc00a8a404e56a9be225dfd034f29b66d1485a3b23426",
+        "union_sha256": "ff6a6d39937ad14655d870fc07362475ea1b8e777598dd8ce2d43a8e77cc3d29",
+        "pairs": 99,
+        "edges": 149310
+      }
+    ],
+    "seconds": 260.236157331,
+    "annotations_read": false,
+    "trained": false
+  }
+}

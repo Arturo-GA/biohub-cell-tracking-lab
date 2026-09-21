@@ -1,0 +1,384 @@
+{
+  "kernel": "jarturo/biohub-e061-prepare-cpu",
+  "version": 1,
+  "manifest_sha256": "4cd428a027f1199463fe5627ea07292f688a115b79ad3e3e9177c37ab4d1ebf9",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E061",
+      "seed": 612109,
+      "fit": [
+        "44b6_1d530831",
+        "44b6_3a861e03",
+        "44b6_3bb3690f",
+        "44b6_668e0cc7",
+        "44b6_66f9292d",
+        "44b6_71a4179f",
+        "44b6_7e557709",
+        "44b6_81c256f0",
+        "44b6_949adeb1",
+        "44b6_a2bb48bb",
+        "44b6_abf82518",
+        "44b6_b2c44266",
+        "44b6_c771cb04",
+        "44b6_c96cfa10",
+        "44b6_d2f34f90",
+        "44b6_d5e7d891",
+        "44b6_d754aa59",
+        "44b6_ddf577ad",
+        "44b6_e28840c6",
+        "44b6_e29f0176",
+        "6bba_062c8d37",
+        "6bba_0c7fa718",
+        "6bba_2312ac41",
+        "6bba_2819ca14",
+        "6bba_43fea39d",
+        "6bba_4ffd3da3",
+        "6bba_55c70843",
+        "6bba_57b7cc1e",
+        "6bba_5a4d9360",
+        "6bba_5c039895",
+        "6bba_6feeb0b1",
+        "6bba_786893ac",
+        "6bba_78a7bd97",
+        "6bba_7af54fde",
+        "6bba_acd782a8",
+        "6bba_b693381b",
+        "6bba_d0fc38b5",
+        "6bba_e5e44988",
+        "6bba_edf14583",
+        "6bba_fe670320"
+      ],
+      "evaluation": [
+        "44b6_0db75fae",
+        "44b6_5740d24b",
+        "44b6_587a1e22",
+        "44b6_9bfa6a0a",
+        "44b6_aaf8b0ea",
+        "44b6_c15fded2",
+        "44b6_c8e2a523",
+        "44b6_cf2536e8",
+        "6bba_1f58c2f6",
+        "6bba_5c824876",
+        "6bba_6479435d",
+        "6bba_76db78c1",
+        "6bba_7b5d3b2c",
+        "6bba_9a41d029",
+        "6bba_c73a1d11",
+        "6bba_f1fde7e0",
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "crops_per_video": 128,
+      "steps": 2500,
+      "batch_real": 4,
+      "batch_external": 4,
+      "learning_rate": 0.0001,
+      "deadline_seconds": 2400,
+      "real_data_sha256": "b8df897a2b8496d1b1a37018147df03f9db25b6c55806328e68b675b6ea3454a",
+      "external_data_sha256": "97689f24a28090a1dfeda709297eb9f3d7c4c120ec22ac50baf11a3c655a6cee",
+      "pretrained_manifest_sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0",
+      "protocol": "Adapt NIS3D DenseCenter to three real frames. Initialize temporal stem with central pretrained weights and zero side weights. Known-positive heatmap neighborhoods only, hard-positive weighting from frozen teacher, soft teacher preservation outside labeled neighborhoods, replay external fully supervised crops. Fixed 2500 updates; no evaluation data in training. Evaluate all frames of 24 reused videos disjoint from fit40. Frozen and adapted candidates, then CPU temporal confirmation and full official graph metrics. No claim of independent project holdout. No automatic submission.",
+      "proposals": {
+        "threshold": 0.2,
+        "topk": 512
+      },
+      "promotion": {
+        "minimum_mean_gain": 0.001,
+        "each_cohort_gain_nonnegative": true,
+        "edge_tp_gain_positive": true,
+        "division_fp_must_not_increase": true
+      }
+    },
+    "records": [
+      {
+        "video": "44b6_1d530831",
+        "file": "44b6_1d530831.npz",
+        "sha256": "51fd2d20fc9353e617f3facd0a6f4dd016d755b0208d70f9b9eea8bb8968e57c",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_3a861e03",
+        "file": "44b6_3a861e03.npz",
+        "sha256": "a3edb18e3995e9a10278d25ba5b5fc24698df8366968504b4c7e84cd8c962aed",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_3bb3690f",
+        "file": "44b6_3bb3690f.npz",
+        "sha256": "b3f803f85d6764b2bebbdc000e1e29934d960cc77d830e36bdfd7935bb5567ab",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_668e0cc7",
+        "file": "44b6_668e0cc7.npz",
+        "sha256": "2a58629858c309e7b64fe6fc1eee58ab97aa48908b56def6e14e71f7fddd16b8",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_66f9292d",
+        "file": "44b6_66f9292d.npz",
+        "sha256": "2e88b8a52ca0607acc175f1cbbcf32eccdb07e0b5f5956fb4dd76a908ed8ae11",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_71a4179f",
+        "file": "44b6_71a4179f.npz",
+        "sha256": "7ec23b0b0c193f9683354b39fc060ade345ab151c35f9740a72e477a35e16066",
+        "samples": 128,
+        "unique_indices": 74
+      },
+      {
+        "video": "44b6_7e557709",
+        "file": "44b6_7e557709.npz",
+        "sha256": "31691eefc41c8f99000e1d495b0e9e8e1c637bfadc11a3d0dbc560e29a6a1c9e",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_81c256f0",
+        "file": "44b6_81c256f0.npz",
+        "sha256": "3b73d1afd74b5b29871de44ba9b80c190bf0944260d642ceb41529dd0da9ba5d",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_949adeb1",
+        "file": "44b6_949adeb1.npz",
+        "sha256": "bcf53657434b73fc26a67a371a98e14eb5ae076333c3bbb22e79d5856c6fecb0",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_a2bb48bb",
+        "file": "44b6_a2bb48bb.npz",
+        "sha256": "a8c1299e259f41a9f3ade40e3fcb457d2d0aa8829e86331d5f7271e3fdbbfc2a",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_abf82518",
+        "file": "44b6_abf82518.npz",
+        "sha256": "8c082a3dc843ae5689b7c1c5850e5c6a89a26ae9a6aa6777811101872fc682e6",
+        "samples": 128,
+        "unique_indices": 69
+      },
+      {
+        "video": "44b6_b2c44266",
+        "file": "44b6_b2c44266.npz",
+        "sha256": "3cae32fc48f3fb54cec5b6009459151e2c1816416bfa4aa46b57d2062e474f80",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_c771cb04",
+        "file": "44b6_c771cb04.npz",
+        "sha256": "20060f83a8c113c40ea66164cd6b1f856a089089a5b860b82fc9d4cef52d9e7f",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_c96cfa10",
+        "file": "44b6_c96cfa10.npz",
+        "sha256": "d8701648f37106faa534416335facc5187a6abdaacb019b8a2b5eb5887bebab7",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_d2f34f90",
+        "file": "44b6_d2f34f90.npz",
+        "sha256": "8b46c32430d19afc2a45ddd59933a87bb3b7cc3e6bffe0b36213b96eb631f4d8",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_d5e7d891",
+        "file": "44b6_d5e7d891.npz",
+        "sha256": "d5693de7868d28247da046a16d226e74981376e1dc5eef327f30c2dccc9ba342",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_d754aa59",
+        "file": "44b6_d754aa59.npz",
+        "sha256": "ad559f06277f85e4732a321519c95c3b24ba233306274c09d3f9f037ae7b6233",
+        "samples": 128,
+        "unique_indices": 60
+      },
+      {
+        "video": "44b6_ddf577ad",
+        "file": "44b6_ddf577ad.npz",
+        "sha256": "2d8dd42767a4f0a1c003e60222586473b2ce3f43e25fab0d659aa042cceafb16",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_e28840c6",
+        "file": "44b6_e28840c6.npz",
+        "sha256": "84b4c3d25711abd1c1e671491159fbb5561cb3245ae1d32dd385c70158d94ac3",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "44b6_e29f0176",
+        "file": "44b6_e29f0176.npz",
+        "sha256": "d7be861bca9bb71f358679e301a02d84edc0088723d97136cbb671b809e2469c",
+        "samples": 128,
+        "unique_indices": 47
+      },
+      {
+        "video": "6bba_062c8d37",
+        "file": "6bba_062c8d37.npz",
+        "sha256": "485ed380ea13f974a79386244cf2352cb5604774bab4c545605faf0f390df13c",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_0c7fa718",
+        "file": "6bba_0c7fa718.npz",
+        "sha256": "bec172c470f0ce77251fa5933d5d749e61ffc9ead24c14acfa05a7a6064dac3d",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_2312ac41",
+        "file": "6bba_2312ac41.npz",
+        "sha256": "bbb4b19562a070718f403d395bf792c3dacb0ed9bcec4f8d0f7eec51df54db93",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_2819ca14",
+        "file": "6bba_2819ca14.npz",
+        "sha256": "310fd88b698699dcd542eb6a7b5dd7cc5eb38e41876a2dafc195a1f64eb48c10",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_43fea39d",
+        "file": "6bba_43fea39d.npz",
+        "sha256": "8cec27a9d8a84784b6bd7ac537394d9dda07295619059053fc6dffb14ba9ee59",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_4ffd3da3",
+        "file": "6bba_4ffd3da3.npz",
+        "sha256": "db6cd81ff997635cdfff08dee0645d63b98eda27854276b8550168d9fbfa0210",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_55c70843",
+        "file": "6bba_55c70843.npz",
+        "sha256": "4f87d06b9a5b94e7ab85d1a20f2a3c77d809ed17efad85ef426b414e715112c9",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_57b7cc1e",
+        "file": "6bba_57b7cc1e.npz",
+        "sha256": "80cd9daa80adcbd90f80df4efc72f2bc3118cde70350bec2b1d5f9a81b3c58e7",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_5a4d9360",
+        "file": "6bba_5a4d9360.npz",
+        "sha256": "987eb1d8c8b3f1d0dc464791999a41ffef81fc07e075a4f1324e5d8403951ab0",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_5c039895",
+        "file": "6bba_5c039895.npz",
+        "sha256": "7737aeaeb51fbe10160f588496bf34d143bb27afac8e5fc2f0b6958168dba3b8",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_6feeb0b1",
+        "file": "6bba_6feeb0b1.npz",
+        "sha256": "4d6ec099bfb284292d2d0dcc03cae149e899b3026757a4306f1114f66e857351",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_786893ac",
+        "file": "6bba_786893ac.npz",
+        "sha256": "3e3a60bbebc675bcf7a7b77e45d3541af5d530784a476b67c2157f867d9ba0be",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_78a7bd97",
+        "file": "6bba_78a7bd97.npz",
+        "sha256": "ed32cc2c06cf51876805329c6b4209ffb81a2d8df31448da972b09e64a2f71da",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_7af54fde",
+        "file": "6bba_7af54fde.npz",
+        "sha256": "a704456b583e1c640e47a80a00a3d2c08d4af1daa619079fe07e8a9acbfe1a54",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_acd782a8",
+        "file": "6bba_acd782a8.npz",
+        "sha256": "44950f59634c7a311c15c5bd5651b7cdd91cd290084afc7b42014c47ee349a60",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_b693381b",
+        "file": "6bba_b693381b.npz",
+        "sha256": "6dddb8c1060ff599940e79f869a1c6d571dfbe663d7155d5ea2d482d669b27f2",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_d0fc38b5",
+        "file": "6bba_d0fc38b5.npz",
+        "sha256": "50cc03bc1e8c0bbcea055e6af89410ca39297f4e69958755c43546ed5629841d",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_e5e44988",
+        "file": "6bba_e5e44988.npz",
+        "sha256": "ad468edcc305a541bb8202feb5189b8b07f3c93c6a1e838005af4e68809297ba",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_edf14583",
+        "file": "6bba_edf14583.npz",
+        "sha256": "ac9ffd08d2d86e99bed8a99a14f012b0b0c221ba2e8159529d5d76beade7a895",
+        "samples": 128,
+        "unique_indices": 128
+      },
+      {
+        "video": "6bba_fe670320",
+        "file": "6bba_fe670320.npz",
+        "sha256": "d2717ae5df7374ded93a53e7be532fa3e74a927ead6588da0d29c3da78b6a0d9",
+        "samples": 128,
+        "unique_indices": 128
+      }
+    ],
+    "seconds": 115.03822549200001,
+    "evaluation_labels_read": false
+  }
+}

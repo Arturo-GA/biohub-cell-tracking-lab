@@ -1,0 +1,21 @@
+{
+  "id": "jarturo/biohub-e061-infer",
+  "title": "Biohub E061 INFER",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-e061-train",
+    "jarturo/biohub-e041-train"
+  ],
+  "model_sources": []
+}

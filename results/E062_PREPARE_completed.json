@@ -1,0 +1,357 @@
+{
+  "kernel": "jarturo/biohub-e062-prepare-cpu",
+  "version": 1,
+  "manifest_sha256": "3bc3ba8c72f7c49342a5b81e38155000ba85cce88db5a71eadf696aaabdba73c",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E062",
+      "videos": [
+        "44b6_0db75fae",
+        "44b6_5740d24b",
+        "44b6_587a1e22",
+        "44b6_9bfa6a0a",
+        "44b6_aaf8b0ea",
+        "44b6_c15fded2",
+        "44b6_c8e2a523",
+        "44b6_cf2536e8",
+        "6bba_1f58c2f6",
+        "6bba_5c824876",
+        "6bba_6479435d",
+        "6bba_76db78c1",
+        "6bba_7b5d3b2c",
+        "6bba_9a41d029",
+        "6bba_c73a1d11",
+        "6bba_f1fde7e0",
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "predictions_sha256": "80b6b8573ed3ec729ac6bec92518709b0bdc9be4e963c5a2c065dc98b27a2399",
+      "evaluation_sha256": "9bb1ecc3f58071cf2decbbbad94f1a53a4ab77a5be8f339da97ce1df4334960b",
+      "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+      "protocol": "Replace hard nearest/intensity persistence with pretrained primary UNet/Transformer association on union of base nodes and adapted detector candidates >3um from base. Original nodes and edges remain fixed in final ensemble. Primary forward neural probabilities, not a reproduction of full harmonic dual-seed/TTA fusion. Top8 row/column edges, global per-frame assignment log(p/.05), maximum14um, chains >=5. Same E061 addition/anchor/confidence limits; no threshold sweep. 24 reused research movies. GPU only new neural associations; CPU union and evaluation."
+    },
+    "records": [
+      {
+        "video": "44b6_0db75fae",
+        "file": "44b6_0db75fae.npz",
+        "sha256": "dc9bfe388eaa5cc1250b90ab4675ee656d646cd6b665d1e271cfb8a85e14f6b1",
+        "old_nodes": 17765,
+        "new_candidates": 9919,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_5740d24b",
+        "file": "44b6_5740d24b.npz",
+        "sha256": "02cf8a88cae1c89d5ee0d0f47b5f099b6772ac2186ec2d469e4034e8c3f4bd9c",
+        "old_nodes": 11496,
+        "new_candidates": 29617,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_587a1e22",
+        "file": "44b6_587a1e22.npz",
+        "sha256": "762d9c1675b983f8ac77219f3d3324095217567ffab05101c125cfbe046c417b",
+        "old_nodes": 18831,
+        "new_candidates": 6622,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "file": "44b6_9bfa6a0a.npz",
+        "sha256": "9bfe9814ffb8b38002060aa00b525511163d4acb2f4e249b6ae7317b3b98f137",
+        "old_nodes": 39686,
+        "new_candidates": 20300,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "file": "44b6_aaf8b0ea.npz",
+        "sha256": "f17e8aa7b205079adc9e57a60afababd8a7cfea4f42d9f726b0d939b3e97780e",
+        "old_nodes": 15495,
+        "new_candidates": 25908,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_c15fded2",
+        "file": "44b6_c15fded2.npz",
+        "sha256": "02cb2ad947b9631d7f8c08ce83db93994677d5d50b6029c7401f910a9fb1cc71",
+        "old_nodes": 19490,
+        "new_candidates": 14755,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "file": "44b6_c8e2a523.npz",
+        "sha256": "a81c14867b8c987a7bca8c8ac939bc9bdd59d2ccc90e8a7f93aee21c81ad7d7f",
+        "old_nodes": 28751,
+        "new_candidates": 7037,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "file": "44b6_cf2536e8.npz",
+        "sha256": "0f9ffcf82a7fe81b8f9855a8e20ad8d63baf2a3025c22e6256c2c8eb83175c0c",
+        "old_nodes": 22553,
+        "new_candidates": 34846,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "file": "6bba_1f58c2f6.npz",
+        "sha256": "daef131b94665692e02691854b13af18cbf87adff3c0450613388038f86d0bb4",
+        "old_nodes": 32328,
+        "new_candidates": 18056,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_5c824876",
+        "file": "6bba_5c824876.npz",
+        "sha256": "69d0aa733af5048a8c519eeb2bcc954b73fb8cb42b3ea7e116c100d3bdda037f",
+        "old_nodes": 25430,
+        "new_candidates": 13070,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_6479435d",
+        "file": "6bba_6479435d.npz",
+        "sha256": "e98f99de8e01aefaf1d0636405ca94fe20216e77381313bf8a17b5c10bb34381",
+        "old_nodes": 25062,
+        "new_candidates": 18905,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_76db78c1",
+        "file": "6bba_76db78c1.npz",
+        "sha256": "fc7c1114009eebef27e9c358c6de1fb6acfab5e02484e1c4c56f101c542ecb40",
+        "old_nodes": 4640,
+        "new_candidates": 12632,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "file": "6bba_7b5d3b2c.npz",
+        "sha256": "70dab0cdafa6a7e798745c368425ad9b81ac40b60d7c17495cad7b5c191e25ea",
+        "old_nodes": 5501,
+        "new_candidates": 10742,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_9a41d029",
+        "file": "6bba_9a41d029.npz",
+        "sha256": "8e3e9e7f4b4e3317ee92e52c9ab4393fb4e4cb7c0f6c9e77b47d6035027604fc",
+        "old_nodes": 18496,
+        "new_candidates": 15164,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "file": "6bba_c73a1d11.npz",
+        "sha256": "135b032406ad301585072ecd6c03cf41589fef274845fa00f94da44d85f6360f",
+        "old_nodes": 24461,
+        "new_candidates": 21930,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "file": "6bba_f1fde7e0.npz",
+        "sha256": "71e69001c14720ceb313091f08d1b863ce40724e258e8b9934cae1d3d5607e9f",
+        "old_nodes": 8109,
+        "new_candidates": 9504,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_12dfb391",
+        "file": "44b6_12dfb391.npz",
+        "sha256": "a6fdd636c7f1cc0fc12e5906f0a1ebaa38592835fab3949a8bb905ebd1ede09d",
+        "old_nodes": 44953,
+        "new_candidates": 13287,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "file": "44b6_415c0a3a.npz",
+        "sha256": "eabe039a03636e3df7d84f0585c36cf07f1e048b7d50e4a56c56410739bbaf3b",
+        "old_nodes": 34402,
+        "new_candidates": 23817,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_c50204e0",
+        "file": "44b6_c50204e0.npz",
+        "sha256": "ac7af29dfeeef58c87f4a6c8d3823ada499c0522fc0f147517b1caa220510636",
+        "old_nodes": 38621,
+        "new_candidates": 24619,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "44b6_e35b117d",
+        "file": "44b6_e35b117d.npz",
+        "sha256": "4f117d90c859af96eddd71fafead3e6a76ec3c32ca9f572ecc0a0e7c3fab67fe",
+        "old_nodes": 19943,
+        "new_candidates": 33850,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_2646afc7",
+        "file": "6bba_2646afc7.npz",
+        "sha256": "47da8c33911323163852ea44cba168ca3888930a6788e53590cb43fd9e59ff66",
+        "old_nodes": 5271,
+        "new_candidates": 8380,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "file": "6bba_6db0e9b4.npz",
+        "sha256": "c8abc9a3b4493d0339d106e67d55baadaec8e58e73724fbe6853a5de91433bfe",
+        "old_nodes": 25779,
+        "new_candidates": 30716,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_cf35214c",
+        "file": "6bba_cf35214c.npz",
+        "sha256": "61b00bc5210d5c591afa66622b7c7235048c34ba6f6e6792627629166ce9c19d",
+        "old_nodes": 35144,
+        "new_candidates": 12935,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "file": "6bba_ef7b4f7e.npz",
+        "sha256": "ff6a6d39937ad14655d870fc07362475ea1b8e777598dd8ce2d43a8e77cc3d29",
+        "old_nodes": 5857,
+        "new_candidates": 8405,
+        "shape": [
+          100,
+          64,
+          256,
+          256
+        ]
+      }
+    ],
+    "seconds": 17.272426279999934,
+    "annotations_read": false
+  }
+}

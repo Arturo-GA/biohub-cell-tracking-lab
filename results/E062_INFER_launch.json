@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-e062-infer",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e062-infer",
+  "launched_at_utc": "2026-09-21T22:56:57.211541+00:00",
+  "payload_sha256": "bfc1d117fd82e5e1aab32116b04cf1b25a974427c4edd2f7fd74d18ed9c6825f",
+  "notebook_sha256": "2116153739f9a51c76672754c8cb34eaac3d8c3827cc5532bcf01b7e2602feb7",
+  "files": 6,
+  "gpu": true,
+  "private": true,
+  "leaderboard_submitted": false
+}

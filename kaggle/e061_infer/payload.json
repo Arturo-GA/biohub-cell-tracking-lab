@@ -1,0 +1,15 @@
+{
+  "sha256": "a6be125532c29e1ba3b9dabb942825aa48fd28d496a9548d9f1a493a84fe1485",
+  "files": [
+    "baseline/e061_infer_pins.json",
+    "baseline/e061_protocol.json",
+    "scripts/residual_detector_infer_runner.py",
+    "scripts/residual_detector_io.py",
+    "src/biohub_lab/dense_center.py",
+    "src/biohub_lab/residual_detector.py",
+    "src/biohub_lab/temporal_detector.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

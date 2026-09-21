@@ -1,0 +1,181 @@
+{
+  "kernel": "jarturo/biohub-e061-train",
+  "version": 1,
+  "manifest_sha256": "b7a9dd7cef2ea0a10729aeeb5d7a11a10b2ea4f8ea26d12784a88d9713c8b36f",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E061",
+      "seed": 612109,
+      "fit": [
+        "44b6_1d530831",
+        "44b6_3a861e03",
+        "44b6_3bb3690f",
+        "44b6_668e0cc7",
+        "44b6_66f9292d",
+        "44b6_71a4179f",
+        "44b6_7e557709",
+        "44b6_81c256f0",
+        "44b6_949adeb1",
+        "44b6_a2bb48bb",
+        "44b6_abf82518",
+        "44b6_b2c44266",
+        "44b6_c771cb04",
+        "44b6_c96cfa10",
+        "44b6_d2f34f90",
+        "44b6_d5e7d891",
+        "44b6_d754aa59",
+        "44b6_ddf577ad",
+        "44b6_e28840c6",
+        "44b6_e29f0176",
+        "6bba_062c8d37",
+        "6bba_0c7fa718",
+        "6bba_2312ac41",
+        "6bba_2819ca14",
+        "6bba_43fea39d",
+        "6bba_4ffd3da3",
+        "6bba_55c70843",
+        "6bba_57b7cc1e",
+        "6bba_5a4d9360",
+        "6bba_5c039895",
+        "6bba_6feeb0b1",
+        "6bba_786893ac",
+        "6bba_78a7bd97",
+        "6bba_7af54fde",
+        "6bba_acd782a8",
+        "6bba_b693381b",
+        "6bba_d0fc38b5",
+        "6bba_e5e44988",
+        "6bba_edf14583",
+        "6bba_fe670320"
+      ],
+      "evaluation": [
+        "44b6_0db75fae",
+        "44b6_5740d24b",
+        "44b6_587a1e22",
+        "44b6_9bfa6a0a",
+        "44b6_aaf8b0ea",
+        "44b6_c15fded2",
+        "44b6_c8e2a523",
+        "44b6_cf2536e8",
+        "6bba_1f58c2f6",
+        "6bba_5c824876",
+        "6bba_6479435d",
+        "6bba_76db78c1",
+        "6bba_7b5d3b2c",
+        "6bba_9a41d029",
+        "6bba_c73a1d11",
+        "6bba_f1fde7e0",
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "crops_per_video": 128,
+      "steps": 2500,
+      "batch_real": 4,
+      "batch_external": 4,
+      "learning_rate": 0.0001,
+      "deadline_seconds": 2400,
+      "real_data_sha256": "b8df897a2b8496d1b1a37018147df03f9db25b6c55806328e68b675b6ea3454a",
+      "external_data_sha256": "97689f24a28090a1dfeda709297eb9f3d7c4c120ec22ac50baf11a3c655a6cee",
+      "pretrained_manifest_sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0",
+      "protocol": "Adapt NIS3D DenseCenter to three real frames. Initialize temporal stem with central pretrained weights and zero side weights. Known-positive heatmap neighborhoods only, hard-positive weighting from frozen teacher, soft teacher preservation outside labeled neighborhoods, replay external fully supervised crops. Fixed 2500 updates; no evaluation data in training. Evaluate all frames of 24 reused videos disjoint from fit40. Frozen and adapted candidates, then CPU temporal confirmation and full official graph metrics. No claim of independent project holdout. No automatic submission.",
+      "proposals": {
+        "threshold": 0.2,
+        "topk": 512
+      },
+      "promotion": {
+        "minimum_mean_gain": 0.001,
+        "each_cohort_gain_nonnegative": true,
+        "edge_tp_gain_positive": true,
+        "division_fp_must_not_increase": true
+      }
+    },
+    "checkpoint": "temporal_dense.pt",
+    "checkpoint_sha256": "aef930f6ec9bd70ccff6a4da38e8f0fc9e120869e063631bbf99889b578385f7",
+    "history": [
+      {
+        "step": 250,
+        "positive": 0.6813041567802429,
+        "preserve": 0.008771507069468498,
+        "replay": 0.16121433675289154,
+        "loss": 0.8433956503868103
+      },
+      {
+        "step": 500,
+        "positive": 0.6836522221565247,
+        "preserve": 0.013686570338904858,
+        "replay": 0.2756469249725342,
+        "loss": 0.9606677889823914
+      },
+      {
+        "step": 750,
+        "positive": 0.6845549941062927,
+        "preserve": 0.022805431857705116,
+        "replay": 0.4040479063987732,
+        "loss": 1.090883493423462
+      },
+      {
+        "step": 1000,
+        "positive": 0.6829667091369629,
+        "preserve": 0.01737138070166111,
+        "replay": 0.29260823130607605,
+        "loss": 0.9773120880126953
+      },
+      {
+        "step": 1250,
+        "positive": 0.6996464729309082,
+        "preserve": 0.014071104116737843,
+        "replay": 0.2932000160217285,
+        "loss": 0.9942535758018494
+      },
+      {
+        "step": 1500,
+        "positive": 0.6778603792190552,
+        "preserve": 0.009218282997608185,
+        "replay": 0.06463192403316498,
+        "loss": 0.7434141635894775
+      },
+      {
+        "step": 1750,
+        "positive": 0.6797088384628296,
+        "preserve": 0.013511242344975471,
+        "replay": 0.29499927163124084,
+        "loss": 0.9760591983795166
+      },
+      {
+        "step": 2000,
+        "positive": 0.6788961291313171,
+        "preserve": 0.01904623582959175,
+        "replay": 0.14548854529857635,
+        "loss": 0.8262892961502075
+      },
+      {
+        "step": 2250,
+        "positive": 0.6805236339569092,
+        "preserve": 0.009486128576099873,
+        "replay": 0.31786876916885376,
+        "loss": 0.9993410110473633
+      },
+      {
+        "step": 2500,
+        "positive": 0.6836650371551514,
+        "preserve": 0.02886492945253849,
+        "replay": 0.14798003435134888,
+        "loss": 0.8345315456390381
+      }
+    ],
+    "updates": 2495,
+    "weight_change_l2": 2.8887863159179688,
+    "side_weight_norm": 0.07122598588466644,
+    "seconds": 129.55402181799997,
+    "trained": true,
+    "evaluation_images_read": false,
+    "evaluation_labels_read": false
+  }
+}

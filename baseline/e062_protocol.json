@@ -1,0 +1,33 @@
+{
+  "experiment": "E062",
+  "videos": [
+    "44b6_0db75fae",
+    "44b6_5740d24b",
+    "44b6_587a1e22",
+    "44b6_9bfa6a0a",
+    "44b6_aaf8b0ea",
+    "44b6_c15fded2",
+    "44b6_c8e2a523",
+    "44b6_cf2536e8",
+    "6bba_1f58c2f6",
+    "6bba_5c824876",
+    "6bba_6479435d",
+    "6bba_76db78c1",
+    "6bba_7b5d3b2c",
+    "6bba_9a41d029",
+    "6bba_c73a1d11",
+    "6bba_f1fde7e0",
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "predictions_sha256": "80b6b8573ed3ec729ac6bec92518709b0bdc9be4e963c5a2c065dc98b27a2399",
+  "evaluation_sha256": "9bb1ecc3f58071cf2decbbbad94f1a53a4ab77a5be8f339da97ce1df4334960b",
+  "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+  "protocol": "Replace hard nearest/intensity persistence with pretrained primary UNet/Transformer association on union of base nodes and adapted detector candidates >3um from base. Original nodes and edges remain fixed in final ensemble. Primary forward neural probabilities, not a reproduction of full harmonic dual-seed/TTA fusion. Top8 row/column edges, global per-frame assignment log(p/.05), maximum14um, chains >=5. Same E061 addition/anchor/confidence limits; no threshold sweep. 24 reused research movies. GPU only new neural associations; CPU union and evaluation."
+}

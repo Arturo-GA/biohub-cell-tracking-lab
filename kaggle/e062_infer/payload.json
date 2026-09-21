@@ -1,0 +1,14 @@
+{
+  "sha256": "bfc1d117fd82e5e1aab32116b04cf1b25a974427c4edd2f7fd74d18ed9c6825f",
+  "files": [
+    "baseline/e062_infer_pins.json",
+    "baseline/e062_protocol.json",
+    "scripts/neural_complement_infer_runner.py",
+    "scripts/residual_detector_io.py",
+    "src/biohub_lab/independent_expert.py",
+    "src/biohub_lab/submission.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

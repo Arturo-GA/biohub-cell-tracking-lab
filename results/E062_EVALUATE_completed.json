@@ -1,0 +1,967 @@
+{
+  "kernel": "jarturo/biohub-e062-evaluate-cpu",
+  "version": 1,
+  "manifest_sha256": "f840ebca5a44e9fa7acc9c83d349ca4aa6501f265468d6aed38cc3c61f5bf373",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E062",
+      "videos": [
+        "44b6_0db75fae",
+        "44b6_5740d24b",
+        "44b6_587a1e22",
+        "44b6_9bfa6a0a",
+        "44b6_aaf8b0ea",
+        "44b6_c15fded2",
+        "44b6_c8e2a523",
+        "44b6_cf2536e8",
+        "6bba_1f58c2f6",
+        "6bba_5c824876",
+        "6bba_6479435d",
+        "6bba_76db78c1",
+        "6bba_7b5d3b2c",
+        "6bba_9a41d029",
+        "6bba_c73a1d11",
+        "6bba_f1fde7e0",
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "predictions_sha256": "80b6b8573ed3ec729ac6bec92518709b0bdc9be4e963c5a2c065dc98b27a2399",
+      "evaluation_sha256": "9bb1ecc3f58071cf2decbbbad94f1a53a4ab77a5be8f339da97ce1df4334960b",
+      "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+      "protocol": "Replace hard nearest/intensity persistence with pretrained primary UNet/Transformer association on union of base nodes and adapted detector candidates >3um from base. Original nodes and edges remain fixed in final ensemble. Primary forward neural probabilities, not a reproduction of full harmonic dual-seed/TTA fusion. Top8 row/column edges, global per-frame assignment log(p/.05), maximum14um, chains >=5. Same E061 addition/anchor/confidence limits; no threshold sweep. 24 reused research movies. GPU only new neural associations; CPU union and evaluation."
+    },
+    "metrics": {
+      "control": {
+        "n": 24,
+        "edge_jaccard": 0.898327811957722,
+        "division_jaccard": 0.17647058823529413,
+        "division_tp": 3,
+        "division_fp": 6,
+        "division_fn": 8,
+        "node_recall": 0.9810037984985939,
+        "adj_edge_jaccard": 0.9022313538189592,
+        "n_adj": 24,
+        "score": 0.9198784126424887,
+        "edge_tp": 11389,
+        "edge_fp": 638,
+        "edge_fn": 651
+      },
+      "neural_anchor": {
+        "n": 24,
+        "edge_jaccard": 0.8980605487228004,
+        "division_jaccard": 0.17647058823529413,
+        "division_tp": 3,
+        "division_fp": 6,
+        "division_fn": 8,
+        "node_recall": 0.9812739227557522,
+        "adj_edge_jaccard": 0.9017656090764402,
+        "n_adj": 24,
+        "score": 0.9194126678999697,
+        "edge_tp": 11391,
+        "edge_fp": 644,
+        "edge_fn": 649
+      },
+      "neural_new": {
+        "n": 24,
+        "edge_jaccard": 0.8980605487228004,
+        "division_jaccard": 0.17647058823529413,
+        "division_tp": 3,
+        "division_fp": 6,
+        "division_fn": 8,
+        "node_recall": 0.9812739227557522,
+        "adj_edge_jaccard": 0.9017656090764402,
+        "n_adj": 24,
+        "score": 0.9194126678999697,
+        "edge_tp": 11391,
+        "edge_fp": 644,
+        "edge_fn": 649
+      }
+    },
+    "cohorts": {
+      "control": {
+        "old16": {
+          "n": 16,
+          "edge_jaccard": 0.8712793733681462,
+          "division_jaccard": 0.3,
+          "division_tp": 3,
+          "division_fp": 4,
+          "division_fn": 3,
+          "node_recall": 0.9779746966019673,
+          "adj_edge_jaccard": 0.8707529595605399,
+          "n_adj": 16,
+          "score": 0.9007529595605399
+        },
+        "visual8": {
+          "n": 8,
+          "edge_jaccard": 0.9396173774412117,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "division_fp": 2,
+          "division_fn": 5,
+          "node_recall": 0.987062002291847,
+          "adj_edge_jaccard": 0.9502832669356378,
+          "n_adj": 8,
+          "score": 0.9502832669356378
+        },
+        "44b6": {
+          "n": 12,
+          "edge_jaccard": 0.892403192432752,
+          "division_jaccard": 0.1111111111111111,
+          "division_tp": 1,
+          "division_fp": 3,
+          "division_fn": 5,
+          "node_recall": 0.9881290049920753,
+          "adj_edge_jaccard": 0.9124737833002933,
+          "n_adj": 12,
+          "score": 0.9235848944114043
+        },
+        "6bba": {
+          "n": 12,
+          "edge_jaccard": 0.900484131253362,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 3,
+          "division_fn": 3,
+          "node_recall": 0.9738785920051125,
+          "adj_edge_jaccard": 0.8985035282207502,
+          "n_adj": 12,
+          "score": 0.9235035282207502
+        }
+      },
+      "neural_anchor": {
+        "old16": {
+          "n": 16,
+          "edge_jaccard": 0.8714267066962538,
+          "division_jaccard": 0.3,
+          "division_tp": 3,
+          "division_fp": 4,
+          "division_fn": 3,
+          "node_recall": 0.9782785863912704,
+          "adj_edge_jaccard": 0.8707525585779688,
+          "n_adj": 16,
+          "score": 0.9007525585779689
+        },
+        "visual8": {
+          "n": 8,
+          "edge_jaccard": 0.9386820625124428,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "division_fp": 2,
+          "division_fn": 5,
+          "node_recall": 0.9872645954847158,
+          "adj_edge_jaccard": 0.9490662222296927,
+          "n_adj": 8,
+          "score": 0.9490662222296927
+        },
+        "44b6": {
+          "n": 12,
+          "edge_jaccard": 0.892403192432752,
+          "division_jaccard": 0.1111111111111111,
+          "division_tp": 1,
+          "division_fp": 3,
+          "division_fn": 5,
+          "node_recall": 0.9881290049920753,
+          "adj_edge_jaccard": 0.9121710586146418,
+          "n_adj": 12,
+          "score": 0.9232821697257528
+        },
+        "6bba": {
+          "n": 12,
+          "edge_jaccard": 0.9001182668530265,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 3,
+          "division_fn": 3,
+          "node_recall": 0.9744188405194291,
+          "adj_edge_jaccard": 0.897980893907347,
+          "n_adj": 12,
+          "score": 0.922980893907347
+        }
+      },
+      "neural_new": {
+        "old16": {
+          "n": 16,
+          "edge_jaccard": 0.8714267066962538,
+          "division_jaccard": 0.3,
+          "division_tp": 3,
+          "division_fp": 4,
+          "division_fn": 3,
+          "node_recall": 0.9782785863912704,
+          "adj_edge_jaccard": 0.8707525585779688,
+          "n_adj": 16,
+          "score": 0.9007525585779689
+        },
+        "visual8": {
+          "n": 8,
+          "edge_jaccard": 0.9386820625124428,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "division_fp": 2,
+          "division_fn": 5,
+          "node_recall": 0.9872645954847158,
+          "adj_edge_jaccard": 0.9490662222296927,
+          "n_adj": 8,
+          "score": 0.9490662222296927
+        },
+        "44b6": {
+          "n": 12,
+          "edge_jaccard": 0.892403192432752,
+          "division_jaccard": 0.1111111111111111,
+          "division_tp": 1,
+          "division_fp": 3,
+          "division_fn": 5,
+          "node_recall": 0.9881290049920753,
+          "adj_edge_jaccard": 0.9121710586146418,
+          "n_adj": 12,
+          "score": 0.9232821697257528
+        },
+        "6bba": {
+          "n": 12,
+          "edge_jaccard": 0.9001182668530265,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 3,
+          "division_fn": 3,
+          "node_recall": 0.9744188405194291,
+          "adj_edge_jaccard": 0.897980893907347,
+          "n_adj": 12,
+          "score": 0.922980893907347
+        }
+      }
+    },
+    "reports": [
+      {
+        "video": "44b6_0db75fae",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "neural_anchor",
+        "raw_candidates": 27684,
+        "persistent_chains": 1527,
+        "proposals": 35,
+        "accepted": 11,
+        "anchored": 11,
+        "standalone": 0,
+        "added_nodes": 42,
+        "added_edges": 44,
+        "node_budget": 177
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "neural_new",
+        "raw_candidates": 27684,
+        "persistent_chains": 1527,
+        "proposals": 35,
+        "accepted": 11,
+        "anchored": 11,
+        "standalone": 0,
+        "added_nodes": 42,
+        "added_edges": 44,
+        "node_budget": 177
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "neural_anchor",
+        "raw_candidates": 41113,
+        "persistent_chains": 1378,
+        "proposals": 31,
+        "accepted": 16,
+        "anchored": 16,
+        "standalone": 0,
+        "added_nodes": 56,
+        "added_edges": 57,
+        "node_budget": 114
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "neural_new",
+        "raw_candidates": 41113,
+        "persistent_chains": 1378,
+        "proposals": 31,
+        "accepted": 16,
+        "anchored": 16,
+        "standalone": 0,
+        "added_nodes": 56,
+        "added_edges": 57,
+        "node_budget": 114
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "neural_anchor",
+        "raw_candidates": 25453,
+        "persistent_chains": 1264,
+        "proposals": 15,
+        "accepted": 5,
+        "anchored": 5,
+        "standalone": 0,
+        "added_nodes": 17,
+        "added_edges": 17,
+        "node_budget": 188
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "neural_new",
+        "raw_candidates": 25453,
+        "persistent_chains": 1264,
+        "proposals": 15,
+        "accepted": 5,
+        "anchored": 5,
+        "standalone": 0,
+        "added_nodes": 17,
+        "added_edges": 17,
+        "node_budget": 188
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "neural_anchor",
+        "raw_candidates": 59986,
+        "persistent_chains": 3050,
+        "proposals": 109,
+        "accepted": 79,
+        "anchored": 79,
+        "standalone": 0,
+        "added_nodes": 360,
+        "added_edges": 372,
+        "node_budget": 396
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "neural_new",
+        "raw_candidates": 59986,
+        "persistent_chains": 3050,
+        "proposals": 109,
+        "accepted": 79,
+        "anchored": 79,
+        "standalone": 0,
+        "added_nodes": 360,
+        "added_edges": 372,
+        "node_budget": 396
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "neural_anchor",
+        "raw_candidates": 41403,
+        "persistent_chains": 1826,
+        "proposals": 76,
+        "accepted": 29,
+        "anchored": 29,
+        "standalone": 0,
+        "added_nodes": 127,
+        "added_edges": 131,
+        "node_budget": 154
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "neural_new",
+        "raw_candidates": 41403,
+        "persistent_chains": 1826,
+        "proposals": 76,
+        "accepted": 29,
+        "anchored": 29,
+        "standalone": 0,
+        "added_nodes": 127,
+        "added_edges": 131,
+        "node_budget": 154
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "neural_anchor",
+        "raw_candidates": 34245,
+        "persistent_chains": 2021,
+        "proposals": 31,
+        "accepted": 8,
+        "anchored": 8,
+        "standalone": 0,
+        "added_nodes": 29,
+        "added_edges": 30,
+        "node_budget": 194
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "neural_new",
+        "raw_candidates": 34245,
+        "persistent_chains": 2021,
+        "proposals": 31,
+        "accepted": 8,
+        "anchored": 8,
+        "standalone": 0,
+        "added_nodes": 29,
+        "added_edges": 30,
+        "node_budget": 194
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "neural_anchor",
+        "raw_candidates": 35788,
+        "persistent_chains": 1434,
+        "proposals": 37,
+        "accepted": 22,
+        "anchored": 22,
+        "standalone": 0,
+        "added_nodes": 83,
+        "added_edges": 87,
+        "node_budget": 287
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "neural_new",
+        "raw_candidates": 35788,
+        "persistent_chains": 1434,
+        "proposals": 37,
+        "accepted": 22,
+        "anchored": 22,
+        "standalone": 0,
+        "added_nodes": 83,
+        "added_edges": 87,
+        "node_budget": 287
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "neural_anchor",
+        "raw_candidates": 57399,
+        "persistent_chains": 2720,
+        "proposals": 148,
+        "accepted": 49,
+        "anchored": 49,
+        "standalone": 0,
+        "added_nodes": 225,
+        "added_edges": 240,
+        "node_budget": 225
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "neural_new",
+        "raw_candidates": 57399,
+        "persistent_chains": 2720,
+        "proposals": 148,
+        "accepted": 49,
+        "anchored": 49,
+        "standalone": 0,
+        "added_nodes": 225,
+        "added_edges": 240,
+        "node_budget": 225
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "neural_anchor",
+        "raw_candidates": 50384,
+        "persistent_chains": 3002,
+        "proposals": 85,
+        "accepted": 18,
+        "anchored": 18,
+        "standalone": 0,
+        "added_nodes": 63,
+        "added_edges": 64,
+        "node_budget": 323
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "neural_new",
+        "raw_candidates": 50384,
+        "persistent_chains": 3002,
+        "proposals": 85,
+        "accepted": 18,
+        "anchored": 18,
+        "standalone": 0,
+        "added_nodes": 63,
+        "added_edges": 64,
+        "node_budget": 323
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "neural_anchor",
+        "raw_candidates": 38500,
+        "persistent_chains": 1979,
+        "proposals": 32,
+        "accepted": 5,
+        "anchored": 5,
+        "standalone": 0,
+        "added_nodes": 16,
+        "added_edges": 16,
+        "node_budget": 254
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "neural_new",
+        "raw_candidates": 38500,
+        "persistent_chains": 1979,
+        "proposals": 32,
+        "accepted": 5,
+        "anchored": 5,
+        "standalone": 0,
+        "added_nodes": 16,
+        "added_edges": 16,
+        "node_budget": 254
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "neural_anchor",
+        "raw_candidates": 43967,
+        "persistent_chains": 2724,
+        "proposals": 73,
+        "accepted": 13,
+        "anchored": 13,
+        "standalone": 0,
+        "added_nodes": 43,
+        "added_edges": 44,
+        "node_budget": 250
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "neural_new",
+        "raw_candidates": 43967,
+        "persistent_chains": 2724,
+        "proposals": 73,
+        "accepted": 13,
+        "anchored": 13,
+        "standalone": 0,
+        "added_nodes": 43,
+        "added_edges": 44,
+        "node_budget": 250
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "neural_anchor",
+        "raw_candidates": 17272,
+        "persistent_chains": 938,
+        "proposals": 8,
+        "accepted": 1,
+        "anchored": 1,
+        "standalone": 0,
+        "added_nodes": 3,
+        "added_edges": 3,
+        "node_budget": 46
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "neural_new",
+        "raw_candidates": 17272,
+        "persistent_chains": 938,
+        "proposals": 8,
+        "accepted": 1,
+        "anchored": 1,
+        "standalone": 0,
+        "added_nodes": 3,
+        "added_edges": 3,
+        "node_budget": 46
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "neural_anchor",
+        "raw_candidates": 16243,
+        "persistent_chains": 980,
+        "proposals": 17,
+        "accepted": 2,
+        "anchored": 2,
+        "standalone": 0,
+        "added_nodes": 13,
+        "added_edges": 13,
+        "node_budget": 55
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "neural_new",
+        "raw_candidates": 16243,
+        "persistent_chains": 980,
+        "proposals": 17,
+        "accepted": 2,
+        "anchored": 2,
+        "standalone": 0,
+        "added_nodes": 13,
+        "added_edges": 13,
+        "node_budget": 55
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "neural_anchor",
+        "raw_candidates": 33660,
+        "persistent_chains": 1850,
+        "proposals": 36,
+        "accepted": 8,
+        "anchored": 8,
+        "standalone": 0,
+        "added_nodes": 29,
+        "added_edges": 29,
+        "node_budget": 184
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "neural_new",
+        "raw_candidates": 33660,
+        "persistent_chains": 1850,
+        "proposals": 36,
+        "accepted": 8,
+        "anchored": 8,
+        "standalone": 0,
+        "added_nodes": 29,
+        "added_edges": 29,
+        "node_budget": 184
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "neural_anchor",
+        "raw_candidates": 46391,
+        "persistent_chains": 2935,
+        "proposals": 64,
+        "accepted": 7,
+        "anchored": 7,
+        "standalone": 0,
+        "added_nodes": 21,
+        "added_edges": 22,
+        "node_budget": 244
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "neural_new",
+        "raw_candidates": 46391,
+        "persistent_chains": 2935,
+        "proposals": 64,
+        "accepted": 7,
+        "anchored": 7,
+        "standalone": 0,
+        "added_nodes": 21,
+        "added_edges": 22,
+        "node_budget": 244
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "neural_anchor",
+        "raw_candidates": 17613,
+        "persistent_chains": 1322,
+        "proposals": 29,
+        "accepted": 1,
+        "anchored": 1,
+        "standalone": 0,
+        "added_nodes": 3,
+        "added_edges": 3,
+        "node_budget": 81
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "neural_new",
+        "raw_candidates": 17613,
+        "persistent_chains": 1322,
+        "proposals": 29,
+        "accepted": 1,
+        "anchored": 1,
+        "standalone": 0,
+        "added_nodes": 3,
+        "added_edges": 3,
+        "node_budget": 81
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "neural_anchor",
+        "raw_candidates": 58240,
+        "persistent_chains": 2576,
+        "proposals": 98,
+        "accepted": 48,
+        "anchored": 48,
+        "standalone": 0,
+        "added_nodes": 183,
+        "added_edges": 190,
+        "node_budget": 449
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "neural_new",
+        "raw_candidates": 58240,
+        "persistent_chains": 2576,
+        "proposals": 98,
+        "accepted": 48,
+        "anchored": 48,
+        "standalone": 0,
+        "added_nodes": 183,
+        "added_edges": 190,
+        "node_budget": 449
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "neural_anchor",
+        "raw_candidates": 58219,
+        "persistent_chains": 3005,
+        "proposals": 133,
+        "accepted": 80,
+        "anchored": 80,
+        "standalone": 0,
+        "added_nodes": 328,
+        "added_edges": 339,
+        "node_budget": 344
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "neural_new",
+        "raw_candidates": 58219,
+        "persistent_chains": 3005,
+        "proposals": 133,
+        "accepted": 80,
+        "anchored": 80,
+        "standalone": 0,
+        "added_nodes": 328,
+        "added_edges": 339,
+        "node_budget": 344
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "neural_anchor",
+        "raw_candidates": 63240,
+        "persistent_chains": 3833,
+        "proposals": 84,
+        "accepted": 18,
+        "anchored": 18,
+        "standalone": 0,
+        "added_nodes": 58,
+        "added_edges": 60,
+        "node_budget": 386
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "neural_new",
+        "raw_candidates": 63240,
+        "persistent_chains": 3833,
+        "proposals": 84,
+        "accepted": 18,
+        "anchored": 18,
+        "standalone": 0,
+        "added_nodes": 58,
+        "added_edges": 60,
+        "node_budget": 386
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "neural_anchor",
+        "raw_candidates": 53793,
+        "persistent_chains": 2733,
+        "proposals": 84,
+        "accepted": 33,
+        "anchored": 33,
+        "standalone": 0,
+        "added_nodes": 149,
+        "added_edges": 150,
+        "node_budget": 199
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "neural_new",
+        "raw_candidates": 53793,
+        "persistent_chains": 2733,
+        "proposals": 84,
+        "accepted": 33,
+        "anchored": 33,
+        "standalone": 0,
+        "added_nodes": 149,
+        "added_edges": 150,
+        "node_budget": 199
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "neural_anchor",
+        "raw_candidates": 13651,
+        "persistent_chains": 799,
+        "proposals": 16,
+        "accepted": 5,
+        "anchored": 5,
+        "standalone": 0,
+        "added_nodes": 18,
+        "added_edges": 19,
+        "node_budget": 52
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "neural_new",
+        "raw_candidates": 13651,
+        "persistent_chains": 799,
+        "proposals": 16,
+        "accepted": 5,
+        "anchored": 5,
+        "standalone": 0,
+        "added_nodes": 18,
+        "added_edges": 19,
+        "node_budget": 52
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "neural_anchor",
+        "raw_candidates": 56495,
+        "persistent_chains": 2964,
+        "proposals": 65,
+        "accepted": 13,
+        "anchored": 13,
+        "standalone": 0,
+        "added_nodes": 46,
+        "added_edges": 48,
+        "node_budget": 257
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "neural_new",
+        "raw_candidates": 56495,
+        "persistent_chains": 2964,
+        "proposals": 65,
+        "accepted": 13,
+        "anchored": 13,
+        "standalone": 0,
+        "added_nodes": 46,
+        "added_edges": 48,
+        "node_budget": 257
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "neural_anchor",
+        "raw_candidates": 48079,
+        "persistent_chains": 2057,
+        "proposals": 31,
+        "accepted": 15,
+        "anchored": 15,
+        "standalone": 0,
+        "added_nodes": 53,
+        "added_edges": 55,
+        "node_budget": 351
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "neural_new",
+        "raw_candidates": 48079,
+        "persistent_chains": 2057,
+        "proposals": 31,
+        "accepted": 15,
+        "anchored": 15,
+        "standalone": 0,
+        "added_nodes": 53,
+        "added_edges": 55,
+        "node_budget": 351
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "neural_anchor",
+        "raw_candidates": 14262,
+        "persistent_chains": 808,
+        "proposals": 15,
+        "accepted": 3,
+        "anchored": 3,
+        "standalone": 0,
+        "added_nodes": 19,
+        "added_edges": 19,
+        "node_budget": 58
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "neural_new",
+        "raw_candidates": 14262,
+        "persistent_chains": 808,
+        "proposals": 15,
+        "accepted": 3,
+        "anchored": 3,
+        "standalone": 0,
+        "added_nodes": 19,
+        "added_edges": 19,
+        "node_budget": 58
+      }
+    ],
+    "passed": [],
+    "selected": "control",
+    "seconds": 153.74125061399997,
+    "leaderboard_submitted": false,
+    "scope": "Exploratory 24 reused videos; E061 detector fit disjoint. No claim of independent public tracker pretraining."
+  }
+}

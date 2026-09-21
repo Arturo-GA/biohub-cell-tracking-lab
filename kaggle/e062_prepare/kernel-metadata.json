@@ -1,0 +1,22 @@
+{
+  "id": "jarturo/biohub-e062-prepare-cpu",
+  "title": "Biohub E062 PREPARE CPU",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "dataset_sources": [
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "kernel_sources": [
+    "jarturo/biohub-e061-infer",
+    "jarturo/biohub-e061-evaluate-cpu"
+  ],
+  "model_sources": []
+}
