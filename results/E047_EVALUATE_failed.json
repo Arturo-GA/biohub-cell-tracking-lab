@@ -1,0 +1,9 @@
+{
+  "kernel": "jarturo/biohub-e047-evaluate-cpu",
+  "version": 1,
+  "status": "ERROR",
+  "error": "AssertionError: pre-existing coincident rounded coordinates in Harmonic anchors",
+  "log_sha256": "5b512928320bb60c51ad2a40a41f678acd0ef3bdd99b0a6da5ed11d90c7748c4",
+  "replacement": "jarturo/biohub-e047-recover-cpu",
+  "gpu_repeated": false
+}

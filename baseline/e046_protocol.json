@@ -1,0 +1,27 @@
+{
+  "experiment": "E046",
+  "sources": {
+    "graphs": {
+      "path": "temporal_graph_inputs/result.json",
+      "sha256": "c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22"
+    },
+    "graph_features": {
+      "path": "temporal_graph_features/result.json",
+      "sha256": "bac1ff43079fb1cb9a6f89d231e00674a0e517056913b0b7bf4254d4aa8deaf6"
+    },
+    "donors": {
+      "path": "temporal_bridge_prepare/result.json",
+      "sha256": "70a2a63453d6fc9f2b204278a5f0226cfa354be0ea52a031d890a548bc713220"
+    },
+    "donor_features": {
+      "path": "temporal_bridge_features/result.json",
+      "sha256": "810c742d51191a9f8b0623879b9cbc0ec55e19b51e7a65634039923440342523"
+    }
+  },
+  "designs": [
+    "geometry_bridge_encoder",
+    "visual_bridge_encoder"
+  ],
+  "protocol": "E034 augmentation then E033 image reassignment on all augmented continuation nodes. Preserve degrees and division edges; prior1, cosine/.2, distance/5, 12 candidates<=20um. No new parameters or fit.",
+  "gate": "Best bridge score +0.001, more edgeTP than either bridge, no edgeFP increase vs Harmonic, no divisionTP loss or divisionFP increase. Needs further confirmation before submission."
+}

@@ -1,0 +1,23 @@
+{
+  "compiled_files": [
+    "scripts/complements_evaluate_runner.py",
+    "scripts/graph_complements_runner.py",
+    "scripts/consensus_infer_runner.py",
+    "scripts/consensus_graph_runner.py",
+    "scripts/public_divnet_veto_runner.py",
+    "src/biohub_lab/detector_complements.py",
+    "src/biohub_lab/public_divnet.py",
+    "src/biohub_lab/temporal_detector.py"
+  ],
+  "private_notebooks": 6,
+  "gpu_notebooks": [
+    "e047_infer"
+  ],
+  "temporal_tests_passed": 21,
+  "complement_tests_passed": 5,
+  "divnet_tests_passed": 2,
+  "voting_regression_exact": true,
+  "divnet_strict_load": true,
+  "divnet_preprocessing_reference_atol": 2e-06,
+  "initial_temporal_tests_sandbox_permission_errors": 2
+}

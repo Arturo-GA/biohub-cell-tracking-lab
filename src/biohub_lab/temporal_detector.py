@@ -26,7 +26,7 @@ def vector_targets(centers,shape=(32,32,32),radius=3.):
         keep=(dist<=radius)&(dist<distance[s]);target[(slice(None),*s)][:,keep]=delta[:,keep];distance[s][keep]=dist[keep]
     return target,np.isfinite(distance)
 
-def votes(field,image):
+def vote_map(field,image):
     from scipy.ndimage import gaussian_filter,maximum_filter
     grid=np.indices(image.shape,dtype=np.float32);end=grid+field
     # Trilinear splatting avoids rounding artifacts. Weight uses only the image.
@@ -39,4 +39,10 @@ def votes(field,image):
                 good=np.all((at>=0)&(at<np.asarray(image.shape).reshape(3,1,1,1)),axis=0)
                 w=np.prod(np.where(shift,frac,1-frac),axis=0)*weight
                 np.add.at(score,tuple(at[:,good]),w[good])
-    score=gaussian_filter(score,.6);xyz=np.argwhere((score==maximum_filter(score,3))&(score>0));order=np.argsort(-score[tuple(xyz.T)],kind='stable');return xyz[order[:512]],score[tuple(xyz[order[:512]].T)]
+    return gaussian_filter(score,.6)
+
+def votes(field,image):
+    from scipy.ndimage import maximum_filter
+    score=vote_map(field,image)
+    xyz=np.argwhere((score==maximum_filter(score,3))&(score>0));order=np.argsort(-score[tuple(xyz.T)],kind='stable')
+    return xyz[order[:512]],score[tuple(xyz[order[:512]].T)]

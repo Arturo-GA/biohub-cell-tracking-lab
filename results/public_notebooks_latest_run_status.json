@@ -1,0 +1,20 @@
+[
+  {
+    "ref": "andnyu/biohub-density-adaptive-0-948-reproduction",
+    "status": "COMPLETE",
+    "files": [
+      "artifacts\\research_latest_20260920\\andnyu__biohub-density-adaptive-0-948-reproduction\\outputs\\biohub-density-adaptive-0-948-reproduction.log"
+    ]
+  },
+  {
+    "ref": "ghazarosghazaros/biohub-dae-self-distill-repeat",
+    "status": "COMPLETE",
+    "files": [
+      "artifacts\\research_latest_20260920\\ghazarosghazaros__biohub-dae-self-distill-repeat\\outputs\\biohub-dae-self-distill-repeat.log"
+    ]
+  },
+  {
+    "ref": "noisyislands/biohub-linker-association-mlp-v2",
+    "error": "'charmap' codec can't encode characters in position 3901-3940: character maps to <undefined>"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "checkpoint_tensors": 50,
+  "strict_load": true,
+  "parameters": 1402993,
+  "finite_forward": true,
+  "input_shape": [
+    5,
+    16,
+    32,
+    32
+  ]
+}

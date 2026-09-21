@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e045-evaluate-cpu",
+  "version": 1,
+  "kernel_id": 135160555,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e045-evaluate-cpu",
+  "ref": "/code/jarturo/biohub-e045-evaluate-cpu",
+  "launched_at_utc": "2026-09-20T23:38:53.594781+00:00",
+  "payload_sha256": "a1bc64df9040db3cbfad7197512c32e950717b9d2d7187f37ab423518b3e3e29",
+  "notebook_sha256": "04bfb8ca375ff4c100a4235091c84d9a737eb3db5bdcbe95d982eb9517f1d124",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e047-recover-cpu",
+  "version": 1,
+  "kernel_id": 135161414,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e047-recover-cpu",
+  "ref": "/code/jarturo/biohub-e047-recover-cpu",
+  "launched_at_utc": "2026-09-20T23:56:04.956961+00:00",
+  "payload_sha256": "7eb48f8733c89e9e9c420d3821cdeed23cb17b83721c6addb613623cd48d705b",
+  "notebook_sha256": "33c9514aa918434b6a6936b626f5f2730d837bc216c4274b2a8a03d7db611f58",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

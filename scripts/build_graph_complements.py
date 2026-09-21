@@ -1,0 +1,7 @@
+import json
+from pathlib import Path
+from build_three_lines import build
+cfg=dict(experiment='E046',sources={},designs=['geometry_bridge_encoder','visual_bridge_encoder'],protocol='E034 augmentation then E033 image reassignment on all augmented continuation nodes. Preserve degrees and division edges; prior1, cosine/.2, distance/5, 12 candidates<=20um. No new parameters or fit.',gate='Best bridge score +0.001, more edgeTP than either bridge, no edgeFP increase vs Harmonic, no divisionTP loss or divisionFP increase. Needs further confirmation before submission.')
+for key,path,digest in [('graphs','temporal_graph_inputs/result.json','c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22'),('graph_features','temporal_graph_features/result.json','bac1ff43079fb1cb9a6f89d231e00674a0e517056913b0b7bf4254d4aa8deaf6'),('donors','temporal_bridge_prepare/result.json','70a2a63453d6fc9f2b204278a5f0226cfa354be0ea52a031d890a548bc713220'),('donor_features','temporal_bridge_features/result.json','810c742d51191a9f8b0623879b9cbc0ec55e19b51e7a65634039923440342523')]:cfg['sources'][key]=dict(path=path,sha256=digest)
+Path('baseline/e046_protocol.json').write_text(json.dumps(cfg,indent=2)+'\n')
+build('E046_EVALUATE','scripts/graph_complements_runner.py',['baseline/e046_protocol.json','scripts/temporal_bridge_runner.py','src/biohub_lab/temporal_bridge.py','src/biohub_lab/temporal_graph.py'],['jarturo/biohub-temporal-graph-prepare-cpu','jarturo/biohub-temporal-graph-features','jarturo/biohub-temporal-bridge-prepare-cpu','jarturo/biohub-temporal-bridge-features'])

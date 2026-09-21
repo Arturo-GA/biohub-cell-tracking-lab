@@ -1,0 +1,62 @@
+{
+  "control": {
+    "counts": {
+      "edge_tp": 6674,
+      "edge_fp": 485,
+      "edge_fn": 501
+    },
+    "delta_score": 0.0,
+    "delta_by_embryo": {
+      "44b6": 0.0,
+      "6bba": 0.0
+    }
+  },
+  "dense_bridge": {
+    "counts": {
+      "edge_tp": 6682,
+      "edge_fp": 487,
+      "edge_fn": 493
+    },
+    "delta_score": 0.0006556586142729692,
+    "delta_by_embryo": {
+      "44b6": -0.00017034323788278627,
+      "6bba": 0.0008754283437509836
+    }
+  },
+  "consensus_bridge": {
+    "counts": {
+      "edge_tp": 6682,
+      "edge_fp": 490,
+      "edge_fn": 493
+    },
+    "delta_score": 0.00031228185992426827,
+    "delta_by_embryo": {
+      "44b6": -0.001325273725850229,
+      "6bba": 0.0007312557114208529
+    }
+  },
+  "consensus_refine": {
+    "counts": {
+      "edge_tp": 6635,
+      "edge_fp": 510,
+      "edge_fn": 540
+    },
+    "delta_score": -0.007851623103716898,
+    "delta_by_embryo": {
+      "44b6": -0.0036866614936674758,
+      "6bba": -0.008906766317365755
+    }
+  },
+  "consensus_refine_bridge": {
+    "counts": {
+      "edge_tp": 6644,
+      "edge_fp": 507,
+      "edge_fn": 531
+    },
+    "delta_score": -0.00649068939155073,
+    "delta_by_embryo": {
+      "44b6": -0.001375630582090781,
+      "6bba": -0.007778794476265949
+    }
+  }
+}

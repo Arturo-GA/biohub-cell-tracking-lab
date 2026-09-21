@@ -1,0 +1,62 @@
+[
+  {
+    "ref": "andnyu/biohub-density-adaptive-0-948-reproduction",
+    "file": "artifacts\\research_latest_20260920\\andnyu__biohub-density-adaptive-0-948-reproduction\\biohub-density-adaptive-0-948-reproduction.ipynb",
+    "sha256": "0e28ef3d05c1bb5e46e6562424746f49582eb7dd33288b624c98862d1ca65960",
+    "code_lines": 3648
+  },
+  {
+    "ref": "ghazarosghazaros/biohub-dae-self-distill-repeat",
+    "file": "artifacts\\research_latest_20260920\\ghazarosghazaros__biohub-dae-self-distill-repeat\\biohub-dae-self-distill-repeat.ipynb",
+    "sha256": "209cf9abd10ab3590da333b50493110dc88fe3c6e9d9772774bbf09eef5d3927",
+    "code_lines": 4136
+  },
+  {
+    "ref": "noisyislands/biohub-linker-association-mlp-v2",
+    "file": "artifacts\\research_latest_20260920\\noisyislands__biohub-linker-association-mlp-v2\\biohub-linker-association-mlp-v2.py",
+    "sha256": "2c1ef4345f794b8d5282786e8b29a4172282df1a5c3194d1e8ca5742b29576c2",
+    "code_lines": 423
+  },
+  {
+    "ref": "anvithpothula/biohub-0-95",
+    "file": "artifacts\\research_latest_20260920\\anvithpothula__biohub-0-95\\biohub-0-95.ipynb",
+    "sha256": "6a9c42fcdb3b1ab13f24698db2884d8a49330e6b8803a1d45cb91b233e7c4451",
+    "code_lines": 976
+  },
+  {
+    "ref": "evgendvorkin/biohub-0-942-lb-proxy-score-0-9417",
+    "file": "artifacts\\research_latest_20260920\\evgendvorkin__biohub-0-942-lb-proxy-score-0-9417\\biohub-0-942-lb-proxy-score-0-9417.ipynb",
+    "sha256": "72ace1da5d9cecd906effb92c796643950194c1ab16eeb61900cf43a8842ad27",
+    "code_lines": 4171
+  },
+  {
+    "ref": "codezzzsleep/biohub-095-owned-validation",
+    "file": "artifacts\\research_latest_20260920\\codezzzsleep__biohub-095-owned-validation\\biohub-095-owned-validation.ipynb",
+    "sha256": "6a9c42fcdb3b1ab13f24698db2884d8a49330e6b8803a1d45cb91b233e7c4451",
+    "code_lines": 976
+  },
+  {
+    "ref": "giorgosi/zsns005",
+    "file": "artifacts\\research_latest_20260920\\giorgosi__zsns005\\zsns005.ipynb",
+    "sha256": "2a057ae1c54c294cec8596637bbdf522df4c6177c3a04513a9a60ffb73988223",
+    "code_lines": 655
+  },
+  {
+    "ref": "giorgosi/notebookb8dce8fc87",
+    "file": "artifacts\\research_latest_20260920\\giorgosi__notebookb8dce8fc87\\notebookb8dce8fc87.ipynb",
+    "sha256": "abc1206a2f7bc68ec682b1593f470687b011ef1626af4931395a280c1970ca2c",
+    "code_lines": 1297
+  },
+  {
+    "ref": "haideptry/biohub-sota-0-949-local-motion-flow-2xt4-19m",
+    "file": "artifacts\\research_latest_20260920\\haideptry__biohub-sota-0-949-local-motion-flow-2xt4-19m\\biohub-sota-0-949-local-motion-flow-2xt4-19m.ipynb",
+    "sha256": "27f4cdf9e7e5bfdc7c1ea9937e5aff17b0b1be76eb85447c6a6c2b641e7a393a",
+    "code_lines": 3752
+  },
+  {
+    "ref": "canhtoanle/biohub-div-complete-v33a",
+    "file": "artifacts\\research_latest_20260920\\canhtoanle__biohub-div-complete-v33a\\biohub-div-complete-v33a.ipynb",
+    "sha256": "dac8459d104eb4c7e62a8d60104e356b4609a066c84bcb2bade05a064b6bc9f0",
+    "code_lines": 4833
+  }
+]

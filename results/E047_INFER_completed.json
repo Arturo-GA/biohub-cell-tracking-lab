@@ -1,0 +1,151 @@
+{
+  "kernel": "jarturo/biohub-e047-infer",
+  "version": 1,
+  "manifest_sha256": "c454147a43633797b53a87950a9ee5196445de94eb625d65e9f2af7cc50b4433",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E047",
+      "raw_sha256": "7167b59f9ecf522153c92f546fa306e3fa083745d128fc7e6d7f73285ecebcf0",
+      "dense_sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0",
+      "static_sha256": "de5aaf41154afdf54857a56265943c551e159b6a3b11bce4f6589499f777ef3f",
+      "graph_sha256": "c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22",
+      "budget": 512,
+      "protocol": "Exploratory follow-up to E045 at512. Frozen dense+static on all100 frames of other reused16 cohort. E031 normalized images clipped to[0,1]. CPU spatial consensus unchanged; donor bridges E034 fixed geometry; local snap Harmonic<=3um one-to-one. No GT in proposals.",
+      "gate": "Full graph score >=Harmonic+0.001; edgeTP gain, no edgeFP or divisionFP increase, no divisionTP loss; nonnegative score change per embryo. Then confirmation before submission."
+    },
+    "videos": [
+      {
+        "video": "44b6_0db75fae",
+        "logits": "44b6_0db75fae_logits.npy",
+        "logits_sha256": "98378ac8b134a9035c0ed23d180865f778ae4aca4f423c188e4a90601d7f2178",
+        "field": "44b6_0db75fae_field.npy",
+        "field_sha256": "8bb34ce1ca390bfe444d727f5bd8d8e961cc8fdcbe0b9fc208e7bf2180d077ae",
+        "frames": 100
+      },
+      {
+        "video": "44b6_5740d24b",
+        "logits": "44b6_5740d24b_logits.npy",
+        "logits_sha256": "daf3a5498b075fbc63700b2bdc4ebbb6d9730c2ecb0e263326d2f097a04a7d66",
+        "field": "44b6_5740d24b_field.npy",
+        "field_sha256": "e41b78fa15384475219d7449d8fa4c31e8ccd6e3290a012863aca144f26fe29d",
+        "frames": 100
+      },
+      {
+        "video": "44b6_587a1e22",
+        "logits": "44b6_587a1e22_logits.npy",
+        "logits_sha256": "6b319659e398da55096a952c020b3a49c34e70c28edebddff36d25d7a47e4bb7",
+        "field": "44b6_587a1e22_field.npy",
+        "field_sha256": "016f848b3c4d3523146d70125fdf537b52b99a86b70f71c16bc426e18f4a7932",
+        "frames": 100
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "logits": "44b6_9bfa6a0a_logits.npy",
+        "logits_sha256": "ca170f15d15b71f35a997baa079ded41a03bcf145695069c7020c6780aebaec9",
+        "field": "44b6_9bfa6a0a_field.npy",
+        "field_sha256": "05d87156c3e93ea4bcde4f14bf8bd995cdd497e1f45653062ecbfadcf02c7c60",
+        "frames": 100
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "logits": "44b6_aaf8b0ea_logits.npy",
+        "logits_sha256": "a8242b58dfac3530a09762a439bb151ec21260e2c31fbfe2a0863783310f3b97",
+        "field": "44b6_aaf8b0ea_field.npy",
+        "field_sha256": "4bac38a39e9c546f5adea39fb968a7a7d16649245782df6ec707ce544af4e08d",
+        "frames": 100
+      },
+      {
+        "video": "44b6_c15fded2",
+        "logits": "44b6_c15fded2_logits.npy",
+        "logits_sha256": "48f1548607a1e6944605e7f298087f81a1baf542c1a1051a53bd3025cc39d271",
+        "field": "44b6_c15fded2_field.npy",
+        "field_sha256": "2b5ff71f6c090006c2c0ba5da40b7e5c218051e1800864a1a70561d1c049d816",
+        "frames": 100
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "logits": "44b6_c8e2a523_logits.npy",
+        "logits_sha256": "9c6a7424e6ac8f63faba985eccf1edbd3f9e6eef8d2a0a894fd51ef33435b91e",
+        "field": "44b6_c8e2a523_field.npy",
+        "field_sha256": "194f0422229838033f8b88043aee1720e776314e021da46789371a733fd543aa",
+        "frames": 100
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "logits": "44b6_cf2536e8_logits.npy",
+        "logits_sha256": "56bdc418f4e039be62d5201ecbe3fa35019a4e3449d26a9dcdde5b573a2de812",
+        "field": "44b6_cf2536e8_field.npy",
+        "field_sha256": "f295ce5dfcd36f1d81971256bc03a1269b9f1936ca1c1e56c51977787fde70d3",
+        "frames": 100
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "logits": "6bba_1f58c2f6_logits.npy",
+        "logits_sha256": "9e91a63a69db949decbe4ea5b23e3f635518ccc8a9167cc4ae8aa6c0e00f07a7",
+        "field": "6bba_1f58c2f6_field.npy",
+        "field_sha256": "e672f747e6ff4bbbd0bb8396fe562473a330c0552a6cc8384792f06411445995",
+        "frames": 100
+      },
+      {
+        "video": "6bba_5c824876",
+        "logits": "6bba_5c824876_logits.npy",
+        "logits_sha256": "5792583778bf9743d69001a3b46188705f642f30f5aa3a433d6b2f98355c6689",
+        "field": "6bba_5c824876_field.npy",
+        "field_sha256": "9a4574b4e5edddaf598906d4f0d0a4fd3f32f202108f708fa4296d615d1b66d4",
+        "frames": 100
+      },
+      {
+        "video": "6bba_6479435d",
+        "logits": "6bba_6479435d_logits.npy",
+        "logits_sha256": "35931d89689b54d0619a827a0f32dd1177f5023fd3bc74fbcc6ab7b1c1854486",
+        "field": "6bba_6479435d_field.npy",
+        "field_sha256": "643166e4f8a67442d42e4d6404508c42716a45641e3f555eada1f67c185801e0",
+        "frames": 100
+      },
+      {
+        "video": "6bba_76db78c1",
+        "logits": "6bba_76db78c1_logits.npy",
+        "logits_sha256": "79e3923c18a8777fbfc34991100021acca14c1b490f5920d50368374df15ec78",
+        "field": "6bba_76db78c1_field.npy",
+        "field_sha256": "b931aaf417c998c4bc1fe72cbd0f07e87395fe78ec4aaeeff8a26b5143b92546",
+        "frames": 100
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "logits": "6bba_7b5d3b2c_logits.npy",
+        "logits_sha256": "cbdaae70fc8973768cf72d4a28d3386433a05090ef6435fe5ca2ce6798a970a0",
+        "field": "6bba_7b5d3b2c_field.npy",
+        "field_sha256": "f36b5ac4d78690246d6f50c1d34aa19f4e32eb8c432b170f4dca6edb1da4b90c",
+        "frames": 100
+      },
+      {
+        "video": "6bba_9a41d029",
+        "logits": "6bba_9a41d029_logits.npy",
+        "logits_sha256": "e4078610dd499aafc2f59e546f6ba54a9b07a82f64acf86ece0adcdd05b06e04",
+        "field": "6bba_9a41d029_field.npy",
+        "field_sha256": "d9f0e97f096f467f45f36f3206d10b72e56c7ab5cb65c386d7c11e2a214eccd3",
+        "frames": 100
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "logits": "6bba_c73a1d11_logits.npy",
+        "logits_sha256": "0df5f54c1d4feafc572d3e87e91c390a554db469caaf61e51aa6b0632aab504a",
+        "field": "6bba_c73a1d11_field.npy",
+        "field_sha256": "930c50d85cbe61d95a74cd4f01c8ce618cdcc70b37d5997d06a91e43eb7d4f14",
+        "frames": 100
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "logits": "6bba_f1fde7e0_logits.npy",
+        "logits_sha256": "a921442202e730cecbc13c14e0cec3f7ef05c599803b952ac40a84d73157be07",
+        "field": "6bba_f1fde7e0_field.npy",
+        "field_sha256": "ce936c5e9e11c7456204862ebe8fe130755c08e2421f813772610a575241eef5",
+        "frames": 100
+      }
+    ],
+    "seconds": 68.50132446100002,
+    "peak_gpu_gb": 0.591510528,
+    "trained": false
+  }
+}

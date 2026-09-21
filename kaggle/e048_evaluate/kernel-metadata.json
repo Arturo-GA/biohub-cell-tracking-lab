@@ -1,0 +1,23 @@
+{
+  "id": "jarturo/biohub-e048-evaluate-cpu",
+  "title": "Biohub E048 EVALUATE CPU",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "dataset_sources": [
+    "pilkwang/biohub-tracking-support-pack-50ep-v1",
+    "giorgosi/biohub-divnet-v2"
+  ],
+  "kernel_sources": [
+    "jarturo/biohub-temporal-graph-prepare-cpu",
+    "jarturo/biohub-dense-detector-prepare-cpu"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,7 @@
+import json
+from pathlib import Path
+from build_three_lines import build
+cfg=dict(experiment='E048',checkpoint_sha256='787a1cabadd8c90da1cb5a89d46faaf253bcfb4cb0eb3390775a6dfd4b20896c',graph_sha256='c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22',raw_sha256='7167b59f9ecf522153c92f546fa306e3fa083745d128fc7e6d7f73285ecebcf0',source='https://www.kaggle.com/code/canhtoanle/biohub-div-complete-v33a',weights='https://www.kaggle.com/datasets/giorgosi/biohub-divnet-v2',protocol='Strict compatible 5-channel UNet load. XY4, lags[-1,0,1,2], reflect16x32x32 patches, gaussian marker sigma[1.5,2,2], percentiles50/99.5 clip[-.5,6]. Two a priori normalization interpretations: fullframe or patch. Veto existing forks p<.5, remove farther daughter edge, preserve all nodes. No new forks or fit.',gate='score >=control+.001, retain divisionTP and edgeTP, reduce divisionFP, no edgeFP increase; then further confirmation required.')
+Path('baseline/e048_protocol.json').write_text(json.dumps(cfg,indent=2)+'\n')
+build('E048_EVALUATE','scripts/public_divnet_veto_runner.py',['baseline/e048_protocol.json','scripts/ensemble_evaluate_runner.py','src/biohub_lab/temporal_detector.py','src/biohub_lab/public_divnet.py'],['jarturo/biohub-temporal-graph-prepare-cpu','jarturo/biohub-dense-detector-prepare-cpu'])
+p=Path('kaggle/e048_evaluate/kernel-metadata.json');m=json.loads(p.read_text());m['dataset_sources'].append('giorgosi/biohub-divnet-v2');p.write_text(json.dumps(m,indent=2)+'\n')

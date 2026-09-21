@@ -1,0 +1,20 @@
+{
+  "n_forks": 316,
+  "probability_range": {
+    "frame": [
+      0.5146373510360718,
+      0.5519109964370728
+    ],
+    "crop": [
+      0.516548752784729,
+      0.5520246624946594
+    ]
+  },
+  "all_csv_identical": true,
+  "removed_edges": {
+    "control": 0,
+    "frame_veto": 0,
+    "crop_veto": 0
+  },
+  "decision": "Reject published0.5 veto integration: exact no-op. No threshold sweep."
+}

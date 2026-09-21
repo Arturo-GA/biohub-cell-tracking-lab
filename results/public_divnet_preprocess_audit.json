@@ -1,0 +1,8 @@
+{
+  "reference": "artifacts\\research_latest_20260920\\canhtoanle__biohub-div-complete-v33a\\source.py",
+  "scope": "Same supplied XY4 volume; does not prove original training preprocessing used XY stride rather than average pooling.",
+  "max_absolute_input_difference": {
+    "frame": 2.384185791015625e-07,
+    "crop": 2.384185791015625e-07
+  }
+}

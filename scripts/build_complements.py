@@ -1,0 +1,6 @@
+import json
+from pathlib import Path
+from build_three_lines import build
+p=Path('baseline/e044_protocol.json');cfg=json.loads(p.read_text());cfg.update(experiment='E045',budgets=[256,512],designs=['static_dense_refine','temporal_dense_refine','image_dense_refine','spatial_consensus','spatiotemporal_consensus','dense_novel_static'],refine='One-to-one snap to dense maxima <=3um; preserve count and uniqueness; revert collisions.',consensus='Robust per-volume normalization (median and P90-P10, clip [-5,5]); logits + log1p(static votes), or logits + mean(log1p(static),log1p(temporal)) normalized separately.',novelty='Keep first 75% dense, append static maxima >3um from accepted centers, dense refill if needed.',gate='At256, in each embryo: matched3 >= all four controls and matched7 > all four controls. 512 diagnostic only. All six designs reported. Further full-graph confirmation required.')
+cfg.pop('fusion');Path('baseline/e045_protocol.json').write_text(json.dumps(cfg,indent=2)+'\n')
+build('E045_EVALUATE','scripts/complements_evaluate_runner.py',['baseline/e045_protocol.json','scripts/ensemble_evaluate_runner.py','src/biohub_lab/temporal_detector.py','src/biohub_lab/detector_complements.py'],['jarturo/biohub-e041-train','jarturo/biohub-e039-infer','jarturo/biohub-e038-prepare-cpu'])

@@ -64,3 +64,12 @@ propia de selección entera de eventos y perturb-and-MAP, inspirada en la línea
 de seguimiento con incertidumbre; se revisó el repositorio público
 [NabaviLab](https://github.com/NabaviLab/bayesian-transformer-cell-tracking).
 No se incorpora su código ni se afirma reproducir su modelo bayesiano.
+
+E048 includes a checkpoint-compatible implementation of the public DivNet UNet
+architecture described in https://www.kaggle.com/code/canhtoanle/biohub-div-complete-v33a
+and the configuration of https://www.kaggle.com/datasets/giorgosi/biohub-divnet-v2 .
+The model weights remain in Kaggle/ignored local artifacts and are not committed.
+The implementation uses strict state-dict validation. Public scores and training
+membership are not independently established; the diagnostic is explicitly conditional.
+The research audit executes only reviewed model class/preprocessing definitions;
+no full external notebook or out-of-volume metric manipulation is incorporated.

@@ -1,0 +1,23 @@
+{
+  "id": "jarturo/biohub-e045-evaluate-cpu",
+  "title": "Biohub E045 EVALUATE CPU",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "dataset_sources": [
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "kernel_sources": [
+    "jarturo/biohub-e041-train",
+    "jarturo/biohub-e039-infer",
+    "jarturo/biohub-e038-prepare-cpu"
+  ],
+  "model_sources": []
+}

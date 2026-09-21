@@ -1,0 +1,2 @@
+from build_three_lines import build
+build('E047_EVALUATE','scripts/consensus_graph_runner.py',['baseline/e047_protocol.json','baseline/e047_infer_pin.json','scripts/ensemble_evaluate_runner.py','src/biohub_lab/temporal_detector.py','src/biohub_lab/detector_complements.py','src/biohub_lab/temporal_bridge.py'],['jarturo/biohub-e047-infer','jarturo/biohub-dense-detector-prepare-cpu','jarturo/biohub-temporal-graph-prepare-cpu'])

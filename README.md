@@ -134,3 +134,9 @@ Para recuperar el contexto en otra sesión, leer primero los tres documentos de 
 ### E044: ensamble de componentes (2026-09-20)
 
 Se combinó E041 denso con E039 estático en CPU. Existe complementariedad, pero la mezcla por rango a 256 candidatos obtuvo 211/329 aciertos a 3/7 µm frente a 227/321 y 177/354 de los componentes. La unión de 512 obtuvo 272/394 y tampoco superó a los mejores controles de 512. No se envió al leaderboard. [Protocolo y resultados completos](docs/E044_ENSAMBLE.es.md).
+
+### E045–E048 y revisión pública (2026-09-20)
+
+Terminaron seis combinaciones de detección, dos combinaciones de puentes con encoder, cuatro variantes de seguimiento con mapas y dos filtros DivNet. Ninguna pasó su criterio. El mejor grafo local sube de 0.900753 a 0.901409, con dos enlaces falsos adicionales y regresión en un embrión. DivNet compatible produce exactamente el CSV del control. GPU solo para 68.5 segundos de inferencia congelada; resto CPU. Sin nueva submission. [Experimentos](docs/E045_E048_COMPLEMENTOS.es.md).
+
+Se revisaron listas públicas recientes y diez notebooks. Las adaptaciones anunciadas como 0.948 y 0.949 contienen un cargador DivNet incompatible que no carga ningún tensor; los títulos no se consideran scores verificados. Se documentan MLP V2, DAE, fuentes de pesos compatibles y discusiones recientes. [Auditoría pública](docs/REVISION_KAGGLE_20260920.es.md).

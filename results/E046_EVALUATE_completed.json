@@ -1,0 +1,570 @@
+{
+  "kernel": "jarturo/biohub-e046-evaluate-cpu",
+  "version": 1,
+  "manifest_sha256": "f291d0efa0f3a4aa676556315afde5e45a6cf2a4a7bee66287b31b2c2d0a396b",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E046",
+      "sources": {
+        "graphs": {
+          "path": "temporal_graph_inputs/result.json",
+          "sha256": "c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22"
+        },
+        "graph_features": {
+          "path": "temporal_graph_features/result.json",
+          "sha256": "bac1ff43079fb1cb9a6f89d231e00674a0e517056913b0b7bf4254d4aa8deaf6"
+        },
+        "donors": {
+          "path": "temporal_bridge_prepare/result.json",
+          "sha256": "70a2a63453d6fc9f2b204278a5f0226cfa354be0ea52a031d890a548bc713220"
+        },
+        "donor_features": {
+          "path": "temporal_bridge_features/result.json",
+          "sha256": "810c742d51191a9f8b0623879b9cbc0ec55e19b51e7a65634039923440342523"
+        }
+      },
+      "designs": [
+        "geometry_bridge_encoder",
+        "visual_bridge_encoder"
+      ],
+      "protocol": "E034 augmentation then E033 image reassignment on all augmented continuation nodes. Preserve degrees and division edges; prior1, cosine/.2, distance/5, 12 candidates<=20um. No new parameters or fit.",
+      "gate": "Best bridge score +0.001, more edgeTP than either bridge, no edgeFP increase vs Harmonic, no divisionTP loss or divisionFP increase. Needs further confirmation before submission."
+    },
+    "metrics": {
+      "control": {
+        "n": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "n_adj": 16,
+        "score": 0.9007529595605399
+      },
+      "geometry_bridge": {
+        "n": 16,
+        "edge_jaccard": 0.8716877692207283,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9782566607416932,
+        "adj_edge_jaccard": 0.871013522067512,
+        "n_adj": 16,
+        "score": 0.9010135220675121
+      },
+      "visual_bridge": {
+        "n": 16,
+        "edge_jaccard": 0.871557237958491,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9782566607416932,
+        "adj_edge_jaccard": 0.8709710132212845,
+        "n_adj": 16,
+        "score": 0.9009710132212845
+      },
+      "geometry_bridge_encoder": {
+        "n": 16,
+        "edge_jaccard": 0.8716877692207283,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9782566607416932,
+        "adj_edge_jaccard": 0.871013522067512,
+        "n_adj": 16,
+        "score": 0.9010135220675121
+      },
+      "visual_bridge_encoder": {
+        "n": 16,
+        "edge_jaccard": 0.871557237958491,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9782566607416932,
+        "adj_edge_jaccard": 0.8709710132212845,
+        "n_adj": 16,
+        "score": 0.9009710132212845
+      }
+    },
+    "changes": {
+      "control": [],
+      "geometry_bridge": [
+        {
+          "video": "44b6_0db75fae",
+          "bridges": 13,
+          "added_nodes": 28,
+          "added_edges": 41
+        },
+        {
+          "video": "44b6_5740d24b",
+          "bridges": 18,
+          "added_nodes": 49,
+          "added_edges": 67
+        },
+        {
+          "video": "44b6_587a1e22",
+          "bridges": 6,
+          "added_nodes": 16,
+          "added_edges": 22
+        },
+        {
+          "video": "44b6_9bfa6a0a",
+          "bridges": 83,
+          "added_nodes": 206,
+          "added_edges": 289
+        },
+        {
+          "video": "44b6_aaf8b0ea",
+          "bridges": 28,
+          "added_nodes": 70,
+          "added_edges": 98
+        },
+        {
+          "video": "44b6_c15fded2",
+          "bridges": 7,
+          "added_nodes": 20,
+          "added_edges": 27
+        },
+        {
+          "video": "44b6_c8e2a523",
+          "bridges": 26,
+          "added_nodes": 68,
+          "added_edges": 94
+        },
+        {
+          "video": "44b6_cf2536e8",
+          "bridges": 42,
+          "added_nodes": 108,
+          "added_edges": 150
+        },
+        {
+          "video": "6bba_1f58c2f6",
+          "bridges": 35,
+          "added_nodes": 70,
+          "added_edges": 105
+        },
+        {
+          "video": "6bba_5c824876",
+          "bridges": 16,
+          "added_nodes": 35,
+          "added_edges": 51
+        },
+        {
+          "video": "6bba_6479435d",
+          "bridges": 30,
+          "added_nodes": 57,
+          "added_edges": 87
+        },
+        {
+          "video": "6bba_76db78c1",
+          "bridges": 1,
+          "added_nodes": 3,
+          "added_edges": 4
+        },
+        {
+          "video": "6bba_7b5d3b2c",
+          "bridges": 2,
+          "added_nodes": 4,
+          "added_edges": 6
+        },
+        {
+          "video": "6bba_9a41d029",
+          "bridges": 9,
+          "added_nodes": 19,
+          "added_edges": 28
+        },
+        {
+          "video": "6bba_c73a1d11",
+          "bridges": 23,
+          "added_nodes": 35,
+          "added_edges": 58
+        },
+        {
+          "video": "6bba_f1fde7e0",
+          "bridges": 3,
+          "added_nodes": 3,
+          "added_edges": 6
+        }
+      ],
+      "visual_bridge": [
+        {
+          "video": "44b6_0db75fae",
+          "bridges": 4,
+          "added_nodes": 10,
+          "added_edges": 14
+        },
+        {
+          "video": "44b6_5740d24b",
+          "bridges": 8,
+          "added_nodes": 23,
+          "added_edges": 31
+        },
+        {
+          "video": "44b6_587a1e22",
+          "bridges": 3,
+          "added_nodes": 8,
+          "added_edges": 11
+        },
+        {
+          "video": "44b6_9bfa6a0a",
+          "bridges": 34,
+          "added_nodes": 89,
+          "added_edges": 123
+        },
+        {
+          "video": "44b6_aaf8b0ea",
+          "bridges": 16,
+          "added_nodes": 41,
+          "added_edges": 57
+        },
+        {
+          "video": "44b6_c15fded2",
+          "bridges": 2,
+          "added_nodes": 6,
+          "added_edges": 8
+        },
+        {
+          "video": "44b6_c8e2a523",
+          "bridges": 11,
+          "added_nodes": 31,
+          "added_edges": 42
+        },
+        {
+          "video": "44b6_cf2536e8",
+          "bridges": 25,
+          "added_nodes": 68,
+          "added_edges": 93
+        },
+        {
+          "video": "6bba_1f58c2f6",
+          "bridges": 14,
+          "added_nodes": 30,
+          "added_edges": 44
+        },
+        {
+          "video": "6bba_5c824876",
+          "bridges": 5,
+          "added_nodes": 11,
+          "added_edges": 16
+        },
+        {
+          "video": "6bba_6479435d",
+          "bridges": 8,
+          "added_nodes": 18,
+          "added_edges": 26
+        },
+        {
+          "video": "6bba_76db78c1",
+          "bridges": 0,
+          "added_nodes": 0,
+          "added_edges": 0
+        },
+        {
+          "video": "6bba_7b5d3b2c",
+          "bridges": 0,
+          "added_nodes": 0,
+          "added_edges": 0
+        },
+        {
+          "video": "6bba_9a41d029",
+          "bridges": 1,
+          "added_nodes": 3,
+          "added_edges": 4
+        },
+        {
+          "video": "6bba_c73a1d11",
+          "bridges": 13,
+          "added_nodes": 20,
+          "added_edges": 33
+        },
+        {
+          "video": "6bba_f1fde7e0",
+          "bridges": 1,
+          "added_nodes": 1,
+          "added_edges": 2
+        }
+      ],
+      "geometry_bridge_encoder": [
+        {
+          "video": "44b6_0db75fae",
+          "bridges": 13,
+          "added_nodes": 28,
+          "added_edges": 41,
+          "changed_edges": 5,
+          "locked_edges": 46
+        },
+        {
+          "video": "44b6_5740d24b",
+          "bridges": 18,
+          "added_nodes": 49,
+          "added_edges": 67,
+          "changed_edges": 0,
+          "locked_edges": 14
+        },
+        {
+          "video": "44b6_587a1e22",
+          "bridges": 6,
+          "added_nodes": 16,
+          "added_edges": 22,
+          "changed_edges": 11,
+          "locked_edges": 84
+        },
+        {
+          "video": "44b6_9bfa6a0a",
+          "bridges": 83,
+          "added_nodes": 206,
+          "added_edges": 289,
+          "changed_edges": 6,
+          "locked_edges": 28
+        },
+        {
+          "video": "44b6_aaf8b0ea",
+          "bridges": 28,
+          "added_nodes": 70,
+          "added_edges": 98,
+          "changed_edges": 2,
+          "locked_edges": 20
+        },
+        {
+          "video": "44b6_c15fded2",
+          "bridges": 7,
+          "added_nodes": 20,
+          "added_edges": 27,
+          "changed_edges": 31,
+          "locked_edges": 72
+        },
+        {
+          "video": "44b6_c8e2a523",
+          "bridges": 26,
+          "added_nodes": 68,
+          "added_edges": 94,
+          "changed_edges": 27,
+          "locked_edges": 52
+        },
+        {
+          "video": "44b6_cf2536e8",
+          "bridges": 42,
+          "added_nodes": 108,
+          "added_edges": 150,
+          "changed_edges": 0,
+          "locked_edges": 0
+        },
+        {
+          "video": "6bba_1f58c2f6",
+          "bridges": 35,
+          "added_nodes": 70,
+          "added_edges": 105,
+          "changed_edges": 4,
+          "locked_edges": 60
+        },
+        {
+          "video": "6bba_5c824876",
+          "bridges": 16,
+          "added_nodes": 35,
+          "added_edges": 51,
+          "changed_edges": 0,
+          "locked_edges": 70
+        },
+        {
+          "video": "6bba_6479435d",
+          "bridges": 30,
+          "added_nodes": 57,
+          "added_edges": 87,
+          "changed_edges": 0,
+          "locked_edges": 62
+        },
+        {
+          "video": "6bba_76db78c1",
+          "bridges": 1,
+          "added_nodes": 3,
+          "added_edges": 4,
+          "changed_edges": 2,
+          "locked_edges": 12
+        },
+        {
+          "video": "6bba_7b5d3b2c",
+          "bridges": 2,
+          "added_nodes": 4,
+          "added_edges": 6,
+          "changed_edges": 2,
+          "locked_edges": 0
+        },
+        {
+          "video": "6bba_9a41d029",
+          "bridges": 9,
+          "added_nodes": 19,
+          "added_edges": 28,
+          "changed_edges": 8,
+          "locked_edges": 40
+        },
+        {
+          "video": "6bba_c73a1d11",
+          "bridges": 23,
+          "added_nodes": 35,
+          "added_edges": 58,
+          "changed_edges": 0,
+          "locked_edges": 40
+        },
+        {
+          "video": "6bba_f1fde7e0",
+          "bridges": 3,
+          "added_nodes": 3,
+          "added_edges": 6,
+          "changed_edges": 24,
+          "locked_edges": 32
+        }
+      ],
+      "visual_bridge_encoder": [
+        {
+          "video": "44b6_0db75fae",
+          "bridges": 4,
+          "added_nodes": 10,
+          "added_edges": 14,
+          "changed_edges": 5,
+          "locked_edges": 46
+        },
+        {
+          "video": "44b6_5740d24b",
+          "bridges": 8,
+          "added_nodes": 23,
+          "added_edges": 31,
+          "changed_edges": 0,
+          "locked_edges": 14
+        },
+        {
+          "video": "44b6_587a1e22",
+          "bridges": 3,
+          "added_nodes": 8,
+          "added_edges": 11,
+          "changed_edges": 11,
+          "locked_edges": 84
+        },
+        {
+          "video": "44b6_9bfa6a0a",
+          "bridges": 34,
+          "added_nodes": 89,
+          "added_edges": 123,
+          "changed_edges": 0,
+          "locked_edges": 28
+        },
+        {
+          "video": "44b6_aaf8b0ea",
+          "bridges": 16,
+          "added_nodes": 41,
+          "added_edges": 57,
+          "changed_edges": 2,
+          "locked_edges": 20
+        },
+        {
+          "video": "44b6_c15fded2",
+          "bridges": 2,
+          "added_nodes": 6,
+          "added_edges": 8,
+          "changed_edges": 31,
+          "locked_edges": 72
+        },
+        {
+          "video": "44b6_c8e2a523",
+          "bridges": 11,
+          "added_nodes": 31,
+          "added_edges": 42,
+          "changed_edges": 25,
+          "locked_edges": 52
+        },
+        {
+          "video": "44b6_cf2536e8",
+          "bridges": 25,
+          "added_nodes": 68,
+          "added_edges": 93,
+          "changed_edges": 0,
+          "locked_edges": 0
+        },
+        {
+          "video": "6bba_1f58c2f6",
+          "bridges": 14,
+          "added_nodes": 30,
+          "added_edges": 44,
+          "changed_edges": 2,
+          "locked_edges": 60
+        },
+        {
+          "video": "6bba_5c824876",
+          "bridges": 5,
+          "added_nodes": 11,
+          "added_edges": 16,
+          "changed_edges": 0,
+          "locked_edges": 70
+        },
+        {
+          "video": "6bba_6479435d",
+          "bridges": 8,
+          "added_nodes": 18,
+          "added_edges": 26,
+          "changed_edges": 0,
+          "locked_edges": 62
+        },
+        {
+          "video": "6bba_76db78c1",
+          "bridges": 0,
+          "added_nodes": 0,
+          "added_edges": 0,
+          "changed_edges": 2,
+          "locked_edges": 12
+        },
+        {
+          "video": "6bba_7b5d3b2c",
+          "bridges": 0,
+          "added_nodes": 0,
+          "added_edges": 0,
+          "changed_edges": 2,
+          "locked_edges": 0
+        },
+        {
+          "video": "6bba_9a41d029",
+          "bridges": 1,
+          "added_nodes": 3,
+          "added_edges": 4,
+          "changed_edges": 8,
+          "locked_edges": 40
+        },
+        {
+          "video": "6bba_c73a1d11",
+          "bridges": 13,
+          "added_nodes": 20,
+          "added_edges": 33,
+          "changed_edges": 0,
+          "locked_edges": 40
+        },
+        {
+          "video": "6bba_f1fde7e0",
+          "bridges": 1,
+          "added_nodes": 1,
+          "added_edges": 2,
+          "changed_edges": 24,
+          "locked_edges": 32
+        }
+      ]
+    },
+    "csv_sha256": {
+      "control": "9d39a33fa0f4132619b91bb41ff261df428f95126f82a1f2678b963ba1a92ef4",
+      "geometry_bridge": "ff8c5aa53d6422440951be66d5ff731090c04deeb30775b7115c829dd77cc425",
+      "visual_bridge": "2f7d6dde11364459f0b7a011f14d9758b4c0a1c19de8a2f0c832b4c998ad82d8",
+      "geometry_bridge_encoder": "9f320a0b0daa9919793bc2017a38d8ea9db40ea0b603ad79222e2e38b22328a0",
+      "visual_bridge_encoder": "87a67e9c86fc16356b3fc72ed7618fb8a1ffcddca07786cd1286c51dcdd9ea90"
+    },
+    "passed": {
+      "geometry_bridge_encoder": false,
+      "visual_bridge_encoder": false
+    },
+    "seconds": 183.33112135399995,
+    "leaderboard_submitted": false,
+    "scope": "Reused16 calibration. All candidate graphs produced without annotations; no claim of independent validation."
+  }
+}

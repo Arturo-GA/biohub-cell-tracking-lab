@@ -1,0 +1,41 @@
+{
+  "experiment": "E045",
+  "budget": 256,
+  "frames": [
+    10,
+    30,
+    50,
+    70,
+    90
+  ],
+  "gate": "At256, in each embryo: matched3 >= all four controls and matched7 > all four controls. 512 diagnostic only. All six designs reported. Further full-graph confirmation required.",
+  "sources": {
+    "dense": {
+      "path": "dense_supervision_training/result.json",
+      "sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0"
+    },
+    "static": {
+      "path": "temporal_detector_fields/result.json",
+      "sha256": "aa338171525cfcdfe378f19be8db1141ed6ccb447c6cafea03f9987e1af2d93d"
+    },
+    "raw": {
+      "path": "three_lines_data/result.json",
+      "sha256": "b8df897a2b8496d1b1a37018147df03f9db25b6c55806328e68b675b6ea3454a"
+    }
+  },
+  "budgets": [
+    256,
+    512
+  ],
+  "designs": [
+    "static_dense_refine",
+    "temporal_dense_refine",
+    "image_dense_refine",
+    "spatial_consensus",
+    "spatiotemporal_consensus",
+    "dense_novel_static"
+  ],
+  "refine": "One-to-one snap to dense maxima <=3um; preserve count and uniqueness; revert collisions.",
+  "consensus": "Robust per-volume normalization (median and P90-P10, clip [-5,5]); logits + log1p(static votes), or logits + mean(log1p(static),log1p(temporal)) normalized separately.",
+  "novelty": "Keep first 75% dense, append static maxima >3um from accepted centers, dense refill if needed."
+}

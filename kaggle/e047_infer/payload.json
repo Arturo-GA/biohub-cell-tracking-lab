@@ -1,0 +1,13 @@
+{
+  "sha256": "7899de756edbe29828f630a38caa97a57a66aaf6c1f413bc6f625bb21cfaf07b",
+  "files": [
+    "baseline/e047_protocol.json",
+    "scripts/consensus_infer_runner.py",
+    "scripts/ensemble_evaluate_runner.py",
+    "src/biohub_lab/dense_center.py",
+    "src/biohub_lab/temporal_detector.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

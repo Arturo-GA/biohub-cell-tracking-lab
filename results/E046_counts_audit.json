@@ -1,0 +1,42 @@
+{
+  "control": {
+    "edge_tp": 6674,
+    "edge_fp": 485,
+    "edge_fn": 501,
+    "division_tp": 3,
+    "division_fp": 4,
+    "division_fn": 3
+  },
+  "geometry_bridge_encoder": {
+    "edge_tp": 6678,
+    "edge_fp": 486,
+    "edge_fn": 497,
+    "division_tp": 3,
+    "division_fp": 4,
+    "division_fn": 3
+  },
+  "geometry_bridge": {
+    "edge_tp": 6678,
+    "edge_fp": 486,
+    "edge_fn": 497,
+    "division_tp": 3,
+    "division_fp": 4,
+    "division_fn": 3
+  },
+  "visual_bridge_encoder": {
+    "edge_tp": 6677,
+    "edge_fp": 486,
+    "edge_fn": 498,
+    "division_tp": 3,
+    "division_fp": 4,
+    "division_fn": 3
+  },
+  "visual_bridge": {
+    "edge_tp": 6677,
+    "edge_fp": 486,
+    "edge_fn": 498,
+    "division_tp": 3,
+    "division_fp": 4,
+    "division_fn": 3
+  }
+}
