@@ -1,0 +1,363 @@
+{
+  "arms": [
+    {
+      "arm": "visual",
+      "score": 0.9502832669356378,
+      "delta": 0.0,
+      "edge_tp": 4715,
+      "edge_fp": 153,
+      "rescued": 0,
+      "lost": 0,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    },
+    {
+      "arm": "swa",
+      "score": 0.9409647005608416,
+      "delta": -0.009318566374796222,
+      "edge_tp": 4692,
+      "edge_fp": 178,
+      "rescued": 1,
+      "lost": 24,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": -0.009665634760114727,
+          "tp_delta": -4,
+          "fp_delta": 4
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": -0.015101888175054423,
+          "tp_delta": -3,
+          "fp_delta": 3
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": -0.0035529967288273623,
+          "tp_delta": -1,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": -0.006634350730973848,
+          "tp_delta": -3,
+          "fp_delta": 2
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": -0.027496318499483974,
+          "tp_delta": -5,
+          "fp_delta": 8
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": -0.015656449959650875,
+          "tp_delta": -6,
+          "fp_delta": 7
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": -0.001639067645049952,
+          "tp_delta": -1,
+          "fp_delta": 1
+        }
+      ]
+    },
+    {
+      "arm": "fold0",
+      "score": 0.9400204703852341,
+      "delta": -0.010262796550403741,
+      "edge_tp": 4691,
+      "edge_fp": 182,
+      "rescued": 2,
+      "lost": 26,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": -0.002425358351843543,
+          "tp_delta": -1,
+          "fp_delta": 1
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": -0.017883210045954945,
+          "tp_delta": -4,
+          "fp_delta": 3
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": -0.009975251984370992,
+          "tp_delta": -2,
+          "fp_delta": 1
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": -0.010533902713068533,
+          "tp_delta": -4,
+          "fp_delta": 4
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": -0.041765389311980594,
+          "tp_delta": -7,
+          "fp_delta": 13
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": -0.013263236371857667,
+          "tp_delta": -5,
+          "fp_delta": 6
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": -0.001639067645049952,
+          "tp_delta": -1,
+          "fp_delta": 1
+        }
+      ]
+    },
+    {
+      "arm": "swa_half",
+      "score": 0.9496752873621157,
+      "delta": -0.0006079795735220994,
+      "edge_tp": 4712,
+      "edge_fp": 153,
+      "rescued": 0,
+      "lost": 3,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": -0.003688793578270788,
+          "tp_delta": -2,
+          "fp_delta": 1
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": -0.0013568600447582124,
+          "tp_delta": -1,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": 0.002109817428485705,
+          "tp_delta": 0,
+          "fp_delta": -1
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    },
+    {
+      "arm": "fold0_half",
+      "score": 0.9488980104394259,
+      "delta": -0.0013852564962119063,
+      "edge_tp": 4710,
+      "edge_fp": 155,
+      "rescued": 0,
+      "lost": 5,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": -0.010095508807433595,
+          "tp_delta": -2,
+          "fp_delta": 2
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0029137031997650276,
+          "tp_delta": 0,
+          "fp_delta": -1
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": -0.003999166447708258,
+          "tp_delta": -2,
+          "fp_delta": 1
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": -0.002228124947839971,
+          "tp_delta": -1,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    },
+    {
+      "arm": "three_way",
+      "score": 0.9502579694012167,
+      "delta": -2.5297534421153678e-05,
+      "edge_tp": 4713,
+      "edge_fp": 151,
+      "rescued": 0,
+      "lost": 2,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": -0.0012649969510580839,
+          "tp_delta": -1,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0029137031997650276,
+          "tp_delta": 0,
+          "fp_delta": -1
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": -0.0013568600447582124,
+          "tp_delta": -1,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": 0.002109817428485705,
+          "tp_delta": 0,
+          "fp_delta": -1
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    }
+  ],
+  "gpu_seconds": 147.7333718750001,
+  "cpu_seconds": 250.184529839,
+  "scope": "Eight repeatedly used videos, exploratory; no independent holdout",
+  "leaderboard_submitted": false,
+  "warning": "Rescued links are diagnostic, not an oracle-selection submission score."
+}

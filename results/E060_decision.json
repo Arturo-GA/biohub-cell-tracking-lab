@@ -1,0 +1,304 @@
+{
+  "arms": [
+    {
+      "arm": "visual",
+      "score": 0.9502832669356378,
+      "delta": 0.0,
+      "edge_tp": 4715,
+      "edge_fp": 153,
+      "rescued": 0,
+      "lost": 0,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    },
+    {
+      "arm": "swa_confidence",
+      "score": 0.9485237136439103,
+      "delta": -0.0017595532917275003,
+      "edge_tp": 4710,
+      "edge_fp": 157,
+      "rescued": 0,
+      "lost": 5,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": -0.002425358351843543,
+          "tp_delta": -1,
+          "fp_delta": 1
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": -0.0013568600447582124,
+          "tp_delta": -1,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": -0.0043237402622182675,
+          "tp_delta": -1,
+          "fp_delta": 1
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": -0.0048478123442260435,
+          "tp_delta": -2,
+          "fp_delta": 2
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    },
+    {
+      "arm": "swa_joint",
+      "score": 0.9493154393315976,
+      "delta": -0.0009678276040402389,
+      "edge_tp": 4713,
+      "edge_fp": 156,
+      "rescued": 0,
+      "lost": 2,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": -0.006410144080709057,
+          "tp_delta": -1,
+          "fp_delta": 2
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": -0.0024268585547830845,
+          "tp_delta": -1,
+          "fp_delta": 1
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    },
+    {
+      "arm": "fold0_confidence",
+      "score": 0.948350771673674,
+      "delta": -0.001932495261963818,
+      "edge_tp": 4711,
+      "edge_fp": 159,
+      "rescued": 0,
+      "lost": 4,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": -0.0011619231254162976,
+          "tp_delta": 0,
+          "fp_delta": 1
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": -0.0043237402622182675,
+          "tp_delta": -1,
+          "fp_delta": 1
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": -0.008459382883738598,
+          "tp_delta": -3,
+          "fp_delta": 4
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    },
+    {
+      "arm": "fold0_joint",
+      "score": 0.9497036041596929,
+      "delta": -0.0005796627759449002,
+      "edge_tp": 4714,
+      "edge_fp": 155,
+      "rescued": 0,
+      "lost": 1,
+      "videos": [
+        {
+          "video": "44b6_12dfb391",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_415c0a3a",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_c50204e0",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "44b6_e35b117d",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_2646afc7",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_6db0e9b4",
+          "delta": -0.006410144080709057,
+          "tp_delta": -1,
+          "fp_delta": 2
+        },
+        {
+          "video": "6bba_cf35214c",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        },
+        {
+          "video": "6bba_ef7b4f7e",
+          "delta": 0.0,
+          "tp_delta": 0,
+          "fp_delta": 0
+        }
+      ]
+    }
+  ],
+  "gpu_seconds": 147.7333718750001,
+  "cpu_seconds": 265.450321062,
+  "scope": "Eight repeatedly used videos, exploratory; no independent holdout",
+  "leaderboard_submitted": false,
+  "warning": "Rescued links are diagnostic, not an oracle-selection submission score."
+}

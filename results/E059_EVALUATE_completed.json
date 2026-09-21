@@ -1,0 +1,2499 @@
+{
+  "kernel": "jarturo/biohub-e059-evaluate-cpu",
+  "version": 1,
+  "manifest_sha256": "0b791b2a3b103ac091bde7757c7e12aebc676108eab8b40a1522c6b2519e69db",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E059",
+      "videos": [
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "models": {
+        "swa": {
+          "file": "synthetic_5fold_swa.pth",
+          "sha256": "0eacacaf0b43bfd5a063495d6991a4911cd045c37650363d5d8826a0e7ed3dd9"
+        },
+        "fold0": {
+          "file": "synthetic_fold0_best.pth",
+          "sha256": "5d50e387d70895430a9f48093cc25dc8db7f873571e905ae5ea59666d5773bca"
+        }
+      },
+      "protocol": "Standalone neural probabilities for all frozen original detections, FP32, no TTA, no old-confidence gate. Preserve original candidate probabilities plus new top8 row/column support. Official residual audit informs interpretation but does not select videos or inference locations. Eight reused videos, exploratory; public real pretraining membership unknown."
+    },
+    "metrics": {
+      "visual": {
+        "n": 8,
+        "edge_jaccard": 0.9396173774412117,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 5,
+        "node_recall": 0.987062002291847,
+        "adj_edge_jaccard": 0.9502832669356378,
+        "n_adj": 8,
+        "score": 0.9502832669356378,
+        "edge_tp": 4715,
+        "edge_fp": 153,
+        "edge_fn": 150
+      },
+      "swa": {
+        "n": 8,
+        "edge_jaccard": 0.9303985722784057,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 5,
+        "node_recall": 0.987062002291847,
+        "adj_edge_jaccard": 0.9409647005608416,
+        "n_adj": 8,
+        "score": 0.9409647005608416,
+        "edge_tp": 4692,
+        "edge_fp": 178,
+        "edge_fn": 173
+      },
+      "fold0": {
+        "n": 8,
+        "edge_jaccard": 0.9294630473548643,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 5,
+        "node_recall": 0.987062002291847,
+        "adj_edge_jaccard": 0.9400204703852341,
+        "n_adj": 8,
+        "score": 0.9400204703852341,
+        "edge_tp": 4691,
+        "edge_fp": 182,
+        "edge_fn": 174
+      },
+      "swa_half": {
+        "n": 8,
+        "edge_jaccard": 0.9390195296931049,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 5,
+        "node_recall": 0.987062002291847,
+        "adj_edge_jaccard": 0.9496752873621157,
+        "n_adj": 8,
+        "score": 0.9496752873621157,
+        "edge_tp": 4712,
+        "edge_fp": 153,
+        "edge_fn": 153
+      },
+      "fold0_half": {
+        "n": 8,
+        "edge_jaccard": 0.9382470119521913,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 5,
+        "node_recall": 0.987062002291847,
+        "adj_edge_jaccard": 0.9488980104394259,
+        "n_adj": 8,
+        "score": 0.9488980104394259,
+        "edge_tp": 4710,
+        "edge_fp": 155,
+        "edge_fn": 155
+      },
+      "three_way": {
+        "n": 8,
+        "edge_jaccard": 0.9395933014354066,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 5,
+        "node_recall": 0.987062002291847,
+        "adj_edge_jaccard": 0.9502579694012167,
+        "n_adj": 8,
+        "score": 0.9502579694012167,
+        "edge_tp": 4713,
+        "edge_fp": 151,
+        "edge_fn": 152
+      }
+    },
+    "complementarity": {
+      "visual": {
+        "rescued": 0,
+        "lost": 0
+      },
+      "swa": {
+        "rescued": 1,
+        "lost": 24
+      },
+      "fold0": {
+        "rescued": 2,
+        "lost": 26
+      },
+      "swa_half": {
+        "rescued": 0,
+        "lost": 3
+      },
+      "fold0_half": {
+        "rescued": 0,
+        "lost": 5
+      },
+      "three_way": {
+        "rescued": 0,
+        "lost": 2
+      }
+    },
+    "by_video": [
+      {
+        "video": "44b6_12dfb391",
+        "arm": "visual",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "swa",
+        "rescued": [],
+        "lost": [
+          [
+            152000000074,
+            153000000074
+          ],
+          [
+            158000000073,
+            159000000073
+          ],
+          [
+            175000000042,
+            176000000042
+          ],
+          [
+            201000000035,
+            202000000035
+          ]
+        ]
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "fold0",
+        "rescued": [
+          [
+            158000000045,
+            159000000045
+          ]
+        ],
+        "lost": [
+          [
+            175000000042,
+            176000000042
+          ],
+          [
+            201000000035,
+            202000000035
+          ]
+        ]
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "swa_half",
+        "rescued": [],
+        "lost": [
+          [
+            175000000042,
+            176000000042
+          ],
+          [
+            201000000035,
+            202000000035
+          ]
+        ]
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "fold0_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "three_way",
+        "rescued": [],
+        "lost": [
+          [
+            201000000035,
+            202000000035
+          ]
+        ]
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "visual",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "swa",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "fold0",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "swa_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "fold0_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "three_way",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "visual",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "swa",
+        "rescued": [],
+        "lost": [
+          [
+            188000000010,
+            189000000010
+          ],
+          [
+            197000000041,
+            198000000041
+          ],
+          [
+            210000000041,
+            211000000041
+          ]
+        ]
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "fold0",
+        "rescued": [],
+        "lost": [
+          [
+            188000000010,
+            189000000010
+          ],
+          [
+            197000000041,
+            198000000041
+          ],
+          [
+            206000000041,
+            207000000041
+          ],
+          [
+            210000000041,
+            211000000041
+          ]
+        ]
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "swa_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "fold0_half",
+        "rescued": [],
+        "lost": [
+          [
+            188000000010,
+            189000000010
+          ],
+          [
+            206000000041,
+            207000000041
+          ]
+        ]
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "three_way",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "visual",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "swa",
+        "rescued": [],
+        "lost": [
+          [
+            162000000074,
+            163000000074
+          ]
+        ]
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "fold0",
+        "rescued": [],
+        "lost": [
+          [
+            142000000078,
+            143000000078
+          ],
+          [
+            162000000074,
+            163000000074
+          ]
+        ]
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "swa_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "fold0_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "three_way",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "visual",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "swa",
+        "rescued": [
+          [
+            75000747,
+            76000755
+          ]
+        ],
+        "lost": [
+          [
+            8000100,
+            9000110
+          ],
+          [
+            35000425,
+            36000437
+          ],
+          [
+            62000675,
+            63000686
+          ],
+          [
+            91000894,
+            92000901
+          ]
+        ]
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "fold0",
+        "rescued": [
+          [
+            75000747,
+            76000755
+          ]
+        ],
+        "lost": [
+          [
+            13000148,
+            14000160
+          ],
+          [
+            35000425,
+            36000437
+          ],
+          [
+            44000517,
+            45000528
+          ],
+          [
+            62000675,
+            63000686
+          ],
+          [
+            91000894,
+            92000901
+          ]
+        ]
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "swa_half",
+        "rescued": [],
+        "lost": [
+          [
+            62000675,
+            63000686
+          ]
+        ]
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "fold0_half",
+        "rescued": [],
+        "lost": [
+          [
+            44000517,
+            45000528
+          ],
+          [
+            62000675,
+            63000686
+          ]
+        ]
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "three_way",
+        "rescued": [],
+        "lost": [
+          [
+            62000675,
+            63000686
+          ]
+        ]
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "visual",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "swa",
+        "rescued": [],
+        "lost": [
+          [
+            14000070,
+            15000078
+          ],
+          [
+            14000072,
+            15000080
+          ],
+          [
+            16000085,
+            17000093
+          ],
+          [
+            16000086,
+            17000094
+          ],
+          [
+            28000188,
+            29000196
+          ]
+        ]
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "fold0",
+        "rescued": [],
+        "lost": [
+          [
+            14000070,
+            15000078
+          ],
+          [
+            14000071,
+            15000079
+          ],
+          [
+            14000072,
+            15000080
+          ],
+          [
+            16000085,
+            17000093
+          ],
+          [
+            16000086,
+            17000094
+          ],
+          [
+            28000188,
+            29000196
+          ],
+          [
+            40000276,
+            41000283
+          ]
+        ]
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "swa_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "fold0_half",
+        "rescued": [],
+        "lost": [
+          [
+            16000085,
+            17000093
+          ]
+        ]
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "three_way",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "visual",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "swa",
+        "rescued": [],
+        "lost": [
+          [
+            45000404,
+            46000411
+          ],
+          [
+            94000918,
+            95000928
+          ],
+          [
+            94000919,
+            95000930
+          ],
+          [
+            96000936,
+            97000946
+          ],
+          [
+            97000943,
+            98000955
+          ],
+          [
+            99000964,
+            100000972
+          ]
+        ]
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "fold0",
+        "rescued": [],
+        "lost": [
+          [
+            94000918,
+            95000928
+          ],
+          [
+            94000919,
+            95000930
+          ],
+          [
+            96000936,
+            97000946
+          ],
+          [
+            97000943,
+            98000955
+          ],
+          [
+            99000964,
+            100000972
+          ]
+        ]
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "swa_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "fold0_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "three_way",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "visual",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "swa",
+        "rescued": [],
+        "lost": [
+          [
+            77001158,
+            78001179
+          ]
+        ]
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "fold0",
+        "rescued": [],
+        "lost": [
+          [
+            77001158,
+            78001179
+          ]
+        ]
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "swa_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "fold0_half",
+        "rescued": [],
+        "lost": []
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "three_way",
+        "rescued": [],
+        "lost": []
+      }
+    ],
+    "reports": [
+      {
+        "video": "44b6_12dfb391",
+        "arm": "visual",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 355214,
+          "alternatives": 313001,
+          "locked": 1275,
+          "removed": 57,
+          "added": 104,
+          "initial_energy": 121967.73207690923,
+          "final_energy": 122025.77151310214,
+          "accepted_blocks": 55,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 684131,
+            "mapped_pairs": 485262,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 698322,
+            "mapped_pairs": 496244,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          }
+        }
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "swa",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 460229,
+          "alternatives": 418016,
+          "locked": 1275,
+          "removed": 82,
+          "added": 111,
+          "initial_energy": 114989.07000103717,
+          "final_energy": 115044.77582683138,
+          "accepted_blocks": 61,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 684131,
+            "mapped_pairs": 485262,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 698322,
+            "mapped_pairs": 496244,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          }
+        }
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "fold0",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 470924,
+          "alternatives": 428711,
+          "locked": 1275,
+          "removed": 90,
+          "added": 127,
+          "initial_energy": 114342.17622021073,
+          "final_energy": 114399.34178241367,
+          "accepted_blocks": 68,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 684131,
+            "mapped_pairs": 485262,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 698322,
+            "mapped_pairs": 496244,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          }
+        }
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "swa_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 43960,
+          "active_targets": 43960,
+          "mean_weight": 0.5,
+          "shared_edges": 376356
+        },
+        "assignment": {
+          "visual_candidates": 355214,
+          "alternatives": 313001,
+          "locked": 1275,
+          "removed": 54,
+          "added": 82,
+          "initial_energy": 118478.40103897318,
+          "final_energy": 118522.55708271803,
+          "accepted_blocks": 49,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 684131,
+            "mapped_pairs": 485262,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 698322,
+            "mapped_pairs": 496244,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          }
+        }
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "fold0_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 43960,
+          "active_targets": 43960,
+          "mean_weight": 0.5,
+          "shared_edges": 376356
+        },
+        "assignment": {
+          "visual_candidates": 355214,
+          "alternatives": 313001,
+          "locked": 1275,
+          "removed": 49,
+          "added": 76,
+          "initial_energy": 118154.95414856,
+          "final_energy": 118195.91980663862,
+          "accepted_blocks": 46,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 684131,
+            "mapped_pairs": 485262,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 698322,
+            "mapped_pairs": 496244,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          }
+        }
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "three_way",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 355214,
+          "alternatives": 313001,
+          "locked": 1275,
+          "removed": 53,
+          "added": 82,
+          "initial_energy": 118316.67759376658,
+          "final_energy": 118358.82865453996,
+          "accepted_blocks": 49,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 684131,
+            "mapped_pairs": 485262,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 698322,
+            "mapped_pairs": 496244,
+            "raw_nodes": 45351,
+            "final_nodes": 44953,
+            "final_ids_in_raw": 44298
+          }
+        }
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "visual",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 260973,
+          "alternatives": 228811,
+          "locked": 866,
+          "removed": 55,
+          "added": 108,
+          "initial_energy": 91188.83078243773,
+          "final_energy": 91244.16599917864,
+          "accepted_blocks": 60,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 540160,
+            "mapped_pairs": 352231,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 551751,
+            "mapped_pairs": 360019,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          }
+        }
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "swa",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 338108,
+          "alternatives": 305946,
+          "locked": 866,
+          "removed": 67,
+          "added": 110,
+          "initial_energy": 87930.40329298544,
+          "final_energy": 87974.94695451061,
+          "accepted_blocks": 64,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 540160,
+            "mapped_pairs": 352231,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 551751,
+            "mapped_pairs": 360019,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          }
+        }
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "fold0",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 345568,
+          "alternatives": 313406,
+          "locked": 866,
+          "removed": 80,
+          "added": 128,
+          "initial_energy": 87804.4518850344,
+          "final_energy": 87855.3010329791,
+          "accepted_blocks": 71,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 540160,
+            "mapped_pairs": 352231,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 551751,
+            "mapped_pairs": 360019,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          }
+        }
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "swa_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 33620,
+          "active_targets": 33620,
+          "mean_weight": 0.5,
+          "shared_edges": 272381
+        },
+        "assignment": {
+          "visual_candidates": 260973,
+          "alternatives": 228811,
+          "locked": 866,
+          "removed": 45,
+          "added": 83,
+          "initial_energy": 89559.61703771167,
+          "final_energy": 89596.81960044814,
+          "accepted_blocks": 57,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 540160,
+            "mapped_pairs": 352231,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 551751,
+            "mapped_pairs": 360019,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          }
+        }
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "fold0_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 33620,
+          "active_targets": 33620,
+          "mean_weight": 0.5,
+          "shared_edges": 272381
+        },
+        "assignment": {
+          "visual_candidates": 260973,
+          "alternatives": 228811,
+          "locked": 866,
+          "removed": 50,
+          "added": 87,
+          "initial_energy": 89496.64133373607,
+          "final_energy": 89534.9239121794,
+          "accepted_blocks": 56,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 540160,
+            "mapped_pairs": 352231,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 551751,
+            "mapped_pairs": 360019,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          }
+        }
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "three_way",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 260973,
+          "alternatives": 228811,
+          "locked": 866,
+          "removed": 48,
+          "added": 84,
+          "initial_energy": 89528.1291857239,
+          "final_energy": 89565.2308868638,
+          "accepted_blocks": 57,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 540160,
+            "mapped_pairs": 352231,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 551751,
+            "mapped_pairs": 360019,
+            "raw_nodes": 35395,
+            "final_nodes": 34402,
+            "final_ids_in_raw": 33942
+          }
+        }
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "visual",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 270982,
+          "alternatives": 235016,
+          "locked": 974,
+          "removed": 190,
+          "added": 212,
+          "initial_energy": 99619.05643699283,
+          "final_energy": 99748.24138943458,
+          "accepted_blocks": 86,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 657390,
+            "mapped_pairs": 349511,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 674504,
+            "mapped_pairs": 356638,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          }
+        }
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "swa",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 337959,
+          "alternatives": 301993,
+          "locked": 974,
+          "removed": 220,
+          "added": 254,
+          "initial_energy": 93811.42683281889,
+          "final_energy": 93913.36822632783,
+          "accepted_blocks": 90,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 657390,
+            "mapped_pairs": 349511,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 674504,
+            "mapped_pairs": 356638,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          }
+        }
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "fold0",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 344716,
+          "alternatives": 308750,
+          "locked": 974,
+          "removed": 243,
+          "added": 267,
+          "initial_energy": 94980.44216985781,
+          "final_energy": 95098.27549524538,
+          "accepted_blocks": 89,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 657390,
+            "mapped_pairs": 349511,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 674504,
+            "mapped_pairs": 356638,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          }
+        }
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "swa_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 37935,
+          "active_targets": 37935,
+          "mean_weight": 0.5,
+          "shared_edges": 280538
+        },
+        "assignment": {
+          "visual_candidates": 270982,
+          "alternatives": 235016,
+          "locked": 974,
+          "removed": 179,
+          "added": 193,
+          "initial_energy": 96715.24163490588,
+          "final_energy": 96808.33796155364,
+          "accepted_blocks": 85,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 657390,
+            "mapped_pairs": 349511,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 674504,
+            "mapped_pairs": 356638,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          }
+        }
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "fold0_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 37935,
+          "active_targets": 37935,
+          "mean_weight": 0.5,
+          "shared_edges": 280538
+        },
+        "assignment": {
+          "visual_candidates": 270982,
+          "alternatives": 235016,
+          "locked": 974,
+          "removed": 182,
+          "added": 194,
+          "initial_energy": 97299.74930342534,
+          "final_energy": 97393.5338926399,
+          "accepted_blocks": 84,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 657390,
+            "mapped_pairs": 349511,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 674504,
+            "mapped_pairs": 356638,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          }
+        }
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "three_way",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 270982,
+          "alternatives": 235016,
+          "locked": 974,
+          "removed": 180,
+          "added": 191,
+          "initial_energy": 97007.49546916551,
+          "final_energy": 97099.99116370275,
+          "accepted_blocks": 85,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 657390,
+            "mapped_pairs": 349511,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 674504,
+            "mapped_pairs": 356638,
+            "raw_nodes": 39730,
+            "final_nodes": 38621,
+            "final_ids_in_raw": 38117
+          }
+        }
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "visual",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 133895,
+          "alternatives": 115522,
+          "locked": 575,
+          "removed": 66,
+          "added": 112,
+          "initial_energy": 51328.279989252915,
+          "final_energy": 51393.46812427492,
+          "accepted_blocks": 65,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 368097,
+            "mapped_pairs": 174711,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 376957,
+            "mapped_pairs": 178269,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          }
+        }
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "swa",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 168251,
+          "alternatives": 149878,
+          "locked": 575,
+          "removed": 72,
+          "added": 116,
+          "initial_energy": 48869.11698819737,
+          "final_energy": 48917.33962638672,
+          "accepted_blocks": 63,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 368097,
+            "mapped_pairs": 174711,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 376957,
+            "mapped_pairs": 178269,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          }
+        }
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "fold0",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 171613,
+          "alternatives": 153240,
+          "locked": 575,
+          "removed": 78,
+          "added": 113,
+          "initial_energy": 49252.49588297675,
+          "final_energy": 49306.794152389106,
+          "accepted_blocks": 66,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 368097,
+            "mapped_pairs": 174711,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 376957,
+            "mapped_pairs": 178269,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          }
+        }
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "swa_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 19509,
+          "active_targets": 19509,
+          "mean_weight": 0.5,
+          "shared_edges": 139160
+        },
+        "assignment": {
+          "visual_candidates": 133895,
+          "alternatives": 115522,
+          "locked": 575,
+          "removed": 52,
+          "added": 88,
+          "initial_energy": 50098.69848872513,
+          "final_energy": 50144.62422529181,
+          "accepted_blocks": 54,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 368097,
+            "mapped_pairs": 174711,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 376957,
+            "mapped_pairs": 178269,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          }
+        }
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "fold0_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 19509,
+          "active_targets": 19509,
+          "mean_weight": 0.5,
+          "shared_edges": 139160
+        },
+        "assignment": {
+          "visual_candidates": 133895,
+          "alternatives": 115522,
+          "locked": 575,
+          "removed": 56,
+          "added": 87,
+          "initial_energy": 50290.38793611484,
+          "final_energy": 50336.34461484408,
+          "accepted_blocks": 54,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 368097,
+            "mapped_pairs": 174711,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 376957,
+            "mapped_pairs": 178269,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          }
+        }
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "three_way",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 133895,
+          "alternatives": 115522,
+          "locked": 575,
+          "removed": 53,
+          "added": 86,
+          "initial_energy": 50194.543212419994,
+          "final_energy": 50240.12582735079,
+          "accepted_blocks": 53,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 368097,
+            "mapped_pairs": 174711,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 376957,
+            "mapped_pairs": 178269,
+            "raw_nodes": 20940,
+            "final_nodes": 19943,
+            "final_ids_in_raw": 19639
+          }
+        }
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "visual",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 44044,
+          "alternatives": 39010,
+          "locked": 60,
+          "removed": 26,
+          "added": 59,
+          "initial_energy": 14402.998942937042,
+          "final_energy": 14507.176932073613,
+          "accepted_blocks": 18,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84063,
+            "mapped_pairs": 59130,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84898,
+            "mapped_pairs": 60010,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          }
+        }
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "swa",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 58174,
+          "alternatives": 53140,
+          "locked": 60,
+          "removed": 24,
+          "added": 52,
+          "initial_energy": 14410.837596212074,
+          "final_energy": 14459.002361923749,
+          "accepted_blocks": 16,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84063,
+            "mapped_pairs": 59130,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84898,
+            "mapped_pairs": 60010,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          }
+        }
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "fold0",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 59042,
+          "alternatives": 54008,
+          "locked": 60,
+          "removed": 26,
+          "added": 55,
+          "initial_energy": 13978.199346036978,
+          "final_energy": 14022.303670933952,
+          "accepted_blocks": 19,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84063,
+            "mapped_pairs": 59130,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84898,
+            "mapped_pairs": 60010,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          }
+        }
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "swa_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 5194,
+          "active_targets": 5194,
+          "mean_weight": 0.5,
+          "shared_edges": 44883
+        },
+        "assignment": {
+          "visual_candidates": 44044,
+          "alternatives": 39010,
+          "locked": 60,
+          "removed": 24,
+          "added": 50,
+          "initial_energy": 14406.918269574553,
+          "final_energy": 14472.979737676125,
+          "accepted_blocks": 16,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84063,
+            "mapped_pairs": 59130,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84898,
+            "mapped_pairs": 60010,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          }
+        }
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "fold0_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 5194,
+          "active_targets": 5194,
+          "mean_weight": 0.5,
+          "shared_edges": 44883
+        },
+        "assignment": {
+          "visual_candidates": 44044,
+          "alternatives": 39010,
+          "locked": 60,
+          "removed": 26,
+          "added": 53,
+          "initial_energy": 14190.59914448701,
+          "final_energy": 14255.964111639498,
+          "accepted_blocks": 17,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84063,
+            "mapped_pairs": 59130,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84898,
+            "mapped_pairs": 60010,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          }
+        }
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "three_way",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 44044,
+          "alternatives": 39010,
+          "locked": 60,
+          "removed": 25,
+          "added": 52,
+          "initial_energy": 14298.758707030784,
+          "final_energy": 14364.416839474485,
+          "accepted_blocks": 16,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84063,
+            "mapped_pairs": 59130,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 84898,
+            "mapped_pairs": 60010,
+            "raw_nodes": 5375,
+            "final_nodes": 5271,
+            "final_ids_in_raw": 5245
+          }
+        }
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "visual",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 204891,
+          "alternatives": 180414,
+          "locked": 362,
+          "removed": 543,
+          "added": 588,
+          "initial_energy": 67893.74658900304,
+          "final_energy": 68998.75156254055,
+          "accepted_blocks": 39,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 391809,
+            "mapped_pairs": 268784,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 401371,
+            "mapped_pairs": 274763,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          }
+        }
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "swa",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 263525,
+          "alternatives": 239038,
+          "locked": 352,
+          "removed": 331,
+          "added": 397,
+          "initial_energy": 64665.24363077848,
+          "final_energy": 64864.98197231411,
+          "accepted_blocks": 48,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 391809,
+            "mapped_pairs": 268784,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 401371,
+            "mapped_pairs": 274763,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          }
+        }
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "fold0",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 269353,
+          "alternatives": 244867,
+          "locked": 353,
+          "removed": 376,
+          "added": 439,
+          "initial_energy": 65257.8216217953,
+          "final_energy": 65492.31521809824,
+          "accepted_blocks": 52,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 391809,
+            "mapped_pairs": 268784,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 401371,
+            "mapped_pairs": 274763,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          }
+        }
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "swa_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 25422,
+          "active_targets": 25422,
+          "mean_weight": 0.5,
+          "shared_edges": 209448
+        },
+        "assignment": {
+          "visual_candidates": 204891,
+          "alternatives": 180414,
+          "locked": 362,
+          "removed": 442,
+          "added": 485,
+          "initial_energy": 66274.9668082063,
+          "final_energy": 66740.78282210154,
+          "accepted_blocks": 41,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 391809,
+            "mapped_pairs": 268784,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 401371,
+            "mapped_pairs": 274763,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          }
+        }
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "fold0_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 25422,
+          "active_targets": 25422,
+          "mean_weight": 0.5,
+          "shared_edges": 209448
+        },
+        "assignment": {
+          "visual_candidates": 204891,
+          "alternatives": 180414,
+          "locked": 362,
+          "removed": 437,
+          "added": 480,
+          "initial_energy": 66569.50641531682,
+          "final_energy": 67038.15362976442,
+          "accepted_blocks": 41,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 391809,
+            "mapped_pairs": 268784,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 401371,
+            "mapped_pairs": 274763,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          }
+        }
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "three_way",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 204891,
+          "alternatives": 180414,
+          "locked": 362,
+          "removed": 442,
+          "added": 484,
+          "initial_energy": 66422.2366117615,
+          "final_energy": 66888.26063913587,
+          "accepted_blocks": 41,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 391809,
+            "mapped_pairs": 268784,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 401371,
+            "mapped_pairs": 274763,
+            "raw_nodes": 26283,
+            "final_nodes": 25779,
+            "final_ids_in_raw": 25592
+          }
+        }
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "visual",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 336890,
+          "alternatives": 303185,
+          "locked": 280,
+          "removed": 153,
+          "added": 200,
+          "initial_energy": 97480.78316088578,
+          "final_energy": 97834.49696321932,
+          "accepted_blocks": 52,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 502681,
+            "mapped_pairs": 446200,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 511011,
+            "mapped_pairs": 453879,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          }
+        }
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "swa",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 439272,
+          "alternatives": 405565,
+          "locked": 278,
+          "removed": 180,
+          "added": 197,
+          "initial_energy": 91717.32861003172,
+          "final_energy": 91789.05164930465,
+          "accepted_blocks": 55,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 502681,
+            "mapped_pairs": 446200,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 511011,
+            "mapped_pairs": 453879,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          }
+        }
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "fold0",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 446888,
+          "alternatives": 413181,
+          "locked": 278,
+          "removed": 193,
+          "added": 215,
+          "initial_energy": 89773.38415712256,
+          "final_energy": 89860.16550091015,
+          "accepted_blocks": 56,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 502681,
+            "mapped_pairs": 446200,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 511011,
+            "mapped_pairs": 453879,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          }
+        }
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "swa_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 34751,
+          "active_targets": 34751,
+          "mean_weight": 0.5,
+          "shared_edges": 342888
+        },
+        "assignment": {
+          "visual_candidates": 336890,
+          "alternatives": 303185,
+          "locked": 280,
+          "removed": 116,
+          "added": 134,
+          "initial_energy": 94597.2871391984,
+          "final_energy": 94736.70476601341,
+          "accepted_blocks": 33,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 502681,
+            "mapped_pairs": 446200,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 511011,
+            "mapped_pairs": 453879,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          }
+        }
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "fold0_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 34751,
+          "active_targets": 34751,
+          "mean_weight": 0.5,
+          "shared_edges": 342888
+        },
+        "assignment": {
+          "visual_candidates": 336890,
+          "alternatives": 303185,
+          "locked": 280,
+          "removed": 120,
+          "added": 141,
+          "initial_energy": 93625.40153978663,
+          "final_energy": 93762.41383524134,
+          "accepted_blocks": 37,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 502681,
+            "mapped_pairs": 446200,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 511011,
+            "mapped_pairs": 453879,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          }
+        }
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "three_way",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 336890,
+          "alternatives": 303185,
+          "locked": 280,
+          "removed": 115,
+          "added": 134,
+          "initial_energy": 94111.34433949254,
+          "final_energy": 94249.31115302525,
+          "accepted_blocks": 33,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 502681,
+            "mapped_pairs": 446200,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 511011,
+            "mapped_pairs": 453879,
+            "raw_nodes": 35376,
+            "final_nodes": 35144,
+            "final_ids_in_raw": 35022
+          }
+        }
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "visual",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 46010,
+          "alternatives": 40357,
+          "locked": 55,
+          "removed": 15,
+          "added": 29,
+          "initial_energy": 16077.917894765036,
+          "final_energy": 16113.057478452107,
+          "accepted_blocks": 20,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 96969,
+            "mapped_pairs": 62926,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 97748,
+            "mapped_pairs": 63795,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          }
+        }
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "swa",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 62058,
+          "alternatives": 56405,
+          "locked": 55,
+          "removed": 13,
+          "added": 17,
+          "initial_energy": 15953.643871636334,
+          "final_energy": 15964.658610770239,
+          "accepted_blocks": 14,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 96969,
+            "mapped_pairs": 62926,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 97748,
+            "mapped_pairs": 63795,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          }
+        }
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "fold0",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 62933,
+          "alternatives": 57280,
+          "locked": 55,
+          "removed": 11,
+          "added": 17,
+          "initial_energy": 15249.706370609483,
+          "final_energy": 15260.93792460423,
+          "accepted_blocks": 14,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 96969,
+            "mapped_pairs": 62926,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 97748,
+            "mapped_pairs": 63795,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          }
+        }
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "swa_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 5809,
+          "active_targets": 5809,
+          "mean_weight": 0.5,
+          "shared_edges": 46760
+        },
+        "assignment": {
+          "visual_candidates": 46010,
+          "alternatives": 40357,
+          "locked": 55,
+          "removed": 15,
+          "added": 22,
+          "initial_energy": 16015.78088320069,
+          "final_energy": 16031.70486295641,
+          "accepted_blocks": 16,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 96969,
+            "mapped_pairs": 62926,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 97748,
+            "mapped_pairs": 63795,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          }
+        }
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "fold0_half",
+        "weights": {
+          "mode": "balanced",
+          "targets": 5809,
+          "active_targets": 5809,
+          "mean_weight": 0.5,
+          "shared_edges": 46760
+        },
+        "assignment": {
+          "visual_candidates": 46010,
+          "alternatives": 40357,
+          "locked": 55,
+          "removed": 15,
+          "added": 23,
+          "initial_energy": 15663.812132687268,
+          "final_energy": 15680.85351327983,
+          "accepted_blocks": 16,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 96969,
+            "mapped_pairs": 62926,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 97748,
+            "mapped_pairs": 63795,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          }
+        }
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "three_way",
+        "weights": {},
+        "assignment": {
+          "visual_candidates": 46010,
+          "alternatives": 40357,
+          "locked": 55,
+          "removed": 14,
+          "added": 21,
+          "initial_energy": 15839.796507943978,
+          "final_energy": 15856.156531407174,
+          "accepted_blocks": 15,
+          "temporal_weight": 0.0,
+          "implementation": "Separable assignment equivalent to E022 visual arm"
+        },
+        "remap": {
+          "swa": {
+            "frame_pairs": 99,
+            "proposed_pairs": 96969,
+            "mapped_pairs": 62926,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          },
+          "fold0": {
+            "frame_pairs": 99,
+            "proposed_pairs": 97748,
+            "mapped_pairs": 63795,
+            "raw_nodes": 5929,
+            "final_nodes": 5857,
+            "final_ids_in_raw": 5830
+          }
+        }
+      }
+    ],
+    "selected": "visual",
+    "improved_over_visual": false,
+    "seconds": 250.184529839,
+    "scope": "Eight repeatedly used videos, exploratory; no independent holdout",
+    "leaderboard_submitted": false
+  }
+}

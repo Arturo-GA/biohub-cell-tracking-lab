@@ -1,0 +1,11 @@
+{
+  "sha256": "fee2ef72728214d2f77d41b310999159b87bf382e7aaba93f642ccfe88ccce64",
+  "files": [
+    "baseline/e059_protocol.json",
+    "scripts/independent_experts_runner.py",
+    "src/biohub_lab/independent_expert.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

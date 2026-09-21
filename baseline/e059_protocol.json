@@ -1,0 +1,24 @@
+{
+  "experiment": "E059",
+  "videos": [
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "models": {
+    "swa": {
+      "file": "synthetic_5fold_swa.pth",
+      "sha256": "0eacacaf0b43bfd5a063495d6991a4911cd045c37650363d5d8826a0e7ed3dd9"
+    },
+    "fold0": {
+      "file": "synthetic_fold0_best.pth",
+      "sha256": "5d50e387d70895430a9f48093cc25dc8db7f873571e905ae5ea59666d5773bca"
+    }
+  },
+  "protocol": "Standalone neural probabilities for all frozen original detections, FP32, no TTA, no old-confidence gate. Preserve original candidate probabilities plus new top8 row/column support. Official residual audit informs interpretation but does not select videos or inference locations. Eight reused videos, exploratory; public real pretraining membership unknown."
+}

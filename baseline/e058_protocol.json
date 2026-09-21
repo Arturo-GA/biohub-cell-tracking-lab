@@ -1,0 +1,14 @@
+{
+  "experiment": "E058",
+  "videos": [
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "purpose": "Exact GT-edge overlap despite equal aggregate scores, and official-matcher residual reachability. Diagnostic only; no GT-dependent fusion."
+}
