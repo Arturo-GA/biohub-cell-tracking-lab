@@ -15,5 +15,6 @@
     "balanced",
     "uncertainty"
   ],
-  "protocol": "Original candidate support and nodes, original divisions locked by visual assignment. Strict equality of captured old/new detection coordinates; remap new probabilities to OLD GEFF IDs by coordinates, never assume new graph ID equality. New expert probabilities alone, log pool weight .5, or uncertainty-gated weight <=.5 when original margin<.2 and new margin exceeds original by .02. Same eight reused videos; exploratory. Frozen before observing E056 scores."
+  "protocol": "Original candidate support and nodes, original divisions locked by visual assignment. Strict equality of captured old/new detection coordinates; remap new probabilities to OLD GEFF IDs by coordinates, never assume new graph ID equality. New expert probabilities alone, log pool weight .5, or uncertainty-gated weight <=.5 when original margin<.2 and new margin exceeds original by .02. Same eight reused videos; exploratory. Frozen before observing E056 scores.",
+  "specialist_definition": "The E056 public+synthetic fused probabilities (synthetic logit weight <=.25), not standalone synthetic-model probabilities. E057 mixes two pipelines, sharing the public models."
 }

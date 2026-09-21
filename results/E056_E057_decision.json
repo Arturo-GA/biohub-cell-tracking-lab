@@ -1,0 +1,579 @@
+{
+  "status": "complete",
+  "decision": "do_not_promote",
+  "leaderboard_submitted": false,
+  "leaderboard_target_achieved": false,
+  "latest_confirmed_public_score": 0.946,
+  "frozen_csv_sha256": {
+    "visual": "a33be7463be023f96c564f64c27be78f7d000a72bdb0cb401e26c6b04d19921a",
+    "specialist": "31a0aec0e504e58179ee0dae889b1a2c660384986de1c0611b23321ae89b69e0",
+    "balanced": "bda671f312c0b479dc53a59766a6a9e1789130ba74765fb345bc250573b8a6b2",
+    "uncertainty": "24466eacc6b3d1d2050883d73012f8c0d5a03938df44b97674f287b67d6b1dd7"
+  },
+  "all_four_csvs_different": true,
+  "all_evaluable_counts_unchanged_per_video": true,
+  "paired": [
+    {
+      "experiment": "E056",
+      "arm": "harmonic",
+      "video": "44b6_12dfb391",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": -3
+    },
+    {
+      "experiment": "E056",
+      "arm": "harmonic",
+      "video": "44b6_415c0a3a",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": -1
+    },
+    {
+      "experiment": "E056",
+      "arm": "harmonic",
+      "video": "44b6_c50204e0",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 9
+    },
+    {
+      "experiment": "E056",
+      "arm": "harmonic",
+      "video": "44b6_e35b117d",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 26
+    },
+    {
+      "experiment": "E056",
+      "arm": "harmonic",
+      "video": "6bba_2646afc7",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 1
+    },
+    {
+      "experiment": "E056",
+      "arm": "harmonic",
+      "video": "6bba_6db0e9b4",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 7
+    },
+    {
+      "experiment": "E056",
+      "arm": "harmonic",
+      "video": "6bba_cf35214c",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E056",
+      "arm": "harmonic",
+      "video": "6bba_ef7b4f7e",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": -1
+    },
+    {
+      "experiment": "E056",
+      "arm": "visual",
+      "video": "44b6_12dfb391",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": -3
+    },
+    {
+      "experiment": "E056",
+      "arm": "visual",
+      "video": "44b6_415c0a3a",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": -1
+    },
+    {
+      "experiment": "E056",
+      "arm": "visual",
+      "video": "44b6_c50204e0",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 9
+    },
+    {
+      "experiment": "E056",
+      "arm": "visual",
+      "video": "44b6_e35b117d",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 26
+    },
+    {
+      "experiment": "E056",
+      "arm": "visual",
+      "video": "6bba_2646afc7",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 1
+    },
+    {
+      "experiment": "E056",
+      "arm": "visual",
+      "video": "6bba_6db0e9b4",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 7
+    },
+    {
+      "experiment": "E056",
+      "arm": "visual",
+      "video": "6bba_cf35214c",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E056",
+      "arm": "visual",
+      "video": "6bba_ef7b4f7e",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": -1
+    },
+    {
+      "experiment": "E057",
+      "arm": "specialist",
+      "video": "44b6_12dfb391",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "specialist",
+      "video": "44b6_415c0a3a",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "specialist",
+      "video": "44b6_c50204e0",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "specialist",
+      "video": "44b6_e35b117d",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "specialist",
+      "video": "6bba_2646afc7",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "specialist",
+      "video": "6bba_6db0e9b4",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "specialist",
+      "video": "6bba_cf35214c",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "specialist",
+      "video": "6bba_ef7b4f7e",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "balanced",
+      "video": "44b6_12dfb391",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "balanced",
+      "video": "44b6_415c0a3a",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "balanced",
+      "video": "44b6_c50204e0",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "balanced",
+      "video": "44b6_e35b117d",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "balanced",
+      "video": "6bba_2646afc7",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "balanced",
+      "video": "6bba_6db0e9b4",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "balanced",
+      "video": "6bba_cf35214c",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "balanced",
+      "video": "6bba_ef7b4f7e",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "uncertainty",
+      "video": "44b6_12dfb391",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "uncertainty",
+      "video": "44b6_415c0a3a",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "uncertainty",
+      "video": "44b6_c50204e0",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "uncertainty",
+      "video": "44b6_e35b117d",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "uncertainty",
+      "video": "6bba_2646afc7",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "uncertainty",
+      "video": "6bba_6db0e9b4",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "uncertainty",
+      "video": "6bba_cf35214c",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    },
+    {
+      "experiment": "E057",
+      "arm": "uncertainty",
+      "video": "6bba_ef7b4f7e",
+      "count_deltas": {
+        "edge_tp": 0,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0
+      },
+      "node_delta": 0
+    }
+  ],
+  "interpretation": "The new expert and weighted pools change predictions but do not improve evaluable edge/division counts in any of the eight reused videos. Counts alone do not prove the same individual links remain correct, nor that every changed link is unannotated.",
+  "next_research_hypothesis": "Investigate residual errors and calibrate expert routing on separate fitting data; low raw confidence alone has not isolated the observed failures. This next study is not executed or claimed successful."
+}

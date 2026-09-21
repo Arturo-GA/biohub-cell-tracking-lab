@@ -33,6 +33,12 @@ def main():
         synthetic_edge='New third UNetNodeTransformer: column margin <.12, synthetic margin advantage >.02, weight <=.25 varying by uncertainty; checkpoint SHA 0eacacaf0b43bfd5a063495d6991a4911cd045c37650363d5d8826a0e7ed3dd9. Not yet locally validated.',
         score_evidence=[dict(url='https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728324',level='staff announcement',finding='Metric patched, submissions rescored; staff says complete.'),dict(url='https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/736937',level='participant report',finding='Some public notebook list scores remain from before rescore.')],
         score_limit='No evidence yet that the specific V3 0.947 label is stale. Visible CSV equality does not establish hidden-test equality or metric-version equality.')
+    def core(nodes):
+        return [n for n in nodes if not (isinstance(n,ast.ImportFrom) and n.module in ('__future__','IPython.display')) and not (isinstance(n,ast.Expr) and isinstance(n.value,ast.Constant) and isinstance(n.value.value,str))]
+    local=core(ast.parse(Path('baseline/harmonic_inference.py').read_text(encoding='utf8')).body)
+    public=core(base.body)
+    assert [ast.dump(n) for n in local]==[ast.dump(n) for n in public[:len(local)]]
+    result.update(baseline_core_ast_exact_public_prefix=True,baseline_core_statements=len(local),public_additions='77 additional top-level statements implement train validator, postprocess sweep and reporting; E054 fixes tight55 rather than rerunning this sweep.')
     Path('results/E055_public_audit.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8')
     print(json.dumps(result,indent=2))
 

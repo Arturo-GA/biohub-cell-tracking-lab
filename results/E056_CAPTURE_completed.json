@@ -1,0 +1,25 @@
+{
+  "kernel": "jarturo/biohub-e056-synthetic-specialist",
+  "version": 1,
+  "manifest_sha256": "9715ad301fd2e21573ea4e11caa73b491a1220d738e30cea4f804d363f83e62a",
+  "result": {
+    "experiment": "E056",
+    "status": "complete",
+    "videos": [
+      "44b6_12dfb391",
+      "44b6_415c0a3a",
+      "44b6_c50204e0",
+      "44b6_e35b117d",
+      "6bba_2646afc7",
+      "6bba_6db0e9b4",
+      "6bba_cf35214c",
+      "6bba_ef7b4f7e"
+    ],
+    "annotations_read": false,
+    "leaderboard_submitted": false,
+    "seconds": 1602.276382014,
+    "csv_sha256": "0a5983169714aba66cdaf1fe9903f3c9fd7e389e52132223840fccef8849a51e",
+    "pairs": 792,
+    "official_evaluation_pending": true
+  }
+}

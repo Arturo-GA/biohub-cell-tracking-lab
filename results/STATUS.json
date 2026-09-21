@@ -1998,7 +1998,7 @@
     "pending_notebook": false
   },
   "latest_submission_ref": 56433260,
-  "updated_at_utc": "2026-09-21T21:12:36.673135+00:00",
+  "updated_at_utc": "2026-09-21T21:38:14.705420+00:00",
   "E055": {
     "status": "COMPLETE",
     "selected": "visual",
@@ -2007,14 +2007,28 @@
     "receipt": "results/E055_EVALUATE_completed.json"
   },
   "E056": {
-    "status": "RUNNING",
+    "status": "COMPLETE",
     "kernel": "jarturo/biohub-e056-synthetic-specialist",
     "purpose": "Third synthetic expert on uncertain links; GPU inference then CPU evaluation",
-    "leaderboard_submitted": false
+    "leaderboard_submitted": false,
+    "seconds_gpu_runner": 1602.276382014,
+    "inference_frame_pairs": 792,
+    "cpu_kernel": "jarturo/biohub-e056-evaluate-cpu",
+    "decision": "rejected",
+    "best_local_score": 0.9502779211712876,
+    "delta_vs_previous_best": -5.34576435018419e-06,
+    "seconds_cpu": 128.78868878599997,
+    "pending_jobs": false
   },
   "E057": {
-    "status": "PREPARED",
+    "status": "COMPLETE",
     "gpu": false,
-    "protocol": "Frozen original detections and divisions; synthetic association and two weighted pools; no new GPU inference"
+    "protocol": "Frozen original detections and divisions; synthetic association and two weighted pools; no new GPU inference",
+    "kernel": "jarturo/biohub-e057-evaluate-cpu",
+    "decision": "all_new_arms_tie_existing_visual",
+    "score": 0.9502832669356378,
+    "seconds_cpu": 179.857121653,
+    "pending_jobs": false,
+    "leaderboard_submitted": false
   }
 }

@@ -1,0 +1,66 @@
+{
+  "kernel": "jarturo/biohub-e056-evaluate-cpu",
+  "version": 1,
+  "manifest_sha256": "bfd2c2d30bf9415e1aa587c86a1a45274c057136e3acea5c4ad6e1212a89958f",
+  "result": {
+    "experiment": "E056",
+    "status": "complete",
+    "accelerator": "none",
+    "leaderboard_submitted": false,
+    "seconds": 128.78868878599997,
+    "summaries": {
+      "harmonic": {
+        "n": 8,
+        "edge_jaccard": 0.9330818109610802,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 5,
+        "node_recall": 0.987062002291847,
+        "adj_edge_jaccard": 0.9436776413699437,
+        "n_adj": 8,
+        "score": 0.9436776413699437
+      },
+      "visual": {
+        "n": 8,
+        "edge_jaccard": 0.9396173774412117,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 5,
+        "node_recall": 0.987062002291847,
+        "adj_edge_jaccard": 0.9502779211712876,
+        "n_adj": 8,
+        "score": 0.9502779211712876
+      }
+    },
+    "deltas": {
+      "visual": 0.006600279801343922
+    },
+    "scope": "Same eight reused calibration videos. Public checkpoint real-image pretraining membership unknown; exploratory, not independent validation.",
+    "promotion_checks": {
+      "minimum_score_gain": true,
+      "each_specimen_nonnegative": true,
+      "improved_at_least_worsened": true,
+      "division_tp_not_lower": true,
+      "division_fp_not_higher": true,
+      "all_exports_valid": true
+    },
+    "group_score_deltas": {
+      "44b6_": 0.002153401055356663,
+      "6bba_": 0.009159133660189944
+    },
+    "production_csv_exactly_matches_frozen": true,
+    "previous_controls": {
+      "harmonic": 0.9436828898822122,
+      "visual": 0.9502832669356378
+    },
+    "deltas_vs_previous": {
+      "harmonic": -5.2485122684631236e-06,
+      "visual": -5.34576435018419e-06
+    },
+    "improved_over_previous_best": false,
+    "legacy_within_run_promotion": true,
+    "promote": false
+  }
+}

@@ -1,6 +1,6 @@
 # Biohub Cell Tracking Lab
 
-**E055–E056, 21 de septiembre:** el control público E054 terminó en **0.946**. Tres ensambles selectivos nuevos en CPU no superaron la asociación visual. Se auditan cinco notebooks recientes y se prueba un tercer modelo sintético solo en enlaces ambiguos. [Diagnóstico, fuentes y protocolo](docs/E055_E056_ESPECIALISTAS.es.md).
+**E055–E057 completados, 21 de septiembre:** el control público E054 terminó en **0.946**. Ocho variantes nuevas no superan la asociación visual: tres filtros selectivos, dos pipelines con un tercer modelo sintético y tres mezclas sobre el grafo original. Los CSV cambian, pero el nuevo modelo y sus mezclas no mejoran los conteos evaluables de ningún video. Notebook GPU: 26,7 min de proceso; evaluación y mezclas CPU. Sin nuevas submissions ni jobs pendientes. **0.947 aún no alcanzado.** [Diagnóstico, fuentes y resultados](docs/E055_E056_ESPECIALISTAS.es.md).
 
 **E051–E054, 21 de septiembre:** se confirmó E050 = 0.946. Tres nuevas fusiones y dieciséis combinaciones con detectores no superaron la asociación visual en los ocho videos reutilizados. Nuestro control `tight55` reproduce byte por byte el CSV público de Harmonic V3. Se envió la ablación limpia **56433260** (**COMPLETE: 0.946**). [Auditoría, resultados y límites](docs/E051_E054_PUBLICOS_Y_ENSAMBLE.es.md).
 

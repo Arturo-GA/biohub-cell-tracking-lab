@@ -20,7 +20,10 @@ def main(package):
     start=time.monotonic();out=Path('/kaggle/working/synthetic_fixed_graph');out.mkdir(exist_ok=True)
     cfg=json.loads((package/'baseline/e057_protocol.json').read_text());p=one('visual_validation/result.json');old=p.parent
     captures={}
-    for path in Path('/kaggle/input').rglob('visual_validation_capture/result.json'):
+    input_root=Path('/kaggle/input')
+    parents=[input_root,*input_root.glob('*'),*input_root.glob('*/*'),*input_root.glob('*/*/*')]
+    paths=list(dict.fromkeys(p/'visual_validation_capture/result.json' for p in parents if (p/'visual_validation_capture/result.json').is_file()))
+    for path in paths:
         r=json.loads(path.read_text());assert r['status']=='complete';captures[r['experiment']]=path.parent
     assert set(captures)=={'E023-capture','E056'};control=captures['E023-capture'];synthetic=captures['E056']
     train=next(p/'train' for p in [Path('/kaggle/input/competitions/biohub-cell-tracking-during-development'),Path('/kaggle/input/biohub-cell-tracking-during-development')] if (p/'train').exists())

@@ -1,5 +1,10 @@
 # E055–E056: diagnóstico y especialistas selectivos
 
+**Cierre de E055–E057:** ocho variantes nuevas completadas; ninguna supera
+al mejor control local anterior. No hay notebooks ni scoring pendientes de
+esta ronda, ni nueva submission. El objetivo de 0.947 sigue sin alcanzarse:
+último leaderboard confirmado **0.946**.
+
 ## Qué demuestra el último envío
 
 E054, submission **56433260**, terminó con **0.946**. La optimización de
@@ -24,6 +29,14 @@ actual. **No demuestra que el 0.947 de Harmonic V3 concreto esté desactualizado
 La captura de Arturo muestra ese score realmente; no hay razón para negarla.
 La igualdad del CSV visible tampoco demuestra igualdad del test oculto ni de la
 versión de métrica usada al obtener un score histórico.
+
+Una comparación estática adicional verifica que las 431 instrucciones
+principales de nuestra base, quitando imports de presentación y descripciones,
+coinciden con el prefijo del código público V3. El público añade validación,
+barrido de posprocesado e informes. E054 fija `tight55`; no ejecuta ese barrido.
+La API informa versión pública actual 4, pero rechazó la recuperación por
+número de versión; no se pudo verificar a qué versión corresponde el score
+histórico listado.
 
 ## Auditoría de cinco notebooks recientes
 
@@ -85,20 +98,56 @@ es exploratoria y no permite prometer una mejora en el leaderboard.
 
 Estado y resultados finales se registran en los recibos E056 de `results/`.
 
+E056 terminó correctamente: 792 pares temporales, 1602.276 s de proceso en
+el notebook GPU y 128.789 s de evaluación CPU. El tiempo del notebook GPU
+incluye instalación y posprocesado; no equivale a una medición de facturación.
+
+| Variante | Score local |
+|---|---:|
+| Harmonic anterior | 0.943682890 |
+| Harmonic + especialista sintético | 0.943677641 |
+| Visual anterior | **0.950283267** |
+| Sintético + visual | 0.950277921 |
+
+El especialista no cambia los conteos TP/FP/FN de enlaces o divisiones de
+ningún video, aunque cambia las predicciones. El filtrado final deja 38 nodos
+adicionales netos, sin mejorar el recall de nodos anotados. La diferencia
+pequeña del score ajustado procede del cambio de cantidad de nodos.
+La mejora de visual sobre el Harmonic de esta nueva ejecución no basta para
+promoverlo: la comparación con el mejor control anterior es ligeramente peor.
+
 ## E057: aislar la asociación sobre el grafo original
 
 Protocolo fijado antes de observar los scores E056. Reutiliza la misma
 inferencia GPU; toda esta etapa es CPU. Conserva los nodos y divisiones del
-Harmonic anterior y compara tres asociaciones: probabilidades del especialista,
+Harmonic anterior y compara tres asociaciones: probabilidades de E056,
 media geométrica con peso 0.5 y peso adaptado a la incertidumbre del destino.
 Esta última exige margen original menor que 0.2 y mejora de margen superior
 a 0.02; aumenta gradualmente el peso nuevo hasta 0.5.
+Las probabilidades de E056 ya mezclan Harmonic con el modelo sintético, con
+peso sintético máximo 0.25 en logits; no son la salida del modelo sintético
+aislado. E057 combina dos pipelines que comparten los modelos públicos.
 
 La comparación verifica igualdad exacta de coordenadas de detecciones
 capturadas antes de mapear probabilidades al grafo original. No supone que
 los identificadores GEFF permanezcan iguales después de resolver otro ILP.
 Los candidatos ausentes de una caché dispersa no se interpretan como
 probabilidades cero. Tres pruebas unitarias cubren esas reglas de mezcla.
+
+E057 terminó en **179.857 s CPU**. Las tres variantes empatan exactamente
+con visual: **0.950283267**, 4715 TP / 153 FP / 150 FN de enlaces y
+0 TP / 2 FP / 5 FN de divisiones. Los cuatro hashes CSV son diferentes y
+las cantidades de enlaces cambiados también: la integración sí tiene efecto.
+La variante adaptativa activa la mezcla en 374 de 206200 destinos (0.181 %).
+No cambia ningún conteo evaluable por video. Esto no demuestra que cada enlace
+cambiado carezca de anotación, pues los conteos pueden compensarse; tampoco
+demuestra que no pudiera haber cambios en el test oculto. Sí deja sin evidencia
+una mejora frente al control disponible.
+
+Decisión y comparación por video: `results/E056_E057_decision.json`.
+Se conservan los pesos públicos y las cachés para investigación, pero no se
+gasta otra inferencia GPU de test en estas variantes empatadas o peores.
+Seis pruebas locales pasaron y se verificó la carga estricta del checkpoint.
 
 ## Nueva lectura sobre confianza
 

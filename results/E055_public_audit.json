@@ -46,5 +46,8 @@
       "finding": "Some public notebook list scores remain from before rescore."
     }
   ],
-  "score_limit": "No evidence yet that the specific V3 0.947 label is stale. Visible CSV equality does not establish hidden-test equality or metric-version equality."
+  "score_limit": "No evidence yet that the specific V3 0.947 label is stale. Visible CSV equality does not establish hidden-test equality or metric-version equality.",
+  "baseline_core_ast_exact_public_prefix": true,
+  "baseline_core_statements": 431,
+  "public_additions": "77 additional top-level statements implement train validator, postprocess sweep and reporting; E054 fixes tight55 rather than rerunning this sweep."
 }
