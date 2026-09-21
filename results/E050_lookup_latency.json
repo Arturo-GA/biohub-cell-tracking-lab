@@ -1,0 +1,7 @@
+{
+  "scope": "Future execution optimization; E050 v1 remains unchanged",
+  "observed_secondary_lookup_pause_seconds": 302.5,
+  "secondary_lookup": "baseline/harmonic_inference.py:_find_secondary_artifact_root eagerly rglobs all input before trying explicit paths",
+  "deepcenter_lookup": "_dc_checkpoint_candidates performs three recursive globs before trying verified explicit checkpoint",
+  "action": "Prefer existing pinned paths and hash validation before recursive fallback in a future version; do not restart current completed neural inference"
+}

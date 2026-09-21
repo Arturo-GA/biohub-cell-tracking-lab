@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "control": {
+      "edge_tp": 6674,
+      "edge_fp": 485,
+      "edge_fn": 501
+    },
+    "dense": {
+      "edge_tp": 6682,
+      "edge_fp": 487,
+      "edge_fn": 493
+    },
+    "weighted": {
+      "edge_tp": 6682,
+      "edge_fp": 487,
+      "edge_fn": 493
+    },
+    "motion": {
+      "edge_tp": 6675,
+      "edge_fp": 486,
+      "edge_fn": 500
+    },
+    "weighted_motion": {
+      "edge_tp": 6675,
+      "edge_fp": 486,
+      "edge_fn": 500
+    }
+  },
+  "tests_passed": 6,
+  "gpu": false
+}

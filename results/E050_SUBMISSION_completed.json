@@ -1,0 +1,121 @@
+{
+  "kernel": "jarturo/biohub-e050-weighted-complement",
+  "version": 1,
+  "status": "complete",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E050",
+      "mode": "weighted",
+      "selection_receipt_sha256": "511e3c750133da544ae92fea1a10f8e22fda5f3718792420e9c7369ac1590158",
+      "dense_manifest_sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0",
+      "static_manifest_sha256": "de5aaf41154afdf54857a56265943c551e159b6a3b11bce4f6589499f777ef3f",
+      "public_config": {
+        "MOTION_RELINK_TIGHT_UM": 5.5
+      },
+      "public_source": "raunakdey07/biohub-harmonic-fusion-v3",
+      "inference": "All test images recomputed; fixed public tight55 plus selected E049 complement. No training data read. Exploratory transfer to public configuration, not separately validated locally."
+    },
+    "reports": [
+      {
+        "video": "44b6_0113de3b",
+        "nodes": 25651,
+        "edges": 24946,
+        "bridges": 6,
+        "added_nodes": 14,
+        "added_edges": 20,
+        "proposals": 6,
+        "mean_secondary_weight": 0.1430049433718961
+      },
+      {
+        "video": "44b6_0b24845f",
+        "nodes": 20780,
+        "edges": 19518,
+        "bridges": 26,
+        "added_nodes": 59,
+        "added_edges": 85,
+        "proposals": 26,
+        "mean_secondary_weight": 0.1463766567320126
+      },
+      {
+        "video": "6bba_05b6850b",
+        "nodes": 6160,
+        "edges": 5968,
+        "bridges": 3,
+        "added_nodes": 8,
+        "added_edges": 11,
+        "proposals": 3,
+        "mean_secondary_weight": 0.09033461962879079
+      },
+      {
+        "video": "6bba_05db0fb1",
+        "nodes": 70311,
+        "edges": 68237,
+        "bridges": 14,
+        "added_nodes": 27,
+        "added_edges": 41,
+        "proposals": 14,
+        "mean_secondary_weight": 0.211685497081825
+      }
+    ],
+    "shapes": {
+      "44b6_0113de3b": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "44b6_0b24845f": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "6bba_05b6850b": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "6bba_05db0fb1": [
+        100,
+        64,
+        256,
+        256
+      ]
+    },
+    "csv_sha256": "7a022f034c1b75ec591f4c424a0b788f19410aeb87eb9ed9699a3610f28a3697",
+    "public_control_sha256": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848",
+    "export_repair": {
+      "changed_spatial_coordinates": {},
+      "nodes": 122794,
+      "edges": 118512,
+      "topology_changed": false,
+      "rule": "Only spatial integer equal to upper extent maps to extent-1; all other excursions rejected"
+    },
+    "seconds": 185.94873298699986,
+    "annotations_read": false,
+    "cached_test_predictions": false,
+    "leaderboard_submitted": false
+  },
+  "csv_locally_validated": true,
+  "counts": {
+    "44b6_0113de3b": {
+      "nodes": 25651,
+      "edges": 24946
+    },
+    "44b6_0b24845f": {
+      "nodes": 20780,
+      "edges": 19518
+    },
+    "6bba_05b6850b": {
+      "nodes": 6160,
+      "edges": 5968
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70311,
+      "edges": 68237
+    }
+  },
+  "launch_receipt_sha256": "712538296208378f3d409b6c75823e1fcf3de23f04941691568d6470a05372b5"
+}
