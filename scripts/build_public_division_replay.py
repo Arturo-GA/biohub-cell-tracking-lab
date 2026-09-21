@@ -1,0 +1,2 @@
+from build_three_lines import build
+build('E052_PARALLEL','scripts/public_division_replay_runner.py',['baseline/e052_protocol.json','baseline/harmonic_inference.py','src/biohub_lab/public_postprocess.py','src/biohub_lab/calibration_export.py','src/biohub_lab/visual_candidates.py','src/biohub_lab/visual_assignment.py','src/biohub_lab/association_rank.py','src/biohub_lab/detection_identity.py','scripts/ensemble_evaluate_runner.py','src/biohub_lab/temporal_detector.py'],['jarturo/biohub-e052-infer','jarturo/biohub-lab-visual-reserved-capture'])

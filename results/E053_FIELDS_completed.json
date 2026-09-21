@@ -1,0 +1,197 @@
+{
+  "kernel": "jarturo/biohub-e053-fields",
+  "version": 1,
+  "manifest_sha256": "1ee05b578d10f30d90d19c925318d30223f1af51152c8453b9155ed034a29496",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E053",
+      "videos": [
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "dense_manifest_sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0",
+      "static_manifest_sha256": "de5aaf41154afdf54857a56265943c551e159b6a3b11bce4f6589499f777ef3f",
+      "protocol": "Frozen neural fields only on GPU. CPU evaluates dense/weighted bridges with original and visual associations under the public postprocess configurations. Eight reused videos, exploratory."
+    },
+    "videos": [
+      {
+        "video": "44b6_12dfb391",
+        "quantiles": [
+          70.0,
+          3065.0
+        ],
+        "files": {
+          "logits": {
+            "file": "44b6_12dfb391_logits.npy",
+            "sha256": "ab2cae122fa7adaa3d00d50d4078ca5be4128cc59540616b4020e8cd9e34a374"
+          },
+          "field": {
+            "file": "44b6_12dfb391_field.npy",
+            "sha256": "da6eba59fcc1dbc2c64bee4a433ab6e5d6152e1eb29a33056f7861727bf5272d"
+          },
+          "image": {
+            "file": "44b6_12dfb391_image.npy",
+            "sha256": "d0dc5cfebac9fd1f5c33e1163179d463647e0604d2fea209391cb6170876e4c7"
+          }
+        }
+      },
+      {
+        "video": "44b6_c50204e0",
+        "quantiles": [
+          61.55555555555556,
+          4443.888888889519
+        ],
+        "files": {
+          "logits": {
+            "file": "44b6_c50204e0_logits.npy",
+            "sha256": "50db02752e134f97b725364d833aab66f6e57de93a31b55ad8c22b5c575cec64"
+          },
+          "field": {
+            "file": "44b6_c50204e0_field.npy",
+            "sha256": "a4dc1c1ae8536cdeab8645f60e07eae79db571203d9116144b7e36e27f333306"
+          },
+          "image": {
+            "file": "44b6_c50204e0_image.npy",
+            "sha256": "f0bc6652427cde77a9a46bad82508553b8adf0a86d3503fea391c2aebe707304"
+          }
+        }
+      },
+      {
+        "video": "6bba_2646afc7",
+        "quantiles": [
+          14.000000000000021,
+          1632.0
+        ],
+        "files": {
+          "logits": {
+            "file": "6bba_2646afc7_logits.npy",
+            "sha256": "ad2564a24382e3ce49600f3c529415fc16281d975e4ee74c98ebd07e416c1d05"
+          },
+          "field": {
+            "file": "6bba_2646afc7_field.npy",
+            "sha256": "e7da5b4e52347515d0f02ed2e44c0461346d12e01fad4032ac2d5f86bd6a953c"
+          },
+          "image": {
+            "file": "6bba_2646afc7_image.npy",
+            "sha256": "45b6fb7df7a4cd132c098b98a5a07122819f9b483955c55d0fbec45635988b93"
+          }
+        }
+      },
+      {
+        "video": "6bba_cf35214c",
+        "quantiles": [
+          24.0,
+          1452.000000120417
+        ],
+        "files": {
+          "logits": {
+            "file": "6bba_cf35214c_logits.npy",
+            "sha256": "2d6eaacd9f0a4b9cd5d84c005eb4df19c629e217625b399823b42960f3857ef3"
+          },
+          "field": {
+            "file": "6bba_cf35214c_field.npy",
+            "sha256": "dddfed5a87496680084be78b7b2332171a8d9da617d6e692d8af29403d4b0f83"
+          },
+          "image": {
+            "file": "6bba_cf35214c_image.npy",
+            "sha256": "86cc62ae353181f22d122381fad288d068efaf2730a5748a8898fc9c8edb490e"
+          }
+        }
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "quantiles": [
+          29.0,
+          2441.0000000007194
+        ],
+        "files": {
+          "logits": {
+            "file": "44b6_415c0a3a_logits.npy",
+            "sha256": "1fbd6b0fb04aea80d1c3b73c2c4a901840960a733644cc1a76c95d66c998c5c7"
+          },
+          "field": {
+            "file": "44b6_415c0a3a_field.npy",
+            "sha256": "c45243f05df955d1c2ead193739970edd5be542eabfd7919f77d5465d713c254"
+          },
+          "image": {
+            "file": "44b6_415c0a3a_image.npy",
+            "sha256": "c16f01cc6d6417cefa02c5b30d201a3b3afe585f0c2bc4a00d05fe7d873e89a7"
+          }
+        }
+      },
+      {
+        "video": "44b6_e35b117d",
+        "quantiles": [
+          33.0,
+          3851.3333333335813
+        ],
+        "files": {
+          "logits": {
+            "file": "44b6_e35b117d_logits.npy",
+            "sha256": "dd9fc7675d812367a4fbae00fe16c8e1152ecf271737d8635ea460f096ef5636"
+          },
+          "field": {
+            "file": "44b6_e35b117d_field.npy",
+            "sha256": "c40a85aa2bfdec20d77c41039cfb6caf60a4eb80e249aea6c1ab4e2ba1ea544c"
+          },
+          "image": {
+            "file": "44b6_e35b117d_image.npy",
+            "sha256": "cefe00c28b9ec35db9980986b47fd2cb68ce9aa55789fec8f42ebb514ba7bc61"
+          }
+        }
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "quantiles": [
+          54.0,
+          1850.0000000203727
+        ],
+        "files": {
+          "logits": {
+            "file": "6bba_6db0e9b4_logits.npy",
+            "sha256": "cbc6cee8104919a98e9bc9ead728201c771e7c75fd450717c8d80ed328e847ff"
+          },
+          "field": {
+            "file": "6bba_6db0e9b4_field.npy",
+            "sha256": "346124f9dec29ea3774ad0f4fa0c817093972d68763a83e41d9fc53cc0171faf"
+          },
+          "image": {
+            "file": "6bba_6db0e9b4_image.npy",
+            "sha256": "f27dfc3fd6584f8698b35eeaf0b0953eb87256c6a3b871850a09079037612fb6"
+          }
+        }
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "quantiles": [
+          15.0,
+          1458.3333333334479
+        ],
+        "files": {
+          "logits": {
+            "file": "6bba_ef7b4f7e_logits.npy",
+            "sha256": "169c559a3205ee247f1e6e3845491f6dd7ae163a1fe0772fc2eb818c6bb7e4c5"
+          },
+          "field": {
+            "file": "6bba_ef7b4f7e_field.npy",
+            "sha256": "b941a85890bff1e01243b67280c11115063dff14da55c0d1adda05510e3970b3"
+          },
+          "image": {
+            "file": "6bba_ef7b4f7e_image.npy",
+            "sha256": "89feba4fb3d115fbfee522cde71c9699abb5731b971a57829ef39cffd1f34009"
+          }
+        }
+      }
+    ],
+    "seconds": 57.062500537999966,
+    "trained": false,
+    "annotations_read": false
+  }
+}

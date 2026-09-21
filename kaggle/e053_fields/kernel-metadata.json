@@ -1,0 +1,21 @@
+{
+  "id": "jarturo/biohub-e053-fields",
+  "title": "Biohub E053 FIELDS",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "jarturo/biohub-e041-train",
+    "jarturo/biohub-e039-train"
+  ],
+  "model_sources": []
+}

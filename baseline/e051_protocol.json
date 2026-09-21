@@ -1,0 +1,14 @@
+{
+  "experiment": "E051",
+  "arms": [
+    "mutual",
+    "adaptive",
+    "adaptive_mutual"
+  ],
+  "protocol": "Frozen sparse Transformer probabilities from E023. CPU intensity/shape/radial descriptors and robust local motion. Weights from top2 margins, Transformer at least half. Mutual-best probability bonus0.25. No fitting, no embryo routing. Select best vs visual-only control before any submission.",
+  "public_sources": [
+    "yudaiyamauchi/lb-exploration-e-mutual-best",
+    "yudaiyamauchi/lb-exploration-c-disagreement-adaptive",
+    "arnav170/biohub-reid3s"
+  ]
+}

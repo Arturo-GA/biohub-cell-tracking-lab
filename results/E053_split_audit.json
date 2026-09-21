@@ -1,0 +1,20 @@
+{
+  "videos": [
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "static_training_overlap": {
+    "fit": [],
+    "development": []
+  },
+  "dense_training": "NIS3D external data",
+  "public_models_training_membership": "not established",
+  "validation_independent": false,
+  "reason": "Repeated experiment selection on the same eight videos"
+}

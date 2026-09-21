@@ -1,0 +1,13 @@
+{
+  "sha256": "f79e5ed4a6cabf4da799e3bc326b84512394ae7df945a9c5395f2d54a2e7357e",
+  "files": [
+    "baseline/e053_protocol.json",
+    "scripts/complement_fields_reserved_runner.py",
+    "scripts/ensemble_evaluate_runner.py",
+    "src/biohub_lab/dense_center.py",
+    "src/biohub_lab/temporal_detector.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

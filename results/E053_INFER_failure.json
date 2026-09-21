@@ -1,0 +1,8 @@
+{
+  "kernel": "jarturo/biohub-e053-infer",
+  "version": 1,
+  "status": "ERROR",
+  "error": "ModuleNotFoundError: zarr before neural inference",
+  "resolution": "Read Zarr metadata and Blosc-compressed full-frame chunks directly, checking chunk layout; recovery E053_FIELDS completed all eight videos.",
+  "log_error_seconds": 12.320583068
+}

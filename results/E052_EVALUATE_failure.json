@@ -1,0 +1,8 @@
+{
+  "kernel": "jarturo/biohub-e052-evaluate-cpu",
+  "version": 1,
+  "status": "ERROR",
+  "error": "ModuleNotFoundError: biohub_lab.calibration_export",
+  "resolution": "Added missing module to private CPU payload; GPU maps reused without recomputation.",
+  "recovery": "E052_REPLAY and E052_PARALLEL"
+}

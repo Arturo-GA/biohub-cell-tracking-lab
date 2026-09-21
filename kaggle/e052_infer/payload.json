@@ -1,0 +1,14 @@
+{
+  "sha256": "c25a3164624f7e7a32ce8a8afed1ec7f72df332cb72be40aae3fd83643d78789",
+  "files": [
+    "baseline/e052_protocol.json",
+    "baseline/harmonic_inference.py",
+    "scripts/ensemble_evaluate_runner.py",
+    "scripts/public_division_fields_runner.py",
+    "src/biohub_lab/public_postprocess.py",
+    "src/biohub_lab/temporal_detector.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

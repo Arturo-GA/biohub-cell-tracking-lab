@@ -1,0 +1,262 @@
+[
+  {
+    "sort": "scoreDescending",
+    "rows": [
+      {
+        "ref": "evgendvorkin/biohub-0-942-lb-proxy-score-0-9417",
+        "title": "Biohub  0.942 LB PROXY_SCORE=0.9417",
+        "last_run": "2026-09-20 13:21:17.320000"
+      },
+      {
+        "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+        "title": "Biohub: Harmonic Fusion V3",
+        "last_run": "2026-09-16 14:59:59.347000"
+      },
+      {
+        "ref": "flexonafft/biohub-harmonic-fusion",
+        "title": "Biohub Harmonic Fusion",
+        "last_run": "2026-09-10 16:39:37.593000"
+      },
+      {
+        "ref": "reyhanksatria/biohub-cell-tracking-0-947-lb",
+        "title": "Biohub Cell Tracking: 0.947 LB",
+        "last_run": "2026-09-13 03:52:47.293000"
+      },
+      {
+        "ref": "flexonafft/biohub-lineage-forge-precision-tracking",
+        "title": "Biohub Lineage Forge \u2014 Precision Tracking",
+        "last_run": "2026-09-10 16:40:10.323000"
+      },
+      {
+        "ref": "sjlee101/biohub-lf-dctta",
+        "title": "biohub-lf-dctta",
+        "last_run": "2026-09-09 20:31:52.350000"
+      },
+      {
+        "ref": "sjlee101/biohub-lf-dctta-v020",
+        "title": "biohub-lf-dctta-v020",
+        "last_run": "2026-09-09 20:31:56.890000"
+      },
+      {
+        "ref": "sjlee101/biohub-lf-dctta020-sectta1",
+        "title": "biohub-lf-dctta020-sectta1",
+        "last_run": "2026-09-10 09:27:55.707000"
+      },
+      {
+        "ref": "crystalbaby/biohub-lf-dctta-v020",
+        "title": "biohub-lf-dctta-v020",
+        "last_run": "2026-09-10 09:59:59.767000"
+      },
+      {
+        "ref": "sjlee101/biohub-lf-dctta025-sectta1",
+        "title": "biohub-lf-dctta025-sectta1",
+        "last_run": "2026-09-10 11:12:27.937000"
+      },
+      {
+        "ref": "sjlee101/biohub-lf-dctta020-sectta1-sister16",
+        "title": "biohub-lf-dctta020-sectta1-sister16",
+        "last_run": "2026-09-10 12:57:11.383000"
+      },
+      {
+        "ref": "zhehaoliang/biohub-p26-o01-exact-public-0947",
+        "title": "Biohub P26 O01 Exact Public 0947",
+        "last_run": "2026-09-10 20:57:54.190000"
+      },
+      {
+        "ref": "mtoshidesu/test-biohub-lf-dctta",
+        "title": "Test biohub-lf-dctta",
+        "last_run": "2026-09-10 23:16:44.990000"
+      },
+      {
+        "ref": "arnav170/biohub-harm",
+        "title": "biohub-harm",
+        "last_run": "2026-09-11 08:23:47.327000"
+      },
+      {
+        "ref": "rogerrogerroger3r/biohub-run91",
+        "title": "biohub-run91",
+        "last_run": "2026-09-11 09:28:10.373000"
+      },
+      {
+        "ref": "sjlee101/biohub-lf-hoctveto-b",
+        "title": "biohub-lf-hoctveto-b",
+        "last_run": "2026-09-11 12:53:42.593000"
+      },
+      {
+        "ref": "sjlee101/biohub-lf-hoctveto-div-b",
+        "title": "biohub-lf-hoctveto-div-b",
+        "last_run": "2026-09-11 12:54:46.237000"
+      },
+      {
+        "ref": "canhtoanle/biohub-lf-dctta-fork",
+        "title": "biohub-lf-dctta-fork",
+        "last_run": "2026-09-11 14:00:50.067000"
+      },
+      {
+        "ref": "arnav170/biohub-harm20",
+        "title": "biohub-harm20",
+        "last_run": "2026-09-11 14:45:12.653000"
+      },
+      {
+        "ref": "patnayakunisaketh/biohub-hf-946-baseline",
+        "title": "Biohub Hf 946 Baseline",
+        "last_run": "2026-09-11 17:45:15.637000"
+      },
+      {
+        "ref": "zhehaoliang/biohub-p26-o02k01-r03-w06",
+        "title": "Biohub P26 O02K01 R03 W06",
+        "last_run": "2026-09-12 00:11:07.593000"
+      },
+      {
+        "ref": "ayodejiibrahimlateef/biohub-v910-v900-flex-record-stta50-r1",
+        "title": "biohub-v910-v900-flex-record-stta50-r1",
+        "last_run": "2026-09-12 08:01:34.993000"
+      },
+      {
+        "ref": "malikhammadfarooq/biohub-tracking-pipeline-fork-speedups",
+        "title": "Biohub Tracking Pipeline (Fork + Speedups)",
+        "last_run": "2026-09-13 13:51:26.197000"
+      },
+      {
+        "ref": "zhincez/biohub-0-947-lb-runnable-with-public-datasets",
+        "title": "Biohub 0.947 LB, runnable with public datasets",
+        "last_run": "2026-09-14 01:41:44.323000"
+      },
+      {
+        "ref": "beraterolelk/0-947-lb-biohub-deepcenter-ilp-tracker",
+        "title": "\ud83d\udd2c [0.947 LB] BioHub DeepCenter + ILP Tracker",
+        "last_run": "2026-09-20 15:18:31.523000"
+      }
+    ]
+  },
+  {
+    "sort": "dateRun",
+    "rows": [
+      {
+        "ref": "newwang12/biohub-v1-grouped",
+        "title": "biohub-v1-grouped",
+        "last_run": "2026-09-21 10:44:06.497000"
+      },
+      {
+        "ref": "yudaiyamauchi/lb-exploration-e-mutual-best",
+        "title": "lb-exploration-e-mutual-best",
+        "last_run": "2026-09-21 10:01:24.683000"
+      },
+      {
+        "ref": "andrey4522/biohub-harmonic-fusion-v3-raunak",
+        "title": "Biohub Harmonic Fusion V3 Raunak",
+        "last_run": "2026-09-21 09:48:50.100000"
+      },
+      {
+        "ref": "amanatar/biohub-geometric-fusion",
+        "title": "Biohub Geometric Fusion",
+        "last_run": "2026-09-21 09:18:35.700000"
+      },
+      {
+        "ref": "amanatar/biohub-metric-hack-last-call",
+        "title": "biohub-metric-hack-last-call",
+        "last_run": "2026-09-21 08:19:59.840000"
+      },
+      {
+        "ref": "noisyislands/biohub-transformer-finetune",
+        "title": "Biohub Transformer Finetune",
+        "last_run": "2026-09-21 08:03:47.193000"
+      },
+      {
+        "ref": "giorgosin/notebook447aed80b2",
+        "title": "notebook447aed80b2",
+        "last_run": "2026-09-21 05:37:47.953000"
+      },
+      {
+        "ref": "arnav170/biohub-reid3s",
+        "title": "biohub-reid3s",
+        "last_run": "2026-09-21 04:57:59.650000"
+      },
+      {
+        "ref": "haideptry/biohub-0-948-sota-density-rank-2xt4-fast",
+        "title": "Biohub 0 948 SOTA Density Rank 2xT4 Fast",
+        "last_run": "2026-09-21 04:28:56.947000"
+      },
+      {
+        "ref": "y3uanm/notebook0afc5663f6",
+        "title": "notebook0afc5663f6",
+        "last_run": "2026-09-21 01:06:58.347000"
+      },
+      {
+        "ref": "andnyu/biohub-synthetic-conditional-third-model",
+        "title": "Biohub Synthetic Conditional Third Model",
+        "last_run": "2026-09-21 00:30:53.787000"
+      },
+      {
+        "ref": "yudaiyamauchi/lb-exploration-c-disagreement-adaptive",
+        "title": "lb-exploration-c-disagreement-adaptive",
+        "last_run": "2026-09-21 00:06:12.223000"
+      },
+      {
+        "ref": "yudaiyamauchi/lb-exploration-b-hard-negative-strong",
+        "title": "lb-exploration-b-hard-negative-strong",
+        "last_run": "2026-09-21 00:06:08.107000"
+      },
+      {
+        "ref": "yudaiyamauchi/lb-exploration-d-relative-rank",
+        "title": "LB exploration D \u2014 relative rank",
+        "last_run": "2026-09-20 23:35:37.043000"
+      },
+      {
+        "ref": "yudaiyamauchi/lb-exploration-a-hard-negative-margin",
+        "title": "LB exploration A \u2014 hard-negative margin",
+        "last_run": "2026-09-20 23:34:52.557000"
+      },
+      {
+        "ref": "andnyu/biohub-density-adaptive-0-948-reproduction",
+        "title": "Biohub Density-Adaptive 0.948 Reproduction",
+        "last_run": "2026-09-20 23:10:35.557000"
+      },
+      {
+        "ref": "ghazarosghazaros/biohub-dae-self-distill-repeat",
+        "title": "Biohub DAE Self Distill Repeat",
+        "last_run": "2026-09-20 22:17:35.987000"
+      },
+      {
+        "ref": "noisyislands/biohub-linker-association-mlp-v2",
+        "title": "Biohub Linker Association MLP V2",
+        "last_run": "2026-09-20 20:19:29.787000"
+      },
+      {
+        "ref": "anhadmahajan06/biohub-track-your-cells",
+        "title": "Biohub - Track Your Cells",
+        "last_run": "2026-09-20 19:10:15.217000"
+      },
+      {
+        "ref": "haideptry/biohub-0-947-fast-pipeline-code-walkthrough",
+        "title": "Biohub 0.947 Fast Pipeline Code Walkthrough",
+        "last_run": "2026-09-20 16:19:33.353000"
+      },
+      {
+        "ref": "binasalama/biohub-learned-unet-transformer-ilp-gap-recovery",
+        "title": "Biohub Learned UNet Transformer ILP Gap Recovery",
+        "last_run": "2026-09-20 16:05:04.630000"
+      },
+      {
+        "ref": "beraterolelk/0-947-lb-biohub-deepcenter-ilp-tracker",
+        "title": "\ud83d\udd2c [0.947 LB] BioHub DeepCenter + ILP Tracker",
+        "last_run": "2026-09-20 15:18:31.523000"
+      },
+      {
+        "ref": "evgendvorkin/biohub-0-942-lb-proxy-score-0-9417",
+        "title": "Biohub  0.942 LB PROXY_SCORE=0.9417",
+        "last_run": "2026-09-20 13:21:17.320000"
+      },
+      {
+        "ref": "umarshad/notebook82c6959503",
+        "title": "notebook82c6959503",
+        "last_run": "2026-09-20 10:09:59.247000"
+      },
+      {
+        "ref": "yongjilyu/biohub-ct-sp402",
+        "title": "biohub-ct-sp402",
+        "last_run": "2026-09-20 06:56:10.887000"
+      }
+    ]
+  }
+]

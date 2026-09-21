@@ -1,0 +1,15 @@
+{
+  "experiment": "E052",
+  "videos": [
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "checkpoint_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0",
+  "protocol": "Same public DeepCenter float32 eight-view TTA on all frames of reused E023 eight videos. Cache heatmaps only. CPU replays full postprocessor at threshold .25/.20, plus selected E051 association. No annotation read during inference."
+}

@@ -1,0 +1,33 @@
+{
+  "status": "rejected",
+  "kernel": "jarturo/biohub-e050-weighted-complement",
+  "version": 1,
+  "file_name": "weighted_submission/public_tight55.csv",
+  "attempted_at_utc": "2026-09-21T14:03:07.680987+00:00",
+  "csv_sha256": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848",
+  "counts": {
+    "44b6_0113de3b": {
+      "nodes": 25637,
+      "edges": 24926
+    },
+    "44b6_0b24845f": {
+      "nodes": 20721,
+      "edges": 19433
+    },
+    "6bba_05b6850b": {
+      "nodes": 6152,
+      "edges": 5957
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70284,
+      "edges": 68196
+    }
+  },
+  "public_reference": "raunakdey07/biohub-harmonic-fusion-v3",
+  "public_visible_csv_identical": true,
+  "uses_our_recomputed_predictions": true,
+  "message": "Pure public tight55 ablation; remove E050 complementary bridges; full hidden-test inference from our notebook",
+  "prior_http_400_confirmed_no_submission": true,
+  "error_type": "HTTPError",
+  "error_body": "{\"error\":{\"code\":400,\"message\":\"Submission not allowed:  Submission files must be named \\u0022submission.csv\\u0022 for this Competition.\",\"status\":\"FAILED_PRECONDITION\"}}"
+}

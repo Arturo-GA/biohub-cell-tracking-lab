@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-21",
+  "sources": [
+    {
+      "ref": "zhehaoliang/biohub-p26-o01-exact-public-0947",
+      "url": "https://www.kaggle.com/code/zhehaoliang/biohub-p26-o01-exact-public-0947",
+      "sha256": "21bf902b6ddbaacee78ed2fafa7c3c27d88096f6e5b285eb16b11ca9c9741b6e",
+      "finding": "DeepCenter division threshold .20; our baseline .25."
+    },
+    {
+      "ref": "reyhanksatria/biohub-cell-tracking-0-947-lb",
+      "url": "https://www.kaggle.com/code/reyhanksatria/biohub-cell-tracking-0-947-lb",
+      "sha256": "f4853942012355778f74f2e5552e806b39a284827673b7461fe2ed144d23a596",
+      "finding": "DeepCenter division threshold .20; repackaged model paths."
+    },
+    {
+      "ref": "yudaiyamauchi/lb-exploration-c-disagreement-adaptive",
+      "url": "https://www.kaggle.com/code/yudaiyamauchi/lb-exploration-c-disagreement-adaptive",
+      "sha256": "607ec3dca6e95f22110dd798216cf7a3d07f8503617119598669e7374d306e5d",
+      "finding": "Confidence-margin-dependent primary/secondary blending; no independently verified improvement."
+    },
+    {
+      "ref": "yudaiyamauchi/lb-exploration-e-mutual-best",
+      "url": "https://www.kaggle.com/code/yudaiyamauchi/lb-exploration-e-mutual-best",
+      "sha256": "87276f6e4bb2ea70c1b2c8bf9364e8147621c47c5a552bd90751a99bbc540f6e",
+      "finding": "Mutual row/column best bonus in logits before column softmax; E051 adapts the idea to cached probabilities."
+    },
+    {
+      "ref": "arnav170/biohub-reid3s",
+      "url": "https://www.kaggle.com/code/arnav170/biohub-reid3s",
+      "sha256": "b893a06805418b71f9f8b65bc993a61e78922df32fe902d27abc8efbdd33453d",
+      "finding": "Patch descriptors and link classifier; public default ReID weight zero. E051 uses independent simpler descriptors."
+    },
+    {
+      "ref": "noisyislands/biohub-transformer-finetune",
+      "url": "https://www.kaggle.com/code/noisyislands/biohub-transformer-finetune",
+      "sha256": "37b5ebeff1c4b3ae5126115e5780b68c09db027fe6bb8e8875bbaef8e64853c9",
+      "finding": "Frozen encoder with association-head fine tuning; synthetic negatives on partially labelled detections need review before adopting."
+    }
+  ],
+  "interpretation": "Listed public scores acknowledged. Only actual source differences evaluated; titles and local proxy scores do not establish causality."
+}

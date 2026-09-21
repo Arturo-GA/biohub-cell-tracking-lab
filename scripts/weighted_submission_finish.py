@@ -11,10 +11,10 @@ from biohub_lab.weighted_bridge import combine
 from biohub_lab.calibration_export import export_control
 from biohub_lab.submission import read_and_validate,COLUMNS
 
-def main(package,test,control):
-    start=time.monotonic();out=Path('/kaggle/working/weighted_submission');cfg=json.loads((package/'baseline/e050_submission.json').read_text())
+def main(package,test,control,config_name='e050_submission.json',graph_source=None,output_name='weighted_submission'):
+    start=time.monotonic();out=Path('/kaggle/working')/output_name;cfg=json.loads((package/'baseline'/config_name).read_text())
     shapes={p.stem:tuple(zarr.open_group(str(p),mode='r')['0'].shape) for p in sorted(test.glob('*.zarr'))}
-    validated=out/'public_tight55.csv';repair=export_control(control/'submission.csv',validated,shapes);graphs=read_and_validate(validated,shapes)
+    validated=out/'public_tight55.csv';repair=export_control(graph_source or control/'submission.csv',validated,shapes);graphs=read_and_validate(validated,shapes)
     repo=control/'tracking_repo/src';assert repo.is_dir();sys.path.insert(0,str(repo))
     from biohub_tracking.io import open_dataset
     dp=one('dense_supervision_training/result.json');dm=json.loads(dp.read_text());assert sha(dp)==cfg['dense_manifest_sha256']

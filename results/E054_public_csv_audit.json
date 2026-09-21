@@ -1,0 +1,189 @@
+{
+  "date": "2026-09-21",
+  "sha256": {
+    "public_v3": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848",
+    "public_exact0947": "d34533806b3153ddd4f33f3bbc1dea70af2d5406bb1ea48e42c135a97c213f60",
+    "our_tight55": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848",
+    "our_weighted": "7a022f034c1b75ec591f4c424a0b788f19410aeb87eb9ed9699a3610f28a3697"
+  },
+  "public_v3_exactly_reproduced": true,
+  "scope": "Visible test only; cannot infer private-test equality or attribute public score differences",
+  "rows": [
+    {
+      "source": "public_v3",
+      "video": "44b6_0113de3b",
+      "nodes": 25637,
+      "edges": 24926,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 0,
+      "removed_edges": 0
+    },
+    {
+      "source": "public_v3",
+      "video": "44b6_0b24845f",
+      "nodes": 20721,
+      "edges": 19433,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 0,
+      "removed_edges": 0
+    },
+    {
+      "source": "public_v3",
+      "video": "6bba_05b6850b",
+      "nodes": 6152,
+      "edges": 5957,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 0,
+      "removed_edges": 0
+    },
+    {
+      "source": "public_v3",
+      "video": "6bba_05db0fb1",
+      "nodes": 70284,
+      "edges": 68196,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 0,
+      "removed_edges": 0
+    },
+    {
+      "source": "public_exact0947",
+      "video": "44b6_0113de3b",
+      "nodes": 25637,
+      "edges": 24933,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 23,
+      "added_edges": 7,
+      "removed_edges": 0
+    },
+    {
+      "source": "public_exact0947",
+      "video": "44b6_0b24845f",
+      "nodes": 20729,
+      "edges": 19449,
+      "added_node_ids": 12,
+      "removed_node_ids": 4,
+      "changed_shared_coords": 38,
+      "added_edges": 20,
+      "removed_edges": 4
+    },
+    {
+      "source": "public_exact0947",
+      "video": "6bba_05b6850b",
+      "nodes": 6152,
+      "edges": 5958,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 3,
+      "added_edges": 1,
+      "removed_edges": 0
+    },
+    {
+      "source": "public_exact0947",
+      "video": "6bba_05db0fb1",
+      "nodes": 70290,
+      "edges": 68208,
+      "added_node_ids": 10,
+      "removed_node_ids": 4,
+      "changed_shared_coords": 35,
+      "added_edges": 17,
+      "removed_edges": 5
+    },
+    {
+      "source": "our_tight55",
+      "video": "44b6_0113de3b",
+      "nodes": 25637,
+      "edges": 24926,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 0,
+      "removed_edges": 0
+    },
+    {
+      "source": "our_tight55",
+      "video": "44b6_0b24845f",
+      "nodes": 20721,
+      "edges": 19433,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 0,
+      "removed_edges": 0
+    },
+    {
+      "source": "our_tight55",
+      "video": "6bba_05b6850b",
+      "nodes": 6152,
+      "edges": 5957,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 0,
+      "removed_edges": 0
+    },
+    {
+      "source": "our_tight55",
+      "video": "6bba_05db0fb1",
+      "nodes": 70284,
+      "edges": 68196,
+      "added_node_ids": 0,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 0,
+      "removed_edges": 0
+    },
+    {
+      "source": "our_weighted",
+      "video": "44b6_0113de3b",
+      "nodes": 25651,
+      "edges": 24946,
+      "added_node_ids": 14,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 20,
+      "removed_edges": 0
+    },
+    {
+      "source": "our_weighted",
+      "video": "44b6_0b24845f",
+      "nodes": 20780,
+      "edges": 19518,
+      "added_node_ids": 59,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 85,
+      "removed_edges": 0
+    },
+    {
+      "source": "our_weighted",
+      "video": "6bba_05b6850b",
+      "nodes": 6160,
+      "edges": 5968,
+      "added_node_ids": 8,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 11,
+      "removed_edges": 0
+    },
+    {
+      "source": "our_weighted",
+      "video": "6bba_05db0fb1",
+      "nodes": 70311,
+      "edges": 68237,
+      "added_node_ids": 27,
+      "removed_node_ids": 0,
+      "changed_shared_coords": 0,
+      "added_edges": 41,
+      "removed_edges": 0
+    }
+  ]
+}

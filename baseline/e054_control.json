@@ -1,0 +1,10 @@
+{
+  "experiment": "E054_CONTROL",
+  "selected": "d25_r55",
+  "division_threshold": 0.25,
+  "radius": 5.5,
+  "visual": false,
+  "mode": "none",
+  "reason": "E050 pre-complement output exactly matches downloaded public V3 CSV; submit pure ablation with required root filename",
+  "expected_visible_csv_sha256": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848"
+}

@@ -1,0 +1,16 @@
+{
+  "experiment": "E053",
+  "videos": [
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "dense_manifest_sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0",
+  "static_manifest_sha256": "de5aaf41154afdf54857a56265943c551e159b6a3b11bce4f6589499f777ef3f",
+  "protocol": "Frozen neural fields only on GPU. CPU evaluates dense/weighted bridges with original and visual associations under the public postprocess configurations. Eight reused videos, exploratory."
+}

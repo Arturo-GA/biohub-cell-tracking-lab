@@ -64,5 +64,41 @@
     "file": "artifacts\\research_latest_20260920\\raunakdey07__biohub-harmonic-fusion-v3\\biohub-harmonic-fusion-v3.ipynb",
     "sha256": "201d3d7744f378fd642cb195055b5d4222febad2890f4660f9393f90c2785df8",
     "code_lines": 4202
+  },
+  {
+    "ref": "zhehaoliang/biohub-p26-o01-exact-public-0947",
+    "file": "artifacts\\research_latest_20260920\\zhehaoliang__biohub-p26-o01-exact-public-0947\\biohub-p26-o01-exact-public-0947.ipynb",
+    "sha256": "cf9ab34b35bb5fc3879860eebec6a5173a6d4438945eb5aa8110f1dd1441fd5b",
+    "code_lines": 4212
+  },
+  {
+    "ref": "reyhanksatria/biohub-cell-tracking-0-947-lb",
+    "file": "artifacts\\research_latest_20260920\\reyhanksatria__biohub-cell-tracking-0-947-lb\\biohub-cell-tracking-0-947-lb.ipynb",
+    "sha256": "01467df4d109ea583643409af04362a4c597fe4d2ce6d960d2eb0964ee919566",
+    "code_lines": 3938
+  },
+  {
+    "ref": "yudaiyamauchi/lb-exploration-c-disagreement-adaptive",
+    "file": "artifacts\\research_latest_20260920\\yudaiyamauchi__lb-exploration-c-disagreement-adaptive\\lb-exploration-c-disagreement-adaptive.ipynb",
+    "sha256": "918becc8ea62dbafde393ab3015fe6c16554b9a4cf9d48c91a6c229f5d1c66ec",
+    "code_lines": 4659
+  },
+  {
+    "ref": "yudaiyamauchi/lb-exploration-e-mutual-best",
+    "file": "artifacts\\research_latest_20260920\\yudaiyamauchi__lb-exploration-e-mutual-best\\lb-exploration-e-mutual-best.ipynb",
+    "sha256": "da26556955a6d1a82950052ed1500e87e8e5b8245e77353560d8feed5aa5606e",
+    "code_lines": 4656
+  },
+  {
+    "ref": "noisyislands/biohub-transformer-finetune",
+    "file": "artifacts\\research_latest_20260920\\noisyislands__biohub-transformer-finetune\\biohub-transformer-finetune.py",
+    "sha256": "37b5ebeff1c4b3ae5126115e5780b68c09db027fe6bb8e8875bbaef8e64853c9",
+    "code_lines": 810
+  },
+  {
+    "ref": "arnav170/biohub-reid3s",
+    "file": "artifacts\\research_latest_20260920\\arnav170__biohub-reid3s\\biohub-reid3s.ipynb",
+    "sha256": "2f45e5b236a3754b6baeaf5a559b330e32ea3abad047b2a47cd5763dabdd433d",
+    "code_lines": 4799
   }
 ]

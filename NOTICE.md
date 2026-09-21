@@ -78,3 +78,11 @@ provide the published tight55 postprocessing selection. Their public result
 metadata is attributed in docs/E049_E050_SUBMISSION.es.md. Local robust-motion
 weighting is an independent implementation inspired by the public motion-flow
 notebook of haideptry. No artificial off-volume nodes are incorporated.
+
+E051 adapts the ideas of public confidence-adaptive and mutual-best notebooks
+by yudaiyamauchi and appearance-based ReID by arnav170. Its cached-probability
+implementation and patch descriptors are independent adaptations, not exact
+reproductions or verified improvements. E052 compares the actual DeepCenter
+division threshold from zhehaoliang and reyhanksatria against our frozen public
+baseline. Sources, dates, hashes and experimental limitations are recorded in
+results/E051_public_audit.json and docs/E051_E054_PUBLICOS_Y_ENSAMBLE.es.md.

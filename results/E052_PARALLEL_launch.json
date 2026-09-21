@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e052-parallel-cpu",
+  "version": 1,
+  "kernel_id": 135249035,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e052-parallel-cpu",
+  "ref": "/code/jarturo/biohub-e052-parallel-cpu",
+  "launched_at_utc": "2026-09-21T13:51:50.642490+00:00",
+  "payload_sha256": "c3508c1079abc43b9a4342ca9595502232b92174b9c17c4ae27067e66e697b6f",
+  "notebook_sha256": "381ad08d4fd88b742f092299b3fff88eddd675375418dc90dcdcc4c28f1d2bf6",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

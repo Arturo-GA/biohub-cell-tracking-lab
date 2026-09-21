@@ -1,0 +1,76 @@
+{
+  "kernel": "jarturo/biohub-e052-infer",
+  "version": 1,
+  "manifest_sha256": "9c1bb22e342c11ca0b1e583437dfa7e6a97bf81be888321ce4e3f902bea76e6b",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E052",
+      "videos": [
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "checkpoint_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0",
+      "protocol": "Same public DeepCenter float32 eight-view TTA on all frames of reused E023 eight videos. Cache heatmaps only. CPU replays full postprocessor at threshold .25/.20, plus selected E051 association. No annotation read during inference."
+    },
+    "pool_factor": 4,
+    "videos": [
+      {
+        "video": "44b6_12dfb391",
+        "file": "44b6_12dfb391.npy",
+        "sha256": "08d857ebe2b10b75dc66bee555ae833285e5d699d9e515e15bfbde21a1a4c7c7",
+        "frames": 100
+      },
+      {
+        "video": "44b6_c50204e0",
+        "file": "44b6_c50204e0.npy",
+        "sha256": "cf11400b406e2fcf8b433a97426c5b2a8c6fb9ba523d0c36fba94daae0c78d8a",
+        "frames": 100
+      },
+      {
+        "video": "6bba_2646afc7",
+        "file": "6bba_2646afc7.npy",
+        "sha256": "0a7ada83c1f929c0c44045486a4f92c942c8b587475c3ddd58881810da9a1a80",
+        "frames": 100
+      },
+      {
+        "video": "6bba_cf35214c",
+        "file": "6bba_cf35214c.npy",
+        "sha256": "81fd984504b5d9c5b0edf71d7f66eac49fc365f409262f423966fd08a32f443c",
+        "frames": 100
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "file": "44b6_415c0a3a.npy",
+        "sha256": "2996324f07c1340a64f9b3b7052b577e7e7fcd9bb70fc8531acde6fe9e576725",
+        "frames": 100
+      },
+      {
+        "video": "44b6_e35b117d",
+        "file": "44b6_e35b117d.npy",
+        "sha256": "ac2ce006c819e4410105b0420da67ef482598ccaae32eeae045c331ca732bc7f",
+        "frames": 100
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "file": "6bba_6db0e9b4.npy",
+        "sha256": "59fb5a8eac0aed8b943819f694a6524d5a6f46895d72812337a8df7805f27a45",
+        "frames": 100
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "file": "6bba_ef7b4f7e.npy",
+        "sha256": "af0f0629b4eb899b1a54faf0c40d001f76b3fbe9aa7ef8fa9b1758031cc6eb71",
+        "frames": 100
+      }
+    ],
+    "seconds": 163.54590811900002,
+    "trained": false
+  }
+}

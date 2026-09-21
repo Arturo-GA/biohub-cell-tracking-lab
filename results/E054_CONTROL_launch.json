@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-e054-public-control",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e054-public-control",
+  "launched_at_utc": "2026-09-21T14:04:40.920439+00:00",
+  "payload_sha256": "4ed765ccee8d9ff2b00339918baecd54c0c2aa3c3499d40edf5436f2b215c7a0",
+  "notebook_sha256": "334366c6264f114c8f6ee1f5017d5ccd0a8b23c0f44c16e050f943bfe8524cd4",
+  "files": 21,
+  "gpu": true,
+  "private": true,
+  "leaderboard_submitted": false
+}
