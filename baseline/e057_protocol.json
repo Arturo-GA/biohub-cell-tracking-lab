@@ -1,0 +1,19 @@
+{
+  "experiment": "E057",
+  "videos": [
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "arms": [
+    "specialist",
+    "balanced",
+    "uncertainty"
+  ],
+  "protocol": "Original candidate support and nodes, original divisions locked by visual assignment. Strict equality of captured old/new detection coordinates; remap new probabilities to OLD GEFF IDs by coordinates, never assume new graph ID equality. New expert probabilities alone, log pool weight .5, or uncertainty-gated weight <=.5 when original margin<.2 and new margin exceeds original by .02. Same eight reused videos; exploratory. Frozen before observing E056 scores."
+}

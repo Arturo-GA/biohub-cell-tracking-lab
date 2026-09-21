@@ -1,0 +1,50 @@
+{
+  "base_source_sha256": "8cd297c4a5e1fe92bbca011f6e9c4cd22c0719f972570c78cba40cae5a94c7ff",
+  "sources": [
+    {
+      "ref": "beraterolelk/0-947-lb-biohub-deepcenter-ilp-tracker",
+      "source_sha256": "acfb1b3c2d63e2840db5aa06a9242e2efb1a20036a1f892718b2361cb7f3a5ef",
+      "same_executable_ast_as_v3": true
+    },
+    {
+      "ref": "mthem77/biohub-b0-harmonic-fusion-safety-re-run",
+      "source_sha256": "acfb1b3c2d63e2840db5aa06a9242e2efb1a20036a1f892718b2361cb7f3a5ef",
+      "same_executable_ast_as_v3": true
+    },
+    {
+      "ref": "andnyu/biohub-947-mutual-rank",
+      "source_sha256": "c5f3d8a0991247465b09cf41695fec704881729bb9d34c216454623bd42302aa",
+      "same_executable_ast_as_v3": false
+    },
+    {
+      "ref": "andnyu/biohub-947-synthetic-edge",
+      "source_sha256": "4b5aa851bae4891fe2c24935190664cecad3d7072b6c8838588f65000f00da36",
+      "same_executable_ast_as_v3": false
+    },
+    {
+      "ref": "haideptry/biohub-0-951-sota-deepcenter-fast-ilp-19m",
+      "source_sha256": "20715862d96189286857413d1964b0b1f8ca65ae7075baf45a5b43314607dfee",
+      "same_executable_ast_as_v3": false
+    }
+  ],
+  "divnet_classes_unchanged_from_previously_audited_incompatible_model": {
+    "_DivNetConvBlock": true,
+    "DivNetMitosisClassifier": true
+  },
+  "divnet_limit": "New source still uses strict=False. For the previously downloaded checkpoint, identical classes load zero tensors. This is not proof that every alternative checkpoint is incompatible.",
+  "mutual_rank": "New hook adds rank bonus beta=.12 to logits before softmax/ILP; E051 was only a postprocess adaptation, not an exact reproduction.",
+  "synthetic_edge": "New third UNetNodeTransformer: column margin <.12, synthetic margin advantage >.02, weight <=.25 varying by uncertainty; checkpoint SHA 0eacacaf0b43bfd5a063495d6991a4911cd045c37650363d5d8826a0e7ed3dd9. Not yet locally validated.",
+  "score_evidence": [
+    {
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728324",
+      "level": "staff announcement",
+      "finding": "Metric patched, submissions rescored; staff says complete."
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/736937",
+      "level": "participant report",
+      "finding": "Some public notebook list scores remain from before rescore."
+    }
+  ],
+  "score_limit": "No evidence yet that the specific V3 0.947 label is stale. Visible CSV equality does not establish hidden-test equality or metric-version equality."
+}

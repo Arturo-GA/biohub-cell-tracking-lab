@@ -1,0 +1,14 @@
+{
+  "kernel": "jarturo/biohub-e056-synthetic-specialist",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e056-synthetic-specialist",
+  "launched_at_utc": "2026-09-21T21:02:20.225260+00:00",
+  "payload_sha256": "a2c83814798be143f9d1c87d34416fe39599272ef1ff2d7bc7cf9787fa1d5137",
+  "notebook_sha256": "526224fbe6286efe8cfc233686a63f4c247ffa9290ee267cb7e73e8bfb7602b1",
+  "files": 51,
+  "gpu": true,
+  "private": true,
+  "leaderboard_submitted": false,
+  "requested_kernel": "jarturo/biohub-e056-synthetic-capture",
+  "slug_resolution": "Confirmed RUNNING by kernels_status; requested capture slug inaccessible; response URL uses specialist."
+}

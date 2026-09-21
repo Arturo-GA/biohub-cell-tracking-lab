@@ -1,6 +1,8 @@
 # Biohub Cell Tracking Lab
 
-**E051–E054, 21 de septiembre:** se confirmó E050 = 0.946. Tres nuevas fusiones y dieciséis combinaciones con detectores no superaron la asociación visual en los ocho videos reutilizados. Nuestro control `tight55` reproduce byte por byte el CSV público de Harmonic V3. Se envió la ablación limpia **56433260** (PENDING, sin score todavía). [Auditoría, resultados y límites](docs/E051_E054_PUBLICOS_Y_ENSAMBLE.es.md).
+**E055–E056, 21 de septiembre:** el control público E054 terminó en **0.946**. Tres ensambles selectivos nuevos en CPU no superaron la asociación visual. Se auditan cinco notebooks recientes y se prueba un tercer modelo sintético solo en enlaces ambiguos. [Diagnóstico, fuentes y protocolo](docs/E055_E056_ESPECIALISTAS.es.md).
+
+**E051–E054, 21 de septiembre:** se confirmó E050 = 0.946. Tres nuevas fusiones y dieciséis combinaciones con detectores no superaron la asociación visual en los ocho videos reutilizados. Nuestro control `tight55` reproduce byte por byte el CSV público de Harmonic V3. Se envió la ablación limpia **56433260** (**COMPLETE: 0.946**). [Auditoría, resultados y límites](docs/E051_E054_PUBLICOS_Y_ENSAMBLE.es.md).
 
 **E041–E043 completados, sin nueva submission:** la supervisión densa NIS3D
 recupera 227 centros a 3 µm frente a 194 del mejor control a esa distancia,

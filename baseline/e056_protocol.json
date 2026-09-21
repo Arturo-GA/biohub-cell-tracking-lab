@@ -1,0 +1,22 @@
+{
+  "experiment": "E056",
+  "source": "andnyu/biohub-947-synthetic-edge",
+  "source_sha256": "4b5aa851bae4891fe2c24935190664cecad3d7072b6c8838588f65000f00da36",
+  "hook_sha256": "ff45008eff8308428f4695ada74083e65a815ff9b5f7e078bd5e6b660e505db2",
+  "videos": [
+    "44b6_12dfb391",
+    "44b6_415c0a3a",
+    "44b6_c50204e0",
+    "44b6_e35b117d",
+    "6bba_2646afc7",
+    "6bba_6db0e9b4",
+    "6bba_cf35214c",
+    "6bba_ef7b4f7e"
+  ],
+  "max_weight": 0.25,
+  "public_margin_max": 0.12,
+  "synthetic_margin_gain": 0.02,
+  "original_detections_unchanged": true,
+  "scope": "Eight reused videos; exploratory, no independent holdout",
+  "decision": "Compare both synthetic ILP and synthetic visual assignment against original .9436828898822122 and visual .9502832669356378. Do not submit a candidate that fails to improve the previous best."
+}

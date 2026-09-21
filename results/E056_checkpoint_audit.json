@@ -1,0 +1,21 @@
+{
+  "checkpoint_sha256": "0eacacaf0b43bfd5a063495d6991a4911cd045c37650363d5d8826a0e7ed3dd9",
+  "strict_load": true,
+  "tensors_loaded": 136,
+  "parameters": 2076706,
+  "default_config": {
+    "unet_out_channels": 32,
+    "unet_layers": [
+      32,
+      64,
+      128
+    ],
+    "downsample": [
+      1,
+      4,
+      4
+    ],
+    "window_size": 2
+  },
+  "training_membership": "Public synthetic fine tuning; base real-image training membership unknown"
+}

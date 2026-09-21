@@ -100,5 +100,35 @@
     "file": "artifacts\\research_latest_20260920\\arnav170__biohub-reid3s\\biohub-reid3s.ipynb",
     "sha256": "2f45e5b236a3754b6baeaf5a559b330e32ea3abad047b2a47cd5763dabdd433d",
     "code_lines": 4799
+  },
+  {
+    "ref": "haideptry/biohub-0-951-sota-deepcenter-fast-ilp-19m",
+    "file": "artifacts\\research_latest_20260920\\haideptry__biohub-0-951-sota-deepcenter-fast-ilp-19m\\biohub-0-951-sota-deepcenter-fast-ilp-19m.ipynb",
+    "sha256": "fb2b1cd4d9612d333eb2e8ad6c0106646ac2429c05ccfce5997179135a228734",
+    "code_lines": 3690
+  },
+  {
+    "ref": "beraterolelk/0-947-lb-biohub-deepcenter-ilp-tracker",
+    "file": "artifacts\\research_latest_20260920\\beraterolelk__0-947-lb-biohub-deepcenter-ilp-tracker\\0-947-lb-biohub-deepcenter-ilp-tracker.ipynb",
+    "sha256": "fdb1c1e10ffd120e0466025526eb83e968a88413d77c1e21bedb394155446883",
+    "code_lines": 4209
+  },
+  {
+    "ref": "mthem77/biohub-b0-harmonic-fusion-safety-re-run",
+    "file": "artifacts\\research_latest_20260920\\mthem77__biohub-b0-harmonic-fusion-safety-re-run\\biohub-b0-harmonic-fusion-safety-re-run.ipynb",
+    "sha256": "e378e723ff30c3bebbe21b68553b3c666c4592141288f32529c1322b790fb44a",
+    "code_lines": 4209
+  },
+  {
+    "ref": "andnyu/biohub-947-synthetic-edge",
+    "file": "artifacts\\research_latest_20260920\\andnyu__biohub-947-synthetic-edge\\biohub-947-synthetic-edge.ipynb",
+    "sha256": "f3747d4bb3f33c9411d712b3010a28cb69b14d6526dc3fbd62b1f499f21c0803",
+    "code_lines": 4382
+  },
+  {
+    "ref": "andnyu/biohub-947-mutual-rank",
+    "file": "artifacts\\research_latest_20260920\\andnyu__biohub-947-mutual-rank\\biohub-947-mutual-rank.ipynb",
+    "sha256": "18a0b52dbe95eeed65f1ac4d8b4308d227ca1933b56a14faf7388187222480d9",
+    "code_lines": 4238
   }
 ]

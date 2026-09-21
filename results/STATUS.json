@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
   "github_private": true,
   "external_leaderboard_reference": {
@@ -1984,16 +1984,37 @@
     "seconds": 890.2824795
   },
   "E054_CONTROL": {
-    "status": "SUBMITTED",
+    "ref": 56433260,
+    "status": "COMPLETE",
+    "public_score": "0.946",
+    "error_description": "",
+    "checked_at_utc": "2026-09-21T20:47:10.655469+00:00",
     "kernel": "jarturo/biohub-e054-public-control",
     "version": 1,
     "submission_ref": 56433260,
-    "submission_status": "PENDING",
-    "public_score": "",
+    "submission_status": "COMPLETE",
     "visible_csv_equals_public_v3": true,
     "csv_locally_validated": true,
     "pending_notebook": false
   },
   "latest_submission_ref": 56433260,
-  "updated_at_utc": "2026-09-21T14:28:31.029927+00:00"
+  "updated_at_utc": "2026-09-21T21:12:36.673135+00:00",
+  "E055": {
+    "status": "COMPLETE",
+    "selected": "visual",
+    "new_arms_improved": false,
+    "seconds_cpu": 130.391047237,
+    "receipt": "results/E055_EVALUATE_completed.json"
+  },
+  "E056": {
+    "status": "RUNNING",
+    "kernel": "jarturo/biohub-e056-synthetic-specialist",
+    "purpose": "Third synthetic expert on uncertain links; GPU inference then CPU evaluation",
+    "leaderboard_submitted": false
+  },
+  "E057": {
+    "status": "PREPARED",
+    "gpu": false,
+    "protocol": "Frozen original detections and divisions; synthetic association and two weighted pools; no new GPU inference"
+  }
 }

@@ -20,7 +20,11 @@ with api.build_kaggle_client() as client:
             if 'SECONDARY_EDGE_TTA_ACTIVE' in message:
                 if 'secondary_tta' in announced:continue
                 announced.add('secondary_tta')
-            if any(k in message for k in ['Prediction completed','independent video shards','Loaded DeepCenter',' FINAL:','SECONDARY_EDGE_TTA_ACTIVE','ENSEMBLE_','DENSE_','RESOLUTION_','UNCERT_','DIVISION_DATA','DIVISION_HEAD','DIVISION_METRIC','JOINT_PROPOSALS','JOINT_METRIC','NEURAL_PREP','NEURAL_FEATURES','NEURAL_HEAD','NEURAL_METRIC','NEURAL_GRAPH','THREE_PREP','SPATIAL_','CENTER_','EVENT_','Traceback','Error:']):
+            if 'SYNTH_EDGE ' in message:
+                key='synthetic_pair_'+message.split('SYNTH_EDGE ',1)[1].split()[0]
+                if key in announced:continue
+                announced.add(key)
+            if any(k in message for k in ['Synthetic edge-only third model','SYNTH_EDGE ','Prediction completed','independent video shards','Loaded DeepCenter',' FINAL:','SECONDARY_EDGE_TTA_ACTIVE','ENSEMBLE_','DENSE_','RESOLUTION_','UNCERT_','DIVISION_DATA','DIVISION_HEAD','DIVISION_METRIC','JOINT_PROPOSALS','JOINT_METRIC','NEURAL_PREP','NEURAL_FEATURES','NEURAL_HEAD','NEURAL_METRIC','NEURAL_GRAPH','THREE_PREP','SPATIAL_','CENTER_','EVENT_','Traceback','Error:']):
                 seen.add(message);print(round(event.get('time',0),1),message.rstrip(),flush=True)
     except requests.exceptions.ChunkedEncodingError:
         print('Log stream disconnected; check kernel status separately.',flush=True)
