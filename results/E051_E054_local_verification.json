@@ -1,0 +1,41 @@
+{
+  "unit_tests_passed": 7,
+  "scope": "Four replay/mutual/descriptor tests and three bridge tests; packaged code compiled and module-level imports checked. Lazy imports still require runtime verification.",
+  "payloads": [
+    {
+      "kernel": "jarturo/biohub-e051-evaluate-cpu",
+      "files": 29,
+      "payload_sha256": "4a63c0d0b924d4946799ca0fbc7f11204ad10207662bcf1ac5e2afec4cd6df61",
+      "compiled": true,
+      "module_level_local_imports_closed": true
+    },
+    {
+      "kernel": "jarturo/biohub-e052-parallel-cpu",
+      "files": 31,
+      "payload_sha256": "c3508c1079abc43b9a4342ca9595502232b92174b9c17c4ae27067e66e697b6f",
+      "compiled": true,
+      "module_level_local_imports_closed": true
+    },
+    {
+      "kernel": "jarturo/biohub-e053-fields",
+      "files": 5,
+      "payload_sha256": "f79e5ed4a6cabf4da799e3bc326b84512394ae7df945a9c5395f2d54a2e7357e",
+      "compiled": true,
+      "module_level_local_imports_closed": true
+    },
+    {
+      "kernel": "jarturo/biohub-e053-evaluate-cpu",
+      "files": 29,
+      "payload_sha256": "f2f1330a7dc54c0553a1f0638a49d0e8d3f0f4e776065ff107b8c369a26cfcdb",
+      "compiled": true,
+      "module_level_local_imports_closed": true
+    },
+    {
+      "kernel": "jarturo/biohub-e054-public-control",
+      "files": 21,
+      "payload_sha256": "4ed765ccee8d9ff2b00339918baecd54c0c2aa3c3499d40edf5436f2b215c7a0",
+      "compiled": true,
+      "module_level_local_imports_closed": true
+    }
+  ]
+}

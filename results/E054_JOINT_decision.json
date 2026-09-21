@@ -1,0 +1,8 @@
+{
+  "status": "not_promoted",
+  "selected": "d25_r60_visual",
+  "score": 0.9502832669356378,
+  "delta_vs_prior_visual": 0.0,
+  "joint_submission_built": false,
+  "reason": "All 16 added-bridge variants fail to beat visual-only; do not resubmit the already-tested visual configuration"
+}

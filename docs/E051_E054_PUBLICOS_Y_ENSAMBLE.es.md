@@ -78,8 +78,60 @@ reentrena ningún modelo ni se utiliza Colab. El lector del posprocesado públic
 omite instalación e inferencia principal; la optimización de búsqueda de pesos
 prioriza rutas existentes y conserva la verificación de hashes.
 
+## Resultado E052
+
+La reproducción distribuida terminó en 1024.196 segundos de proceso CPU.
+Reprodujo exactamente los controles E023. Ningún ajuste público supera la
+asociación visual anterior en estos ocho videos.
+
+| Umbral / radio | Sin visual | Con visual |
+|---|---:|---:|
+| 0.25 / 6.0 | 0.943682890 | **0.950283267** |
+| 0.25 / 5.5 | 0.942513312 | 0.949102104 |
+| 0.20 / 6.0 | 0.943678685 | 0.950279032 |
+| 0.20 / 5.5 | 0.942712465 | 0.948910316 |
+
+La combinación 0.20/5.5 añade una división falsa evaluable (3 frente a 2);
+ninguna recupera las cinco divisiones anotadas. El ranking del proxy público
+no se traslada a estos videos. Recibo: `results/E052_PARALLEL_completed.json`.
+
+## E054: ablación pública independiente
+
+Se descargaron los CSV públicos, no solo sus títulos o configuraciones.
+El CSV de Harmonic V3 es **idéntico byte por byte** al control `tight55` de
+nuestra ejecución E050: SHA256
+`a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848`.
+Tiene 122794 nodos y 118512 enlaces. El ensamble E050 añadió 108 nodos y
+157 enlaces a ese control. Por tanto, el control público está reproducido en
+el test visible; esto no prueba igualdad sobre el test oculto ni garantiza
+el score listado. El CSV de zhehaoliang sí presenta diferencias.
+
+Se intentó enviar el archivo de control ya producido, pero Kaggle rechazó
+la ruta `weighted_submission/public_tight55.csv`: exige exactamente
+`submission.csv`. Se verificó que no se había registrado otro envío antes
+de recuperar la razón del rechazo; recibo `results/E050_CONTROL_attempt.json`.
+Se lanzó `jarturo/biohub-e054-public-control`, que vuelve a inferir las imágenes
+y exporta el control limpio con el nombre exigido. No usa CSV públicos ni
+cachés del test como entradas. Esta ablación está separada del candidato
+conjunto para distinguir el efecto del ensamble.
+
 ## Resultados conjuntos
 
-Pendientes de completar la evaluación CPU. El constructor E054 exige una
-mejora frente a la asociación visual y un recibo de selección antes de crear
-el notebook final. No se afirma mejora de leaderboard ni se ha enviado E054.
+| Configuración | Control | + Denso | + Ponderado |
+|---|---:|---:|---:|
+| d25_r60 | 0.943682890 | 0.943550407 | 0.943550407 |
+| d25_r60_visual | 0.950283267 | 0.950164520 | 0.950164520 |
+| d25_r55 | 0.942513312 | 0.942381656 | 0.942381656 |
+| d25_r55_visual | 0.949102104 | 0.948984560 | 0.948984560 |
+| d20_r60 | 0.943678685 | 0.943546573 | 0.943546573 |
+| d20_r60_visual | 0.950279032 | 0.950161258 | 0.950161258 |
+| d20_r55 | 0.942712465 | 0.942581158 | 0.942581158 |
+| d20_r55_visual | 0.948910316 | 0.948794014 | 0.948794014 |
+
+E053 terminó en 890.282 segundos CPU. Selección: `d25_r60_visual`; diferencia frente a la asociación visual anterior: 0.000000000. Ninguna de las dieciséis combinaciones nuevas supera el control visual. No se construye ni lanza una submission conjunta repetida.
+
+Los puentes que mejoraron la calibración antigua de 16 videos no recuperan enlaces anotados adicionales en estos otros ocho, y reducen ligeramente el score ajustado. Este resultado no prueba que cada nodo añadido sea incorrecto: las etiquetas son parciales. Sí impide asumir que las ganancias de los componentes se suman o se trasladan al leaderboard.
+
+**Submission enviada: 56433260**, notebook [jarturo/biohub-e054-public-control](https://www.kaggle.com/code/jarturo/biohub-e054-public-control), versión 1. Estado consultado: **PENDING**, todavía sin score. La inferencia completa se descargó y validó localmente, con coincidencia exacta del SHA256 público. Duración del runner: 959.283 segundos; inferencia principal: 9.27 minutos. No quedan notebooks de esta ronda ejecutándose; solo el scoring de Kaggle si continúa pendiente.
+
+Siete pruebas locales pasaron. Las métricas de E052 coinciden exactamente entre la ejecución secuencial (1740.422 s) y la distribuida (1024.196 s); ambas consumieron CPU, no GPU. Código, paquetes privados, errores recuperados y recibos quedan versionados en GitHub.

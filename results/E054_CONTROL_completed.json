@@ -1,0 +1,93 @@
+{
+  "status": "complete",
+  "kernel": "jarturo/biohub-e054-public-control",
+  "version": 1,
+  "csv_locally_validated": true,
+  "launch_receipt_sha256": "33266017c1bbc939474d4cb7cd52913f4b79c1ff4db46317080732911e14007c",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E054_CONTROL",
+      "selected": "d25_r55",
+      "division_threshold": 0.25,
+      "radius": 5.5,
+      "visual": false,
+      "mode": "none",
+      "reason": "E050 pre-complement output exactly matches downloaded public V3 CSV; submit pure ablation with required root filename",
+      "expected_visible_csv_sha256": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848"
+    },
+    "shapes": {
+      "44b6_0113de3b": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "44b6_0b24845f": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "6bba_05b6850b": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "6bba_05db0fb1": [
+        100,
+        64,
+        256,
+        256
+      ]
+    },
+    "csv_sha256": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848",
+    "export_repair": {
+      "changed_spatial_coordinates": {},
+      "nodes": 122794,
+      "edges": 118512,
+      "topology_changed": false,
+      "rule": "Only spatial integer equal to upper extent maps to extent-1; all other excursions rejected"
+    },
+    "counts": {
+      "44b6_0113de3b": {
+        "nodes": 25637,
+        "edges": 24926
+      },
+      "44b6_0b24845f": {
+        "nodes": 20721,
+        "edges": 19433
+      },
+      "6bba_05b6850b": {
+        "nodes": 6152,
+        "edges": 5957
+      },
+      "6bba_05db0fb1": {
+        "nodes": 70284,
+        "edges": 68196
+      }
+    },
+    "annotations_read": false,
+    "cached_test_predictions": false,
+    "leaderboard_submitted": false
+  },
+  "counts": {
+    "44b6_0113de3b": {
+      "nodes": 25637,
+      "edges": 24926
+    },
+    "44b6_0b24845f": {
+      "nodes": 20721,
+      "edges": 19433
+    },
+    "6bba_05b6850b": {
+      "nodes": 6152,
+      "edges": 5957
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70284,
+      "edges": 68196
+    }
+  }
+}

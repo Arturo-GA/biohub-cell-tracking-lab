@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E050 COMPLETE 0.946, no gain. E051 CPU alternatives below prior visual control. E052 public-config factorial replay in progress.",
+  "quality_status": "E051/E052/E053 completed. No new joint improvement. Pure public-matched control submitted; Kaggle status PENDING.",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -1963,7 +1963,37 @@
     "reason": "All new confidence/mutual ensembles below visual-only control on eight reused videos"
   },
   "E052": {
-    "status": "RUNNING",
-    "purpose": "Frozen DeepCenter maps on GPU then public-threshold plus visual-association replay on CPU"
-  }
+    "status": "COMPLETE",
+    "control_reproduced": true,
+    "parallel_and_sequential_metrics_identical": true,
+    "promoted": false,
+    "receipts": [
+      "results/E052_PARALLEL_completed.json",
+      "results/E052_REPLAY_completed.json"
+    ],
+    "seconds_parallel": 1024.196313261,
+    "seconds_sequential": 1740.4216357340001
+  },
+  "E053": {
+    "status": "COMPLETE",
+    "selected": "d25_r60_visual",
+    "score": 0.9502832669356378,
+    "delta_vs_prior_visual": 0.0,
+    "promoted": false,
+    "receipt": "results/E053_EVALUATE_completed.json",
+    "seconds": 890.2824795
+  },
+  "E054_CONTROL": {
+    "status": "SUBMITTED",
+    "kernel": "jarturo/biohub-e054-public-control",
+    "version": 1,
+    "submission_ref": 56433260,
+    "submission_status": "PENDING",
+    "public_score": "",
+    "visible_csv_equals_public_v3": true,
+    "csv_locally_validated": true,
+    "pending_notebook": false
+  },
+  "latest_submission_ref": 56433260,
+  "updated_at_utc": "2026-09-21T14:28:31.029927+00:00"
 }

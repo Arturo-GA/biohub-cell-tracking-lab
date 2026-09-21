@@ -1,0 +1,10 @@
+{
+  "status": "submitted",
+  "kernel": "jarturo/biohub-e054-public-control",
+  "version": 1,
+  "attempted_at_utc": "2026-09-21T14:22:30.835710+00:00",
+  "csv_sha256": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848",
+  "message": "E054 pure public tight55 control; remove weighted bridges; visible CSV exactly reproduced, full hidden-test inference",
+  "ref": 56433260,
+  "response_message": ""
+}

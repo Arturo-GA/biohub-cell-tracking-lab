@@ -20,11 +20,13 @@ def main(action,stage='E054_SUBMISSION'):
         r=read(out/'joint_submission/result.json');assert r['status']=='complete' and sha(out/'submission.csv')==r['csv_sha256']
         from biohub_lab.submission import read_and_validate
         groups=read_and_validate(out/'submission.csv',r['shapes'])
+        if stage=='E054_CONTROL':assert r['csv_sha256']==r['config']['expected_visible_csv_sha256'],'Pure public control did not reproduce the expected visible CSV'
         save(done_path,dict(status='complete',kernel=launch['kernel'],version=launch['version'],csv_locally_validated=True,launch_receipt_sha256=sha(launch_path),result=r,counts={k:dict(nodes=len(n),edges=len(e)) for k,(n,e) in groups.items()}))
     elif action=='submit':
         done=read(done_path);assert done['status']=='complete' and done['csv_locally_validated'] and done['launch_receipt_sha256']==sha(launch_path)
         assert api.kernels_status(launch['kernel']).status.name=='COMPLETE'
         cfg=done['result']['config'];r=dict(status='request_pending',kernel=launch['kernel'],version=launch['version'],attempted_at_utc=datetime.now(timezone.utc).isoformat(),csv_sha256=done['result']['csv_sha256'],message='E054 joint frozen selection: '+cfg['selected']+'; full image inference, exploratory reused validation')
+        if stage=='E054_CONTROL':r['message']='E054 pure public tight55 control; remove weighted bridges; visible CSV exactly reproduced, full hidden-test inference'
         with attempt_path.open('x') as handle:json.dump(r,handle,indent=2)
         response=api.competition_submit_code(file_name='submission.csv',message=r['message'],competition=COMP,kernel=launch['kernel'],kernel_version=launch['version'],quiet=True)
         r.update(status='submitted',ref=response.ref,response_message=response.message);save(attempt_path,r)
