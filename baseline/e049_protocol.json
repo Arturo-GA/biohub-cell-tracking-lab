@@ -1,0 +1,7 @@
+{
+  "experiment": "E049",
+  "graphs_sha256": "c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22",
+  "donors_sha256": "b710e4fe43bb160d69dfe8458cbbe53b039d3c03ea90b6112d43a043f6d8df27",
+  "selection": "Best full graph local score among four prespecified variants; tie fewer FP. Exploratory submission authorized even for small gain. No embryo-specific routing.",
+  "public_idea": "Robust local median motion from haideptry/biohub-sota-0-949-local-motion-flow-2xt4-19m; own reliability weighting implementation."
+}

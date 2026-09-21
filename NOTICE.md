@@ -73,3 +73,8 @@ The implementation uses strict state-dict validation. Public scores and training
 membership are not independently established; the diagnostic is explicitly conditional.
 The research audit executes only reviewed model class/preprocessing definitions;
 no full external notebook or out-of-volume metric manipulation is incorporated.
+E049-E050: public Harmonic V3 (raunakdey07) and proxy notebook (evgendvorkin)
+provide the published tight55 postprocessing selection. Their public result
+metadata is attributed in docs/E049_E050_SUBMISSION.es.md. Local robust-motion
+weighting is an independent implementation inspired by the public motion-flow
+notebook of haideptry. No artificial off-volume nodes are incorporated.

@@ -1,5 +1,7 @@
 # Revisión pública de Kaggle — 20 de septiembre de 2026
 
+**Actualización con evidencia del usuario:** una captura posterior del listado ordenado por Public Score confirma 0.950 para Biohub 0.95 y 0.947 para el notebook de proxy, Harmonic V3 y Harmonic. Esos scores del listado sí están verificados visualmente. La limitación de API descrita abajo no debe interpretarse como que el listado carece de scores reales. Se descargó además la selección pública `tight55` y se incorporó a [E049–E050](E049_E050_SUBMISSION.es.md).
+
 Se consultaron tres listas de 40 notebooks: orden por score, última ejecución y creación. Se descargaron diez notebooks, con hashes, para comparar implementaciones y examinar bloques concretos. La API de listado permite ordenar por score pero no devuelve el valor del score en sus registros. Por ello los números en títulos no se presentan aquí como resultados públicos confirmados. La página dinámica de varios notebooks no pudo leerse con el navegador disponible; se usaron la API oficial, código y registros públicos.
 
 ## Hallazgos que cambian decisiones

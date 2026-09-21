@@ -1,0 +1,12 @@
+{
+  "experiment": "E050",
+  "mode": "weighted",
+  "selection_receipt_sha256": "511e3c750133da544ae92fea1a10f8e22fda5f3718792420e9c7369ac1590158",
+  "dense_manifest_sha256": "973243cc96605e4b814ef02be6e46ac1ccfaaecd302932f160bb79016e4daaa0",
+  "static_manifest_sha256": "de5aaf41154afdf54857a56265943c551e159b6a3b11bce4f6589499f777ef3f",
+  "public_config": {
+    "MOTION_RELINK_TIGHT_UM": 5.5
+  },
+  "public_source": "raunakdey07/biohub-harmonic-fusion-v3",
+  "inference": "All test images recomputed; fixed public tight55 plus selected E049 complement. No training data read. Exploratory transfer to public configuration, not separately validated locally."
+}

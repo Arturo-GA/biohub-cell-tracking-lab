@@ -1,0 +1,55 @@
+{
+  "source": "user screenshot of Kaggle Public Score list",
+  "scores": {
+    "anvithpothula/biohub-0-95": 0.95,
+    "evgendvorkin/biohub-0-942-lb-proxy-score-0-9417": 0.947,
+    "raunakdey07/biohub-harmonic-fusion-v3": 0.947,
+    "flexonafft/biohub-harmonic-fusion": 0.947
+  },
+  "public_selected": [
+    {
+      "source": "artifacts\\public_v3_outputs\\ppsweep_selected.json",
+      "sha256": "99398c24e259d9430b00ca0816e5e99fb3f07176a34722ec93fb061dfad47822",
+      "result": {
+        "base_proxy": 0.9490380316323633,
+        "held_out_stems": [
+          "44b6_12dfb391",
+          "44b6_267148e4",
+          "44b6_2a2eff9f",
+          "44b6_341df25f",
+          "6bba_062c8d37",
+          "6bba_07e24132",
+          "6bba_085bf656",
+          "6bba_09961292"
+        ],
+        "overrides": {
+          "MOTION_RELINK_TIGHT_UM": 5.5
+        },
+        "selected": "tight55",
+        "selected_proxy": 0.9510954147638787
+      }
+    },
+    {
+      "source": "artifacts\\public_proxy_outputs\\ppsweep_selected.json",
+      "sha256": "99398c24e259d9430b00ca0816e5e99fb3f07176a34722ec93fb061dfad47822",
+      "result": {
+        "base_proxy": 0.9490380316323633,
+        "held_out_stems": [
+          "44b6_12dfb391",
+          "44b6_267148e4",
+          "44b6_2a2eff9f",
+          "44b6_341df25f",
+          "6bba_062c8d37",
+          "6bba_07e24132",
+          "6bba_085bf656",
+          "6bba_09961292"
+        ],
+        "overrides": {
+          "MOTION_RELINK_TIGHT_UM": 5.5
+        },
+        "selected": "tight55",
+        "selected_proxy": 0.9510954147638787
+      }
+    }
+  ]
+}

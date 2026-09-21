@@ -1,0 +1,706 @@
+{
+  "kernel": "jarturo/biohub-e049-evaluate-cpu",
+  "version": 1,
+  "manifest_sha256": "b820256a8034927d6a1c007b41851d76a6e39803856f23452919217c1ccf91bd",
+  "result": {
+    "status": "complete",
+    "metrics": {
+      "control": {
+        "n": 16,
+        "edge_jaccard": 0.8712793733681462,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9779746966019673,
+        "adj_edge_jaccard": 0.8707529595605399,
+        "n_adj": 16,
+        "score": 0.9007529595605399,
+        "edge_tp": 6674,
+        "edge_fp": 485,
+        "edge_fn": 501
+      },
+      "dense": {
+        "n": 16,
+        "edge_jaccard": 0.8720960584703733,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9785556815031767,
+        "adj_edge_jaccard": 0.8714086181748129,
+        "n_adj": 16,
+        "score": 0.9014086181748129,
+        "edge_tp": 6682,
+        "edge_fp": 487,
+        "edge_fn": 493
+      },
+      "weighted": {
+        "n": 16,
+        "edge_jaccard": 0.8720960584703733,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.9785556815031767,
+        "adj_edge_jaccard": 0.8714095532037659,
+        "n_adj": 16,
+        "score": 0.9014095532037659,
+        "edge_tp": 6682,
+        "edge_fp": 487,
+        "edge_fn": 493
+      },
+      "motion": {
+        "n": 16,
+        "edge_jaccard": 0.8712961754340165,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.978171857485248,
+        "adj_edge_jaccard": 0.8706902713336818,
+        "n_adj": 16,
+        "score": 0.9006902713336818,
+        "edge_tp": 6675,
+        "edge_fp": 486,
+        "edge_fn": 500
+      },
+      "weighted_motion": {
+        "n": 16,
+        "edge_jaccard": 0.8712961754340165,
+        "division_jaccard": 0.3,
+        "division_tp": 3,
+        "division_fp": 4,
+        "division_fn": 3,
+        "node_recall": 0.978171857485248,
+        "adj_edge_jaccard": 0.8706902395880435,
+        "n_adj": 16,
+        "score": 0.9006902395880435,
+        "edge_tp": 6675,
+        "edge_fp": 486,
+        "edge_fn": 500
+      }
+    },
+    "selected": "weighted",
+    "reports": [
+      {
+        "video": "44b6_0db75fae",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "dense",
+        "bridges": 13,
+        "added_nodes": 26,
+        "added_edges": 39
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "weighted",
+        "bridges": 13,
+        "added_nodes": 26,
+        "added_edges": 39,
+        "proposals": 13,
+        "mean_secondary_weight": 0.12128240577481922
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "motion",
+        "bridges": 7,
+        "added_nodes": 17,
+        "added_edges": 24,
+        "proposals": 13,
+        "mean_secondary_weight": 0.12128240577481922
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "weighted_motion",
+        "bridges": 7,
+        "added_nodes": 17,
+        "added_edges": 24,
+        "proposals": 13,
+        "mean_secondary_weight": 0.12128240577481922
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "dense",
+        "bridges": 22,
+        "added_nodes": 57,
+        "added_edges": 79
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "weighted",
+        "bridges": 22,
+        "added_nodes": 57,
+        "added_edges": 79,
+        "proposals": 22,
+        "mean_secondary_weight": 0.15655761230952467
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "motion",
+        "bridges": 17,
+        "added_nodes": 49,
+        "added_edges": 66,
+        "proposals": 22,
+        "mean_secondary_weight": 0.15655761230952467
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "weighted_motion",
+        "bridges": 17,
+        "added_nodes": 49,
+        "added_edges": 66,
+        "proposals": 22,
+        "mean_secondary_weight": 0.15655761230952467
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "dense",
+        "bridges": 7,
+        "added_nodes": 18,
+        "added_edges": 25
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "weighted",
+        "bridges": 7,
+        "added_nodes": 18,
+        "added_edges": 25,
+        "proposals": 7,
+        "mean_secondary_weight": 0.11558916309013725
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "motion",
+        "bridges": 6,
+        "added_nodes": 16,
+        "added_edges": 22,
+        "proposals": 7,
+        "mean_secondary_weight": 0.11558916309013725
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "weighted_motion",
+        "bridges": 6,
+        "added_nodes": 16,
+        "added_edges": 22,
+        "proposals": 7,
+        "mean_secondary_weight": 0.11558916309013725
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "dense",
+        "bridges": 53,
+        "added_nodes": 127,
+        "added_edges": 180
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "weighted",
+        "bridges": 53,
+        "added_nodes": 127,
+        "added_edges": 180,
+        "proposals": 53,
+        "mean_secondary_weight": 0.22298219062640584
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "motion",
+        "bridges": 43,
+        "added_nodes": 114,
+        "added_edges": 157,
+        "proposals": 53,
+        "mean_secondary_weight": 0.22298219062640584
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "weighted_motion",
+        "bridges": 43,
+        "added_nodes": 114,
+        "added_edges": 157,
+        "proposals": 53,
+        "mean_secondary_weight": 0.22298219062640584
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "dense",
+        "bridges": 29,
+        "added_nodes": 69,
+        "added_edges": 98
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "weighted",
+        "bridges": 29,
+        "added_nodes": 69,
+        "added_edges": 98,
+        "proposals": 29,
+        "mean_secondary_weight": 0.18155132692259593
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "motion",
+        "bridges": 24,
+        "added_nodes": 62,
+        "added_edges": 86,
+        "proposals": 29,
+        "mean_secondary_weight": 0.18155132692259593
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "weighted_motion",
+        "bridges": 24,
+        "added_nodes": 62,
+        "added_edges": 86,
+        "proposals": 29,
+        "mean_secondary_weight": 0.18155132692259593
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "dense",
+        "bridges": 11,
+        "added_nodes": 28,
+        "added_edges": 39
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "weighted",
+        "bridges": 11,
+        "added_nodes": 28,
+        "added_edges": 39,
+        "proposals": 11,
+        "mean_secondary_weight": 0.15386898124771267
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "motion",
+        "bridges": 9,
+        "added_nodes": 26,
+        "added_edges": 35,
+        "proposals": 11,
+        "mean_secondary_weight": 0.15386898124771267
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "weighted_motion",
+        "bridges": 9,
+        "added_nodes": 26,
+        "added_edges": 35,
+        "proposals": 11,
+        "mean_secondary_weight": 0.15386898124771267
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "dense",
+        "bridges": 23,
+        "added_nodes": 60,
+        "added_edges": 83
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "weighted",
+        "bridges": 23,
+        "added_nodes": 60,
+        "added_edges": 83,
+        "proposals": 23,
+        "mean_secondary_weight": 0.1709034871660022
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "motion",
+        "bridges": 22,
+        "added_nodes": 58,
+        "added_edges": 80,
+        "proposals": 23,
+        "mean_secondary_weight": 0.1709034871660022
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "weighted_motion",
+        "bridges": 22,
+        "added_nodes": 58,
+        "added_edges": 80,
+        "proposals": 23,
+        "mean_secondary_weight": 0.1709034871660022
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "control"
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "dense",
+        "bridges": 34,
+        "added_nodes": 84,
+        "added_edges": 118
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "weighted",
+        "bridges": 35,
+        "added_nodes": 86,
+        "added_edges": 121,
+        "proposals": 35,
+        "mean_secondary_weight": 0.18931515013759473
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "motion",
+        "bridges": 24,
+        "added_nodes": 67,
+        "added_edges": 91,
+        "proposals": 34,
+        "mean_secondary_weight": 0.18931515013759473
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "weighted_motion",
+        "bridges": 25,
+        "added_nodes": 69,
+        "added_edges": 94,
+        "proposals": 35,
+        "mean_secondary_weight": 0.18931515013759473
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "dense",
+        "bridges": 33,
+        "added_nodes": 66,
+        "added_edges": 99
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "weighted",
+        "bridges": 33,
+        "added_nodes": 66,
+        "added_edges": 99,
+        "proposals": 33,
+        "mean_secondary_weight": 0.197678748583971
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "motion",
+        "bridges": 18,
+        "added_nodes": 45,
+        "added_edges": 63,
+        "proposals": 33,
+        "mean_secondary_weight": 0.197678748583971
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "weighted_motion",
+        "bridges": 18,
+        "added_nodes": 45,
+        "added_edges": 63,
+        "proposals": 33,
+        "mean_secondary_weight": 0.197678748583971
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "dense",
+        "bridges": 12,
+        "added_nodes": 24,
+        "added_edges": 36
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "weighted",
+        "bridges": 12,
+        "added_nodes": 24,
+        "added_edges": 36,
+        "proposals": 12,
+        "mean_secondary_weight": 0.16601542589799995
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "motion",
+        "bridges": 10,
+        "added_nodes": 21,
+        "added_edges": 31,
+        "proposals": 12,
+        "mean_secondary_weight": 0.16601542589799995
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "weighted_motion",
+        "bridges": 10,
+        "added_nodes": 21,
+        "added_edges": 31,
+        "proposals": 12,
+        "mean_secondary_weight": 0.16601542589799995
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "dense",
+        "bridges": 26,
+        "added_nodes": 49,
+        "added_edges": 75
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "weighted",
+        "bridges": 25,
+        "added_nodes": 47,
+        "added_edges": 72,
+        "proposals": 25,
+        "mean_secondary_weight": 0.17471917757633895
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "motion",
+        "bridges": 16,
+        "added_nodes": 34,
+        "added_edges": 50,
+        "proposals": 26,
+        "mean_secondary_weight": 0.17471917757633895
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "weighted_motion",
+        "bridges": 16,
+        "added_nodes": 34,
+        "added_edges": 50,
+        "proposals": 25,
+        "mean_secondary_weight": 0.17471917757633895
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "dense",
+        "bridges": 0,
+        "added_nodes": 0,
+        "added_edges": 0
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "weighted",
+        "bridges": 0,
+        "added_nodes": 0,
+        "added_edges": 0,
+        "proposals": 0,
+        "mean_secondary_weight": 0.079918047111486
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "motion",
+        "bridges": 0,
+        "added_nodes": 0,
+        "added_edges": 0,
+        "proposals": 0,
+        "mean_secondary_weight": 0.079918047111486
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "weighted_motion",
+        "bridges": 0,
+        "added_nodes": 0,
+        "added_edges": 0,
+        "proposals": 0,
+        "mean_secondary_weight": 0.079918047111486
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "dense",
+        "bridges": 4,
+        "added_nodes": 8,
+        "added_edges": 12
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "weighted",
+        "bridges": 4,
+        "added_nodes": 8,
+        "added_edges": 12,
+        "proposals": 4,
+        "mean_secondary_weight": 0.0736619483862416
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "motion",
+        "bridges": 1,
+        "added_nodes": 3,
+        "added_edges": 4,
+        "proposals": 4,
+        "mean_secondary_weight": 0.0736619483862416
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "weighted_motion",
+        "bridges": 1,
+        "added_nodes": 3,
+        "added_edges": 4,
+        "proposals": 4,
+        "mean_secondary_weight": 0.0736619483862416
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "dense",
+        "bridges": 9,
+        "added_nodes": 20,
+        "added_edges": 29
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "weighted",
+        "bridges": 9,
+        "added_nodes": 20,
+        "added_edges": 29,
+        "proposals": 9,
+        "mean_secondary_weight": 0.14640359809539732
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "motion",
+        "bridges": 4,
+        "added_nodes": 11,
+        "added_edges": 15,
+        "proposals": 9,
+        "mean_secondary_weight": 0.14640359809539732
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "weighted_motion",
+        "bridges": 4,
+        "added_nodes": 11,
+        "added_edges": 15,
+        "proposals": 9,
+        "mean_secondary_weight": 0.14640359809539732
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "dense",
+        "bridges": 22,
+        "added_nodes": 36,
+        "added_edges": 58
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "weighted",
+        "bridges": 21,
+        "added_nodes": 35,
+        "added_edges": 56,
+        "proposals": 21,
+        "mean_secondary_weight": 0.1549673436798436
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "motion",
+        "bridges": 7,
+        "added_nodes": 13,
+        "added_edges": 20,
+        "proposals": 22,
+        "mean_secondary_weight": 0.1549673436798436
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "weighted_motion",
+        "bridges": 7,
+        "added_nodes": 13,
+        "added_edges": 20,
+        "proposals": 21,
+        "mean_secondary_weight": 0.1549673436798436
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "control"
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "dense",
+        "bridges": 6,
+        "added_nodes": 10,
+        "added_edges": 16
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "weighted",
+        "bridges": 6,
+        "added_nodes": 10,
+        "added_edges": 16,
+        "proposals": 6,
+        "mean_secondary_weight": 0.08960303747783911
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "motion",
+        "bridges": 2,
+        "added_nodes": 2,
+        "added_edges": 4,
+        "proposals": 6,
+        "mean_secondary_weight": 0.08960303747783911
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "weighted_motion",
+        "bridges": 2,
+        "added_nodes": 2,
+        "added_edges": 4,
+        "proposals": 6,
+        "mean_secondary_weight": 0.08960303747783911
+      }
+    ],
+    "seconds": 171.91836314700004,
+    "config": {
+      "experiment": "E049",
+      "graphs_sha256": "c34d3d8daa9a50292001153ba0b8f500ca71b81f756a85cac9e02e1b5826df22",
+      "donors_sha256": "b710e4fe43bb160d69dfe8458cbbe53b039d3c03ea90b6112d43a043f6d8df27",
+      "selection": "Best full graph local score among four prespecified variants; tie fewer FP. Exploratory submission authorized even for small gain. No embryo-specific routing.",
+      "public_idea": "Robust local median motion from haideptry/biohub-sota-0-949-local-motion-flow-2xt4-19m; own reliability weighting implementation."
+    },
+    "leaderboard_submitted": false,
+    "scope": "Exploratory reused calibration. User explicitly requests a submission of best candidate, including small gains."
+  }
+}

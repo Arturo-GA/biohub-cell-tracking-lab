@@ -54,7 +54,7 @@
   "notebooks_schema_validated": 16,
   "own_leaderboard_score": 0.946,
   "leaderboard_submitted": true,
-  "quality_status": "E045-E048 complete. No candidate passed its gate; no new submission.",
+  "quality_status": "E049 complete; user-authorized exploratory E050 submission inference running",
   "training_split_membership_verified": true,
   "implemented": [
     "fixed_harmonic_control",
@@ -222,7 +222,7 @@
     "checkpoint_contents_verified": true
   },
   "next_experiment_started": false,
-  "active_experiment": null,
+  "active_experiment": "E050",
   "E007": {
     "kernel": "jarturo/biohub-lab-mitosis-specialist",
     "version": 1,
@@ -405,7 +405,9 @@
       "official_graph_matching_rerun_locally": false
     }
   },
-  "active_experiments": [],
+  "active_experiments": [
+    "E050"
+  ],
   "detector_test_evidence": {
     "full_suite_passed": 54,
     "detector_regression_tests": 10,
@@ -1939,5 +1941,16 @@
     },
     "gpu": false,
     "decision": "Exact no-op; no submission"
+  },
+  "E049": {
+    "status": "COMPLETE",
+    "selected": "weighted",
+    "receipt": "results/E049_EVALUATE_completed.json"
+  },
+  "E050": {
+    "status": "RUNNING",
+    "kernel": "jarturo/biohub-e050-weighted-complement",
+    "version": 1,
+    "leaderboard_submitted": false
   }
 }

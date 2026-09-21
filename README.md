@@ -140,3 +140,7 @@ Se combinó E041 denso con E039 estático en CPU. Existe complementariedad, pero
 Terminaron seis combinaciones de detección, dos combinaciones de puentes con encoder, cuatro variantes de seguimiento con mapas y dos filtros DivNet. Ninguna pasó su criterio. El mejor grafo local sube de 0.900753 a 0.901409, con dos enlaces falsos adicionales y regresión en un embrión. DivNet compatible produce exactamente el CSV del control. GPU solo para 68.5 segundos de inferencia congelada; resto CPU. Sin nueva submission. [Experimentos](docs/E045_E048_COMPLEMENTOS.es.md).
 
 Se revisaron listas públicas recientes y diez notebooks. Las adaptaciones anunciadas como 0.948 y 0.949 contienen un cargador DivNet incompatible que no carga ningún tensor; los títulos no se consideran scores verificados. Se documentan MLP V2, DAE, fuentes de pesos compatibles y discusiones recientes. [Auditoría pública](docs/REVISION_KAGGLE_20260920.es.md).
+
+### E049–E050: nueva submission exploratoria
+
+La captura del usuario confirma los scores del listado público, incluidos 0.947 para Harmonic V3 y el notebook de proxy. Se recuperó de ambos la selección real `tight55`. Tres combinaciones ponderadas se compararon en CPU: ganó la mezcla por acuerdo de detectores, 0.9014096 local frente a 0.900753 del control, prácticamente empatada con denso solo. Se integra con `tight55` en E050 para medirla en el leaderboard por solicitud del usuario. [Diseño, resultados y recibos](docs/E049_E050_SUBMISSION.es.md).

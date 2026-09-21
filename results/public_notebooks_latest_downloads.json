@@ -58,5 +58,11 @@
     "file": "artifacts\\research_latest_20260920\\canhtoanle__biohub-div-complete-v33a\\biohub-div-complete-v33a.ipynb",
     "sha256": "dac8459d104eb4c7e62a8d60104e356b4609a066c84bcb2bade05a064b6bc9f0",
     "code_lines": 4833
+  },
+  {
+    "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+    "file": "artifacts\\research_latest_20260920\\raunakdey07__biohub-harmonic-fusion-v3\\biohub-harmonic-fusion-v3.ipynb",
+    "sha256": "201d3d7744f378fd642cb195055b5d4222febad2890f4660f9393f90c2785df8",
+    "code_lines": 4202
   }
 ]
