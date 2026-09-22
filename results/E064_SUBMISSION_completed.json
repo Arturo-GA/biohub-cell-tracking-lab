@@ -1,0 +1,92 @@
+{
+  "status": "complete",
+  "kernel": "jarturo/biohub-e064-native-image-centers",
+  "version": 2,
+  "csv_locally_validated": true,
+  "launch_receipt_sha256": "5a50085d6e6425497c4aa248fe00c0c74363a4bd09c81219397d6a5901221e7e",
+  "changed_nodes": 2897,
+  "visible_baseline_reproduced": true,
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E064",
+      "selected": "image_quarter",
+      "native_options": {
+        "weight": 0.25,
+        "temporal": false
+      },
+      "division_threshold": 0.25,
+      "radius": 5.5,
+      "visual": false,
+      "mode": "none",
+      "validation_delta": -0.00037050547778483267,
+      "scope": "User-authorized exploratory submission. Full Harmonic inference plus native-image coordinate correction, no training labels or cached test predictions."
+    },
+    "shapes": {
+      "44b6_0113de3b": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "44b6_0b24845f": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "6bba_05b6850b": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "6bba_05db0fb1": [
+        100,
+        64,
+        256,
+        256
+      ]
+    },
+    "reports": [
+      {
+        "video": "44b6_0113de3b",
+        "nodes": 25637,
+        "moved": 739,
+        "mean_shift_um": 0.011730060957956945,
+        "max_shift_um": 0.5745242597140698,
+        "topology_changed": false
+      },
+      {
+        "video": "44b6_0b24845f",
+        "nodes": 20721,
+        "moved": 402,
+        "mean_shift_um": 0.007881497031996525,
+        "max_shift_um": 0.40625,
+        "topology_changed": false
+      },
+      {
+        "video": "6bba_05b6850b",
+        "nodes": 6152,
+        "moved": 98,
+        "mean_shift_um": 0.0064714726918075425,
+        "max_shift_um": 0.40625,
+        "topology_changed": false
+      },
+      {
+        "video": "6bba_05db0fb1",
+        "nodes": 70284,
+        "moved": 1658,
+        "mean_shift_um": 0.009600199473820478,
+        "max_shift_um": 0.5745242597140698,
+        "topology_changed": false
+      }
+    ],
+    "csv_sha256": "0852cc78bd131306cf51d20af80542eb2bee9136f2d95dcbd7d54a12516ff394",
+    "control_sha256": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848",
+    "seconds": 959.6722961130001,
+    "annotations_read": false,
+    "cached_test_predictions": false,
+    "leaderboard_submitted": false
+  }
+}

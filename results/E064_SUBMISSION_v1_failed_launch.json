@@ -1,0 +1,13 @@
+{
+  "kernel": "jarturo/biohub-e064-native-image-centers",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e064-native-image-centers",
+  "launched_at_utc": "2026-09-22T14:02:45.421215+00:00",
+  "payload_sha256": "7f96f49258b60c3b3f6d51bd068565a39d2256594cb1b16c45d75844534c0de5",
+  "notebook_sha256": "7c0e168ace5673a57ab7e3abd59ca235ce4eadcb481ea924b3db801196048e41",
+  "files": 24,
+  "gpu": true,
+  "private": true,
+  "leaderboard_submitted": false,
+  "requested_kernel": "jarturo/biohub-e064-native-centers"
+}

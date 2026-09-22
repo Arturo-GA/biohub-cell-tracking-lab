@@ -1,0 +1,14 @@
+{
+  "experiment": "E064",
+  "selected": "image_quarter",
+  "native_options": {
+    "weight": 0.25,
+    "temporal": false
+  },
+  "division_threshold": 0.25,
+  "radius": 5.5,
+  "visual": false,
+  "mode": "none",
+  "validation_delta": -0.00037050547778483267,
+  "scope": "User-authorized exploratory submission. Full Harmonic inference plus native-image coordinate correction, no training labels or cached test predictions."
+}

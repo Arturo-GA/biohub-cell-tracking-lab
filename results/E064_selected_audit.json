@@ -1,0 +1,28 @@
+{
+  "experiment": "E064",
+  "selected": "image_quarter",
+  "scope": "Per-video aggregate changes, not exact edge correspondence.",
+  "changed_metrics": [
+    {
+      "video": "6bba_6479435d",
+      "delta": {
+        "edge_tp": -1,
+        "edge_fp": 1,
+        "edge_fn": 1,
+        "node_recall": -0.0016207455429497752,
+        "adj_edge_jaccard": -0.002510864639420629
+      }
+    },
+    {
+      "video": "6bba_9a41d029",
+      "delta": {
+        "edge_tp": -1,
+        "edge_fp": 2,
+        "edge_fn": 1,
+        "node_recall": 0.0,
+        "adj_edge_jaccard": -0.0020369777426810787
+      }
+    }
+  ],
+  "unchanged_metrics_videos": 22
+}
