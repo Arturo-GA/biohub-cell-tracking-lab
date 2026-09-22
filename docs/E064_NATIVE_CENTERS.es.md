@@ -37,7 +37,7 @@ La versión 2 completó la inferencia y corrección en **959,67 s** de proceso (
 
 El archivo nuevo modifica **2.897 de 122.794 centros** del test visible (2,36 %), mantiene todos los nodos y enlaces y tiene SHA256 `0852cc78bd131306cf51d20af80542eb2bee9136f2d95dcbd7d54a12516ff394`. No se reutilizaron predicciones test para producirlo: esa comparación se realizó después de la inferencia completa.
 
-Kaggle aceptó la submission **56466969** el 22 de septiembre de 2026 a las 14:24 UTC. Estado observado: **PENDING**, aún sin score. No hay notebooks pendientes; queda la ejecución/puntuación de la submission. Mejor score propio previamente confirmado: **0.946**.
+Kaggle aceptó la submission **56466969** el 22 de septiembre de 2026 a las 14:24 UTC. Estado confirmado el 22 de septiembre de 2026 a las 22:11 UTC: **COMPLETE, 0.946**, sin error técnico. No mejoró el leaderboard. Sin notebooks ni scoring pendientes de E064.
 
 - [Notebook privado, versión 2](https://www.kaggle.com/code/jarturo/biohub-e064-native-image-centers)
 - [Decisión consolidada](../results/E064_decision.json)

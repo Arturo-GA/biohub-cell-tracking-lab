@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e066-preview-cpu",
+  "version": 1,
+  "kernel_id": 135440131,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e066-preview-cpu",
+  "ref": "/code/jarturo/biohub-e066-preview-cpu",
+  "launched_at_utc": "2026-09-22T22:25:15.807028+00:00",
+  "payload_sha256": "c17b06c5780d77f9da5756a66f4af4a1da9f44e4828f6d0691132bcbd209c1cd",
+  "notebook_sha256": "fce86cf53476ad46f5dc342161a33c768de9f8d29396d715d6975a112a3edda4",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

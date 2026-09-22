@@ -76,12 +76,10 @@
   "kernel": "jarturo/biohub-e064-native-image-centers",
   "version": 2,
   "submission_ref": 56466969,
-  "submission_status": "PENDING",
-  "public_score": null,
+  "submission_status": "COMPLETE",
+  "public_score": 0.946,
   "own_best_known_score": 0.946,
   "leaderboard_submitted": true,
   "pending_notebook_jobs": [],
-  "pending_scoring": [
-    56466969
-  ]
+  "pending_scoring": []
 }

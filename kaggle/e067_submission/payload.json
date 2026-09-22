@@ -1,0 +1,33 @@
+{
+  "sha256": "32c89030ad5ab6afaf489c9ca52b587262f9ae0a10680b550908a2d57b35e54a",
+  "files": [
+    "NOTICE.md",
+    "baseline/e050_submission.json",
+    "baseline/e054_control.json",
+    "baseline/e067_submission.json",
+    "baseline/harmonic_inference.py",
+    "scripts/ensemble_evaluate_runner.py",
+    "scripts/joint_submission_finish.py",
+    "scripts/joint_submission_runner.py",
+    "scripts/public_control_submission_runner.py",
+    "scripts/trajectory_denoise_submission_runner.py",
+    "scripts/weighted_submission_finish.py",
+    "scripts/weighted_submission_runner.py",
+    "src/biohub_lab/__init__.py",
+    "src/biohub_lab/calibration_export.py",
+    "src/biohub_lab/dense_center.py",
+    "src/biohub_lab/detector_complements.py",
+    "src/biohub_lab/native_centers.py",
+    "src/biohub_lab/patch.py",
+    "src/biohub_lab/public_postprocess.py",
+    "src/biohub_lab/submission.py",
+    "src/biohub_lab/temporal_bridge.py",
+    "src/biohub_lab/temporal_detector.py",
+    "src/biohub_lab/trajectory_denoise.py",
+    "src/biohub_lab/visual_capture.py",
+    "src/biohub_lab/weighted_bridge.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

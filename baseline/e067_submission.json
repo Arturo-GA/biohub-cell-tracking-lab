@@ -1,0 +1,14 @@
+{
+  "experiment": "E067",
+  "selected": "medium",
+  "denoise_options": {
+    "strength": 2.0,
+    "max_shift": 1.2
+  },
+  "division_threshold": 0.25,
+  "radius": 5.5,
+  "visual": false,
+  "mode": "none",
+  "validation_delta": 0.002221079213378885,
+  "scope": "Explicitly requested exploratory submission. Full Harmonic test inference followed by robust full-track denoising, no labels or cached test predictions."
+}

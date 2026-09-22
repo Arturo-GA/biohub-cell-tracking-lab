@@ -1,0 +1,123 @@
+{
+  "kernel": "jarturo/biohub-e066-preview-cpu",
+  "version": 1,
+  "manifest_sha256": "41ce04063ec8d71223e7ef49dd4eb089592556dcd6884bdb7c3e02a84d74b108",
+  "result": {
+    "status": "complete",
+    "reports": {
+      "strict": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "44b6_0b24845f",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05b6850b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          }
+        ]
+      },
+      "balanced": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "44b6_0b24845f",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05b6850b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          }
+        ]
+      },
+      "recall": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "44b6_0b24845f",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05b6850b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          }
+        ]
+      }
+    },
+    "seconds": 33.394504253000036,
+    "scope": "Visible-test label-free change audit only. No submission CSV exported."
+  }
+}

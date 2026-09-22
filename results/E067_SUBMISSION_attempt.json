@@ -1,0 +1,10 @@
+{
+  "status": "submitted",
+  "kernel": "jarturo/biohub-e067-trajectory-denoise",
+  "version": 1,
+  "attempted_at_utc": "2026-09-22T22:55:33.978555+00:00",
+  "csv_sha256": "c6cf1c539c25859c5677698d922eb993993b99dca15a6f87db152622fe05ea58",
+  "message": "E067 robust full-track acceleration denoising; exploratory new localization, unchanged lineage topology",
+  "ref": 56475507,
+  "response_message": ""
+}

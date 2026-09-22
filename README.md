@@ -1,6 +1,10 @@
 # Biohub Cell Tracking Lab
 
-**E064 enviado:** nueva corrección de centros con imagen 3D nativa; tres variantes evaluadas en CPU. La mejor nueva obtiene 0,919508 frente a 0,919878 del control, sin mejora demostrada. Submission exploratoria **56466969**, versión 2, **PENDING**; cambia 2.897 centros del test visible y conserva nodos y enlaces. Cuatro pruebas pasan; 7,22 min de evaluación CPU y 15,99 min de proceso en el notebook GPU. Mejor leaderboard confirmado: **0.946**. [Resultados y comprobantes](docs/E064_NATIVE_CENTERS.es.md).
+**E067 enviado:** suavizado robusto de trayectorias completas; intensidad media elegida entre tres. Validación reutilizada: **0,922099 frente a 0,919878**, +9 TP y −21 FP; mejora agregada en ambos embriones. Submission **56475507**, versión 1, **PENDING**. CSV validado: 63.593 centros modificados y enlaces intactos. Mejor score público confirmado sigue en **0.946**. [Método, resultados y límites](docs/E067_TRAJECTORY_DENOISE.es.md).
+
+**E065 cerrado:** tres variantes de intercambio de enlaces empatan con el control y no cambian el test visible. Sin GPU ni submission. E066 terminó con +3 TP y sin FP adicionales en validación, pero tampoco cambia el test visible; sin GPU ni envío separado. [Protocolo](docs/E065_APPEARANCE_SWAP.es.md).
+
+**E064 enviado:** nueva corrección de centros con imagen 3D nativa; tres variantes evaluadas en CPU. La mejor nueva obtiene 0,919508 frente a 0,919878 del control, sin mejora demostrada. Submission exploratoria **56466969**, versión 2, **COMPLETE: 0.946**; cambia 2.897 centros del test visible y conserva nodos y enlaces. Cuatro pruebas pasan; 7,22 min de evaluación CPU y 15,99 min de proceso en el notebook GPU. Mejor leaderboard confirmado: **0.946**. [Resultados y comprobantes](docs/E064_NATIVE_CENTERS.es.md).
 
 **E063 completado:** selector aprendido con 758 trayectorias supervisadas (116 útiles), 40 videos de ajuste, 16 de desarrollo y 24 de evaluación reutilizada. Mejora la referencia simplificada, pero falla sobre el ensamble real: 0,918536 global / 0,918708 condicionado por embrión, frente a 0,919878. Auditoría exacta: un enlace nuevo recuperado y tres aciertos perdidos. Se conserva el control; sin nueva submission ni trabajos pendientes. 12 pruebas locales pasan; 18,40 minutos de proceso GPU, resto CPU. [Resultados y límites](docs/E063_TRAJECTORY_SELECTOR.es.md).
 

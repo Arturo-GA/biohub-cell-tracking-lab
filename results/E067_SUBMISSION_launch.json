@@ -1,0 +1,13 @@
+{
+  "kernel": "jarturo/biohub-e067-trajectory-denoise",
+  "requested_kernel": "jarturo/biohub-e067-trajectory-denoise",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e067-trajectory-denoise",
+  "launched_at_utc": "2026-09-22T22:36:44.832193+00:00",
+  "payload_sha256": "32c89030ad5ab6afaf489c9ca52b587262f9ae0a10680b550908a2d57b35e54a",
+  "notebook_sha256": "df5205243dea64d6777b8028126136820b186be47b85f53c116d9ff04eea9330",
+  "files": 25,
+  "gpu": true,
+  "private": true,
+  "leaderboard_submitted": false
+}

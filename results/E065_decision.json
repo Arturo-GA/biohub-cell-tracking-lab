@@ -1,0 +1,207 @@
+{
+  "experiment": "E065",
+  "status": "complete_not_submitted",
+  "metrics": {
+    "control": {
+      "n": 24,
+      "edge_jaccard": 0.898327811957722,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9022313538189592,
+      "n_adj": 24,
+      "score": 0.9198784126424887,
+      "edge_tp": 11389,
+      "edge_fp": 638,
+      "edge_fn": 651
+    },
+    "strict": {
+      "n": 24,
+      "edge_jaccard": 0.898327811957722,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9022313538189592,
+      "n_adj": 24,
+      "score": 0.9198784126424887,
+      "edge_tp": 11389,
+      "edge_fp": 638,
+      "edge_fn": 651
+    },
+    "balanced": {
+      "n": 24,
+      "edge_jaccard": 0.898327811957722,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9022313538189592,
+      "n_adj": 24,
+      "score": 0.9198784126424887,
+      "edge_tp": 11389,
+      "edge_fp": 638,
+      "edge_fn": 651
+    },
+    "appearance": {
+      "n": 24,
+      "edge_jaccard": 0.898327811957722,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9022313538189592,
+      "n_adj": 24,
+      "score": 0.9198784126424887,
+      "edge_tp": 11389,
+      "edge_fp": 638,
+      "edge_fn": 651
+    }
+  },
+  "edge_changes": {
+    "strict": 24,
+    "balanced": 44,
+    "appearance": 18
+  },
+  "preview": {
+    "status": "complete",
+    "reports": {
+      "strict": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "44b6_0b24845f",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "6bba_05b6850b",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          }
+        ]
+      },
+      "balanced": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "44b6_0b24845f",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "6bba_05b6850b",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          }
+        ]
+      },
+      "appearance": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "44b6_0b24845f",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "6bba_05b6850b",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "proposed_pairs": 0,
+            "accepted_swaps": 0,
+            "changed_edges": 0,
+            "appearance_gain_sum": 0,
+            "nodes_changed": false,
+            "degree_sequence_changed": false
+          }
+        ]
+      }
+    },
+    "seconds": 53.893803305000006,
+    "scope": "Visible-test label-free change audit only. No submission CSV exported."
+  },
+  "decision": "Reject for submission: all three variants produce identical visible-test control. No GPU consumed.",
+  "cpu_evaluation_seconds": 377.515052986,
+  "gpu_seconds": 0,
+  "local_tests_passed": 5,
+  "leaderboard_submitted": false,
+  "pending_jobs": []
+}

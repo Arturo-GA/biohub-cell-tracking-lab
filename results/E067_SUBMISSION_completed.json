@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "kernel": "jarturo/biohub-e067-trajectory-denoise",
+  "version": 1,
+  "csv_locally_validated": true,
+  "launch_receipt_sha256": "1ffd31c4b3436c68f1ca8479d187ced70b38e012e97d0e2e28ef84f3b05563d2",
+  "changed_nodes": 63593,
+  "visible_baseline_reproduced": true,
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E067",
+      "selected": "medium",
+      "denoise_options": {
+        "strength": 2.0,
+        "max_shift": 1.2
+      },
+      "division_threshold": 0.25,
+      "radius": 5.5,
+      "visual": false,
+      "mode": "none",
+      "validation_delta": 0.002221079213378885,
+      "scope": "Explicitly requested exploratory submission. Full Harmonic test inference followed by robust full-track denoising, no labels or cached test predictions."
+    },
+    "shapes": {
+      "44b6_0113de3b": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "44b6_0b24845f": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "6bba_05b6850b": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "6bba_05db0fb1": [
+        100,
+        64,
+        256,
+        256
+      ]
+    },
+    "reports": [
+      {
+        "video": "44b6_0113de3b",
+        "nodes": 25637,
+        "moved": 14041,
+        "mean_shift_um": 0.3366687001094591,
+        "max_shift_um": 1.86167137607581,
+        "topology_changed": false,
+        "smoothed_paths": 788
+      },
+      {
+        "video": "44b6_0b24845f",
+        "nodes": 20721,
+        "moved": 12082,
+        "mean_shift_um": 0.3723082151200894,
+        "max_shift_um": 1.86167137607581,
+        "topology_changed": false,
+        "smoothed_paths": 1307
+      },
+      {
+        "video": "6bba_05b6850b",
+        "nodes": 6152,
+        "moved": 2790,
+        "mean_shift_um": 0.27657318107309425,
+        "max_shift_um": 1.86167137607581,
+        "topology_changed": false,
+        "smoothed_paths": 212
+      },
+      {
+        "video": "6bba_05db0fb1",
+        "nodes": 70284,
+        "moved": 34680,
+        "mean_shift_um": 0.2963580471419428,
+        "max_shift_um": 1.86167137607581,
+        "topology_changed": false,
+        "smoothed_paths": 2137
+      }
+    ],
+    "csv_sha256": "c6cf1c539c25859c5677698d922eb993993b99dca15a6f87db152622fe05ea58",
+    "control_sha256": "a69c78229c6556d06d5fe9ff050074254b4a326e83249efbf578b843aec7a848",
+    "seconds": 1047.875548689,
+    "annotations_read": false,
+    "cached_test_predictions": false,
+    "leaderboard_submitted": false
+  }
+}

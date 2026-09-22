@@ -1,0 +1,197 @@
+{
+  "experiment": "E066",
+  "status": "complete_not_submitted",
+  "metrics": {
+    "control": {
+      "n": 24,
+      "edge_jaccard": 0.898327811957722,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9022313538189592,
+      "n_adj": 24,
+      "score": 0.9198784126424887,
+      "edge_tp": 11389,
+      "edge_fp": 638,
+      "edge_fn": 651
+    },
+    "strict": {
+      "n": 24,
+      "edge_jaccard": 0.898327811957722,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9022313538189592,
+      "n_adj": 24,
+      "score": 0.9198784126424887,
+      "edge_tp": 11389,
+      "edge_fp": 638,
+      "edge_fn": 651
+    },
+    "balanced": {
+      "n": 24,
+      "edge_jaccard": 0.8984066887521691,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9023116475407411,
+      "n_adj": 24,
+      "score": 0.9199587063642706,
+      "edge_tp": 11390,
+      "edge_fp": 638,
+      "edge_fn": 650
+    },
+    "recall": {
+      "n": 24,
+      "edge_jaccard": 0.8985644423410633,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9024710257821934,
+      "n_adj": 24,
+      "score": 0.9201180846057229,
+      "edge_tp": 11392,
+      "edge_fp": 638,
+      "edge_fn": 648
+    }
+  },
+  "best": "recall",
+  "delta": 0.00023967196323415596,
+  "edge_changes": {
+    "strict": 7,
+    "balanced": 22,
+    "recall": 54
+  },
+  "preview": {
+    "status": "complete",
+    "reports": {
+      "strict": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "44b6_0b24845f",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05b6850b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          }
+        ]
+      },
+      "balanced": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "44b6_0b24845f",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05b6850b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          }
+        ]
+      },
+      "recall": {
+        "changed_edges": 0,
+        "videos": [
+          {
+            "video": "44b6_0113de3b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "44b6_0b24845f",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05b6850b",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          },
+          {
+            "video": "6bba_05db0fb1",
+            "candidate_links": 0,
+            "added_edges": 0,
+            "changed_edges": 0,
+            "nodes_changed": false,
+            "original_edges_removed": 0
+          }
+        ]
+      }
+    },
+    "seconds": 33.394504253000036,
+    "scope": "Visible-test label-free change audit only. No submission CSV exported."
+  },
+  "decision": "Positive reused-validation signal: +3 TP, no added FP; all arms leave visible test identical, so no standalone GPU run or submission. Retain as a possible complement; identical visible test does not imply identical hidden test.",
+  "cpu_evaluation_seconds": 332.952921919,
+  "gpu_seconds": 0,
+  "local_tests_passed": 4,
+  "leaderboard_submitted": false,
+  "pending_jobs": []
+}

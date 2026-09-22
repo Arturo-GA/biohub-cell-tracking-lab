@@ -1,0 +1,951 @@
+{
+  "kernel": "jarturo/biohub-e065-evaluate-cpu",
+  "version": 1,
+  "manifest_sha256": "25d7fc24fca54669cbadb895f6b2c192004444aeaf94237d9cb675857686e6f8",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E065",
+      "videos": [
+        "44b6_0db75fae",
+        "44b6_5740d24b",
+        "44b6_587a1e22",
+        "44b6_9bfa6a0a",
+        "44b6_aaf8b0ea",
+        "44b6_c15fded2",
+        "44b6_c8e2a523",
+        "44b6_cf2536e8",
+        "6bba_1f58c2f6",
+        "6bba_5c824876",
+        "6bba_6479435d",
+        "6bba_76db78c1",
+        "6bba_7b5d3b2c",
+        "6bba_9a41d029",
+        "6bba_c73a1d11",
+        "6bba_f1fde7e0",
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "control_manifest_sha256": "9bb1ecc3f58071cf2decbbbad94f1a53a4ab77a5be8f339da97ce1df4334960b",
+      "arms": {
+        "strict": {
+          "appearance_gain": 0.3,
+          "length_slack": 0.5,
+          "motion_slack": 0.0
+        },
+        "balanced": {
+          "appearance_gain": 0.2,
+          "length_slack": 1.5,
+          "motion_slack": 0.5
+        },
+        "appearance": {
+          "appearance_gain": 0.4,
+          "length_slack": 3.0,
+          "motion_slack": 1.0
+        }
+      },
+      "method": "Native-image four-frame appearance descriptors plus bidirectional motion gates; disjoint degree-preserving 2-opt swaps of existing non-division links. No node changes, no training or labels."
+    },
+    "metrics": {
+      "control": {
+        "n": 24,
+        "edge_jaccard": 0.898327811957722,
+        "division_jaccard": 0.17647058823529413,
+        "division_tp": 3,
+        "division_fp": 6,
+        "division_fn": 8,
+        "node_recall": 0.9810037984985939,
+        "adj_edge_jaccard": 0.9022313538189592,
+        "n_adj": 24,
+        "score": 0.9198784126424887,
+        "edge_tp": 11389,
+        "edge_fp": 638,
+        "edge_fn": 651
+      },
+      "strict": {
+        "n": 24,
+        "edge_jaccard": 0.898327811957722,
+        "division_jaccard": 0.17647058823529413,
+        "division_tp": 3,
+        "division_fp": 6,
+        "division_fn": 8,
+        "node_recall": 0.9810037984985939,
+        "adj_edge_jaccard": 0.9022313538189592,
+        "n_adj": 24,
+        "score": 0.9198784126424887,
+        "edge_tp": 11389,
+        "edge_fp": 638,
+        "edge_fn": 651
+      },
+      "balanced": {
+        "n": 24,
+        "edge_jaccard": 0.898327811957722,
+        "division_jaccard": 0.17647058823529413,
+        "division_tp": 3,
+        "division_fp": 6,
+        "division_fn": 8,
+        "node_recall": 0.9810037984985939,
+        "adj_edge_jaccard": 0.9022313538189592,
+        "n_adj": 24,
+        "score": 0.9198784126424887,
+        "edge_tp": 11389,
+        "edge_fp": 638,
+        "edge_fn": 651
+      },
+      "appearance": {
+        "n": 24,
+        "edge_jaccard": 0.898327811957722,
+        "division_jaccard": 0.17647058823529413,
+        "division_tp": 3,
+        "division_fp": 6,
+        "division_fn": 8,
+        "node_recall": 0.9810037984985939,
+        "adj_edge_jaccard": 0.9022313538189592,
+        "n_adj": 24,
+        "score": 0.9198784126424887,
+        "edge_tp": 11389,
+        "edge_fp": 638,
+        "edge_fn": 651
+      }
+    },
+    "cohorts": {
+      "control": {
+        "44b6": {
+          "n": 12,
+          "edge_jaccard": 0.892403192432752,
+          "division_jaccard": 0.1111111111111111,
+          "division_tp": 1,
+          "division_fp": 3,
+          "division_fn": 5,
+          "node_recall": 0.9881290049920753,
+          "adj_edge_jaccard": 0.9124737833002933,
+          "n_adj": 12,
+          "score": 0.9235848944114043
+        },
+        "6bba": {
+          "n": 12,
+          "edge_jaccard": 0.900484131253362,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 3,
+          "division_fn": 3,
+          "node_recall": 0.9738785920051125,
+          "adj_edge_jaccard": 0.8985035282207502,
+          "n_adj": 12,
+          "score": 0.9235035282207502
+        }
+      },
+      "strict": {
+        "44b6": {
+          "n": 12,
+          "edge_jaccard": 0.892403192432752,
+          "division_jaccard": 0.1111111111111111,
+          "division_tp": 1,
+          "division_fp": 3,
+          "division_fn": 5,
+          "node_recall": 0.9881290049920753,
+          "adj_edge_jaccard": 0.9124737833002933,
+          "n_adj": 12,
+          "score": 0.9235848944114043
+        },
+        "6bba": {
+          "n": 12,
+          "edge_jaccard": 0.900484131253362,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 3,
+          "division_fn": 3,
+          "node_recall": 0.9738785920051125,
+          "adj_edge_jaccard": 0.8985035282207502,
+          "n_adj": 12,
+          "score": 0.9235035282207502
+        }
+      },
+      "balanced": {
+        "44b6": {
+          "n": 12,
+          "edge_jaccard": 0.892403192432752,
+          "division_jaccard": 0.1111111111111111,
+          "division_tp": 1,
+          "division_fp": 3,
+          "division_fn": 5,
+          "node_recall": 0.9881290049920753,
+          "adj_edge_jaccard": 0.9124737833002933,
+          "n_adj": 12,
+          "score": 0.9235848944114043
+        },
+        "6bba": {
+          "n": 12,
+          "edge_jaccard": 0.900484131253362,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 3,
+          "division_fn": 3,
+          "node_recall": 0.9738785920051125,
+          "adj_edge_jaccard": 0.8985035282207502,
+          "n_adj": 12,
+          "score": 0.9235035282207502
+        }
+      },
+      "appearance": {
+        "44b6": {
+          "n": 12,
+          "edge_jaccard": 0.892403192432752,
+          "division_jaccard": 0.1111111111111111,
+          "division_tp": 1,
+          "division_fp": 3,
+          "division_fn": 5,
+          "node_recall": 0.9881290049920753,
+          "adj_edge_jaccard": 0.9124737833002933,
+          "n_adj": 12,
+          "score": 0.9235848944114043
+        },
+        "6bba": {
+          "n": 12,
+          "edge_jaccard": 0.900484131253362,
+          "division_jaccard": 0.25,
+          "division_tp": 2,
+          "division_fp": 3,
+          "division_fn": 3,
+          "node_recall": 0.9738785920051125,
+          "adj_edge_jaccard": 0.8985035282207502,
+          "n_adj": 12,
+          "score": 0.9235035282207502
+        }
+      }
+    },
+    "reports": [
+      {
+        "video": "44b6_0db75fae",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "strict",
+        "proposed_pairs": 1,
+        "accepted_swaps": 1,
+        "changed_edges": 2,
+        "appearance_gain_sum": 0.2334728240966797,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "balanced",
+        "proposed_pairs": 1,
+        "accepted_swaps": 1,
+        "changed_edges": 2,
+        "appearance_gain_sum": 0.2334728240966797,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "strict",
+        "proposed_pairs": 2,
+        "accepted_swaps": 2,
+        "changed_edges": 4,
+        "appearance_gain_sum": 2.7054483294487,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "balanced",
+        "proposed_pairs": 2,
+        "accepted_swaps": 2,
+        "changed_edges": 4,
+        "appearance_gain_sum": 2.7054483294487,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "appearance",
+        "proposed_pairs": 1,
+        "accepted_swaps": 1,
+        "changed_edges": 2,
+        "appearance_gain_sum": 2.2319552898406982,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "balanced",
+        "proposed_pairs": 2,
+        "accepted_swaps": 2,
+        "changed_edges": 4,
+        "appearance_gain_sum": 1.2644318342208862,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "strict",
+        "proposed_pairs": 2,
+        "accepted_swaps": 2,
+        "changed_edges": 4,
+        "appearance_gain_sum": 6.530600070953369,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "balanced",
+        "proposed_pairs": 5,
+        "accepted_swaps": 5,
+        "changed_edges": 10,
+        "appearance_gain_sum": 7.573878645896912,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "appearance",
+        "proposed_pairs": 3,
+        "accepted_swaps": 3,
+        "changed_edges": 6,
+        "appearance_gain_sum": 8.140391230583191,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "strict",
+        "proposed_pairs": 1,
+        "accepted_swaps": 1,
+        "changed_edges": 2,
+        "appearance_gain_sum": 0.7890667915344238,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "balanced",
+        "proposed_pairs": 2,
+        "accepted_swaps": 2,
+        "changed_edges": 4,
+        "appearance_gain_sum": 1.1437245607376099,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "strict",
+        "proposed_pairs": 4,
+        "accepted_swaps": 4,
+        "changed_edges": 8,
+        "appearance_gain_sum": 7.240967631340027,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "balanced",
+        "proposed_pairs": 8,
+        "accepted_swaps": 8,
+        "changed_edges": 16,
+        "appearance_gain_sum": 10.730220317840576,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "appearance",
+        "proposed_pairs": 4,
+        "accepted_swaps": 4,
+        "changed_edges": 8,
+        "appearance_gain_sum": 8.110832214355469,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "strict",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "balanced",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "appearance",
+        "proposed_pairs": 0,
+        "accepted_swaps": 0,
+        "changed_edges": 0,
+        "appearance_gain_sum": 0,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "strict",
+        "proposed_pairs": 2,
+        "accepted_swaps": 2,
+        "changed_edges": 4,
+        "appearance_gain_sum": 2.24625825881958,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "balanced",
+        "proposed_pairs": 2,
+        "accepted_swaps": 2,
+        "changed_edges": 4,
+        "appearance_gain_sum": 2.24625825881958,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "appearance",
+        "proposed_pairs": 1,
+        "accepted_swaps": 1,
+        "changed_edges": 2,
+        "appearance_gain_sum": 1.1000216007232666,
+        "nodes_changed": false,
+        "degree_sequence_changed": false
+      }
+    ],
+    "selected": "strict",
+    "delta": 0.0,
+    "seconds": 377.515052986,
+    "leaderboard_submitted": false,
+    "scope": "Exploratory selection on 24 reused research videos. User explicitly requested a new submission; selected means best NEW candidate, not proof of improvement."
+  }
+}
