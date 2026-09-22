@@ -1,0 +1,13 @@
+{
+  "sha256": "05a426f5aec3bf889a15f8528560505f92329e97b08bc17e1a705a638f5420c2",
+  "files": [
+    "baseline/e063_infer_pins.json",
+    "baseline/e063_protocol.json",
+    "scripts/residual_detector_io.py",
+    "scripts/trajectory_selector_infer_runner.py",
+    "src/biohub_lab/independent_expert.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}

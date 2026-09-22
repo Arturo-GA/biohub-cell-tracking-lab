@@ -1,0 +1,9 @@
+{
+  "converged": true,
+  "iterations": 94,
+  "seconds": 0.23399999999674037,
+  "features": 39,
+  "rows": 3000,
+  "positive": 238,
+  "scope": "Synthetic conditioning/runtime check, not biological validation or a competition metric"
+}

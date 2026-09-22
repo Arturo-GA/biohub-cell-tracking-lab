@@ -2113,5 +2113,30 @@
     "tests_passed": 7,
     "leaderboard_submitted": false,
     "own_leaderboard_score": 0.946
+  },
+  "E063": {
+    "status": "complete",
+    "selected": "control",
+    "leaderboard_submitted": false,
+    "fit_videos": 40,
+    "fit_videos_with_labels": 36,
+    "development_videos": 16,
+    "evaluation_videos": 24,
+    "fit_examples": 758,
+    "positive": 116,
+    "negative": 642,
+    "gpu_process_seconds": 1104.094831427,
+    "cpu_process_seconds": 849.5531593699999,
+    "local_tests_passed": 12,
+    "stages": {
+      "DETECT": "COMPLETE",
+      "PREPARE": "COMPLETE",
+      "INFER": "COMPLETE",
+      "SELECT": "COMPLETE",
+      "EVALUATE": "COMPLETE",
+      "AUDIT": "COMPLETE"
+    },
+    "independent_project_holdout": false,
+    "pending_jobs": []
   }
 }

@@ -1,0 +1,723 @@
+{
+  "kernel": "jarturo/biohub-e063-audit-cpu",
+  "version": 1,
+  "manifest_sha256": "40274836189c6b20a46e1017eee7455af138b3fd69e7bbbfe8a24a527897075d",
+  "result": {
+    "status": "complete",
+    "config": {
+      "experiment": "E063",
+      "seed": 632109,
+      "fit": [
+        "44b6_1d530831",
+        "44b6_3a861e03",
+        "44b6_3bb3690f",
+        "44b6_668e0cc7",
+        "44b6_66f9292d",
+        "44b6_71a4179f",
+        "44b6_7e557709",
+        "44b6_81c256f0",
+        "44b6_949adeb1",
+        "44b6_a2bb48bb",
+        "44b6_abf82518",
+        "44b6_b2c44266",
+        "44b6_c771cb04",
+        "44b6_c96cfa10",
+        "44b6_d2f34f90",
+        "44b6_d5e7d891",
+        "44b6_d754aa59",
+        "44b6_ddf577ad",
+        "44b6_e28840c6",
+        "44b6_e29f0176",
+        "6bba_062c8d37",
+        "6bba_0c7fa718",
+        "6bba_2312ac41",
+        "6bba_2819ca14",
+        "6bba_43fea39d",
+        "6bba_4ffd3da3",
+        "6bba_55c70843",
+        "6bba_57b7cc1e",
+        "6bba_5a4d9360",
+        "6bba_5c039895",
+        "6bba_6feeb0b1",
+        "6bba_786893ac",
+        "6bba_78a7bd97",
+        "6bba_7af54fde",
+        "6bba_acd782a8",
+        "6bba_b693381b",
+        "6bba_d0fc38b5",
+        "6bba_e5e44988",
+        "6bba_edf14583",
+        "6bba_fe670320"
+      ],
+      "development": [
+        "44b6_267148e4",
+        "44b6_341df25f",
+        "44b6_7a302da0",
+        "44b6_95029e92",
+        "44b6_996155de",
+        "44b6_9be80b04",
+        "44b6_deabac95",
+        "44b6_e31261b4",
+        "6bba_05db0fb1",
+        "6bba_207c6aaf",
+        "6bba_3abfe10a",
+        "6bba_3db54e20",
+        "6bba_74686d6a",
+        "6bba_cff5865f",
+        "6bba_d3da753b",
+        "6bba_ebff6e76"
+      ],
+      "evaluation": [
+        "44b6_0db75fae",
+        "44b6_5740d24b",
+        "44b6_587a1e22",
+        "44b6_9bfa6a0a",
+        "44b6_aaf8b0ea",
+        "44b6_c15fded2",
+        "44b6_c8e2a523",
+        "44b6_cf2536e8",
+        "6bba_1f58c2f6",
+        "6bba_5c824876",
+        "6bba_6479435d",
+        "6bba_76db78c1",
+        "6bba_7b5d3b2c",
+        "6bba_9a41d029",
+        "6bba_c73a1d11",
+        "6bba_f1fde7e0",
+        "44b6_12dfb391",
+        "44b6_415c0a3a",
+        "44b6_c50204e0",
+        "44b6_e35b117d",
+        "6bba_2646afc7",
+        "6bba_6db0e9b4",
+        "6bba_cf35214c",
+        "6bba_ef7b4f7e"
+      ],
+      "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+      "training_sha256": "b7a9dd7cef2ea0a10729aeeb5d7a11a10b2ea4f8ea26d12784a88d9713c8b36f",
+      "thresholds": [
+        0.05,
+        0.1,
+        0.2,
+        0.35,
+        0.5,
+        0.7,
+        0.85,
+        0.95,
+        1.01
+      ],
+      "node_budget_fraction": 0.01,
+      "protocol": "Fit trajectory quality on 40 videos, select threshold on 16 separate development videos, then freeze and evaluate on 24 reused research videos. Sparse official pred_valid edges only; unknown is never negative. Fit/dev complements use a single primary forward proxy baseline, not full Harmonic. Evaluation uses actual E062 Harmonic union. Detector fit overlaps selector fit, but not development or evaluation; public checkpoint pretraining membership unknown. CPU graph matching, model fit and calibration; GPU neural inference only. No automatic submission.",
+      "selector_plan_before_labels": "Predict useful nonredundant additions, not just correct links. Nine fixed thresholds include low values because usefulness is a rare event. Fixed before any selector labels, fit, development metrics or final evaluation were obtained; neural inference configuration unchanged."
+    },
+    "totals": {
+      "rule": {
+        "rescued": 5,
+        "lost": 3,
+        "novel_beyond_rule": 0
+      },
+      "learned": {
+        "rescued": 1,
+        "lost": 3,
+        "novel_beyond_rule": 1
+      },
+      "conditional": {
+        "rescued": 1,
+        "lost": 3,
+        "novel_beyond_rule": 1
+      }
+    },
+    "rows": [
+      {
+        "video": "44b6_0db75fae",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_0db75fae",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_5740d24b",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_587a1e22",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_9bfa6a0a",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_aaf8b0ea",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c15fded2",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c8e2a523",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_cf2536e8",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_1f58c2f6",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_5c824876",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "rule",
+        "rescued": [
+          [
+            12000180,
+            13000196
+          ],
+          [
+            13000196,
+            14000212
+          ]
+        ],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_6479435d",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_76db78c1",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_7b5d3b2c",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "learned",
+        "rescued": [
+          [
+            42000719,
+            43000737
+          ]
+        ],
+        "lost": [
+          [
+            43000737,
+            44000759
+          ]
+        ],
+        "novel_beyond_rule": [
+          [
+            42000719,
+            43000737
+          ]
+        ]
+      },
+      {
+        "video": "6bba_9a41d029",
+        "arm": "conditional",
+        "rescued": [
+          [
+            42000719,
+            43000737
+          ]
+        ],
+        "lost": [
+          [
+            43000737,
+            44000759
+          ]
+        ],
+        "novel_beyond_rule": [
+          [
+            42000719,
+            43000737
+          ]
+        ]
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_c73a1d11",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_f1fde7e0",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_12dfb391",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_415c0a3a",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_c50204e0",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "44b6_e35b117d",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [
+          [
+            28000337,
+            29000350
+          ],
+          [
+            29000350,
+            30000363
+          ]
+        ],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_2646afc7",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [
+          [
+            28000337,
+            29000350
+          ],
+          [
+            29000350,
+            30000363
+          ]
+        ],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_6db0e9b4",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "rule",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_cf35214c",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "rule",
+        "rescued": [
+          [
+            66000951,
+            67000972
+          ],
+          [
+            67000972,
+            68000990
+          ],
+          [
+            68000990,
+            69001008
+          ]
+        ],
+        "lost": [
+          [
+            70001039,
+            71001043
+          ],
+          [
+            71001043,
+            72001061
+          ],
+          [
+            72001061,
+            73001080
+          ]
+        ],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "learned",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      },
+      {
+        "video": "6bba_ef7b4f7e",
+        "arm": "conditional",
+        "rescued": [],
+        "lost": [],
+        "novel_beyond_rule": []
+      }
+    ],
+    "seconds": 78.043510921,
+    "leaderboard_submitted": false,
+    "scope": "Diagnostic using evaluation annotations after the frozen experiment. Exact GT edge sets, not counts alone. No oracle selection exported for inference."
+  }
+}

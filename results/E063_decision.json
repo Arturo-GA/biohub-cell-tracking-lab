@@ -1,0 +1,119 @@
+{
+  "experiment": "E063",
+  "status": "complete",
+  "selected": "control",
+  "leaderboard_submitted": false,
+  "own_leaderboard_score": 0.946,
+  "fit_videos": 40,
+  "fit_videos_with_labels": 36,
+  "development_videos": 16,
+  "evaluation_videos": 24,
+  "independent_project_holdout": false,
+  "fit_examples": 758,
+  "positive": 116,
+  "negative": 642,
+  "unknown_excluded": 58556,
+  "model_sha256": "713330c6be83d190ff675e0c92a4a0759cc78e049909b32cc8cbafd49fbff67c",
+  "metrics": {
+    "control": {
+      "n": 24,
+      "edge_jaccard": 0.898327811957722,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9022313538189592,
+      "n_adj": 24,
+      "score": 0.9198784126424887,
+      "edge_tp": 11389,
+      "edge_fp": 638,
+      "edge_fn": 651
+    },
+    "rule": {
+      "n": 24,
+      "edge_jaccard": 0.8980605487228004,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9812739227557522,
+      "adj_edge_jaccard": 0.9017656090764402,
+      "n_adj": 24,
+      "score": 0.9194126678999697,
+      "edge_tp": 11391,
+      "edge_fp": 644,
+      "edge_fn": 649
+    },
+    "learned": {
+      "n": 24,
+      "edge_jaccard": 0.8978159741386107,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.9008893065089714,
+      "n_adj": 24,
+      "score": 0.9185363653325008,
+      "edge_tp": 11387,
+      "edge_fp": 643,
+      "edge_fn": 653
+    },
+    "conditional": {
+      "n": 24,
+      "edge_jaccard": 0.8978159741386107,
+      "division_jaccard": 0.17647058823529413,
+      "division_tp": 3,
+      "division_fp": 6,
+      "division_fn": 8,
+      "node_recall": 0.9810037984985939,
+      "adj_edge_jaccard": 0.901060827170335,
+      "n_adj": 24,
+      "score": 0.9187078859938644,
+      "edge_tp": 11387,
+      "edge_fp": 643,
+      "edge_fn": 653
+    }
+  },
+  "conditional_thresholds": {
+    "44b6": 1.01,
+    "6bba": 0.95
+  },
+  "exact_edge_audit": {
+    "rule": {
+      "rescued": 5,
+      "lost": 3,
+      "novel_beyond_rule": 0
+    },
+    "learned": {
+      "rescued": 1,
+      "lost": 3,
+      "novel_beyond_rule": 1
+    },
+    "conditional": {
+      "rescued": 1,
+      "lost": 3,
+      "novel_beyond_rule": 1
+    }
+  },
+  "gpu_process_seconds": 1104.094831427,
+  "cpu_process_seconds": 849.5531593699999,
+  "local_tests_passed": 12,
+  "official_sparse_label_selftest_passed": true,
+  "baseline_and_E062_reproduced": true,
+  "manifest_sha256": {
+    "DETECT": "fb88c080b757394c8f5538148d8cc7bc3879264c4649d98e71cf747f1b617838",
+    "PREPARE": "3ae38f1a1bd0b9adb8c3fe6b6776c75a34f7587e9faf55eceed842309cd3e752",
+    "INFER": "30e9c3e376e1f3d3f7bc5ce9751854065a567ed92d5300697d4f68c909920e4e",
+    "SELECT": "912661a7fa85de14c9308688500754b47902b5ac88bc8ddecc0ab0a69d165ea3",
+    "EVALUATE": "4b0f0af28ff5c1cc88480f641557a7a75408c0e2c1395e99a8961603bd3b739f",
+    "AUDIT": "40274836189c6b20a46e1017eee7455af138b3fd69e7bbbfe8a24a527897075d"
+  },
+  "limitations": [
+    "Fit/development use a primary-only proxy baseline; final evaluation uses actual Harmonic/visual union.",
+    "24 final videos were reused in previous research; not an independent project holdout.",
+    "Conditional routing was added after early development metrics and before final evaluation.",
+    "Process seconds are not Kaggle quota accounting."
+  ]
+}

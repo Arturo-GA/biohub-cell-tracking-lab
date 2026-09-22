@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e063-select-cpu",
+  "version": 1,
+  "kernel_id": 135319166,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-e063-select-cpu",
+  "ref": "/code/jarturo/biohub-e063-select-cpu",
+  "launched_at_utc": "2026-09-22T03:27:16.085802+00:00",
+  "payload_sha256": "933eac587d9d3f63a6b4661722783ee623219debe38889f8611a03c0d721f3fc",
+  "notebook_sha256": "150e94808fd656c1d568516863c7f5b5aae67af6512a6392ddd495c91283a713",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "monitoring": false,
+  "leaderboard_submitted": false
+}

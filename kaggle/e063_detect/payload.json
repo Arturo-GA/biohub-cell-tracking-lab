@@ -1,0 +1,16 @@
+{
+  "sha256": "cbaae70368589d3d6284b339f07e4572f4ed054e2b07f2bf172b9c59a5fac4de",
+  "files": [
+    "baseline/e063_detect_pins.json",
+    "baseline/e063_protocol.json",
+    "scripts/residual_detector_io.py",
+    "scripts/trajectory_selector_detect_runner.py",
+    "src/biohub_lab/dense_center.py",
+    "src/biohub_lab/independent_expert.py",
+    "src/biohub_lab/residual_detector.py",
+    "src/biohub_lab/temporal_detector.py"
+  ],
+  "contains_images": false,
+  "contains_weights": false,
+  "contains_credentials": false
+}
