@@ -1,0 +1,21 @@
+ref,date,status,publicScore,total_bytes,description
+56563363,2026-09-26T00:01:09.220Z,COMPLETE,0.954,204895890,B5 calibration L7 + interior<9 (lab72 predicts = L7)
+56563339,2026-09-26T00:01:03.400Z,COMPLETE,0.954,206564344,"B4 L7 + prune comps size<12 with mean edge_prob<0.5 (lab72 +0.0006, 55/1 videos)"
+56563314,2026-09-26T00:00:58.900Z,COMPLETE,0.953,205829044,B3 L7 + prune interior comps size<8 (lab72 +0.0008 vs L7)
+56563301,2026-09-26T00:00:54.167Z,COMPLETE,0.954,206256662,B2 L6 + prune interior comps size<8 not touching first/last frame (lab72 +0.0010 vs L6)
+56563291,2026-09-26T00:00:50.367Z,COMPLETE,0.954,205118994,B1 L7 + prune non-division comps size<9 with mean edge_prob<0.8 (lab72 +0.0013 vs L7)
+56544558,2026-09-25T07:34:58.780Z,COMPLETE,0.951,201135621,"P4b m11d: x138 + OUTPUT_MIN_TRACK_LEN=11 + REPAIR_DEADLINE_S=34200, single pass"
+56544554,2026-09-25T07:34:53.890Z,COMPLETE,0.953,205385956,"P4a m8d: x138 + OUTPUT_MIN_TRACK_LEN=8 + REPAIR_DEADLINE_S=34200, single pass"
+56540269,2026-09-25T04:49:43.530Z,COMPLETE,0.954,206780311,"P2 m7d: x138 + OUTPUT_MIN_TRACK_LEN=7 (tight stays 5.5) + REPAIR_DEADLINE_S=34200, single pass"
+56540245,2026-09-25T04:48:36.133Z,COMPLETE,0.953,203978396,"P3 m9d: x138 + OUTPUT_MIN_TRACK_LEN=9 + REPAIR_DEADLINE_S=34200, single pass"
+56539929,2026-09-25T04:30:27.757Z,COMPLETE,0.954,206781848,"P1 m7t45: x138 + OUTPUT_MIN_TRACK_LEN=7 + MOTION_RELINK_TIGHT_UM=4.5 hardcoded, single pass, no validator/rewrite"
+56526340,2026-09-24T16:28:55.763Z,COMPLETE,0.904,200570249,"Level1: x138 public head + validator-selected strict post-process (17 candidates, 8 held-out train videos)"
+56515407,2026-09-24T07:33:11.213Z,COMPLETE,0.952,208237031,"x138 + OUR V1284 heads (110 train movies, 5-seed ensemble, alpha 1.0); CV 1.083um vs public 1.333um"
+56511668,2026-09-24T04:31:26.230Z,COMPLETE,0.953,208595264,"x138 + public V1284 head, shift alpha 0.75"
+56511338,2026-09-24T04:11:46.130Z,COMPLETE,0.953,207492215,"x138 + public V1284 head, shift alpha 1.25"
+56510963,2026-09-24T03:52:23.987Z,COMPLETE,0.953,208107715,x138 exact repro (public 0.953 notebook + V1284 head s075)
+56475507,2026-09-22T22:55:34.697Z,COMPLETE,0.946,207573556,"E067 robust full-track acceleration denoising; exploratory new localization, unchanged lineage topology"
+56466969,2026-09-22T14:24:18.103Z,COMPLETE,0.946,207569326,"E064 native-image center refinement; exploratory new localization, unchanged lineage topology"
+56433260,2026-09-21T14:22:30.667Z,COMPLETE,0.946,207569232,"E054 pure public tight55 control; remove weighted bridges; visible CSV exactly reproduced, full hidden-test inference"
+56409893,2026-09-21T01:03:13.007Z,COMPLETE,0.946,207832978,Public tight55 plus dense-static reliability-weighted gap completion; exploratory E049/E050
+56370600,2026-09-19T20:05:27.663Z,COMPLETE,0.946,207692503,Exact visual global assignment; frozen reserved validation E023

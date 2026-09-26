@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-22",
+  "date": "2026-09-26",
   "github": "https://github.com/Arturo-GA/biohub-cell-tracking-lab",
   "github_private": true,
   "external_leaderboard_reference": {
@@ -2721,5 +2721,88 @@
     "pending_scoring": [
       56475507
     ]
+  },
+  "E068": {
+    "base_kernel": "anvithpothula/biohub-x138 (public 0.953) + dataset anvithpothula/biohub-v1284-head-s075",
+    "public_scores": {
+      "x138_repro_56510963": 0.953,
+      "alpha1.25_56511338": 0.953,
+      "alpha0.75_56511668": 0.953,
+      "own_v1284_heads_56515407": 0.952,
+      "level1_validator_sweep_rewrite_56526340": 0.904,
+      "L7_tight45_56539929": 0.954,
+      "L7_56540269": 0.954,
+      "L9_56540245": 0.953,
+      "L8_56544554": 0.953,
+      "L11_56544558": 0.951,
+      "B1_prob0.8lt9_56563291": 0.954,
+      "B2_L6_interior8_56563301": 0.954,
+      "B3_L7_interior8_56563314": 0.953,
+      "B4_prob0.5lt12_56563339": 0.954,
+      "B5_interior9_56563363": 0.954
+    },
+    "rank_2026-09-26": 177,
+    "rule": "single pass only: validator off, fixed params in cell 0, REPAIR_DEADLINE_S=34200, gate.py on the visible log before submitting",
+    "lab": {
+      "videos": 199,
+      "metric": "src/biohub_official",
+      "capture_kernels": [
+        "biohub-prune-lab0",
+        "biohub-prune-lab1",
+        "biohub-prune-lab2",
+        "biohub-prune-lab3",
+        "biohub-prune-lab4",
+        "biohub-prune-lab5",
+        "biohub-prune-lab6",
+        "biohub-prune-lab7",
+        "biohub-prune-lab8"
+      ],
+      "eval_kernels": [
+        "biohub-prune-lab-cpu",
+        "biohub-prune-lab-cpu2",
+        "biohub-safediv-lab-cpu3"
+      ],
+      "best_xr_combo_199v": {
+        "config": "P8+nan8+end5last+fork8-nanonly",
+        "delta_vs_L7": 0.00219,
+        "ci90": [
+          0.00159,
+          0.0029
+        ],
+        "videos_win_lose": [
+          165,
+          34
+        ]
+      },
+      "safe_div_tau_72traced": {
+        "tau1.0": {
+          "delta": 0.00345,
+          "ci90": [
+            0.00093,
+            0.00622
+          ],
+          "div_tp_fp_fn": [
+            26,
+            38,
+            85
+          ]
+        },
+        "base": {
+          "div_tp_fp_fn": [
+            19,
+            26,
+            92
+          ]
+        }
+      }
+    },
+    "scheduled_2026-09-27_00UTC": [
+      "biohub-x138-s1-tau6b-e-cuts-fork v1",
+      "biohub-x138-s5-tau6b-p8-cuts v2",
+      "biohub-x138-s2-tau6b-e-cuts v1",
+      "biohub-x138-c6-tau10 v1",
+      "biohub-x138-c3-e-cuts v1"
+    ],
+    "doc": "docs/E068_X138_XR.es.md"
   }
 }

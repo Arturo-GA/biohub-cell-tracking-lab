@@ -1,0 +1,417 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+BIOHUB_PRESET: harmonic_v3_division_wide
+BIOHUB_SCORE_AXIS: public 0.939 base + holdout-selected post-process configuration
+Biohub learned UNet + node-transformer + ILP submission
+COMP_DIR: /kaggle/input/competitions/biohub-cell-tracking-during-development exists: True
+TEST_DIR: /kaggle/input/competitions/biohub-cell-tracking-during-development/test exists: True
+{
+  "adaptive_short_track_rescue": true,
+  "allow_artifact_fallback": false,
+  "allow_pip_install": false,
+  "deepcenter_checkpoint_default": "/kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt",
+  "deepcenter_expected_epoch": 2,
+  "deepcenter_gap_add_gate": true,
+  "deepcenter_gap_confirm_min_span_um": 8.5,
+  "deepcenter_gap_threshold": 0.25,
+  "deepcenter_safe_div_add_gate": true,
+  "deepcenter_safe_div_threshold": 0.25,
+  "det_threshold": 0.965,
+  "div_drop_to_single_if_bad": true,
+  "div_parent_max_um": 10.5,
+  "div_sister_max_um": 8.0,
+  "experiment_tag": "selected_101_dual_seed_near_balanced_center_confirmed_synthetic_gap",
+  "gap2_frame_frac_cap": 0.006,
+  "gap2_max_links_abs": 180,
+  "gap2_max_links_frac": 0.0045,
+  "gap2_max_step_um": 4.4,
+  "gap2_max_total_um": 10.2,
+  "gap2_require_context": true,
+  "gap_close_effective_max_gap": 1,
+  "gap_close_max_added_abs": 2000,
+  "gap_close_max_added_frac": 0.05,
+  "gap_close_max_gap": 2,
+  "gap_close_reuse_existing": true,
+  "gap_close_reuse_um": 3.2,
+  "gap_close_um": 5.0,
+  "gap_density_adaptive": true,
+  "gap_density_gain": 0.04,
+  "gap_density_max_step_delta_um": 0.125,
+  "gap_density_neighbors": 3,
+  "gap_density_reference_um": 6.5,
+  "gap_refine_max_shift_um": 3.2,
+  "gap_refine_synthetic": true,
+  "gap_refine_win_yx": 3,
+  "gap_refine_win_z": 1,
+  "ilp_appearance_weight": 0.0,
+  "ilp_disappearance_weight": 2.0,
+  "ilp_division_weight": 1.2,
+  "ilp_edge_weight": -1.0,
+  "method": "unet_transformer",
+  "motion_relink_learned_bonus": 1.0,
+  "motion_relink_max_frame_nodes": 2600,
+  "motion_relink_relaxed_um": 10.0,
+  "motion_relink_tight_um": 5.5,
+  "motion_relink_velocity_weight": 0.5,
+  "output_division_geometry_filter": false,
+  "output_edge_max_um": 14.0,
+  "output_enforce_next_frame": true,
+  "output_filter_short_tracks": true,
+  "output_gap2_recovery": true,
+  "output_gap_close": true,
+  "output_keep_division_components": true,
+  "output_linefit_smooth": true,
+  "output_linefit_weight": 0.8,
+  "output_linefit_window": 2,
+  "output_min_track_len": 6,
+  "output_motion_relink": true,
+  "output_prune_isolated": true,
+  "output_safe_divisions": true,
+  "output_single_child_repair": false,
+  "output_single_parent_repair": true,
+  "primary_artifact_manifest": "/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/ARTIFACT_MANIFEST.json",
+  "safe_div_existing_child_max_um": 10.0,
+  "safe_div_frame_frac_cap": 0.0076,
+  "safe_div_global_frac_cap": 0.00375,
+  "safe_div_max_um": 9.0,
+  "safe_div_sister_max_um": 14.0,
+  "short_track_rescue_max_mean_edge_dist_um": 3.0,
+  "short_track_rescue_max_nodes_abs": 120,
+  "short_track_rescue_max_nodes_frac": 0.012,
+  "short_track_rescue_min_len": 4,
+  "short_track_rescue_min_mean_edge_prob": 0.88,
+  "short_track_rescue_trigger_removed_frac": 0.1,
+  "slice": "",
+  "target_artifact_slug": "biohub-tracking-support-pack-50ep-v1",
+  "unet_batch_size": 4,
+  "use_deepcenter_add_only_gate": true,
+  "use_ilp": true,
+  "weights": "weights/unet_transformer/split_0/edge_predictor_best.pth"
+}
+ARTIFACTS: /kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1
+Has offline wheels: True
+Artifact name: biohub-tracking-support-pack-400ep-snapshot-v1
+Weight sha256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771
+Weight path: weights/unet_transformer/split_0/edge_predictor_best.pth
+Installing missing packages from offline package dirs: ['polars']
+Dependency resolver is disabled with --no-deps to avoid replacing Kaggle numpy/scipy in a live kernel.
+Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']
+Offline dependency install succeeded.
+Installing missing packages from offline package dirs: ['tracksdata', 'zarr', 'pyscipopt', 'geff', 'geff_spec', 'ilpy', 'imagecodecs', 'rustworkx', 'numcodecs', 'donfig', 'bidict']
+Dependency resolver is disabled with --no-deps to avoid replacing Kaggle numpy/scipy in a live kernel.
+Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']
+Offline dependency install succeeded.
+Required graph/Zarr/ILP packages import successfully.
+Inference repo: /kaggle/working/tracking_repo
+Weights: /kaggle/working/tracking_repo/weights/unet_transformer/split_0/edge_predictor_best.pth
+Support repo Python manifest SHA256: 978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029
+Primary materialized SHA256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771
+DeepCenter materialized SHA256: 8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0
+Secondary artifact: /kaggle/input/datasets/pilkwang/biohub-temporal-unet3d-seed314159-v1
+Secondary weight: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth
+Secondary SHA256: 9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f
+Secondary edge-logit weight: 0.15
+Runtime integrity receipt: /kaggle/working/bidirectional_production_runtime_integrity.json
+[   222s] graphs loaded: 72
+[   243s] dict graphs built
+[   263s] SELF-CHECK L7 vs GPU lab: mismatches = 0 []
+[   264s] L7 (baseline)                      proxy=0.91485 d=+0.00000 CI[+0.00000,+0.00000] P>0=0.00 +0/-0 | 44b6 +0.00000 (P0.00) 6bba +0.00000 (P0.00) | div 10/24/44 Tpred=1691048
+[   342s] edges total=1631501 labeled TP=40095 FP=2394
+[   344s] --- edge buckets by prob: bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   344s]     p<0.3              n=  52716 TP=   327 FP=  543 rate=0.624 gain=+162
+[   344s]     p<0.5              n=  10897 TP=   119 FP=   35 rate=0.227 gain=-88
+[   344s]     p<0.7              n= 198610 TP=  2609 FP=  560 rate=0.177 gain=-2105
+[   344s]     p<0.8              n= 227111 TP=  2917 FP=  394 rate=0.119 gain=-2562
+[   344s]     p<0.9              n= 450936 TP=  8039 FP=  488 rate=0.057 gain=-7600
+[   344s]     p<0.95             n= 355751 TP= 10394 FP=  214 rate=0.020 gain=-10201
+[   344s]     p>=0.95            n= 304091 TP= 15536 FP=   72 rate=0.005 gain=-15471
+[   344s]     relink(NaN)        n=  31389 TP=   154 FP=   88 rate=0.364 gain=-75
+[   346s] --- edge buckets by prob x pfx: bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   346s]     ('44b6', 'p<0.3')  n=  26390 TP=   101 FP=  180 rate=0.641 gain=+61
+[   346s]     ('44b6', 'p<0.5')  n=   5535 TP=    25 FP=    5 rate=0.167 gain=-20
+[   346s]     ('44b6', 'p<0.7')  n= 109575 TP=   853 FP=  137 rate=0.138 gain=-730
+[   346s]     ('44b6', 'p<0.8')  n= 132717 TP=  1085 FP=   98 rate=0.083 gain=-997
+[   346s]     ('44b6', 'p<0.9')  n= 267500 TP=  2549 FP=  140 rate=0.052 gain=-2423
+[   346s]     ('44b6', 'p<0.95') n= 207305 TP=  2409 FP=   59 rate=0.024 gain=-2356
+[   346s]     ('44b6', 'p>=0.95') n= 178800 TP=  3415 FP=   26 rate=0.008 gain=-3392
+[   346s]     ('44b6', 'relink(NaN)') n=  22367 TP=    73 FP=   33 rate=0.311 gain=-43
+[   346s]     ('6bba', 'p<0.3')  n=  26326 TP=   226 FP=  363 rate=0.616 gain=+101
+[   346s]     ('6bba', 'p<0.5')  n=   5362 TP=    94 FP=   30 rate=0.242 gain=-67
+[   346s]     ('6bba', 'p<0.7')  n=  89035 TP=  1756 FP=  423 rate=0.194 gain=-1375
+[   346s]     ('6bba', 'p<0.8')  n=  94394 TP=  1832 FP=  296 rate=0.139 gain=-1566
+[   346s]     ('6bba', 'p<0.9')  n= 183436 TP=  5490 FP=  348 rate=0.060 gain=-5177
+[   346s]     ('6bba', 'p<0.95') n= 148446 TP=  7985 FP=  155 rate=0.019 gain=-7846
+[   346s]     ('6bba', 'p>=0.95') n= 125291 TP= 12121 FP=   46 rate=0.004 gain=-12080
+[   346s]     ('6bba', 'relink(NaN)') n=   9022 TP=    81 FP=   55 rate=0.404 gain=-32
+[   348s] --- edge buckets by dist(um): bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   348s]     d<10               n=  10135 TP=   175 FP=   93 rate=0.347 gain=-91
+[   348s]     d<12               n=   1650 TP=    26 FP=   11 rate=0.297 gain=-16
+[   348s]     d<2                n= 963929 TP= 24349 FP=  967 rate=0.038 gain=-23479
+[   348s]     d<4                n= 510102 TP= 12525 FP=  799 rate=0.060 gain=-11806
+[   348s]     d<6                n= 111910 TP=  2319 FP=  330 rate=0.125 gain=-2022
+[   348s]     d<8                n=  33610 TP=   700 FP=  192 rate=0.215 gain=-527
+[   348s]     d>=12              n=    165 TP=     1 FP=    2 rate=0.667 gain=+1
+[   351s] --- edge buckets by NaN x dist: bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   351s]     (0, 'd<10')        n=  10022 TP=   175 FP=   90 rate=0.340 gain=-94
+[   351s]     (0, 'd<4')         n=1446107 TP= 36745 FP= 1701 rate=0.044 gain=-35214
+[   351s]     (0, 'd<6')         n= 109004 TP=  2296 FP=  315 rate=0.121 gain=-2012
+[   351s]     (0, 'd<8')         n=  33172 TP=   698 FP=  187 rate=0.211 gain=-530
+[   351s]     (0, 'd>=10')       n=   1807 TP=    27 FP=   13 rate=0.325 gain=-15
+[   351s]     (1, 'd<10')        n=    113 TP=     0 FP=    3 rate=1.000 gain=+3
+[   351s]     (1, 'd<4')         n=  27924 TP=   129 FP=   65 rate=0.335 gain=-70
+[   351s]     (1, 'd<6')         n=   2906 TP=    23 FP=   15 rate=0.395 gain=-10
+[   351s]     (1, 'd<8')         n=    438 TP=     2 FP=    5 rate=0.714 gain=+2
+[   351s]     (1, 'd>=10')       n=      8 TP=     0 FP=    0 rate=0.000 gain=+0
+[   353s] --- edge buckets by jump ratio: bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   353s]     j<1.5              n=1218281 TP= 29458 FP= 1407 rate=0.046 gain=-28192
+[   353s]     j<2                n= 176544 TP=  4089 FP=  257 rate=0.059 gain=-3858
+[   353s]     j<2.5              n=  87328 TP=  2170 FP=  191 rate=0.081 gain=-1998
+[   353s]     j<3                n=  48326 TP=  1391 FP=  113 rate=0.075 gain=-1289
+[   353s]     j<4                n=  48243 TP=  1345 FP=  137 rate=0.092 gain=-1222
+[   353s]     j>=4               n=  52779 TP=  1642 FP=  289 rate=0.150 gain=-1382
+[   354s] --- edge buckets by position: bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   354s]     first              n=  59569 TP=   673 FP=   74 rate=0.099 gain=-606
+[   354s]     last               n=  60600 TP=   690 FP=  101 rate=0.128 gain=-599
+[   354s]     mid                n=1511332 TP= 38732 FP= 2219 rate=0.054 gain=-36735
+[   355s] --- edge buckets by position x prob<0.5: bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   355s]     ('first', False)   n=  53579 TP=   638 FP=   47 rate=0.069 gain=-596
+[   355s]     ('first', True)    n=   5990 TP=    35 FP=   27 rate=0.435 gain=-11
+[   355s]     ('last', False)    n=  51991 TP=   659 FP=   72 rate=0.098 gain=-594
+[   355s]     ('last', True)     n=   8609 TP=    31 FP=   29 rate=0.483 gain=-5
+[   355s]     ('mid', False)     n=1430929 TP= 38198 FP= 1609 rate=0.040 gain=-36750
+[   355s]     ('mid', True)      n=  80403 TP=   534 FP=  610 rate=0.533 gain=+15
+[   357s] --- edge buckets by fork edge x prob: bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   357s]     (0, 'p<0.3')       n=  52484 TP=   325 FP=  540 rate=0.624 gain=+161
+[   357s]     (0, 'p<0.5')       n=  10889 TP=   119 FP=   35 rate=0.227 gain=-88
+[   357s]     (0, 'p<0.7')       n= 198470 TP=  2608 FP=  556 rate=0.176 gain=-2108
+[   357s]     (0, 'p<0.8')       n= 226934 TP=  2916 FP=  393 rate=0.119 gain=-2562
+[   357s]     (0, 'p<0.9')       n= 450656 TP=  8033 FP=  486 rate=0.057 gain=-7596
+[   357s]     (0, 'p<0.95')      n= 355595 TP= 10390 FP=  213 rate=0.020 gain=-10198
+[   357s]     (0, 'p>=0.95')     n= 304032 TP= 15531 FP=   72 rate=0.005 gain=-15466
+[   357s]     (0, 'relink(NaN)') n=  30335 TP=   138 FP=   73 rate=0.346 gain=-72
+[   357s]     (1, 'p<0.3')       n=    232 TP=     2 FP=    3 rate=0.600 gain=+1
+[   357s]     (1, 'p<0.5')       n=      8 TP=     0 FP=    0 rate=0.000 gain=+0
+[   357s]     (1, 'p<0.7')       n=    140 TP=     1 FP=    4 rate=0.800 gain=+3
+[   357s]     (1, 'p<0.8')       n=    177 TP=     1 FP=    1 rate=0.500 gain=-0
+[   357s]     (1, 'p<0.9')       n=    280 TP=     6 FP=    2 rate=0.250 gain=-4
+[   357s]     (1, 'p<0.95')      n=    156 TP=     4 FP=    1 rate=0.200 gain=-3
+[   357s]     (1, 'p>=0.95')     n=     59 TP=     5 FP=    0 rate=0.000 gain=-5
+[   357s]     (1, 'relink(NaN)') n=   1054 TP=    16 FP=   15 rate=0.484 gain=-2
+[   359s] --- edge buckets by csize: bucket n TP FP FPrate(FP/(TP+FP)) cut_gain(FP*0.9-TP)
+[   359s]     c<10               n=  38636 TP=   254 FP=   53 rate=0.173 gain=-206
+[   359s]     c<15               n= 113530 TP=  1270 FP=  156 rate=0.109 gain=-1130
+[   359s]     c<25               n= 262911 TP=  3853 FP=  384 rate=0.091 gain=-3507
+[   359s]     c<50               n= 591273 TP= 12217 FP=  863 rate=0.066 gain=-11440
+[   359s]     c<8                n=  19605 TP=   104 FP=   28 rate=0.212 gain=-79
+[   359s]     c>=50              n= 605546 TP= 22397 FP=  910 rate=0.039 gain=-21578
+[   394s] cut NaN d>8                        proxy=0.91508 d=+0.00023 CI[+0.00002,+0.00056] P>0=1.00 +21/-0 | 44b6 +0.00008 (P1.00) 6bba +0.00026 (P1.00) | div 10/23/44 Tpred=1690902
+[   430s] cut NaN d>10                       proxy=0.91485 d=+0.00000 CI[+0.00000,+0.00000] P>0=0.86 +2/-0 | 44b6 +0.00000 (P0.66) 6bba +0.00000 (P0.61) | div 10/24/44 Tpred=1691036
+[   466s] cut NaN d>12                       proxy=0.91485 d=+0.00000 CI[+0.00000,+0.00000] P>0=0.00 +0/-0 | 44b6 +0.00000 (P0.00) 6bba +0.00000 (P0.00) | div 10/24/44 Tpred=1691048
+[   501s] cut p<0.3                          proxy=0.91361 d=-0.00124 CI[-0.00511,+0.00233] P>0=0.31 +39/-33 | 44b6 -0.00532 (P0.10) 6bba +0.00027 (P0.55) | div 9/20/45 Tpred=1587589
+[   537s] cut p<0.5                          proxy=0.91094 d=-0.00391 CI[-0.00847,+0.00026] P>0=0.06 +32/-40 | 44b6 -0.00649 (P0.09) 6bba -0.00293 (P0.17) | div 9/20/45 Tpred=1561768
+[   573s] cut any d>10                       proxy=0.91435 d=-0.00050 CI[-0.00099,-0.00004] P>0=0.03 +53/-16 | 44b6 -0.00014 (P0.45) 6bba -0.00063 (P0.02) | div 10/24/44 Tpred=1687695
+[   609s] cut any d>12                       proxy=0.91479 d=-0.00007 CI[-0.00029,+0.00009] P>0=0.35 +21/-2 | 44b6 +0.00009 (P1.00) 6bba -0.00012 (P0.29) | div 10/24/44 Tpred=1690664
+[   645s] cut last-edge p<0.5                proxy=0.91628 d=+0.00143 CI[+0.00076,+0.00211] P>0=1.00 +64/-8 | 44b6 +0.00081 (P0.86) 6bba +0.00165 (P1.00) | div 10/24/44 Tpred=1679699
+[   680s] cut first-edge p<0.5               proxy=0.91555 d=+0.00070 CI[+0.00015,+0.00137] P>0=0.98 +61/-11 | 44b6 +0.00044 (P0.88) 6bba +0.00079 (P0.96) | div 10/24/44 Tpred=1682626
+[   716s] cut NaN last-edge                  proxy=0.91490 d=+0.00005 CI[+0.00001,+0.00011] P>0=1.00 +46/-0 | 44b6 +0.00009 (P1.00) 6bba +0.00004 (P1.00) | div 10/24/44 Tpred=1690750
+[   717s] --- GT density map 44b6 by z_rel: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   717s]     [   0.00,   0.10) pred=0.0976 gt=0.0438 ratio=0.45 n_pred=96151
+[   717s]     [   0.10,   0.20) pred=0.0754 gt=0.0532 ratio=0.71 n_pred=74281
+[   717s]     [   0.20,   0.30) pred=0.0872 gt=0.0745 ratio=0.85 n_pred=85888
+[   717s]     [   0.30,   0.40) pred=0.1135 gt=0.1160 ratio=1.02 n_pred=111846
+[   717s]     [   0.40,   0.50) pred=0.1063 gt=0.1673 ratio=1.57 n_pred=104736
+[   717s]     [   0.50,   0.60) pred=0.1088 gt=0.1974 ratio=1.81 n_pred=107158
+[   717s]     [   0.60,   0.70) pred=0.1172 gt=0.1289 ratio=1.10 n_pred=115484
+[   717s]     [   0.70,   0.80) pred=0.0986 gt=0.0771 ratio=0.78 n_pred=97087
+[   717s]     [   0.80,   0.90) pred=0.0820 gt=0.0677 ratio=0.83 n_pred=80750
+[   717s]     [   0.90,   1.00) pred=0.1134 gt=0.0740 ratio=0.65 n_pred=111664
+[   717s] --- GT density map 44b6 by t_rel: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   717s]     [   0.00,   0.10) pred=0.0904 gt=0.0884 ratio=0.98 n_pred=89097
+[   717s]     [   0.10,   0.20) pred=0.1012 gt=0.0944 ratio=0.93 n_pred=99695
+[   717s]     [   0.20,   0.30) pred=0.1035 gt=0.1041 ratio=1.01 n_pred=101973
+[   717s]     [   0.30,   0.40) pred=0.1060 gt=0.1113 ratio=1.05 n_pred=104372
+[   717s]     [   0.40,   0.50) pred=0.1053 gt=0.1104 ratio=1.05 n_pred=103733
+[   717s]     [   0.50,   0.60) pred=0.1041 gt=0.1064 ratio=1.02 n_pred=102531
+[   717s]     [   0.60,   0.70) pred=0.1033 gt=0.1043 ratio=1.01 n_pred=101782
+[   717s]     [   0.70,   0.80) pred=0.1018 gt=0.1026 ratio=1.01 n_pred=100278
+[   717s]     [   0.80,   0.90) pred=0.0975 gt=0.0929 ratio=0.95 n_pred=96044
+[   717s]     [   0.90,   1.00) pred=0.0868 gt=0.0851 ratio=0.98 n_pred=85540
+[   717s] --- GT density map 44b6 by xy_margin_vox: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   717s]     [   0.00,   4.00) pred=0.0589 gt=0.0323 ratio=0.55 n_pred=58025
+[   717s]     [   4.00,   8.00) pred=0.0548 gt=0.0251 ratio=0.46 n_pred=53940
+[   717s]     [   8.00,  16.00) pred=0.0895 gt=0.0543 ratio=0.61 n_pred=88181
+[   717s]     [  16.00,  32.00) pred=0.1501 gt=0.1026 ratio=0.68 n_pred=147842
+[   717s]     [  32.00,  64.00) pred=0.3093 gt=0.2855 ratio=0.92 n_pred=304659
+[   717s]     [  64.00, 128.00) pred=0.3374 gt=0.5003 ratio=1.48 n_pred=332398
+[   717s]     [ 128.00,10000.00) pred=0.0000 gt=0.0000 ratio=0.00 n_pred=0
+[   717s] --- GT density map 6bba by z_rel: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   717s]     [   0.00,   0.10) pred=0.1297 gt=0.1065 ratio=0.82 n_pred=91550
+[   717s]     [   0.10,   0.20) pred=0.0849 gt=0.1044 ratio=1.23 n_pred=59907
+[   717s]     [   0.20,   0.30) pred=0.0944 gt=0.1023 ratio=1.08 n_pred=66674
+[   717s]     [   0.30,   0.40) pred=0.1097 gt=0.1226 ratio=1.12 n_pred=77456
+[   717s]     [   0.40,   0.50) pred=0.0999 gt=0.1126 ratio=1.13 n_pred=70537
+[   717s]     [   0.50,   0.60) pred=0.0989 gt=0.0957 ratio=0.97 n_pred=69840
+[   717s]     [   0.60,   0.70) pred=0.1095 gt=0.1012 ratio=0.92 n_pred=77336
+[   717s]     [   0.70,   0.80) pred=0.0888 gt=0.0817 ratio=0.92 n_pred=62698
+[   717s]     [   0.80,   0.90) pred=0.0757 gt=0.0713 ratio=0.94 n_pred=53438
+[   717s]     [   0.90,   1.00) pred=0.1085 gt=0.1016 ratio=0.94 n_pred=76567
+[   717s] --- GT density map 6bba by t_rel: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   717s]     [   0.00,   0.10) pred=0.1033 gt=0.0912 ratio=0.88 n_pred=72924
+[   717s]     [   0.10,   0.20) pred=0.1097 gt=0.0971 ratio=0.89 n_pred=77434
+[   717s]     [   0.20,   0.30) pred=0.1059 gt=0.0985 ratio=0.93 n_pred=74776
+[   717s]     [   0.30,   0.40) pred=0.1045 gt=0.1023 ratio=0.98 n_pred=73768
+[   717s]     [   0.40,   0.50) pred=0.1048 gt=0.1035 ratio=0.99 n_pred=73970
+[   717s]     [   0.50,   0.60) pred=0.1034 gt=0.1069 ratio=1.03 n_pred=72991
+[   717s]     [   0.60,   0.70) pred=0.1005 gt=0.1047 ratio=1.04 n_pred=70979
+[   717s]     [   0.70,   0.80) pred=0.0951 gt=0.1024 ratio=1.08 n_pred=67153
+[   717s]     [   0.80,   0.90) pred=0.0921 gt=0.1023 ratio=1.11 n_pred=65034
+[   717s]     [   0.90,   1.00) pred=0.0807 gt=0.0911 ratio=1.13 n_pred=56974
+[   717s] --- GT density map 6bba by xy_margin_vox: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   717s]     [   0.00,   4.00) pred=0.0682 gt=0.0248 ratio=0.36 n_pred=48117
+[   717s]     [   4.00,   8.00) pred=0.0658 gt=0.0645 ratio=0.98 n_pred=46449
+[   717s]     [   8.00,  16.00) pred=0.1086 gt=0.1292 ratio=1.19 n_pred=76660
+[   717s]     [  16.00,  32.00) pred=0.1786 gt=0.1941 ratio=1.09 n_pred=126063
+[   717s]     [  32.00,  64.00) pred=0.3009 gt=0.2937 ratio=0.98 n_pred=212428
+[   717s]     [  64.00, 128.00) pred=0.2780 gt=0.2938 ratio=1.06 n_pred=196286
+[   717s]     [ 128.00,10000.00) pred=0.0000 gt=0.0000 ratio=0.00 n_pred=0
+[   719s] --- GT density map all by z_rel: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   719s]     [   0.00,   0.10) pred=0.1110 gt=0.0903 ratio=0.81 n_pred=187701
+[   719s]     [   0.10,   0.20) pred=0.0794 gt=0.0912 ratio=1.15 n_pred=134188
+[   719s]     [   0.20,   0.30) pred=0.0902 gt=0.0952 ratio=1.05 n_pred=152562
+[   719s]     [   0.30,   0.40) pred=0.1119 gt=0.1209 ratio=1.08 n_pred=189302
+[   719s]     [   0.40,   0.50) pred=0.1036 gt=0.1267 ratio=1.22 n_pred=175273
+[   719s]     [   0.50,   0.60) pred=0.1047 gt=0.1218 ratio=1.16 n_pred=176998
+[   719s]     [   0.60,   0.70) pred=0.1140 gt=0.1083 ratio=0.95 n_pred=192820
+[   719s]     [   0.70,   0.80) pred=0.0945 gt=0.0805 ratio=0.85 n_pred=159785
+[   719s]     [   0.80,   0.90) pred=0.0794 gt=0.0704 ratio=0.89 n_pred=134188
+[   719s]     [   0.90,   1.00) pred=0.1113 gt=0.0945 ratio=0.85 n_pred=188231
+[   719s] --- GT density map all by t_rel: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   719s]     [   0.00,   0.10) pred=0.0958 gt=0.0905 ratio=0.94 n_pred=162021
+[   719s]     [   0.10,   0.20) pred=0.1047 gt=0.0964 ratio=0.92 n_pred=177129
+[   719s]     [   0.20,   0.30) pred=0.1045 gt=0.1000 ratio=0.96 n_pred=176749
+[   719s]     [   0.30,   0.40) pred=0.1053 gt=0.1046 ratio=0.99 n_pred=178140
+[   719s]     [   0.40,   0.50) pred=0.1051 gt=0.1053 ratio=1.00 n_pred=177703
+[   719s]     [   0.50,   0.60) pred=0.1038 gt=0.1067 ratio=1.03 n_pred=175522
+[   719s]     [   0.60,   0.70) pred=0.1022 gt=0.1046 ratio=1.02 n_pred=172761
+[   719s]     [   0.70,   0.80) pred=0.0990 gt=0.1024 ratio=1.03 n_pred=167431
+[   719s]     [   0.80,   0.90) pred=0.0953 gt=0.0999 ratio=1.05 n_pred=161078
+[   719s]     [   0.90,   1.00) pred=0.0843 gt=0.0896 ratio=1.06 n_pred=142514
+[   719s] --- GT density map all by xy_margin_vox: bin | pred share | GT share | ratio GT/pred | pred nodes
+[   719s]     [   0.00,   4.00) pred=0.0628 gt=0.0267 ratio=0.43 n_pred=106142
+[   719s]     [   4.00,   8.00) pred=0.0594 gt=0.0543 ratio=0.92 n_pred=100389
+[   719s]     [   8.00,  16.00) pred=0.0975 gt=0.1099 ratio=1.13 n_pred=164841
+[   719s]     [  16.00,  32.00) pred=0.1620 gt=0.1705 ratio=1.05 n_pred=273905
+[   719s]     [  32.00,  64.00) pred=0.3058 gt=0.2916 ratio=0.95 n_pred=517087
+[   719s]     [  64.00, 128.00) pred=0.3126 gt=0.3469 ratio=1.11 n_pred=528684
+[   719s]     [ 128.00,10000.00) pred=0.0000 gt=0.0000 ratio=0.00 n_pred=0
+[   739s] L7+prob0.5<8                       proxy=0.91518 d=+0.00033 CI[+0.00002,+0.00087] P>0=1.00 +37/-0 | 44b6 +0.00003 (P1.00) 6bba +0.00043 (P1.00) | div 10/24/44 Tpred=1690117
+[   758s] L7+prob0.7<8                       proxy=0.91610 d=+0.00125 CI[+0.00046,+0.00212] P>0=1.00 +71/-1 | 44b6 +0.00062 (P1.00) 6bba +0.00147 (P1.00) | div 10/24/44 Tpred=1683957
+[   778s] L7+prob0.8<8                       proxy=0.91601 d=+0.00115 CI[+0.00030,+0.00204] P>0=0.99 +68/-4 | 44b6 +0.00014 (P0.63) 6bba +0.00151 (P0.99) | div 10/24/44 Tpred=1677608
+[   798s] L7+prob0.85<8                      proxy=0.91592 d=+0.00107 CI[+0.00019,+0.00198] P>0=0.97 +66/-6 | 44b6 -0.00074 (P0.27) 6bba +0.00170 (P1.00) | div 10/24/44 Tpred=1673968
+[   818s] L7+prob0.9<8                       proxy=0.91563 d=+0.00078 CI[-0.00019,+0.00173] P>0=0.91 +62/-10 | 44b6 -0.00062 (P0.30) 6bba +0.00128 (P0.98) | div 10/24/44 Tpred=1670904
+[   838s] L7+prob0.5<9                       proxy=0.91518 d=+0.00032 CI[-0.00021,+0.00093] P>0=0.82 +51/-1 | 44b6 +0.00004 (P1.00) 6bba +0.00042 (P0.80) | div 10/24/44 Tpred=1689541
+[   858s] L7+prob0.7<9                       proxy=0.91622 d=+0.00137 CI[+0.00036,+0.00243] P>0=0.99 +67/-5 | 44b6 +0.00037 (P0.67) 6bba +0.00172 (P0.99) | div 10/24/44 Tpred=1677413
+[   877s] L7+prob0.8<9                       proxy=0.91614 d=+0.00129 CI[+0.00019,+0.00243] P>0=0.97 +62/-10 | 44b6 +0.00010 (P0.58) 6bba +0.00171 (P0.97) | div 10/24/44 Tpred=1664728
+[   897s] L7+prob0.85<9                      proxy=0.91519 d=+0.00034 CI[-0.00114,+0.00158] P>0=0.64 +57/-15 | 44b6 -0.00219 (P0.12) 6bba +0.00123 (P0.92) | div 10/24/44 Tpred=1657432
+[   916s] L7+prob0.9<9                       proxy=0.91480 d=-0.00005 CI[-0.00162,+0.00131] P>0=0.46 +54/-18 | 44b6 -0.00222 (P0.10) 6bba +0.00071 (P0.76) | div 10/24/44 Tpred=1651512
+[   936s] L7+prob0.5<10                      proxy=0.91527 d=+0.00042 CI[-0.00019,+0.00116] P>0=0.84 +53/-1 | 44b6 +0.00005 (P1.00) 6bba +0.00055 (P0.82) | div 10/24/44 Tpred=1689190
+[   956s] L7+prob0.7<10                      proxy=0.91639 d=+0.00154 CI[+0.00049,+0.00261] P>0=1.00 +63/-9 | 44b6 -0.00010 (P0.51) 6bba +0.00212 (P1.00) | div 10/24/44 Tpred=1671104
+[   976s] L7+prob0.8<10                      proxy=0.91627 d=+0.00142 CI[+0.00013,+0.00265] P>0=0.96 +60/-12 | 44b6 -0.00101 (P0.29) 6bba +0.00228 (P1.00) | div 10/24/44 Tpred=1651480
+[   995s] L7+prob0.85<10                     proxy=0.91538 d=+0.00053 CI[-0.00124,+0.00204] P>0=0.69 +52/-20 | 44b6 -0.00316 (P0.07) 6bba +0.00183 (P0.98) | div 10/24/44 Tpred=1640377
+[  1015s] L7+prob0.9<10                      proxy=0.91492 d=+0.00007 CI[-0.00189,+0.00174] P>0=0.52 +51/-21 | 44b6 -0.00384 (P0.03) 6bba +0.00145 (P0.89) | div 10/24/44 Tpred=1631478
+[  1035s] L7+prob0.5<11                      proxy=0.91543 d=+0.00058 CI[-0.00008,+0.00137] P>0=0.92 +54/-1 | 44b6 +0.00006 (P1.00) 6bba +0.00076 (P0.90) | div 10/24/44 Tpred=1688920
+[  1054s] L7+prob0.7<11                      proxy=0.91655 d=+0.00169 CI[+0.00051,+0.00295] P>0=0.99 +62/-10 | 44b6 -0.00000 (P0.53) 6bba +0.00229 (P1.00) | div 10/24/44 Tpred=1665104
+[  1074s] L7+prob0.8<11                      proxy=0.91540 d=+0.00055 CI[-0.00135,+0.00227] P>0=0.69 +54/-18 | 44b6 -0.00050 (P0.40) 6bba +0.00091 (P0.77) | div 10/24/44 Tpred=1637920
+[  1094s] L7+prob0.85<11                     proxy=0.91434 d=-0.00051 CI[-0.00251,+0.00123] P>0=0.31 +48/-24 | 44b6 -0.00251 (P0.11) 6bba +0.00019 (P0.58) | div 10/24/44 Tpred=1623137
+[  1114s] L7+prob0.9<11                      proxy=0.91357 d=-0.00129 CI[-0.00341,+0.00062] P>0=0.13 +45/-27 | 44b6 -0.00358 (P0.04) 6bba -0.00048 (P0.39) | div 10/24/44 Tpred=1610948
+[  1135s] L7+prob0.5<12                      proxy=0.91548 d=+0.00063 CI[-0.00005,+0.00143] P>0=0.93 +55/-1 | 44b6 +0.00007 (P1.00) 6bba +0.00083 (P0.92) | div 10/24/44 Tpred=1688667
+[  1155s] L7+prob0.7<12                      proxy=0.91633 d=+0.00148 CI[+0.00020,+0.00271] P>0=0.98 +61/-11 | 44b6 +0.00040 (P0.66) 6bba +0.00185 (P0.98) | div 10/24/44 Tpred=1658933
+[  1174s] L7+prob0.8<12                      proxy=0.91429 d=-0.00056 CI[-0.00271,+0.00131] P>0=0.34 +49/-23 | 44b6 +0.00013 (P0.55) 6bba -0.00082 (P0.31) | div 10/24/44 Tpred=1624412
+[  1193s] L7+prob0.85<12                     proxy=0.91225 d=-0.00260 CI[-0.00501,-0.00053] P>0=0.02 +41/-31 | 44b6 -0.00423 (P0.02) 6bba -0.00204 (P0.14) | div 10/24/44 Tpred=1605163
+[  1213s] L7+prob0.9<12                      proxy=0.91066 d=-0.00419 CI[-0.00681,-0.00195] P>0=0.00 +35/-37 | 44b6 -0.00648 (P0.00) 6bba -0.00339 (P0.04) | div 10/24/44 Tpred=1589553
+[  1213s] best 44b6: S8P0.7:+0.00062(P1.00), S12P0.7:+0.00040(P0.66), S9P0.7:+0.00037(P0.69), S8P0.8:+0.00014(P0.65), S12P0.8:+0.00013(P0.57)
+[  1214s] best 6bba: S11P0.7:+0.00229(P1.00), S10P0.8:+0.00228(P1.00), S10P0.7:+0.00212(P1.00), S12P0.7:+0.00185(P0.98), S10P0.85:+0.00183(P0.99)
+[  1215s] embryo-specific (8, 0.7),(11, 0.7) proxy=0.91671 d=+0.00186 CI[+0.00076,+0.00304] P>0=1.00 +66/-6 | 44b6 +0.00062 (P1.00) 6bba +0.00229 (P1.00) | div 10/24/44 Tpred=1675678
+[  1285s] OFFICIAL L7: score=0.91256 adj=0.90203 divJ=0.1053 div 8/22/46 | cell8 proxy=0.91485 | 71s
+[  1285s]    44b6: score=0.91896 adj=0.91340 div 1/8/9
+[  1285s]    6bba: score=0.91005 adj=0.89798 div 7/14/37
+[  1285s] cell8-official adj per stem: mean=0.00000 max|d|=0.00000
+[  1308s] forks total=1053 TP=8 FP=22 | classes: Counter({'evaluable': 22})
+[  1308s] --- forks by pfx: bucket n TP FP
+[  1308s]     44b6                   n=  707 TP=  1 FP=  8
+[  1308s]     6bba                   n=  346 TP=  7 FP= 14
+[  1308s] --- forks by nan_any: bucket n TP FP
+[  1308s]     1                      n= 1053 TP=  8 FP= 22
+[  1308s] --- forks by pmin: bucket n TP FP
+[  1308s]     <0.3                   n=  232 TP=  1 FP=  4
+[  1308s]     <0.5                   n=    8 TP=  0 FP=  0
+[  1308s]     <0.7                   n=  140 TP=  1 FP=  4
+[  1308s]     <0.9                   n=  457 TP=  4 FP=  6
+[  1308s]     >=0.9                  n=  215 TP=  2 FP=  8
+[  1308s]     nan-only               n=    1 TP=  0 FP=  0
+[  1308s] --- forks by down_min: bucket n TP FP
+[  1308s]     <10                    n=  214 TP=  0 FP=  5
+[  1308s]     <2                     n=    1 TP=  0 FP=  0
+[  1308s]     <3                     n=   14 TP=  0 FP=  0
+[  1308s]     <4                     n=   19 TP=  0 FP=  0
+[  1308s]     <6                     n=  134 TP=  0 FP=  3
+[  1308s]     >=10                   n=  671 TP=  8 FP= 14
+[  1308s] --- forks by up: bucket n TP FP
+[  1308s]     <10                    n=  184 TP=  1 FP=  5
+[  1308s]     <2                     n=   23 TP=  0 FP=  0
+[  1308s]     <3                     n=   43 TP=  0 FP=  0
+[  1308s]     <5                     n=   83 TP=  1 FP=  0
+[  1308s]     >=10                   n=  720 TP=  6 FP= 17
+[  1308s] --- forks by sister um: bucket n TP FP
+[  1308s]     <10                    n=  242 TP=  2 FP=  6
+[  1308s]     <12                    n=  163 TP=  1 FP=  3
+[  1308s]     <4                     n=  133 TP=  0 FP=  3
+[  1308s]     <6                     n=  228 TP=  1 FP=  5
+[  1308s]     <8                     n=  224 TP=  3 FP=  4
+[  1308s]     >=12                   n=   63 TP=  1 FP=  1
+[  1308s] --- forks by steal_min um: bucket n TP FP
+[  1308s]     <4                     n=    1 TP=  0 FP=  0
+[  1308s]     <8                     n=   10 TP=  0 FP=  0
+[  1308s]     >=8                    n= 1042 TP=  8 FP= 22
+[  1308s] --- forks by diverge2: bucket n TP FP
+[  1308s]     <4                     n=  606 TP=  3 FP= 13
+[  1308s]     >=4                    n=  447 TP=  5 FP=  9
+[  1308s] --- forks by t_rel: bucket n TP FP
+[  1308s]     <10                    n=  125 TP=  0 FP=  1
+[  1308s]     <30                    n=  254 TP=  2 FP=  2
+[  1308s]     <60                    n=  339 TP=  3 FP= 13
+[  1308s]     <90                    n=  267 TP=  3 FP=  4
+[  1308s]     >=90                   n=   68 TP=  0 FP=  2
+[  1395s] [div] drop ALL forks (keep longer branch) proxy=0.90201 d=-0.01284 CI[-0.01785,-0.00757] P>0=0.00 +49/-14 | 44b6 -0.01553 (P0.04) 6bba -0.01198 (P0.00) | div 0/0/54 Tpred=1689980
+[  1395s]       OFFICIAL drop ALL forks (keep longer branch): score=0.90201 (-0.01055) adj=0.90201 (-0.00002) div 0/0/54 divJ=0.0000 (-0.1053) | 79s
+[  1480s] [div] drop NaN child (safe-div/relink born) proxy=0.90201 d=-0.01284 CI[-0.01788,-0.00753] P>0=0.00 +41/-15 | 44b6 -0.01572 (P0.04) 6bba -0.01192 (P0.00) | div 0/0/54 Tpred=1690309
+[  1480s]       OFFICIAL drop NaN child (safe-div/relink born): score=0.90201 (-0.01055) adj=0.90201 (-0.00002) div 0/0/54 divJ=0.0000 (-0.1053) | 85s
+[  1563s] [div] drop short branch down<=2 & pmin<0.8 proxy=0.91485 d=+0.00000 CI[+0.00000,+0.00000] P>0=1.00 +9/-0 | 44b6 +0.00000 (P1.00) 6bba +0.00000 (P0.98) | div 10/24/44 Tpred=1691028
+[  1563s]       OFFICIAL drop short branch down<=2 & pmin<0.8: score=0.91256 (+0.00000) adj=0.90203 (+0.00000) div 8/22/46 divJ=0.1053 (+0.0000) | 84s
+[  1645s] [div] drop short branch down<=3    proxy=0.91485 d=+0.00000 CI[+0.00000,+0.00001] P>0=1.00 +27/-0 | 44b6 +0.00000 (P1.00) 6bba +0.00000 (P1.00) | div 10/24/44 Tpred=1690963
+[  1645s]       OFFICIAL drop short branch down<=3: score=0.91256 (+0.00000) adj=0.90203 (+0.00000) div 8/22/46 divJ=0.1053 (+0.0000) | 82s
+[  1727s] [div] steal repair r<=4um          proxy=0.91485 d=+0.00000 CI[+0.00000,+0.00000] P>0=0.00 +0/-0 | 44b6 +0.00000 (P0.00) 6bba +0.00000 (P0.00) | div 10/24/44 Tpred=1691048
+[  1727s]       OFFICIAL steal repair r<=4um: score=0.91256 (+0.00000) adj=0.90203 (+0.00000) div 8/22/46 divJ=0.1053 (+0.0000) | 82s
+[  1809s] [div] steal repair r<=6um          proxy=0.91485 d=+0.00000 CI[+0.00000,+0.00000] P>0=0.00 +0/-0 | 44b6 +0.00000 (P0.00) 6bba +0.00000 (P0.00) | div 10/24/44 Tpred=1691048
+[  1809s]       OFFICIAL steal repair r<=6um: score=0.91256 (+0.00000) adj=0.90203 (+0.00000) div 8/22/46 divJ=0.1053 (+0.0000) | 83s
+[  1891s] [div] drop stolen child r<=4um     proxy=0.91485 d=+0.00000 CI[+0.00000,+0.00000] P>0=0.00 +0/-0 | 44b6 +0.00000 (P0.00) 6bba +0.00000 (P0.00) | div 10/24/44 Tpred=1691048
+[  1891s]       OFFICIAL drop stolen child r<=4um: score=0.91256 (+0.00000) adj=0.90203 (+0.00000) div 8/22/46 divJ=0.1053 (+0.0000) | 82s
+[  1974s] [div] drop fork if up<=2 (fresh parent) proxy=0.91486 d=+0.00000 CI[+0.00000,+0.00001] P>0=1.00 +14/-0 | 44b6 +0.00000 (P1.00) 6bba +0.00000 (P0.98) | div 10/24/44 Tpred=1690959
+[  1974s]       OFFICIAL drop fork if up<=2 (fresh parent): score=0.91256 (+0.00000) adj=0.90204 (+0.00000) div 8/22/46 divJ=0.1053 (+0.0000) | 83s
+[  2057s] [div] drop fork sister>=12um       proxy=0.91372 d=-0.00113 CI[-0.00359,+0.00045] P>0=0.37 +12/-1 | 44b6 +0.00000 (P1.00) 6bba -0.00152 (P0.35) | div 9/23/45 Tpred=1690972
+[  2057s]       OFFICIAL drop fork sister>=12um: score=0.91137 (-0.00119) adj=0.90203 (+0.00000) div 7/21/47 divJ=0.0933 (-0.0119) | 83s
+[  2058s] CPU LAB done
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 206780 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 918719 bytes to __results__.html
