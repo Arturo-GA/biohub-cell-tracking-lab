@@ -1,5 +1,7 @@
 # Biohub Cell Tracking Lab
 
+**E068 en curso (24–26 de septiembre):** nueva base pública x138 (0.953) reproducida; **0.954 público** con largo mínimo de pista 7 (submissions 56539929 y 56540269), puesto 177 dentro del bloque de 0.954. Un intento con validador y reescritura dentro del kernel dio 0.904 por el governor de tiempo de x138; desde entonces todo envío es de una sola pasada, con parámetros fijos y verificación previa del test visible. Laboratorio con el pipeline exacto sobre los **199 videos de train** y la métrica oficial: reglas de post-proceso confirmadas (+0.0022 dentro de muestra, positivas en ambos embriones) y relajación de la simetría de safe-division (+0.0035 en 72 videos con rastreo). Cinco envíos programados para el 27-09 a las 00:00 UTC. [Método, resultados y recomendaciones](docs/E068_X138_XR.es.md).
+
 **E067 enviado:** suavizado robusto de trayectorias completas; intensidad media elegida entre tres. Validación reutilizada: **0,922099 frente a 0,919878**, +9 TP y −21 FP; mejora agregada en ambos embriones. Submission **56475507**, versión 1, **PENDING**. CSV validado: 63.593 centros modificados y enlaces intactos. Mejor score público confirmado sigue en **0.946**. [Método, resultados y límites](docs/E067_TRAJECTORY_DENOISE.es.md).
 
 **E065 cerrado:** tres variantes de intercambio de enlaces empatan con el control y no cambian el test visible. Sin GPU ni submission. E066 terminó con +3 TP y sin FP adicionales en validación, pero tampoco cambia el test visible; sin GPU ni envío separado. [Protocolo](docs/E065_APPEARANCE_SWAP.es.md).
