@@ -1,0 +1,162 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+BIOHUB_PRESET: harmonic_v3_division_wide
+BIOHUB_SCORE_AXIS: public 0.939 base + holdout-selected post-process configuration
+Biohub learned UNet + node-transformer + ILP submission
+COMP_DIR: /kaggle/input/competitions/biohub-cell-tracking-during-development exists: True
+TEST_DIR: /kaggle/input/competitions/biohub-cell-tracking-during-development/test exists: True
+{
+  "adaptive_short_track_rescue": true,
+  "allow_artifact_fallback": false,
+  "allow_pip_install": false,
+  "deepcenter_checkpoint_default": "/kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt",
+  "deepcenter_expected_epoch": 2,
+  "deepcenter_gap_add_gate": true,
+  "deepcenter_gap_confirm_min_span_um": 8.5,
+  "deepcenter_gap_threshold": 0.25,
+  "deepcenter_safe_div_add_gate": true,
+  "deepcenter_safe_div_threshold": 0.25,
+  "det_threshold": 0.965,
+  "div_drop_to_single_if_bad": true,
+  "div_parent_max_um": 10.5,
+  "div_sister_max_um": 8.0,
+  "experiment_tag": "selected_101_dual_seed_near_balanced_center_confirmed_synthetic_gap",
+  "gap2_frame_frac_cap": 0.006,
+  "gap2_max_links_abs": 180,
+  "gap2_max_links_frac": 0.0045,
+  "gap2_max_step_um": 4.4,
+  "gap2_max_total_um": 10.2,
+  "gap2_require_context": true,
+  "gap_close_effective_max_gap": 1,
+  "gap_close_max_added_abs": 2000,
+  "gap_close_max_added_frac": 0.05,
+  "gap_close_max_gap": 2,
+  "gap_close_reuse_existing": true,
+  "gap_close_reuse_um": 3.2,
+  "gap_close_um": 5.0,
+  "gap_density_adaptive": true,
+  "gap_density_gain": 0.04,
+  "gap_density_max_step_delta_um": 0.125,
+  "gap_density_neighbors": 3,
+  "gap_density_reference_um": 6.5,
+  "gap_refine_max_shift_um": 3.2,
+  "gap_refine_synthetic": true,
+  "gap_refine_win_yx": 3,
+  "gap_refine_win_z": 1,
+  "ilp_appearance_weight": 0.0,
+  "ilp_disappearance_weight": 2.0,
+  "ilp_division_weight": 1.2,
+  "ilp_edge_weight": -1.0,
+  "method": "unet_transformer",
+  "motion_relink_learned_bonus": 1.0,
+  "motion_relink_max_frame_nodes": 2600,
+  "motion_relink_relaxed_um": 10.0,
+  "motion_relink_tight_um": 5.5,
+  "motion_relink_velocity_weight": 0.5,
+  "output_division_geometry_filter": false,
+  "output_edge_max_um": 14.0,
+  "output_enforce_next_frame": true,
+  "output_filter_short_tracks": true,
+  "output_gap2_recovery": true,
+  "output_gap_close": true,
+  "output_keep_division_components": true,
+  "output_linefit_smooth": true,
+  "output_linefit_weight": 0.8,
+  "output_linefit_window": 2,
+  "output_min_track_len": 6,
+  "output_motion_relink": true,
+  "output_prune_isolated": true,
+  "output_safe_divisions": true,
+  "output_single_child_repair": false,
+  "output_single_parent_repair": true,
+  "primary_artifact_manifest": "/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/ARTIFACT_MANIFEST.json",
+  "safe_div_existing_child_max_um": 10.0,
+  "safe_div_frame_frac_cap": 0.0076,
+  "safe_div_global_frac_cap": 0.00375,
+  "safe_div_max_um": 9.0,
+  "safe_div_sister_max_um": 14.0,
+  "short_track_rescue_max_mean_edge_dist_um": 3.0,
+  "short_track_rescue_max_nodes_abs": 120,
+  "short_track_rescue_max_nodes_frac": 0.012,
+  "short_track_rescue_min_len": 4,
+  "short_track_rescue_min_mean_edge_prob": 0.88,
+  "short_track_rescue_trigger_removed_frac": 0.1,
+  "slice": "",
+  "target_artifact_slug": "biohub-tracking-support-pack-50ep-v1",
+  "unet_batch_size": 4,
+  "use_deepcenter_add_only_gate": true,
+  "use_ilp": true,
+  "weights": "weights/unet_transformer/split_0/edge_predictor_best.pth"
+}
+ARTIFACTS: /kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1
+Has offline wheels: True
+Artifact name: biohub-tracking-support-pack-400ep-snapshot-v1
+Weight sha256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771
+Weight path: weights/unet_transformer/split_0/edge_predictor_best.pth
+Installing missing packages from offline package dirs: ['polars']
+Dependency resolver is disabled with --no-deps to avoid replacing Kaggle numpy/scipy in a live kernel.
+Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']
+Offline dependency install succeeded.
+Installing missing packages from offline package dirs: ['tracksdata', 'zarr', 'pyscipopt', 'geff', 'geff_spec', 'ilpy', 'imagecodecs', 'rustworkx', 'numcodecs', 'donfig', 'bidict']
+Dependency resolver is disabled with --no-deps to avoid replacing Kaggle numpy/scipy in a live kernel.
+Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']
+Offline dependency install succeeded.
+Required graph/Zarr/ILP packages import successfully.
+Inference repo: /kaggle/working/tracking_repo
+Weights: /kaggle/working/tracking_repo/weights/unet_transformer/split_0/edge_predictor_best.pth
+Support repo Python manifest SHA256: 978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029
+Primary materialized SHA256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771
+DeepCenter materialized SHA256: 8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0
+Secondary artifact: /kaggle/input/datasets/pilkwang/biohub-temporal-unet3d-seed314159-v1
+Secondary weight: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth
+Secondary SHA256: 9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f
+Secondary edge-logit weight: 0.15
+Runtime integrity receipt: /kaggle/working/bidirectional_production_runtime_integrity.json
+[   231s] graphs loaded: 72 Counter({'44b6': 36, '6bba': 36})
+[   253s] dict graphs built
+[   298s] SELF-CHECK official L7 adj vs GPU lab: 0 mismatches
+[   299s] L7                       score=0.91256 d=+0.00000 CI[+0.00000,+0.00000] P>0=0.00 +0/-0 | 44b6 +0.00000(P0.00) 6bba +0.00000(P0.00) | adj=0.90203 div 8/22/46 Tpred=1691048 stats={} | 45s
+[   348s] P8                       score=0.91381 d=+0.00125 CI[+0.00046,+0.00212] P>0=1.00 +71/-1 | 44b6 +0.00062(P1.00) 6bba +0.00147(P1.00) | adj=0.90328 div 8/22/46 Tpred=1683957 stats={'xr_prune_nodes_removed': 7091, 'xr_prune_edges_removed': 6078} | 49s
+[   397s] E                        score=0.91442 d=+0.00186 CI[+0.00076,+0.00304] P>0=1.00 +66/-6 | 44b6 +0.00062(P1.00) 6bba +0.00229(P1.00) | adj=0.90389 div 8/22/46 Tpred=1675678 stats={'xr_prune_nodes_removed': 15370, 'xr_prune_edges_removed': 13424} | 50s
+[   442s] nan8                     score=0.91276 d=+0.00021 CI[+0.00002,+0.00052] P>0=1.00 +21/-0 | 44b6 +0.00008(P1.00) 6bba +0.00027(P1.00) | adj=0.90210 div 8/21/46 Tpred=1690902 stats={'xr_cut_nan_edges': 121} | 44s
+[   496s] end5                     score=0.91412 d=+0.00156 CI[+0.00085,+0.00234] P>0=1.00 +57/-15 | 44b6 +0.00084(P0.84) 6bba +0.00182(P1.00) | adj=0.90359 div 8/22/46 Tpred=1671534 stats={'xr_cut_end_edges': 16363} | 55s
+[   551s] end5last                 score=0.91398 d=+0.00143 CI[+0.00076,+0.00211] P>0=1.00 +64/-8 | 44b6 +0.00081(P0.86) 6bba +0.00165(P1.00) | adj=0.90346 div 8/22/46 Tpred=1679699 stats={'xr_cut_end_edges': 9649} | 54s
+[   607s] end6last                 score=0.91449 d=+0.00193 CI[+0.00090,+0.00300] P>0=1.00 +53/-19 | 44b6 +0.00069(P0.75) 6bba +0.00237(P1.00) | adj=0.90397 div 8/22/46 Tpred=1673037 stats={'xr_cut_end_edges': 15636} | 56s
+[   681s] end5last-iter3           score=0.91396 d=+0.00141 CI[+0.00075,+0.00207] P>0=1.00 +63/-9 | 44b6 +0.00074(P0.83) 6bba +0.00164(P1.00) | adj=0.90344 div 8/22/46 Tpred=1679126 stats={'xr_cut_end_edges': 10128} | 74s
+[   756s] end5-iter3               score=0.91398 d=+0.00142 CI[+0.00082,+0.00203] P>0=1.00 +57/-15 | 44b6 +0.00078(P0.83) 6bba +0.00165(P1.00) | adj=0.90346 div 8/22/46 Tpred=1670506 stats={'xr_cut_end_edges': 17269} | 75s
+[   805s] end-6bba-only5           score=0.91390 d=+0.00134 CI[+0.00070,+0.00203] P>0=1.00 +27/-9 | 44b6 +0.00000(P0.00) 6bba +0.00182(P1.00) | adj=0.90338 div 8/22/46 Tpred=1681890 stats={'xr_cut_end_edges': 7600} | 49s
+[   859s] end-44b6:0.4,6bba:0.6    score=0.91430 d=+0.00174 CI[+0.00063,+0.00283] P>0=1.00 +51/-21 | 44b6 +0.00062(P0.78) 6bba +0.00213(P1.00) | adj=0.90377 div 8/22/46 Tpred=1667185 stats={'xr_cut_end_edges': 20328} | 54s
+[   915s] fork10                   score=0.91380 d=+0.00124 CI[+0.00048,+0.00222] P>0=1.00 +60/-3 | 44b6 +0.00029(P0.76) 6bba +0.00167(P1.00) | adj=0.90203 div 8/14/46 Tpred=1689980 stats={'xr_fork_drops': 382} | 56s
+[   973s] fork12                   score=0.91081 d=-0.00174 CI[-0.00545,+0.00112] P>0=0.19 +58/-5 | 44b6 +0.00029(P0.76) 6bba -0.00231(P0.20) | adj=0.90199 div 6/14/48 Tpred=1689980 stats={'xr_fork_drops': 455} | 58s
+[  1029s] fork15                   score=0.91011 d=-0.00245 CI[-0.00697,+0.00124] P>0=0.14 +57/-6 | 44b6 +0.00178(P0.97) 6bba -0.00379(P0.11) | adj=0.90205 div 5/8/49 Tpred=1689980 stats={'xr_fork_drops': 554} | 56s
+[  1085s] fork20                   score=0.91054 d=-0.00202 CI[-0.00664,+0.00181] P>0=0.20 +56/-7 | 44b6 +0.00225(P0.92) 6bba -0.00337(P0.16) | adj=0.90206 div 5/5/49 Tpred=1689980 stats={'xr_fork_drops': 669} | 56s
+[  1135s] fork10-6bba-only         score=0.91364 d=+0.00108 CI[+0.00041,+0.00202] P>0=1.00 +26/-2 | 44b6 +0.00000(P0.00) 6bba +0.00167(P1.00) | adj=0.90204 div 8/15/46 Tpred=1690702 stats={'xr_fork_drops': 135} | 50s
+[  1186s] L6+P8                    score=0.91395 d=+0.00140 CI[+0.00053,+0.00228] P>0=1.00 +19/-52 | 44b6 +0.00029(P0.69) 6bba +0.00179(P1.00) | adj=0.90343 div 8/22/46 Tpred=1698872 stats={'xr_prune_nodes_removed': 15059, 'xr_prune_edges_removed': 12718} | 51s
+[  1236s] L6+E                     score=0.91456 d=+0.00201 CI[+0.00087,+0.00309] P>0=1.00 +31/-41 | 44b6 +0.00029(P0.69) 6bba +0.00261(P1.00) | adj=0.90404 div 8/22/46 Tpred=1690593 stats={'xr_prune_nodes_removed': 23338, 'xr_prune_edges_removed': 20064} | 50s
+[  1296s] P8+fork10                score=0.91505 d=+0.00249 CI[+0.00131,+0.00388] P>0=1.00 +68/-4 | 44b6 +0.00092(P0.99) 6bba +0.00315(P1.00) | adj=0.90329 div 8/14/46 Tpred=1682833 stats={'xr_fork_drops': 382, 'xr_prune_nodes_removed': 7147, 'xr_prune_edges_removed': 6126} | 60s
+[  1357s] P8+fork12                score=0.91207 d=-0.00049 CI[-0.00432,+0.00258] P>0=0.45 +66/-6 | 44b6 +0.00092(P0.99) 6bba -0.00084(P0.42) | adj=0.90324 div 6/14/48 Tpred=1682833 stats={'xr_fork_drops': 455, 'xr_prune_nodes_removed': 7147, 'xr_prune_edges_removed': 6126} | 61s
+[  1417s] E+fork10                 score=0.91566 d=+0.00310 CI[+0.00161,+0.00465] P>0=1.00 +64/-8 | 44b6 +0.00092(P0.99) 6bba +0.00397(P1.00) | adj=0.90390 div 8/14/46 Tpred=1674528 stats={'xr_fork_drops': 382, 'xr_prune_nodes_removed': 15452, 'xr_prune_edges_removed': 13495} | 60s
+[  1478s] E+nan8+fork10            score=0.91570 d=+0.00315 CI[+0.00168,+0.00468] P>0=1.00 +64/-8 | 44b6 +0.00100(P1.00) 6bba +0.00400(P1.00) | adj=0.90394 div 8/14/46 Tpred=1674335 stats={'xr_cut_nan_edges': 121, 'xr_fork_drops': 362, 'xr_prune_nodes_removed': 15552, 'xr_prune_edges_removed': 13582} | 61s
+[  1549s] E+nan8+end5last+fork10   score=0.91622 d=+0.00366 CI[+0.00228,+0.00514] P>0=1.00 +61/-11 | 44b6 +0.00177(P0.97) 6bba +0.00442(P1.00) | adj=0.90446 div 8/14/46 Tpred=1666163 stats={'xr_cut_nan_edges': 121, 'xr_cut_end_edges': 9651, 'xr_fork_drops': 365, 'xr_prune_nodes_removed': 12345, 'xr_prune_edges_removed': 10783} | 71s
+[  1619s] E+nan8+end5+fork10       score=0.91654 d=+0.00399 CI[+0.00245,+0.00559] P>0=1.00 +58/-14 | 44b6 +0.00152(P0.94) 6bba +0.00495(P1.00) | adj=0.90478 div 8/14/46 Tpred=1660732 stats={'xr_cut_nan_edges': 121, 'xr_cut_end_edges': 16371, 'xr_fork_drops': 360, 'xr_prune_nodes_removed': 9618, 'xr_prune_edges_removed': 8415} | 71s
+[  1689s] E+nan8+end5+fork12       score=0.91347 d=+0.00091 CI[-0.00322,+0.00421] P>0=0.68 +56/-16 | 44b6 +0.00152(P0.94) 6bba +0.00085(P0.62) | adj=0.90465 div 6/14/48 Tpred=1660712 stats={'xr_cut_nan_edges': 121, 'xr_cut_end_edges': 16371, 'xr_fork_drops': 428, 'xr_prune_nodes_removed': 9638, 'xr_prune_edges_removed': 8433} | 70s
+[  1759s] E+nan8+end5+fork15       score=0.91277 d=+0.00021 CI[-0.00479,+0.00421] P>0=0.54 +55/-17 | 44b6 +0.00301(P0.98) 6bba -0.00062(P0.45) | adj=0.90470 div 5/8/49 Tpred=1660712 stats={'xr_cut_nan_edges': 121, 'xr_cut_end_edges': 16371, 'xr_fork_drops': 522, 'xr_prune_nodes_removed': 9638, 'xr_prune_edges_removed': 8433} | 70s
+[  1849s] E+nan8+end5last-iter3+fork10 score=0.91621 d=+0.00366 CI[+0.00230,+0.00512] P>0=1.00 +60/-12 | 44b6 +0.00169(P0.97) 6bba +0.00444(P1.00) | adj=0.90445 div 8/14/46 Tpred=1665731 stats={'xr_cut_nan_edges': 121, 'xr_cut_end_edges': 10131, 'xr_fork_drops': 365, 'xr_prune_nodes_removed': 12204, 'xr_prune_edges_removed': 10661} | 90s
+[  1919s] L6+E+nan8+end5last+fork10 score=0.91646 d=+0.00390 CI[+0.00236,+0.00550] P>0=1.00 +49/-23 | 44b6 +0.00138(P0.91) 6bba +0.00488(P1.00) | adj=0.90469 div 8/14/46 Tpred=1682526 stats={'xr_cut_nan_edges': 121, 'xr_cut_end_edges': 9651, 'xr_fork_drops': 365, 'xr_prune_nodes_removed': 18717, 'xr_prune_edges_removed': 16093} | 71s
+[  1990s] P8+nan8+end5last+fork10  score=0.91602 d=+0.00347 CI[+0.00214,+0.00490] P>0=1.00 +61/-11 | 44b6 +0.00177(P0.97) 6bba +0.00416(P1.00) | adj=0.90426 div 8/14/46 Tpred=1672726 stats={'xr_cut_nan_edges': 121, 'xr_cut_end_edges': 9651, 'xr_fork_drops': 365, 'xr_prune_nodes_removed': 5782, 'xr_prune_edges_removed': 4956} | 71s
+[  2061s] P8+nan8+end5+fork10      score=0.91598 d=+0.00342 CI[+0.00212,+0.00484] P>0=1.00 +57/-15 | 44b6 +0.00152(P0.94) 6bba +0.00419(P1.00) | adj=0.90422 div 8/14/46 Tpred=1666178 stats={'xr_cut_nan_edges': 121, 'xr_cut_end_edges': 16371, 'xr_fork_drops': 360, 'xr_prune_nodes_removed': 4172, 'xr_prune_edges_removed': 3576} | 70s
+[  2061s] CPU LAB 2 done
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 151040 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 698129 bytes to __results__.html
