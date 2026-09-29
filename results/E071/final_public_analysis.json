@@ -1,0 +1,77 @@
+{
+  "checked_at_utc": "2026-09-29T22:56:19.243088+00:00",
+  "stage": "FIVE_COMPLETE",
+  "reference_public_score": "0.955",
+  "best_public_candidate": "C3_D04_R094",
+  "best_submission_ref": 56656420,
+  "best_public_score": "0.957",
+  "completed": [
+    {
+      "candidate": "C3_D04_R094",
+      "ref": 56656420,
+      "status": "COMPLETE",
+      "public_score": "0.957",
+      "error_description": "",
+      "date": "2026-09-29 00:09:39.630000",
+      "description": "E071 final 20260929 C3_D04_R094 v1 sha=adc1ee7d616a24eb",
+      "displayed_delta_vs_c3": "0.002"
+    },
+    {
+      "candidate": "C3_R094",
+      "ref": 56656425,
+      "status": "COMPLETE",
+      "public_score": "0.956",
+      "error_description": "",
+      "date": "2026-09-29 00:09:43.377000",
+      "description": "E071 final 20260929 C3_R094 v1 sha=69b36627dfb89830",
+      "displayed_delta_vs_c3": "0.001"
+    },
+    {
+      "candidate": "C3_D04",
+      "ref": 56656488,
+      "status": "COMPLETE",
+      "public_score": "0.956",
+      "error_description": "",
+      "date": "2026-09-29 00:11:02.527000",
+      "description": "E071 final 20260929 C3_D04 v1 sha=3723d7916ec6524a",
+      "displayed_delta_vs_c3": "0.001"
+    },
+    {
+      "candidate": "C3_D08_R094",
+      "ref": 56656490,
+      "status": "COMPLETE",
+      "public_score": "0.956",
+      "error_description": "",
+      "date": "2026-09-29 00:11:07.290000",
+      "description": "E071 final 20260929 C3_D08_R094 v1 sha=06649c48e9686a7b",
+      "displayed_delta_vs_c3": "0.001"
+    },
+    {
+      "candidate": "C3_D04_R092",
+      "ref": 56656491,
+      "status": "COMPLETE",
+      "public_score": "0.956",
+      "error_description": "",
+      "date": "2026-09-29 00:11:11.990000",
+      "description": "E071 final 20260929 C3_D04_R092 v1 sha=f42aaa3729fb2e07",
+      "displayed_delta_vs_c3": "0.001"
+    }
+  ],
+  "pending": [],
+  "interpretation": {
+    "readmission_094_alone": "Displayed public improvement 0.955 to 0.956.",
+    "division_04_alone": "Displayed public improvement 0.955 to 0.956.",
+    "combined_04_094": "Best displayed result 0.957; one thousandth above either isolated change.",
+    "nearby_variants": "Division 0.8/readmission 0.94 and division 0.4/readmission 0.92 both display 0.956.",
+    "rounding_limit": "Three-decimal scores do not establish exact additivity, exact ties, statistical significance or which error component changed.",
+    "validation_limit": "The detector saw all 199 training videos. Local scores are in-sample diagnostics, and graph parity verifies implementation rather than generalization.",
+    "private_result": "Unknown. The five candidates are correlated variants, not independent validation samples."
+  },
+  "new_submissions_or_experiments_launched": false,
+  "reminder_enabled": false,
+  "verification": {
+    "unit_tests_passed": 32,
+    "notebooks_checked": 39,
+    "notebooks_with_saved_outputs": 0
+  }
+}

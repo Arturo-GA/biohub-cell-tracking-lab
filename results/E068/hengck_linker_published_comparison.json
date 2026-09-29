@@ -1,0 +1,181 @@
+{
+  "note": "Published donor float-coordinate GEFF vs our integer c3 replay. Same train videos, not independent validation or a same-detection comparison. Raw edge Jaccard, not full competition score.",
+  "rows": [
+    {
+      "video": "44b6_0113de3b",
+      "donor_raw_jaccard": 1.0,
+      "c3_raw_jaccard": 0.8679245283018868,
+      "delta": 0.13207547169811318,
+      "donor_counts": [
+        50,
+        0,
+        0
+      ],
+      "c3_counts": [
+        46,
+        3,
+        4
+      ]
+    },
+    {
+      "video": "44b6_0b24845f",
+      "donor_raw_jaccard": 0.7368421052631579,
+      "c3_raw_jaccard": 1.0,
+      "delta": -0.26315789473684215,
+      "donor_counts": [
+        42,
+        8,
+        7
+      ],
+      "c3_counts": [
+        49,
+        0,
+        0
+      ]
+    },
+    {
+      "video": "6bba_05b6850b",
+      "donor_raw_jaccard": 0.9732246798603027,
+      "c3_raw_jaccard": 0.9800703399765534,
+      "delta": -0.006845660116250651,
+      "donor_counts": [
+        836,
+        14,
+        9
+      ],
+      "c3_counts": [
+        836,
+        8,
+        9
+      ]
+    },
+    {
+      "video": "6bba_05db0fb1",
+      "donor_raw_jaccard": 0.8735177865612648,
+      "c3_raw_jaccard": 0.872257053291536,
+      "delta": 0.0012607332697287532,
+      "donor_counts": [
+        1105,
+        82,
+        78
+      ],
+      "c3_counts": [
+        1113,
+        93,
+        70
+      ]
+    },
+    {
+      "video": "44b6_33b596bf",
+      "donor_raw_jaccard": 0.96,
+      "c3_raw_jaccard": 1.0,
+      "delta": -0.040000000000000036,
+      "donor_counts": [
+        48,
+        1,
+        1
+      ],
+      "c3_counts": [
+        49,
+        0,
+        0
+      ]
+    },
+    {
+      "video": "44b6_81c256f0",
+      "donor_raw_jaccard": 1.0,
+      "c3_raw_jaccard": 1.0,
+      "delta": 0.0,
+      "donor_counts": [
+        197,
+        0,
+        0
+      ],
+      "c3_counts": [
+        197,
+        0,
+        0
+      ]
+    },
+    {
+      "video": "44b6_949adeb1",
+      "donor_raw_jaccard": 0.7066666666666667,
+      "c3_raw_jaccard": 0.8317535545023697,
+      "delta": -0.125086887835703,
+      "donor_counts": [
+        318,
+        72,
+        60
+      ],
+      "c3_counts": [
+        351,
+        44,
+        27
+      ]
+    },
+    {
+      "video": "44b6_8f5ab931",
+      "donor_raw_jaccard": 0.8378787878787879,
+      "c3_raw_jaccard": 0.8895800933125972,
+      "delta": -0.05170130543380935,
+      "donor_counts": [
+        553,
+        56,
+        51
+      ],
+      "c3_counts": [
+        572,
+        39,
+        32
+      ]
+    },
+    {
+      "video": "6bba_1ebfb80d",
+      "donor_raw_jaccard": 0.8276299112801014,
+      "c3_raw_jaccard": 0.8928571428571429,
+      "delta": -0.06522723157704147,
+      "donor_counts": [
+        653,
+        70,
+        66
+      ],
+      "c3_counts": [
+        675,
+        37,
+        44
+      ]
+    },
+    {
+      "video": "6bba_907271db",
+      "donor_raw_jaccard": 0.9742489270386266,
+      "c3_raw_jaccard": 0.9934924078091106,
+      "delta": -0.01924348077048399,
+      "donor_counts": [
+        908,
+        11,
+        13
+      ],
+      "c3_counts": [
+        916,
+        1,
+        5
+      ]
+    },
+    {
+      "video": "6bba_337b1b3a",
+      "donor_raw_jaccard": 0.965964343598055,
+      "c3_raw_jaccard": 0.9590361445783132,
+      "delta": 0.006928199019741843,
+      "donor_counts": [
+        1192,
+        21,
+        21
+      ],
+      "c3_counts": [
+        1194,
+        32,
+        19
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "experiment": "E070",
+  "target_ready": 5,
+  "reset_utc": "2026-09-28T00:00:00+00:00",
+  "runs": {
+    "lab_a": {
+      "kernel": "jarturo/biohub-e070-lab-a",
+      "version": 1,
+      "response": {
+        "ref": "/code/jarturo/biohub-e070-lab-a",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e070-lab-a",
+        "versionNumber": 1,
+        "kernelId": 136167041
+      },
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_lab_a",
+      "gpu": false,
+      "notebook_sha256": "b3b5a7344e58e59c6c16c18e4f808221d291f357295f4760b8e937a98ce87023",
+      "time_utc": "2026-09-27T20:32:55.533447+00:00",
+      "status": "COMPLETE",
+      "leaderboard_submitted": false,
+      "download_verified": true
+    },
+    "lab_b": {
+      "kernel": "jarturo/biohub-e070-lab-b",
+      "version": 1,
+      "response": {
+        "ref": "/code/jarturo/biohub-e070-lab-b",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e070-lab-b",
+        "versionNumber": 1,
+        "kernelId": 136167046
+      },
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_lab_b",
+      "gpu": false,
+      "notebook_sha256": "d7ef06724268c4c2f3a40dffd11bad41618337766f091269f33c0622a332b916",
+      "time_utc": "2026-09-27T20:33:00.698664+00:00",
+      "status": "COMPLETE",
+      "leaderboard_submitted": false,
+      "download_verified": true
+    },
+    "F8_prune12": {
+      "kernel": "jarturo/biohub-e070-f8-prune12",
+      "version": 1,
+      "response": {
+        "ref": "/code/jarturo/biohub-e070-f8-prune12",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-prune12",
+        "versionNumber": 1,
+        "kernelId": 136167051
+      },
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_f8_prune12",
+      "gpu": true,
+      "notebook_sha256": "68c9acdacc15ca0a65df8fea440a4e799a74a48160dc9409fb0fafb32f0dc474",
+      "time_utc": "2026-09-27T20:33:06.016872+00:00",
+      "status": "COMPLETE",
+      "leaderboard_submitted": true,
+      "download_verified": true,
+      "submission_ref": 56640207
+    },
+    "F8_joint": {
+      "kernel": "jarturo/biohub-e070-f8-joint",
+      "version": 1,
+      "response": {
+        "ref": "/code/jarturo/biohub-e070-f8-joint",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-joint",
+        "versionNumber": 1,
+        "kernelId": 136167061
+      },
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_f8_joint",
+      "gpu": true,
+      "notebook_sha256": "c1258426768f8c04c034097b7ad033d36d84de1e14787927cab8070751838639",
+      "time_utc": "2026-09-27T20:33:10.505069+00:00",
+      "status": "COMPLETE",
+      "leaderboard_submitted": true,
+      "download_verified": true,
+      "submission_ref": 56640230
+    },
+    "F8_p8": {
+      "kernel": "jarturo/biohub-e070-f8-p8",
+      "version": 1,
+      "response": {
+        "ref": "/code/jarturo/biohub-e070-f8-p8",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-p8",
+        "versionNumber": 1,
+        "kernelId": 136169248
+      },
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_f8_p8",
+      "gpu": true,
+      "notebook_sha256": "39a13ed25db607d4feb0ae960eb6dd92351b4357fbe68992b71b2aaaee042786",
+      "time_utc": "2026-09-27T20:58:27.076780+00:00",
+      "status": "COMPLETE",
+      "leaderboard_submitted": false,
+      "download_verified": true
+    },
+    "F8_prune12_joint": {
+      "kernel": "jarturo/biohub-e070-f8-prune12-joint",
+      "version": 1,
+      "response": {
+        "ref": "/code/jarturo/biohub-e070-f8-prune12-joint",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-prune12-joint",
+        "versionNumber": 1,
+        "kernelId": 136169252
+      },
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_f8_prune12_joint",
+      "gpu": true,
+      "notebook_sha256": "06366ac030718645e77e989e461b53fc04898d7a9230076c3dd7ea41592f8633",
+      "time_utc": "2026-09-27T20:58:31.769076+00:00",
+      "status": "COMPLETE",
+      "leaderboard_submitted": true,
+      "download_verified": true,
+      "submission_ref": 56640212
+    },
+    "F8_dc030": {
+      "kernel": "jarturo/biohub-e070-f8-dc030",
+      "version": 1,
+      "response": {
+        "ref": "/code/jarturo/biohub-e070-f8-dc030",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-dc030",
+        "versionNumber": 1,
+        "kernelId": 136171387
+      },
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_f8_dc030",
+      "gpu": true,
+      "notebook_sha256": "78c4f9c905c4c8e3f389328d7d1ca9e6f5fb4dee43a416824499b963522f0e9d",
+      "time_utc": "2026-09-27T21:26:09.268971+00:00",
+      "status": "COMPLETE",
+      "leaderboard_submitted": true,
+      "download_verified": true,
+      "submission_ref": 56622918
+    }
+  },
+  "ready_existing": [
+    "C3_fork8"
+  ],
+  "auto_submit": false,
+  "checked_at_utc": "2026-09-27T21:44:49.168430+00:00",
+  "prepared_reserves": [
+    "F8_p8"
+  ],
+  "next_gpu_pair_if_no_negative_evidence": [],
+  "heartbeat_id": "biohub-completar-cinco-submissions",
+  "last_compilation_check": "Both CPU labs passed 199-graph replay and 12 position parity checks; GPU models loaded on T4.",
+  "next_gpu_priority": [],
+  "selection_pending": false,
+  "next_gpu_decision": {
+    "source": "results/E070/live_metrics.json",
+    "candidate": "F8_dc030",
+    "status": "VERIFIED_AND_SELECTED",
+    "reason": "199-video score 0.9289089106, +0.0005130738 over fork8. Gains in both embryo groups, 16 fewer false divisions and one fewer true division. Evaluate final robustness and compare remaining variants before choosing the five.",
+    "do_not_stop_on_count_alone": "Download complete labs and consider this stronger candidate before closing the final queue, even if current GPU pair brings technical count to five.",
+    "final_lab_evidence": "DC030 remains highest local score; outlier and curvature both regress. P8 relegated to reserve due to weak incremental gain, 99 losses and negative top-five-removal sensitivity."
+  },
+  "technically_verified_count": 6,
+  "technically_verified_candidates": [
+    "C3_fork8",
+    "F8_dc030",
+    "F8_joint",
+    "F8_p8",
+    "F8_prune12_joint",
+    "F8_prune12"
+  ],
+  "selection_remaining": "E070 closed; all five below c3 0.955. New final-round preparation authorized separately.",
+  "proposed_final_selected": [
+    "F8_dc030",
+    "C3_fork8",
+    "F8_prune12_joint",
+    "F8_prune12",
+    "F8_joint"
+  ],
+  "proposed_reserve": [
+    "F8_p8"
+  ],
+  "completed_lab_analysis": "results/E070/ranking.json",
+  "final_selected": [
+    "F8_dc030",
+    "C3_fork8",
+    "F8_prune12_joint",
+    "F8_prune12",
+    "F8_joint"
+  ],
+  "final_ready_count": 5,
+  "selection_completed_at_utc": "2026-09-27T21:45:29.498446+00:00",
+  "queue_file": "results/E070/submission_queue.json",
+  "heartbeat_pause_required": false,
+  "heartbeat_status": "PAUSED",
+  "heartbeat_paused_at_utc": "2026-09-28T15:00:26.283106+00:00",
+  "strategy_file": "results/E070/submission_strategy.json",
+  "max_initial_submissions": 4,
+  "reserved_submission_slots": 1,
+  "scheduled_submit_allowlist": [
+    "C3_fork8",
+    "F8_dc030"
+  ],
+  "scheduled_submit_maximum": 2,
+  "scheduled_submit_utc": "2026-09-28T00:00:00+00:00",
+  "heartbeat_purpose": "Read-only monitoring of the three accepted fallback refs every 25 minutes; pause when all three are terminal. No duplicate or additional submissions.",
+  "submission_schedule_file": "results/E070/scheduled_first_two.json",
+  "leaderboard_submissions": {
+    "C3_fork8": {
+      "candidate": "C3_fork8",
+      "kernel": "jarturo/biohub-c3-fork8",
+      "version": 1,
+      "csv_sha256": "ff57683b494311df5cada31d0563e890fbab98cee7919e124d0eecd886b1223a",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-28T00:04:00.893131+00:00",
+      "message": "E070 reset 20260928 C3_fork8 v1 sha=ff57683b494311df",
+      "limits_before": {
+        "num_today": 0,
+        "num_allowed_now": 5,
+        "limited_by_total": false
+      },
+      "ref": 56622884,
+      "response_message": "",
+      "response_at_utc": "2026-09-28T00:04:03.414394+00:00",
+      "kaggle_status": "COMPLETE",
+      "public_score": "0.953",
+      "score_checked_at_utc": "2026-09-28T19:56:52.560449+00:00"
+    },
+    "F8_dc030": {
+      "candidate": "F8_dc030",
+      "kernel": "jarturo/biohub-e070-f8-dc030",
+      "version": 1,
+      "csv_sha256": "278259394332a4957371dcbb6ab20336898a11948b10420872e822ca9d2ca53c",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-28T00:04:19.267730+00:00",
+      "message": "E070 reset 20260928 F8_dc030 v1 sha=278259394332a495",
+      "limits_before": {
+        "num_today": 1,
+        "num_allowed_now": 4,
+        "limited_by_total": false
+      },
+      "ref": 56622918,
+      "response_message": "",
+      "response_at_utc": "2026-09-28T00:04:23.660929+00:00",
+      "kaggle_status": "COMPLETE",
+      "public_score": "0.947",
+      "score_checked_at_utc": "2026-09-28T19:56:52.560449+00:00"
+    },
+    "F8_prune12": {
+      "candidate": "F8_prune12",
+      "kernel": "jarturo/biohub-e070-f8-prune12",
+      "version": 1,
+      "csv_sha256": "f6a338452a5adcd7750e5956a7954a68173ee010d88085e739a7f5f37fc85cc0",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-28T12:08:25.676031+00:00",
+      "message": "E070 reset 20260928 F8_prune12 v1 sha=f6a338452a5adcd7",
+      "limits_before": {
+        "num_today": 2,
+        "num_allowed_now": 3,
+        "limited_by_total": false
+      },
+      "conditional_authorization": "C:\\dev\\biohub\\results\\E070\\conditional_next_steps.json",
+      "gate_evidence": {
+        "checked_at_utc": "2026-09-28T12:08:24.460550+00:00",
+        "initial_refs": {
+          "C3_fork8": 56622884,
+          "F8_dc030": 56622918
+        },
+        "public_scores": {
+          "C3_fork8": "0.953",
+          "F8_dc030": "0.947"
+        },
+        "reference": 0.955
+      },
+      "ref": 56640207,
+      "response_message": "",
+      "response_at_utc": "2026-09-28T12:08:28.024570+00:00",
+      "kaggle_status": "COMPLETE",
+      "public_score": "0.953",
+      "score_checked_at_utc": "2026-09-28T19:56:52.560449+00:00"
+    },
+    "F8_prune12_joint": {
+      "candidate": "F8_prune12_joint",
+      "kernel": "jarturo/biohub-e070-f8-prune12-joint",
+      "version": 1,
+      "csv_sha256": "54a8f84f35bd61a2375869404f35d2a7a242a200a96a57b42895126a36755cd0",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-28T12:08:44.778128+00:00",
+      "message": "E070 reset 20260928 F8_prune12_joint v1 sha=54a8f84f35bd61a2",
+      "limits_before": {
+        "num_today": 3,
+        "num_allowed_now": 2,
+        "limited_by_total": false
+      },
+      "conditional_authorization": "C:\\dev\\biohub\\results\\E070\\conditional_next_steps.json",
+      "gate_evidence": {
+        "checked_at_utc": "2026-09-28T12:08:43.510538+00:00",
+        "initial_refs": {
+          "C3_fork8": 56622884,
+          "F8_dc030": 56622918
+        },
+        "public_scores": {
+          "C3_fork8": "0.953",
+          "F8_dc030": "0.947"
+        },
+        "reference": 0.955
+      },
+      "ref": 56640212,
+      "response_message": "",
+      "response_at_utc": "2026-09-28T12:08:47.706164+00:00",
+      "kaggle_status": "COMPLETE",
+      "public_score": "0.951",
+      "score_checked_at_utc": "2026-09-28T19:56:52.560449+00:00"
+    },
+    "F8_joint": {
+      "candidate": "F8_joint",
+      "kernel": "jarturo/biohub-e070-f8-joint",
+      "version": 1,
+      "csv_sha256": "7843491b7d16fe6fe123bc888aa17013696fdcb77bf70eda1970bd72931714cf",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-28T12:09:20.145268+00:00",
+      "message": "E070 reset 20260928 F8_joint v1 sha=7843491b7d16fe6f",
+      "limits_before": {
+        "num_today": 4,
+        "num_allowed_now": 1,
+        "limited_by_total": false
+      },
+      "conditional_authorization": "C:\\dev\\biohub\\results\\E070\\conditional_next_steps.json",
+      "gate_evidence": {
+        "checked_at_utc": "2026-09-28T12:09:18.589562+00:00",
+        "initial_refs": {
+          "C3_fork8": 56622884,
+          "F8_dc030": 56622918
+        },
+        "public_scores": {
+          "C3_fork8": "0.953",
+          "F8_dc030": "0.947"
+        },
+        "reference": 0.955
+      },
+      "ref": 56640230,
+      "response_message": "",
+      "response_at_utc": "2026-09-28T12:09:22.576830+00:00",
+      "kaggle_status": "COMPLETE",
+      "public_score": "0.951",
+      "score_checked_at_utc": "2026-09-28T19:56:52.560449+00:00"
+    }
+  },
+  "automatic_submission_authorization_completed": true,
+  "remaining_submission_slots": 0,
+  "score_monitor_refs": [
+    56640207,
+    56640212,
+    56640230
+  ],
+  "score_monitor_interval_minutes": 25,
+  "score_monitor_first_check_utc": "2026-09-28T05:07:18+00:00",
+  "score_monitor_schedule": "results/E070/monitor_schedule.json",
+  "conditional_action_policy": "results/E070/conditional_next_steps.json",
+  "conditional_fallback_auto_submit": false,
+  "conditional_fallback_allowlist": [
+    "F8_prune12",
+    "F8_prune12_joint",
+    "F8_joint"
+  ],
+  "fallback_maximum_new_submissions": 3,
+  "favorable_branch": "Prepare complementary experiments and verified submissions; do not automatically submit new candidates.",
+  "reserved_submission_slots_if_unfavorable": 0,
+  "first_check_completed_at_utc": "2026-09-28T05:08:02.665845+00:00",
+  "interval_minutes": 25,
+  "read_only": false,
+  "score_monitor_initial_delay_completed": true,
+  "conditional_fallback_fulfilled": true,
+  "decision_file": "results/E070/public_decision.json",
+  "conditional_branch": "UNFAVORABLE_FALLBACK_SENT",
+  "heartbeat_pause_reason": "Arturo requested disabling the scheduled reminder; he will notify when notebooks finish.",
+  "closed_at_utc": "2026-09-28T19:56:52.560449+00:00"
+}

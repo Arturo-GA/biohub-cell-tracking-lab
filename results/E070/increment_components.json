@@ -1,0 +1,47 @@
+{
+  "F8_dc030": {
+    "division_component_delta_vs_fork8": 0.0004999999999999987,
+    "edge_component_delta_vs_fork8": 1.3073768773188069e-05,
+    "total_delta_vs_fork8": 0.0005130737687731868
+  },
+  "F8_prune12_joint": {
+    "division_component_delta_vs_fork8": 0.00012121212121212095,
+    "edge_component_delta_vs_fork8": 5.229396925417011e-05,
+    "total_delta_vs_fork8": 0.00017350609046629106
+  },
+  "F8_joint": {
+    "division_component_delta_vs_fork8": 0.00012121212121212095,
+    "edge_component_delta_vs_fork8": -2.20608520653965e-05,
+    "total_delta_vs_fork8": 9.915126914672445e-05
+  },
+  "F8_end04": {
+    "division_component_delta_vs_fork8": 0.0,
+    "edge_component_delta_vs_fork8": 7.672573467476518e-05,
+    "total_delta_vs_fork8": 7.672573467476518e-05
+  },
+  "F8_prune12": {
+    "division_component_delta_vs_fork8": 0.0,
+    "edge_component_delta_vs_fork8": 7.435810042732971e-05,
+    "total_delta_vs_fork8": 7.435810042732971e-05
+  },
+  "F8_p8": {
+    "division_component_delta_vs_fork8": 0.0,
+    "edge_component_delta_vs_fork8": 3.9410182609334043e-05,
+    "total_delta_vs_fork8": 3.9410182609334043e-05
+  },
+  "C3_fork8": {
+    "division_component_delta_vs_fork8": 0.0,
+    "edge_component_delta_vs_fork8": 0.0,
+    "total_delta_vs_fork8": 0.0
+  },
+  "F8_curvature": {
+    "division_component_delta_vs_fork8": 0.0,
+    "edge_component_delta_vs_fork8": -7.65888168086093e-06,
+    "total_delta_vs_fork8": -7.65888168086093e-06
+  },
+  "F8_outlier": {
+    "division_component_delta_vs_fork8": 0.0,
+    "edge_component_delta_vs_fork8": -0.000162692770263817,
+    "total_delta_vs_fork8": -0.000162692770263817
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-c3-fork8",
+  "version": 1,
+  "kernel_id": 136127017,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-c3-fork8",
+  "ref": "/code/jarturo/biohub-c3-fork8",
+  "time_utc": "2026-09-27T14:53:01.851108+00:00",
+  "notebook_sha256": "dabb2e5959c265e5e287f7f8c5ae7f37333f51156288cda7c60b407ead35bfdf",
+  "gpu": true,
+  "is_private": true,
+  "leaderboard_submitted": false
+}

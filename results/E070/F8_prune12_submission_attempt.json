@@ -1,0 +1,30 @@
+{
+  "candidate": "F8_prune12",
+  "kernel": "jarturo/biohub-e070-f8-prune12",
+  "version": 1,
+  "csv_sha256": "f6a338452a5adcd7750e5956a7954a68173ee010d88085e739a7f5f37fc85cc0",
+  "status": "ACCEPTED",
+  "attempted_at_utc": "2026-09-28T12:08:25.676031+00:00",
+  "message": "E070 reset 20260928 F8_prune12 v1 sha=f6a338452a5adcd7",
+  "limits_before": {
+    "num_today": 2,
+    "num_allowed_now": 3,
+    "limited_by_total": false
+  },
+  "conditional_authorization": "C:\\dev\\biohub\\results\\E070\\conditional_next_steps.json",
+  "gate_evidence": {
+    "checked_at_utc": "2026-09-28T12:08:24.460550+00:00",
+    "initial_refs": {
+      "C3_fork8": 56622884,
+      "F8_dc030": 56622918
+    },
+    "public_scores": {
+      "C3_fork8": "0.953",
+      "F8_dc030": "0.947"
+    },
+    "reference": 0.955
+  },
+  "ref": 56640207,
+  "response_message": "",
+  "response_at_utc": "2026-09-28T12:08:28.024570+00:00"
+}

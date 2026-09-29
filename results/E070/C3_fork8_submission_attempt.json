@@ -1,0 +1,17 @@
+{
+  "candidate": "C3_fork8",
+  "kernel": "jarturo/biohub-c3-fork8",
+  "version": 1,
+  "csv_sha256": "ff57683b494311df5cada31d0563e890fbab98cee7919e124d0eecd886b1223a",
+  "status": "ACCEPTED",
+  "attempted_at_utc": "2026-09-28T00:04:00.893131+00:00",
+  "message": "E070 reset 20260928 C3_fork8 v1 sha=ff57683b494311df",
+  "limits_before": {
+    "num_today": 0,
+    "num_allowed_now": 5,
+    "limited_by_total": false
+  },
+  "ref": 56622884,
+  "response_message": "",
+  "response_at_utc": "2026-09-28T00:04:03.414394+00:00"
+}

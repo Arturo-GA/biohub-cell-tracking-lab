@@ -1,0 +1,24 @@
+{
+  "candidate": "C3_D04",
+  "kernel": "jarturo/biohub-e071-c3-d04",
+  "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e071_c3_d04",
+  "gpu": true,
+  "notebook_sha256": "f004983c07da28a1dcf6f795eecd42a85a88714cf9ac1c33207a5bf5c6ed38ae",
+  "time_utc": "2026-09-28T21:35:50.947544+00:00",
+  "status": "LAUNCHED",
+  "version": 1,
+  "leaderboard_submitted": false,
+  "other_sessions_at_launch": [
+    {
+      "kernel": "jarturo/gemma-4-paired-localization-policy-experiment",
+      "status": "QUEUED"
+    }
+  ],
+  "response": {
+    "ref": "/code/jarturo/biohub-e071-c3-d04",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-e071-c3-d04",
+    "versionNumber": 1,
+    "kernelId": 136311965
+  },
+  "response_at_utc": "2026-09-28T21:35:53.488447+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "kernel": "jarturo/biohub-e070-f8-prune12-joint",
+  "version": 1,
+  "response": {
+    "ref": "/code/jarturo/biohub-e070-f8-prune12-joint",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-prune12-joint",
+    "versionNumber": 1,
+    "kernelId": 136169252
+  },
+  "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_f8_prune12_joint",
+  "gpu": true,
+  "notebook_sha256": "06366ac030718645e77e989e461b53fc04898d7a9230076c3dd7ea41592f8633",
+  "time_utc": "2026-09-27T20:58:31.769076+00:00",
+  "status": "LAUNCHED",
+  "leaderboard_submitted": false
+}

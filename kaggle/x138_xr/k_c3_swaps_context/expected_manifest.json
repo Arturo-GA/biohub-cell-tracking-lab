@@ -1,0 +1,19 @@
+{
+  "candidate": "swaps_context",
+  "base": "c3_public_0.955",
+  "context": {
+    "swap": 0.35,
+    "cut_context": "both"
+  },
+  "source_sha256": "c2b3b6700283f1c6f604a58b7c1d8eabe5e34555a1548be7c3f7f266a961b659",
+  "fixed": {
+    "BIOHUB_OUTPUT_MIN_TRACK_LEN": "7",
+    "BIOHUB_REPAIR_DEADLINE_S": "34200"
+  },
+  "xr": {
+    "BIOHUB_XR_PRUNE": "44b6:8:0.7,6bba:11:0.7",
+    "BIOHUB_XR_CUT_NAN_DIST_UM": "8",
+    "BIOHUB_XR_CUT_END_PROB": "0.5",
+    "BIOHUB_XR_CUT_END_MODE": "last"
+  }
+}

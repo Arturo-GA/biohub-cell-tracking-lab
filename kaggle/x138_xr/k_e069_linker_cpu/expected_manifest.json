@@ -1,0 +1,9 @@
+{
+  "experiment": "E069",
+  "mode": "linker_eval",
+  "payload_sha256": "41ba2daf95708029381e4ca8fa22106049d2e96e43b595797b2d32d489f0aa0e",
+  "checkpoint_sha256": "ecd8869de9cf405c1a93a563b4810faad5fd2378f57341e18c4e6b5a87201552",
+  "baseline": "C3_public0955",
+  "panel_seed": "e069-fixed-panel-1",
+  "internet": false
+}

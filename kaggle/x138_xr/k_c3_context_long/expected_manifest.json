@@ -1,0 +1,18 @@
+{
+  "candidate": "context_long",
+  "base": "c3_public_0.955",
+  "context": {
+    "cut_context": "long"
+  },
+  "source_sha256": "8934ccef56c318e7546790ab238b6da9f3c3230b57d0c95fd7ebaa605198706a",
+  "fixed": {
+    "BIOHUB_OUTPUT_MIN_TRACK_LEN": "7",
+    "BIOHUB_REPAIR_DEADLINE_S": "34200"
+  },
+  "xr": {
+    "BIOHUB_XR_PRUNE": "44b6:8:0.7,6bba:11:0.7",
+    "BIOHUB_XR_CUT_NAN_DIST_UM": "8",
+    "BIOHUB_XR_CUT_END_PROB": "0.5",
+    "BIOHUB_XR_CUT_END_MODE": "last"
+  }
+}

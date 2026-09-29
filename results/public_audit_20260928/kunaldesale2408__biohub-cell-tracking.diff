@@ -1,0 +1,59 @@
+--- sep27
+
++++ sep28
+
+@@ -7,7 +7,7 @@
+
+ 
+ import os
+ BIOHUB_PRESET = 'harmonic_v3_division_wide'
+-BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
++BIOHUB_SCORE_AXIS = 'public 0.953 base + validator-sweep-selected post-process configuration v2'
+ 
+ os.environ["BIOHUB_OUTPUT_FILTER_SHORT_TRACKS"] = "1"
+ os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"
+@@ -60,8 +60,8 @@
+
+ os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = "0.90"
+ os.environ["BIOHUB_DIAGNOSTIC_ARM"] = "harmonic_association_production"
+ os.environ["BIOHUB_VALIDATOR_N_PER_TYPE"] = "4"
+-os.environ["BIOHUB_PPSWEEP_SELECT_MARGIN"] = "0.001"
+-os.environ["BIOHUB_PPSWEEP_MAX_ADJ_LOSS"] = "0.0005"
++os.environ["BIOHUB_PPSWEEP_SELECT_MARGIN"] = "0.0005"
++os.environ["BIOHUB_PPSWEEP_MAX_ADJ_LOSS"] = "0.0010"
+ 
+ os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD"] = "0.25"
+ os.environ["BIOHUB_DEEPCENTER_TTA"] = "1"
+@@ -69,7 +69,7 @@
+
+ # Runtime hardening. None of these change the output on the visible test.
+ import time as _t0_time
+ os.environ["BIOHUB_KERNEL_START_TS"] = str(_t0_time.time())
+-os.environ["BIOHUB_VALIDATOR_ENABLE"] = "0"          # in-sample train proxy, ~11 min of GPU per run
++os.environ["BIOHUB_VALIDATOR_ENABLE"] = "1"          # enabled: runs held-out pp-sweep for best config
+ os.environ["BIOHUB_ILP_TIMEOUT_S"] = "1200"           # per dataset; SCIP keeps its incumbent at the limit
+ os.environ["BIOHUB_REPAIR_DEADLINE_S"] = "27000"      # 7.5 h after kernel start the repair loop degrades
+ os.environ["BIOHUB_FRAME_CACHE_MAX_FRAMES"] = "48"
+@@ -4720,6 +4720,21 @@
+
+     "gap2step40": {"GAP2_MAX_STEP_UM": 4.0},
+     "reuse28": {"GAP_CLOSE_REUSE_UM": 2.8},
+     "dcgap035": {"DEEPCENTER_GAP_THRESHOLD": 0.35},
++    # --- new candidates (v2) ---
++    # Tighter symmetry tau for division geometry: fewer spurious division FPs
++    "sym_tau04": {"SAFE_DIV_SISTER_SYMMETRY_TAU": 0.4},
++    # More permissive gap2 total span: rescues more 2-frame dropout tracks
++    "gap2tot92": {"GAP2_MAX_TOTAL_UM": 9.2},
++    # Tighter DeepCenter safe-div veto: fewer hallucinated division links
++    "dcsafediv020": {"DEEPCENTER_SAFE_DIV_THRESHOLD": 0.20},
++    # Tighter edge-length cap: prunes long spurious association edges
++    "edgemax12": {"OUTPUT_EDGE_MAX_UM": 12.0},
++    # Pre-built combo: tighter symmetry + tighter DC safe-div veto together
++    "sym_dcsd": {"SAFE_DIV_SISTER_SYMMETRY_TAU": 0.4, "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.20},
++    # Tighter velocity weight in motion re-link
++    "vel04": {"MOTION_RELINK_VELOCITY_WEIGHT": 0.4},
++    # Slightly wider relaxed gate for motion re-link
++    "relaxed11": {"MOTION_RELINK_RELAXED_UM": 11.0},
+ }
+ PP_SELECT_MARGIN = float(os.environ.get("BIOHUB_PPSWEEP_SELECT_MARGIN", "0.002"))
+ PP_MAX_ADJ_LOSS = float(os.environ.get("BIOHUB_PPSWEEP_MAX_ADJ_LOSS", "0.0005"))

@@ -1,0 +1,13 @@
+{
+  "shape": [
+    64,
+    64,
+    64
+  ],
+  "min": 3.076720531680621e-05,
+  "max": 0.5821778178215027,
+  "seconds": 7.282000000006519,
+  "peak_vram_bytes": 210053632,
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "scope": "Real visible frame, exact c3 DeepCenter weights and eight-view TTA; not full parity"
+}

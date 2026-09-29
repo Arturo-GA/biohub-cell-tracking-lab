@@ -1,0 +1,57 @@
+{
+  "authorized_at_utc": "2026-09-29T00:07:42.827654+00:00",
+  "user_request": "ya son las 7 haz tus ultimas 5 submission y estas son las que usaremos para llegar a medalla de bronce que estamos puesto 400",
+  "scope": "Submit these exact five frozen E071 v1 candidates once now; no retries after an ambiguous response.",
+  "not_before_utc": "2026-09-29T00:00:00+00:00",
+  "status": "FIVE_SUBMITTED",
+  "reminder_enabled": false,
+  "candidates": [
+    {
+      "candidate": "C3_D04_R094",
+      "kernel": "jarturo/biohub-e071-c3-d04-r094",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "adc1ee7d616a24ebba243a4c0e523e97bc0b7ecbeec9a83e154cee18b7d07434",
+      "notebook_sha256": "ea8b362a97863146cb59298861e6d923b5603b00804cec55f3aaaf9de1b04b78"
+    },
+    {
+      "candidate": "C3_R094",
+      "kernel": "jarturo/biohub-e071-c3-r094",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "69b36627dfb89830de336b6ccf3cb2ae853d1a4163cfe39c17a6e18b8603027a",
+      "notebook_sha256": "9ffc984b81cca24d021307d3404e5a136f12308cc4ec94f280ee37bb8674bb4f"
+    },
+    {
+      "candidate": "C3_D04",
+      "kernel": "jarturo/biohub-e071-c3-d04",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "3723d7916ec6524aacf0be981a4307a48f1318adc7597858f78e0f09a042a850",
+      "notebook_sha256": "f004983c07da28a1dcf6f795eecd42a85a88714cf9ac1c33207a5bf5c6ed38ae"
+    },
+    {
+      "candidate": "C3_D08_R094",
+      "kernel": "jarturo/biohub-e071-c3-d08-r094",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "06649c48e9686a7b2cb2b0926f5ef3452fd73749a0517e6f00e83e6fb87097a4",
+      "notebook_sha256": "ae950922ae67e386378314a67690c3966c73d60274509701b48080c976675718"
+    },
+    {
+      "candidate": "C3_D04_R092",
+      "kernel": "jarturo/biohub-e071-c3-d04-r092",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "f42aaa3729fb2e0767a4a4e1b5db1076c14788a57f53f05c7385cb1307b3fca0",
+      "notebook_sha256": "b65b6c674dabc79356630f2e0911c291db3fa7043917235e2525169c3e029943"
+    }
+  ],
+  "submission_refs": {
+    "C3_D04_R094": 56656420,
+    "C3_R094": 56656425,
+    "C3_D04": 56656488,
+    "C3_D08_R094": 56656490,
+    "C3_D04_R092": 56656491
+  }
+}

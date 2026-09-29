@@ -1,0 +1,16 @@
+{
+  "kernel": "jarturo/biohub-e070-f8-dc030",
+  "version": 1,
+  "response": {
+    "ref": "/code/jarturo/biohub-e070-f8-dc030",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-dc030",
+    "versionNumber": 1,
+    "kernelId": 136171387
+  },
+  "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_f8_dc030",
+  "gpu": true,
+  "notebook_sha256": "78c4f9c905c4c8e3f389328d7d1ca9e6f5fb4dee43a416824499b963522f0e9d",
+  "time_utc": "2026-09-27T21:26:09.268971+00:00",
+  "status": "LAUNCHED",
+  "leaderboard_submitted": false
+}

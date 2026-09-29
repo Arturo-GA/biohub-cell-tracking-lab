@@ -1,0 +1,18 @@
+{
+  "compared": "F8_joint vs C3_fork8 visible CSV with same row counts",
+  "rows": 232347,
+  "different_rows": 125,
+  "changed_fields": {
+    "id": 0,
+    "dataset": 0,
+    "row_type": 0,
+    "node_id": 0,
+    "t": 0,
+    "z": 55,
+    "y": 97,
+    "x": 93,
+    "source_id": 0,
+    "target_id": 0
+  },
+  "note": "Rowwise comparison, not a score or hidden-test assertion."
+}

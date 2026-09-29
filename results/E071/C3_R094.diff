@@ -1,0 +1,14 @@
+--- c3_cell0
+
++++ C3_R094
+
+@@ -91,7 +91,7 @@
+
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_RELAXED_UM"] = "0"
+ # Discarded detections re-admitted before the re-link (agent/frontier947_readmit).
+ os.environ["BIOHUB_READMIT_RADIUS_UM"] = "4"
+-os.environ["BIOHUB_READMIT_MIN_SCORE"] = "0.965"
++os.environ["BIOHUB_READMIT_MIN_SCORE"] = "0.94"
+ # Gap filler on the detector's sub-threshold peaks (agent/frontier947_gapfill).
+ os.environ["BIOHUB_GAPFILL_MAX_GAP"] = "3"
+ os.environ["BIOHUB_GAPFILL_MIN_SCORE"] = "0.5"

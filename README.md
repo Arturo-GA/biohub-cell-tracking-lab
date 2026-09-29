@@ -1,5 +1,15 @@
 # Biohub Cell Tracking Lab
 
+**Estado al 29-09-2026, 22:56 UTC:** las cinco submissions E071 terminaron. Mejor público **0.957**, `C3_D04_R094` v1, submission **56656420**; las otras cuatro obtuvieron **0.956**, frente al c3 anterior de **0.955**. El ganador conserva c3 y combina coste de división ILP **0.4** con readmisión localizada **0.94**. No hay resultados privados todavía ni medalla definitiva. [Ejecución y resultados](docs/E071_EXECUTION.es.md), [registro oficial](results/E071/all_submission_status.json) y [comparación final](results/E071/final_public_analysis.json).
+
+Los cinco notebooks congelados, sus generadores, configuración, hashes y recibos están en `kaggle/x138_xr/` y `results/E071/`. La ejecución en laptop RTX 3050 y Kaggle produjo los mismos grafos en los cuatro videos visibles; esto verifica implementación, no generalización. E069 no aportó un complemento nuevo y los cinco candidatos E070 retrocedieron a **0.947–0.953**. El detector público ya vio los 199 videos de train: sus métricas locales son diagnósticos dentro de muestra y no una validación independiente. [E069](docs/E069_RESULTS.es.md), [E070](docs/E070_RESULTS.es.md), [auditoría pública](docs/PUBLIC_AUDIT_2026-09-28.es.md).
+
+No quedan notebooks ni submissions E071 pendientes de scoring. El recordatorio está desactivado; no relanzar ni reenviar los candidatos. Datos, pesos, entornos y CSV de predicciones permanecen fuera de Git. Comprobación local de esta actualización: **32 pruebas pasan**; 39 notebooks sin salidas guardadas y archivos Python/JSON revisados.
+
+## Historial de avances
+
+Las entradas siguientes describen el estado de cada etapa en su fecha; sus planes y estados pendientes quedan sustituidos por el cierre anterior.
+
 **E068 en curso (24–26 de septiembre):** nueva base pública x138 (0.953) reproducida; **0.954 público** con largo mínimo de pista 7 (submissions 56539929 y 56540269), puesto 177 dentro del bloque de 0.954. Un intento con validador y reescritura dentro del kernel dio 0.904 por el governor de tiempo de x138; desde entonces todo envío es de una sola pasada, con parámetros fijos y verificación previa del test visible. Laboratorio con el pipeline exacto sobre los **199 videos de train** y la métrica oficial: reglas de post-proceso confirmadas (+0.0022 dentro de muestra, positivas en ambos embriones) y relajación de la simetría de safe-division (+0.0035 en 72 videos con rastreo). Cinco envíos programados para el 27-09 a las 00:00 UTC. [Método, resultados y recomendaciones](docs/E068_X138_XR.es.md).
 
 **E067 enviado:** suavizado robusto de trayectorias completas; intensidad media elegida entre tres. Validación reutilizada: **0,922099 frente a 0,919878**, +9 TP y −21 FP; mejora agregada en ambos embriones. Submission **56475507**, versión 1, **PENDING**. CSV validado: 63.593 centros modificados y enlaces intactos. Mejor score público confirmado sigue en **0.946**. [Método, resultados y límites](docs/E067_TRAJECTORY_DENOISE.es.md).

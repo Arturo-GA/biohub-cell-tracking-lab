@@ -1,0 +1,19 @@
+{
+  "candidate": "F8_p8",
+  "experiment": "E070",
+  "base": "c3_public_0.955",
+  "fixed": {
+    "BIOHUB_OUTPUT_MIN_TRACK_LEN": "7",
+    "BIOHUB_REPAIR_DEADLINE_S": "34200"
+  },
+  "xr": {
+    "BIOHUB_XR_PRUNE": "*:8:0.7",
+    "BIOHUB_XR_CUT_NAN_DIST_UM": "8.0",
+    "BIOHUB_XR_CUT_END_PROB": "0.5",
+    "BIOHUB_XR_CUT_END_MODE": "last",
+    "BIOHUB_XR_FORK_MIN_BRANCH": "8",
+    "BIOHUB_XR_FORK_NAN_ONLY": "1"
+  },
+  "config": {},
+  "source_sha256": "f39e3fdd1dec5dd303d1b87b6c9c96b546ddf6a339bf1ffc6cb6be02cc7e6232"
+}

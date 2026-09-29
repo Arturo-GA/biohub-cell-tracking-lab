@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-09-29T22:56:19.243088+00:00",
+  "limits": {
+    "num_today": 5,
+    "num_allowed_now": 0,
+    "limited_by_total": false
+  },
+  "submissions": [
+    {
+      "candidate": "C3_D04_R094",
+      "ref": 56656420,
+      "status": "COMPLETE",
+      "public_score": "0.957",
+      "error_description": "",
+      "date": "2026-09-29 00:09:39.630000",
+      "description": "E071 final 20260929 C3_D04_R094 v1 sha=adc1ee7d616a24eb"
+    },
+    {
+      "candidate": "C3_R094",
+      "ref": 56656425,
+      "status": "COMPLETE",
+      "public_score": "0.956",
+      "error_description": "",
+      "date": "2026-09-29 00:09:43.377000",
+      "description": "E071 final 20260929 C3_R094 v1 sha=69b36627dfb89830"
+    },
+    {
+      "candidate": "C3_D04",
+      "ref": 56656488,
+      "status": "COMPLETE",
+      "public_score": "0.956",
+      "error_description": "",
+      "date": "2026-09-29 00:11:02.527000",
+      "description": "E071 final 20260929 C3_D04 v1 sha=3723d7916ec6524a"
+    },
+    {
+      "candidate": "C3_D08_R094",
+      "ref": 56656490,
+      "status": "COMPLETE",
+      "public_score": "0.956",
+      "error_description": "",
+      "date": "2026-09-29 00:11:07.290000",
+      "description": "E071 final 20260929 C3_D08_R094 v1 sha=06649c48e9686a7b"
+    },
+    {
+      "candidate": "C3_D04_R092",
+      "ref": 56656491,
+      "status": "COMPLETE",
+      "public_score": "0.956",
+      "error_description": "",
+      "date": "2026-09-29 00:11:11.990000",
+      "description": "E071 final 20260929 C3_D04_R092 v1 sha=f42aaa3729fb2e07"
+    }
+  ]
+}

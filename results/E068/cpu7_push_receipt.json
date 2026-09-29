@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-c3-pruning-cpu7",
+  "version": 1,
+  "kernel_id": 136127019,
+  "url": "https://www.kaggle.com/code/jarturo/biohub-c3-pruning-cpu7",
+  "ref": "/code/jarturo/biohub-c3-pruning-cpu7",
+  "time_utc": "2026-09-27T14:53:04.827169+00:00",
+  "notebook_sha256": "8c54087bc8c04bf262ec9f36c1b405b210d2ea7ffc56bec1e5d88752a8b1679d",
+  "gpu": false,
+  "is_private": true,
+  "leaderboard_submitted": false
+}

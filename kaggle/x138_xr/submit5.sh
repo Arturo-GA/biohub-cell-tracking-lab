@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # Timed submitter: waits until the UTC date reaches SUBMIT_DAY (00:00 UTC reset), re-gates each kernel's
 # latest log, then submits in priority order. No score polling. usage: bash submit5.sh 2026-09-27 slug:version:"msg" ...
+# This legacy path does not bind the downloaded log to the submitted version.
+# Refuse until replaced by artifact/hash/version verification; gate.py alone cannot do that.
+echo "DISABLED: use a verified, pinned kernel version and candidate-specific CSV counts."
+exit 2
 K=/c/Users/Arturo/Diplomado/Scripts/kaggle
 COMP=biohub-cell-tracking-during-development
 SUBMIT_DAY=$1; shift

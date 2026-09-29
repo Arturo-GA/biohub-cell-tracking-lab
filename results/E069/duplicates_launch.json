@@ -1,0 +1,17 @@
+{
+  "kernel": "jarturo/biohub-e069-duplicates-cpu",
+  "stage": "duplicates",
+  "time_utc": "2026-09-27T19:09:59.777583+00:00",
+  "notebook_sha256": "3892dad0251e498c176ed7af55a1c4f994b066ddae689a56159bcc057b45cb7b",
+  "is_private": true,
+  "gpu": false,
+  "response": {
+    "ref": "/code/jarturo/biohub-e069-duplicates-cpu",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-e069-duplicates-cpu",
+    "versionNumber": 1,
+    "kernelId": 136154865
+  },
+  "leaderboard_submitted": false,
+  "status": "launched",
+  "version": 1
+}

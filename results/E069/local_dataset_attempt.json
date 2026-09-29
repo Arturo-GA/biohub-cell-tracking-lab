@@ -1,0 +1,11 @@
+{
+  "time_utc": "2026-09-27T19:46:52.407262+00:00",
+  "private": true,
+  "files": [
+    "complete.json",
+    "dataset-metadata.json",
+    "e069_local_manifest.json",
+    "e069_records.bin",
+    "panel.json"
+  ]
+}

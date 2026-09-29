@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-09-27T20:38:59.963014+00:00",
+  "source_sha256": {
+    "e070_variants.py": "aa8dcf8881ef690af0d22fb5e5ac79c558735ac659684bddfe433efc79b9124f",
+    "e070_positions.py": "e4263e13ff43920a359fce04c8d278e5cf22056d2b3ea64f5195b85d10594db7",
+    "e070_runner.py": "03ef09a52c65e93fec9ac8d55797671c84cb8069adfb16773d7faf7ab87af518",
+    "build_e070.py": "91f088ba2aa34fe271db78745a7e987cce3c214f065c20f3af0c7008a07c24a3",
+    "e070_ops.py": "c98667a8d9701bcba0ef34add711090bbe76647f5c4b5c13322c62643a022349",
+    "analyze_e070.py": "7714491f52290a1afb2afe0996a6639b37cad79d62d65a3dcaffedf391546ee3",
+    "context_rules.py": "e4775c7ca521fd11fa31a1259a59aa70a988193c9ebe607d83794d279fa6707d",
+    "extra_rules.py": "e846a203358be4bc2a64f814388a52f1a175fdf5ac9e275eaacce859a908838e",
+    "replay_linefit.py": "5c49f5ff6159c1ec46ec9356c66ff990939f0f17e413a942af1f136088c31a37"
+  },
+  "initial_cpu_gpu_runs": [
+    "lab_a",
+    "lab_b",
+    "F8_prune12",
+    "F8_joint"
+  ],
+  "automation_id": "biohub-completar-cinco-submissions",
+  "target_ready": 5,
+  "new_positions_unit_tests": "5 PASS",
+  "frozen_lab_and_inference_notebooks": "See individual launch receipts; do not rebuild launched folders."
+}

@@ -1,0 +1,401 @@
+{
+  "scope": "Runtime and finite-output smoke on 32 c3 graphs; no annotation arrays loaded, no score estimate, final E070 evaluation also applies fork8.",
+  "seconds": 45.64000000001397,
+  "videos": 32,
+  "modes": {
+    "curvature": {
+      "eligible": 375,
+      "changed_rounded_coordinates": 325
+    },
+    "outlier": {
+      "eligible": 4339,
+      "changed_rounded_coordinates": 4104
+    }
+  },
+  "per_video": [
+    {
+      "stem": "44b6_0db75fae",
+      "nodes": 17507,
+      "curvature": {
+        "eligible": 6,
+        "changed_rounded_coordinates": 6
+      },
+      "outlier": {
+        "eligible": 129,
+        "changed_rounded_coordinates": 125
+      }
+    },
+    {
+      "stem": "44b6_1574802b",
+      "nodes": 19280,
+      "curvature": {
+        "eligible": 16,
+        "changed_rounded_coordinates": 10
+      },
+      "outlier": {
+        "eligible": 146,
+        "changed_rounded_coordinates": 133
+      }
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "nodes": 37925,
+      "curvature": {
+        "eligible": 18,
+        "changed_rounded_coordinates": 18
+      },
+      "outlier": {
+        "eligible": 240,
+        "changed_rounded_coordinates": 229
+      }
+    },
+    {
+      "stem": "44b6_33b596bf",
+      "nodes": 23601,
+      "curvature": {
+        "eligible": 16,
+        "changed_rounded_coordinates": 12
+      },
+      "outlier": {
+        "eligible": 137,
+        "changed_rounded_coordinates": 128
+      }
+    },
+    {
+      "stem": "44b6_706092f0",
+      "nodes": 28562,
+      "curvature": {
+        "eligible": 9,
+        "changed_rounded_coordinates": 8
+      },
+      "outlier": {
+        "eligible": 170,
+        "changed_rounded_coordinates": 153
+      }
+    },
+    {
+      "stem": "44b6_71a4179f",
+      "nodes": 30501,
+      "curvature": {
+        "eligible": 11,
+        "changed_rounded_coordinates": 10
+      },
+      "outlier": {
+        "eligible": 208,
+        "changed_rounded_coordinates": 193
+      }
+    },
+    {
+      "stem": "44b6_74d0c52e",
+      "nodes": 8389,
+      "curvature": {
+        "eligible": 19,
+        "changed_rounded_coordinates": 17
+      },
+      "outlier": {
+        "eligible": 48,
+        "changed_rounded_coordinates": 48
+      }
+    },
+    {
+      "stem": "44b6_7a302da0",
+      "nodes": 42483,
+      "curvature": {
+        "eligible": 32,
+        "changed_rounded_coordinates": 26
+      },
+      "outlier": {
+        "eligible": 297,
+        "changed_rounded_coordinates": 281
+      }
+    },
+    {
+      "stem": "44b6_8cc6506c",
+      "nodes": 18127,
+      "curvature": {
+        "eligible": 13,
+        "changed_rounded_coordinates": 11
+      },
+      "outlier": {
+        "eligible": 119,
+        "changed_rounded_coordinates": 113
+      }
+    },
+    {
+      "stem": "44b6_90724892",
+      "nodes": 23034,
+      "curvature": {
+        "eligible": 10,
+        "changed_rounded_coordinates": 9
+      },
+      "outlier": {
+        "eligible": 193,
+        "changed_rounded_coordinates": 184
+      }
+    },
+    {
+      "stem": "44b6_9be80b04",
+      "nodes": 25200,
+      "curvature": {
+        "eligible": 16,
+        "changed_rounded_coordinates": 14
+      },
+      "outlier": {
+        "eligible": 161,
+        "changed_rounded_coordinates": 147
+      }
+    },
+    {
+      "stem": "44b6_aaf8b0ea",
+      "nodes": 14024,
+      "curvature": {
+        "eligible": 10,
+        "changed_rounded_coordinates": 6
+      },
+      "outlier": {
+        "eligible": 116,
+        "changed_rounded_coordinates": 106
+      }
+    },
+    {
+      "stem": "44b6_c8e2a523",
+      "nodes": 28311,
+      "curvature": {
+        "eligible": 12,
+        "changed_rounded_coordinates": 10
+      },
+      "outlier": {
+        "eligible": 193,
+        "changed_rounded_coordinates": 180
+      }
+    },
+    {
+      "stem": "44b6_c96cfa10",
+      "nodes": 37261,
+      "curvature": {
+        "eligible": 25,
+        "changed_rounded_coordinates": 25
+      },
+      "outlier": {
+        "eligible": 289,
+        "changed_rounded_coordinates": 277
+      }
+    },
+    {
+      "stem": "44b6_d29c9ab2",
+      "nodes": 36336,
+      "curvature": {
+        "eligible": 23,
+        "changed_rounded_coordinates": 21
+      },
+      "outlier": {
+        "eligible": 213,
+        "changed_rounded_coordinates": 205
+      }
+    },
+    {
+      "stem": "44b6_ddf577ad",
+      "nodes": 37273,
+      "curvature": {
+        "eligible": 15,
+        "changed_rounded_coordinates": 11
+      },
+      "outlier": {
+        "eligible": 202,
+        "changed_rounded_coordinates": 189
+      }
+    },
+    {
+      "stem": "6bba_0c7fa718",
+      "nodes": 12328,
+      "curvature": {
+        "eligible": 6,
+        "changed_rounded_coordinates": 6
+      },
+      "outlier": {
+        "eligible": 77,
+        "changed_rounded_coordinates": 77
+      }
+    },
+    {
+      "stem": "6bba_15403b9a",
+      "nodes": 6235,
+      "curvature": {
+        "eligible": 2,
+        "changed_rounded_coordinates": 2
+      },
+      "outlier": {
+        "eligible": 37,
+        "changed_rounded_coordinates": 37
+      }
+    },
+    {
+      "stem": "6bba_1ebfb80d",
+      "nodes": 11035,
+      "curvature": {
+        "eligible": 6,
+        "changed_rounded_coordinates": 6
+      },
+      "outlier": {
+        "eligible": 99,
+        "changed_rounded_coordinates": 95
+      }
+    },
+    {
+      "stem": "6bba_268e1230",
+      "nodes": 4463,
+      "curvature": {
+        "eligible": 4,
+        "changed_rounded_coordinates": 2
+      },
+      "outlier": {
+        "eligible": 38,
+        "changed_rounded_coordinates": 36
+      }
+    },
+    {
+      "stem": "6bba_4f99ce20",
+      "nodes": 5300,
+      "curvature": {
+        "eligible": 9,
+        "changed_rounded_coordinates": 9
+      },
+      "outlier": {
+        "eligible": 31,
+        "changed_rounded_coordinates": 31
+      }
+    },
+    {
+      "stem": "6bba_55b7eebe",
+      "nodes": 4478,
+      "curvature": {
+        "eligible": 1,
+        "changed_rounded_coordinates": 1
+      },
+      "outlier": {
+        "eligible": 28,
+        "changed_rounded_coordinates": 26
+      }
+    },
+    {
+      "stem": "6bba_5c824876",
+      "nodes": 24927,
+      "curvature": {
+        "eligible": 14,
+        "changed_rounded_coordinates": 13
+      },
+      "outlier": {
+        "eligible": 165,
+        "changed_rounded_coordinates": 154
+      }
+    },
+    {
+      "stem": "6bba_61dd1e0d",
+      "nodes": 9346,
+      "curvature": {
+        "eligible": 7,
+        "changed_rounded_coordinates": 6
+      },
+      "outlier": {
+        "eligible": 57,
+        "changed_rounded_coordinates": 51
+      }
+    },
+    {
+      "stem": "6bba_6db0e9b4",
+      "nodes": 24547,
+      "curvature": {
+        "eligible": 14,
+        "changed_rounded_coordinates": 13
+      },
+      "outlier": {
+        "eligible": 188,
+        "changed_rounded_coordinates": 179
+      }
+    },
+    {
+      "stem": "6bba_74686d6a",
+      "nodes": 25088,
+      "curvature": {
+        "eligible": 22,
+        "changed_rounded_coordinates": 18
+      },
+      "outlier": {
+        "eligible": 153,
+        "changed_rounded_coordinates": 148
+      }
+    },
+    {
+      "stem": "6bba_78a7bd97",
+      "nodes": 38262,
+      "curvature": {
+        "eligible": 16,
+        "changed_rounded_coordinates": 15
+      },
+      "outlier": {
+        "eligible": 238,
+        "changed_rounded_coordinates": 232
+      }
+    },
+    {
+      "stem": "6bba_ae82a791",
+      "nodes": 7099,
+      "curvature": {
+        "eligible": 2,
+        "changed_rounded_coordinates": 2
+      },
+      "outlier": {
+        "eligible": 44,
+        "changed_rounded_coordinates": 39
+      }
+    },
+    {
+      "stem": "6bba_b693381b",
+      "nodes": 6030,
+      "curvature": {
+        "eligible": 6,
+        "changed_rounded_coordinates": 6
+      },
+      "outlier": {
+        "eligible": 41,
+        "changed_rounded_coordinates": 40
+      }
+    },
+    {
+      "stem": "6bba_d2b9fc0c",
+      "nodes": 18742,
+      "curvature": {
+        "eligible": 5,
+        "changed_rounded_coordinates": 3
+      },
+      "outlier": {
+        "eligible": 102,
+        "changed_rounded_coordinates": 95
+      }
+    },
+    {
+      "stem": "6bba_d5eae175",
+      "nodes": 4115,
+      "curvature": {
+        "eligible": 4,
+        "changed_rounded_coordinates": 3
+      },
+      "outlier": {
+        "eligible": 24,
+        "changed_rounded_coordinates": 23
+      }
+    },
+    {
+      "stem": "6bba_fc5f39dc",
+      "nodes": 17542,
+      "curvature": {
+        "eligible": 6,
+        "changed_rounded_coordinates": 6
+      },
+      "outlier": {
+        "eligible": 156,
+        "changed_rounded_coordinates": 150
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "kernel": "jarturo/biohub-e069-images-cpu",
+  "stage": "image_cache",
+  "time_utc": "2026-09-27T19:13:35.931995+00:00",
+  "notebook_sha256": "514e911cde257b4e486f056f2da0b862ce7438ede5d05cc7358b2e2941d0361c",
+  "gpu": false,
+  "is_private": true,
+  "response": {
+    "ref": "/code/jarturo/biohub-e069-images-cpu",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-e069-images-cpu",
+    "versionNumber": 1,
+    "kernelId": 136155535
+  },
+  "leaderboard_submitted": false,
+  "status": "launched",
+  "version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "kernel": "jarturo/biohub-e070-lab-b",
+  "version": 1,
+  "response": {
+    "ref": "/code/jarturo/biohub-e070-lab-b",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-e070-lab-b",
+    "versionNumber": 1,
+    "kernelId": 136167046
+  },
+  "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e070_lab_b",
+  "gpu": false,
+  "notebook_sha256": "d7ef06724268c4c2f3a40dffd11bad41618337766f091269f33c0622a332b916",
+  "time_utc": "2026-09-27T20:33:00.698664+00:00",
+  "status": "LAUNCHED",
+  "leaderboard_submitted": false
+}

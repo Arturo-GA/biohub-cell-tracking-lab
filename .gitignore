@@ -1,4 +1,5 @@
 .venv/
+.venv-e071/
 __pycache__/
 *.pyc
 .pytest_cache/
@@ -16,3 +17,6 @@ submission*.csv
 kaggle.json
 access_token
 *.log
+# Local execution markers and duplicate leaderboard download archives.
+results/**/*.lock
+results/**/biohub-cell-tracking-during-development.zip

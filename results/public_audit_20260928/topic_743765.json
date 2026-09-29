@@ -1,0 +1,24 @@
+{
+  "topic": {
+    "id": 743765,
+    "title": "Question for host",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/743765",
+    "postDate": "2026-09-26T21:20:56.825Z",
+    "authorName": "OmerZalman",
+    "authorUrl": "https://www.kaggle.com/omerzalman",
+    "votes": 1,
+    "commentCount": 1,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>If people still have models being tested after the deadline (e.g. in a scenario where you submit a hour before deadline but it doesnt finish for another 5 hours after the deadline) will it be counted or not? If it is going to be counted, and we didnt choose a model, and this model has the highest score of our models, will it be automatically chosen? This question bugged me for a while.</p>"
+  },
+  "comments": [
+    {
+      "id": 3528942,
+      "authorName": "Satwik",
+      "postDate": "2026-09-26T23:23:36.283Z",
+      "content": "<p>It has to finish before the deadline to count.</p>"
+    }
+  ],
+  "next_page_token": ""
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "candidate": "a",
+    "version": 1,
+    "rows": 233056,
+    "counts": [
+      "44b6_0113de3b=25488/24775",
+      "44b6_0b24845f=18141/17119",
+      "6bba_05b6850b=6035/5864",
+      "6bba_05db0fb1=68777/66857"
+    ],
+    "csv_sha256": "d6022844d3f037f2dce92933a86fdf159ab81488167af2df0843744da9cb0930",
+    "source_sha256": "1992930b322066d3bd718e7d43b318338721c84b2dbef72ae83f90fcfc765d32",
+    "gate": "PASS"
+  },
+  {
+    "candidate": "b",
+    "version": 1,
+    "rows": 232352,
+    "counts": [
+      "44b6_0113de3b=25488/24775",
+      "44b6_0b24845f=18141/17119",
+      "6bba_05b6850b=5965/5802",
+      "6bba_05db0fb1=68474/66588"
+    ],
+    "csv_sha256": "a0698b31ca7cdb27f1976b472a503b6b17e1477b4b302b7d6c3eea35be8aa389",
+    "source_sha256": "544e6c42214ef7d69c749a9781483d35ff89473bdf01058c2c83a340358db422",
+    "gate": "PASS"
+  }
+]

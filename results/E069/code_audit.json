@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-09-27T19:49:50.132478+00:00",
+  "sources": {
+    "independent_rules.py": "505d45d63493e51eebe97774562be784d133b31da83130d9df7831395f2566d5",
+    "independent_linker.py": "8352d826e73a37f18ad8000dbd68fe99207d9da1f385ecce1c47944d4119b813",
+    "hengck_model_v12.py": "dab06ddd61eb19c4ce9d5695d110e680d38a35b2aaf3ec6a0499c7ad5fbc9774",
+    "run_e069_local.py": "27c63472ce0e02a0082e10d2c6156a6f8c385cbcef958b51d4eb9f2abfc4cbd5",
+    "run_e069_local_joins.py": "7475094b9b879b73582595e4bdcb260c8692ddcf6cccb1f33bc07aa2728d652f",
+    "run_e069_local_forks.py": "00f41ce69ad57fc03b82f23403e7dfae79fa895edfb5f7506621df739638c3ef",
+    "e069_runner.py": "3b7a1007e565469757e914a642a54f50a692763f2f80973f297653a3e26af5dd",
+    "build_e069.py": "4f4672e78bc8d262e186c1eafa10d388b2323ca6ed65d91a046cc73aac18d92d"
+  },
+  "note": "Current source audit includes the later fork-veto adapter. The uploaded local manifest records the earlier swap/join adapter hashes; the CPU scoring notebook is frozen separately in local_eval_launch.json."
+}

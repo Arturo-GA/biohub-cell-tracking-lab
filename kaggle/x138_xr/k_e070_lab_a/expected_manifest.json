@@ -1,0 +1,14 @@
+{
+  "experiment": "E070",
+  "part": "a",
+  "candidates": [
+    "C3_public0955",
+    "C3_fork8",
+    "F8_prune12",
+    "F8_joint",
+    "F8_prune12_joint",
+    "F8_p8"
+  ],
+  "payload_sha256": "5bd57812a2229f183609c64ea09eefc6c9dbe1241a1decfa8b3227ed7f2ed5b1",
+  "gpu": false
+}

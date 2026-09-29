@@ -1,0 +1,14 @@
+{
+  "kernel": "jarturo/biohub-c3-pruning-cpu7",
+  "version": 1,
+  "notebook_sha256": "8c54087bc8c04bf262ec9f36c1b405b210d2ea7ffc56bec1e5d88752a8b1679d",
+  "configs": 9,
+  "videos_per_config": 199,
+  "fork8_boundary_all_rows_identical": true,
+  "fork8_boundary_all_graph_and_coordinate_hashes_identical": true,
+  "safe_division_replay_mismatches": 0,
+  "linefit_parity_checks": 18,
+  "linefit_parity_mismatches": 0,
+  "cpu_lab_seconds": 4665,
+  "warning": "Training/tuning data reused; no independent validation or public score forecast."
+}

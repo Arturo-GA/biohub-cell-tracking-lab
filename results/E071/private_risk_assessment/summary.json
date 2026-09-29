@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-09-29T06:47:18.670024+00:00",
+  "team_count": 3987,
+  "own": [
+    {
+      "Rank": "185",
+      "TeamId": "16887540",
+      "TeamName": "Arturo Guti\u00e9rrez Aguilar",
+      "LastSubmissionDate": "2026-09-29 00:11:11",
+      "Score": "0.957",
+      "SubmissionCount": "37",
+      "TeamMemberUserNames": "jarturo"
+    }
+  ],
+  "silver_cutoff_position": 199,
+  "bronze_cutoff_position": 398,
+  "cutoff_rows": [
+    {
+      "Rank": "199",
+      "TeamId": "16459913",
+      "TeamName": "Rishabh Roy",
+      "LastSubmissionDate": "2026-09-26 19:53:29",
+      "Score": "0.957",
+      "SubmissionCount": "133",
+      "TeamMemberUserNames": "rishabhr0y,themechanicalcoder"
+    },
+    {
+      "Rank": "398",
+      "TeamId": "16551924",
+      "TeamName": "Jean-Fran\u00e7ois DAVID",
+      "LastSubmissionDate": "2026-09-27 21:12:01",
+      "Score": "0.955",
+      "SubmissionCount": "53",
+      "TeamMemberUserNames": "jeanfranoisdavid,voldavid"
+    }
+  ]
+}

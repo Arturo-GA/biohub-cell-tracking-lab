@@ -1,0 +1,9 @@
+{
+  "experiment": "E069",
+  "mode": "capture",
+  "payload_sha256": "5f47e5f017bc6cff0a3e3e10baf52305ea593dbbd32c8e93d97524df50161aec",
+  "checkpoint_sha256": "ecd8869de9cf405c1a93a563b4810faad5fd2378f57341e18c4e6b5a87201552",
+  "baseline": "C3_public0955",
+  "panel_seed": "e069-fixed-panel-1",
+  "internet": false
+}

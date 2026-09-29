@@ -1,0 +1,20 @@
+{
+  "candidate": "C3_R094",
+  "kernel": "jarturo/biohub-e071-c3-r094",
+  "version": 1,
+  "file_name": "submission.csv",
+  "csv_sha256": "69b36627dfb89830de336b6ccf3cb2ae853d1a4163cfe39c17a6e18b8603027a",
+  "notebook_sha256": "9ffc984b81cca24d021307d3404e5a136f12308cc4ec94f280ee37bb8674bb4f",
+  "status": "ACCEPTED",
+  "attempted_at_utc": "2026-09-29T00:09:43.584457+00:00",
+  "limits_before": {
+    "num_today": 1,
+    "num_allowed_now": 4,
+    "limited_by_total": false
+  },
+  "message": "E071 final 20260929 C3_R094 v1 sha=69b36627dfb89830",
+  "authorization": "results/E071/final_five_authorization.json",
+  "ref": 56656425,
+  "response_message": "",
+  "response_at_utc": "2026-09-29T00:09:45.589346+00:00"
+}

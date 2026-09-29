@@ -1,0 +1,46 @@
+{
+  "checked_at_utc": "2026-09-29T23:02:09.627253+00:00",
+  "scope": "Repository checkpoint E068-E071",
+  "tests": {
+    "command": "C:/dev/rsna-knee/.venv/Scripts/python.exe -m unittest tests.test_x138_context tests.test_x138_gate tests.test_x138_lineage_repair tests.test_x138_replay_linefit tests.test_e069_independent tests.test_e070_positions tests.test_e070_submission",
+    "passed": 32,
+    "failed": 0
+  },
+  "python_files_parsed": 51,
+  "json_and_notebook_files_parsed": 277,
+  "notebooks": 39,
+  "saved_notebook_outputs": 0,
+  "forbidden_artifacts_staged": [],
+  "potential_secret_scan": "No matches for private keys, GitHub/Kaggle token patterns, signed download URLs or literal credential assignments in changed files.",
+  "git_diff_check": "PASS",
+  "frozen_submission_notebooks": [
+    {
+      "candidate": "C3_D04_R094",
+      "path": "kaggle/x138_xr/k_e071_c3_d04_r094/notebook.ipynb",
+      "staged_sha256_matches_receipt": true
+    },
+    {
+      "candidate": "C3_R094",
+      "path": "kaggle/x138_xr/k_e071_c3_r094/notebook.ipynb",
+      "staged_sha256_matches_receipt": true
+    },
+    {
+      "candidate": "C3_D04",
+      "path": "kaggle/x138_xr/k_e071_c3_d04/notebook.ipynb",
+      "staged_sha256_matches_receipt": true
+    },
+    {
+      "candidate": "C3_D08_R094",
+      "path": "kaggle/x138_xr/k_e071_c3_d08_r094/notebook.ipynb",
+      "staged_sha256_matches_receipt": true
+    },
+    {
+      "candidate": "C3_D04_R092",
+      "path": "kaggle/x138_xr/k_e071_c3_d04_r092/notebook.ipynb",
+      "staged_sha256_matches_receipt": true
+    }
+  ],
+  "excluded": "Local execution lock and duplicate leaderboard ZIPs; JSON evidence retained. Existing exclusions continue for environments, weights, data and prediction CSVs.",
+  "private_results_available": false,
+  "new_experiments_or_submissions": false
+}

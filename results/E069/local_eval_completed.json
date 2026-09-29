@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-e069-local-linker-cpu",
+  "version": 1,
+  "files": 17,
+  "summary": {
+    "configurations": 11,
+    "videos": 32,
+    "seconds": 615.3710805950001,
+    "note": "Reused detector-training videos; the confirmation subset is not independent detector validation."
+  },
+  "manifest_verified": true
+}

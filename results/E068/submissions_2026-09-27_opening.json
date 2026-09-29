@@ -1,0 +1,44 @@
+[
+  {
+    "ref": 56592151,
+    "date": "2026-09-27 00:03:13.963000",
+    "status": "SubmissionStatus.PENDING",
+    "description": "c3 probe: L7 + E prune + nan8 + end5last, no tau [lab199 +0.0013]"
+  },
+  {
+    "ref": 56592094,
+    "date": "2026-09-27 00:02:43.260000",
+    "status": "SubmissionStatus.PENDING",
+    "description": "c6 probe: L7 + SAFE_DIV_SISTER_SYMMETRY_TAU=1.0 global only [lab72 traced +0.0035]"
+  },
+  {
+    "ref": 56592042,
+    "date": "2026-09-27 00:02:13.613000",
+    "status": "SubmissionStatus.PENDING",
+    "description": "S2 L7 + tau6bba1.0 + E prune + nan8 + end5last (no fork) [lab199 XR +0.0013]"
+  },
+  {
+    "ref": 56591970,
+    "date": "2026-09-27 00:01:45.467000",
+    "status": "SubmissionStatus.PENDING",
+    "description": "S5 L7 + tau6bba1.0 + P8 prune(*:8:0.7) + nan8 + end5last + fork8-nanonly [lab199 XR +0.0022 165/34]"
+  },
+  {
+    "ref": 56591883,
+    "date": "2026-09-27 00:01:16.183000",
+    "status": "SubmissionStatus.PENDING",
+    "description": "S1 L7 + tau6bba1.0 + E prune(44b6:8:0.7,6bba:11:0.7) + nan8 + end5last + fork8-nanonly [lab199 XR +0.0022, tau +0.0037/72v]"
+  },
+  {
+    "ref": 56563363,
+    "date": "2026-09-26 00:01:09.220000",
+    "status": "SubmissionStatus.COMPLETE",
+    "description": "B5 calibration L7 + interior<9 (lab72 predicts = L7)"
+  },
+  {
+    "ref": 56563339,
+    "date": "2026-09-26 00:01:03.400000",
+    "status": "SubmissionStatus.COMPLETE",
+    "description": "B4 L7 + prune comps size<12 with mean edge_prob<0.5 (lab72 +0.0006, 55/1 videos)"
+  }
+]

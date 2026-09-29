@@ -1,0 +1,6 @@
+{
+  "automation_id": "biohub-completar-cinco-submissions",
+  "status": "PAUSED",
+  "checked_at_utc": "2026-09-27T21:46:37.352021+00:00",
+  "reason": "Five distinct candidates executed, verified and selected; preparation complete. No automatic leaderboard submission."
+}

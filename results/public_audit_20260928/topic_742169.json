@@ -1,0 +1,61 @@
+{
+  "topic": {
+    "id": 742169,
+    "title": "A few question for top 100 people?",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/742169",
+    "postDate": "2026-09-20T13:22:23.864Z",
+    "authorName": "OmerZalman",
+    "authorUrl": "https://www.kaggle.com/omerzalman",
+    "votes": 4,
+    "commentCount": 6,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>Is your performance mainly from a particular model or the overall pipeline?\nDid you refine public notebooks, use open-source tools such as HOCT, or train your own model?\nWhich component improved your score most: detection, linking, division detection, or post-processing?\nDid you train on all available movies, and how did you design validation to avoid overfitting?\nHow well does your local validation correlate with the leaderboard?\nHow do you balance division recall against false divisions?\nDo you use ensembling, test-time augmentation, or global graph optimization?\nWhich promising approaches failed, and what would you recommend improving first?</p>"
+  },
+  "comments": [
+    {
+      "id": 3528965,
+      "authorName": "MOHAMMED RASHID M",
+      "postDate": "2026-09-27T02:28:46.610Z",
+      "content": "<p>Hi hello hi hello</p>",
+      "votes": -1,
+      "replies": [
+        {
+          "id": 3529330,
+          "authorName": "Chris Deotte",
+          "postDate": "2026-09-28T00:16:32.367Z",
+          "content": "<p>hello Mohammed. Welcome to Kaggle!</p>"
+        }
+      ]
+    },
+    {
+      "id": 3526181,
+      "authorName": "Ogurtsov",
+      "postDate": "2026-09-20T15:45:37.160Z",
+      "content": "<p>I guess you have some room for improvement in all directions.</p>",
+      "votes": 1,
+      "replies": [
+        {
+          "id": 3526191,
+          "authorName": "OmerZalman",
+          "postDate": "2026-09-20T16:40:43.873Z",
+          "content": "<p>Thanks! If you had to prioritize one area for a solution scoring around 0.950, where do you think the largest remaining gain is: cell detection, temporal linking, division detection, or graph post-processing? Did your biggest improvement come from model training or pipeline refinement?</p>",
+          "votes": -1
+        },
+        {
+          "id": 3528959,
+          "authorName": "OmerZalman",
+          "postDate": "2026-09-27T01:57:06.210Z",
+          "content": "<p>im stuck at 0.957 do you have any tips?</p>"
+        }
+      ]
+    },
+    {
+      "id": 3526179,
+      "authorName": "Gourav Roy",
+      "postDate": "2026-09-20T15:41:42.453Z",
+      "content": "<p>Did improve the public notebook ?</p>"
+    }
+  ],
+  "next_page_token": ""
+}

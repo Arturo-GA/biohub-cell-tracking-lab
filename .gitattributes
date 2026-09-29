@@ -1,3 +1,9 @@
 * text=auto eol=lf
 # Preserve upstream CELLECT formatting; its canonical source hash is verified.
 src/biohub_cellect/model.py -whitespace
+# Frozen Kaggle notebooks: retain exact bytes referenced by launch receipts.
+kaggle/x138_xr/k_*/notebook.ipynb -text -whitespace
+# Source and diff snapshots retain original whitespace for provenance.
+kaggle/x138_xr/hengck_model_v12.py -text -whitespace
+results/public_audit_20260928/c3_review.source.py -text -whitespace
+results/**/*.diff -whitespace

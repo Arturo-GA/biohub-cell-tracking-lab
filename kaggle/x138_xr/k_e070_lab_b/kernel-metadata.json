@@ -1,0 +1,28 @@
+{
+  "id": "jarturo/biohub-e070-lab-b",
+  "title": "biohub e070 lab b",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1",
+    "anvithpothula/biohub-v1284-head-s075"
+  ],
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "kernel_sources": [
+    "jarturo/biohub-prune-lab4",
+    "jarturo/biohub-prune-lab5",
+    "jarturo/biohub-prune-lab6",
+    "jarturo/biohub-prune-lab7",
+    "jarturo/biohub-prune-lab8"
+  ],
+  "model_sources": []
+}

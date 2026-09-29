@@ -1,0 +1,332 @@
+[
+ {
+  "name": "C3_public0955",
+  "score": 0.9441025959363138,
+  "delta": 0.0,
+  "ci90": [
+   0.0,
+   0.0
+  ],
+  "win": 0,
+  "lose": 0,
+  "division": [
+   1,
+   10,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.0,
+   "confirmation": 0.0
+  },
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "geometry",
+  "score": 0.9442631481365648,
+  "delta": 0.00016055220025090744,
+  "ci90": [
+   0.0,
+   0.00045428192829000125
+  ],
+  "win": 1,
+  "lose": 0,
+  "division": [
+   1,
+   10,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.00033605116342461105,
+   "confirmation": 0.0
+  },
+  "operations": {
+   "candidates": 235803,
+   "eligible": 18,
+   "swaps": 18,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "neural_strict",
+  "score": 0.9442631481365648,
+  "delta": 0.00016055220025090744,
+  "ci90": [
+   0.0,
+   0.00045428192829000125
+  ],
+  "win": 1,
+  "lose": 0,
+  "division": [
+   1,
+   10,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.00033605116342461105,
+   "confirmation": 0.0
+  },
+  "operations": {
+   "candidates": 235803,
+   "eligible": 4,
+   "swaps": 4,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "neural_balanced",
+  "score": 0.9442631481365648,
+  "delta": 0.00016055220025090744,
+  "ci90": [
+   0.0,
+   0.00045428192829000125
+  ],
+  "win": 1,
+  "lose": 0,
+  "division": [
+   1,
+   10,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.00033605116342461105,
+   "confirmation": 0.0
+  },
+  "operations": {
+   "candidates": 235803,
+   "eligible": 5,
+   "swaps": 5,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "join_geometry",
+  "score": 0.9441025959363138,
+  "delta": 0.0,
+  "ci90": [
+   0.0,
+   0.0
+  ],
+  "win": 0,
+  "lose": 0,
+  "division": [
+   1,
+   10,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.0,
+   "confirmation": 0.0
+  },
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "join_neural",
+  "score": 0.9441025959363138,
+  "delta": 0.0,
+  "ci90": [
+   0.0,
+   0.0
+  ],
+  "win": 0,
+  "lose": 0,
+  "division": [
+   1,
+   10,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.0,
+   "confirmation": 0.0
+  },
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "fork_veto",
+  "score": 0.9441025959363138,
+  "delta": 0.0,
+  "ci90": [
+   0.0,
+   0.0
+  ],
+  "win": 0,
+  "lose": 0,
+  "division": [
+   1,
+   10,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.0,
+   "confirmation": 0.0
+  },
+  "operations": {
+   "candidates": 375,
+   "eligible": 0,
+   "swaps": 0,
+   "joins": 0,
+   "fork_vetoes": 2,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "C3_fork8",
+  "score": 0.9444524752846671,
+  "delta": 0.00034987934835328804,
+  "ci90": [
+   6.571864966220531e-06,
+   0.0010095673312369158
+  ],
+  "win": 14,
+  "lose": 0,
+  "division": [
+   1,
+   8,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 5.252595531857196e-06,
+   "confirmation": 0.000208471535870558
+  },
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "fork8_neural_strict",
+  "score": 0.9446130577613284,
+  "delta": 0.0005104618250145743,
+  "ci90": [
+   6.380504763880968e-05,
+   0.0011387079141389478
+  ],
+  "win": 15,
+  "lose": 0,
+  "division": [
+   1,
+   8,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.00034130497118711745,
+   "confirmation": 0.000208471535870558
+  },
+  "operations": {
+   "candidates": 235727,
+   "eligible": 4,
+   "swaps": 4,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "fork8_joint_neural",
+  "score": 0.9446130577613284,
+  "delta": 0.0005104618250145743,
+  "ci90": [
+   6.380504763880968e-05,
+   0.0011387079141389478
+  ],
+  "win": 15,
+  "lose": 0,
+  "division": [
+   1,
+   8,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 0.00034130497118711745,
+   "confirmation": 0.000208471535870558
+  },
+  "operations": {
+   "candidates": 235727,
+   "eligible": 4,
+   "swaps": 4,
+   "joins": 0,
+   "fork_vetoes": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "fork8_veto",
+  "score": 0.9444524752846671,
+  "delta": 0.00034987934835328804,
+  "ci90": [
+   6.571864966220531e-06,
+   0.0010095673312369158
+  ],
+  "win": 14,
+  "lose": 0,
+  "division": [
+   1,
+   8,
+   19
+  ],
+  "videos": 32,
+  "subsets": {
+   "development": 5.252595531857196e-06,
+   "confirmation": 0.000208471535870558
+  },
+  "operations": {
+   "candidates": 375,
+   "eligible": 0,
+   "swaps": 0,
+   "joins": 0,
+   "fork_vetoes": 2,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ }
+]

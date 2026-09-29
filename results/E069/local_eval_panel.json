@@ -1,0 +1,226 @@
+[
+ {
+  "stem": "44b6_74d0c52e",
+  "group": "44b6",
+  "density_stratum": 0,
+  "subset": "development",
+  "nodes": 8958
+ },
+ {
+  "stem": "44b6_0db75fae",
+  "group": "44b6",
+  "density_stratum": 0,
+  "subset": "development",
+  "nodes": 18175
+ },
+ {
+  "stem": "44b6_aaf8b0ea",
+  "group": "44b6",
+  "density_stratum": 0,
+  "subset": "confirmation",
+  "nodes": 14891
+ },
+ {
+  "stem": "44b6_8cc6506c",
+  "group": "44b6",
+  "density_stratum": 0,
+  "subset": "confirmation",
+  "nodes": 19295
+ },
+ {
+  "stem": "44b6_33b596bf",
+  "group": "44b6",
+  "density_stratum": 1,
+  "subset": "development",
+  "nodes": 24441
+ },
+ {
+  "stem": "44b6_9be80b04",
+  "group": "44b6",
+  "density_stratum": 1,
+  "subset": "development",
+  "nodes": 26880
+ },
+ {
+  "stem": "44b6_90724892",
+  "group": "44b6",
+  "density_stratum": 1,
+  "subset": "confirmation",
+  "nodes": 23758
+ },
+ {
+  "stem": "44b6_1574802b",
+  "group": "44b6",
+  "density_stratum": 1,
+  "subset": "confirmation",
+  "nodes": 19871
+ },
+ {
+  "stem": "44b6_d29c9ab2",
+  "group": "44b6",
+  "density_stratum": 2,
+  "subset": "development",
+  "nodes": 36732
+ },
+ {
+  "stem": "44b6_c8e2a523",
+  "group": "44b6",
+  "density_stratum": 2,
+  "subset": "development",
+  "nodes": 29063
+ },
+ {
+  "stem": "44b6_706092f0",
+  "group": "44b6",
+  "density_stratum": 2,
+  "subset": "confirmation",
+  "nodes": 30637
+ },
+ {
+  "stem": "44b6_71a4179f",
+  "group": "44b6",
+  "density_stratum": 2,
+  "subset": "confirmation",
+  "nodes": 32730
+ },
+ {
+  "stem": "44b6_2a2eff9f",
+  "group": "44b6",
+  "density_stratum": 3,
+  "subset": "development",
+  "nodes": 40198
+ },
+ {
+  "stem": "44b6_7a302da0",
+  "group": "44b6",
+  "density_stratum": 3,
+  "subset": "development",
+  "nodes": 45080
+ },
+ {
+  "stem": "44b6_ddf577ad",
+  "group": "44b6",
+  "density_stratum": 3,
+  "subset": "confirmation",
+  "nodes": 38849
+ },
+ {
+  "stem": "44b6_c96cfa10",
+  "group": "44b6",
+  "density_stratum": 3,
+  "subset": "confirmation",
+  "nodes": 38640
+ },
+ {
+  "stem": "6bba_55b7eebe",
+  "group": "6bba",
+  "density_stratum": 0,
+  "subset": "development",
+  "nodes": 4652
+ },
+ {
+  "stem": "6bba_d5eae175",
+  "group": "6bba",
+  "density_stratum": 0,
+  "subset": "development",
+  "nodes": 4196
+ },
+ {
+  "stem": "6bba_268e1230",
+  "group": "6bba",
+  "density_stratum": 0,
+  "subset": "confirmation",
+  "nodes": 5109
+ },
+ {
+  "stem": "6bba_4f99ce20",
+  "group": "6bba",
+  "density_stratum": 0,
+  "subset": "confirmation",
+  "nodes": 5561
+ },
+ {
+  "stem": "6bba_15403b9a",
+  "group": "6bba",
+  "density_stratum": 1,
+  "subset": "development",
+  "nodes": 6461
+ },
+ {
+  "stem": "6bba_61dd1e0d",
+  "group": "6bba",
+  "density_stratum": 1,
+  "subset": "development",
+  "nodes": 9756
+ },
+ {
+  "stem": "6bba_b693381b",
+  "group": "6bba",
+  "density_stratum": 1,
+  "subset": "confirmation",
+  "nodes": 6314
+ },
+ {
+  "stem": "6bba_ae82a791",
+  "group": "6bba",
+  "density_stratum": 1,
+  "subset": "confirmation",
+  "nodes": 7230
+ },
+ {
+  "stem": "6bba_d2b9fc0c",
+  "group": "6bba",
+  "density_stratum": 2,
+  "subset": "development",
+  "nodes": 19247
+ },
+ {
+  "stem": "6bba_0c7fa718",
+  "group": "6bba",
+  "density_stratum": 2,
+  "subset": "development",
+  "nodes": 13144
+ },
+ {
+  "stem": "6bba_1ebfb80d",
+  "group": "6bba",
+  "density_stratum": 2,
+  "subset": "confirmation",
+  "nodes": 11663
+ },
+ {
+  "stem": "6bba_fc5f39dc",
+  "group": "6bba",
+  "density_stratum": 2,
+  "subset": "confirmation",
+  "nodes": 18112
+ },
+ {
+  "stem": "6bba_5c824876",
+  "group": "6bba",
+  "density_stratum": 3,
+  "subset": "development",
+  "nodes": 26042
+ },
+ {
+  "stem": "6bba_6db0e9b4",
+  "group": "6bba",
+  "density_stratum": 3,
+  "subset": "development",
+  "nodes": 25831
+ },
+ {
+  "stem": "6bba_74686d6a",
+  "group": "6bba",
+  "density_stratum": 3,
+  "subset": "confirmation",
+  "nodes": 26491
+ },
+ {
+  "stem": "6bba_78a7bd97",
+  "group": "6bba",
+  "density_stratum": 3,
+  "subset": "confirmation",
+  "nodes": 40861
+ }
+]

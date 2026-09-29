@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-09-27T00:06:50.747907+00:00",
+  "candidate": "B",
+  "kernel": "jarturo/biohub-exact-b",
+  "version": 1,
+  "error_type": "HTTPError",
+  "error": "400 Client Error: Bad Request for url: https://api.kaggle.com/v1/competitions.CompetitionApiService/CreateCodeSubmission"
+}

@@ -1,0 +1,781 @@
+{
+  "kernel": "jarturo/biohub-e069-local-linker-cpu",
+  "version": 1,
+  "videos": 32,
+  "configurations": 11,
+  "comparisons": [
+    {
+      "delta": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "changed_metric_videos": [],
+      "video_deltas": {},
+      "name": "C3_public0955",
+      "score": 0.9441025959363138,
+      "control": "C3_public0955",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "development": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 0,
+        "eligible": 0,
+        "swaps": 0,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        10,
+        19
+      ],
+      "has_positive_increment": false
+    },
+    {
+      "delta": 0.00016055220025090744,
+      "wins": 1,
+      "losses": 0,
+      "changed_metric_videos": [
+        "6bba_d2b9fc0c"
+      ],
+      "video_deltas": {
+        "6bba_d2b9fc0c": 0.003248672298020727
+      },
+      "name": "geometry",
+      "score": 0.9442631481365648,
+      "control": "C3_public0955",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.00023012350014972593,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "development": {
+          "delta": 0.00033605116342461105,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 235803,
+        "eligible": 18,
+        "swaps": 18,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        10,
+        19
+      ],
+      "has_positive_increment": true
+    },
+    {
+      "delta": 0.00016055220025090744,
+      "wins": 1,
+      "losses": 0,
+      "changed_metric_videos": [
+        "6bba_d2b9fc0c"
+      ],
+      "video_deltas": {
+        "6bba_d2b9fc0c": 0.003248672298020727
+      },
+      "name": "neural_strict",
+      "score": 0.9442631481365648,
+      "control": "C3_public0955",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.00023012350014972593,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "development": {
+          "delta": 0.00033605116342461105,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 235803,
+        "eligible": 4,
+        "swaps": 4,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        10,
+        19
+      ],
+      "versus_geometry": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "changed_metric_videos": [],
+        "video_deltas": {}
+      },
+      "has_positive_increment": true
+    },
+    {
+      "delta": 0.00016055220025090744,
+      "wins": 1,
+      "losses": 0,
+      "changed_metric_videos": [
+        "6bba_d2b9fc0c"
+      ],
+      "video_deltas": {
+        "6bba_d2b9fc0c": 0.003248672298020727
+      },
+      "name": "neural_balanced",
+      "score": 0.9442631481365648,
+      "control": "C3_public0955",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.00023012350014972593,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "development": {
+          "delta": 0.00033605116342461105,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 235803,
+        "eligible": 5,
+        "swaps": 5,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        10,
+        19
+      ],
+      "versus_geometry": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "changed_metric_videos": [],
+        "video_deltas": {}
+      },
+      "has_positive_increment": true
+    },
+    {
+      "delta": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "changed_metric_videos": [],
+      "video_deltas": {},
+      "name": "join_geometry",
+      "score": 0.9441025959363138,
+      "control": "C3_public0955",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "development": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 0,
+        "eligible": 0,
+        "swaps": 0,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        10,
+        19
+      ],
+      "has_positive_increment": false
+    },
+    {
+      "delta": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "changed_metric_videos": [],
+      "video_deltas": {},
+      "name": "join_neural",
+      "score": 0.9441025959363138,
+      "control": "C3_public0955",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "development": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 0,
+        "eligible": 0,
+        "swaps": 0,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        10,
+        19
+      ],
+      "has_positive_increment": false
+    },
+    {
+      "delta": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "changed_metric_videos": [],
+      "video_deltas": {},
+      "name": "fork_veto",
+      "score": 0.9441025959363138,
+      "control": "C3_public0955",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "development": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 375,
+        "eligible": 0,
+        "swaps": 0,
+        "joins": 0,
+        "fork_vetoes": 2,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        10,
+        19
+      ],
+      "has_positive_increment": false
+    },
+    {
+      "delta": 0.00034987934835328804,
+      "wins": 14,
+      "losses": 0,
+      "changed_metric_videos": [
+        "44b6_0db75fae",
+        "44b6_1574802b",
+        "44b6_2a2eff9f",
+        "44b6_33b596bf",
+        "44b6_706092f0",
+        "44b6_71a4179f",
+        "44b6_74d0c52e",
+        "44b6_7a302da0",
+        "44b6_aaf8b0ea",
+        "44b6_c96cfa10",
+        "44b6_ddf577ad",
+        "6bba_1ebfb80d",
+        "6bba_74686d6a",
+        "6bba_78a7bd97"
+      ],
+      "video_deltas": {
+        "44b6_0db75fae": 5.79119315421428e-05,
+        "44b6_1574802b": 0.005387929854145379,
+        "44b6_2a2eff9f": 2.2499695626065908e-05,
+        "44b6_33b596bf": 3.857693956266228e-05,
+        "44b6_706092f0": 7.299725606979557e-06,
+        "44b6_71a4179f": 5.68626767427638e-06,
+        "44b6_74d0c52e": 3.7276341948389025e-05,
+        "44b6_7a302da0": 4.590605680043769e-05,
+        "44b6_aaf8b0ea": 2.229596120195687e-05,
+        "44b6_c96cfa10": 5.0397391116674406e-05,
+        "44b6_ddf577ad": 1.6327325487286437e-05,
+        "6bba_1ebfb80d": 2.3175042642042953e-05,
+        "6bba_74686d6a": 0.0015880969698315317,
+        "6bba_78a7bd97": 9.48534903455478e-06
+      },
+      "name": "C3_fork8",
+      "score": 0.9444524752846671,
+      "control": "C3_public0955",
+      "groups": {
+        "44b6": {
+          "delta": 0.00019139835226567037,
+          "wins": 11,
+          "losses": 0,
+          "changed_metric_videos": [
+            "44b6_0db75fae",
+            "44b6_1574802b",
+            "44b6_2a2eff9f",
+            "44b6_33b596bf",
+            "44b6_706092f0",
+            "44b6_71a4179f",
+            "44b6_74d0c52e",
+            "44b6_7a302da0",
+            "44b6_aaf8b0ea",
+            "44b6_c96cfa10",
+            "44b6_ddf577ad"
+          ],
+          "video_deltas": {
+            "44b6_0db75fae": 5.79119315421428e-05,
+            "44b6_1574802b": 0.005387929854145379,
+            "44b6_2a2eff9f": 2.2499695626065908e-05,
+            "44b6_33b596bf": 3.857693956266228e-05,
+            "44b6_706092f0": 7.299725606979557e-06,
+            "44b6_71a4179f": 5.68626767427638e-06,
+            "44b6_74d0c52e": 3.7276341948389025e-05,
+            "44b6_7a302da0": 4.590605680043769e-05,
+            "44b6_aaf8b0ea": 2.229596120195687e-05,
+            "44b6_c96cfa10": 5.0397391116674406e-05,
+            "44b6_ddf577ad": 1.6327325487286437e-05
+          }
+        },
+        "6bba": {
+          "delta": 0.000444815578238944,
+          "wins": 3,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_1ebfb80d",
+            "6bba_74686d6a",
+            "6bba_78a7bd97"
+          ],
+          "video_deltas": {
+            "6bba_1ebfb80d": 2.3175042642042953e-05,
+            "6bba_74686d6a": 0.0015880969698315317,
+            "6bba_78a7bd97": 9.48534903455478e-06
+          }
+        },
+        "development": {
+          "delta": 5.252595531857196e-06,
+          "wins": 5,
+          "losses": 0,
+          "changed_metric_videos": [
+            "44b6_74d0c52e",
+            "44b6_0db75fae",
+            "44b6_33b596bf",
+            "44b6_2a2eff9f",
+            "44b6_7a302da0"
+          ],
+          "video_deltas": {
+            "44b6_74d0c52e": 3.7276341948389025e-05,
+            "44b6_0db75fae": 5.79119315421428e-05,
+            "44b6_33b596bf": 3.857693956266228e-05,
+            "44b6_2a2eff9f": 2.2499695626065908e-05,
+            "44b6_7a302da0": 4.590605680043769e-05
+          }
+        },
+        "confirmation": {
+          "delta": 0.000208471535870558,
+          "wins": 9,
+          "losses": 0,
+          "changed_metric_videos": [
+            "44b6_aaf8b0ea",
+            "44b6_1574802b",
+            "44b6_706092f0",
+            "44b6_71a4179f",
+            "44b6_ddf577ad",
+            "44b6_c96cfa10",
+            "6bba_1ebfb80d",
+            "6bba_74686d6a",
+            "6bba_78a7bd97"
+          ],
+          "video_deltas": {
+            "44b6_aaf8b0ea": 2.229596120195687e-05,
+            "44b6_1574802b": 0.005387929854145379,
+            "44b6_706092f0": 7.299725606979557e-06,
+            "44b6_71a4179f": 5.68626767427638e-06,
+            "44b6_ddf577ad": 1.6327325487286437e-05,
+            "44b6_c96cfa10": 5.0397391116674406e-05,
+            "6bba_1ebfb80d": 2.3175042642042953e-05,
+            "6bba_74686d6a": 0.0015880969698315317,
+            "6bba_78a7bd97": 9.48534903455478e-06
+          }
+        }
+      },
+      "operations": {
+        "candidates": 0,
+        "eligible": 0,
+        "swaps": 0,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        8,
+        19
+      ],
+      "has_positive_increment": true
+    },
+    {
+      "delta": 0.00016058247666128622,
+      "wins": 1,
+      "losses": 0,
+      "changed_metric_videos": [
+        "6bba_d2b9fc0c"
+      ],
+      "video_deltas": {
+        "6bba_d2b9fc0c": 0.003248672298020727
+      },
+      "name": "fork8_neural_strict",
+      "score": 0.9446130577613284,
+      "control": "C3_fork8",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.0002301540322764417,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "development": {
+          "delta": 0.00033605237565526025,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 235727,
+        "eligible": 4,
+        "swaps": 4,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        8,
+        19
+      ],
+      "has_positive_increment": true
+    },
+    {
+      "delta": 0.00016058247666128622,
+      "wins": 1,
+      "losses": 0,
+      "changed_metric_videos": [
+        "6bba_d2b9fc0c"
+      ],
+      "video_deltas": {
+        "6bba_d2b9fc0c": 0.003248672298020727
+      },
+      "name": "fork8_joint_neural",
+      "score": 0.9446130577613284,
+      "control": "C3_fork8",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.0002301540322764417,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "development": {
+          "delta": 0.00033605237565526025,
+          "wins": 1,
+          "losses": 0,
+          "changed_metric_videos": [
+            "6bba_d2b9fc0c"
+          ],
+          "video_deltas": {
+            "6bba_d2b9fc0c": 0.003248672298020727
+          }
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 235727,
+        "eligible": 4,
+        "swaps": 4,
+        "joins": 0,
+        "fork_vetoes": 0,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        8,
+        19
+      ],
+      "has_positive_increment": true
+    },
+    {
+      "delta": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "changed_metric_videos": [],
+      "video_deltas": {},
+      "name": "fork8_veto",
+      "score": 0.9444524752846671,
+      "control": "C3_fork8",
+      "groups": {
+        "44b6": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "6bba": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "development": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        },
+        "confirmation": {
+          "delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "changed_metric_videos": [],
+          "video_deltas": {}
+        }
+      },
+      "operations": {
+        "candidates": 375,
+        "eligible": 0,
+        "swaps": 0,
+        "joins": 0,
+        "fork_vetoes": 2,
+        "removed_tracks": 0,
+        "removed_nodes": 0
+      },
+      "division": [
+        1,
+        8,
+        19
+      ],
+      "has_positive_increment": false
+    }
+  ]
+}

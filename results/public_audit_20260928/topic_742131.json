@@ -1,0 +1,24 @@
+{
+  "topic": {
+    "id": 742131,
+    "title": "Any ideas or successful approaches for model blending?",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/742131",
+    "postDate": "2026-09-20T04:21:00.360Z",
+    "authorName": "sghwr",
+    "authorUrl": "https://www.kaggle.com/songhow",
+    "votes": 3,
+    "commentCount": 1,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>its just ~10 days before competition ends,and we managed to have two private model structures that are slightly weaker than the current best public models on the leaderboard, with a gap of only around 0.015–0.020.\nWe have been experimenting with different blending and ensemble strategies, hoping that the private models could provide complementary signals to the stronger public pipeline. However, none of our attempts has improved the Public LB so far. we're stucked😭\nI'd be grateful if I could get some advice on two issues:</p>\n<ol>\n<li><p>Has anyone successfully improved their Public LB using model blending or ensembling in this competition?</p></li>\n<li><p>If so, would you be willing to share some general ideas about what worked, such as the blending stage, matching strategy, confidence calibration, or how you handled detection nodes, edges, and divisions?\nWe are not asking for private code or exact parameters. Even high-level observations about successful or unsuccessful approaches would be very helpful.</p></li>\n</ol>\n<p>Thanks! ❤</p>"
+  },
+  "comments": [
+    {
+      "id": 3526062,
+      "authorName": "Yunk-S",
+      "postDate": "2026-09-20T07:33:21.217Z",
+      "content": "<p>卡了兄弟😭  我感觉开源的代码已经差不多优化到极限了</p>"
+    }
+  ],
+  "next_page_token": ""
+}

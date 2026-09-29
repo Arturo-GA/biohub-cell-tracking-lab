@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-09-27T20:15:12.795917+00:00",
+  "runs": [
+    {
+      "kernel": "jarturo/biohub-e069-duplicates-cpu",
+      "status": "COMPLETE",
+      "failure": ""
+    },
+    {
+      "kernel": "jarturo/biohub-e069-images-cpu",
+      "status": "COMPLETE",
+      "failure": ""
+    },
+    {
+      "kernel": "jarturo/biohub-e069-local-linker-cpu",
+      "status": "COMPLETE",
+      "failure": ""
+    }
+  ]
+}

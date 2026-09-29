@@ -1,0 +1,14 @@
+--- c3_cell0
+
++++ C3_D04
+
+@@ -39,7 +39,7 @@
+
+ os.environ["BIOHUB_SAFE_DIV_FRAME_FRAC_CAP"] = "0.0076"
+ os.environ["BIOHUB_SAFE_DIV_GLOBAL_FRAC_CAP"] = "0.00375"
+ 
+-os.environ["BIOHUB_ILP_DIVISION_WEIGHT"] = "1.2"     
++os.environ["BIOHUB_ILP_DIVISION_WEIGHT"] = "0.4"     
+ os.environ["BIOHUB_ADAPTIVE_SHORT_TRACK_RESCUE"] = "1"
+ os.environ["BIOHUB_SHORT_TRACK_RESCUE_MIN_LEN"] = "4"
+ os.environ["BIOHUB_SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB"] = "0.88"

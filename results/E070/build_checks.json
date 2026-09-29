@@ -1,0 +1,62 @@
+[
+  {
+    "folder": "k_e070_f8_curvature",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": true
+  },
+  {
+    "folder": "k_e070_f8_dc030",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": true
+  },
+  {
+    "folder": "k_e070_f8_end04",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": true
+  },
+  {
+    "folder": "k_e070_f8_joint",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": true
+  },
+  {
+    "folder": "k_e070_f8_outlier",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": true
+  },
+  {
+    "folder": "k_e070_f8_p8",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": true
+  },
+  {
+    "folder": "k_e070_f8_prune12",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": true
+  },
+  {
+    "folder": "k_e070_f8_prune12_joint",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": true
+  },
+  {
+    "folder": "k_e070_lab_a",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": false
+  },
+  {
+    "folder": "k_e070_lab_b",
+    "syntax": "PASS",
+    "private": true,
+    "gpu": false
+  }
+]

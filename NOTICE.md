@@ -86,4 +86,22 @@ reproductions or verified improvements. E052 compares the actual DeepCenter
 division threshold from zhehaoliang and reyhanksatria against our frozen public
 baseline. Sources, dates, hashes and experimental limitations are recorded in
 results/E051_public_audit.json and docs/E051_E054_PUBLICOS_Y_ENSAMBLE.es.md.
+
+## E069–E071: procedencia y alcance
+
+`kaggle/x138_xr/hengck_model_v12.py` conserva imports y definiciones del modelo
+público `hengck23/model_v12.py`, usado por
+[End2End Cell Linker](https://www.kaggle.com/code/hengck23/end2end-cell-linker-raw-edge-ja-0-9-no-ilp).
+Se retiró el código de demostración; su hash está en `results/E069/code_audit.json`.
+Los adaptadores `independent_linker.py` y `independent_rules.py` son de este
+proyecto. No se incluyen pesos ni se aplica una licencia propia al código ajeno.
+
+E071 conserva la base x138/Harmonic atribuida abajo. Las ablaciones del coste
+ILP de división y del umbral de readmisión se inspiran en la discusión pública
+[743929](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/743929),
+de John Taylor (AI), consultada el 28-09-2026. El hilo y las comparaciones se
+registran como evidencia atribuida; no prueban generalización privada ni que
+nuestro pipeline reproduzca toda la solución del autor. Los resultados propios
+están identificados por sus recibos oficiales de submission.
+
 - `kaggle/x138_xr/upstream/biohub-x138.ipynb` es una copia sin cambios de **biohub x138**, Anvith Pothula (`anvithpothula`), [fuente](https://www.kaggle.com/code/anvithpothula/biohub-x138), descargada el 2026-09-24 con `kaggle kernels pull`; la página de Kaggle indica licencia Apache 2.0. Deriva de Biohub Harmonic Fusion y del código y modelos de soporte de Pilkwang ya atribuidos arriba. La cabeza V1284 (`anvithpothula/biohub-v1284-head-s075`, CC0-1.0 según la API de Kaggle) se monta desde Kaggle y no se redistribuye. `build.py`, `extra_rules.py`, `trace_safediv.py`, `lab_capture.py`, `lab_eval.py`, `cpu_lab*.py`, `gate.py` y los scripts de orquestación de `kaggle/x138_xr/` son implementaciones de este proyecto: `build.py` reemplaza anclas exactas del notebook sin modificar el original y los laboratorios reutilizan `src/biohub_official` (BSD-3-Clause).

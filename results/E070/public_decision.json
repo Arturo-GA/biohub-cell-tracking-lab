@@ -1,0 +1,67 @@
+{
+  "recorded_at_utc": "2026-09-28T12:11:34.504328+00:00",
+  "branch": "UNFAVORABLE_FALLBACK_SENT",
+  "reference_public_score": 0.955,
+  "initial_results": {
+    "C3_fork8": {
+      "candidate": "C3_fork8",
+      "ref": 56622884,
+      "status": "COMPLETE",
+      "public_score": "0.953",
+      "error_description": "",
+      "date": "2026-09-28 00:04:00.990000",
+      "description": "E070 reset 20260928 C3_fork8 v1 sha=ff57683b494311df"
+    },
+    "F8_dc030": {
+      "candidate": "F8_dc030",
+      "ref": 56622918,
+      "status": "COMPLETE",
+      "public_score": "0.947",
+      "error_description": "",
+      "date": "2026-09-28 00:04:21.553000",
+      "description": "E070 reset 20260928 F8_dc030 v1 sha=278259394332a495"
+    }
+  },
+  "initial_deltas_vs_reference": {
+    "C3_fork8": -0.002,
+    "F8_dc030": -0.008
+  },
+  "interpretation": "Both initial local gains reversed on public. DC030 is -0.006 relative to fork8; do not promote it as an improved base. c3 0.955 remains the confirmed reference.",
+  "authorized_fallback_results": {
+    "F8_prune12": {
+      "candidate": "F8_prune12",
+      "ref": 56640207,
+      "status": "COMPLETE",
+      "public_score": "0.953",
+      "error_description": "",
+      "date": "2026-09-28 12:08:25.803000",
+      "description": "E070 reset 20260928 F8_prune12 v1 sha=f6a338452a5adcd7"
+    },
+    "F8_prune12_joint": {
+      "candidate": "F8_prune12_joint",
+      "ref": 56640212,
+      "status": "COMPLETE",
+      "public_score": "0.951",
+      "error_description": "",
+      "date": "2026-09-28 12:08:45.543000",
+      "description": "E070 reset 20260928 F8_prune12_joint v1 sha=54a8f84f35bd61a2"
+    },
+    "F8_joint": {
+      "candidate": "F8_joint",
+      "ref": 56640230,
+      "status": "COMPLETE",
+      "public_score": "0.951",
+      "error_description": "",
+      "date": "2026-09-28 12:09:20.357000",
+      "description": "E070 reset 20260928 F8_joint v1 sha=7843491b7d16fe6f"
+    }
+  },
+  "remaining_daily_submissions": 0,
+  "next_action": "E070 complete without improvement. Return to c3 for separately authorized final round.",
+  "closed_at_utc": "2026-09-28T19:56:52.560449+00:00",
+  "fallback_deltas_vs_c3": {
+    "F8_prune12": -0.002,
+    "F8_prune12_joint": -0.004,
+    "F8_joint": -0.004
+  }
+}

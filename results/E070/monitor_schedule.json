@@ -1,0 +1,30 @@
+{
+  "automation_id": "biohub-completar-cinco-submissions",
+  "updated_at_utc": "2026-09-28T00:08:13.380479+00:00",
+  "first_check_utc": "2026-09-28T05:07:18+00:00",
+  "first_check_lima": "2026-09-28T00:07:18-05:00",
+  "interval_minutes_after_first_check": 25,
+  "schedule_mode": "Read-only every 25 minutes for the three accepted fallback submissions; pause after all are terminal.",
+  "submission_refs": [
+    56622884,
+    56622918
+  ],
+  "read_only": true,
+  "user_requested_delay_hours": 5,
+  "conditional_action_policy": "results/E070/conditional_next_steps.json",
+  "first_check_completed_at_utc": "2026-09-28T05:08:02.665845+00:00",
+  "interval_minutes": 25,
+  "heartbeat_status": "ACTIVE",
+  "heartbeat_purpose": "Monitor the first two scores every 25 minutes; execute complementary experiments if either improves 0.955, otherwise send the three frozen fallback candidates once both have valid completed scores.",
+  "score_monitor_initial_delay_completed": true,
+  "auto_submit": false,
+  "conditional_fallback_auto_submit": false,
+  "conditional_fallback_fulfilled": true,
+  "remaining_submission_slots": 0,
+  "score_monitor_refs": [
+    56640207,
+    56640212,
+    56640230
+  ],
+  "decision_file": "results/E070/public_decision.json"
+}

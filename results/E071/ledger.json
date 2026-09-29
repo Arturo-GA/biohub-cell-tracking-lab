@@ -1,0 +1,307 @@
+{
+  "experiment": "E071",
+  "runs": {
+    "C3_D04_R094": {
+      "candidate": "C3_D04_R094",
+      "kernel": "jarturo/biohub-e071-c3-d04-r094",
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e071_c3_d04_r094",
+      "gpu": true,
+      "notebook_sha256": "ea8b362a97863146cb59298861e6d923b5603b00804cec55f3aaaf9de1b04b78",
+      "time_utc": "2026-09-28T20:05:30.910285+00:00",
+      "status": "COMPLETE",
+      "version": 1,
+      "leaderboard_submitted": true,
+      "other_sessions_at_launch": [
+        {
+          "kernel": "jarturo/gemma-4-paired-localization-policy-experiment",
+          "status": "QUEUED"
+        }
+      ],
+      "response": {
+        "ref": "/code/jarturo/biohub-e071-c3-d04-r094",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e071-c3-d04-r094",
+        "versionNumber": 1,
+        "kernelId": 136304955
+      },
+      "response_at_utc": "2026-09-28T20:05:33.629354+00:00",
+      "download_verified": true,
+      "csv_sha256": "adc1ee7d616a24ebba243a4c0e523e97bc0b7ecbeec9a83e154cee18b7d07434",
+      "submission_ref": 56656420,
+      "submission_status": "COMPLETE",
+      "public_score": "0.957"
+    },
+    "C3_R094": {
+      "candidate": "C3_R094",
+      "kernel": "jarturo/biohub-e071-c3-r094",
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e071_c3_r094",
+      "gpu": true,
+      "notebook_sha256": "9ffc984b81cca24d021307d3404e5a136f12308cc4ec94f280ee37bb8674bb4f",
+      "time_utc": "2026-09-28T21:15:33.733942+00:00",
+      "status": "COMPLETE",
+      "version": 1,
+      "leaderboard_submitted": true,
+      "other_sessions_at_launch": [
+        {
+          "kernel": "jarturo/gemma-4-paired-localization-policy-experiment",
+          "status": "QUEUED"
+        }
+      ],
+      "response": {
+        "ref": "/code/jarturo/biohub-e071-c3-r094",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e071-c3-r094",
+        "versionNumber": 1,
+        "kernelId": 136310403
+      },
+      "response_at_utc": "2026-09-28T21:15:36.418995+00:00",
+      "download_verified": true,
+      "csv_sha256": "69b36627dfb89830de336b6ccf3cb2ae853d1a4163cfe39c17a6e18b8603027a",
+      "submission_ref": 56656425,
+      "submission_status": "COMPLETE",
+      "public_score": "0.956"
+    },
+    "C3_D04": {
+      "candidate": "C3_D04",
+      "kernel": "jarturo/biohub-e071-c3-d04",
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e071_c3_d04",
+      "gpu": true,
+      "notebook_sha256": "f004983c07da28a1dcf6f795eecd42a85a88714cf9ac1c33207a5bf5c6ed38ae",
+      "time_utc": "2026-09-28T21:35:50.947544+00:00",
+      "status": "COMPLETE",
+      "version": 1,
+      "leaderboard_submitted": true,
+      "other_sessions_at_launch": [
+        {
+          "kernel": "jarturo/gemma-4-paired-localization-policy-experiment",
+          "status": "QUEUED"
+        }
+      ],
+      "response": {
+        "ref": "/code/jarturo/biohub-e071-c3-d04",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e071-c3-d04",
+        "versionNumber": 1,
+        "kernelId": 136311965
+      },
+      "response_at_utc": "2026-09-28T21:35:53.488447+00:00",
+      "download_verified": true,
+      "csv_sha256": "3723d7916ec6524aacf0be981a4307a48f1318adc7597858f78e0f09a042a850",
+      "submission_ref": 56656488,
+      "submission_status": "COMPLETE",
+      "public_score": "0.956"
+    },
+    "C3_D08_R094": {
+      "candidate": "C3_D08_R094",
+      "kernel": "jarturo/biohub-e071-c3-d08-r094",
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e071_c3_d08_r094",
+      "gpu": true,
+      "notebook_sha256": "ae950922ae67e386378314a67690c3966c73d60274509701b48080c976675718",
+      "time_utc": "2026-09-28T21:55:39.946811+00:00",
+      "status": "COMPLETE",
+      "version": 1,
+      "leaderboard_submitted": true,
+      "other_sessions_at_launch": [
+        {
+          "kernel": "jarturo/gemma-4-paired-localization-policy-experiment",
+          "status": "RUNNING"
+        }
+      ],
+      "response": {
+        "ref": "/code/jarturo/biohub-e071-c3-d08-r094",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e071-c3-d08-r094",
+        "versionNumber": 1,
+        "kernelId": 136313291
+      },
+      "response_at_utc": "2026-09-28T21:55:42.528829+00:00",
+      "download_verified": true,
+      "csv_sha256": "06649c48e9686a7b2cb2b0926f5ef3452fd73749a0517e6f00e83e6fb87097a4",
+      "submission_ref": 56656490,
+      "submission_status": "COMPLETE",
+      "public_score": "0.956"
+    },
+    "C3_D04_R092": {
+      "candidate": "C3_D04_R092",
+      "kernel": "jarturo/biohub-e071-c3-d04-r092",
+      "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e071_c3_d04_r092",
+      "gpu": true,
+      "notebook_sha256": "b65b6c674dabc79356630f2e0911c291db3fa7043917235e2525169c3e029943",
+      "time_utc": "2026-09-28T22:04:28.863192+00:00",
+      "status": "COMPLETE",
+      "version": 1,
+      "leaderboard_submitted": true,
+      "other_sessions_at_launch": [
+        {
+          "kernel": "jarturo/biohub-e071-c3-d08-r094",
+          "status": "RUNNING"
+        }
+      ],
+      "response": {
+        "ref": "/code/jarturo/biohub-e071-c3-d04-r092",
+        "url": "https://www.kaggle.com/code/jarturo/biohub-e071-c3-d04-r092",
+        "versionNumber": 1,
+        "kernelId": 136313960
+      },
+      "response_at_utc": "2026-09-28T22:04:31.606884+00:00",
+      "download_verified": true,
+      "csv_sha256": "f42aaa3729fb2e0767a4a4e1b5db1076c14788a57f53f05c7385cb1307b3fca0",
+      "submission_ref": 56656491,
+      "submission_status": "COMPLETE",
+      "public_score": "0.956"
+    }
+  },
+  "auto_submit": false,
+  "reminder_enabled": false,
+  "target_ready": 5,
+  "base_public_score": 0.955,
+  "checked_at_utc": "2026-09-28T22:28:41.299791+00:00",
+  "execution_mode": "LOCAL_GPU_PREFERRED",
+  "kaggle_batch_stopped_by_user_preference": true,
+  "remaining_kaggle_launches_on_hold": true,
+  "laptop_gpu": "NVIDIA GeForce RTX 3050 Laptop GPU 4 GB",
+  "local_execution": {
+    "status": "FIVE_LOCAL_VERIFIED",
+    "script": "kaggle/x138_xr/e071_local_replay.py",
+    "log": "outputs/e071/local_replay.log",
+    "candidates": [
+      "C3_D04_R094",
+      "C3_R094",
+      "C3_D04",
+      "C3_D08_R094",
+      "C3_D04_R092",
+      "C3_CONTROL"
+    ],
+    "gpu": "RTX 3050 Laptop 4GB",
+    "ilp": "12 CPU solves complete; control exact in all four raw graphs",
+    "control_policy": "Must reproduce remote C3_D04_R094 in all four final graphs before continuing",
+    "max_input_wait_minutes": 90,
+    "leaderboard_submissions": 0,
+    "updated_at_utc": "2026-09-28T20:55:39.423503+00:00",
+    "final_remote_parity": "Exact in all four graph fingerprints",
+    "input_files_verified": 408,
+    "comparison": "results/E071/local_candidate_comparison.json",
+    "baseline_control_exact": true,
+    "candidate_count": 5,
+    "duplicate_count": 0,
+    "finished": true
+  },
+  "final_registration_only": true,
+  "final_registration_policy": "Only the four locally verified frozen notebooks. Keep at least one GPU hour after each estimated run. No new training/experiments, no leaderboard sends, no recurring reminder.",
+  "final_registration_log": "outputs/e071/final_registration.log",
+  "final_registration_worker": "kaggle/x138_xr/e071_ops.py run-batch",
+  "status": "FIVE_COMPLETE",
+  "ready_count": 5,
+  "completed_at_utc": "2026-09-28T22:25:30.113762+00:00",
+  "final_registration_worker_status": "COMPLETED",
+  "completion_reviewed_at_utc": "2026-09-28T22:28:41.299791+00:00",
+  "leaderboard_submissions_made": 5,
+  "leaderboard_submissions": {
+    "C3_D04_R094": {
+      "candidate": "C3_D04_R094",
+      "kernel": "jarturo/biohub-e071-c3-d04-r094",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "adc1ee7d616a24ebba243a4c0e523e97bc0b7ecbeec9a83e154cee18b7d07434",
+      "notebook_sha256": "ea8b362a97863146cb59298861e6d923b5603b00804cec55f3aaaf9de1b04b78",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-29T00:09:39.818662+00:00",
+      "limits_before": {
+        "num_today": 0,
+        "num_allowed_now": 5,
+        "limited_by_total": false
+      },
+      "message": "E071 final 20260929 C3_D04_R094 v1 sha=adc1ee7d616a24eb",
+      "authorization": "results/E071/final_five_authorization.json",
+      "ref": 56656420,
+      "response_message": "",
+      "response_at_utc": "2026-09-29T00:09:41.801370+00:00"
+    },
+    "C3_R094": {
+      "candidate": "C3_R094",
+      "kernel": "jarturo/biohub-e071-c3-r094",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "69b36627dfb89830de336b6ccf3cb2ae853d1a4163cfe39c17a6e18b8603027a",
+      "notebook_sha256": "9ffc984b81cca24d021307d3404e5a136f12308cc4ec94f280ee37bb8674bb4f",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-29T00:09:43.584457+00:00",
+      "limits_before": {
+        "num_today": 1,
+        "num_allowed_now": 4,
+        "limited_by_total": false
+      },
+      "message": "E071 final 20260929 C3_R094 v1 sha=69b36627dfb89830",
+      "authorization": "results/E071/final_five_authorization.json",
+      "ref": 56656425,
+      "response_message": "",
+      "response_at_utc": "2026-09-29T00:09:45.589346+00:00"
+    },
+    "C3_D04": {
+      "candidate": "C3_D04",
+      "kernel": "jarturo/biohub-e071-c3-d04",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "3723d7916ec6524aacf0be981a4307a48f1318adc7597858f78e0f09a042a850",
+      "notebook_sha256": "f004983c07da28a1dcf6f795eecd42a85a88714cf9ac1c33207a5bf5c6ed38ae",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-29T00:11:02.702056+00:00",
+      "limits_before": {
+        "num_today": 2,
+        "num_allowed_now": 3,
+        "limited_by_total": false
+      },
+      "message": "E071 final 20260929 C3_D04 v1 sha=3723d7916ec6524a",
+      "authorization": "results/E071/final_five_authorization.json",
+      "ref": 56656488,
+      "response_message": "",
+      "response_at_utc": "2026-09-29T00:11:05.244382+00:00"
+    },
+    "C3_D08_R094": {
+      "candidate": "C3_D08_R094",
+      "kernel": "jarturo/biohub-e071-c3-d08-r094",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "06649c48e9686a7b2cb2b0926f5ef3452fd73749a0517e6f00e83e6fb87097a4",
+      "notebook_sha256": "ae950922ae67e386378314a67690c3966c73d60274509701b48080c976675718",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-29T00:11:07.441797+00:00",
+      "limits_before": {
+        "num_today": 3,
+        "num_allowed_now": 2,
+        "limited_by_total": false
+      },
+      "message": "E071 final 20260929 C3_D08_R094 v1 sha=06649c48e9686a7b",
+      "authorization": "results/E071/final_five_authorization.json",
+      "ref": 56656490,
+      "response_message": "",
+      "response_at_utc": "2026-09-29T00:11:09.762025+00:00"
+    },
+    "C3_D04_R092": {
+      "candidate": "C3_D04_R092",
+      "kernel": "jarturo/biohub-e071-c3-d04-r092",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "f42aaa3729fb2e0767a4a4e1b5db1076c14788a57f53f05c7385cb1307b3fca0",
+      "notebook_sha256": "b65b6c674dabc79356630f2e0911c291db3fa7043917235e2525169c3e029943",
+      "status": "ACCEPTED",
+      "attempted_at_utc": "2026-09-29T00:11:12.218355+00:00",
+      "limits_before": {
+        "num_today": 4,
+        "num_allowed_now": 1,
+        "limited_by_total": false
+      },
+      "message": "E071 final 20260929 C3_D04_R092 v1 sha=f42aaa3729fb2e07",
+      "authorization": "results/E071/final_five_authorization.json",
+      "ref": 56656491,
+      "response_message": "",
+      "response_at_utc": "2026-09-29T00:11:14.299518+00:00"
+    }
+  },
+  "final_five_dispatched_at_utc": "2026-09-29T00:11:15.022009+00:00",
+  "public_results_state": "FIVE_COMPLETE",
+  "best_public_result": {
+    "candidate": "C3_D04_R094",
+    "ref": 56656420,
+    "public_score": "0.957"
+  },
+  "public_results_checked_at_utc": "2026-09-29T22:56:19.243088+00:00",
+  "public_results_completed_at_utc": "2026-09-29T22:56:19.243088+00:00",
+  "final_public_analysis": "results/E071/final_public_analysis.json"
+}

@@ -1,0 +1,17 @@
+{
+  "candidate": "F8_dc030",
+  "kernel": "jarturo/biohub-e070-f8-dc030",
+  "version": 1,
+  "csv_sha256": "278259394332a4957371dcbb6ab20336898a11948b10420872e822ca9d2ca53c",
+  "status": "ACCEPTED",
+  "attempted_at_utc": "2026-09-28T00:04:19.267730+00:00",
+  "message": "E070 reset 20260928 F8_dc030 v1 sha=278259394332a495",
+  "limits_before": {
+    "num_today": 1,
+    "num_allowed_now": 4,
+    "limited_by_total": false
+  },
+  "ref": 56622918,
+  "response_message": "",
+  "response_at_utc": "2026-09-28T00:04:23.660929+00:00"
+}

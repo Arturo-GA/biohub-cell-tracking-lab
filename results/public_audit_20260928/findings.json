@@ -1,0 +1,118 @@
+{
+  "checked_at_utc": "2026-09-28T12:25:34.202159+00:00",
+  "leaderboard_snapshot_utc": "2026-09-28T12:17:42Z",
+  "current_team": {
+    "Rank": "337",
+    "TeamId": "16887540",
+    "TeamName": "Arturo Gutiérrez Aguilar",
+    "LastSubmissionDate": "2026-09-28 00:04:21",
+    "Score": "0.955",
+    "SubmissionCount": "30",
+    "TeamMemberUserNames": "jarturo"
+  },
+  "previous_team_sep26": {
+    "Rank": "177",
+    "TeamId": "16887540",
+    "TeamName": "Arturo Gutiérrez Aguilar",
+    "LastSubmissionDate": "2026-09-26 00:01:09",
+    "Score": "0.954",
+    "SubmissionCount": "23",
+    "TeamMemberUserNames": "jarturo"
+  },
+  "rank_change": 160,
+  "bands": [
+    {
+      "score": 0.953,
+      "at_least_sep26": 573,
+      "at_least_sep28": 901,
+      "displayed_score_rank_range_sep28": [
+        480,
+        901
+      ]
+    },
+    {
+      "score": 0.955,
+      "at_least_sep26": 170,
+      "at_least_sep28": 343,
+      "displayed_score_rank_range_sep28": [
+        252,
+        343
+      ]
+    },
+    {
+      "score": 0.956,
+      "at_least_sep26": 123,
+      "at_least_sep28": 251,
+      "displayed_score_rank_range_sep28": [
+        183,
+        251
+      ]
+    },
+    {
+      "score": 0.957,
+      "at_least_sep26": 97,
+      "at_least_sep28": 182,
+      "displayed_score_rank_range_sep28": [
+        142,
+        182
+      ]
+    },
+    {
+      "score": 0.958,
+      "at_least_sep26": 81,
+      "at_least_sep28": 141,
+      "displayed_score_rank_range_sep28": [
+        122,
+        141
+      ]
+    },
+    {
+      "score": 0.959,
+      "at_least_sep26": 72,
+      "at_least_sep28": 121,
+      "displayed_score_rank_range_sep28": [
+        104,
+        121
+      ]
+    },
+    {
+      "score": 0.96,
+      "at_least_sep26": 60,
+      "at_least_sep28": 103,
+      "displayed_score_rank_range_sep28": [
+        89,
+        103
+      ]
+    }
+  ],
+  "john_taylor_team": {
+    "Rank": "113",
+    "TeamId": "16798282",
+    "TeamName": "John Taylor (AI)",
+    "LastSubmissionDate": "2026-09-28 00:44:31",
+    "Score": "0.959",
+    "SubmissionCount": "45",
+    "TeamMemberUserNames": "johntaylorai"
+  },
+  "local_validation_is_in_sample": true,
+  "new_public_knobs": {
+    "BIOHUB_ILP_DIVISION_WEIGHT": {
+      "c3": 1.2,
+      "reported_other_pipeline": 0.4
+    },
+    "BIOHUB_READMIT_MIN_SCORE": {
+      "c3": 0.965,
+      "reported_other_pipeline": 0.94
+    }
+  },
+  "linked_notebook_scores_ui": {
+    "raunakdey07/biohub-harmonic-fusion-v3": 0.953,
+    "amanatar/optimized-biohub-max-score": 0.953,
+    "kunaldesale2408/biohub-cell-tracking": 0.953,
+    "anvithpothula/biohub-0-953-lb-original": 0.953
+  },
+  "ui_scope": "Public Score, excludeNonAccessedDatasources=true; score card does not establish the submitted version or latest-version reproducibility",
+  "public_thread_recipe_incomplete": true,
+  "no_experiments_launched": true,
+  "no_submissions_sent": true
+}

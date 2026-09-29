@@ -1,0 +1,74 @@
+[
+  {
+    "stem": "6bba_d2b9fc0c",
+    "proposal": {
+      "t": 46,
+      "s": 7783,
+      "d": 7976,
+      "keep": 7969,
+      "weak_logit": -2.005859375,
+      "keep_logit": 2.833984375,
+      "keep_top": true
+    },
+    "note": "Nearest-GT diagnostic only; not the official graph matching or score.",
+    "s": {
+      "nearest_um": [
+        22.221540788163182,
+        33.40402822359154
+      ],
+      "gt_id": 47000387
+    },
+    "d": {
+      "nearest_um": [
+        29.117102604182648,
+        39.24046958339056
+      ],
+      "gt_id": 48000395
+    },
+    "keep": {
+      "nearest_um": [
+        24.64434519316754,
+        33.46326402284302
+      ],
+      "gt_id": 48000395
+    },
+    "weak_pair_is_nearest_gt_edge": true,
+    "kept_pair_is_nearest_gt_edge": true
+  },
+  {
+    "stem": "6bba_d2b9fc0c",
+    "proposal": {
+      "t": 60,
+      "s": 10546,
+      "d": 10781,
+      "keep": 10761,
+      "weak_logit": -2.5078125,
+      "keep_logit": 11.5234375,
+      "keep_top": true
+    },
+    "note": "Nearest-GT diagnostic only; not the official graph matching or score.",
+    "s": {
+      "nearest_um": [
+        25.64850294120497,
+        35.28767102774707
+      ],
+      "gt_id": 61000536
+    },
+    "d": {
+      "nearest_um": [
+        23.695208178553738,
+        28.938006205075705
+      ],
+      "gt_id": 62000548
+    },
+    "keep": {
+      "nearest_um": [
+        25.939627171809928,
+        35.585737684675024
+      ],
+      "gt_id": 62000548
+    },
+    "weak_pair_is_nearest_gt_edge": true,
+    "kept_pair_is_nearest_gt_edge": true
+  }
+]

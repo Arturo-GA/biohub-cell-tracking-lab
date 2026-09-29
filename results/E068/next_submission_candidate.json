@@ -1,0 +1,16 @@
+{
+  "candidate": "C3_fork8",
+  "kernel": "jarturo/biohub-c3-fork8",
+  "version": 1,
+  "file_name": "submission.csv",
+  "competition": "biohub-cell-tracking-during-development",
+  "status": "verified_ready_waiting_daily_quota",
+  "earliest_next_window_utc": "2026-09-28T00:00:00+00:00",
+  "verification": "results/E068/c3_fork8_verified.json",
+  "local_evaluation": "results/E068/cpu7_results.json",
+  "daily_quota_check": "results/E068/submission_readiness_2026-09-27_pm.json",
+  "description": "c3 public 0.955 + fork8 nan-only; fixed tau0.6, L7, E prune, nan8, end5last",
+  "leaderboard_submitted": false,
+  "scheduled": false,
+  "before_submit": "Recheck current submissions to avoid duplicate sends, remaining daily quota, and frozen v1 verification. Submit the kernel version, not a direct CSV upload."
+}

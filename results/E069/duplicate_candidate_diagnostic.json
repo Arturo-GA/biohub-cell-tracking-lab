@@ -1,0 +1,302 @@
+{
+  "videos": 32,
+  "scope": "Label-free candidate attrition on fixed 32-video image panel; not a metric evaluation. Balanced duplicate rule filters.",
+  "totals": {
+    "components": 22658,
+    "linear8plus": 21354,
+    "linear8to40": 16586,
+    "linear8to40_conf_le_075": 4272,
+    "pairs_with_any_3um_proximity": 254,
+    "pairs_3um_at_least_8_frames": 0
+  },
+  "per_video": [
+    {
+      "stem": "44b6_0db75fae",
+      "components": 587,
+      "linear8plus": 565,
+      "linear8to40": 424,
+      "linear8to40_conf_le_075": 95,
+      "pairs_with_any_3um_proximity": 10,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_1574802b",
+      "components": 597,
+      "linear8plus": 564,
+      "linear8to40": 399,
+      "linear8to40_conf_le_075": 129,
+      "pairs_with_any_3um_proximity": 8,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "components": 1490,
+      "linear8plus": 1403,
+      "linear8to40": 1163,
+      "linear8to40_conf_le_075": 421,
+      "pairs_with_any_3um_proximity": 32,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_33b596bf",
+      "components": 876,
+      "linear8plus": 833,
+      "linear8to40": 644,
+      "linear8to40_conf_le_075": 67,
+      "pairs_with_any_3um_proximity": 12,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_706092f0",
+      "components": 1128,
+      "linear8plus": 1049,
+      "linear8to40": 844,
+      "linear8to40_conf_le_075": 242,
+      "pairs_with_any_3um_proximity": 13,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_71a4179f",
+      "components": 1119,
+      "linear8plus": 1049,
+      "linear8to40": 829,
+      "linear8to40_conf_le_075": 256,
+      "pairs_with_any_3um_proximity": 9,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_74d0c52e",
+      "components": 303,
+      "linear8plus": 279,
+      "linear8to40": 222,
+      "linear8to40_conf_le_075": 40,
+      "pairs_with_any_3um_proximity": 5,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_7a302da0",
+      "components": 1595,
+      "linear8plus": 1462,
+      "linear8to40": 1196,
+      "linear8to40_conf_le_075": 389,
+      "pairs_with_any_3um_proximity": 22,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_8cc6506c",
+      "components": 654,
+      "linear8plus": 614,
+      "linear8to40": 476,
+      "linear8to40_conf_le_075": 150,
+      "pairs_with_any_3um_proximity": 16,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_90724892",
+      "components": 829,
+      "linear8plus": 786,
+      "linear8to40": 614,
+      "linear8to40_conf_le_075": 59,
+      "pairs_with_any_3um_proximity": 11,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_9be80b04",
+      "components": 971,
+      "linear8plus": 899,
+      "linear8to40": 727,
+      "linear8to40_conf_le_075": 199,
+      "pairs_with_any_3um_proximity": 4,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_aaf8b0ea",
+      "components": 461,
+      "linear8plus": 442,
+      "linear8to40": 342,
+      "linear8to40_conf_le_075": 187,
+      "pairs_with_any_3um_proximity": 6,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_c8e2a523",
+      "components": 767,
+      "linear8plus": 727,
+      "linear8to40": 435,
+      "linear8to40_conf_le_075": 50,
+      "pairs_with_any_3um_proximity": 4,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_c96cfa10",
+      "components": 1276,
+      "linear8plus": 1216,
+      "linear8to40": 956,
+      "linear8to40_conf_le_075": 268,
+      "pairs_with_any_3um_proximity": 23,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_d29c9ab2",
+      "components": 819,
+      "linear8plus": 776,
+      "linear8to40": 383,
+      "linear8to40_conf_le_075": 10,
+      "pairs_with_any_3um_proximity": 4,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "44b6_ddf577ad",
+      "components": 1220,
+      "linear8plus": 1135,
+      "linear8to40": 856,
+      "linear8to40_conf_le_075": 244,
+      "pairs_with_any_3um_proximity": 23,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_0c7fa718",
+      "components": 669,
+      "linear8plus": 626,
+      "linear8to40": 614,
+      "linear8to40_conf_le_075": 74,
+      "pairs_with_any_3um_proximity": 2,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_15403b9a",
+      "components": 262,
+      "linear8plus": 242,
+      "linear8to40": 205,
+      "linear8to40_conf_le_075": 4,
+      "pairs_with_any_3um_proximity": 0,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_1ebfb80d",
+      "components": 405,
+      "linear8plus": 389,
+      "linear8to40": 311,
+      "linear8to40_conf_le_075": 95,
+      "pairs_with_any_3um_proximity": 4,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_268e1230",
+      "components": 245,
+      "linear8plus": 226,
+      "linear8to40": 213,
+      "linear8to40_conf_le_075": 58,
+      "pairs_with_any_3um_proximity": 0,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_4f99ce20",
+      "components": 239,
+      "linear8plus": 218,
+      "linear8to40": 200,
+      "linear8to40_conf_le_075": 10,
+      "pairs_with_any_3um_proximity": 0,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_55b7eebe",
+      "components": 114,
+      "linear8plus": 109,
+      "linear8to40": 68,
+      "linear8to40_conf_le_075": 10,
+      "pairs_with_any_3um_proximity": 0,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_5c824876",
+      "components": 891,
+      "linear8plus": 843,
+      "linear8to40": 677,
+      "linear8to40_conf_le_075": 112,
+      "pairs_with_any_3um_proximity": 1,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_61dd1e0d",
+      "components": 266,
+      "linear8plus": 255,
+      "linear8to40": 172,
+      "linear8to40_conf_le_075": 51,
+      "pairs_with_any_3um_proximity": 1,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_6db0e9b4",
+      "components": 756,
+      "linear8plus": 725,
+      "linear8to40": 530,
+      "linear8to40_conf_le_075": 214,
+      "pairs_with_any_3um_proximity": 10,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_74686d6a",
+      "components": 800,
+      "linear8plus": 761,
+      "linear8to40": 568,
+      "linear8to40_conf_le_075": 252,
+      "pairs_with_any_3um_proximity": 6,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_78a7bd97",
+      "components": 1646,
+      "linear8plus": 1566,
+      "linear8to40": 1361,
+      "linear8to40_conf_le_075": 474,
+      "pairs_with_any_3um_proximity": 12,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_ae82a791",
+      "components": 181,
+      "linear8plus": 169,
+      "linear8to40": 107,
+      "linear8to40_conf_le_075": 6,
+      "pairs_with_any_3um_proximity": 3,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_b693381b",
+      "components": 256,
+      "linear8plus": 243,
+      "linear8to40": 212,
+      "linear8to40_conf_le_075": 15,
+      "pairs_with_any_3um_proximity": 0,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_d2b9fc0c",
+      "components": 618,
+      "linear8plus": 592,
+      "linear8to40": 442,
+      "linear8to40_conf_le_075": 17,
+      "pairs_with_any_3um_proximity": 3,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_d5eae175",
+      "components": 86,
+      "linear8plus": 85,
+      "linear8to40": 43,
+      "linear8to40_conf_le_075": 1,
+      "pairs_with_any_3um_proximity": 0,
+      "pairs_3um_at_least_8_frames": 0
+    },
+    {
+      "stem": "6bba_fc5f39dc",
+      "components": 532,
+      "linear8plus": 506,
+      "linear8to40": 353,
+      "linear8to40_conf_le_075": 73,
+      "pairs_with_any_3um_proximity": 10,
+      "pairs_3um_at_least_8_frames": 0
+    }
+  ]
+}

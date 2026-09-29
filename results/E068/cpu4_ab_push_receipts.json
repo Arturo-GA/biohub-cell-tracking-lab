@@ -1,0 +1,20 @@
+[
+  {
+    "candidate": "a",
+    "response": {
+      "ref": "/code/jarturo/biohub-exact-a",
+      "url": "https://www.kaggle.com/code/jarturo/biohub-exact-a",
+      "versionNumber": 1,
+      "kernelId": 136009679
+    }
+  },
+  {
+    "candidate": "b",
+    "response": {
+      "ref": "/code/jarturo/biohub-exact-b",
+      "url": "https://www.kaggle.com/code/jarturo/biohub-exact-b",
+      "versionNumber": 1,
+      "kernelId": 136009686
+    }
+  }
+]

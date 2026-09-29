@@ -1,0 +1,113 @@
+{
+  "note": "Nearest-GT coverage diagnostic, not official matching or a score.",
+  "swaps": [
+    {
+      "stem": "44b6_706092f0",
+      "mode": "neural_strict",
+      "t": 24,
+      "nearest_gt_um": {
+        "a": 59.16344713218204,
+        "b": 56.81838700247042,
+        "da": 55.54196752231595,
+        "db": 58.2115283363184
+      },
+      "any_within7": false
+    },
+    {
+      "stem": "44b6_706092f0",
+      "mode": "neural_balanced",
+      "t": 24,
+      "nearest_gt_um": {
+        "a": 59.16344713218204,
+        "b": 56.81838700247042,
+        "da": 55.54196752231595,
+        "db": 58.2115283363184
+      },
+      "any_within7": false
+    },
+    {
+      "stem": "44b6_71a4179f",
+      "mode": "neural_strict",
+      "t": 65,
+      "nearest_gt_um": {
+        "a": 63.69709814818882,
+        "b": 64.74687039975369,
+        "da": 64.82838673422701,
+        "db": 62.59546615221026
+      },
+      "any_within7": false
+    },
+    {
+      "stem": "44b6_71a4179f",
+      "mode": "neural_balanced",
+      "t": 65,
+      "nearest_gt_um": {
+        "a": 63.69709814818882,
+        "b": 64.74687039975369,
+        "da": 64.82838673422701,
+        "db": 62.59546615221026
+      },
+      "any_within7": false
+    },
+    {
+      "stem": "44b6_9be80b04",
+      "mode": "neural_strict",
+      "t": 61,
+      "nearest_gt_um": {
+        "a": 13.800546298063711,
+        "b": 15.885362021763935,
+        "da": 15.932045635291157,
+        "db": 14.380331891597635
+      },
+      "any_within7": false
+    },
+    {
+      "stem": "44b6_9be80b04",
+      "mode": "neural_balanced",
+      "t": 61,
+      "nearest_gt_um": {
+        "a": 13.800546298063711,
+        "b": 15.885362021763935,
+        "da": 15.932045635291157,
+        "db": 14.380331891597635
+      },
+      "any_within7": false
+    },
+    {
+      "stem": "44b6_9be80b04",
+      "mode": "neural_balanced",
+      "t": 7,
+      "nearest_gt_um": {
+        "a": 58.73228622582727,
+        "b": 57.4351876574805,
+        "da": 59.14670749764944,
+        "db": 58.11789271063603
+      },
+      "any_within7": false
+    },
+    {
+      "stem": "6bba_d2b9fc0c",
+      "mode": "neural_strict",
+      "t": 85,
+      "nearest_gt_um": {
+        "a": 3.72334275215162,
+        "b": 1.625,
+        "da": 1.4647552056572457,
+        "db": 2.7252078475778685
+      },
+      "any_within7": true
+    },
+    {
+      "stem": "6bba_d2b9fc0c",
+      "mode": "neural_balanced",
+      "t": 85,
+      "nearest_gt_um": {
+        "a": 3.72334275215162,
+        "b": 1.625,
+        "da": 1.4647552056572457,
+        "db": 2.7252078475778685
+      },
+      "any_within7": true
+    }
+  ]
+}

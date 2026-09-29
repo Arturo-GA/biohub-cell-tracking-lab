@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e069-local-linker-cpu",
+  "version": 1,
+  "response": {
+    "ref": "/code/jarturo/biohub-e069-local-linker-cpu",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-e069-local-linker-cpu",
+    "versionNumber": 1,
+    "kernelId": 136161997
+  },
+  "gpu": false,
+  "is_private": true,
+  "notebook_sha256": "df7585e1ce33179548c8f345429c6f74aceec398bfed437827f13f98e71863e9",
+  "time_utc": "2026-09-27T19:47:52.528515+00:00",
+  "leaderboard_submitted": false
+}

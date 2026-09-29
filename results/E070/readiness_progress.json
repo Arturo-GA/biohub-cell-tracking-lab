@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-09-27T21:45:29.498446+00:00",
+  "target": 5,
+  "selected_ready": 5,
+  "technically_verified": 6,
+  "distinct_visible_csv_count": 6,
+  "evaluation_status": "COMPLETE; queue frozen",
+  "selected_candidates": [
+    "F8_dc030",
+    "C3_fork8",
+    "F8_prune12_joint",
+    "F8_prune12",
+    "F8_joint"
+  ],
+  "pending_gpu": [],
+  "leaderboard_submissions_made": 0,
+  "heartbeat_pause_required": false,
+  "heartbeat_status": "PAUSED",
+  "heartbeat_paused_at_utc": "2026-09-27T21:46:37.352021+00:00"
+}

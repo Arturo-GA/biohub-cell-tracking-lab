@@ -1,0 +1,42 @@
+{
+  "checked_at_utc": "2026-09-29T06:38:36.660415+00:00",
+  "stage": "INTERIM_THREE_COMPLETE_TWO_PENDING",
+  "reference_public_score": "0.955",
+  "best_public_candidate": "C3_D04_R094",
+  "best_submission_ref": 56656420,
+  "best_public_score": "0.957",
+  "completed": [
+    {
+      "candidate": "C3_D04_R094",
+      "ref": 56656420,
+      "public_score": "0.957",
+      "displayed_delta_vs_c3": "0.002"
+    },
+    {
+      "candidate": "C3_R094",
+      "ref": 56656425,
+      "public_score": "0.956",
+      "displayed_delta_vs_c3": "0.001"
+    },
+    {
+      "candidate": "C3_D08_R094",
+      "ref": 56656490,
+      "public_score": "0.956",
+      "displayed_delta_vs_c3": "0.001"
+    }
+  ],
+  "pending": [
+    "C3_D04",
+    "C3_D04_R092"
+  ],
+  "interpretation": {
+    "readmission_094_alone": "Displayed public improvement 0.955 to 0.956.",
+    "division_04_on_readmission_094": "Displayed improvement from 0.956 to 0.957 in this context.",
+    "division_08_on_readmission_094": "Same displayed score as readmission alone; rounded values cannot establish exact equality.",
+    "division_04_alone": "Pending; independent effect and interaction not yet resolved.",
+    "validation_limit": "All-train pretrained weights make the local 199-video score unsuitable as the sole ranking of public candidates. Visible graph parity validates implementation, not predictive quality.",
+    "mechanism_limit": "No public component breakdown or public ground truth; cannot attribute the improvement to a particular error class."
+  },
+  "new_submissions_or_experiments_launched": false,
+  "reminder_enabled": false
+}

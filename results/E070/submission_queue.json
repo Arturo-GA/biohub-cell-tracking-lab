@@ -1,0 +1,489 @@
+{
+  "experiment": "E070",
+  "ready_at_utc": "2026-09-27T21:45:29.498446+00:00",
+  "status": "COMPLETE_NO_PUBLIC_IMPROVEMENT",
+  "reset_utc": "2026-09-28T00:00:00+00:00",
+  "reset_lima": "2026-09-27T19:00:00-05:00",
+  "competition": "biohub-cell-tracking-during-development",
+  "auto_submit": false,
+  "leaderboard_submissions_made": 5,
+  "policy": "All five authorized candidates have been submitted. Read-only monitoring of the three fallback submissions; no more automatic sends.",
+  "score_warning": "199 reused training/tuning videos. Local scores and bootstrap intervals are diagnostics, not public forecasts or private guarantees. The confirmed public reference c3 scored 0.955.",
+  "candidates": [
+    {
+      "kernel": "jarturo/biohub-e070-f8-dc030",
+      "version": 1,
+      "candidate": "F8_dc030",
+      "source_sha256": "88872bab911293546d0b85ea807887c40c36eab70aef512adc6d232ace65799e",
+      "notebook_sha256": "78c4f9c905c4c8e3f389328d7d1ca9e6f5fb4dee43a416824499b963522f0e9d",
+      "csv_sha256": "278259394332a4957371dcbb6ab20336898a11948b10420872e822ca9d2ca53c",
+      "rows": 232314,
+      "counts": [
+        "44b6_0113de3b=25488/24771",
+        "44b6_0b24845f=18141/17115",
+        "6bba_05b6850b=5965/5802",
+        "6bba_05db0fb1=68464/66568"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": true,
+      "file_name": "submission.csv",
+      "local_file": "C:\\dev\\biohub\\outputs\\e070\\F8_dc030\\submission.csv",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_dc030_verified.json",
+      "notebook_url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-dc030",
+      "order": 1,
+      "evidence_label": "Exploratorio prioritario",
+      "selection_reason": "Mayor score local; 16 divisiones falsas menos, pero pierde una verdadera frente a fork8. Su intervalo incremental cruza cero.",
+      "local_evidence": {
+        "name": "F8_dc030",
+        "score": 0.9289089105778158,
+        "delta": 0.0013955260799090041,
+        "delta_vs_fork8": 0.0005130737687728537,
+        "ci90": [
+          0.00021256127652991008,
+          0.002433943487453738
+        ],
+        "win": 105,
+        "lose": 10,
+        "fork8_win": 36,
+        "fork8_lose": 7,
+        "div": [
+          23,
+          33,
+          128
+        ],
+        "videos": 199,
+        "evaluated": 142,
+        "reused": 57,
+        "cfg": {
+          "child_max": 10.0,
+          "parent_max": 9.0,
+          "sister_max": 14.0,
+          "mutual": true,
+          "require_div": true,
+          "diverge": 2.25,
+          "dc_thr": 0.3,
+          "tau": 0.6,
+          "frame_cap": 0.0076,
+          "global_cap": 0.00375
+        },
+        "xr": {
+          "prune": "44b6:8:0.7,6bba:11:0.7",
+          "cut_nan_dist_um": 8.0,
+          "cut_end_prob": 0.5,
+          "cut_end_mode": "last",
+          "fork_min_branch": 8,
+          "fork_nan_only": "1"
+        },
+        "groups": {
+          "44b6": 0.0023793221994625746,
+          "6bba": 0.001102924275194872
+        },
+        "increment_over_fork8": 0.0005130737687731868,
+        "increment_ci90": [
+          -0.0006632423778596075,
+          0.0014176506877941195
+        ],
+        "increment_remove_top5": 3.25694966235579e-05,
+        "changed_graphs_vs_fork8": 142
+      },
+      "submission_ref": 56622918,
+      "submission_status": "COMPLETE",
+      "submitted_at_utc": "2026-09-28T00:04:23.660929+00:00",
+      "public_score": "0.947"
+    },
+    {
+      "kernel": "jarturo/biohub-c3-fork8",
+      "version": 1,
+      "candidate": "C3_fork8",
+      "source_sha256": "becec30ce864a6d86cc8db2c5b249358a4883fc06ec128633d4df3e450b01cb4",
+      "notebook_sha256": "dabb2e5959c265e5e287f7f8c5ae7f37333f51156288cda7c60b407ead35bfdf",
+      "csv_sha256": "ff57683b494311df5cada31d0563e890fbab98cee7919e124d0eecd886b1223a",
+      "rows": 232347,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=5965/5802",
+        "6bba_05db0fb1=68474/66583"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": true,
+      "file_name": "submission.csv",
+      "local_file": "C:\\dev\\biohub\\outputs\\e068_review\\final_c3_fork8\\submission.csv",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E068\\c3_fork8_verified.json",
+      "notebook_url": "https://www.kaggle.com/code/jarturo/biohub-c3-fork8",
+      "order": 2,
+      "evidence_label": "Referencia con evidencia local mas amplia",
+      "selection_reason": "100 videos mejoran y 3 empeoran frente a c3; permite medir el cambio comun a toda la tanda.",
+      "local_evidence": {
+        "name": "C3_fork8",
+        "score": 0.9283958368090429,
+        "delta": 0.0008824523111361504,
+        "delta_vs_fork8": 0.0,
+        "ci90": [
+          0.0004949657146081643,
+          0.0013551041383814688
+        ],
+        "win": 100,
+        "lose": 3,
+        "fork8_win": 0,
+        "fork8_lose": 0,
+        "div": [
+          24,
+          49,
+          127
+        ],
+        "videos": 199,
+        "evaluated": 117,
+        "reused": 82,
+        "cfg": {
+          "child_max": 10.0,
+          "parent_max": 9.0,
+          "sister_max": 14.0,
+          "mutual": true,
+          "require_div": true,
+          "diverge": 2.25,
+          "dc_thr": 0.25,
+          "tau": 0.6,
+          "frame_cap": 0.0076,
+          "global_cap": 0.00375
+        },
+        "xr": {
+          "prune": "44b6:8:0.7,6bba:11:0.7",
+          "cut_nan_dist_um": 8.0,
+          "cut_end_prob": 0.5,
+          "cut_end_mode": "last",
+          "fork_min_branch": 8,
+          "fork_nan_only": "1"
+        },
+        "groups": {
+          "44b6": 0.0006282862352960938,
+          "6bba": 0.0009289495944895254
+        },
+        "increment_over_fork8": 0.0,
+        "increment_ci90": [
+          0.0,
+          0.0
+        ],
+        "increment_remove_top5": 0.0,
+        "changed_graphs_vs_fork8": 0
+      },
+      "submission_ref": 56622884,
+      "submission_status": "COMPLETE",
+      "submitted_at_utc": "2026-09-28T00:04:03.414394+00:00",
+      "public_score": "0.953"
+    },
+    {
+      "kernel": "jarturo/biohub-e070-f8-prune12-joint",
+      "version": 1,
+      "candidate": "F8_prune12_joint",
+      "source_sha256": "9a773e402bb72da3ce9628092ba13054690b9468e9e79eadb590f72d3c44c0d2",
+      "notebook_sha256": "06366ac030718645e77e989e461b53fc04898d7a9230076c3dd7ea41592f8633",
+      "csv_sha256": "54a8f84f35bd61a2375869404f35d2a7a242a200a96a57b42895126a36755cd0",
+      "rows": 232200,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=5943/5782",
+        "6bba_05db0fb1=68419/66533"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": true,
+      "file_name": "submission.csv",
+      "local_file": "C:\\dev\\biohub\\outputs\\e070\\F8_prune12_joint\\submission.csv",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_prune12_joint_verified.json",
+      "notebook_url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-prune12-joint",
+      "order": 3,
+      "evidence_label": "Exploratorio combinado",
+      "selection_reason": "Combina poda 12 y correccion de cruces/posiciones en bifurcaciones. Segundo score local; incremento pequeno e incierto.",
+      "local_evidence": {
+        "name": "F8_prune12_joint",
+        "score": 0.9285693428995089,
+        "delta": 0.0010559584016021084,
+        "delta_vs_fork8": 0.000173506090465958,
+        "ci90": [
+          0.0005949451758893165,
+          0.0015791606589152796
+        ],
+        "win": 141,
+        "lose": 10,
+        "fork8_win": 85,
+        "fork8_lose": 7,
+        "div": [
+          24,
+          47,
+          127
+        ],
+        "videos": 199,
+        "evaluated": 86,
+        "reused": 113,
+        "cfg": {
+          "child_max": 10.0,
+          "parent_max": 9.0,
+          "sister_max": 14.0,
+          "mutual": true,
+          "require_div": true,
+          "diverge": 2.25,
+          "dc_thr": 0.25,
+          "tau": 0.6,
+          "frame_cap": 0.0076,
+          "global_cap": 0.00375,
+          "swap": 0.35,
+          "fork_smooth": 0.0
+        },
+        "xr": {
+          "prune": "44b6:8:0.7,6bba:12:0.7",
+          "cut_nan_dist_um": 8.0,
+          "cut_end_prob": 0.5,
+          "cut_end_mode": "last",
+          "fork_min_branch": 8,
+          "fork_nan_only": "1"
+        },
+        "groups": {
+          "44b6": 0.0007345005508193614,
+          "6bba": 0.00109608302777775
+        },
+        "increment_over_fork8": 0.00017350609046629106,
+        "increment_ci90": [
+          -2.439783811820084e-05,
+          0.00036215060221745363
+        ],
+        "increment_remove_top5": 1.658799430959146e-05,
+        "changed_graphs_vs_fork8": 193
+      },
+      "submission_ref": 56640212,
+      "submission_status": "COMPLETE",
+      "submitted_at_utc": "2026-09-28T12:08:47.706164+00:00",
+      "public_score": "0.951"
+    },
+    {
+      "kernel": "jarturo/biohub-e070-f8-prune12",
+      "version": 1,
+      "candidate": "F8_prune12",
+      "source_sha256": "9d938cc541ea0253746c7ead0f2d7336f250295afe095fe40140f4fa3ab16bdd",
+      "notebook_sha256": "68c9acdacc15ca0a65df8fea440a4e799a74a48160dc9409fb0fafb32f0dc474",
+      "csv_sha256": "f6a338452a5adcd7750e5956a7954a68173ee010d88085e739a7f5f37fc85cc0",
+      "rows": 232200,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=5943/5782",
+        "6bba_05db0fb1=68419/66533"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": true,
+      "file_name": "submission.csv",
+      "local_file": "C:\\dev\\biohub\\outputs\\e070\\F8_prune12\\submission.csv",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_prune12_verified.json",
+      "notebook_url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-prune12",
+      "order": 4,
+      "evidence_label": "Conservador; incremento exploratorio",
+      "selection_reason": "84 videos mejoran y 4 empeoran frente a fork8. La ganancia incremental es pequena y casi desaparece al retirar los cinco mejores aportes.",
+      "local_evidence": {
+        "name": "F8_prune12",
+        "score": 0.9284701949094698,
+        "delta": 0.000956810411563036,
+        "delta_vs_fork8": 7.435810042688562e-05,
+        "ci90": [
+          0.0005333955906945409,
+          0.0014579022386715934
+        ],
+        "win": 142,
+        "lose": 7,
+        "fork8_win": 84,
+        "fork8_lose": 4,
+        "div": [
+          24,
+          49,
+          127
+        ],
+        "videos": 199,
+        "evaluated": 88,
+        "reused": 111,
+        "cfg": {
+          "child_max": 10.0,
+          "parent_max": 9.0,
+          "sister_max": 14.0,
+          "mutual": true,
+          "require_div": true,
+          "diverge": 2.25,
+          "dc_thr": 0.25,
+          "tau": 0.6,
+          "frame_cap": 0.0076,
+          "global_cap": 0.00375
+        },
+        "xr": {
+          "prune": "44b6:8:0.7,6bba:12:0.7",
+          "cut_nan_dist_um": 8.0,
+          "cut_end_prob": 0.5,
+          "cut_end_mode": "last",
+          "fork_min_branch": 8,
+          "fork_nan_only": "1"
+        },
+        "groups": {
+          "44b6": 0.0006282862352960938,
+          "6bba": 0.0010171271349009858
+        },
+        "increment_over_fork8": 7.435810042732971e-05,
+        "increment_ci90": [
+          -7.573861175517726e-05,
+          0.00020107893970695566
+        ],
+        "increment_remove_top5": -4.0239818199783173e-07,
+        "changed_graphs_vs_fork8": 88
+      },
+      "submission_ref": 56640207,
+      "submission_status": "COMPLETE",
+      "submitted_at_utc": "2026-09-28T12:08:28.024570+00:00",
+      "public_score": "0.953"
+    },
+    {
+      "kernel": "jarturo/biohub-e070-f8-joint",
+      "version": 1,
+      "candidate": "F8_joint",
+      "source_sha256": "d4153a566d48e508928d773a037bb13e12dab44b8e14c1d79e12bef13005ebf0",
+      "notebook_sha256": "c1258426768f8c04c034097b7ad033d36d84de1e14787927cab8070751838639",
+      "csv_sha256": "7843491b7d16fe6fe123bc888aa17013696fdcb77bf70eda1970bd72931714cf",
+      "rows": 232347,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=5965/5802",
+        "6bba_05db0fb1=68474/66583"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": true,
+      "file_name": "submission.csv",
+      "local_file": "C:\\dev\\biohub\\outputs\\e070\\F8_joint\\submission.csv",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_joint_verified.json",
+      "notebook_url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-joint",
+      "order": 5,
+      "evidence_label": "Exploratorio de baja prioridad",
+      "selection_reason": "La ganancia incremental procede de un video y tres empeoran. Conserva la poda original; permite probar la correccion sin poda 12.",
+      "local_evidence": {
+        "name": "F8_joint",
+        "score": 0.9284949880781895,
+        "delta": 0.0009816035802827638,
+        "delta_vs_fork8": 9.915126914661343e-05,
+        "ci90": [
+          0.0005692540348802844,
+          0.0014796125270249982
+        ],
+        "win": 99,
+        "lose": 6,
+        "fork8_win": 1,
+        "fork8_lose": 3,
+        "div": [
+          24,
+          47,
+          127
+        ],
+        "videos": 199,
+        "evaluated": 191,
+        "reused": 8,
+        "cfg": {
+          "child_max": 10.0,
+          "parent_max": 9.0,
+          "sister_max": 14.0,
+          "mutual": true,
+          "require_div": true,
+          "diverge": 2.25,
+          "dc_thr": 0.25,
+          "tau": 0.6,
+          "frame_cap": 0.0076,
+          "global_cap": 0.00375,
+          "swap": 0.35,
+          "fork_smooth": 0.0
+        },
+        "xr": {
+          "prune": "44b6:8:0.7,6bba:11:0.7",
+          "cut_nan_dist_um": 8.0,
+          "cut_end_prob": 0.5,
+          "cut_end_mode": "last",
+          "fork_min_branch": 8,
+          "fork_nan_only": "1"
+        },
+        "groups": {
+          "44b6": 0.0007345005508193614,
+          "6bba": 0.00100790482641
+        },
+        "increment_over_fork8": 9.915126914672445e-05,
+        "increment_ci90": [
+          -1.0962083253751574e-05,
+          0.00023961125397910503
+        ],
+        "increment_remove_top5": -2.1798120056426562e-05,
+        "changed_graphs_vs_fork8": 191
+      },
+      "submission_ref": 56640230,
+      "submission_status": "COMPLETE",
+      "submitted_at_utc": "2026-09-28T12:09:22.576830+00:00",
+      "public_score": "0.951"
+    }
+  ],
+  "reserves": [
+    {
+      "kernel": "jarturo/biohub-e070-f8-p8",
+      "version": 1,
+      "candidate": "F8_p8",
+      "source_sha256": "f39e3fdd1dec5dd303d1b87b6c9c96b546ddf6a339bf1ffc6cb6be02cc7e6232",
+      "notebook_sha256": "39a13ed25db607d4feb0ae960eb6dd92351b4357fbe68992b71b2aaaee042786",
+      "csv_sha256": "831f53265f0fb6093dcb8fecdf67e2b659e26733bc08e0e004cf25e7cc10b919",
+      "rows": 233051,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=6035/5864",
+        "6bba_05db0fb1=68777/66852"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": false,
+      "file_name": "submission.csv",
+      "local_file": "C:\\dev\\biohub\\outputs\\e070\\F8_p8\\submission.csv",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_p8_verified.json",
+      "notebook_url": "https://www.kaggle.com/code/jarturo/biohub-e070-f8-p8",
+      "selection_reason": "Reserva fuera de los cinco: +0.000039410 sobre fork8, 23 videos mejoran y 99 empeoran; al retirar los cinco mejores aportes el incremento cae a -0.000302281."
+    }
+  ],
+  "rejected": {
+    "F8_curvature": "Negative increment over fork8: -0.000007659.",
+    "F8_outlier": "Negative increment over fork8: -0.000162693; incremental CI90 entirely below zero.",
+    "F8_end04": "Tiny aggregate gain, 175 losses vs 14 wins; negative increment after removing top five contributions."
+  },
+  "strategy_file": "results/E070/submission_strategy.json",
+  "max_initial_submissions": 4,
+  "reserved_submission_slots": 1,
+  "scheduled_submission_authorization": {
+    "file": "results/E070/scheduled_first_two.json",
+    "candidates": [
+      "C3_fork8",
+      "F8_dc030"
+    ],
+    "maximum_new_submissions": 2,
+    "scheduled_utc": "2026-09-28T00:00:00+00:00"
+  },
+  "automatic_submission_authorization_completed": true,
+  "remaining_submission_slots": 0,
+  "score_monitor_refs": [
+    56622884,
+    56622918
+  ],
+  "score_monitor_interval_minutes": 25,
+  "conditional_action_policy": "results/E070/conditional_next_steps.json",
+  "conditional_fallback_auto_submit": false,
+  "conditional_fallback_allowlist": [
+    "F8_prune12",
+    "F8_prune12_joint",
+    "F8_joint"
+  ],
+  "fallback_maximum_new_submissions": 3,
+  "favorable_branch": "Prepare complementary experiments and verified submissions; do not automatically submit new candidates.",
+  "reserved_submission_slots_if_unfavorable": 0,
+  "conditional_fallback_fulfilled": true,
+  "closed_at_utc": "2026-09-28T19:56:52.560449+00:00"
+}

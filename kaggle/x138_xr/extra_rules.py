@@ -16,6 +16,7 @@ XR = {
     "prune": _xr_os.environ.get("BIOHUB_XR_PRUNE", "").strip(),
     "cut_end_iter": int(_xr_os.environ.get("BIOHUB_XR_CUT_END_ITER", "1")),   # peel low-confidence end edges this many times
     "fork_nan_only": _xr_os.environ.get("BIOHUB_XR_FORK_NAN_ONLY", "0"),      # 1: only drop safe-div-born (edge_prob None) short branches
+    "fork_preserve_boundary": _xr_os.environ.get("BIOHUB_XR_FORK_PRESERVE_BOUNDARY", "0"),
 }
 
 
@@ -61,7 +62,7 @@ def _xr_prune_params(dataset):
     return fallback
 
 
-def _xr_scalar(value, dataset, cast=float):
+def _xr_scalar(value, dataset, cast=float, default=0):
     """A plain number applies to every dataset; a spec like '44b6:0.4,6bba:0.5,*:0.5' is resolved by prefix (0 = off)."""
     if isinstance(value, (int, float)):
         return cast(value)
@@ -71,7 +72,7 @@ def _xr_scalar(value, dataset, cast=float):
     if ":" not in text:
         return cast(float(text))
     pfx = (dataset or "").split("_")[0]
-    fallback = cast(0)
+    fallback = cast(default)
     for item in text.split(","):
         parts = item.strip().split(":")
         if len(parts) != 2:
@@ -84,6 +85,12 @@ def _xr_scalar(value, dataset, cast=float):
     return fallback
 
 
+# Snapshot the configured defaults once. An unknown prefix must not inherit the
+# preceding video's override or turn off a safety threshold by returning zero.
+_XR_BASE_TAU = float(globals().get("SAFE_DIV_SISTER_SYMMETRY_TAU", _xr_os.environ.get("BIOHUB_SAFE_DIV_SISTER_SYMMETRY_TAU", "0.6")))
+_XR_BASE_DC = float(globals().get("DEEPCENTER_SAFE_DIV_THRESHOLD", _xr_os.environ.get("BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD", "0.25")))
+
+
 def xr_set_safe_div_params(dataset=None):
     """Per-embryo safe-division thresholds (read before add_safe_divisions_postlink runs).
     BIOHUB_XR_TAU_SPEC e.g. '44b6:0.6,6bba:1.0' sets SAFE_DIV_SISTER_SYMMETRY_TAU; BIOHUB_XR_DC_SPEC sets
@@ -92,10 +99,10 @@ def xr_set_safe_div_params(dataset=None):
         g = globals()
         tau_spec = _xr_os.environ.get("BIOHUB_XR_TAU_SPEC", "").strip()
         if tau_spec:
-            g["SAFE_DIV_SISTER_SYMMETRY_TAU"] = _xr_scalar(tau_spec, dataset)
+            g["SAFE_DIV_SISTER_SYMMETRY_TAU"] = _xr_scalar(tau_spec, dataset, default=_XR_BASE_TAU)
         dc_spec = _xr_os.environ.get("BIOHUB_XR_DC_SPEC", "").strip()
         if dc_spec:
-            g["DEEPCENTER_SAFE_DIV_THRESHOLD"] = _xr_scalar(dc_spec, dataset)
+            g["DEEPCENTER_SAFE_DIV_THRESHOLD"] = _xr_scalar(dc_spec, dataset, default=_XR_BASE_DC)
         if tau_spec or dc_spec:
             print(f"  [{dataset}] safe-div params: tau={g.get('SAFE_DIV_SISTER_SYMMETRY_TAU')} dc={g.get('DEEPCENTER_SAFE_DIV_THRESHOLD')}", flush=True)
     except Exception as exc:
@@ -151,6 +158,8 @@ def xr_pre_filter(nodes_by_id, edges, dataset=None, stats=None):
                 return k
 
             nan_only = str(XR.get("fork_nan_only", "0")).strip() not in ("0", "", "false", "False")
+            preserve_boundary = str(XR.get("fork_preserve_boundary", "0")).strip() not in ("0", "", "false", "False")
+            last_frame = max((int(v["t"]) for v in nodes_by_id.values()), default=-1) if preserve_boundary else 0
             drop = set()
             for s, outs in succ.items():
                 if len(outs) < 2:
@@ -160,6 +169,10 @@ def xr_pre_filter(nodes_by_id, edges, dataset=None, stats=None):
                     e = outs[lens[0][1]]
                     if nan_only and _xr_prob(e) is not None:
                         continue   # only revert branches added by the post-process (edge_prob None), never ILP edges
+                    if preserve_boundary:
+                        child_t = int(nodes_by_id[int(e["target_id"])]["t"])
+                        if last_frame - child_t + 1 < minb:
+                            continue  # insufficient remaining observation to judge this branch short
                     drop.add((int(e["source_id"]), int(e["target_id"])))
             if drop:
                 edges = [e for e in edges if (int(e["source_id"]), int(e["target_id"])) not in drop]
@@ -218,4 +231,3 @@ def xr_post_filter(nodes_by_id, edges, dataset=None, stats=None):
     except Exception as exc:
         print(f"  xr_post_filter skipped (non-fatal): {type(exc).__name__}: {exc}")
         return nodes_by_id, edges
-

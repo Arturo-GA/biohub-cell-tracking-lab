@@ -1,0 +1,16 @@
+[
+  {
+    "experiment": "local_join_inference.json",
+    "videos": 32,
+    "candidates": 0,
+    "scored": 0,
+    "eligible": 0
+  },
+  {
+    "experiment": "local_fork_inference.json",
+    "videos": 32,
+    "candidates": 383,
+    "scored": 375,
+    "eligible": 2
+  }
+]

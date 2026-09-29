@@ -1,0 +1,540 @@
+{
+  "videos": 199,
+  "ranking": [
+    {
+      "name": "F8_dc030",
+      "score": 0.9289089105778158,
+      "delta": 0.0013955260799090041,
+      "delta_vs_fork8": 0.0005130737687728537,
+      "ci90": [
+        0.00021256127652991008,
+        0.002433943487453738
+      ],
+      "win": 105,
+      "lose": 10,
+      "fork8_win": 36,
+      "fork8_lose": 7,
+      "div": [
+        23,
+        33,
+        128
+      ],
+      "videos": 199,
+      "evaluated": 142,
+      "reused": 57,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.3,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:11:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0023793221994625746,
+        "6bba": 0.001102924275194872
+      },
+      "increment_over_fork8": 0.0005130737687731868,
+      "increment_ci90": [
+        -0.0006632423778596075,
+        0.0014176506877941195
+      ],
+      "increment_remove_top5": 3.25694966235579e-05,
+      "changed_graphs_vs_fork8": 142
+    },
+    {
+      "name": "F8_prune12_joint",
+      "score": 0.9285693428995089,
+      "delta": 0.0010559584016021084,
+      "delta_vs_fork8": 0.000173506090465958,
+      "ci90": [
+        0.0005949451758893165,
+        0.0015791606589152796
+      ],
+      "win": 141,
+      "lose": 10,
+      "fork8_win": 85,
+      "fork8_lose": 7,
+      "div": [
+        24,
+        47,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 86,
+      "reused": 113,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375,
+        "swap": 0.35,
+        "fork_smooth": 0.0
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:12:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0007345005508193614,
+        "6bba": 0.00109608302777775
+      },
+      "increment_over_fork8": 0.00017350609046629106,
+      "increment_ci90": [
+        -2.439783811820084e-05,
+        0.00036215060221745363
+      ],
+      "increment_remove_top5": 1.658799430959146e-05,
+      "changed_graphs_vs_fork8": 193
+    },
+    {
+      "name": "F8_joint",
+      "score": 0.9284949880781895,
+      "delta": 0.0009816035802827638,
+      "delta_vs_fork8": 9.915126914661343e-05,
+      "ci90": [
+        0.0005692540348802844,
+        0.0014796125270249982
+      ],
+      "win": 99,
+      "lose": 6,
+      "fork8_win": 1,
+      "fork8_lose": 3,
+      "div": [
+        24,
+        47,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 191,
+      "reused": 8,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375,
+        "swap": 0.35,
+        "fork_smooth": 0.0
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:11:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0007345005508193614,
+        "6bba": 0.00100790482641
+      },
+      "increment_over_fork8": 9.915126914672445e-05,
+      "increment_ci90": [
+        -1.0962083253751574e-05,
+        0.00023961125397910503
+      ],
+      "increment_remove_top5": -2.1798120056426562e-05,
+      "changed_graphs_vs_fork8": 191
+    },
+    {
+      "name": "F8_end04",
+      "score": 0.9284725625437177,
+      "delta": 0.0009591780458109156,
+      "delta_vs_fork8": 7.672573467476518e-05,
+      "ci90": [
+        0.0005375406695576901,
+        0.0014328363638287378
+      ],
+      "win": 50,
+      "lose": 137,
+      "fork8_win": 14,
+      "fork8_lose": 175,
+      "div": [
+        24,
+        49,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 190,
+      "reused": 9,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:11:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.4,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0006425453646814461,
+        "6bba": 0.0010172302283506518
+      },
+      "increment_over_fork8": 7.672573467476518e-05,
+      "increment_ci90": [
+        -2.6404603324281515e-05,
+        0.0001950668376737241
+      ],
+      "increment_remove_top5": -3.798948645450384e-05,
+      "changed_graphs_vs_fork8": 190
+    },
+    {
+      "name": "F8_prune12",
+      "score": 0.9284701949094698,
+      "delta": 0.000956810411563036,
+      "delta_vs_fork8": 7.435810042688562e-05,
+      "ci90": [
+        0.0005333955906945409,
+        0.0014579022386715934
+      ],
+      "win": 142,
+      "lose": 7,
+      "fork8_win": 84,
+      "fork8_lose": 4,
+      "div": [
+        24,
+        49,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 88,
+      "reused": 111,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:12:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0006282862352960938,
+        "6bba": 0.0010171271349009858
+      },
+      "increment_over_fork8": 7.435810042732971e-05,
+      "increment_ci90": [
+        -7.573861175517726e-05,
+        0.00020107893970695566
+      ],
+      "increment_remove_top5": -4.0239818199783173e-07,
+      "changed_graphs_vs_fork8": 88
+    },
+    {
+      "name": "F8_p8",
+      "score": 0.9284352469916527,
+      "delta": 0.0009218624937459285,
+      "delta_vs_fork8": 3.941018260977813e-05,
+      "ci90": [
+        0.0003559240722244006,
+        0.0014951155770256408
+      ],
+      "win": 79,
+      "lose": 95,
+      "fork8_win": 23,
+      "fork8_lose": 99,
+      "div": [
+        24,
+        49,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 122,
+      "reused": 77,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375
+      },
+      "xr": {
+        "prune": "*:8:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0006282862352960938,
+        "6bba": 0.0009754544221013406
+      },
+      "increment_over_fork8": 3.9410182609334043e-05,
+      "increment_ci90": [
+        -0.00030958632865865643,
+        0.0004108504978187876
+      ],
+      "increment_remove_top5": -0.00030228077158878097,
+      "changed_graphs_vs_fork8": 122
+    },
+    {
+      "name": "C3_fork8",
+      "score": 0.9283958368090429,
+      "delta": 0.0008824523111361504,
+      "delta_vs_fork8": 0.0,
+      "ci90": [
+        0.0004949657146081643,
+        0.0013551041383814688
+      ],
+      "win": 100,
+      "lose": 3,
+      "fork8_win": 0,
+      "fork8_lose": 0,
+      "div": [
+        24,
+        49,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 117,
+      "reused": 82,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:11:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0006282862352960938,
+        "6bba": 0.0009289495944895254
+      },
+      "increment_over_fork8": 0.0,
+      "increment_ci90": [
+        0.0,
+        0.0
+      ],
+      "increment_remove_top5": 0.0,
+      "changed_graphs_vs_fork8": 0
+    },
+    {
+      "name": "F8_curvature",
+      "score": 0.9283881779273621,
+      "delta": 0.0008747934294552895,
+      "delta_vs_fork8": -7.65888168086093e-06,
+      "ci90": [
+        0.00047468793715665925,
+        0.001351837835104286
+      ],
+      "win": 101,
+      "lose": 4,
+      "fork8_win": 1,
+      "fork8_lose": 1,
+      "div": [
+        24,
+        49,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 197,
+      "reused": 2,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375,
+        "position_mode": "curvature"
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:11:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0005792106071021985,
+        "6bba": 0.0009289495944895254
+      },
+      "increment_over_fork8": -7.65888168086093e-06,
+      "increment_ci90": [
+        -6.669922936254902e-05,
+        4.329747814356133e-05
+      ],
+      "increment_remove_top5": -3.0447154324764192e-05,
+      "changed_graphs_vs_fork8": 197
+    },
+    {
+      "name": "F8_outlier",
+      "score": 0.9282331440387792,
+      "delta": 0.0007197595408724444,
+      "delta_vs_fork8": -0.000162692770263706,
+      "ci90": [
+        0.0002988652728088681,
+        0.0012233341064136205
+      ],
+      "win": 99,
+      "lose": 10,
+      "fork8_win": 2,
+      "fork8_lose": 7,
+      "div": [
+        24,
+        49,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 199,
+      "reused": 0,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375,
+        "position_mode": "outlier"
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:11:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last",
+        "fork_min_branch": 8,
+        "fork_nan_only": "1"
+      },
+      "groups": {
+        "44b6": 0.0004448359921656042,
+        "6bba": 0.0007700947242426093
+      },
+      "increment_over_fork8": -0.000162692770263817,
+      "increment_ci90": [
+        -0.0003055991481604681,
+        -3.518470672086441e-05
+      ],
+      "increment_remove_top5": -0.00020200966211636473,
+      "changed_graphs_vs_fork8": 199
+    },
+    {
+      "name": "C3_public0955",
+      "score": 0.9275133844979068,
+      "delta": 0.0,
+      "delta_vs_fork8": 0.0,
+      "ci90": [
+        0.0,
+        0.0
+      ],
+      "win": 0,
+      "lose": 0,
+      "fork8_win": 0,
+      "fork8_lose": 0,
+      "div": [
+        24,
+        62,
+        127
+      ],
+      "videos": 199,
+      "evaluated": 199,
+      "reused": 0,
+      "cfg": {
+        "child_max": 10.0,
+        "parent_max": 9.0,
+        "sister_max": 14.0,
+        "mutual": true,
+        "require_div": true,
+        "diverge": 2.25,
+        "dc_thr": 0.25,
+        "tau": 0.6,
+        "frame_cap": 0.0076,
+        "global_cap": 0.00375
+      },
+      "xr": {
+        "prune": "44b6:8:0.7,6bba:11:0.7",
+        "cut_nan_dist_um": 8.0,
+        "cut_end_prob": 0.5,
+        "cut_end_mode": "last"
+      },
+      "groups": {
+        "44b6": 0.0,
+        "6bba": 0.0
+      },
+      "increment_over_fork8": -0.0008824523111357063,
+      "increment_ci90": [
+        -0.0013649703563439974,
+        -0.000490440080956628
+      ],
+      "increment_remove_top5": -0.0010960481544213252,
+      "changed_graphs_vs_fork8": 117
+    }
+  ],
+  "note": "Training/tuning diagnostics; not a public-score prediction or private holdout."
+}

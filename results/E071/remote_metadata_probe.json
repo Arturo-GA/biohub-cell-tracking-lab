@@ -1,0 +1,29 @@
+{
+  "id": 136304955,
+  "ref": "jarturo/biohub-e071-c3-d04-r094",
+  "title": "Biohub E071 C3 D04 R094",
+  "author": "Arturo Guti\u00e9rrez Aguilar",
+  "slug": "biohub-e071-c3-d04-r094",
+  "lastRunTime": "2026-09-26T00:08:17.660Z",
+  "language": "python",
+  "kernelType": "notebook",
+  "isPrivate": true,
+  "enableGpu": true,
+  "enableInternet": false,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1",
+    "anvithpothula/biohub-v1284-head-s075"
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "enableTpu": false,
+  "currentVersionNumber": 1,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machineShape": "NvidiaTeslaT4"
+}

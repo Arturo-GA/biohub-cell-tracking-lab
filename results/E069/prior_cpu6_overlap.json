@@ -1,0 +1,46 @@
+{
+  "covered_changed_videos": [
+    "6bba_d2b9fc0c"
+  ],
+  "old_cpu6_metrics_match_on_changed_videos": true,
+  "changes": {
+    "6bba_d2b9fc0c": {
+      "edge_tp": {
+        "c3": 917,
+        "neural": 918,
+        "cpu6_strict": 918.0
+      },
+      "edge_fp": {
+        "c3": 5,
+        "neural": 3,
+        "cpu6_strict": 3.0
+      },
+      "edge_fn": {
+        "c3": 4,
+        "neural": 3,
+        "cpu6_strict": 3.0
+      },
+      "division_tp": {
+        "c3": 0,
+        "neural": 0,
+        "cpu6_strict": 0.0
+      },
+      "division_fp": {
+        "c3": 0,
+        "neural": 0,
+        "cpu6_strict": 0.0
+      },
+      "division_fn": {
+        "c3": 2,
+        "neural": 2,
+        "cpu6_strict": 2.0
+      },
+      "adj_edge_jaccard": {
+        "c3": 0.9973282708302158,
+        "neural": 1.0005769431282365,
+        "cpu6_strict": 1.0005769431282365
+      }
+    }
+  },
+  "scope": "E069 neural_strict compared to previously evaluated CPU6 temporal_swaps_strict. Exact metric equality is not graph equality."
+}

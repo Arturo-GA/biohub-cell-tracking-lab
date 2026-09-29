@@ -1,0 +1,59 @@
+{
+  "authorized_at_utc": "2026-09-28T05:05:20.763083+00:00",
+  "user_instruction": "Si las dos submissions tienen resultados favorables, preparar experimentos complementarios y alistar submissions; si no tienen buenos resultados, enviar las tres submissions pendientes.",
+  "not_before_utc": "2026-09-28T05:07:18+00:00",
+  "interval_minutes": 25,
+  "initial_refs": {
+    "C3_fork8": 56622884,
+    "F8_dc030": 56622918
+  },
+  "reference_public_score": 0.955,
+  "favorable_definition": "At least one COMPLETE initial submission has a numeric public score strictly above 0.955. Equal scores do not demonstrate improvement. Wait for both initial submissions to be terminal before choosing the branch.",
+  "favorable_action": "Select the public winner, run complementary experiments as private notebooks, and prepare distinct executed and verified candidate submissions. New leaderboard sends in this branch are not included in this conditional authorization.",
+  "first_complement_if_dc030_wins": "Compare DC030 plus prune12 against unchanged DC030, fork8 and public c3, with the exact 199-video CPU replay. Prune12 addresses edge errors whereas most DC030 gain is in divisions. Then consider adding joint only if it adds incremental evidence. Do not assume additive gains.",
+  "if_fork8_wins": "Use the existing exact prune12/joint/combined results as complementary evidence without re-running identical experiments. Prioritize complementary edge or fragmentation improvements around fork8; do not inherit a DC030 change that regressed on public.",
+  "unfavorable_action": "When both first submissions COMPLETE with numeric scores and neither exceeds 0.955, submit the three frozen candidates below once each, subject to current quota and no duplicate history/attempts. This supersedes the previous one-slot reservation for this branch.",
+  "on_error": "A technical ERROR is not a numerical zero. Diagnose it before spending more quota; do not automatically run the unfavorable-score branch from missing or failed scores. Continue nondependent preparation.",
+  "authorized_fallback_candidates": [
+    {
+      "candidate": "F8_prune12",
+      "kernel": "jarturo/biohub-e070-f8-prune12",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "f6a338452a5adcd7750e5956a7954a68173ee010d88085e739a7f5f37fc85cc0",
+      "notebook_sha256": "68c9acdacc15ca0a65df8fea440a4e799a74a48160dc9409fb0fafb32f0dc474",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_prune12_verified.json"
+    },
+    {
+      "candidate": "F8_prune12_joint",
+      "kernel": "jarturo/biohub-e070-f8-prune12-joint",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "54a8f84f35bd61a2375869404f35d2a7a242a200a96a57b42895126a36755cd0",
+      "notebook_sha256": "06366ac030718645e77e989e461b53fc04898d7a9230076c3dd7ea41592f8633",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_prune12_joint_verified.json"
+    },
+    {
+      "candidate": "F8_joint",
+      "kernel": "jarturo/biohub-e070-f8-joint",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "7843491b7d16fe6fe123bc888aa17013696fdcb77bf70eda1970bd72931714cf",
+      "notebook_sha256": "c1258426768f8c04c034097b7ad033d36d84de1e14787927cab8070751838639",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_joint_verified.json"
+    }
+  ],
+  "maximum_new_fallback_submissions": 3,
+  "resources": {
+    "max_parallel_gpu": 2,
+    "metrics": "CPU",
+    "inference": "GPU allowed when needed"
+  },
+  "stop": "After favorable complementary candidates are executed and verified, or after all three fallback submissions have terminal outcomes, pause this follow-up and report.",
+  "submission_refs": [
+    56640212,
+    56640207,
+    56640230
+  ],
+  "status": "SUBMITTED"
+}

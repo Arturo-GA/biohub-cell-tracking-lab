@@ -1,0 +1,344 @@
+[
+ {
+  "name": "C3_public0955",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last"
+  },
+  "score": 0.9275133844979068,
+  "delta": 0.0,
+  "lo": 0.0,
+  "hi": 0.0,
+  "p": 0.0,
+  "win": 0,
+  "lose": 0,
+  "forks_added": 2499,
+  "div": [
+   24,
+   62,
+   127
+  ],
+  "adj": 0.916245778864104,
+  "d44": 0.0,
+  "d6b": 0.0
+ },
+ {
+  "name": "C3_fork8",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9283958368090429,
+  "delta": 0.0008824523111361504,
+  "lo": 0.0004949657146081643,
+  "hi": 0.0013551041383814688,
+  "p": 1.0,
+  "win": 100,
+  "lose": 3,
+  "forks_added": 2499,
+  "div": [
+   24,
+   49,
+   127
+  ],
+  "adj": 0.9163958368090429,
+  "d44": 0.0006282862352960938,
+  "d6b": 0.0009289495944895254
+ },
+ {
+  "name": "C3_fork8_boundary",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1",
+   "fork_preserve_boundary": "1"
+  },
+  "score": 0.9283958368090429,
+  "delta": 0.0008824523111361504,
+  "lo": 0.0004949657146081643,
+  "hi": 0.0013551041383814688,
+  "p": 1.0,
+  "win": 100,
+  "lose": 3,
+  "forks_added": 2499,
+  "div": [
+   24,
+   49,
+   127
+  ],
+  "adj": 0.9163958368090429,
+  "d44": 0.0006282862352960938,
+  "d6b": 0.0009289495944895254
+ },
+ {
+  "name": "C3_fork6",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 6,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9279482040024025,
+  "delta": 0.0004348195044957537,
+  "lo": 0.0001778109238043113,
+  "hi": 0.0007721548762091857,
+  "p": 1.0,
+  "win": 82,
+  "lose": 2,
+  "forks_added": 2499,
+  "div": [
+   24,
+   55,
+   127
+  ],
+  "adj": 0.9162977185655093,
+  "d44": 0.0003443202828403713,
+  "d6b": 0.0004387341674405576
+ },
+ {
+  "name": "C3_prune12",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:12:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last"
+  },
+  "score": 0.9275877160039655,
+  "delta": 7.433150605873351e-05,
+  "lo": -8.294873883696319e-05,
+  "hi": 0.0002012428836778435,
+  "p": 0.7986666666666666,
+  "win": 84,
+  "lose": 4,
+  "forks_added": 2499,
+  "div": [
+   24,
+   62,
+   127
+  ],
+  "adj": 0.9163201103701627,
+  "d44": 0.0,
+  "d6b": 8.813905453741722e-05
+ },
+ {
+  "name": "C3_prune14",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:14:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last"
+  },
+  "score": 0.9275693058631744,
+  "delta": 5.592136526766378e-05,
+  "lo": -0.0004306584436788441,
+  "hi": 0.0005137924003530969,
+  "p": 0.5846666666666667,
+  "win": 97,
+  "lose": 17,
+  "forks_added": 2499,
+  "div": [
+   24,
+   62,
+   127
+  ],
+  "adj": 0.9163017002293716,
+  "d44": 0.0,
+  "d6b": 6.65078850724532e-05
+ },
+ {
+  "name": "C3_cut06",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.6,
+   "cut_end_mode": "last"
+  },
+  "score": 0.9273181432643484,
+  "delta": -0.0001952412335584075,
+  "lo": -0.0005140862262733581,
+  "hi": 0.00011913037108823854,
+  "p": 0.15133333333333332,
+  "win": 154,
+  "lose": 45,
+  "forks_added": 2499,
+  "div": [
+   24,
+   62,
+   127
+  ],
+  "adj": 0.9160505376305456,
+  "d44": -0.0003035221099407792,
+  "d6b": -0.0001751414777728666
+ },
+ {
+  "name": "C3_cut06_fork8",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.6,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.928200317163858,
+  "delta": 0.000686932665951212,
+  "lo": 0.00013946982844248446,
+  "hi": 0.0012779484125761131,
+  "p": 0.984,
+  "win": 155,
+  "lose": 44,
+  "forks_added": 2499,
+  "div": [
+   24,
+   49,
+   127
+  ],
+  "adj": 0.916200317163858,
+  "d44": 0.0003250835804496921,
+  "d6b": 0.0007534277773886267
+ },
+ {
+  "name": "C3_prune10_uniform",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "*:10:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last"
+  },
+  "score": 0.9274873237962733,
+  "delta": -2.6060701633467964e-05,
+  "lo": -0.00030703204098947445,
+  "hi": 0.00024702348770477833,
+  "p": 0.43333333333333335,
+  "win": 73,
+  "lose": 96,
+  "forks_added": 2499,
+  "div": [
+   24,
+   62,
+   127
+  ],
+  "adj": 0.9162197181624705,
+  "d44": -0.0003029782977408413,
+  "d6b": 2.5122839748759063e-05
+ }
+]

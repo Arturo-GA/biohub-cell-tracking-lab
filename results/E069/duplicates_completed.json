@@ -1,0 +1,12 @@
+{
+  "kernel": "jarturo/biohub-e069-duplicates-cpu",
+  "version": 1,
+  "files": 11,
+  "summary": {
+    "configurations": 6,
+    "videos": 199,
+    "seconds": 3350.717862586,
+    "note": "Reused detector-training videos; the confirmation subset is not independent detector validation."
+  },
+  "manifest_verified": true
+}

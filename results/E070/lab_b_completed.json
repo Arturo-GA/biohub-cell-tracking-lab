@@ -1,0 +1,11 @@
+{
+  "kernel": "jarturo/biohub-e070-lab-b",
+  "version": 1,
+  "manifest_verified": true,
+  "complete": {
+    "videos": 199,
+    "configurations": 6,
+    "seconds": 3048.233113671
+  },
+  "files": 11
+}

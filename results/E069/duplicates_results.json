@@ -1,0 +1,146 @@
+[
+ {
+  "name": "C3_public0955",
+  "score": 0.9275133844979068,
+  "delta": 0.0,
+  "ci90": [
+   0.0,
+   0.0
+  ],
+  "win": 0,
+  "lose": 0,
+  "division": [
+   24,
+   62,
+   127
+  ],
+  "videos": 199,
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "duplicate_strict",
+  "score": 0.9275133844979068,
+  "delta": 0.0,
+  "ci90": [
+   0.0,
+   0.0
+  ],
+  "win": 0,
+  "lose": 0,
+  "division": [
+   24,
+   62,
+   127
+  ],
+  "videos": 199,
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "duplicate_balanced",
+  "score": 0.9275133844979068,
+  "delta": 0.0,
+  "ci90": [
+   0.0,
+   0.0
+  ],
+  "win": 0,
+  "lose": 0,
+  "division": [
+   24,
+   62,
+   127
+  ],
+  "videos": 199,
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "C3_fork8",
+  "score": 0.9283958368090429,
+  "delta": 0.0008824523111361504,
+  "ci90": [
+   0.0004949657146081643,
+   0.0013551041383814688
+  ],
+  "win": 100,
+  "lose": 3,
+  "division": [
+   24,
+   49,
+   127
+  ],
+  "videos": 199,
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "fork8_duplicate_strict",
+  "score": 0.9283958368090429,
+  "delta": 0.0008824523111361504,
+  "ci90": [
+   0.0004949657146081643,
+   0.0013551041383814688
+  ],
+  "win": 100,
+  "lose": 3,
+  "division": [
+   24,
+   49,
+   127
+  ],
+  "videos": 199,
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ },
+ {
+  "name": "fork8_duplicate_balanced",
+  "score": 0.9283958368090429,
+  "delta": 0.0008824523111361504,
+  "ci90": [
+   0.0004949657146081643,
+   0.0013551041383814688
+  ],
+  "win": 100,
+  "lose": 3,
+  "division": [
+   24,
+   49,
+   127
+  ],
+  "videos": 199,
+  "operations": {
+   "candidates": 0,
+   "eligible": 0,
+   "swaps": 0,
+   "removed_tracks": 0,
+   "removed_nodes": 0
+  }
+ }
+]

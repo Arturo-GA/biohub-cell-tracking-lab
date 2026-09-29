@@ -1,0 +1,36 @@
+{
+  "automation_id": "biohub-completar-cinco-submissions",
+  "status": "SUBMITTED",
+  "scheduled_local": "2026-09-27T19:00:00-05:00",
+  "timezone": "America/Lima",
+  "scheduled_utc": "2026-09-28T00:00:00+00:00",
+  "authorized_candidates": [
+    {
+      "candidate": "C3_fork8",
+      "kernel": "jarturo/biohub-c3-fork8",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "ff57683b494311df5cada31d0563e890fbab98cee7919e124d0eecd886b1223a",
+      "notebook_sha256": "dabb2e5959c265e5e287f7f8c5ae7f37333f51156288cda7c60b407ead35bfdf",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E068\\c3_fork8_verified.json"
+    },
+    {
+      "candidate": "F8_dc030",
+      "kernel": "jarturo/biohub-e070-f8-dc030",
+      "version": 1,
+      "file_name": "submission.csv",
+      "csv_sha256": "278259394332a4957371dcbb6ab20336898a11948b10420872e822ca9d2ca53c",
+      "notebook_sha256": "78c4f9c905c4c8e3f389328d7d1ca9e6f5fb4dee43a416824499b963522f0e9d",
+      "verification_receipt": "C:\\dev\\biohub\\results\\E070\\F8_dc030_verified.json"
+    }
+  ],
+  "maximum_new_submissions": 2,
+  "remaining_slots_after_two": 3,
+  "user_authorization": "si mejor hacemos eso a las 7 en punto programa el submission de los 2 primeros pruebas que me mencioanaste",
+  "accepted_at_utc": "2026-09-27T22:04:32.818942+00:00",
+  "scope": "Submit these two only; no additional candidates. Monitor their results, then pause.",
+  "submission_refs": [
+    56622918,
+    56622884
+  ]
+}

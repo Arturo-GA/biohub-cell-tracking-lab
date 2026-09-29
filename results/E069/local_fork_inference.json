@@ -1,0 +1,226 @@
+[
+  {
+    "stem": "44b6_0db75fae",
+    "candidates": 11,
+    "scored": 11,
+    "eligible": 0,
+    "seconds": 3.172000000020489
+  },
+  {
+    "stem": "44b6_1574802b",
+    "candidates": 16,
+    "scored": 16,
+    "eligible": 0,
+    "seconds": 3.0309999999881256
+  },
+  {
+    "stem": "44b6_2a2eff9f",
+    "candidates": 22,
+    "scored": 22,
+    "eligible": 0,
+    "seconds": 5.421999999991385
+  },
+  {
+    "stem": "44b6_33b596bf",
+    "candidates": 23,
+    "scored": 23,
+    "eligible": 0,
+    "seconds": 3.625
+  },
+  {
+    "stem": "44b6_706092f0",
+    "candidates": 1,
+    "scored": 1,
+    "eligible": 0,
+    "seconds": 1.8900000000139698
+  },
+  {
+    "stem": "44b6_71a4179f",
+    "candidates": 9,
+    "scored": 9,
+    "eligible": 0,
+    "seconds": 3.1570000000065193
+  },
+  {
+    "stem": "44b6_74d0c52e",
+    "candidates": 9,
+    "scored": 9,
+    "eligible": 0,
+    "seconds": 1.5
+  },
+  {
+    "stem": "44b6_7a302da0",
+    "candidates": 47,
+    "scored": 47,
+    "eligible": 0,
+    "seconds": 7.577999999979511
+  },
+  {
+    "stem": "44b6_8cc6506c",
+    "candidates": 6,
+    "scored": 6,
+    "eligible": 0,
+    "seconds": 2.234000000025844
+  },
+  {
+    "stem": "44b6_90724892",
+    "candidates": 11,
+    "scored": 11,
+    "eligible": 0,
+    "seconds": 2.85999999998603
+  },
+  {
+    "stem": "44b6_9be80b04",
+    "candidates": 7,
+    "scored": 7,
+    "eligible": 0,
+    "seconds": 2.5309999999881256
+  },
+  {
+    "stem": "44b6_aaf8b0ea",
+    "candidates": 6,
+    "scored": 6,
+    "eligible": 0,
+    "seconds": 1.3440000000118744
+  },
+  {
+    "stem": "44b6_c8e2a523",
+    "candidates": 16,
+    "scored": 16,
+    "eligible": 0,
+    "seconds": 3.8589999999967404
+  },
+  {
+    "stem": "44b6_c96cfa10",
+    "candidates": 26,
+    "scored": 26,
+    "eligible": 0,
+    "seconds": 6.4060000000172295
+  },
+  {
+    "stem": "44b6_d29c9ab2",
+    "candidates": 23,
+    "scored": 23,
+    "eligible": 0,
+    "seconds": 5.3439999999827705
+  },
+  {
+    "stem": "44b6_ddf577ad",
+    "candidates": 25,
+    "scored": 24,
+    "eligible": 0,
+    "seconds": 6.171999999991385
+  },
+  {
+    "stem": "6bba_0c7fa718",
+    "candidates": 15,
+    "scored": 14,
+    "eligible": 0,
+    "seconds": 2.0
+  },
+  {
+    "stem": "6bba_15403b9a",
+    "candidates": 5,
+    "scored": 4,
+    "eligible": 0,
+    "seconds": 0.6090000000258442
+  },
+  {
+    "stem": "6bba_1ebfb80d",
+    "candidates": 4,
+    "scored": 4,
+    "eligible": 0,
+    "seconds": 1.0
+  },
+  {
+    "stem": "6bba_268e1230",
+    "candidates": 4,
+    "scored": 4,
+    "eligible": 0,
+    "seconds": 0.5469999999913853
+  },
+  {
+    "stem": "6bba_4f99ce20",
+    "candidates": 4,
+    "scored": 4,
+    "eligible": 0,
+    "seconds": 0.6559999999881256
+  },
+  {
+    "stem": "6bba_55b7eebe",
+    "candidates": 2,
+    "scored": 1,
+    "eligible": 0,
+    "seconds": 0.40700000000651926
+  },
+  {
+    "stem": "6bba_5c824876",
+    "candidates": 28,
+    "scored": 28,
+    "eligible": 0,
+    "seconds": 3.5929999999934807
+  },
+  {
+    "stem": "6bba_61dd1e0d",
+    "candidates": 6,
+    "scored": 5,
+    "eligible": 0,
+    "seconds": 0.860000000015134
+  },
+  {
+    "stem": "6bba_6db0e9b4",
+    "candidates": 10,
+    "scored": 10,
+    "eligible": 0,
+    "seconds": 2.4219999999913853
+  },
+  {
+    "stem": "6bba_74686d6a",
+    "candidates": 8,
+    "scored": 8,
+    "eligible": 0,
+    "seconds": 2.2030000000086147
+  },
+  {
+    "stem": "6bba_78a7bd97",
+    "candidates": 4,
+    "scored": 4,
+    "eligible": 0,
+    "seconds": 2.75
+  },
+  {
+    "stem": "6bba_ae82a791",
+    "candidates": 6,
+    "scored": 5,
+    "eligible": 0,
+    "seconds": 0.9059999999881256
+  },
+  {
+    "stem": "6bba_b693381b",
+    "candidates": 3,
+    "scored": 2,
+    "eligible": 0,
+    "seconds": 0.40600000001722947
+  },
+  {
+    "stem": "6bba_d2b9fc0c",
+    "candidates": 17,
+    "scored": 16,
+    "eligible": 2,
+    "seconds": 2.0
+  },
+  {
+    "stem": "6bba_d5eae175",
+    "candidates": 0,
+    "scored": 0,
+    "eligible": 0,
+    "seconds": 0.2659999999741558
+  },
+  {
+    "stem": "6bba_fc5f39dc",
+    "candidates": 9,
+    "scored": 9,
+    "eligible": 0,
+    "seconds": 1.6560000000172295
+  }
+]

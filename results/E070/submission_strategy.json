@@ -1,0 +1,58 @@
+{
+  "updated_at_utc": "2026-09-27T22:00:12.215664+00:00",
+  "reason": "Arturo proposes preserving one submission after evaluating the four strongest prepared candidates. Adopt an adaptive 2 + up to 2 + 1 strategy.",
+  "initial_batch": [
+    "C3_fork8",
+    "F8_dc030"
+  ],
+  "conditional_second_batch": [
+    "F8_prune12",
+    "F8_prune12_joint"
+  ],
+  "max_initial_submissions": 4,
+  "reserved_submission_slots": 1,
+  "prepared_but_held_back": [
+    "F8_joint",
+    "F8_p8"
+  ],
+  "gates": [
+    "Wait for public scores of the first two before deciding the next two. If the common fork8 change regresses, reassess the remaining fork8-based variants instead of sending them blindly.",
+    "Use prune12 versus fork8 to assess pruning, and prune12_joint versus prune12 to assess the additional joint correction.",
+    "If DC030 and pruning show complementary evidence, evaluate their combined implementation locally before preparing a new inference. This combination is not yet validated and gains must not be added arithmetically.",
+    "Allocate the fifth slot after the first results, preferably to a validated follow-up experiment; do not spend it automatically on standalone joint.",
+    "Before any leaderboard send, check current quota, previous submissions, exact kernel version and candidate hash."
+  ],
+  "five_distinct_candidates_remain_ready": true,
+  "auto_submit": false,
+  "new_runs_launched": false,
+  "public_forecast_warning": "No calibrated transfer model links the reused 199-video diagnostic set to public score. Historical local improvements have sometimes reduced public score.",
+  "scheduled_submit_allowlist": [
+    "C3_fork8",
+    "F8_dc030"
+  ],
+  "scheduled_submit_maximum": 2,
+  "schedule_file": "results/E070/scheduled_first_two.json",
+  "automatic_submission_authorization_completed": true,
+  "remaining_submission_slots": 0,
+  "score_monitor_refs": [
+    56640207,
+    56640212,
+    56640230
+  ],
+  "score_monitor_interval_minutes": 25,
+  "conditional_action_policy": "results/E070/conditional_next_steps.json",
+  "conditional_fallback_auto_submit": false,
+  "conditional_fallback_allowlist": [
+    "F8_prune12",
+    "F8_prune12_joint",
+    "F8_joint"
+  ],
+  "fallback_maximum_new_submissions": 3,
+  "favorable_branch": "Prepare complementary experiments and verified submissions; do not automatically submit new candidates.",
+  "reserved_submission_slots_if_unfavorable": 0,
+  "conditional_fallback_fulfilled": true,
+  "read_only": true,
+  "interval_minutes": 25,
+  "decision_file": "results/E070/public_decision.json",
+  "schedule_mode": "Read-only every 25 minutes for the three accepted fallback submissions; pause after all are terminal."
+}

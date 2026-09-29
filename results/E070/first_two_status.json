@@ -1,0 +1,28 @@
+{
+  "checked_at_utc": "2026-09-28T12:07:58.232561+00:00",
+  "submissions": [
+    {
+      "candidate": "C3_fork8",
+      "ref": 56622884,
+      "status": "COMPLETE",
+      "public_score": "0.953",
+      "error_description": "",
+      "date": "2026-09-28 00:04:00.990000",
+      "description": "E070 reset 20260928 C3_fork8 v1 sha=ff57683b494311df"
+    },
+    {
+      "candidate": "F8_dc030",
+      "ref": 56622918,
+      "status": "COMPLETE",
+      "public_score": "0.947",
+      "error_description": "",
+      "date": "2026-09-28 00:04:21.553000",
+      "description": "E070 reset 20260928 F8_dc030 v1 sha=278259394332a495"
+    }
+  ],
+  "limits": {
+    "num_today": 2,
+    "num_allowed_now": 3,
+    "limited_by_total": false
+  }
+}

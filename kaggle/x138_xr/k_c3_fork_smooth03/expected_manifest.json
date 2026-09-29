@@ -1,0 +1,18 @@
+{
+  "candidate": "fork_smooth03",
+  "base": "c3_public_0.955",
+  "context": {
+    "smooth_weight": 0.3
+  },
+  "source_sha256": "675516b13300a1974facbe7bfc0f7ee3e399647c8ff91fb4a9614d32c141eba2",
+  "fixed": {
+    "BIOHUB_OUTPUT_MIN_TRACK_LEN": "7",
+    "BIOHUB_REPAIR_DEADLINE_S": "34200"
+  },
+  "xr": {
+    "BIOHUB_XR_PRUNE": "44b6:8:0.7,6bba:11:0.7",
+    "BIOHUB_XR_CUT_NAN_DIST_UM": "8",
+    "BIOHUB_XR_CUT_END_PROB": "0.5",
+    "BIOHUB_XR_CUT_END_MODE": "last"
+  }
+}

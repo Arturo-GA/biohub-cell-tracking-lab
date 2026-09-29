@@ -1,0 +1,369 @@
+{
+  "topic": {
+    "id": 738217,
+    "title": "focus3d : one of the best 3d cell segmentation",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/738217",
+    "postDate": "2026-08-30T15:24:33.907Z",
+    "authorName": "hengck23",
+    "authorUrl": "https://www.kaggle.com/hengck23",
+    "votes": 40,
+    "commentCount": 50,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>Here are the results i tried on one of the kaggle train dataset</p>\n<p><a href=\"https://huggingface.co/spaces/Qinghua-thu/FOCUS-3D\" target=\"_blank\">https://huggingface.co/spaces/Qinghua-thu/FOCUS-3D</a></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ff26b419d2743cbd3570314408b10e3f8%2FSelection_4730.png?generation=1788103458247804&amp;alt=media\" alt=\"\"></p>"
+  },
+  "comments": [
+    {
+      "id": 3521535,
+      "authorName": "hengck23",
+      "postDate": "2026-09-06T08:51:47.800Z",
+      "content": "<p>updated results</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F9e8d5f4c47591d7e21251755f284fcb8%2FSelection_4806.png?generation=1788684703562892&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F54fceef06b3911402346a7f5ebd371f6%2FSelection_4805.png?generation=1788684641113578&amp;alt=media\" alt=\"\"></p>",
+      "votes": 5,
+      "replies": [
+        {
+          "id": 3521539,
+          "authorName": "hengck23",
+          "postDate": "2026-09-06T09:18:04.263Z",
+          "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F65e9183d4ded303e8bd71201170f37ad%2FSelection_4809.png?generation=1788686281728622&amp;alt=media\" alt=\"\"></p>\n<p>still feel that it is not good enough (does not help if gap is more than one missing frame) \u2026 need to dream about it</p>",
+          "votes": 2
+        },
+        {
+          "id": 3521562,
+          "authorName": "hengck23",
+          "postDate": "2026-09-06T10:48:52.160Z",
+          "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F1fc32a4c8e74689f84192fd6b1dd5e9d%2FSelection_4810.png?generation=1788691729613470&amp;alt=media\" alt=\"\"></p>"
+        }
+      ]
+    },
+    {
+      "id": 3522918,
+      "authorName": "hengck23",
+      "postDate": "2026-09-10T00:40:24.790Z",
+      "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F53f2b08efba45290cfcb9e985cc2114f%2FSelection_4877.png?generation=1789000712859568&amp;alt=media\" alt=\"\"></p>\n<p>It seems that i cannot get Ultrack oversegment to work.   </p>\n<p>When the cell is isolated and no oversegment is required, Ultrack centroid is close to Kaggle ground truth</p>",
+      "votes": 2,
+      "replies": [
+        {
+          "id": 3522929,
+          "authorName": "Satwik",
+          "postDate": "2026-09-10T01:36:07.310Z",
+          "content": "<p>Ultrack segmentation proved ineffective for me as well compared to just using our own detector. What Ultrack did seem to do well for me was generating dense tracks, using ultrack-td contours from FOCUS3D segmentations. I have not been able to acheive any meaningful result yet from any of these so far however.</p>",
+          "votes": 2
+        }
+      ]
+    },
+    {
+      "id": 3521737,
+      "authorName": "hengck23",
+      "postDate": "2026-09-07T03:00:29.040Z",
+      "content": "<p>another idea\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F17a1759af0e5e5ef2acfad20a57f84c7%2FSelection_4813.png?generation=1788750027595991&amp;alt=media\" alt=\"\"></p>",
+      "votes": 1
+    },
+    {
+      "id": 3521418,
+      "authorName": "hengck23",
+      "postDate": "2026-09-05T19:41:24.460Z",
+      "content": "<p>The trick to transforming Focus3D annotation to Kaggle-like annotation<br>\n1) Just pretrain with Focus3D annotation<br>\n2) find matches (hit) of Focus3D and Kaggle zyx to compute diff dzyx<br>\n3) have two heads: one to predict Focus3D zyx, another head dzyx, then Kagge zyx = Focus3D +dzyx  </p>\n<p>hint: might as well let diff head predict values in um (instead of quantized 64x64x64 coord) </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fe52d3a2127e86cfcfcf93c3c78f9cf1d%2FSelection_4791.png?generation=1788637476144738&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F69f74bce646bd3f4c2ff78d45bb4e4e4%2FSelection_4792.png?generation=1788637813426997&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F7c169ccb2d1d5567e7fc500bdf120d1c%2FSelection_4793.png?generation=1788637823261833&amp;alt=media\" alt=\"\"></p>\n<p>-- </p>\n<p>This is a classical trick for OOD adaptation with few data. We have a prior model, then we shift to a new domain using A*ptior + B</p>\n<p>keywords: domain calibration, domain adaptation </p>",
+      "votes": 2,
+      "replies": [
+        {
+          "id": 3521430,
+          "authorName": "Rishabh Roy",
+          "postDate": "2026-09-05T21:54:49.850Z",
+          "content": "<p>why not use ultratrack directly ?</p>",
+          "votes": 1,
+          "replies": [
+            {
+              "id": 3522473,
+              "authorName": "hengck23",
+              "postDate": "2026-09-09T00:01:24.747Z",
+              "content": "<p>thanks. i did not know utlrack segmentation until i find this.\n<a href=\"https://github.com/royerlab/ultrack-td/blob/main/examples/zebrahub.py\" target=\"_blank\">https://github.com/royerlab/ultrack-td/blob/main/examples/zebrahub.py</a></p>",
+              "votes": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3520950,
+      "authorName": "hengck23",
+      "postDate": "2026-09-04T13:26:45.227Z",
+      "content": "<p>experiment on training a unet3d with dense cell centroids from focus3d + kaggle annotation:<br>\n<a href=\"https://www.kaggle.com/code/hengck23/cell-point-detector\" target=\"_blank\">https://www.kaggle.com/code/hengck23/cell-point-detector</a><br>\n(6 sec per volume on one T4 gpu) </p>\n<p>here is recall rate on kaggle node annotations:<br>\ninput 64x64x64 (one volume)</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Facdf250b20a9f3efcc3328dbdcbe14e4%2FSelection_4771.png?generation=1788528152996386&amp;alt=media\" alt=\"\"></p>\n<p>plan:</p>\n<ul>\n<li>(1) train on external data (there are many opensource 3d zebrafish embryo cells, especially those from biohub) </li>\n<li>(2) i haven't apply tricks like augmentation, SWA weight averaging, etc \u2026</li>\n<li>(3) another ranker head to push probability upwards so that i can have less predicted nodes</li>\n<li>(4) maybe a head to predict node density so that i can predict kaggle estimate node count (metric hack)  </li>\n</ul>\n<p>(3),(4) may not be necessary, because tracking can recover missing cells (or adaptively adjust prob threshold)</p>\n<hr>\n<p>i divide the problems into steps:\n1) train a good cell detector first<br>\n2) then get cell detector feature (+ modify vector) to make link transformer<br>\n3) if you analyse post-processing, you will find that they use heuristics to join cells if the broken gap interval is   small. This means that if we train link transformer with window &gt;2 (eg like 5) results is better. i.e. learn the \"joining\" instead of heuristics. but the risk is that data lis limited and maybe heuristics is better?  </p>",
+      "votes": 1,
+      "replies": [
+        {
+          "id": 3520955,
+          "authorName": "hengck23",
+          "postDate": "2026-09-04T13:39:53.937Z",
+          "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F2d7f3d5429dda866877f5b1331afb2c6%2FSelection_4773.png?generation=1788529191797128&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F834de770caf26c33624489fbcef64537%2FSelection_4774.png?generation=1788529381336076&amp;alt=media\" alt=\"\"></p>",
+          "replies": [
+            {
+              "id": 3521023,
+              "authorName": "Rishabh Roy",
+              "postDate": "2026-09-04T16:15:45.133Z",
+              "content": "<p>This is awesome . Thanks for sharing your findings . Would love to implement this . Will try if this fits under kaggle 12 hour window run </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3521158,
+      "authorName": "hengck23",
+      "postDate": "2026-09-05T02:07:51.003Z",
+      "content": "<p>i basically solved the cell detection problem. During development, chatgpt offers some interesting solutions: 2d to 3d:<br>\npaper:  </p>\n<ol>\n<li><p>u-Segment3D \u2014 \u201cUniversal consensus 3D segmentation of cells from 2D segmented stacks\u201d.<br>\n<a href=\"https://github.com/DanuserLab/u-Segment3D\" target=\"_blank\">https://github.com/DanuserLab/u-Segment3D</a><br>\n<a href=\"https://www.biorxiv.org/content/10.1101/2024.05.03.592249v3\" target=\"_blank\">https://www.biorxiv.org/content/10.1101/2024.05.03.592249v3</a>  </p></li>\n<li><p>Seg2Link: an efficient and versatile solution for semi-automatic cell segmentation in 3D image stacks\n<a href=\"https://github.com/WenChentao/Seg2Link\" target=\"_blank\">https://github.com/WenChentao/Seg2Link</a></p></li>\n</ol>"
+    },
+    {
+      "id": 3518742,
+      "authorName": "hengck23",
+      "postDate": "2026-08-31T15:45:28.467Z",
+      "content": "<p>elastic augmentation<br>\nso actually you have dense data for training  </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F936529f234ae0f09dcafc7f0960ecc77%2FPeek%202026-08-31%2023-44.gif?generation=1788191083712245&amp;alt=media\" alt=\"\"></p>",
+      "votes": 4
+    },
+    {
+      "id": 3519195,
+      "authorName": "hengck23",
+      "postDate": "2026-09-01T09:19:47.130Z",
+      "content": "<p>An idea that is too much for the competition but could be feasible in long term cell tracking research. I have been looking at video generation deep net. You can have a depth map as prompt then generate anime or life movie.</p>\n<p>So it is easy to create 3d virtual cell in blender and add motion. Then you can style it to create fluorescent microscopy volume.    </p>\n<p>In fact with infinite data you can simply convert 4d to 4d end to end. From volume back to bender model.</p>",
+      "votes": 1,
+      "replies": [
+        {
+          "id": 3519199,
+          "authorName": "nusrati",
+          "postDate": "2026-09-01T09:42:06.583Z",
+          "content": "<p>yup super idea, but for an undergrad, thats not manageable in our routine. But I surely would like to contribute to it if someones upto it.</p>"
+        }
+      ]
+    },
+    {
+      "id": 3518534,
+      "authorName": "hengck23",
+      "postDate": "2026-08-31T07:41:29.500Z",
+      "content": "<p><a href=\"https://www.biorxiv.org/content/10.1101/2025.07.23.666425v1\" target=\"_blank\">https://www.biorxiv.org/content/10.1101/2025.07.23.666425v1</a><br>\nASCENT: Annotation-free Self-supervised Contrastive Embeddings for 3D Neuron Tracking in Fluorescence Microscopy  </p>\n<p>another shortcut is :<br>\nFOCUS3d --&gt; label --&gt;augmentation (e.g. affine, elastic deform) to create window of T=2 pairs.<br>\nthen you can train link transformer etc..</p>",
+      "votes": 1,
+      "replies": [
+        {
+          "id": 3518571,
+          "authorName": "Tom",
+          "postDate": "2026-08-31T09:44:45.063Z",
+          "content": "<p><a href=\"https://www.kaggle.com/hengck23\" target=\"_blank\">@hengck23</a>  It looks like there are even more great ideas to me now</p>",
+          "replies": [
+            {
+              "id": 3518591,
+              "authorName": "hengck23",
+              "postDate": "2026-08-31T10:34:59.190Z",
+              "content": "<p>you can just randomly make some grid points that are non-background, then \"track/link them\" in next \"augmented frame\" as pretraining or aux loss</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3518488,
+      "authorName": "hengck23",
+      "postDate": "2026-08-31T04:04:38.893Z",
+      "content": "<p>FOCUS-3D (instance segmentation) --&gt; HOCT (tracking)<br>\n<a href=\"https://github.com/royerlab/hoct/tree/main\" target=\"_blank\">https://github.com/royerlab/hoct/tree/main</a><br>\n<a href=\"https://arxiv.org/abs/2607.11754\" target=\"_blank\">https://arxiv.org/abs/2607.11754</a><br>\nHigher-Order Cell Tracking Transformer  </p>\n<hr>\n<p>THICK BLUE: kaggle annotation<br>\nOTHER THIN: nearest track from HOCT  </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F335a3eeb48ab9d2b799e6bf2c0ed973a%2FSelection_4733.png?generation=1788148939168370&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6ae538c0de22bd26ba2f5bc2c8a2f1d7%2FSelection_4734.png?generation=1788148953830155&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F07a0f1d2c25bad1d915b127224cf6e71%2FSelection_4735.png?generation=1788148976594585&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F13a5e112eb312200b3bc018e42c7e078%2FSelection_4736.png?generation=1788149017218352&amp;alt=media\" alt=\"\"></p>",
+      "votes": 1
+    },
+    {
+      "id": 3518454,
+      "authorName": "hengck23",
+      "postDate": "2026-08-31T00:34:08.573Z",
+      "content": "<p>Once you have dense segmentation label, you can use many opensource tracker like hoct, itec, trackastra to make dense tracks for better training.</p>\n<p>Then you can do longer range tracking over window of 5 or 8 (instead of 2)</p>",
+      "votes": 1,
+      "replies": [
+        {
+          "id": 3518559,
+          "authorName": "Rishabh Roy",
+          "postDate": "2026-08-31T09:05:24.563Z",
+          "content": "<p>Are you able to use this segmentation in your code ? <a href=\"https://www.kaggle.com/hengck23\" target=\"_blank\">@hengck23</a> </p>",
+          "replies": [
+            {
+              "id": 3518577,
+              "authorName": "hengck23",
+              "postDate": "2026-08-31T09:50:37.440Z",
+              "content": "<p>You can download hf spaces gradio code and modify from there. It is self contained </p>"
+            },
+            {
+              "id": 3518592,
+              "authorName": "Rishabh Roy",
+              "postDate": "2026-08-31T10:37:22.100Z",
+              "content": "<p>would love to see this work </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3526067,
+      "authorName": "hengck23",
+      "postDate": "2026-09-20T08:19:52.773Z",
+      "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F3797f41439de90d44f4b187b8a534e16%2FSelection_4977.png?generation=1789903449214112&amp;alt=media\" alt=\"\"></p>\n<p>expensive experiments. me trying to find a model that doesn't over estimate num of nodes</p>"
+    },
+    {
+      "id": 3524964,
+      "authorName": "hengck23",
+      "postDate": "2026-09-16T11:17:17.323Z",
+      "content": "<p>unroll joint node and edge detection</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fdad2664b515e75c2e9f4fa97c7c687b6%2FSelection_4971.png?generation=1789557435322018&amp;alt=media\" alt=\"\"></p>",
+      "replies": [
+        {
+          "id": 3524965,
+          "authorName": "hengck23",
+          "postDate": "2026-09-16T11:19:20.290Z",
+          "content": "<p>in the same principle, we can unroll 5 frame prediction from 4xpairwise results\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F9d8ee53206a7d71c3372c34a4e393002%2FSelection_4972.png?generation=1789558129242359&amp;alt=media\" alt=\"\"></p>\n<p>softamx is used as ranking loss. hence target is not single class. So this is naturally a listwise ranking problem. target is rank = kaggle metric score</p>"
+        }
+      ]
+    },
+    {
+      "id": 3524617,
+      "authorName": "hengck23",
+      "postDate": "2026-09-15T12:57:29.937Z",
+      "content": "<p>trick: the best way to reduce nodes is to cluster them and represent them by centeroid</p>"
+    },
+    {
+      "id": 3524147,
+      "authorName": "hengck23",
+      "postDate": "2026-09-14T03:30:11.587Z",
+      "content": "<p>i find a trick. ultrack segmentation pt model gives foreground and boundaries probabilities, which are good for estimating \"T_est, estimated no of  nodes in a volume seq) in kaggle annotation.</p>"
+    },
+    {
+      "id": 3523585,
+      "authorName": "hengck23",
+      "postDate": "2026-09-12T01:46:55.597Z",
+      "content": "<p>how to implement learnable ultrack-style multiple hypotheses?</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F5b72f742a4302f2b31c6e134983716cd%2FSelection_4934.png?generation=1789177603466391&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F082ad8fb3c1d7b04b0b555ca312867b2%2FSelection_4935.png?generation=1789177613952710&amp;alt=media\" alt=\"\"></p>",
+      "replies": [
+        {
+          "id": 3523586,
+          "authorName": "hengck23",
+          "postDate": "2026-09-12T01:50:58.050Z",
+          "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fe4d5de9bebc930e331310265e44785d5%2FSelection_4936.png?generation=1789177783358472&amp;alt=media\" alt=\"\"></p>\n<p>this is the key: selection of the best hypothesis in ultrack is not based on one frame, nor two frames  \u2026 it is based on all frames (best trajectory)!</p>\n<p>How to implement differentiable IPL over window of say T=5,10 frames?</p>",
+          "replies": [
+            {
+              "id": 3523587,
+              "authorName": "hengck23",
+              "postDate": "2026-09-12T02:00:18.647Z",
+              "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F06cc638f2647f7cef413f330c65ebbb3%2FSelection_4938.png?generation=1789178245293021&amp;alt=media\" alt=\"\"></p>\n<p>so both unet3d (stage1) and link trasnformer(stage2) are merely node and link proposal generators. we need a third stage to create trajectories and evaluate all them at train time so that IPL score can become valley at the correct GT solution. </p>"
+            },
+            {
+              "id": 3523588,
+              "authorName": "hengck23",
+              "postDate": "2026-09-12T02:07:29.700Z",
+              "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F5207b7e083b045ed2d9424c55d68c19b%2FSelection_4940.png?generation=1789178847724226&amp;alt=media\" alt=\"\"></p>",
+              "votes": 1
+            },
+            {
+              "id": 3523591,
+              "authorName": "Satwik",
+              "postDate": "2026-09-12T03:01:33.700Z",
+              "content": "<p>I tried following this path for a few days and I have some benchmarks I can share. A detector trained on dense FOCUS3D labels- recall 1 on held out 41 video validation set across both embryos. A transformer linker trained on sparse GT annotation scores about 0.809 edge jaccard on CV and about 0.83 on LB ( scores are after using Ultrack ILP) . My plan was to use Ultrack to generate dense tracks on FOCUS3D segmentation and distill it down to a simpler model that works with centroids ,  but FOCUS3D with Ultrack only got an edge jaccard of 0.7. I tried training a model on these dense edges, and added GT labels to ultrack pseudo labels and assigned a higher weight to GT tracks but that performed poorly as well. I believe detection in itself requires some temporal context or a learning signal from the downstream task to be able to effectively work. </p>"
+            },
+            {
+              "id": 3523620,
+              "authorName": "hengck23",
+              "postDate": "2026-09-12T06:00:52.820Z",
+              "content": "<p>my e2e node detector and link transformer trained on dense focus3d annotation + augmented frames has: validation: edge jaccard 0.902/0.896 for without/with ILP(my version).</p>\n<p>on train set, it is about +2.</p>",
+              "votes": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3523020,
+      "authorName": "hengck23",
+      "postDate": "2026-09-10T10:43:51.150Z",
+      "content": "<p>let's try again. see if repo is detailed enough to repeat segmentation results\u2026</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fbd63a659a989989be36b9560f933eebf%2FSelection_4894.png?generation=1789036983651376&amp;alt=media\" alt=\"\"></p>"
+    },
+    {
+      "id": 3522961,
+      "authorName": "hengck23",
+      "postDate": "2026-09-10T04:34:37.563Z",
+      "content": "<p>need to set uncertainty weights</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F480ff2dcc663fba1d8ee7404f528f983%2FSelection_4880.png?generation=1789014846921779&amp;alt=media\" alt=\"\"></p>"
+    },
+    {
+      "id": 3522955,
+      "authorName": "hengck23",
+      "postDate": "2026-09-10T03:20:56.770Z",
+      "content": "<p>My friend said my approach was wrong. There are ambiguities and there is inly partial labels. Instead of learning perfect predictors, the focus should generate hypothesis and test.eg different way to link up assume with and without division and score hypothesis </p>"
+    },
+    {
+      "id": 3522824,
+      "authorName": "hengck23",
+      "postDate": "2026-09-09T20:08:13.220Z",
+      "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F785aea4f57ece422f1e995ca430d6e4d%2FSelection_4870.png?generation=1788984621673535&amp;alt=media\" alt=\"\"></p>"
+    },
+    {
+      "id": 3521575,
+      "authorName": "hengck23",
+      "postDate": "2026-09-06T11:46:51.953Z",
+      "content": "<p>Another trick, but maybe will overfit if you don't have sufficient data. Kaggle annotations may not be best for tracking. Let gt be the Kaggle annotation; you can refine ground truth to gt+dzxy so that it is still within the 7um error limit but drastically improves link probability. Also coord could be subpixel and use F.graid sample to sample feature.</p>"
+    },
+    {
+      "id": 3521474,
+      "authorName": "hengck23",
+      "postDate": "2026-09-06T03:42:42.483Z",
+      "content": "<p>training usually dense FOCUS3d annotation + frame/augmented frame actually works.<br>\nwith dense node and edge (pairing) annotation, i can train up to 200 epochs without overfitting.</p>\n<p>I design my own transformer following the SuperGlue framework for keypoint matching: alternating self-frame attention and cross-frame attention.</p>\n<p>validation: unseen sample_id + kaggle annotation:</p>\n<pre><code>6bba_337b1b3a\ndivision excluded in this test\n\n{'num_gt_nodes': 1272, 'num_matched_nodes': 1272, 'node_recall': 1.0, \n'num_gt_edges': 1209, 'num_edges_both_nodes_matched': 1209, 'num_correct_edges': 1166, \n'edge_recall_end_to_end': 0.9644334160463193, \n'edge_recall_given_nodes': 0.9644334160463193, \n'mean_edge_rank': 0.060891938250428816, # e.g. top1, top2 ... \n'mean_edge_prob': 0.9515399047913187}\n</code></pre>\n<p>I have chatgpt to do all the coding, while i check. i think this can be automatic once i get new external data. </p>\n<p>more visualisation and code coming up. !!!!\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fb8ffc8ecd5ee733ab8d0144baaca33d0%2FSelection_4796.png?generation=1788669728505646&amp;alt=media\" alt=\"\"></p>",
+      "replies": [
+        {
+          "id": 3521478,
+          "authorName": "hengck23",
+          "postDate": "2026-09-06T03:59:31.693Z",
+          "content": "<p>The implication is that you do not need kaggle annotation to train. So you can do online training on hidden data in theory</p>",
+          "votes": 1
+        }
+      ]
+    },
+    {
+      "id": 3520752,
+      "authorName": "YanngYT",
+      "postDate": "2026-09-04T04:39:39.543Z",
+      "content": "<p>I tried to use focus-3d to segment cells, but it timed out when submitting. Are you doing dense segmentation first when tracking? Or is it just using focus-3d to generate a dense annotation set for training tracking?</p>",
+      "replies": [
+        {
+          "id": 3520759,
+          "authorName": "hengck23",
+          "postDate": "2026-09-04T04:58:02.320Z",
+          "content": "<p>First verify the recall error of focus3d on kaggle nodes after trying several parameters search. If you are satisfied, train link/track transformer on focus3d zyx(eg centroid of instance label)</p>\n<p>Finally train a point predictor using simple unet to distill focus3d results.</p>\n<p>Getting the point is usually not the issue.  But we want to minimise no of predicted nodes with near 100% recall rate</p>"
+        }
+      ]
+    },
+    {
+      "id": 3519829,
+      "authorName": "Qiwei",
+      "postDate": "2026-09-02T09:56:12.787Z",
+      "content": "<p>This is a draft version, where FOCUS\u20113D is only used as a detector directly\uff1a\n<a href=\"https://www.kaggle.com/code/qiweiyin/focus3d-nuclei-physical-pp-submit?scriptVersionId=346624807\" target=\"_blank\">https://www.kaggle.com/code/qiweiyin/focus3d-nuclei-physical-pp-submit?scriptVersionId=346624807</a></p>",
+      "replies": [
+        {
+          "id": 3519902,
+          "authorName": "hengck23",
+          "postDate": "2026-09-02T12:49:19.523Z",
+          "content": "<p>You should use focus3d, then measure</p>\n<ol>\n<li>Hitrate of sparse annotation ( also distance error)</li>\n<li>Compare num of detected nodes with estimated number of nodes</li>\n</ol>\n<pre><code>    geff_meta = GeffMetadata.read(\n        zarr_file.replace(\".zarr\", \".geff\")\n    )\n\n    est_num_nodes = float(\n        geff_meta.extra[\"estimated_number_of_nodes\"]\n    )\n</code></pre>\n<p>\u2014-</p>\n<p>Also you should evaluate link transformer or other link model given gt location + other location and compared detected location + other location.</p>",
+          "votes": 1,
+          "replies": [
+            {
+              "id": 3519903,
+              "authorName": "hengck23",
+              "postDate": "2026-09-02T12:51:42.613Z",
+              "content": "<p>Further, i think gt annotation must have used some open source cell instance detector. I suspect it it cellpose3d or stardist3d with manual collection.</p>",
+              "votes": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3523665,
+      "postDate": "2026-09-12T12:23:58.180Z",
+      "votes": 1
+    },
+    {
+      "id": 3520479,
+      "postDate": "2026-09-03T13:38:57.213Z"
+    },
+    {
+      "id": 3518582,
+      "postDate": "2026-08-31T10:05:52.303Z",
+      "votes": 1
+    }
+  ],
+  "next_page_token": ""
+}

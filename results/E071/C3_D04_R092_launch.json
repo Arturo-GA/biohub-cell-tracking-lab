@@ -1,0 +1,24 @@
+{
+  "candidate": "C3_D04_R092",
+  "kernel": "jarturo/biohub-e071-c3-d04-r092",
+  "folder": "C:\\dev\\biohub\\kaggle\\x138_xr\\k_e071_c3_d04_r092",
+  "gpu": true,
+  "notebook_sha256": "b65b6c674dabc79356630f2e0911c291db3fa7043917235e2525169c3e029943",
+  "time_utc": "2026-09-28T22:04:28.863192+00:00",
+  "status": "LAUNCHED",
+  "version": 1,
+  "leaderboard_submitted": false,
+  "other_sessions_at_launch": [
+    {
+      "kernel": "jarturo/biohub-e071-c3-d08-r094",
+      "status": "RUNNING"
+    }
+  ],
+  "response": {
+    "ref": "/code/jarturo/biohub-e071-c3-d04-r092",
+    "url": "https://www.kaggle.com/code/jarturo/biohub-e071-c3-d04-r092",
+    "versionNumber": 1,
+    "kernelId": 136313960
+  },
+  "response_at_utc": "2026-09-28T22:04:31.606884+00:00"
+}

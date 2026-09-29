@@ -1,0 +1,364 @@
+[
+ {
+  "name": "base(x138)",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": null,
+  "score": 0.9262567341636966,
+  "delta": 0.0,
+  "lo": 0.0,
+  "hi": 0.0,
+  "p": 0.0,
+  "win": 0,
+  "lose": 0,
+  "forks_added": 2499,
+  "div": [
+   24,
+   65,
+   127
+  ],
+  "adj": 0.9151456230525855,
+  "d44": 0.0,
+  "d6b": 0.0
+ },
+ {
+  "name": "D_defensive_P8",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9284352469916527,
+  "delta": 0.002178512827956114,
+  "lo": 0.0015173168405778759,
+  "hi": 0.002924157254137194,
+  "p": 1.0,
+  "win": 164,
+  "lose": 35,
+  "forks_added": 2499,
+  "div": [
+   24,
+   49,
+   127
+  ],
+  "adj": 0.9164352469916527,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.0023637571629098186
+ },
+ {
+  "name": "A_tau09_P8",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9315734571657013,
+  "delta": 0.005316723002004697,
+  "lo": 0.0031734365004749687,
+  "hi": 0.007735042437783557,
+  "p": 1.0,
+  "win": 159,
+  "lose": 40,
+  "forks_added": 3013,
+  "div": [
+   33,
+   66,
+   118
+  ],
+  "adj": 0.9163660838938119,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006180404841521714
+ },
+ {
+  "name": "B_tau09_E",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9315971466733369,
+  "delta": 0.0053404125096403465,
+  "lo": 0.0032011288126304605,
+  "hi": 0.007723943863863658,
+  "p": 1.0,
+  "win": 157,
+  "lose": 42,
+  "forks_added": 3013,
+  "div": [
+   33,
+   66,
+   118
+  ],
+  "adj": 0.9163897734014476,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006208661035542962
+ },
+ {
+  "name": "C_tau09_P8_no_fork",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 0,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9302464786416985,
+  "delta": 0.003989744478001933,
+  "lo": 0.002049136409138397,
+  "hi": 0.006219902160597646,
+  "p": 1.0,
+  "win": 156,
+  "lose": 43,
+  "forks_added": 3013,
+  "div": [
+   33,
+   84,
+   118
+  ],
+  "adj": 0.9162039254502091,
+  "d44": 0.0006595751204298006,
+  "d6b": 0.004687403575078686
+ },
+ {
+  "name": "E_tau10_P8",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 1.0
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9311421551927831,
+  "delta": 0.004885421029086512,
+  "lo": 0.002754480574510332,
+  "hi": 0.007296853524996205,
+  "p": 1.0,
+  "win": 156,
+  "lose": 43,
+  "forks_added": 3157,
+  "div": [
+   33,
+   72,
+   118
+  ],
+  "adj": 0.9163439489147562,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.005610956366124742
+ },
+ {
+  "name": "F_defensive_E",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9283958368090429,
+  "delta": 0.0021391026453463358,
+  "lo": 0.0013691876912587109,
+  "hi": 0.002948186488731075,
+  "p": 1.0,
+  "win": 156,
+  "lose": 43,
+  "forks_added": 2499,
+  "div": [
+   24,
+   49,
+   127
+  ],
+  "adj": 0.9163958368090429,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.0023172523352980035
+ },
+ {
+  "name": "stability_tau085_P8",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.85
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9308509382355056,
+  "delta": 0.004594204071808994,
+  "lo": 0.0027138087965420388,
+  "hi": 0.006781364734238293,
+  "p": 1.0,
+  "win": 159,
+  "lose": 40,
+  "forks_added": 2932,
+  "div": [
+   31,
+   63,
+   120
+  ],
+  "adj": 0.9163649569270944,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.0053087398457983825
+ },
+ {
+  "name": "stability_tau095_P8",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.95
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9314405821356544,
+  "delta": 0.005183847971957811,
+  "lo": 0.003051714784298998,
+  "hi": 0.007628845911273885,
+  "p": 1.0,
+  "win": 159,
+  "lose": 40,
+  "forks_added": 3088,
+  "div": [
+   33,
+   68,
+   118
+  ],
+  "adj": 0.9163720889849695,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006002378486235194
+ }
+]

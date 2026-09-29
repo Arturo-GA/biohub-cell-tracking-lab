@@ -113,8 +113,8 @@ def upgrade_refine(cell4_text):
 
 
 # ---------------------------------------------------------------- 1. exact repro
-repro = clean(SRC)
-write_kernel("k_repro", "biohub-x138-repro", "Biohub x138 repro", repro)
+if __name__ == "__main__" and len(sys.argv) == 1:
+    write_kernel("k_repro", "biohub-x138-repro", "Biohub x138 repro", clean(SRC))
 
 # ---------------------------------------------------------------- 2. capture + train
 CAPTURE_SELECT = '''
@@ -158,26 +158,29 @@ print("captured movies:", len(list(_cap.iterdir())) if _cap.exists() else 0,
       f"| {(time.time() - start_time) / 60:.1f} min", flush=True)
 '''
 
-TRAIN_CELL = (W / "train_heads.py").read_text(encoding="utf-8")
+def make_training_captures():
+    TRAIN_CELL = (W / "train_heads.py").read_text(encoding="utf-8")
 
-cap = clean(SRC)
-cells = cap["cells"]
-c4 = src(cells[4])
-c4 = must_replace(c4, "def list_test_stems() -> list[str]:", CAPTURE_SELECT + "\ndef list_test_stems() -> list[str]:")
-c4 = must_replace(c4, "test_stems = list_test_stems()\n", CAPTURE_STEMS)
-c4 = must_replace(c4, "os.environ['V1284_MODE']='candidate'",
-                  "os.environ['V1284_MODE']='capture'\nos.environ['V1284_CAPTURE']='/kaggle/working/capture'")
-cut = c4.index("start_time = time.time()\navailable_gpu_count")
-c4 = c4[:cut] + CAPTURE_LAUNCH
-set_src(cells[4], c4)
-train_cell = copy.deepcopy(cells[5])
-set_src(train_cell, TRAIN_CELL)
-cap["cells"] = cells[:5] + [train_cell]
-write_kernel("k_capture", "biohub-v1284-capture-train", "Biohub V1284 capture train", cap)
-cap2 = copy.deepcopy(cap)
-set_src(cap2["cells"][0], 'import os\nos.environ["CAPTURE_START"] = "110"\nos.environ["CAPTURE_N"] = "200"\n'
-        'os.environ["HEAD_SAVE_PAIRS"] = "1"\n' + src(cap2["cells"][0]))
-write_kernel("k_capture2", "biohub-v1284-capture-train2", "Biohub V1284 capture train2", cap2)
+    cap = clean(SRC)
+    cells = cap["cells"]
+    c4 = src(cells[4])
+    c4 = must_replace(c4, "def list_test_stems() -> list[str]:", CAPTURE_SELECT + "\ndef list_test_stems() -> list[str]:")
+    c4 = must_replace(c4, "test_stems = list_test_stems()\n", CAPTURE_STEMS)
+    c4 = must_replace(c4, "os.environ['V1284_MODE']='candidate'",
+                      "os.environ['V1284_MODE']='capture'\nos.environ['V1284_CAPTURE']='/kaggle/working/capture'")
+    cut = c4.index("start_time = time.time()\navailable_gpu_count")
+    c4 = c4[:cut] + CAPTURE_LAUNCH
+    set_src(cells[4], c4)
+    train_cell = copy.deepcopy(cells[5])
+    set_src(train_cell, TRAIN_CELL)
+    cap["cells"] = cells[:5] + [train_cell]
+    write_kernel("k_capture", "biohub-v1284-capture-train", "Biohub V1284 capture train", cap)
+    cap2 = copy.deepcopy(cap)
+    set_src(cap2["cells"][0], 'import os\nos.environ["CAPTURE_START"] = "110"\nos.environ["CAPTURE_N"] = "200"\n'
+            'os.environ["HEAD_SAVE_PAIRS"] = "1"\n' + src(cap2["cells"][0]))
+    write_kernel("k_capture2", "biohub-v1284-capture-train2", "Biohub V1284 capture train2", cap2)
+
+
 
 # ---------------------------------------------------------------- 3. inference variants
 def make_infer(folder, slug, title, heads_expr=None, alpha=None, kernel_sources=()):
@@ -448,13 +451,26 @@ def make_xr(folder, slug, title, overrides, xr_env):
     print("XR patched", folder, xr_env)
 
 
-def make_cpulab3(folder, slug, title, sources):
+def make_cpulab3(folder, slug, title, sources, lab_file="cpu_lab3.py"):
     nb = clean(SRC)
     cells = nb["cells"]
     filter_src, off, ref = _lab_embed_common()
-    body = (W / "cpu_lab3.py").read_text(encoding="utf-8")
+    body = (W / lab_file).read_text(encoding="utf-8")
     body = (body.replace("__OFFICIAL_FILES__", repr(off)).replace("__FILTER_SRC__", repr(filter_src))
             .replace("__XR_SRC__", repr((W / "extra_rules.py").read_text(encoding="utf-8"))))
+    if lab_file in ("cpu_lab4.py", "cpu_lab5.py", "cpu_lab6.py", "cpu_lab7.py"):
+        import ast
+        c5 = src(cells[5])
+        linefit = next(ast.get_source_segment(c5, n) for n in ast.parse(c5).body
+                       if isinstance(n, ast.FunctionDef) and n.name == "linefit_smooth_output_graph")
+        body = body.replace("__LINEFIT_SRC__", repr(linefit)).replace(
+            "__REPLAY_SRC__", repr((W / "replay_linefit.py").read_text(encoding="utf-8")))
+    if lab_file == "cpu_lab5.py":
+        body = body.replace("__LINEAGE_SRC__", repr((W / "lineage_repair.py").read_text(encoding="utf-8")))
+    if lab_file == "cpu_lab6.py":
+        body = body.replace("__CONTEXT_SRC__", repr((W / "context_rules.py").read_text(encoding="utf-8")))
+    if lab_file == "cpu_lab7.py":
+        body = body.replace("__C3_VARIANTS_SRC__", repr((W / "c3_variants.py").read_text(encoding="utf-8")))
     pre = copy.deepcopy(cells[8])
     set_src(pre, "import json\nimport math\nfrom pathlib import Path\n\nimport numpy as np\n\nVOXEL_SCALE_UM = (1.625, 0.40625, 0.40625)\n")
     lab_cell = copy.deepcopy(cells[8])
@@ -462,6 +478,12 @@ def make_cpulab3(folder, slug, title, sources):
     nb["cells"] = [cells[0], cells[2], cells[3], pre, lab_cell]
     write_kernel(folder, slug, title, nb, kernel_sources=list(sources), gpu=False)
 
+
+if __name__ == "__main__" and "--cpulab4" in sys.argv:
+    i = sys.argv.index("--cpulab4")
+    make_cpulab3("k_cpu4", "biohub-exact-replay-cpu4", "Biohub exact replay cpu4",
+                sys.argv[i + 1].split(","), lab_file="cpu_lab4.py")
+    sys.exit(0)
 
 if __name__ == "__main__" and "--cpulab3" in sys.argv:
     i = sys.argv.index("--cpulab3")

@@ -1,0 +1,15 @@
+{
+  "kernel": "jarturo/biohub-e069-linker-cache",
+  "stage": "capture",
+  "time_utc": "2026-09-27T19:10:02.108991+00:00",
+  "notebook_sha256": "42bf69d6b2012ad506a2d5724f9bd8020a803533c5dfc52a66320b4f720ae4c4",
+  "is_private": true,
+  "gpu": true,
+  "response": {
+    "error": "Maximum batch GPU session count of 2 reached."
+  },
+  "leaderboard_submitted": false,
+  "status": "not_launched_capacity",
+  "version": null,
+  "fallback": "Kaggle CPU image export -> laptop GPU inference -> Kaggle CPU evaluation"
+}

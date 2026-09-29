@@ -1,0 +1,69 @@
+[
+  {
+    "ref": "kunaldesale2408/biohub-cell-tracking",
+    "source": "outputs\\e068_public_27_pm\\kunaldesale2408__biohub-cell-tracking\\biohub-cell-tracking.ipynb",
+    "code_sha256": "bc8957680bd19a74b806b416f7a690e2c75614e8f3abea61ace26a849c69c0c4",
+    "lines": 4873
+  },
+  {
+    "ref": "binasalama/biohub-learned-unet-transformer-ilp-gap-recovery",
+    "source": "outputs\\e068_public_27_pm\\binasalama__biohub-learned-unet-transformer-ilp-gap-recovery\\biohub-learned-unet-transformer-ilp-gap-recovery.ipynb",
+    "code_sha256": "12455b6a38dd46f18c4dc04ccf93d6770c047eba04fe0bd9c13c8f9e04f78f35",
+    "lines": 1756
+  },
+  {
+    "ref": "tobimichigan/robust-cell-tracking-during-development-via-chan",
+    "source": "outputs\\e068_public_27_pm\\tobimichigan__robust-cell-tracking-during-development-via-chan\\robust-cell-tracking-during-development-via-chan.ipynb",
+    "code_sha256": "0f360e3797da095b7df5fbb499d7c7561420a53ac9c659e3e3e862a5316312dd",
+    "lines": 1533
+  },
+  {
+    "ref": "asymortenson/biohub-v5c-final",
+    "source": "outputs\\e068_public_27_pm\\asymortenson__biohub-v5c-final\\biohub-v5c-final.ipynb",
+    "code_sha256": "f74075f61bf71ebb774333d5f2960b5d033559d47f95e25b8c48d971be45ca95",
+    "lines": 6379
+  },
+  {
+    "ref": "noisyislands/biohub-transformer-finetune",
+    "source": "outputs\\e068_public_27_pm\\noisyislands__biohub-transformer-finetune\\biohub-transformer-finetune.py",
+    "code_sha256": "b2caa30d523226b0a5a68615e9eb322bec3cb4258a9255bc6d2dedc3eed7b6ec",
+    "lines": 810
+  },
+  {
+    "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+    "source": "outputs\\e068_public_27_pm\\raunakdey07__biohub-harmonic-fusion-v3\\biohub-harmonic-fusion-v3.ipynb",
+    "code_sha256": "727eb4e542f196b6629399bf8a6c11eb60eafc1de8d54ec47720798f6e3af4e0",
+    "lines": 4764
+  },
+  {
+    "ref": "hengck23/end2end-cell-linker-raw-edge-ja-0-9-no-ilp",
+    "files": [
+      {
+        "path": "outputs\\e068_public_27_pm\\hengck23__end2end-cell-linker-raw-edge-ja-0-9-no-ilp\\code.py",
+        "sha256": "84680c2e0c50c78fb03bd4371a3882aaa32d6ab527e5fb84db968795a50266d7",
+        "bytes": 25768
+      },
+      {
+        "path": "outputs\\e068_public_27_pm\\hengck_linker_model\\model_v12.py",
+        "sha256": "586ac08e4429fa0ca0db0c06afdf6d7ef77d459c0260bbf286bf47169d484082",
+        "bytes": 21346
+      },
+      {
+        "path": "outputs\\e068_public_27_pm\\hengck_linker_model\\loss_and_metric_v12.py",
+        "sha256": "40cc8013c47cc4d2f2684dfccb153016e9ef9372ad2db10ef376aa3e04e3133a",
+        "bytes": 126
+      },
+      {
+        "path": "outputs\\e068_public_27_pm\\hengck_linker_model\\files.json",
+        "sha256": "c662c3bb312a1a0aae184411565e555409380ba46f521dfc79acac7d35841a85",
+        "bytes": 315
+      },
+      {
+        "path": "outputs\\e068_public_27_pm\\hengck_linker_log\\readable_log.txt",
+        "sha256": "6bd1c00e11b65a6d4b3ed247f3d112a09d74cd159317d1cffac89f0f9199c192",
+        "bytes": 7039
+      }
+    ],
+    "review": "Static code and published execution log only; weights not downloaded; external code not executed."
+  }
+]

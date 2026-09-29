@@ -1,5 +1,13 @@
 # E068 — Traspaso operativo (estado al 26-09-2026 16:10 UTC)
 
+> **Estado posterior, 29-09:** E068–E070 son etapas cerradas. La última tanda E071 terminó sus cinco submissions, con mejor público **0.957** y cuatro alternativas **0.956**. Consultar [E071_EXECUTION.es.md](E071_EXECUTION.es.md). Las prioridades, cuotas, fechas operativas y órdenes de envío de este documento son históricas. No hay lanzamientos pendientes y el reminder permanece apagado.
+
+> **E069 completado, 27-09 a las 20:15 UTC:** ver [E069_RESULTS.es.md](E069_RESULTS.es.md). Se evaluaron seis configuraciones en 199 videos y once en 32 videos. Duplicados y reconexión no actuaron; el veto no mejoró; el linker reprodujo una corrección ya vista en CPU6, sin incremento en confirmación. No se promovió un candidato adicional. C3_fork8 v1 sigue siendo el envío prioritario listo para el reset. Los tres notebooks E069 están COMPLETE y descargados con manifiestos verificados. Se usó GPU de la laptop y Kaggle CPU; no repetir sus lanzamientos ni el intento GPU rechazado por capacidad.
+
+> **Actualización 27-09, 18:57 UTC:** CPU7 y C3_fork8 completaron. Fork8 es el mejor de los nueve controles locales y su CSV v1 pasó todas las verificaciones; todavía no se envió porque hay cinco submissions del día. Próxima ventana: 27-09 a las 19:00 Lima. Continuar desde [E068_CPU7_RESULTS.es.md](E068_CPU7_RESULTS.es.md). No hay un envío automático programado.
+
+> **Estado histórico, reemplazado el 27-09.** Los cinco kernels de la tabla ya se enviaron y completaron; no repetir esos comandos. Mejor público confirmado: c3, 0.955 (`56592151`). `submit5.sh` está desactivado. CPU6 terminó sin una mejora convincente; C3_fork8 y CPU7 se lanzaron después. Continuar desde [E068_CPU6_RESULTS.es.md](E068_CPU6_RESULTS.es.md) y sus recibos. Las afirmaciones siguientes sobre puesto, cuota GPU y requisitos de scoring son del traspaso original y no describen necesariamente el estado actual.
+
 Documento para quien continúe la competencia (Codex u otro operador). Complementa `docs/E068_X138_XR.es.md`
 (método y resultados). Todo lo de abajo se verificó a la hora indicada; nada aquí se ejecuta solo.
 

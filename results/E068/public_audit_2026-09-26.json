@@ -1,0 +1,38 @@
+[
+  {
+    "ref": "amanatar/optimized-biohub-max-score",
+    "url": "https://www.kaggle.com/code/amanatar/optimized-biohub-max-score",
+    "source_sha256": "dd0296e5e03e409a69eddd747109f2ba7e89398ff87baf9cfdf3648b251e2864",
+    "local_source": "outputs\\e068_public_review\\amanatar__optimized-biohub-max-score\\source.txt"
+  },
+  {
+    "ref": "andnyu/biohub-947-mutual-rank",
+    "url": "https://www.kaggle.com/code/andnyu/biohub-947-mutual-rank",
+    "source_sha256": "c5f3d8a0991247465b09cf41695fec704881729bb9d34c216454623bd42302aa",
+    "local_source": "outputs\\e068_public_review\\andnyu__biohub-947-mutual-rank\\source.txt"
+  },
+  {
+    "ref": "andnyu/biohub-947-synthetic-edge",
+    "url": "https://www.kaggle.com/code/andnyu/biohub-947-synthetic-edge",
+    "source_sha256": "4b5aa851bae4891fe2c24935190664cecad3d7072b6c8838588f65000f00da36",
+    "local_source": "outputs\\e068_public_review\\andnyu__biohub-947-synthetic-edge\\source.txt"
+  },
+  {
+    "ref": "flexonafft/biohub-lineage-forge-precision-tracking",
+    "url": "https://www.kaggle.com/code/flexonafft/biohub-lineage-forge-precision-tracking",
+    "source_sha256": "72c857ef0c15a38f0f55476da99601ec0d72829079406d37b726ac4eb4a6e024",
+    "local_source": "outputs\\e068_public_review\\flexonafft__biohub-lineage-forge-precision-tracking\\source.txt"
+  },
+  {
+    "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+    "url": "https://www.kaggle.com/code/raunakdey07/biohub-harmonic-fusion-v3",
+    "source_sha256": "905874aa9259976164755a066c21d559861b22faf4afb93cc68cc2a673a0e8e3",
+    "local_source": "outputs\\e068_public_review\\raunakdey07__biohub-harmonic-fusion-v3\\source.txt"
+  },
+  {
+    "ref": "seyitkaangunes/biohub-035-deconfounded-edge-stack",
+    "url": "https://www.kaggle.com/code/seyitkaangunes/biohub-035-deconfounded-edge-stack",
+    "source_sha256": "c09c7ab615980a8699758a8b7439f929d8659e3f8dc867a468c3e6d9b7fa0954",
+    "local_source": "outputs\\e068_public_review\\seyitkaangunes__biohub-035-deconfounded-edge-stack\\source.txt"
+  }
+]

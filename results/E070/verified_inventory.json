@@ -1,0 +1,116 @@
+{
+  "checked_at_utc": "2026-09-27T21:45:28.601259+00:00",
+  "verified_candidates": [
+    {
+      "kernel": "jarturo/biohub-c3-fork8",
+      "version": 1,
+      "candidate": "C3_fork8",
+      "source_sha256": "becec30ce864a6d86cc8db2c5b249358a4883fc06ec128633d4df3e450b01cb4",
+      "notebook_sha256": "dabb2e5959c265e5e287f7f8c5ae7f37333f51156288cda7c60b407ead35bfdf",
+      "csv_sha256": "ff57683b494311df5cada31d0563e890fbab98cee7919e124d0eecd886b1223a",
+      "rows": 232347,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=5965/5802",
+        "6bba_05db0fb1=68474/66583"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": false
+    },
+    {
+      "kernel": "jarturo/biohub-e070-f8-dc030",
+      "version": 1,
+      "candidate": "F8_dc030",
+      "source_sha256": "88872bab911293546d0b85ea807887c40c36eab70aef512adc6d232ace65799e",
+      "notebook_sha256": "78c4f9c905c4c8e3f389328d7d1ca9e6f5fb4dee43a416824499b963522f0e9d",
+      "csv_sha256": "278259394332a4957371dcbb6ab20336898a11948b10420872e822ca9d2ca53c",
+      "rows": 232314,
+      "counts": [
+        "44b6_0113de3b=25488/24771",
+        "44b6_0b24845f=18141/17115",
+        "6bba_05b6850b=5965/5802",
+        "6bba_05db0fb1=68464/66568"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": false
+    },
+    {
+      "kernel": "jarturo/biohub-e070-f8-joint",
+      "version": 1,
+      "candidate": "F8_joint",
+      "source_sha256": "d4153a566d48e508928d773a037bb13e12dab44b8e14c1d79e12bef13005ebf0",
+      "notebook_sha256": "c1258426768f8c04c034097b7ad033d36d84de1e14787927cab8070751838639",
+      "csv_sha256": "7843491b7d16fe6fe123bc888aa17013696fdcb77bf70eda1970bd72931714cf",
+      "rows": 232347,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=5965/5802",
+        "6bba_05db0fb1=68474/66583"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": false
+    },
+    {
+      "kernel": "jarturo/biohub-e070-f8-p8",
+      "version": 1,
+      "candidate": "F8_p8",
+      "source_sha256": "f39e3fdd1dec5dd303d1b87b6c9c96b546ddf6a339bf1ffc6cb6be02cc7e6232",
+      "notebook_sha256": "39a13ed25db607d4feb0ae960eb6dd92351b4357fbe68992b71b2aaaee042786",
+      "csv_sha256": "831f53265f0fb6093dcb8fecdf67e2b659e26733bc08e0e004cf25e7cc10b919",
+      "rows": 233051,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=6035/5864",
+        "6bba_05db0fb1=68777/66852"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": false
+    },
+    {
+      "kernel": "jarturo/biohub-e070-f8-prune12-joint",
+      "version": 1,
+      "candidate": "F8_prune12_joint",
+      "source_sha256": "9a773e402bb72da3ce9628092ba13054690b9468e9e79eadb590f72d3c44c0d2",
+      "notebook_sha256": "06366ac030718645e77e989e461b53fc04898d7a9230076c3dd7ea41592f8633",
+      "csv_sha256": "54a8f84f35bd61a2375869404f35d2a7a242a200a96a57b42895126a36755cd0",
+      "rows": 232200,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=5943/5782",
+        "6bba_05db0fb1=68419/66533"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": false
+    },
+    {
+      "kernel": "jarturo/biohub-e070-f8-prune12",
+      "version": 1,
+      "candidate": "F8_prune12",
+      "source_sha256": "9d938cc541ea0253746c7ead0f2d7336f250295afe095fe40140f4fa3ab16bdd",
+      "notebook_sha256": "68c9acdacc15ca0a65df8fea440a4e799a74a48160dc9409fb0fafb32f0dc474",
+      "csv_sha256": "f6a338452a5adcd7750e5956a7954a68173ee010d88085e739a7f5f37fc85cc0",
+      "rows": 232200,
+      "counts": [
+        "44b6_0113de3b=25488/24775",
+        "44b6_0b24845f=18141/17119",
+        "6bba_05b6850b=5943/5782",
+        "6bba_05db0fb1=68419/66533"
+      ],
+      "gate": "PASS",
+      "csv_bounds_and_graph": "PASS",
+      "leaderboard_submitted": false
+    }
+  ],
+  "distinct_visible_csv_count": 6,
+  "duplicate_visible_outputs": [],
+  "note": "Ready for manual selection. Do not equate technical validity with demonstrated score improvement. No automatic leaderboard submission."
+}

@@ -1,0 +1,294 @@
+[
+ {
+  "name": "base(x138)",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": 0.6,
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": null,
+  "score": 0.9262567341636966,
+  "delta": 0.0,
+  "lo": 0.0,
+  "hi": 0.0,
+  "p": 0.0,
+  "win": 0,
+  "lose": 0,
+  "forks_added": 2499,
+  "div": [
+   24,
+   65,
+   127
+  ],
+  "adj": 0.9151456230525855,
+  "d44": 0.0,
+  "d6b": 0.0
+ },
+ {
+  "name": "A_tau09_P8",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9315734571657013,
+  "delta": 0.005316723002004697,
+  "lo": 0.0031734365004749687,
+  "hi": 0.007735042437783557,
+  "p": 1.0,
+  "win": 159,
+  "lose": 40,
+  "forks_added": 3013,
+  "div": [
+   33,
+   66,
+   118
+  ],
+  "adj": 0.9163660838938119,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006180404841521714
+ },
+ {
+  "name": "B_tau09_E",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9315971466733369,
+  "delta": 0.0053404125096403465,
+  "lo": 0.0032011288126304605,
+  "hi": 0.007723943863863658,
+  "p": 1.0,
+  "win": 157,
+  "lose": 42,
+  "forks_added": 3013,
+  "div": [
+   33,
+   66,
+   118
+  ],
+  "adj": 0.9163897734014476,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006208661035542962
+ },
+ {
+  "name": "A_lineage_pre4",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375,
+   "repair_stage": "pre",
+   "repair_radius": 4.0
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9315734571657013,
+  "delta": 0.005316723002004697,
+  "lo": 0.0031734365004749687,
+  "hi": 0.007735042437783557,
+  "p": 1.0,
+  "win": 159,
+  "lose": 40,
+  "forks_added": 3013,
+  "div": [
+   33,
+   66,
+   118
+  ],
+  "adj": 0.9163660838938119,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006180404841521714
+ },
+ {
+  "name": "A_lineage_post4",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375,
+   "repair_stage": "post",
+   "repair_radius": 4.0
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9315734571657013,
+  "delta": 0.005316723002004697,
+  "lo": 0.0031734365004749687,
+  "hi": 0.007735042437783557,
+  "p": 1.0,
+  "win": 159,
+  "lose": 40,
+  "forks_added": 3013,
+  "div": [
+   33,
+   66,
+   118
+  ],
+  "adj": 0.9163660838938119,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006180404841521714
+ },
+ {
+  "name": "A_lineage_pre5",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375,
+   "repair_stage": "pre",
+   "repair_radius": 5.0
+  },
+  "xr": {
+   "prune": "*:8:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9315734571657013,
+  "delta": 0.005316723002004697,
+  "lo": 0.0031734365004749687,
+  "hi": 0.007735042437783557,
+  "p": 1.0,
+  "win": 159,
+  "lose": 40,
+  "forks_added": 3013,
+  "div": [
+   33,
+   66,
+   118
+  ],
+  "adj": 0.9163660838938119,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006180404841521714
+ },
+ {
+  "name": "B_lineage_pre4",
+  "cfg": {
+   "child_max": 10.0,
+   "parent_max": 9.0,
+   "sister_max": 14.0,
+   "mutual": true,
+   "require_div": true,
+   "diverge": 2.25,
+   "dc_thr": 0.25,
+   "tau": {
+    "44b6": 0.6,
+    "6bba": 0.9
+   },
+   "frame_cap": 0.0076,
+   "global_cap": 0.00375,
+   "repair_stage": "pre",
+   "repair_radius": 4.0
+  },
+  "xr": {
+   "prune": "44b6:8:0.7,6bba:11:0.7",
+   "cut_nan_dist_um": 8.0,
+   "cut_end_prob": 0.5,
+   "cut_end_mode": "last",
+   "fork_min_branch": 8,
+   "fork_nan_only": "1"
+  },
+  "score": 0.9315971466733369,
+  "delta": 0.0053404125096403465,
+  "lo": 0.0032011288126304605,
+  "hi": 0.007723943863863658,
+  "p": 1.0,
+  "win": 157,
+  "lose": 42,
+  "forks_added": 3013,
+  "div": [
+   33,
+   66,
+   118
+  ],
+  "adj": 0.9163897734014476,
+  "d44": 0.0012878613557258944,
+  "d6b": 0.006208661035542962
+ }
+]

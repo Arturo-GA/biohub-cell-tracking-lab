@@ -1,0 +1,13 @@
+{
+  "experiment": "E071",
+  "candidate": "C3_D08_R094",
+  "base": "c3_public_0.955",
+  "base_submission": 56592151,
+  "base_notebook_sha256": "052f47600befa2afc0cac6892a1f14aa0381dc786b5c322b0dd51752070b598b",
+  "overrides": {
+    "BIOHUB_ILP_DIVISION_WEIGHT": "0.8",
+    "BIOHUB_READMIT_MIN_SCORE": "0.94"
+  },
+  "rationale": "Intermediate ILP intervention with reported readmission threshold.",
+  "source_sha256": "cfbec169388faaa334dc8a7e9c954d5946e0567a173670c0e5a12f0f4a3eb3b0"
+}

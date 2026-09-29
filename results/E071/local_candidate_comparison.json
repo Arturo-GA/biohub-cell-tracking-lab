@@ -1,0 +1,342 @@
+{
+  "checked_at_utc": "2026-09-28T21:14:49.780786+00:00",
+  "stage": "LOCAL_ONLY",
+  "candidate_count": 5,
+  "kaggle_complete_count": 1,
+  "candidates": [
+    {
+      "candidate": "C3_D04_R094",
+      "division": 0.4,
+      "readmission": 0.94,
+      "csv_sha256": "adc1ee7d616a24ebba243a4c0e523e97bc0b7ecbeec9a83e154cee18b7d07434",
+      "file": "C:\\dev\\biohub\\outputs\\e071\\local\\C3_D04_R094\\submission.csv",
+      "details": {
+        "44b6_0113de3b": {
+          "nodes": 25519,
+          "edges": 24807,
+          "divisions": 34,
+          "nodes_added": 140,
+          "nodes_removed": 112,
+          "edges_added": 162,
+          "edges_removed": 133,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "37be98cf2132d79a4efba48bd6ef823f01050d32db9643a296bc0429a692ab38"
+        },
+        "44b6_0b24845f": {
+          "nodes": 18470,
+          "edges": 17453,
+          "divisions": 8,
+          "nodes_added": 1208,
+          "nodes_removed": 887,
+          "edges_added": 1344,
+          "edges_removed": 1018,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "9880fed2a9057bdc4c99ecd728c539eb0f39839d56e40df0b4a02cda9153a716"
+        },
+        "6bba_05b6850b": {
+          "nodes": 5976,
+          "edges": 5813,
+          "divisions": 5,
+          "nodes_added": 22,
+          "nodes_removed": 11,
+          "edges_added": 24,
+          "edges_removed": 14,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "a027724749545871716cf8e85ff7a14d0307fde3791cdf337cc299c397a1d21a"
+        },
+        "6bba_05db0fb1": {
+          "nodes": 68650,
+          "edges": 66762,
+          "divisions": 13,
+          "nodes_added": 1010,
+          "nodes_removed": 850,
+          "edges_added": 1153,
+          "edges_removed": 990,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "b75cb5c0c783ffa3a2e66177ddf9ad5a4ecdeef68b7f1561b6834d436ce6423c"
+        }
+      },
+      "remote_complete": true,
+      "public_score": null
+    },
+    {
+      "candidate": "C3_R094",
+      "division": 1.2,
+      "readmission": 0.94,
+      "csv_sha256": "69b36627dfb89830de336b6ccf3cb2ae853d1a4163cfe39c17a6e18b8603027a",
+      "file": "C:\\dev\\biohub\\outputs\\e071\\local\\C3_R094\\submission.csv",
+      "details": {
+        "44b6_0113de3b": {
+          "nodes": 25520,
+          "edges": 24807,
+          "divisions": 33,
+          "nodes_added": 115,
+          "nodes_removed": 86,
+          "edges_added": 132,
+          "edges_removed": 103,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "fab4cdcc8458f1ecc62297f86f705e35ea506b8570a4e153f8e428eb89fcf366"
+        },
+        "44b6_0b24845f": {
+          "nodes": 18430,
+          "edges": 17416,
+          "divisions": 7,
+          "nodes_added": 1139,
+          "nodes_removed": 858,
+          "edges_added": 1272,
+          "edges_removed": 983,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "0889e1d9a3dbfb8110a97fe534b87d7904603a45a49a5bf029244ddc0abfd304"
+        },
+        "6bba_05b6850b": {
+          "nodes": 5976,
+          "edges": 5813,
+          "divisions": 5,
+          "nodes_added": 22,
+          "nodes_removed": 11,
+          "edges_added": 24,
+          "edges_removed": 14,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "a027724749545871716cf8e85ff7a14d0307fde3791cdf337cc299c397a1d21a"
+        },
+        "6bba_05db0fb1": {
+          "nodes": 68599,
+          "edges": 66714,
+          "divisions": 12,
+          "nodes_added": 751,
+          "nodes_removed": 642,
+          "edges_added": 859,
+          "edges_removed": 744,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "d151963bacddbfd352801cc926211eaa29c8ce62931dc9ef1ca02c999706a357"
+        }
+      },
+      "remote_complete": false,
+      "public_score": null
+    },
+    {
+      "candidate": "C3_D04",
+      "division": 0.4,
+      "readmission": 0.965,
+      "csv_sha256": "3723d7916ec6524aacf0be981a4307a48f1318adc7597858f78e0f09a042a850",
+      "file": "C:\\dev\\biohub\\outputs\\e071\\local\\C3_D04\\submission.csv",
+      "details": {
+        "44b6_0113de3b": {
+          "nodes": 25490,
+          "edges": 24778,
+          "divisions": 34,
+          "nodes_added": 25,
+          "nodes_removed": 26,
+          "edges_added": 30,
+          "edges_removed": 30,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "7a691251276d961233e817e7372cc373e76755fd7c8e8b613a765eb58988182c"
+        },
+        "44b6_0b24845f": {
+          "nodes": 18172,
+          "edges": 17149,
+          "divisions": 7,
+          "nodes_added": 62,
+          "nodes_removed": 39,
+          "edges_added": 67,
+          "edges_removed": 45,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "830a3667d0e8edae3f2e86c4ad92cc49d44bc9b571573b9b0c9ea346af4132da"
+        },
+        "6bba_05b6850b": {
+          "nodes": 5965,
+          "edges": 5803,
+          "divisions": 5,
+          "nodes_added": 0,
+          "nodes_removed": 0,
+          "edges_added": 0,
+          "edges_removed": 0,
+          "same_as_scored_c3": true,
+          "canonical_sha256": "7d47c786efbd52eebe45ba3d6b38d9d01eba50d410bf9cd734c1e1685f35b11e"
+        },
+        "6bba_05db0fb1": {
+          "nodes": 68537,
+          "edges": 66643,
+          "divisions": 13,
+          "nodes_added": 261,
+          "nodes_removed": 214,
+          "edges_added": 297,
+          "edges_removed": 253,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "025cb229781639df1d4b6eeaa7f581088187024d8b2f2365773a5ef7bb95b4f7"
+        }
+      },
+      "remote_complete": false,
+      "public_score": null
+    },
+    {
+      "candidate": "C3_D08_R094",
+      "division": 0.8,
+      "readmission": 0.94,
+      "csv_sha256": "06649c48e9686a7b2cb2b0926f5ef3452fd73749a0517e6f00e83e6fb87097a4",
+      "file": "C:\\dev\\biohub\\outputs\\e071\\local\\C3_D08_R094\\submission.csv",
+      "details": {
+        "44b6_0113de3b": {
+          "nodes": 25517,
+          "edges": 24805,
+          "divisions": 33,
+          "nodes_added": 125,
+          "nodes_removed": 99,
+          "edges_added": 144,
+          "edges_removed": 117,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "6e3d0e592ff1255b84c5bc6fa2a69709ce6ed92c1275f7df7991f35853546a2e"
+        },
+        "44b6_0b24845f": {
+          "nodes": 18430,
+          "edges": 17416,
+          "divisions": 7,
+          "nodes_added": 1135,
+          "nodes_removed": 854,
+          "edges_added": 1267,
+          "edges_removed": 978,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "fcde8930c70c21179be0aabb1651a2b4d3f6cde1a55468a6839ba3eda06cf466"
+        },
+        "6bba_05b6850b": {
+          "nodes": 5976,
+          "edges": 5813,
+          "divisions": 5,
+          "nodes_added": 22,
+          "nodes_removed": 11,
+          "edges_added": 24,
+          "edges_removed": 14,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "a027724749545871716cf8e85ff7a14d0307fde3791cdf337cc299c397a1d21a"
+        },
+        "6bba_05db0fb1": {
+          "nodes": 68609,
+          "edges": 66725,
+          "divisions": 12,
+          "nodes_added": 797,
+          "nodes_removed": 678,
+          "edges_added": 912,
+          "edges_removed": 786,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "df7169a0cd6c78d99d8e415db4a3c7de87c0be917207e60937f5790b6cdb3ad6"
+        }
+      },
+      "remote_complete": false,
+      "public_score": null
+    },
+    {
+      "candidate": "C3_D04_R092",
+      "division": 0.4,
+      "readmission": 0.92,
+      "csv_sha256": "f42aaa3729fb2e0767a4a4e1b5db1076c14788a57f53f05c7385cb1307b3fca0",
+      "file": "C:\\dev\\biohub\\outputs\\e071\\local\\C3_D04_R092\\submission.csv",
+      "details": {
+        "44b6_0113de3b": {
+          "nodes": 25535,
+          "edges": 24822,
+          "divisions": 34,
+          "nodes_added": 190,
+          "nodes_removed": 146,
+          "edges_added": 213,
+          "edges_removed": 169,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "02d3437ae1ab8ec4ba9193a03354caa35978afe3b0331f838328c078bd3984e4"
+        },
+        "44b6_0b24845f": {
+          "nodes": 18590,
+          "edges": 17568,
+          "divisions": 8,
+          "nodes_added": 1563,
+          "nodes_removed": 1122,
+          "edges_added": 1728,
+          "edges_removed": 1287,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "b24199fdd9fe929daea9fafa4631600139215fe35473bb6407dd0312042a1d8f"
+        },
+        "6bba_05b6850b": {
+          "nodes": 5973,
+          "edges": 5810,
+          "divisions": 5,
+          "nodes_added": 31,
+          "nodes_removed": 23,
+          "edges_added": 34,
+          "edges_removed": 27,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "6c2e4c00ea3c1811582f69bee74a0cb8e03c9146a2d4a91b13e7f2c24a5679f1"
+        },
+        "6bba_05db0fb1": {
+          "nodes": 68713,
+          "edges": 66827,
+          "divisions": 14,
+          "nodes_added": 1200,
+          "nodes_removed": 977,
+          "edges_added": 1363,
+          "edges_removed": 1135,
+          "same_as_scored_c3": false,
+          "canonical_sha256": "83c1a4b106da6cd8ef523a0429fcd0204c28ced909d94ae867e4e9d91bb71a9c"
+        }
+      },
+      "remote_complete": false,
+      "public_score": null
+    },
+    {
+      "candidate": "C3_CONTROL",
+      "division": 1.2,
+      "readmission": 0.965,
+      "csv_sha256": "1a0a8f4f867a56a3b2009d9b9e10b99fd067224ab5b1aa2c76f6bdeabce8e123",
+      "file": "C:\\dev\\biohub\\outputs\\e071\\local\\C3_CONTROL\\submission.csv",
+      "details": {
+        "44b6_0113de3b": {
+          "nodes": 25491,
+          "edges": 24778,
+          "divisions": 33,
+          "nodes_added": 0,
+          "nodes_removed": 0,
+          "edges_added": 0,
+          "edges_removed": 0,
+          "same_as_scored_c3": true,
+          "canonical_sha256": "5eb7aff01228f6980682e178382ef51b80b3c6fc844602fcbed1681aee959f60"
+        },
+        "44b6_0b24845f": {
+          "nodes": 18149,
+          "edges": 17127,
+          "divisions": 6,
+          "nodes_added": 0,
+          "nodes_removed": 0,
+          "edges_added": 0,
+          "edges_removed": 0,
+          "same_as_scored_c3": true,
+          "canonical_sha256": "04da15b3777e750aa5a4aff8e3e7bb9c957cbd7e7e14f11ecaef6d080aba4022"
+        },
+        "6bba_05b6850b": {
+          "nodes": 5965,
+          "edges": 5803,
+          "divisions": 5,
+          "nodes_added": 0,
+          "nodes_removed": 0,
+          "edges_added": 0,
+          "edges_removed": 0,
+          "same_as_scored_c3": true,
+          "canonical_sha256": "7d47c786efbd52eebe45ba3d6b38d9d01eba50d410bf9cd734c1e1685f35b11e"
+        },
+        "6bba_05db0fb1": {
+          "nodes": 68490,
+          "edges": 66599,
+          "divisions": 12,
+          "nodes_added": 0,
+          "nodes_removed": 0,
+          "edges_added": 0,
+          "edges_removed": 0,
+          "same_as_scored_c3": true,
+          "canonical_sha256": "ac74a726d8cb9d9828282d8bcc7c35b44c60ea004537037d65e3a46b830c442c"
+        }
+      },
+      "remote_complete": false,
+      "public_score": null
+    }
+  ],
+  "duplicate_graphs": [],
+  "auto_submit": false,
+  "reminder_enabled": false,
+  "warning": "Local replay verification is not a new public score or a completed Kaggle notebook."
+}

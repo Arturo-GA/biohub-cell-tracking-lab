@@ -1,0 +1,7 @@
+{
+  "nodes_per_frame": 1600,
+  "seconds": 4.844000000011874,
+  "peak_gpu_bytes": 608529408,
+  "finite": true,
+  "synthetic_memory_test": true
+}

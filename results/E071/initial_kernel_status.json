@@ -1,0 +1,82 @@
+[
+  {
+    "ref": "jarturo/gemma-4-paired-localization-policy-experiment",
+    "lastRunTime": "2026-09-28 17:07:59.887000",
+    "status": "QUEUED"
+  },
+  {
+    "ref": "jarturo/gemma-4-l4x4-infrastructure-preflight",
+    "lastRunTime": "2026-09-28 17:05:25.570000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/rsna-knee-stable942-diagnostic",
+    "lastRunTime": "2026-09-28 16:23:44.223000",
+    "status": "ERROR"
+  },
+  {
+    "ref": "jarturo/rsna-knee-stable942-global96",
+    "lastRunTime": "2026-09-28 13:24:49.847000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/rsna-knee-silver-01-readers",
+    "lastRunTime": "2026-09-28 12:28:48.653000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/rsna-knee-diagnostic-64-not-for-submission",
+    "lastRunTime": "2026-09-28 12:28:44.367000",
+    "status": "ERROR"
+  },
+  {
+    "ref": "jarturo/pathfinder-gemma-4-agent-eda-baseline",
+    "lastRunTime": "2026-09-28 03:09:02.677000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/gemma-eda-baseline-for-a-start-lb-top-1",
+    "lastRunTime": "2026-09-28 03:08:24.683000",
+    "status": "HTTPError:404 Client Error: Not Found for url: https://api.kaggle.com/v1/kernels.KernelsApiService/GetKernelSessionStatu"
+  },
+  {
+    "ref": "jarturo/bvd-v2b-budget-cpu",
+    "lastRunTime": "2026-09-28 01:35:19.177000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/rsna-knee-silver-05-jointline",
+    "lastRunTime": "2026-09-27 23:53:19.847000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/rsna-knee-silver-04-both",
+    "lastRunTime": "2026-09-27 23:53:14.933000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/rsna-knee-silver-03-restore",
+    "lastRunTime": "2026-09-27 23:46:09.917000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/rsna-knee-silver-02-glance",
+    "lastRunTime": "2026-09-27 23:46:04.143000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/biohub-e070-f8-dc030",
+    "lastRunTime": "2026-09-27 21:26:09.073000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/biohub-e070-f8-prune12-joint",
+    "lastRunTime": "2026-09-27 20:58:31.613000",
+    "status": "COMPLETE"
+  },
+  {
+    "ref": "jarturo/biohub-e070-f8-p8",
+    "lastRunTime": "2026-09-27 20:58:28.357000",
+    "status": "COMPLETE"
+  }
+]

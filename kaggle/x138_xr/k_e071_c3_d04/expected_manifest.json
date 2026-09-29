@@ -1,0 +1,13 @@
+{
+  "experiment": "E071",
+  "candidate": "C3_D04",
+  "base": "c3_public_0.955",
+  "base_submission": 56592151,
+  "base_notebook_sha256": "052f47600befa2afc0cac6892a1f14aa0381dc786b5c322b0dd51752070b598b",
+  "overrides": {
+    "BIOHUB_ILP_DIVISION_WEIGHT": "0.4",
+    "BIOHUB_READMIT_MIN_SCORE": "0.965"
+  },
+  "rationale": "Isolate reduced ILP division cost; retain original readmission.",
+  "source_sha256": "ba725706da08c6c264c4faaa2b1a833da8cf09646a33e2276e67011d389390d9"
+}

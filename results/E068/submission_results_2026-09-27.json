@@ -1,0 +1,107 @@
+[
+  {
+    "ref": 56592151,
+    "date": "2026-09-27 00:03:13.963000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.955",
+    "description": "c3 probe: L7 + E prune + nan8 + end5last, no tau [lab199 +0.0013]"
+  },
+  {
+    "ref": 56592094,
+    "date": "2026-09-27 00:02:43.260000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.949",
+    "description": "c6 probe: L7 + SAFE_DIV_SISTER_SYMMETRY_TAU=1.0 global only [lab72 traced +0.0035]"
+  },
+  {
+    "ref": 56592042,
+    "date": "2026-09-27 00:02:13.613000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.950",
+    "description": "S2 L7 + tau6bba1.0 + E prune + nan8 + end5last (no fork) [lab199 XR +0.0013]"
+  },
+  {
+    "ref": 56591970,
+    "date": "2026-09-27 00:01:45.467000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.949",
+    "description": "S5 L7 + tau6bba1.0 + P8 prune(*:8:0.7) + nan8 + end5last + fork8-nanonly [lab199 XR +0.0022 165/34]"
+  },
+  {
+    "ref": 56591883,
+    "date": "2026-09-27 00:01:16.183000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.949",
+    "description": "S1 L7 + tau6bba1.0 + E prune(44b6:8:0.7,6bba:11:0.7) + nan8 + end5last + fork8-nanonly [lab199 XR +0.0022, tau +0.0037/72v]"
+  },
+  {
+    "ref": 56563363,
+    "date": "2026-09-26 00:01:09.220000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.954",
+    "description": "B5 calibration L7 + interior<9 (lab72 predicts = L7)"
+  },
+  {
+    "ref": 56563339,
+    "date": "2026-09-26 00:01:03.400000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.954",
+    "description": "B4 L7 + prune comps size<12 with mean edge_prob<0.5 (lab72 +0.0006, 55/1 videos)"
+  },
+  {
+    "ref": 56563314,
+    "date": "2026-09-26 00:00:58.900000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.953",
+    "description": "B3 L7 + prune interior comps size<8 (lab72 +0.0008 vs L7)"
+  },
+  {
+    "ref": 56563301,
+    "date": "2026-09-26 00:00:54.167000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.954",
+    "description": "B2 L6 + prune interior comps size<8 not touching first/last frame (lab72 +0.0010 vs L6)"
+  },
+  {
+    "ref": 56563291,
+    "date": "2026-09-26 00:00:50.367000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.954",
+    "description": "B1 L7 + prune non-division comps size<9 with mean edge_prob<0.8 (lab72 +0.0013 vs L7)"
+  },
+  {
+    "ref": 56544558,
+    "date": "2026-09-25 07:34:58.780000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.951",
+    "description": "P4b m11d: x138 + OUTPUT_MIN_TRACK_LEN=11 + REPAIR_DEADLINE_S=34200, single pass"
+  },
+  {
+    "ref": 56544554,
+    "date": "2026-09-25 07:34:53.890000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.953",
+    "description": "P4a m8d: x138 + OUTPUT_MIN_TRACK_LEN=8 + REPAIR_DEADLINE_S=34200, single pass"
+  },
+  {
+    "ref": 56540269,
+    "date": "2026-09-25 04:49:43.530000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.954",
+    "description": "P2 m7d: x138 + OUTPUT_MIN_TRACK_LEN=7 (tight stays 5.5) + REPAIR_DEADLINE_S=34200, single pass"
+  },
+  {
+    "ref": 56540245,
+    "date": "2026-09-25 04:48:36.133000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.953",
+    "description": "P3 m9d: x138 + OUTPUT_MIN_TRACK_LEN=9 + REPAIR_DEADLINE_S=34200, single pass"
+  },
+  {
+    "ref": 56539929,
+    "date": "2026-09-25 04:30:27.757000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "0.954",
+    "description": "P1 m7t45: x138 + OUTPUT_MIN_TRACK_LEN=7 + MOTION_RELINK_TIGHT_UM=4.5 hardcoded, single pass, no validator/rewrite"
+  }
+]

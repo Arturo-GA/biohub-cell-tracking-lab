@@ -1,0 +1,51 @@
+{
+  "checked_at_utc": "2026-09-29T00:09:00.365093+00:00",
+  "limits": {
+    "num_today": 0,
+    "num_allowed_now": 5,
+    "limited_by_total": false
+  },
+  "checks": [
+    {
+      "candidate": "C3_D04_R094",
+      "kernel": "jarturo/biohub-e071-c3-d04-r094",
+      "version": 1,
+      "remote_code_equal": true,
+      "local_hashes_valid": true,
+      "status": "COMPLETE"
+    },
+    {
+      "candidate": "C3_R094",
+      "kernel": "jarturo/biohub-e071-c3-r094",
+      "version": 1,
+      "remote_code_equal": true,
+      "local_hashes_valid": true,
+      "status": "COMPLETE"
+    },
+    {
+      "candidate": "C3_D04",
+      "kernel": "jarturo/biohub-e071-c3-d04",
+      "version": 1,
+      "remote_code_equal": true,
+      "local_hashes_valid": true,
+      "status": "COMPLETE"
+    },
+    {
+      "candidate": "C3_D08_R094",
+      "kernel": "jarturo/biohub-e071-c3-d08-r094",
+      "version": 1,
+      "remote_code_equal": true,
+      "local_hashes_valid": true,
+      "status": "COMPLETE"
+    },
+    {
+      "candidate": "C3_D04_R092",
+      "kernel": "jarturo/biohub-e071-c3-d04-r092",
+      "version": 1,
+      "remote_code_equal": true,
+      "local_hashes_valid": true,
+      "status": "COMPLETE"
+    }
+  ],
+  "passed": true
+}

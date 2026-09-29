@@ -1,0 +1,18 @@
+{
+  "kernel": "jarturo/biohub-e070-f8-prune12",
+  "version": 1,
+  "candidate": "F8_prune12",
+  "source_sha256": "9d938cc541ea0253746c7ead0f2d7336f250295afe095fe40140f4fa3ab16bdd",
+  "notebook_sha256": "68c9acdacc15ca0a65df8fea440a4e799a74a48160dc9409fb0fafb32f0dc474",
+  "csv_sha256": "f6a338452a5adcd7750e5956a7954a68173ee010d88085e739a7f5f37fc85cc0",
+  "rows": 232200,
+  "counts": [
+    "44b6_0113de3b=25488/24775",
+    "44b6_0b24845f=18141/17119",
+    "6bba_05b6850b=5943/5782",
+    "6bba_05db0fb1=68419/66533"
+  ],
+  "gate": "PASS",
+  "csv_bounds_and_graph": "PASS",
+  "leaderboard_submitted": false
+}

@@ -1,0 +1,25 @@
+{
+  "kernel": "jarturo/biohub-e071-c3-d04",
+  "version": 1,
+  "candidate": "C3_D04",
+  "source_sha256": "ba725706da08c6c264c4faaa2b1a833da8cf09646a33e2276e67011d389390d9",
+  "notebook_sha256": "f004983c07da28a1dcf6f795eecd42a85a88714cf9ac1c33207a5bf5c6ed38ae",
+  "csv_sha256": "3723d7916ec6524aacf0be981a4307a48f1318adc7597858f78e0f09a042a850",
+  "rows": 232537,
+  "counts": [
+    "44b6_0113de3b=25490/24778",
+    "44b6_0b24845f=18172/17149",
+    "6bba_05b6850b=5965/5803",
+    "6bba_05db0fb1=68537/66643"
+  ],
+  "gate": "PASS",
+  "csv_bounds_and_graph": "PASS",
+  "leaderboard_submitted": false,
+  "duration_seconds": 1057.900829315,
+  "local_replay_parity": {
+    "44b6_0113de3b": true,
+    "44b6_0b24845f": true,
+    "6bba_05b6850b": true,
+    "6bba_05db0fb1": true
+  }
+}

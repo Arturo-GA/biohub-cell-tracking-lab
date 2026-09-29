@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "ecd8869de9cf405c1a93a563b4810faad5fd2378f57341e18c4e6b5a87201552",
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "seconds": 3.875,
+  "logit_shape": [
+    4,
+    4
+  ],
+  "strict_checkpoint_load": "PASS",
+  "real_images_used": false,
+  "finite_logits": true,
+  "peak_gpu_bytes": 376803840
+}

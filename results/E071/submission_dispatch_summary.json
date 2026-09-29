@@ -1,0 +1,15 @@
+{
+  "status": "FIVE_ACCEPTED_PENDING_SCORING",
+  "checked_at_utc": "2026-09-29T00:11:15.022009+00:00",
+  "submission_refs": [
+    56656420,
+    56656425,
+    56656488,
+    56656490,
+    56656491
+  ],
+  "daily_quota_remaining": 0,
+  "new_public_scores_available": false,
+  "reminder_enabled": false,
+  "duplicate_submissions": 0
+}

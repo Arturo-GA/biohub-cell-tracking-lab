@@ -1,0 +1,44 @@
+{
+  "recorded_at_utc": "2026-09-27T20:16:39.780446+00:00",
+  "all_e069_kernels_complete": true,
+  "e069_comparisons": {
+    "duplicates": {
+      "videos": 199,
+      "configurations": 6
+    },
+    "linker": {
+      "videos": 32,
+      "configurations": 11
+    }
+  },
+  "new_priority_candidates_from_e069": 0,
+  "recommended_ready": [
+    {
+      "candidate": "C3_fork8",
+      "kernel": "jarturo/biohub-c3-fork8",
+      "version": 1,
+      "file_name": "submission.csv",
+      "competition": "biohub-cell-tracking-during-development",
+      "status": "verified_ready_waiting_daily_quota",
+      "earliest_next_window_utc": "2026-09-28T00:00:00+00:00",
+      "verification": "results/E068/c3_fork8_verified.json",
+      "local_evaluation": "results/E068/cpu7_results.json",
+      "daily_quota_check": "results/E068/submission_readiness_2026-09-27_pm.json",
+      "description": "c3 public 0.955 + fork8 nan-only; fixed tau0.6, L7, E prune, nan8, end5last",
+      "leaderboard_submitted": false,
+      "scheduled": false,
+      "before_submit": "Recheck current submissions to avoid duplicate sends, remaining daily quota, and frozen v1 verification. Submit the kernel version, not a direct CSV upload."
+    }
+  ],
+  "not_promoted": {
+    "duplicate_variants": "No operations and no metric change on 199 videos.",
+    "join_variants": "No candidates on the fixed 32-video panel.",
+    "fork_veto_variants": "Two changes outside annotation coverage; zero metric gain.",
+    "neural_swap_variants": "One covered video improves; same metrics as prior CPU6 geometry, no confirmation increment, no gain over geometric control."
+  },
+  "leaderboard_submissions_made_in_e069": 0,
+  "kaggle_gpu_hours_consumed_e069": 0,
+  "local_gpu": "RTX 3050 Laptop 4 GB",
+  "report": "docs/E069_RESULTS.es.md",
+  "scheduled": false
+}
