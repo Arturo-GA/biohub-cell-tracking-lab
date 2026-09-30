@@ -1,0 +1,44 @@
+{
+  "checked_at_utc": "2026-09-30T00:12:49.059889+00:00",
+  "competition_deadline_utc": "2026-09-29T23:59:00+00:00",
+  "status": "PRIVATE_REVEALED_RANK_NOT_YET_CERTIFIED",
+  "team_count_api": 4017,
+  "user_rank_api": 1097,
+  "latest_public_leaderboard_snapshot": {
+    "checked_at_utc": "2026-09-30T00:11:29+00:00",
+    "team_count": 4020,
+    "rank": 231,
+    "score": "0.957",
+    "note": "The downloadable leaderboard endpoint still returned the public board."
+  },
+  "selected_submissions": [
+    {
+      "ref": 56656490,
+      "candidate": "C3_D08_R094",
+      "public_score": "0.956",
+      "private_score": "0.917",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": 56656420,
+      "candidate": "C3_D04_R094",
+      "public_score": "0.957",
+      "private_score": "0.916",
+      "status": "COMPLETE"
+    }
+  ],
+  "best_private_among_all_team_submissions": {
+    "ref": 56515407,
+    "description": "x138 + OUR V1284 heads (110 train movies, 5-seed ensemble, alpha 1.0)",
+    "public_score": "0.952",
+    "private_score": "0.923",
+    "selected_for_final": false,
+    "status": "COMPLETE"
+  },
+  "interpretation": [
+    "The private scores are official API values revealed after the deadline, not a browser rendering error.",
+    "The current rank may still move while late notebooks finish and Kaggle performs final checks.",
+    "Only the two selected submissions determine the final competition standing.",
+    "The better 0.923 private submission cannot replace them after the selection deadline."
+  ]
+}

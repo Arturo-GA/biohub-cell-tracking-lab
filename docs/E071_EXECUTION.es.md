@@ -1,5 +1,16 @@
 # E071 — última tanda de cinco candidatos
 
+## Resultado privado revelado — 30-09-2026, 00:12 UTC
+
+El deadline oficial pasó a las 23:59 UTC. La API autenticada de Kaggle ya devuelve private scores y `userRank=1097` entre 4017 equipos. No es un score preliminar del notebook ni un error visual: ambas submissions seleccionadas figuran COMPLETE con **0.917** y **0.916** privado. El rango todavía no se considera certificado mientras puedan terminar kernels tardíos o Kaggle realice revisiones.
+
+| Seleccionada | Público | Privado |
+|---|---:|---:|
+| C3_D08_R094 (56656490) | 0.956 | **0.917** |
+| C3_D04_R094 (56656420) | 0.957 | 0.916 |
+
+La mejor private score de las 38 submissions fue **0.923**, submission 56515407: x138 con cinco cabezas V1284 propias, público 0.952. No estaba entre las dos seleccionadas y no puede sustituirse después del deadline. Este resultado muestra que la selección por Public eligió variantes sobreajustadas al 29% público: la mejora de 0.952 a 0.957 se convirtió en una pérdida privada de 0.007 frente a aquella alternativa. Recibo estructurado: `results/E071/final_private_result.json`.
+
 ## Cierre público — 29-09-2026, 22:56 UTC
 
 Los cinco envíos están **COMPLETE** según la consulta oficial guardada en `results/E071/all_submission_status.json`. Mejor público: **C3_D04_R094, 0.957**, frente a c3 **0.955**. No hay resultados privados ni una medalla definitiva. Los estados de preparación y scoring de las secciones posteriores son históricos; no repetir lanzamientos ni envíos. El reminder continúa desactivado.
